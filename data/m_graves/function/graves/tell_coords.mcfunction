@@ -1,0 +1,10 @@
+## Tell this player their coordinates unless they are in the void
+execute if predicate m_graves:in_void unless dimension the_end run return run tellraw @s [{"text":"You died in ","color":"yellow"},{"text":"The Void ","color":"green"},{"text":"(Items cannot be retrieved)","color":"gray"}] 
+execute if score $voidGraves multipack.graves matches 0 if predicate m_graves:in_void if dimension the_end run return run tellraw @s [{"text":"You died in ","color":"yellow"},{"text":"The Void","color":"green"}]
+ 
+execute store result score &x multipack.temp run data get entity @s Pos[0]
+execute store result score &z multipack.temp run data get entity @s Pos[2]
+execute if dimension overworld run return run tellraw @s [{"text":"You died at ","color":"yellow"},{"text":"X: ","color":"green"},{"score":{"name":"&x","objective":"multipack.temp"},"color":"green"},{"text":", Z: ","color":"green"},{"score":{"name":"&z","objective":"multipack.temp"},"color":"green"},{"text":" in ","color":"yellow"},{"text":"The Overworld","color":"green"}]
+execute if dimension the_nether run return run tellraw @s [{"text":"You died at ","color":"yellow"},{"text":"X: ","color":"green"},{"score":{"name":"&x","objective":"multipack.temp"},"color":"green"},{"text":", Z: ","color":"green"},{"score":{"name":"&z","objective":"multipack.temp"},"color":"green"},{"text":" in ","color":"yellow"},{"text":"The Nether","color":"green"}]
+execute if dimension the_end run return run tellraw @s [{"text":"You died at ","color":"yellow"},{"text":"X: ","color":"green"},{"score":{"name":"&x","objective":"multipack.temp"},"color":"green"},{"text":", Z: ","color":"green"},{"score":{"name":"&z","objective":"multipack.temp"},"color":"green"},{"text":" in ","color":"yellow"},{"text":"The End","color":"green"}]
+tellraw @s [{"text":"You died at ","color":"yellow"},{"text":"X: ","color":"green"},{"score":{"name":"&x","objective":"multipack.temp"},"color":"green"},{"text":", Z: ","color":"green"},{"score":{"name":"&z","objective":"multipack.temp"},"color":"green"}]

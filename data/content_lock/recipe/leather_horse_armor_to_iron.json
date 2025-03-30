@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:leather_horse_armor",
+  "template": "minecraft:iron_ingot",
+  "result": {
+    "id": "minecraft:iron_horse_armor",
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 12,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 24,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:knockback_resistance",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:explosion_knockback_resistance",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 0.7,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:step_height",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:burning_time",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": -1,
+            "operation": "add_multiplied_total",
+            "slot": "body"
+          }
+        ],
+        "show_in_tooltip": true
+      }
+    }
+  }
+}

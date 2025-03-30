@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "3_level",
+  "key": {
+    "#": "minecraft:heavy_core",
+    "X": "minecraft:experience_bottle",
+    "Y": "minecraft:obsidian"
+  },
+  "pattern": [
+    "XYX",
+    "Y#Y",
+    "XYX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:structure_void",
+    "components": {
+      "minecraft:item_name": "\"Heavy Experience Bundle\"",
+      "minecraft:rarity": "epic",
+      "item_model": "minecraft:purple_bundle"
+    }
+  }
+}

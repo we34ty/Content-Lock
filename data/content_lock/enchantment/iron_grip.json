@@ -1,0 +1,41 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 100,
+  "description": "Iron Grip",
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/iron_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/iron_weapon",
+  "weight": 1,
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "offhand": {
+                "items": "minecraft:air"
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "content_lock:player/enchantments/iron_grip"
+        }
+      }
+    ]
+  }
+}

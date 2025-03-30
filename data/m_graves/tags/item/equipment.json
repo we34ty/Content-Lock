@@ -1,0 +1,28 @@
+{
+  "values": [
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "#minecraft:axes",
+    "#minecraft:hoes",
+    "#minecraft:swords",
+    "#minecraft:head_armor",
+    "#minecraft:chest_armor",
+    "#minecraft:leg_armor",
+    "#minecraft:foot_armor",
+    "#minecraft:compasses",
+    "minecraft:elytra",
+    "minecraft:mace",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "minecraft:shield",
+    "minecraft:fishing_rod",
+    "minecraft:carrot_on_a_stick",
+    "minecraft:warped_fungus_on_a_stick",
+    "minecraft:flint_and_steel",
+    "minecraft:shears",
+    "minecraft:brush",
+    "minecraft:clock",
+    "minecraft:spyglass"
+  ]
+}

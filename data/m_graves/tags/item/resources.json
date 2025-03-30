@@ -1,0 +1,33 @@
+{
+  "values": [
+    "minecraft:coal",
+    "minecraft:charcoal",
+    "minecraft:raw_copper",
+    "minecraft:raw_copper_block",
+    "minecraft:copper_ingot",
+    "minecraft:copper_block",
+    "minecraft:raw_iron",
+    "minecraft:raw_iron_block",
+    "minecraft:iron_ingot",
+    "minecraft:iron_block",
+    "minecraft:raw_gold",
+    "minecraft:raw_gold_block",
+    "minecraft:gold_ingot",
+    "minecraft:raw_gold_block",
+    "minecraft:emerald",
+    "minecraft:emerald_block",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_block",
+    "minecraft:redstone",
+    "minecraft:redstone_block",
+    "minecraft:diamond",
+    "minecraft:diamond_block",
+    "minecraft:ancient_debris",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_ingot",
+    "minecraft:quartz",
+    "minecraft:amethyst_shard",
+    "minecraft:iron_nugget",
+    "minecraft:gold_nugget"
+  ]
+}

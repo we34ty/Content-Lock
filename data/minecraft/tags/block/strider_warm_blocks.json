@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:lava",
+    "minecraft:magma_block",
+    "minecraft:fire",
+    "minecraft:warped_nylium",
+    "minecraft:warped_roots",
+    "minecraft:nether_sprouts",
+    "minecraft:warped_fungus",
+    "minecraft:warped_stem",
+    "minecraft:warped_hyphae",
+    "minecraft:warped_wart_block",
+    "minecraft:twisting_vines_plant",
+    "minecraft:twisting_vines"  ]
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_xp_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:experience_bottle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "content_lock:xp/1_level_from_gold"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_xp_bottle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "content_lock:xp/1_level_from_gold",
+      "content_lock:xp/1_level_from_iron",
+      "content_lock:xp/2_levels_from_diamond",
+      "content_lock:xp/2_levels_from_netherite",
+      "content_lock:xp/3_levels_from_heavy_core"
+    ]
+  }
+}

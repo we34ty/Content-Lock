@@ -1,0 +1,3 @@
+execute if score @s lsp.stamina < @s content_lock.max_stamina if score @s content_lock.stamina_delay_timer < @s content_lock.stamina_delay run scoreboard players add @s content_lock.stamina_delay_timer 1
+execute if score @s lsp.stamina < @s content_lock.max_stamina if score @s content_lock.stamina_delay_timer >= @s content_lock.stamina_delay run scoreboard players operation @s lsp.stamina += sprint.stamina.restoration lsp.Values
+function lsp:change_speed with storage lsp:macro stamina

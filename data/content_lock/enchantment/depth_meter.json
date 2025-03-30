@@ -1,0 +1,131 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 100,
+  "description": "Depth Meter",
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/stone_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/stone_weapon",
+  "weight": 1,
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": 20,
+                  "max": 40
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:attack_damage",
+          "id": "depth_meter",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.05,
+            "per_level_above_first": 0.05
+          },
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": -10,
+                  "max": 19
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:attack_damage",
+          "id": "depth_meter",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.1,
+            "per_level_above_first": 0.1
+          },
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": -30,
+                  "max": -11
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:attack_damage",
+          "id": "depth_meter",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.15,
+            "per_level_above_first": 0.15
+          },
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "max": -31
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:attack_damage",
+          "id": "depth_meter",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.2,
+            "per_level_above_first": 0.2
+          },
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  }
+}

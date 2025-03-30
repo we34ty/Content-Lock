@@ -1,0 +1,202 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "content_lock.magical_dust": true
+                },
+                "item_name": "\"Spellbound Dust\"",
+                "item_model": "blaze_powder"
+              }
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9,
+                "min": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:regeneration"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Enchanted Witch's Skull",
+                "color": "#d400ff",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:max_health",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.3,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 4
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.3,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.3,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:movement_efficiency",
+                  "id": "content_lock.witchs_skull",
+                   "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.05,
+                    "max": -0.02
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Enchanted Witch's Spellbook",
+                "color": "#d400ff"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 326789,
+                  "animation": "block",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "content_lock.witchs_book": true
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "content_lock.witchs_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 5,
+                    "max": 8
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.witchs_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -3.2,
+                    "max": -2.8
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:entity_interaction_range",
+                  "id": "content_lock.witchs_book",
+                  "amount": -0.7,
+                  "operation": "add_multiplied_total",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_knockback",
+                  "id": "content_lock.witchs_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 3
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

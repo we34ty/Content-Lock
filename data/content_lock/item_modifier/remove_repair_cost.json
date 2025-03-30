@@ -1,0 +1,86 @@
+[
+	{
+		"function": "minecraft:filtered",
+		"item_filter": {
+			"components": {
+				"minecraft:repair_cost": 1
+			}
+		},
+		"modifier": {
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:repair_cost": 0
+			}
+		}
+	},
+	{
+		"function": "minecraft:filtered",
+		"item_filter": {
+			"components": {
+				"minecraft:repair_cost": 3
+			}
+		},
+		"modifier": {
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:repair_cost": 0
+			}
+		}
+	},
+	{
+		"function": "minecraft:filtered",
+		"item_filter": {
+			"components": {
+				"minecraft:repair_cost": 7
+			}
+		},
+		"modifier": {
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:repair_cost": 0
+			}
+		}
+	},
+	{
+		"function": "minecraft:filtered",
+		"item_filter": {
+			"components": {
+				"minecraft:repair_cost": 15
+			}
+		},
+		"modifier": {
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:repair_cost": 0
+			}
+		}
+	},
+	{
+		"function": "minecraft:filtered",
+		"item_filter": {
+			"components": {
+				"minecraft:repair_cost": 31
+			}
+		},
+		"modifier": {
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:repair_cost": 0
+			}
+		}
+	},
+	{
+		"function": "minecraft:filtered",
+		"item_filter": {
+			"components": {
+				"minecraft:repair_cost": 63
+			}
+		},
+		"modifier": {
+			"function": "minecraft:set_components",
+			"components": {
+				"minecraft:repair_cost": 0
+			}
+		}
+	}
+]

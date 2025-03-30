@@ -1,0 +1,207 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "content_lock:earthquake": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Iron Guardian's Shovel",
+                "color": "#9c9c9c",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "content_lock.guardian_shovel",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 6,
+                    "max": 8.5
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.guardian_shovel",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -3.6,
+                    "max": -3.2
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_knockback",
+                  "id": "content_lock.guardian_shovel",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 2.8,
+                    "max": 4.2
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:movement_efficiency",
+                  "id": "content_lock.guardian_shovel",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.06,
+                    "max": -0.03
+                  },
+                  "operation": "add_multiplied_base",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 326789,
+                  "animation": "spear",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                },
+                "minecraft:max_damage": 47,
+                "minecraft:custom_data": {
+                  "content_lock.guardian_shovel": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Iron Guardian's Heart",
+                "color": "#a1a1a1",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "guardian_heart",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0.1,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:armor_toughness",
+                  "id": "guardian_heart",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0,
+                    "max": 6
+                  },
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:attack_knockback",
+                  "id": "guardian_heart",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0.1,
+                    "max": 0.5
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "guardian_heart",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.2,
+                    "max": -0.05
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:movement_efficiency",
+                  "id": "guardian_heart",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.06,
+                    "max": -0.03
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "guardian_heart": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

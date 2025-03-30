@@ -1,0 +1,25 @@
+{
+  "values": [
+    "minecraft:leather",
+    "minecraft:rabbit_hide",
+    "minecraft:ink_sac",
+    "minecraft:glow_ink_sac",
+    "minecraft:turtle_scute",
+    "minecraft:armadillo_scute",
+    "minecraft:rabbit_foot",
+    "minecraft:slime_ball",
+    "minecraft:nautilus_shell",
+    "minecraft:ender_pearl",
+    "minecraft:phantom_membrane",
+    "minecraft:rotten_flesh",
+    "minecraft:bone",
+    "minecraft:gunpowder",
+    "minecraft:string",
+    "minecraft:spider_eye",
+    "minecraft:ghast_tear",
+    "minecraft:magma_cream",
+    "minecraft:blaze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:feather"
+  ]
+}

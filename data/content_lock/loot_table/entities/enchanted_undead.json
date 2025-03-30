@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Book Of Undead",
+                "color": "#d400ff"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "content_lock.undead_book": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 326789,
+                  "animation": "brush",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "content_lock.undead_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 4,
+                    "max": 6
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.undead_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -3.6,
+                    "max": -3
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:entity_interaction_range",
+                  "id": "content_lock.undead_book",
+                  "amount": -0.7,
+                  "operation": "add_multiplied_total",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_knockback",
+                  "id": "content_lock.undead_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 6,
+                    "max": 13
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.01
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

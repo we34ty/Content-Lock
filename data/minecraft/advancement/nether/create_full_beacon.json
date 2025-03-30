@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:nether/create_beacon",
+  "criteria": {
+    "beacon": {
+      "conditions": {
+        "level": 4
+      },
+      "trigger": "minecraft:construct_beacon"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.nether.create_full_beacon.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:beacon"
+    },
+    "title": {
+      "translate": "advancements.nether.create_full_beacon.title"
+    }
+  },
+  "requirements": [
+    [
+      "beacon"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+        "content_lock:advancements/5-8_bottles"
+    ]
+  },
+  "sends_telemetry_event": true
+}

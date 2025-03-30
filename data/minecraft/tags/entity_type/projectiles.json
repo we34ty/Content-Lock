@@ -1,0 +1,20 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "minecraft:potion",
+    "minecraft:wither_skull",
+    "minecraft:ender_pearl",
+    "minecraft:fireball",
+    "minecraft:small_fireball",
+    "minecraft:dragon_fireball",
+    "minecraft:firework_rocket",
+    "minecraft:egg",
+    "minecraft:snowball",
+    "minecraft:falling_block",
+    "minecraft:llama_spit",
+    "minecraft:tnt",
+    "minecraft:shulker_bullet"]
+
+}

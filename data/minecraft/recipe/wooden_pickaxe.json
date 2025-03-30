@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "#minecraft:wooden_tool_materials"
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.1,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.03,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          }
+        ],
+        "show_in_tooltip": true
+      },
+      "minecraft:max_damage": 120,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#content_lock:wooden_pickaxe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+    },
+    "count": 1,
+    "id": "minecraft:wooden_pickaxe"
+  }
+}

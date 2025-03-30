@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "tamed_animal": {
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.husbandry.tame_an_animal.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:lead"
+    },
+    "title": {
+      "translate": "advancements.husbandry.tame_an_animal.title"
+    }
+  },
+  "requirements": [
+    [
+      "tamed_animal"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+        "content_lock:advancements/1_bottle"
+    ]
+  },
+  "sends_telemetry_event": true
+}

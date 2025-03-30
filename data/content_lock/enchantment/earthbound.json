@@ -1,0 +1,74 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 100,
+  "description": "Earthbound",
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 20
+  },
+  "primary_items": "#content_lock:enchantable/stone_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/stone_weapon",
+  "weight": 1,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "earthbound",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:attack_knockback",
+        "id": "earthbound",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 2,
+          "per_level_above_first": 1
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "earthbound",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.1,
+          "per_level_above_first": -0.1
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:entity_interaction_range",
+        "id": "earthbound",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:movement_efficiency",
+        "id": "earthbound",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.01,
+          "per_level_above_first": -0.01
+        },
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

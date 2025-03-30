@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_damage",
+    "damage": {
+      "type": "score",
+      "target": "this",
+      "score": "content_lock.temp1",
+      "scale": 0.001
+    }
+  }
+]

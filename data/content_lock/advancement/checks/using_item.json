@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "rewards": {
+    "function": "content_lock:player/items/using_item"
+  }
+}

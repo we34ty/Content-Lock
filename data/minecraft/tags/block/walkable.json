@@ -1,0 +1,75 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:air",
+    "minecraft:vine",
+    "minecraft:cobweb",
+    "minecraft:barrier",
+    "minecraft:cave_air",
+
+
+    "minecraft:nether_portal",
+
+
+    "minecraft:soul_lantern",    "minecraft:lantern",    "minecraft:comparator",
+    "minecraft:repeater",
+    "minecraft:redstone_wire",
+    "minecraft:tripwire_hook",
+    "minecraft:tripwire",
+
+    "minecraft:bamboo_sapling",    "minecraft:attached_melon_stem",
+
+
+
+
+    "minecraft:attached_pumpkin_stem",    "minecraft:pumpkin_stem",    "minecraft:melon_stem",    "minecraft:beetroots",    "minecraft:potatoes",
+    "minecraft:carrots",
+    "minecraft:wheat",
+    "#minecraft:rails",
+    "#minecraft:wool_carpets",
+
+    "minecraft:snow",    "#minecraft:signs",
+    "minecraft:lever",
+    "minecraft:turtle_egg",
+
+    "minecraft:bamboo",    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:tall_seagrass",
+    "minecraft:seagrass",
+    "minecraft:sugar_cane",
+    "#minecraft:saplings",
+
+    "minecraft:fern",    "minecraft:dead_bush",
+    "#minecraft:coral_plants",
+    "minecraft:sea_pickle",
+    "minecraft:kelp_plant",
+    "minecraft:kelp",
+    "minecraft:water",
+    "#minecraft:flower_pots",
+    "minecraft:soul_wall_torch",
+    "minecraft:soul_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:redstone_torch",
+    "minecraft:wall_torch",
+
+
+
+    "minecraft:torch",    "minecraft:weeping_vines_plant",    "minecraft:ladder",    "minecraft:scaffolding",
+    "minecraft:weeping_vines",
+    "minecraft:twisting_vines",
+    "minecraft:twisting_vines_plant",
+
+    "minecraft:warped_fungus",    "minecraft:crimson_fungus",
+    "minecraft:nether_sprouts",
+    "minecraft:warped_roots",
+
+
+    "minecraft:crimson_roots",    "minecraft:large_fern",    "minecraft:tall_grass",
+    "#minecraft:flowers",
+    "#minecraft:buttons",
+
+    "minecraft:lava",
+
+    "minecraft:short_grass",    "minecraft:void_air"
+  ]
+}

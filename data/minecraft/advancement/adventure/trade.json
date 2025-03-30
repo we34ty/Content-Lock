@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "traded": {
+      "trigger": "minecraft:villager_trade"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.adventure.trade.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancements.adventure.trade.title"
+    }
+  },
+  "requirements": [
+    [
+      "traded"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+        "content_lock:advancements/1_bottle"
+    ]
+  },
+  "sends_telemetry_event": true
+}

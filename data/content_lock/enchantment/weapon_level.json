@@ -1,0 +1,46 @@
+{
+  "description": {
+    "text": "Weapon Level",
+    "color": "#9920d9"
+  },
+  "supported_items": "#content_lock:enchantable/weapon",
+  "primary_items": "#content_lock:enchantable/weapon",
+  "weight": 1,
+  "max_level": 10,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "weapon_level",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:mining_efficiency",
+        "id": "weapon_level",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.6,
+          "per_level_above_first": 0.6
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

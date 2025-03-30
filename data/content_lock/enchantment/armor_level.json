@@ -1,0 +1,56 @@
+{
+  "description": {
+    "text": "Armor Level",
+    "color": "#9920d9"
+  },
+  "supported_items": "#content_lock:enchantable/armor",
+  "primary_items": "#content_lock:enchantable/armor",
+  "weight": 1,
+  "max_level": 10,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:armor",
+        "id": "armor_level",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:armor_toughness",
+        "id": "armor_level",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:knockback_resistance",
+        "id": "armor_level",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.05,
+          "per_level_above_first": 0.05
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

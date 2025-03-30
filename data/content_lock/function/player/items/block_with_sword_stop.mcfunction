@@ -1,0 +1,6 @@
+tag @s remove content_lock.blocking_with_sword
+tag @s remove content_lock.blocking_with_sword_disable
+attribute @s explosion_knockback_resistance modifier remove content_lock.blocking_with_sword
+attribute @s knockback_resistance modifier remove content_lock.blocking_with_sword
+attribute @s fall_damage_multiplier modifier remove content_lock.blocking_with_sword
+attribute @s armor modifier remove content_lock.blocking_with_sword

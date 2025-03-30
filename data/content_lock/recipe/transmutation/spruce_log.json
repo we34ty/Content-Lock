@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "logs",
+  "category": "building",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": "#minecraft:logs",
+    "X": "minecraft:mud"
+  },
+  "result": {
+    "id": "minecraft:spruce_log",
+    "count": 9
+  }
+}

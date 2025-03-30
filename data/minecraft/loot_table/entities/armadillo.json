@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armadillo_scute"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:uniform",
+            "min": 0,
+            "max": 2
+          }
+        },
+        {
+          "count": {
+            "type": "minecraft:uniform",
+            "max": 1,
+            "min": 0
+          },
+          "enchantment": "minecraft:looting",
+          "function": "minecraft:enchanted_count_increase"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/armadillo"
+}

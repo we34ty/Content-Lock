@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:golden_horse_armor",
+  "addition": "minecraft:iron_horse_armor",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "result": {
+    "id": "minecraft:diamond_horse_armor",
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:movement_speed",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 0.5,
+            "operation": "add_multiplied_total",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 16,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 30,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:knockback_resistance",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:explosion_knockback_resistance",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 0.7,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:step_height",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 2,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:burning_time",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": -1,
+            "operation": "add_multiplied_total",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:safe_fall_distance",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 3,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:jump_strength",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "body"
+          },
+          {
+            "type": "minecraft:jump_strength",
+            "id": "content_lock.horse_saddle_conten_lock",
+            "amount": 0.5,
+            "operation": "add_multiplied_total",
+            "slot": "body"
+          }
+        ],
+        "show_in_tooltip": true
+      }
+    }
+  }
+}

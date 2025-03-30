@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " X ",
+    "Y#Y",
+    " X "
+  ],
+  "key": {
+    "X": "minecraft:lapis_lazuli",
+    "Y":"minecraft:amethyst_shard",
+    "#": "minecraft:copper_ingot"
+  },
+  "result": {
+    "count": 7,
+    "id": "minecraft:glistering_melon_slice",
+    "components": {
+      "custom_data": {
+        "content_lock.magical_dust": true
+      },
+      "item_name": "\"Spellbound Dust\"",
+      "item_model": "blaze_powder"
+    }
+  }
+}

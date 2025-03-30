@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:wooden_axe",
+  "addition": [
+    "minecraft:cobblestone",
+    "minecraft:stone",
+    "minecraft:blackstone",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate"
+  ],
+  "result": {
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.05,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          }
+        ],
+        "show_in_tooltip": true
+      },
+      "minecraft:max_damage": 106,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/axe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+    },
+    "count": 1,
+    "id": "minecraft:stone_axe"
+  }
+}

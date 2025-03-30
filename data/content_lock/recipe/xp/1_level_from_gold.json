@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "1_level",
+  "key": {
+    "#": "minecraft:gold_block",
+    "X": "minecraft:experience_bottle",
+    "Y": "minecraft:copper_block"
+  },
+  "pattern": [
+    "XYX",
+    "Y#Y",
+    "XYX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:structure_void",
+    "components": {
+      "minecraft:item_name": "\"Small Experience Bundle\"",
+      "minecraft:rarity": "uncommon",
+      "item_model": "minecraft:yellow_bundle"
+    }
+  }
+}

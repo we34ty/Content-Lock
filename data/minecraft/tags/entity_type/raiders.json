@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:pillager",
+    "minecraft:villager",
+    "minecraft:witch",
+    "minecraft:ravager",
+    "minecraft:illusioner",
+    "minecraft:vex",
+    "minecraft:evoker",
+    "minecraft:vindicator",
+    "minecraft:iron_golem"  ]
+}

@@ -1,0 +1,42 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 100,
+  "description": "Earthquake",
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/stone_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/stone_weapon",
+  "weight": 1,
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "flags": {
+              "is_swimming": false,
+              "is_on_ground": false
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "content_lock:player/enchantments/earthquake"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

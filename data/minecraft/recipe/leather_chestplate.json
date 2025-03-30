@@ -1,0 +1,59 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "X": "minecraft:leather"
+    },
+    "pattern": [
+      "X X",
+      "XXX",
+      "XXX"
+    ],
+    "result": {
+      "components": {
+        "minecraft:attribute_modifiers": {
+          "modifiers": [
+            {
+              "type": "minecraft:armor",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": 3,
+              "operation": "add_value",
+              "slot": "chest"
+            },
+            {
+              "type": "minecraft:armor_toughness",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": 2,
+              "operation": "add_value",
+              "slot": "chest"
+            },
+            {
+              "type": "minecraft:movement_efficiency",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": -0.05,
+              "operation": "add_multiplied_base",
+              "slot": "chest"
+            },
+            {
+              "type": "minecraft:fall_damage_multiplier",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": -0.15,
+              "operation": "add_multiplied_total",
+              "slot": "chest"
+            },
+            {
+              "type": "minecraft:knockback_resistance",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": 0.07,
+              "operation": "add_value",
+              "slot": "chest"
+            }
+          ],
+          "show_in_tooltip": true
+        },
+        "minecraft:max_damage": 340
+      },
+      "count": 1,
+      "id": "minecraft:leather_chestplate"
+    }
+  }

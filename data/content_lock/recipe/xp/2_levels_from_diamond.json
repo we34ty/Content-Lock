@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "2_level",
+  "key": {
+    "#": "minecraft:diamond_block",
+    "X": "minecraft:experience_bottle",
+    "Y": "minecraft:quartz"
+  },
+  "pattern": [
+    "XYX",
+    "Y#Y",
+    "XYX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:structure_void",
+    "components": {
+      "minecraft:item_name": "\"Hefty Experience Bundle\"",
+      "minecraft:rarity": "rare",
+      "item_model": "minecraft:lime_bundle"
+    }
+  }
+}

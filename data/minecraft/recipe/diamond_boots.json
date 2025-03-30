@@ -1,0 +1,9 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "structure_void"
+    ],
+    "result": {
+        "id": "dirt"
+    }
+}
