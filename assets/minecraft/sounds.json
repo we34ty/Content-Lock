@@ -1,0 +1,112 @@
+{
+        "custom.yhorm": {
+		"sounds": [
+			"custom/yhorm"
+		]
+	},
+	"custom.both_officers": {
+		"sounds": [
+			"custom/both_officers"
+		]
+	},
+	"custom.one_officer": {
+		"sounds": [
+			"custom/one_officer"
+		]
+	},
+	"custom.corrupted_princess": {
+		"sounds": [
+			"custom/corrupted_princess_longer"
+		]
+	},
+	"custom.blaze_lord_phase1": {
+		"sounds": [
+			"custom/blaze_lord_phase1"
+		]
+	},
+	"custom.blaze_lord_phase2": {
+		"sounds": [
+			"custom/blaze_lord_phase2"
+		]
+	},
+	"custom.corrupted_princess_enemies": {
+		"sounds": [
+			"custom/corrupted_princess_enemies"
+		]
+	},
+	"custom.ender_watcher": {
+		"sounds": [
+			"custom/ender_watcher"
+		]
+	},
+	"custom.drift": {
+		"sounds": [
+			"custom/drift"
+		]
+	},
+	"custom.drift_lyrics": {
+		"sounds": [
+			"custom/drift_lyrics"
+		]
+	},
+	"custom.slotstart": {
+		"sounds": [
+			"custom/slotstart"
+		]
+	},
+	"custom.jackpotmusic": {
+		"sounds": [
+			"custom/jackpotmusic"
+		]
+	},
+	"custom.jackpotmusiclong": {
+		"sounds": [
+			"custom/jackpotmusiclong"
+		]
+	},
+	"custom.parry": {
+		"sounds": [
+			"custom/parry"
+		]
+	},
+	"custom.wither1": {
+		"sounds": [
+			"custom/wither1"
+		]
+	},
+	"custom.dragons_apprentice_phase1": {
+		"sounds": [
+			"custom/dragons_apprentice_phase1"
+		]
+	},
+	"custom.dragons_apprentice_phase2": {
+		"sounds": [
+			"custom/dragons_apprentice_phase2"
+		]
+	},
+	"custom.zomcess": {
+		"sounds": [
+			"custom/zomcess"
+		]
+	},
+	"custom.iron_guardian": {
+		"sounds": [
+			"custom/iron_guardian"
+		]
+	},
+	"custom.death_rider": {
+		"sounds": [
+			"custom/death_rider"
+		]
+	},
+	"custom.danger1": {
+		"sounds": [
+			"custom/danger1"
+		]
+	},
+	"custom.danger2": {
+		"sounds": [
+			"custom/danger2"
+		]
+	}
+}

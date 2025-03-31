@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "minecraft:item/carrot_on_a_stick"
+  },
+  "overrides":[
+    {"predicate":{"custom_model_data":327},"model":"minecraft:item/quickstep_dagger"},
+    {"predicate":{"custom_model_data":328},"model":"minecraft:item/spectre_shovel"},
+    {"predicate":{"custom_model_data":329},"model":"minecraft:item/spectre_axe"},
+    {"predicate":{"custom_model_data":330},"model":"minecraft:item/spectre_hoe"},
+    {"predicate":{"custom_model_data":331},"model":"minecraft:item/spectre_pickaxe"},
+    {"predicate":{"custom_model_data":332},"model":"minecraft:item/spectre_sword"},
+    {"predicate":{"custom_model_data":333},"model":"minecraft:item/dragons_shards"},
+    {"predicate":{"custom_model_data":334},"model":"minecraft:item/anchor"},
+    {"predicate":{"custom_model_data":335},"model":"minecraft:item/dragons_apprentice_left_arm"},
+    {"predicate":{"custom_model_data":336},"model":"minecraft:item/v2_arm"},    
+    {"predicate":{"custom_model_data":337},"model":"minecraft:item/v2_arm_extended"}, 
+    {"predicate":{"custom_model_data":387},"model":"minecraft:item/crescent_moon2"}
+  ]
+}

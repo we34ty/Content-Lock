@@ -1,0 +1,148 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "content_lock:item/carapacer/white_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "content_lock:item/carapacer/body"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "content_lock:item/carapacer/left"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "content_lock:item/carapacer/right"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "content_lock:item/carapacer/right2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "content_lock:item/carapacer/left2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 7
+			},
+			"model": "content_lock:item/carapacer/top_mouth2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 8
+			},
+			"model": "content_lock:item/carapacer/top_mouth"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 9
+			},
+			"model": "content_lock:item/carapacer/bottom_mouth"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 10
+			},
+			"model": "content_lock:item/carapacer/main_head"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 11
+			},
+			"model": "content_lock:item/carapacer/damaged/body"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 12
+			},
+			"model": "content_lock:item/carapacer/damaged/left"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 13
+			},
+			"model": "content_lock:item/carapacer/damaged/right"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 14
+			},
+			"model": "content_lock:item/carapacer/damaged/right2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 15
+			},
+			"model": "content_lock:item/carapacer/damaged/left2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 16
+			},
+			"model": "content_lock:item/carapacer/damaged/top_mouth2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 17
+			},
+			"model": "content_lock:item/carapacer/damaged/top_mouth"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 18
+			},
+			"model": "content_lock:item/carapacer/damaged/bottom_mouth"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 19
+			},
+			"model": "content_lock:item/carapacer/damaged/main_head"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"carapacer": {
+				"used_ids": [
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19
+				]
+			}
+		}
+	}
+}

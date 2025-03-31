@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/ender_dragon_laser",
+		"particle": "item/ender_dragon_laser"
+	},
+	"elements": [
+		{
+			"name": "dragon_laser_inside",
+			"from": [5, 1, -16],
+			"to": [11, 7, 32],
+			"faces": {
+				"north": {"uv": [3, 3, 4.5, 4.5], "texture": "#0"},
+				"east": {"uv": [1.5, 15, 0, 3], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [3, 3, 4.5, 4.5], "texture": "#0"},
+				"west": {"uv": [0, 3, 1.5, 15], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [1.5, 15, 0, 3], "texture": "#0"},
+				"down": {"uv": [0, 3, 1.5, 15], "texture": "#0"}
+			}
+		},
+		{
+			"name": "dragon_laser_outside",
+			"from": [4, 0, -16],
+			"to": [12, 8, 32],
+			"faces": {
+				"north": {"uv": [3, 4.5, 4.5, 6], "texture": "#0"},
+				"east": {"uv": [3, 15, 1.5, 3], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [3, 4.5, 4.5, 6], "texture": "#0"},
+				"west": {"uv": [1.5, 3, 3, 15], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [3, 15, 1.5, 3], "texture": "#0"},
+				"down": {"uv": [1.5, 3, 3, 15], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

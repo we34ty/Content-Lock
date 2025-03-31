@@ -1,6 +1,6 @@
 ## Drop all items in `m_graves:grave_storage`. Requires $(id), $(count), and $(components) correspond to 
 ## the nbt of the last item in `m_graves:grave_storage`.
-$summon item ~ ~ ~ {Item:{id:"$(id)",count:$(count),components:$(components)}}
+$summon item ~ ~ ~ {Item:{id:"$(id)",count:$(count),components:$(components)},Age:4800}
 data remove storage m_graves:grave_storage Items[-1]
 
 # Ensure next item in `m_graves:grave_storage` has a components value before recursing

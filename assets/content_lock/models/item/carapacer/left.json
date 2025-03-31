@@ -1,0 +1,84 @@
+{
+	"textures": {
+		"0": "minecraft:item/carapacer_small_legs"
+	},
+	"elements": [
+		{
+			"from": [
+				2,
+				8,
+				11
+			],
+			"to": [
+				5,
+				20,
+				14
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						6,
+						1.5,
+						12
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						6,
+						0,
+						7.5,
+						6
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						1.5,
+						6,
+						3,
+						12
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						3,
+						6,
+						4.5,
+						12
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						3,
+						13.5,
+						1.5,
+						12
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						13.5,
+						1.5,
+						12,
+						3
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

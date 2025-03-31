@@ -1,0 +1,355 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "minecraft:include/space"
+        },
+        {
+            "type": "reference",
+            "id": "minecraft:include/default",
+            "filter": {
+                "uniform": false
+            }
+        },
+        {
+            "type": "reference",
+            "id": "minecraft:include/unifont"
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed1.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE000"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed3.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE001"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed4.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE002"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed5.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed6.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE004"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost1.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE005"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost2.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE006"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost3.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE007"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost4.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE008"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost5.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE009"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption1.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE010"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption2.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE011"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption3.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE012"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption4.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE013"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption5.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE014"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina1.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE015"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina2.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE016"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina3.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE017"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina4.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE018"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina5.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE019"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina6.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE020"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina7.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE021"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina8.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE022"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina9.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE023"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina10.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE024"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina11.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE025"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina12.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE026"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina13.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE027"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina14.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE028"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina15.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE029"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina16.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE030"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina17.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE031"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina18.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE032"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina19.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE033"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina20.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE034"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina21.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE035"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina22.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE036"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina23.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE037"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina24.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE038"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina25.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE039"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina26.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE040"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina27.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE041"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina28.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE042"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina29.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE043"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost6.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE044"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost7.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE045"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost8.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE046"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost9.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE047"]
+        }
+    ]
+}
