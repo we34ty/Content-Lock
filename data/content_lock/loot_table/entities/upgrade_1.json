@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snout_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "content_lock:smithing_template.ingredients",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "translate": "content_lock:smithing_template.smithing_template",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "content_lock:smithing_template.applies_to",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " ",
+                  "extra": [
+                    {
+                      "translate": "content_lock:smithing_template.snout_armor_trim.applies_to",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  "italic": false
+                },
+                {
+                  "translate": "content_lock:smithing_template.ingredients_low",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " ",
+                  "extra": [
+                    {
+                      "translate": "content_lock:smithing_template.snout_armor_trim.ingredients",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

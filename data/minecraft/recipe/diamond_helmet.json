@@ -1,9 +1,46 @@
 {
-    "type": "crafting_shapeless",
-    "ingredients": [
-        "structure_void"
-    ],
-    "result": {
-        "id": "dirt"
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:iron_helmet",
+  "addition": "minecraft:diamond",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_helmet",
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 2,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": -0.09,
+            "operation": "add_multiplied_base",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:knockback_resistance",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.1,
+            "operation": "add_value",
+            "slot": "head"
+          }
+        ],
+        "show_in_tooltip": true
+      },
+      "minecraft:max_damage": 260
     }
+  }
 }

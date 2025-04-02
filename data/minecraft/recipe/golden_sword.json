@@ -1,6 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": "minecraft:gold_block",
+  "addition": "minecraft:gold_ingot",
+  "template": "minecraft:snout_armor_trim_smithing_template",
   "base": "minecraft:stone_sword",
   "result": {
     "components": {

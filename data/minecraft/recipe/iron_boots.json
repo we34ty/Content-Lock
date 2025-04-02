@@ -1,7 +1,8 @@
 {
   "type": "minecraft:smithing_transform",
   "base": "minecraft:chainmail_boots",
-  "addition": "minecraft:iron_block",
+  "addition": "minecraft:iron_ingot",
+  "template": "minecraft:snout_armor_trim_smithing_template",
   "result": {
     "count": 1,
     "id": "minecraft:iron_boots",

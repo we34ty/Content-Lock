@@ -18,7 +18,7 @@
       "custom_data": {
         "content_lock.magical_dust": true
       },
-      "item_name": "\"Spellbound Dust\"",
+      "item_name": "{\"translate\":\"content_lock:magic_powder\"}",
       "item_model": "blaze_powder"
     }
   }

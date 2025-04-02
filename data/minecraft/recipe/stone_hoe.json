@@ -8,6 +8,7 @@
     "minecraft:deepslate",
     "minecraft:cobbled_deepslate"
   ],
+  "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "components": {
       "minecraft:attribute_modifiers": {

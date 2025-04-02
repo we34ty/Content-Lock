@@ -16,7 +16,7 @@
     "count": 1,
     "id": "minecraft:structure_void",
     "components": {
-      "minecraft:item_name": "\"Small Experience Bundle\"",
+      "minecraft:item_name": "{\"translate\":\"content_lock:xp_bundle_1\"}",
       "minecraft:rarity": "uncommon",
       "item_model": "minecraft:yellow_bundle"
     }

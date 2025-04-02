@@ -165,7 +165,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:wild_armor_trim_smithing_template"
+          "name": "minecraft:wayfinder_armor_trim_smithing_template"
         }
       ],
       "rolls": 1.0
