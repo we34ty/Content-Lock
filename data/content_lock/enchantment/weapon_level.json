@@ -1,6 +1,6 @@
 {
   "description": {
-    "text": "Weapon Level",
+    "translate": "content_lock:enchantment.armor_level",
     "color": "#9920d9"
   },
   "supported_items": "#content_lock:enchantable/weapon",

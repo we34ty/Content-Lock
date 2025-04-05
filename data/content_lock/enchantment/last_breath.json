@@ -1,7 +1,9 @@
 {
   "exclusive_set": "#content_lock:material_specific",
   "anvil_cost": 100,
-  "description": "Last Breath",
+  "description": {
+    "translate": "content_lock:enchantment.last_breath"
+  },
   "max_cost": {
     "base": 20,
     "per_level_above_first": 10
@@ -24,7 +26,7 @@
           "condition": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
-            "health_percentage": {
+            "content_lock.health_percentage": {
               "max": {
                 "type": "minecraft:enchantment_level",
                 "amount": {

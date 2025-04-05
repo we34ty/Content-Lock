@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Book Of Undead",
+                "translate": "content_lock:item.undead_book",
                 "color": "#d400ff"
               },
               "target": "item_name"

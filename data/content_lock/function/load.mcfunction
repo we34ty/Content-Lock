@@ -220,7 +220,7 @@ scoreboard objectives add content_lock.atkrng_from_level dummy
 scoreboard objectives add content_lock.eqld_from_level dummy
 scoreboard objectives add content_lock.mvtspd_from_level dummy
 
-bossbar add content_lock.enchanted_witch {"text":"Enchanted Witch","bold":true,"color":"light_purple"}
+bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
 bossbar set content_lock.enchanted_witch style notched_6
 bossbar set content_lock.enchanted_witch max 250
@@ -305,12 +305,12 @@ bossbar set content_lock.crescent_moon_bullets color yellow
 bossbar set content_lock.crescent_moon_bullets style notched_6
 bossbar set content_lock.crescent_moon_bullets max 6
 
-bossbar add content_lock.iron_guardian {"text":"Iron Guardian","bold":true,"color":"gray"}
+bossbar add content_lock.iron_guardian {"translate":"content_lock:boss.iron_guardian","bold":true,"color":"gray"}
 bossbar set content_lock.iron_guardian color white
 bossbar set content_lock.iron_guardian style notched_6
 bossbar set content_lock.iron_guardian max 200
 
-bossbar add content_lock.death_rider {"text":"Marfeth the Death Rider","bold":true,"color":"dark_gray"}
+bossbar add content_lock.death_rider {"translate":"content_lock:boss.death_rider","bold":true,"color":"dark_gray"}
 bossbar set content_lock.death_rider color white
 bossbar set content_lock.death_rider style notched_6
 bossbar set content_lock.death_rider max 100

@@ -19,7 +19,7 @@
                 "custom_data": {
                   "content_lock.magical_dust": true
                 },
-                "item_name": "\"Spellbound Dust\"",
+                "item_name": "{\"translate\":\"content_lock:item.magic_powder\"}",
                 "item_model": "blaze_powder"
               }
             },
@@ -52,7 +52,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Enchanted Witch's Skull",
+                "translate": "content_lock:item.witchs_skull",
                 "color": "#d400ff",
                 "italic": false
               }
@@ -127,7 +127,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Enchanted Witch's Spellbook",
+                "translate": "content_lock:item.witchs_book",
                 "color": "#d400ff"
               },
               "target": "item_name"

@@ -1,4 +1,4 @@
 #advancement grant @a[distance=0..40] only content_lock:minecraft/iron_guardian_spawn
 kill @s
 kill @e[nbt={Item:{id:"minecraft:raw_iron",count:7}},distance=0..1] 
-summon iron_golem ~ ~ ~ {DeathLootTable:"content_lock:entities/iron_guardian",CustomName:'[{"text":"Iron Guardian","color":"gray","bold":true}]',CustomNameVisible:1b,Health:200,Glowing:1b,PersistenceRequired:1b,Tags:["content_lock.boss","content_lock.iron_guardian"],attributes:[{id:max_health,base:200f},{id:knockback_resistance,base:0.3f},{id:movement_speed,base:0.3f},{id:attack_knockback,base:3f},{id:scale,base:1.5f},{id:attack_damage,base:5f}]}
+summon iron_golem ~ ~ ~ {DeathLootTable:"content_lock:entities/iron_guardian",CustomName:'[{"translate":"content_lock:boss.iron_guardian","color":"gray","bold":true}]',CustomNameVisible:1b,Health:200,Glowing:1b,PersistenceRequired:1b,Tags:["content_lock.boss","content_lock.iron_guardian"],attributes:[{id:max_health,base:200f},{id:knockback_resistance,base:0.3f},{id:movement_speed,base:0.3f},{id:attack_knockback,base:3f},{id:scale,base:1.5f},{id:attack_damage,base:5f}]}

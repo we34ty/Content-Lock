@@ -18,18 +18,18 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "translate": "content_lock:smithing_template.ingredients",
+                  "translate": "content_lock:item.smithing_template.ingredients",
                   "color": "blue",
                   "italic": false
                 },
                 {
-                  "translate": "content_lock:smithing_template.smithing_template",
+                  "translate": "content_lock:item.smithing_template.smithing_template",
                   "color": "gray",
                   "italic": false
                 },
                 "",
                 {
-                  "translate": "content_lock:smithing_template.applies_to",
+                  "translate": "content_lock:item.smithing_template.applies_to",
                   "color": "gray",
                   "italic": false
                 },
@@ -37,7 +37,7 @@
                   "text": " ",
                   "extra": [
                     {
-                      "translate": "content_lock:smithing_template.snout_armor_trim.applies_to",
+                      "translate": "content_lock:item.smithing_template.snout_armor_trim.applies_to",
                       "color": "blue",
                       "italic": false
                     }
@@ -45,7 +45,7 @@
                   "italic": false
                 },
                 {
-                  "translate": "content_lock:smithing_template.ingredients_low",
+                  "translate": "content_lock:item.smithing_template.ingredients_low",
                   "color": "gray",
                   "italic": false
                 },
@@ -53,7 +53,7 @@
                   "text": " ",
                   "extra": [
                     {
-                      "translate": "content_lock:smithing_template.snout_armor_trim.ingredients",
+                      "translate": "content_lock:item.smithing_template.snout_armor_trim.ingredients",
                       "color": "blue",
                       "italic": false
                     }

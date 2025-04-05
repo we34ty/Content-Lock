@@ -1,7 +1,9 @@
 {
   "exclusive_set": "#content_lock:material_specific",
   "anvil_cost": 100,
-  "description": "Cavalry",
+  "description": {
+    "translate": "content_lock:enchantment.cavalry"
+  },
   "effects": {
     "minecraft:location_changed": [
       {

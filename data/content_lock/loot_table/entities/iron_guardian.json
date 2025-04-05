@@ -46,7 +46,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Iron Guardian's Shovel",
+                "translate": "content_lock:item.guardian_shovel",
                 "color": "#9c9c9c",
                 "italic": false
               }
@@ -125,7 +125,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Iron Guardian's Heart",
+                "translate": "content_lock:item.guardian_heart",
                 "color": "#a1a1a1",
                 "italic": false
               }

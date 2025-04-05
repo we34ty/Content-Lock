@@ -1,7 +1,9 @@
 {
   "exclusive_set": "#content_lock:material_specific",
   "anvil_cost": 100,
-  "description": "Splinter",
+  "description": {
+    "translate": "content_lock:enchantment.splinter"
+  },
   "effects": {
     "minecraft:post_attack": [
       {
