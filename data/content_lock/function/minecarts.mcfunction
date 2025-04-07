@@ -1,0 +1,1 @@
+gamerule minecartMaxSpeed 32

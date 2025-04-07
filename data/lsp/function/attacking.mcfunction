@@ -1,3 +1,4 @@
+data merge storage content_lock:saved_stats {attack_speed:0.0f}
 execute store result storage content_lock:saved_stats attack_speed float 1 run attribute @s attack_speed get
 execute store result score @s content_lock.temp1 run data get storage content_lock:saved_stats attack_speed 30
 scoreboard players set @s[scores={content_lock.temp1=61..}] content_lock.temp1 60

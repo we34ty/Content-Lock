@@ -1,3 +1,4 @@
+data merge storage content_lock:saved_stats {playersSleepingPercentage:100}
 execute store result storage content_lock:saved_stats playersSleepingPercentage int 1 run gamerule playersSleepingPercentage
 gamerule playersSleepingPercentage 101
 scoreboard players add L content_lock.nights_skipped_in_a_row 2

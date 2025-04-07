@@ -348,7 +348,7 @@ scoreboard players add L content_lock.officers_killed 0
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
 gamerule doInsomnia false
-gamerule minecartMaxSpeed 32
+function content_lock:minecarts
 
 #pretty important
 scoreboard players set L content_lock.temporary_health_holder 1000
