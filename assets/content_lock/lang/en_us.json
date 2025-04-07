@@ -54,5 +54,7 @@
     "content_lock:levels.no_skill_points": "You don't have any unused Skill Points",
     "content_lock:levels.skill_points_1": "You've got ",
     "content_lock:levels.skill_points_2": " unused Skill Points",
+    "content_lock:advancement.creeper.title": "Aw Man",
+    "content_lock:advancement.creeper.description": "Take damage from Creeper's explosion",
     "content_lock:notifications.too_many_skipped_nights": "You have skipped too many nights in a row! The next 3 nights will be restless."
 }
