@@ -5,6 +5,9 @@ attribute @s[scores={content_lock.temp1=1}] movement_speed modifier add content_
 attribute @s[scores={content_lock.temp1=2}] scale modifier add content_lock.customized_content_lock -0.5 add_multiplied_base
 attribute @s[scores={content_lock.temp1=2}] max_health modifier add content_lock.customized_content_lock -0.5 add_multiplied_total
 attribute @s[scores={content_lock.temp1=2}] movement_speed modifier add content_lock.customized_content_lock 0.45 add_multiplied_total
+execute if score L content_lock.nights_skipped_in_a_row matches 6.. if score @s content_lock.temp1 matches 3 run summon phantom
+execute if score L content_lock.nights_skipped_in_a_row matches 6.. if score @s content_lock.temp1 matches 3 run function content_lock:mobs/bosses/boss_despawn
+
 
 attribute @s max_health modifier add content_lock.customized_content_lock -0.3 add_multiplied_total
 attribute @s movement_speed modifier add content_lock.customized_content_lock 0.25 add_multiplied_total

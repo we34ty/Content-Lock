@@ -5,5 +5,5 @@ execute at @a if entity @e[type=experience_orb,distance=0..10,limit=1,sort=rando
 
 execute if entity @e[tag=content_lock.splintered] as @e[tag=content_lock.splintered] run function content_lock:player/enchantments/splinter_countdown
 
-function content_lock:mobs/passives/shops/time_check_for_shop_refresh
+#function content_lock:mobs/passives/shops/time_check_for_shop_refresh
 function content_lock:mobs/bosses/check_for_bosses

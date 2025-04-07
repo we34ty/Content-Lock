@@ -219,6 +219,11 @@ scoreboard objectives add content_lock.atkspd_from_level dummy
 scoreboard objectives add content_lock.atkrng_from_level dummy
 scoreboard objectives add content_lock.eqld_from_level dummy
 scoreboard objectives add content_lock.mvtspd_from_level dummy
+scoreboard objectives add content_lock.stored_x dummy
+scoreboard objectives add content_lock.stored_y dummy
+scoreboard objectives add content_lock.stored_z dummy
+scoreboard objectives add content_lock.nights_skipped_in_a_row dummy
+scoreboard objectives add content_lock.time_since_rest minecraft.custom:minecraft.time_since_rest
 
 bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
@@ -340,7 +345,7 @@ scoreboard players add L content_lock.mana_mile 0
 scoreboard players add L content_lock.zombified_piglin_princess_killed 0
 scoreboard players add L content_lock.officers_killed 0
 
-gamerule playersSleepingPercentage 101
+#gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
 gamerule doInsomnia false
 gamerule minecartMaxSpeed 32

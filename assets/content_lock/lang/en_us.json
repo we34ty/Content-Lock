@@ -53,5 +53,6 @@
     "content_lock:levels.range.description": "Increases the range at which you can interact with entities by 2.5%% and blocks by 5%%",
     "content_lock:levels.no_skill_points": "You don't have any unused Skill Points",
     "content_lock:levels.skill_points_1": "You've got ",
-    "content_lock:levels.skill_points_2": " unused Skill Points"
+    "content_lock:levels.skill_points_2": " unused Skill Points",
+    "content_lock:notifications.too_many_skipped_nights": "You have skipped too many nights in a row! The next 3 nights will be restless."
 }

@@ -3,7 +3,7 @@
 tag @s add content_lock.remove_graves
 execute as @e[type=marker,tag=multipack.grave_marker] if score @s multipack.graves = @r[tag=content_lock.remove_graves] multipack.graves at @s run function m_graves:graves/open_grave
 tag @s remove content_lock.remove_graves
-say loi
+#say loi
 summon interaction ~ ~ ~ {Tags:["multipack.grave_interaction"],width:1.3f,height:1f}
 summon marker ~ ~ ~ {Tags:["multipack.grave_marker"]}
 data modify entity @n[distance=..0.1,type=marker,tag=multipack.grave_marker] data set from storage m_graves:grave_storage
@@ -19,4 +19,4 @@ execute if score &playersDead multipack.temp matches 1 run summon text_display ~
 summon text_display ~ ~ ~ {alignment:"center",Tags:["multipack.grave_display"],transformation:{left_rotation:[0f,0f,0.125f,1f],right_rotation:[0f,1f,0f,1f],translation:[-0.62f,0.74f,0f],scale:[0.74f,0.74f,0.74f]},text:'{"text":"R.I.P"}',background:0}
 scoreboard players reset &playersDead multipack.temp
 
-summon zombie ~ ~ ~ {PersistenceRequired:true,active_effects:[{id:fire_resistance,ambient:true,duration:-1}],attributes:[{id:spawn_reinforcements,base:0.5f},{id:"armor",base:10f},{id:"armor_toughness",base:10f},{id:"follow_range",base:100f}]}
+#summon zombie ~ ~ ~ {PersistenceRequired:true,active_effects:[{id:fire_resistance,ambient:true,duration:-1}],attributes:[{id:spawn_reinforcements,base:0.5f},{id:"armor",base:10f},{id:"armor_toughness",base:10f},{id:"follow_range",base:100f}]}
