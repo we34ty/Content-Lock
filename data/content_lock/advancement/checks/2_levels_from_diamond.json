@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "content_lock:xp/2_levels_from_diamond"
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:player/levels/recipe/2_levels"
+  }
+}

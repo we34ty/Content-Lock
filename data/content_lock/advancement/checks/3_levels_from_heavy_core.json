@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "content_lock:xp/3_levels_from_heavy_core"
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:player/levels/recipe/3_levels"
+  }
+}

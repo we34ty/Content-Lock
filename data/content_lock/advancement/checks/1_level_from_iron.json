@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "content_lock:xp/1_level_from_iron"
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:player/levels/recipe/1_level"
+  }
+}
