@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:netherite_ingot",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:golden_leggings",
+  "result": {
+    "count": 1,
+    "id": "minecraft:netherite_leggings",
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 3,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 3,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": -0.18,
+            "operation": "add_multiplied_base",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:knockback_resistance",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.1,
+            "operation": "add_value",
+            "slot": "legs"
+          }
+        ],
+        "show_in_tooltip": true
+      },
+      "minecraft:max_damage": 470
+    }
+  }
+}

@@ -10,8 +10,8 @@
         },
         {
           "type": "minecraft:loot_table",
-          "value": "content_lock:enchantments/chest_obtainable",
-          "weight": 4
+          "value": "content_lock:enchantments/archeology_obtainable",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -56,6 +56,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_relic"
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:creeper_drop_music_discs",
+          "expand": true
         }
       ],
       "rolls": 1.0

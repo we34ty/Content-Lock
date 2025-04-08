@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:netherite_ingot",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:golden_axe",
+  "result": {
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 5.3,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.05,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          }
+        ],
+        "show_in_tooltip": true
+      },
+      "minecraft:max_damage": 158,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/axe",
+            "speed": 3,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+    },
+    "count": 1,
+    "id": "minecraft:netherite_axe"
+  }
+}

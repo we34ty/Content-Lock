@@ -10,7 +10,8 @@
         },
         {
           "type": "minecraft:loot_table",
-          "value": "content_lock:enchantments/chest_obtainable"
+          "value": "content_lock:enchantments/archeology_obtainable",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -26,21 +27,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_axe"
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:emerald",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:wheat",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:wooden_hoe",
           "weight": 2
         },
         {
@@ -50,8 +37,24 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_nugget",
+          "name": "minecraft:gold_ingot",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:melon_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sponge"
         }
       ],
       "rolls": 1.0
