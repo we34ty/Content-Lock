@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:taiga",
+    "minecraft:old_growth_pine_taiga"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "content_lock:sigma",
+  "size": 1,
+  "start_height": {
+    "absolute": -22
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 1,
+  "use_expansion_hack": false
+}

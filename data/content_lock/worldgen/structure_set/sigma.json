@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:sigma",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 24,
+    "spacing": 44,
+    "salt": 1264784612
+  }
+}

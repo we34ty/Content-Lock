@@ -1,5 +1,5 @@
 #stopsound @a[tag=!listening_to_music,distance=0..80] music
-$execute as @a[distance=0..80,tag=!listening_to_music] at @s run playsound $(song) music @s ~ ~ ~ 1 1
+$execute as @a[distance=0..80,tag=!content_lock.listening_to_music] at @s run playsound $(song) music @s ~ ~ ~ 1 1
 tag @a[distance=0..80,tag=!content_lock.listening_to_music] add content_lock.listening_to_music
 #stopsound @a[tag=listening_to_music,distance=81..100] music
 tag @a[tag=content_lock.listening_to_music,distance=81..100] remove content_lock.listening_to_music

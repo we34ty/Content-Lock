@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:skulo",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 50,
+    "spacing": 80,
+    "salt": 1264784612
+  }
+}

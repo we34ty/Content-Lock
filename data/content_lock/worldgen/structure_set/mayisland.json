@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:mayisland",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 25,
+    "spacing": 40,
+    "salt": 1264784612
+  }
+}
