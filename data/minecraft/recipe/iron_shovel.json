@@ -5,12 +5,6 @@
   "template": "minecraft:snout_armor_trim_smithing_template",
   "result": {
     "components": {
-      "minecraft:consumable": {
-        "consume_seconds": 326789,
-        "animation": "spear",
-        "has_consume_particles": false,
-        "on_consume_effects": []
-      },
       "minecraft:attribute_modifiers": {
         "modifiers": [
           {
