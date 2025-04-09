@@ -6,7 +6,7 @@ function content_lock:player/passives/health_regen
 function content_lock:player/items/tick
 function content_lock:player/remove_bossbar
 execute if score L content_lock.timer1 matches 4 as @a run function content_lock:player/levels/check_level
-execute if entity @r[scores={content_lock.spoken_with_villager=1..}] as @a[scores={content_lock.spoken_with_villager=1..}] run function content_lock:player/check_villager_for_leveling
+execute if entity @r[scores={content_lock.spoken_with_villager=1..}] as @a[scores={content_lock.spoken_with_villager=1..}] run function content_lock:player/passives/check_for_villager_spoken
 
 execute if entity @r[scores={content_lock.cavalry_counter=1}] as @a[scores={content_lock.cavalry_counter=1}] run function content_lock:player/enchantments/cavalry_disable
 execute if entity @r[scores={content_lock.cavalry_counter=1..}] as @a[scores={content_lock.cavalry_counter=1..}] run scoreboard players remove @s content_lock.cavalry_counter 1
