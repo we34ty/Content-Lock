@@ -5,7 +5,7 @@
         "weight": 1,
         "element": {
           "element_type": "minecraft:single_pool_element",
-          "location": "content_lock:sigma/sigma",
+          "location": "content_lock:wanna/wanna",
           "projection": "rigid",
           "processors": "minecraft:empty",
           "override_liquid_settings": "ignore_waterlogging"

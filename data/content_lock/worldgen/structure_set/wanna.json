@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:wanna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 4,
+    "spacing": 6,
+    "salt": 1269784612
+  }
+}
