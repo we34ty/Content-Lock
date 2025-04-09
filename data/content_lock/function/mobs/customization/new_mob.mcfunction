@@ -15,7 +15,6 @@ execute if entity @s[type=blaze] run function content_lock:mobs/customization/bl
 execute if entity @s[type=silverfish] run function content_lock:mobs/customization/silverfish
 execute if entity @s[type=bat] run function content_lock:mobs/customization/bat
 
-
 execute store result entity @s Health float 1 run attribute @s max_health get
-attribute @s follow_range modifier add content_lock.customized_content_lock 1 add_multiplied_total
+attribute @s follow_range modifier add content_lock.customized_content_lock 2 add_multiplied_total
 tag @s add content_lock.customized

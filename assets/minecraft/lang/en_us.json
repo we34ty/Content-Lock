@@ -4,5 +4,6 @@
   "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Iron & Golden Equipment",
   "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Diamond or Netherite Ingot",
   "item.minecraft.snout_armor_trim_smithing_template.new": "Iron & Golden Upgrade",
-  "item.minecraft.wild_armor_trim_smithing_template.new": "Chainmail & Stone Upgrade"
+  "item.minecraft.wild_armor_trim_smithing_template.new": "Chainmail & Stone Upgrade",
+  "attribute.name.movement_efficiency": "Stamina"
 }
