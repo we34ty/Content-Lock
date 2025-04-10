@@ -1,29 +1,19 @@
 {
   "placement": {
     "type": "minecraft:random_spread",
-    "salt": 10587112,
-    "separation": 48,
-    "spacing": 94
+    "frequency": 0.001,
+    "frequency_reduction_method": "legacy_type_3",
+    "salt": 0,
+    "separation": 0,
+    "spacing": 1
   },
   "structures": [
     {
-      "structure": "minecraft:village_plains",
+      "structure": "minecraft:mineshaft",
       "weight": 1
     },
     {
-      "structure": "minecraft:village_desert",
-      "weight": 1
-    },
-    {
-      "structure": "minecraft:village_savanna",
-      "weight": 1
-    },
-    {
-      "structure": "minecraft:village_snowy",
-      "weight": 1
-    },
-    {
-      "structure": "minecraft:village_taiga",
+      "structure": "minecraft:mineshaft_mesa",
       "weight": 1
     }
   ]
