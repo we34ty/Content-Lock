@@ -1,0 +1,2 @@
+execute unless score L content_lock.progression matches 1.. if predicate content_lock:is_night run time add 6
+execute if score L content_lock.progression matches 1.. if predicate content_lock:is_night run time add 6

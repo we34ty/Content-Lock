@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:spider_eye",
+    "minecraft:enchanted_book",
+    "minecraft:spider_eye",
+    "minecraft:lapis_lazuli",
+    "minecraft:glass_bottle",
+    "minecraft:amethyst_shard"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_dye",
+    "components": {
+      "custom_data": {
+        "content_lock.enchanted_witch_summon": true
+      },
+      "item_name": "{\"translate\":\"content_lock:item.boss_summon.enchanted_witch\"}",
+      "item_model": "minecraft:ominous_bottle",
+      "consumable": {
+        "animation": "drink",
+        "consume_seconds": 42342534
+      },
+      "rarity": "uncommon",
+      "enchantment_glint_override": true,
+      "max_stack_size": 1
+    }
+  }
+}

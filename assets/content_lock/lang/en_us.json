@@ -1,6 +1,5 @@
 {
     "content_lock:item.magic_powder": "Spellbound Dust",
-    "content_lock:item.magic_powder.not_enough": "Not enough Spellbound Dust",
     "content_lock:item.xp_bundle_1": "Small Experience Bundle",
     "content_lock:item.xp_bundle_2": "Hefty Experience Bundle",
     "content_lock:item.xp_bundle_3": "Heavy Experience Bundle",
@@ -21,6 +20,7 @@
     "content_lock:item.smithing_template.applies_to": "Applies to:",
     "content_lock:item.smithing_template.ingredients_low": "Ingredients:",
     "content_lock:item.smithing_template.smithing_template": "Smithing Template",
+    "content_lock:item.boss_summon.enchanted_witch": "Enchanted Witch Summoning Potion",
     "content_lock:enchantment.armor_level": "Armor Level",
     "content_lock:enchantment.weapon_level": "Weapon Level",
     "content_lock:enchantment.cavalry": "Cavalry",
@@ -60,5 +60,8 @@
     "content_lock:levels.skill_points_2": " unused Skill Points",
     "content_lock:advancement.creeper.title": "Aw Man",
     "content_lock:advancement.creeper.description": "Take damage from Creeper's explosion",
-    "content_lock:notifications.too_many_skipped_nights": "You have skipped too many nights in a row! The next 3 nights will be restless."
+    "content_lock:notifications.too_many_skipped_nights": "You have skipped too many nights in a row! The next 3 nights will be restless.",
+    "content_lock:notifications.boss_already_exists": "Only one boss can be summoned at a time.",
+    "content_lock:notifications.magic_powder.not_enough": "Not enough Spellbound Dust",
+    "content_lock:notifications.boss_summoned.enchanted_witch": "Enchanted Witch has been summoned!"
 }

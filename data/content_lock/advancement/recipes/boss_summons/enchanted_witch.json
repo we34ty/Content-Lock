@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chain": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:chain"
+            "items": "minecraft:enchanted_book"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:armor/chainmail_boots"
+        "recipe": "content_lock:boss_summons/enchanted_witch"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,15 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_chain"
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "content_lock:armor/chainmail_boots",
-      "content_lock:armor/chainmail_chestplate",
-      "content_lock:armor/chainmail_helmet",
-      "content_lock:armor/chainmail_leggings"
+      "content_lock:boss_summons/enchanted_witch"
     ]
   }
 }
