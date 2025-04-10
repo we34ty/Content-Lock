@@ -70,8 +70,8 @@
                   "id": "content_lock.guardian_shovel",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": -3.6,
-                    "max": -3.2
+                    "min": -3.4,
+                    "max": -3
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
@@ -109,7 +109,7 @@
                   "has_consume_particles": false,
                   "on_consume_effects": []
                 },
-                "minecraft:max_damage": 47,
+                "minecraft:max_damage": 94,
                 "minecraft:custom_data": {
                   "content_lock.guardian_shovel": true
                 }

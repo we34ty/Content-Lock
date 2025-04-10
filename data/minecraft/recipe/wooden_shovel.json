@@ -17,7 +17,7 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 7.7,
+            "amount": 7.2,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -52,7 +52,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 60,
+      "minecraft:max_damage": 80,
       "minecraft:tool": {
         "rules": [
           {

@@ -16,7 +16,7 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 4.8,
+            "amount": 5.2,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -58,7 +58,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 117
+      "minecraft:max_damage": 138
     },
     "count": 1,
     "id": "minecraft:stone_sword"
