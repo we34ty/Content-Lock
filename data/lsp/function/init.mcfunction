@@ -17,5 +17,5 @@ scoreboard objectives add lsp.stamina dummy
 
     # these values determine how fast/slow stamina is lost/gained
     scoreboard players set sprint.stamina.consumption lsp.Values 1
-    scoreboard players set sprint.stamina.restoration lsp.Values 2
-    scoreboard players set sprint.stamina.jump.consumption lsp.Values 5
+    scoreboard players set sprint.stamina.restoration lsp.Values 4
+    scoreboard players set sprint.stamina.jump.consumption lsp.Values 30
