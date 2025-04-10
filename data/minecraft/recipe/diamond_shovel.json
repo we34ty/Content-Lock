@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:iron_shovel",
+  "base": "minecraft:golden_shovel",
   "addition": "minecraft:diamond",
   "template": "minecraft:netherite_upgrade_smithing_template",
   "result": {
@@ -10,14 +10,14 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 6.7,
+            "amount": 9.9,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -3.2,
+            "amount": -3,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -45,7 +45,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 46,
+      "minecraft:max_damage": 28,
       "minecraft:tool": {
         "rules": [
           {

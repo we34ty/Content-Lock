@@ -2,7 +2,7 @@
   "type": "minecraft:smithing_transform",
   "addition": "minecraft:netherite_ingot",
   "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "minecraft:golden_helmet",
+  "base": "minecraft:iron_helmet",
   "result": {
     "count": 1,
     "id": "minecraft:netherite_helmet",

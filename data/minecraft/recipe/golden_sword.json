@@ -10,7 +10,7 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 3.3,
+            "amount": 3.8,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -24,7 +24,7 @@
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -2.4,
+            "amount": -2,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -52,7 +52,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 188
+      "minecraft:max_damage": 118
     },
     "count": 1,
     "id": "minecraft:golden_sword"

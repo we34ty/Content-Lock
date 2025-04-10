@@ -2,7 +2,7 @@
   "type": "minecraft:smithing_transform",
   "addition": "minecraft:netherite_ingot",
   "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "minecraft:golden_hoe",
+  "base": "minecraft:iron_hoe",
   "result": {
     "components": {
       "minecraft:attribute_modifiers": {
@@ -10,14 +10,14 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 2.7,
+            "amount": 2.4,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -1.5,
+            "amount": -1.6,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -45,7 +45,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 488,
+      "minecraft:max_damage": 350,
       "minecraft:tool": {
         "rules": [
           {

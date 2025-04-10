@@ -2,7 +2,7 @@
   "type": "minecraft:smithing_transform",
   "addition": "minecraft:netherite_ingot",
   "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "minecraft:golden_leggings",
+  "base": "minecraft:iron_leggings",
   "result": {
     "count": 1,
     "id": "minecraft:netherite_leggings",

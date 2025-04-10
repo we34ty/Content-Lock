@@ -1,7 +1,7 @@
 {
   "block.minecraft.deepslate_diamond_ore": "Blackstone Diamond Ore",
   "item.minecraft.netherite_upgrade_smithing_template.new": "Diamond & Netherite Upgrade",
-  "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Iron & Golden Equipment",
+  "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Golden & Iron Equipment",
   "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Diamond or Netherite Ingot",
   "item.minecraft.snout_armor_trim_smithing_template.new": "Iron & Golden Upgrade",
   "item.minecraft.wild_armor_trim_smithing_template.new": "Chainmail & Stone Upgrade",

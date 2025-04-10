@@ -2,7 +2,7 @@
   "type": "minecraft:smithing_transform",
   "addition": "minecraft:netherite_ingot",
   "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "minecraft:golden_axe",
+  "base": "minecraft:iron_axe",
   "result": {
     "components": {
       "minecraft:attribute_modifiers": {
@@ -10,14 +10,14 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 5.3,
+            "amount": 9.3,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -3.5,
+            "amount": -3.3,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -45,7 +45,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 158,
+      "minecraft:max_damage": 90,
       "minecraft:tool": {
         "rules": [
           {

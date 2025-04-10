@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:iron_sword",
+  "base": "minecraft:golden_sword",
   "addition": "minecraft:diamond",
   "template": "minecraft:netherite_upgrade_smithing_template",
   "result": {
@@ -10,7 +10,7 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 3.8,
+            "amount": 3.9,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -24,7 +24,7 @@
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -2.3,
+            "amount": -1.8,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -52,7 +52,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 132
+      "minecraft:max_damage": 87
     },
     "count": 1,
     "id": "minecraft:diamond_sword"

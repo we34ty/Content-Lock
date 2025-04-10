@@ -10,7 +10,7 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 3.6,
+            "amount": 3.4,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -24,7 +24,7 @@
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -2.4,
+            "amount": -2.2,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -52,7 +52,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 178
+      "minecraft:max_damage": 206
     },
     "count": 1,
     "id": "minecraft:iron_sword"

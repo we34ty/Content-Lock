@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:iron_helmet",
+  "base": "minecraft:golden_helmet",
   "addition": "minecraft:diamond",
   "template": "minecraft:netherite_upgrade_smithing_template",
   "result": {

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:iron_pickaxe",
+  "base": "minecraft:golden_pickaxe",
   "addition": "minecraft:diamond",
   "template": "minecraft:netherite_upgrade_smithing_template",
   "result": {
@@ -10,14 +10,14 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 5.9,
+            "amount": 12,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -3.4,
+            "amount": -3.2,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -45,7 +45,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 84,
+      "minecraft:max_damage": 28,
       "minecraft:tool": {
         "rules": [
           {
