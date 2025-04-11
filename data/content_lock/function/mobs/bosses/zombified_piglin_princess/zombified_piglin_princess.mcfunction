@@ -38,7 +38,7 @@ execute if entity @s[scores={attack_timer=120..}] run scoreboard players set @s 
 
 execute if score L timer1 matches 7 run function content_lock:bosses/boss_player_count_scaling {distance:40}
 
-function content_lock:bosses/boss_music {song:custom.corrupted_princess,duration:3940}
+function content_lock:bosses/boss_music {song:music.content_lock.corrupted_princess,duration:3940}
 
 execute as @e[tag=zombified_piglin_defense] if entity @s[team=!piglin_light] run team join piglin_light @s
 execute if entity @e[tag=zombified_piglin_defense,distance=0..30] run effect give @s resistance 1 255

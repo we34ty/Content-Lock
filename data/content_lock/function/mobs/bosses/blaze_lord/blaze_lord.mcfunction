@@ -74,7 +74,7 @@ execute if entity @s[scores={timer1=60..},tag=second_phase] run scoreboard playe
 execute if entity @s[tag=second_phase] run scoreboard players add @s timer1 1
 
 execute if score L timer1 matches 7 run function content_lock:bosses/boss_player_count_scaling {distance:40}
-execute if entity @s[tag=!second_phase] run function content_lock:bosses/boss_music {music:custom.blaze_lord_phase1,duration:4820}
-execute if entity @s[tag=second_phase] run function content_lock:bosses/boss_music {music:custom.blaze_lord_phase2,duration:4780}
+execute if entity @s[tag=!second_phase] run function content_lock:bosses/boss_music {music:music.content_lock.blaze_lord_phase1,duration:4820}
+execute if entity @s[tag=second_phase] run function content_lock:bosses/boss_music {music:music.content_lock.blaze_lord_phase2,duration:4780}
 
 summon area_effect_cloud ~ ~ ~ {Duration:2,Tags:[check_for_blaze_lord_death]} 

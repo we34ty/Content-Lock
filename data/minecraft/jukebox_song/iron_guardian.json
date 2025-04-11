@@ -1,0 +1,8 @@
+{
+    "comparator_output": 1,
+    "description": "Iron Guardian",
+    "length_in_seconds": 170.0,
+    "sound_event": {
+      "sound_id": "minecraft:music.content_lock.iron_guardian"
+    }
+ }

@@ -8,7 +8,7 @@ execute as @a[distance=0..40] store result score @s zombified_piglin_princess_ph
 execute as @a[distance=0..40] run scoreboard players set @s temporary_health_holder 50
 execute as @a[distance=0..40] run scoreboard players operation @s zombified_piglin_princess_phase_1_health -= @s temporary_health_holder
 
-function content_lock:bosses/boss_music {song:custom.corrupted_princess_enemies,duration:3860}
+function content_lock:bosses/boss_music {song:music.content_lock.corrupted_princess_enemies,duration:3860}
 
 scoreboard players set @s zombi_piglin_amount 0
 execute as @e[type=zombified_piglin,distance=0..40] run scoreboard players add @e[tag=zombified_piglin_princess_phase_1,distance=0..40] zombi_piglin_amount 1

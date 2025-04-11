@@ -14,3 +14,4 @@ execute if score @s content_lock.LevelUp.atkspd matches 1.. run function content
 execute if score @s content_lock.LevelUp.dmg matches 1.. run function content_lock:player/levels/level_up_damage
 execute if score @s content_lock.LevelUp.atkrng matches 1.. run function content_lock:player/levels/level_up_range
 execute if score @s content_lock.LevelUp.mvtspd matches 1.. run function content_lock:player/levels/level_up_movement_speed
+execute if score @s content_lock.LevelUp.close_menu matches 1.. run function content_lock:player/levels/close_menu

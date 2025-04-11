@@ -16,8 +16,8 @@ execute if entity @e[tag=wither_skeleton_revolution_leader_tentacle] as @e[tag=w
 
 execute if score L timer1 matches 7 run function content_lock:bosses/boss_player_count_scaling {distance:40}
 
-execute if entity @e[tag=ghast_revolution_leader,distance=0..40] run function content_lock:bosses/boss_music {song:custom.both_officers,duration:4400}
-execute unless entity @e[tag=ghast_revolution_leader,distance=0..40] run function content_lock:bosses/boss_music {song:custom.one_officer,duration:5520}
+execute if entity @e[tag=ghast_revolution_leader,distance=0..40] run function content_lock:bosses/boss_music {song:music.content_lock.both_officers,duration:4400}
+execute unless entity @e[tag=ghast_revolution_leader,distance=0..40] run function content_lock:bosses/boss_music {song:music.content_lock.one_officer,duration:5520}
 execute if entity @s[tag=!separated_leaders] unless entity @e[tag=ghast_revolution_leader,distance=0..40] run scoreboard players set @a[distance=0..80] RestartMusic 1
 execute unless entity @e[tag=ghast_revolution_leader,distance=0..40] run tag @s add separated_leaders
 execute if entity @s[tag=separated_leaders] if entity @e[tag=ghast_revolution_leader,distance=0..40] run scoreboard players set @a[distance=0..80] RestartMusic 1

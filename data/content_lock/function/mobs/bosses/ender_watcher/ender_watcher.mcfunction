@@ -22,7 +22,7 @@ execute if entity @e[tag=ender_watcher_light_column] as @e[tag=ender_watcher_lig
 
 execute if score L timer1 matches 7 run function content_lock:bosses/boss_player_count_scaling {distance:80}
 #function content_lock:bosses/boss_music {song:l} ???? DODAWAC CZY NIE?
-function content_lock:bosses/boss_music {song:custom.ender_watcher,duration:5160}
+function content_lock:bosses/boss_music {song:music.content_lock.ender_watcher,duration:5160}
 
 execute if entity @s[scores={attack_timer=1..}] run scoreboard players add @s attack_timer 1
 execute if entity @s[scores={attack_timer=200..}] run scoreboard players set @s attack_timer 0

@@ -32,7 +32,7 @@ execute if entity @s[tag=content_lock.iron_fist_charge] run function content_loc
 
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
-function content_lock:mobs/bosses/music/boss_music {song:custom.iron_guardian,duration:3360}
+function content_lock:mobs/bosses/music/boss_music {song:music.content_lock.iron_guardian,duration:3360}
 function content_lock:mobs/bosses/boss_bars/iron_guardian
 
 scoreboard players add @s content_lock.attack_timer 0

@@ -18,5 +18,5 @@ execute if entity @s[scores={content_lock.attack_timer=185..190}] at @e[tag=cont
 
 execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.enchanted_witch_freezing_point,distance=0..40] run particle block{block_state:{Name:powder_snow}} ~ ~ ~ 5 5 5 1 1000 force @a
 execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.enchanted_witch_freezing_point,distance=0..40] run particle snowflake ~ ~ ~ 5 5 5 1 1000 force @a
-execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.enchanted_witch_freezing_point,distance=0..40] as @a[distance=0..10] run damage @s 12 freeze by @e[tag=content_lock.enchanted_witch,limit=1]
+execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.enchanted_witch_freezing_point,distance=0..40] run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:5,distance:10,damage:12,damage_type:freeze}
 execute if entity @s[scores={content_lock.attack_timer=160}] run tag @s remove content_lock.frostbite_attack

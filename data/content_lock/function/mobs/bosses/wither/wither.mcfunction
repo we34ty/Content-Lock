@@ -41,7 +41,7 @@ execute if entity @e[tag=wither_cursed_ground] as @e[tag=wither_cursed_ground] a
 execute if score L timer1 matches 7 unless entity @r[distance=0..40] store result entity @s Health float 1 run attribute @s generic.max_health get
 #execute if score L timer1 matches 7 if entity @r[distance=0..40] store result entity @s Health float 1 run data get entity @s Health 1.001
 
-function content_lock:bosses/boss_music {song:custom.wither1,duration:6820}
+function content_lock:bosses/boss_music {song:music.content_lock.wither1,duration:6820}
 
 execute if score @s attack_timer matches 100.. run scoreboard players set @s attack_timer 0
 execute if score @s attack_timer matches 1.. run scoreboard players add @s attack_timer 1

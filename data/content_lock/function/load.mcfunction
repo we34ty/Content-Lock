@@ -197,6 +197,7 @@ scoreboard objectives add content_lock.cavalry_counter dummy
 scoreboard objectives add content_lock.splinter_counter dummy
 scoreboard objectives add content_lock.shovel_charge dummy
 scoreboard objectives add content_lock.health_percentage dummy
+scoreboard objectives add content_lock.health_percentage_old dummy
 scoreboard objectives add content_lock.bleed_stacks dummy
 scoreboard objectives add content_lock.frostbite_stacks dummy
 scoreboard objectives add content_lock.player_skill_level dummy
@@ -224,6 +225,7 @@ scoreboard objectives add content_lock.stored_y dummy
 scoreboard objectives add content_lock.stored_z dummy
 scoreboard objectives add content_lock.nights_skipped_in_a_row dummy
 scoreboard objectives add content_lock.time_since_rest minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add content_lock.LevelUp.close_menu trigger
 
 bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
@@ -347,6 +349,9 @@ scoreboard players add L content_lock.officers_killed 0
 
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
+execute in minecraft:overworld run gamerule naturalRegeneration false
+execute in minecraft:the_nether run gamerule naturalRegeneration false
+execute in minecraft:the_end run gamerule naturalRegeneration false
 gamerule doInsomnia false
 function content_lock:minecarts
 

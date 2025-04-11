@@ -1,0 +1,8 @@
+{
+    "comparator_output": 3,
+    "description": "Officers (Phase 2)",
+    "length_in_seconds": 280.0,
+    "sound_event": {
+      "sound_id": "minecraft:music.content_lock.one_officer"
+    }
+ }

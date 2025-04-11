@@ -1,110 +1,110 @@
 {
-        "custom.yhorm": {
+	"music.content_lock.yhorm": {
 		"sounds": [
 			"custom/yhorm"
 		]
 	},
-	"custom.both_officers": {
+	"music.content_lock.both_officers": {
 		"sounds": [
 			"custom/both_officers"
 		]
 	},
-	"custom.one_officer": {
+	"music.content_lock.one_officer": {
 		"sounds": [
 			"custom/one_officer"
 		]
 	},
-	"custom.corrupted_princess": {
+	"music.content_lock.corrupted_princess": {
 		"sounds": [
 			"custom/corrupted_princess_longer"
 		]
 	},
-	"custom.blaze_lord_phase1": {
+	"music.content_lock.blaze_lord_phase1": {
 		"sounds": [
 			"custom/blaze_lord_phase1"
 		]
 	},
-	"custom.blaze_lord_phase2": {
+	"music.content_lock.blaze_lord_phase2": {
 		"sounds": [
 			"custom/blaze_lord_phase2"
 		]
 	},
-	"custom.corrupted_princess_enemies": {
+	"music.content_lock.corrupted_princess_enemies": {
 		"sounds": [
 			"custom/corrupted_princess_enemies"
 		]
 	},
-	"custom.ender_watcher": {
+	"music.content_lock.ender_watcher": {
 		"sounds": [
 			"custom/ender_watcher"
 		]
 	},
-	"custom.drift": {
+	"music.content_lock.drift": {
 		"sounds": [
 			"custom/drift"
 		]
 	},
-	"custom.drift_lyrics": {
+	"music.content_lock.drift_lyrics": {
 		"sounds": [
 			"custom/drift_lyrics"
 		]
 	},
-	"custom.slotstart": {
+	"music.content_lock.slotstart": {
 		"sounds": [
 			"custom/slotstart"
 		]
 	},
-	"custom.jackpotmusic": {
+	"music.content_lock.jackpotmusic": {
 		"sounds": [
 			"custom/jackpotmusic"
 		]
 	},
-	"custom.jackpotmusiclong": {
+	"music.content_lock.jackpotmusiclong": {
 		"sounds": [
 			"custom/jackpotmusiclong"
 		]
 	},
-	"custom.parry": {
+	"entity.content_lock.player.parry": {
 		"sounds": [
 			"custom/parry"
 		]
 	},
-	"custom.wither1": {
+	"music.content_lock.wither1": {
 		"sounds": [
 			"custom/wither1"
 		]
 	},
-	"custom.dragons_apprentice_phase1": {
+	"music.content_lock.dragons_apprentice_phase1": {
 		"sounds": [
 			"custom/dragons_apprentice_phase1"
 		]
 	},
-	"custom.dragons_apprentice_phase2": {
+	"music.content_lock.dragons_apprentice_phase2": {
 		"sounds": [
 			"custom/dragons_apprentice_phase2"
 		]
 	},
-	"custom.zomcess": {
+	"music.content_lock.zomcess": {
 		"sounds": [
 			"custom/zomcess"
 		]
 	},
-	"custom.iron_guardian": {
+	"music.content_lock.iron_guardian": {
 		"sounds": [
 			"custom/iron_guardian"
 		]
 	},
-	"custom.death_rider": {
+	"music.content_lock.death_rider": {
 		"sounds": [
 			"custom/death_rider"
 		]
 	},
-	"custom.danger1": {
+	"music.content_lock.danger1": {
 		"sounds": [
 			"custom/danger1"
 		]
 	},
-	"custom.danger2": {
+	"music.content_lock.danger2": {
 		"sounds": [
 			"custom/danger2"
 		]

@@ -9,6 +9,6 @@ execute if entity @s[scores={content_lock.attack_timer=61..100}] at @e[tag=conte
 execute if entity @s[scores={content_lock.attack_timer=60}] at @e[tag=content_lock.enchanted_witch_flame,distance=0..40] run particle flame ~ ~ ~ 0 0 0 1 200 force @a
 execute if entity @s[scores={content_lock.attack_timer=60}] at @e[tag=content_lock.enchanted_witch_flame,distance=0..40] run playsound block.fire.extinguish hostile @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={content_lock.attack_timer=60}] at @e[tag=content_lock.enchanted_witch_flame,distance=0..40] run playsound entity.generic.explode hostile @a ~ ~ ~ 0.7 1.3
-execute if entity @s[scores={content_lock.attack_timer=60}] at @e[tag=content_lock.enchanted_witch_flame,distance=0..40] as @a[distance=0..4] run damage @s 14 fireball by @e[tag=content_lock.enchanted_witch,limit=1]
+execute if entity @s[scores={content_lock.attack_timer=60}] as @e[tag=content_lock.enchanted_witch_flame,distance=0..40] at @s run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:2,distance:4,damage:8,damage_type:fireball}
 
 execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.control_flames

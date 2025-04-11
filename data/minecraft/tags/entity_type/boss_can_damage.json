@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:player",
+    "wolf",
+    "iron_golem",
+    "snow_golem",
+    "llama",
+    "trader_llama",
+    "#passive"
+    ]
+}

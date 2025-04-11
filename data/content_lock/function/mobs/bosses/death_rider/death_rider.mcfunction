@@ -1,17 +1,9 @@
-execute as @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] store result score @s content_lock.temporary_health_holder run data get entity @s Health
-execute as @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run scoreboard players set @s content_lock.huhhealth1 1000
-execute as @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run scoreboard players operation @s content_lock.huhhealth1 -= @s content_lock.temporary_health_holder
-execute store result score @s content_lock.temporary_health_holder run data get entity @s Health
-scoreboard players operation @s content_lock.temporary_health_holder -= @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] content_lock.huhhealth1
-execute if score @s content_lock.temporary_health_holder matches ..0 run tag @s add content_lock.death_inocming
-execute if entity @s[tag=content_lock.death_inocming] run scoreboard players set @s content_lock.temporary_health_holder 1
-#execute if entity @s[tag=death_inocming] run damage @s 2048 player_attack
-execute store result entity @s[tag=!content_lock.death_inocming] Health float 1 run scoreboard players get @s content_lock.temporary_health_holder
-data merge entity @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] {Health:1000}
+execute unless predicate content_lock:is_night as @e[tag=content_lock.death_rider_horse] run function content_lock:mobs/bosses/boss_despawn
+execute unless predicate content_lock:is_night run function content_lock:mobs/bosses/boss_despawn
+
 attribute @s spawn_reinforcements base set 20
 
-
-execute if entity @r[distance=0..40,nbt={HurtTime:1s}] as @a[distance=0..40,nbt={HurtTime:1s}] run scoreboard players add @s content_lock.bleed_stacks 100
+#execute if entity @r[distance=0..40,nbt={HurtTime:1s}] as @a[distance=0..40,nbt={HurtTime:1s}] run scoreboard players add @s content_lock.bleed_stacks 100
 #execute if entity @r[distance=0..40,nbt={HurtTime:1s}] run effect give @s instant_damage 1 1 true
 
 execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..6] if predicate content_lock:true_random run tag @s add content_lock.stab_ground_repeat
@@ -30,7 +22,7 @@ execute if entity @s[tag=content_lock.bite_from_below] run function content_lock
 
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
-function content_lock:mobs/bosses/music/boss_music {song:custom.death_rider,duration:3140}
+function content_lock:mobs/bosses/music/boss_music {song:music.content_lock.death_rider,duration:3140}
 function content_lock:mobs/bosses/boss_bars/death_rider
 
 scoreboard players add @s content_lock.attack_timer 0
@@ -42,4 +34,5 @@ execute if entity @s[scores={content_lock.boss_exhaustion=0},tag=content_lock.ex
 execute if entity @s[scores={content_lock.boss_exhaustion=1..},tag=content_lock.exhausted] run scoreboard players remove @s content_lock.boss_exhaustion 1
 
 
+ride @s mount @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest]
 
