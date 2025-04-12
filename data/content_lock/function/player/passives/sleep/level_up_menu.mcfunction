@@ -12,3 +12,4 @@ scoreboard players enable @s content_lock.LevelUp.mvtspd
 scoreboard players enable @s content_lock.LevelUp.close_menu
 
 tag @s add content_lock.level_up_menu_up
+execute unless score @s content_lock.player_unused_skill_points matches 1.. run function content_lock:player/levels/close_menu

@@ -1,0 +1,21 @@
+{
+  "type": "content_lock:the_void",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 4,
+          "block": "minecraft:barrier"
+        },
+        {
+          "height": 127,
+          "block": "minecraft:void_air"
+        }
+      ]
+    }
+  }
+}
