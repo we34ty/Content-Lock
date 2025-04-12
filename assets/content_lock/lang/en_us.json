@@ -73,5 +73,6 @@
     "content_lock:notifications.magic_powder.not_enough": "Not enough Spellbound Dust",
     "content_lock:notifications.boss_summoned.enchanted_witch": "Enchanted Witch has been summoned!",
     "content_lock:notifications.boss_summoned.death_rider": "Death Rider has been summoned!",
-    "content_lock:notifications.level_up_menu.close": " is ready to skip the night."
+    "content_lock:notifications.level_up_menu.close": " is ready to skip the night.",
+    "content_lock:notifications.leave_bed": " is no longer ready."
 }

@@ -346,6 +346,9 @@ scoreboard players add L content_lock.crafting_disabled 0
 scoreboard players add L content_lock.mana_mile 0
 scoreboard players add L content_lock.zombified_piglin_princess_killed 0
 scoreboard players add L content_lock.officers_killed 0
+scoreboard players add L content_lock.nights_skipped_in_a_row 0
+scoreboard players add L2 content_lock.nights_skipped_in_a_row 0
+
 
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
