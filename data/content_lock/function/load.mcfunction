@@ -352,8 +352,13 @@ gamerule naturalRegeneration false
 execute in minecraft:overworld run gamerule naturalRegeneration false
 execute in minecraft:the_nether run gamerule naturalRegeneration false
 execute in minecraft:the_end run gamerule naturalRegeneration false
+execute in content_lock:the_void run gamerule naturalRegeneration false
 gamerule doInsomnia false
 function content_lock:minecarts
+execute in content_lock:the_void run gamerule reducedDebugInfo true
+execute in minecraft:overworld run gamerule reducedDebugInfo false
+execute in minecraft:the_nether run gamerule reducedDebugInfo false
+execute in minecraft:the_end run gamerule reducedDebugInfo false
 
 #pretty important
 scoreboard players set L content_lock.temporary_health_holder 1000
