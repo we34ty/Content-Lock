@@ -1,9 +1,11 @@
 {
   "placement": {
-    "type": "minecraft:random_spread",
-    "salt": 10587112,
-    "separation": 52,
-    "spacing": 62
+    "type": "minecraft:concentric_rings",
+    "count": 420,
+    "distance": 14,
+    "preferred_biomes": "#minecraft:village_prefered",
+    "salt": 4654325,
+    "spread": 4
   },
   "structures": [
     {
