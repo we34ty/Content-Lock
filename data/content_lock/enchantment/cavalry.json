@@ -17,7 +17,9 @@
                   "minecraft:horse",
                   "minecraft:mule",
                   "minecraft:donkey",
-                  "minecraft:pig"
+                  "minecraft:pig",
+                  "minecraft:llama",
+                  "minecraft:trader_llama"
                 ]
               }
             }

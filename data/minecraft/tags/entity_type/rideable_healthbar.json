@@ -5,6 +5,8 @@
     "minecraft:donkey",
     "minecraft:mule",
     "minecraft:pig",
-    "minecraft:strider"
+    "minecraft:strider",
+    "minecraft:llama",
+    "trader_llama"
    ]
 }

@@ -1,3 +1,5 @@
+setblock ~ ~ ~ air destroy
+
 damage @s 1 mob_attack
 
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:3}

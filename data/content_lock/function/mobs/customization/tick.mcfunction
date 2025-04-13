@@ -20,5 +20,7 @@ execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=zombie,tag=content_lock.can_cast_fireball] run function content_lock:mobs/customization/active/check_if_can_cast_fireball
 execute if entity @e[tag=content_lock.enemy_fireball,type=area_effect_cloud,limit=1,sort=random] as @e[tag=content_lock.enemy_fireball,type=area_effect_cloud] run function content_lock:mobs/customization/active/flying_fireball
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=#undead,tag=content_lock.attacks_on_sight] run function content_lock:mobs/customization/active/check_for_attacking_on_sight
+execute if entity @s[tag=content_lock.customized,type=llama,tag=content_lock.can_be_controlled_with_carrot] if entity @r[distance=0..3] run function content_lock:mobs/customization/active/check_for_carrot_on_a_stick
+execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=pig,tag=content_lock.gain_speed_with_rider] run function content_lock:mobs/customization/active/gain_speed_with_rider
 
 #execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=enderman,tag=cannot_be_put_in_boat] run function content_lock:mobs/customization/active/go_out_of_boat
