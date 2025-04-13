@@ -8,3 +8,5 @@ execute if entity @e[tag=content_lock.splintered] as @e[tag=content_lock.splinte
 #function content_lock:mobs/passives/shops/time_check_for_shop_refresh
 function content_lock:mobs/bosses/check_for_bosses
 execute if score L content_lock.timer1 matches 18 run function content_lock:mobs/chance_to_turn_into_boss/tick
+
+function content_lock:mobs/entities/tick

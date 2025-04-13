@@ -1,0 +1,1 @@
+execute if entity @e[type=block_display,tag=content_lock.venom_billiard_ball] as @e[type=block_display,tag=content_lock.venom_billiard_ball] at @s run function content_lock:mobs/entities/venom_billiard/tick
