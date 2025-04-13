@@ -3,7 +3,8 @@ execute if score L content_lock.timer1 matches 16 if entity @s[tag=!content_lock
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.buffed_by_minor_buff,type=#hostile] run function content_lock:mobs/customization/active/remove_minor_buffs
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=#undead,tag=content_lock.can_be_raised_from_ground] run function content_lock:mobs/customization/active/raising_from_ground
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=#undead,tag=content_lock.can_charge_jump] run function content_lock:mobs/customization/active/charging_jump
-execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=creeper,tag=content_lock.can_dash_at_player] run function content_lock:mobs/customization/active/check_for_dash_at_player
+execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=creeper,tag=content_lock.can_dash_at_player,tag=!content_lock.dashed_already] run function content_lock:mobs/customization/active/check_for_dash_at_player
+execute if score L content_lock.timer1 matches 2 if entity @s[tag=content_lock.customized,type=creeper,tag=content_lock.can_dash_at_player,tag=!content_lock.dashed_already] run function content_lock:mobs/customization/active/check_for_dash_at_player
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=spider,tag=content_lock.can_dash_at_player] run function content_lock:mobs/customization/active/check_for_dash_at_player_spider
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=cave_spider,tag=content_lock.can_dash_at_player] run function content_lock:mobs/customization/active/check_for_dash_at_player_spider
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=zombie,tag=content_lock.can_dash_at_player] run function content_lock:mobs/customization/active/check_for_dash_at_player_spider
@@ -22,5 +23,6 @@ execute if entity @e[tag=content_lock.enemy_fireball,type=area_effect_cloud,limi
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=#undead,tag=content_lock.attacks_on_sight] run function content_lock:mobs/customization/active/check_for_attacking_on_sight
 execute if entity @s[tag=content_lock.customized,type=llama,tag=content_lock.can_be_controlled_with_carrot] if entity @r[distance=0..3] run function content_lock:mobs/customization/active/check_for_carrot_on_a_stick
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=pig,tag=content_lock.gain_speed_with_rider] run function content_lock:mobs/customization/active/gain_speed_with_rider
+execute if entity @s[tag=content_lock.customized,type=#minecraft:arrows,tag=content_lock.can_ricoshet] run function content_lock:mobs/customization/active/check_for_ricoshet
 
 #execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=enderman,tag=cannot_be_put_in_boat] run function content_lock:mobs/customization/active/go_out_of_boat

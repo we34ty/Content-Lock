@@ -2,6 +2,7 @@
   "replace": true,
   "values": [
     "#minecraft:hostile",
-    "#minecraft:rideable_healthbar"
+    "#minecraft:rideable_healthbar",
+    "#minecraft:arrows"
    ]
 }
