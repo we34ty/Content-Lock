@@ -1,24 +1,22 @@
 {
-  "feature": "minecraft:ore_diamond_small",
+  "feature": "minecraft:ore_ancient_debris_large",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 5
+      "count": 4
     },
     {
-      "type": "minecraft:noise_based_count",
-      "noise_factor": 4,
-      "noise_to_count_ratio": 1
+      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "below_top": 10
+          "absolute": 24
         },
         "min_inclusive": {
-          "above_bottom": 10
+          "absolute": 8
         }
       }
     },

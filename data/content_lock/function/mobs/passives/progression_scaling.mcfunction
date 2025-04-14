@@ -16,4 +16,4 @@ execute unless score @s content_lock.temp1 matches 1 at @s if dimension minecraf
 
 execute if score @s content_lock.temp1 matches 1 run function content_lock:mobs/passives/progression_scaling_detect_mob
 execute unless score @s content_lock.temp1 matches 1 run tag @s add content_lock.progression_not_scaled
-data merge entity @s[tag=!content_lock.player_body] {HandDropChances:[0.0F,0.0F],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}
+#data merge entity @s[tag=!content_lock.player_body] {HandDropChances:[0.0F,0.0F],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}

@@ -9,6 +9,9 @@ scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 execute at @s run scoreboard players operation @e[type=wandering_trader,limit=1,sort=nearest] content_lock.temp1 = @s content_lock.temp1
 execute at @s as @e[type=wandering_trader,limit=1,sort=nearest] store result entity @s Offers.Recipes[0].sell.components."minecraft:enchantments".levels."content_lock:weapon_level" int 1 run scoreboard players get @s content_lock.temp1
 
+data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].maxUses set value 1
+data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].uses set value 0
+
 execute if score @s content_lock.temp1 matches 1 at @s run data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].buyB set value {id:"minecraft:brick",count:1,components:{custom_data:{"item_upgrader":1},item_name:'[{"translate": "content_lock:item.item_upgrader_1"}]'}}
 execute if score @s content_lock.temp1 matches 2 at @s run data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].buyB set value {id:"minecraft:brick",count:2,components:{custom_data:{"item_upgrader":1},item_name:'[{"translate": "content_lock:item.item_upgrader_1"}]'}}
 execute if score @s content_lock.temp1 matches 3 at @s run data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].buyB set value {id:"minecraft:brick",count:4,components:{custom_data:{"item_upgrader":1},item_name:'[{"translate": "content_lock:item.item_upgrader_1"}]'}}

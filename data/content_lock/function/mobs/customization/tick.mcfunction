@@ -24,5 +24,6 @@ execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.
 execute if entity @s[tag=content_lock.customized,type=llama,tag=content_lock.can_be_controlled_with_carrot] if entity @r[distance=0..3] run function content_lock:mobs/customization/active/check_for_carrot_on_a_stick
 execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=pig,tag=content_lock.gain_speed_with_rider] run function content_lock:mobs/customization/active/gain_speed_with_rider
 execute if entity @s[tag=content_lock.customized,type=#minecraft:arrows,tag=content_lock.can_ricoshet] run function content_lock:mobs/customization/active/check_for_ricoshet
+execute if entity @s[tag=content_lock.customized,type=#minecraft:minecarts_no_furrnace] if entity @e[type=furnace_minecart,distance=..4] run function content_lock:mobs/customization/active/minecart_follow_furnace_minecart
 
 #execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=enderman,tag=cannot_be_put_in_boat] run function content_lock:mobs/customization/active/go_out_of_boat

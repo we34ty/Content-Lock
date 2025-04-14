@@ -44,7 +44,7 @@
             },
             {
               "type": "minecraft:loot_table",
-              "value": "content_lock:entities/upgrade_1",
+              "value": "content_lock:entities/upgrade_2",
               "conditions": [
                 {
                   "condition": "minecraft:inverted",

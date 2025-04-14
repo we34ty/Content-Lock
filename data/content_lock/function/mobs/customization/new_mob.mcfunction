@@ -19,4 +19,5 @@ execute if entity @s[type=#minecraft:arrows] run function content_lock:mobs/cust
 
 execute store result entity @s Health float 1 run attribute @s max_health get
 attribute @s follow_range modifier add content_lock.customized_content_lock 2 add_multiplied_total
+data merge entity @s {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 tag @s add content_lock.customized

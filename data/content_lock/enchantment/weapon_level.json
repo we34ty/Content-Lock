@@ -36,8 +36,8 @@
         "id": "weapon_level",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.6,
-          "per_level_above_first": 0.6
+          "base": 0.8,
+          "per_level_above_first": 0.8
         },
         "operation": "add_value"
       }

@@ -123,8 +123,8 @@
       },
       {
         "type": "minecraft:wither_skeleton",
-        "maxCount": 8,
-        "minCount": 4,
+        "maxCount": 3,
+        "minCount": 3,
         "weight": 5
       }
     ],

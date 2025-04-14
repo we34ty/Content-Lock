@@ -3,6 +3,7 @@
   "values": [
     "#minecraft:hostile",
     "#minecraft:rideable_healthbar",
-    "#minecraft:arrows"
+    "#minecraft:arrows",
+    "#minecraft:minecarts_no_furrnace"
    ]
 }
