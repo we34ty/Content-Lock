@@ -1,7 +1,8 @@
 #attribute @s generic.attack_damage base set 5
 #attribute @s generic.attack_damage modifier add 15d5a6e0-c144-4cb5-ae95-f2fbec2ba2b9 xs5erydtuy -0.5 add_multiplied_total
 
-execute rotated ~ 0 run fill ^1 ^5 ^1 ^-1 ^ ^ air destroy
+execute if predicate content_lock:is_night run function content_lock:mobs/bosses/boss_despawn
+
 execute if score L content_lock.timer1 matches 4 run data modify entity @s AngryAt set from entity @p UUID
  
 #execute as @p at @s store result score @s y_level_check run data get entity @s Pos[1]

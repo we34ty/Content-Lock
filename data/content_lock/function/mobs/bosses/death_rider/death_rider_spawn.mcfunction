@@ -1,3 +1,7 @@
+title @s times 2 8 3
+title @s actionbar {"translate":"content_lock:notifications.error","color":"dark_red"}
+return 0
+
 scoreboard players set @s content_lock.temp1 0
 execute unless predicate content_lock:is_night run scoreboard players set @s content_lock.temp1 1
 execute if score @s content_lock.temp1 matches 1 run title @s times 2 8 3

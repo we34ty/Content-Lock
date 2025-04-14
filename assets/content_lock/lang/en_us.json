@@ -23,6 +23,7 @@
     "content_lock:item.smithing_template.smithing_template": "Smithing Template",
     "content_lock:item.boss_summon.enchanted_witch": "Enchanted Witch Summoning Potion",
     "content_lock:item.boss_summon.death_rider": "Death Rider Summoning Potion",
+    "content_lock:item.boss_summon.iron_guardian": "Iron Guardian Summoning Furnace",
     "content_lock:enchantment.armor_level": "Armor Level",
     "content_lock:enchantment.weapon_level": "Weapon Level",
     "content_lock:enchantment.cavalry": "Cavalry",
@@ -71,9 +72,13 @@
     "content_lock:notifications.too_many_skipped_nights": "You have skipped too many nights in a row! The next 3 nights will be restless.",
     "content_lock:notifications.boss_already_exists": "Only one boss can be summoned at a time.",
     "content_lock:notifications.can_only_spawn_at_night": "Cannot perform this action during the day.",
+    "content_lock:notifications.can_only_spawn_at_day": "Cannot perform this action during the night.",
     "content_lock:notifications.magic_powder.not_enough": "Not enough Spellbound Dust",
     "content_lock:notifications.boss_summoned.enchanted_witch": "Enchanted Witch has been summoned!",
     "content_lock:notifications.boss_summoned.death_rider": "Death Rider has been summoned!",
+    "content_lock:notifications.boss_summoned.iron_guardian": "Iron Guardian has been summoned!",
     "content_lock:notifications.level_up_menu.close": " is ready to skip the night.",
-    "content_lock:notifications.leave_bed": " is no longer ready."
+    "content_lock:notifications.leave_bed": " is no longer ready.",
+    "content_lock:notifications.error": "An error occured while trying to perform this action."
+
 }

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": "raw_iron",
+    "#": "furnace"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_dye",
+    "components": {
+      "custom_data": {
+        "content_lock.iron_guardian_summon": true
+      },
+      "item_name": "{\"translate\":\"content_lock:item.boss_summon.iron_guardian\"}",
+      "item_model": "minecraft:furnace",
+      "consumable": {
+        "animation": "drink",
+        "consume_seconds": 42342534
+      },
+      "rarity": "uncommon",
+      "enchantment_glint_override": true,
+      "max_stack_size": 1
+    }
+  }
+}
