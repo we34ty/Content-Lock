@@ -1,4 +1,4 @@
-setblock ~ ~ ~ air destroy
+#setblock ~ ~ ~ air destroy
 
 damage @s 1 mob_attack
 
