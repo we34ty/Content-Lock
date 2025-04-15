@@ -1,6 +1,6 @@
 scoreboard objectives add content_lock.content_lock_version dummy
 #version numbver
-scoreboard players set L content_lock.content_lock_version 3
+scoreboard players set L content_lock.content_lock_version 31
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.y_level_check dummy

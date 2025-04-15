@@ -1,6 +1,5 @@
-attribute @s movement_efficiency modifier add content_lock.basic_stats 0.5 add_value
-attribute @s max_health modifier add content_lock.basic_stats -12 add_value
-attribute @s scale modifier add content_lock.basic_stats -0.1 add_multiplied_base
+function content_lock:player/passives/died
+
 #attribute @s oxygen_bonus modifier add basic_stats -10 add_value
 scoreboard players set @s content_lock.max_stamina 400
 scoreboard players set @s content_lock.stamina_delay 50

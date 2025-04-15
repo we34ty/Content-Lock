@@ -1,4 +1,4 @@
-execute store result score @s content_lock.max_stamina run attribute @s movement_efficiency get 800
+execute store result score @s content_lock.max_stamina run attribute @s movement_efficiency get 1600
 scoreboard players set @s content_lock.temp1 100
 scoreboard players operation @s content_lock.max_stamina += @s content_lock.temp1
 
