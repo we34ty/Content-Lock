@@ -14,21 +14,21 @@
             "id": "content_lock.basic_armor_stats_boots",
             "amount": 2,
             "operation": "add_value",
-            "slot": "legs"
+            "slot": "feet"
           },
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_boots",
             "amount": 1,
             "operation": "add_value",
-            "slot": "legs"
+            "slot": "feet"
           },
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_armor_stats_boots",
             "amount": -0.13,
             "operation": "add_multiplied_base",
-            "slot": "legs"
+            "slot": "feet"
           }
         ],
         "show_in_tooltip": true

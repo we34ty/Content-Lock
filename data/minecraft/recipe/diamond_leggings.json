@@ -19,22 +19,15 @@
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": 1,
+            "amount": 0.5,
             "operation": "add_value",
             "slot": "legs"
           },
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": -0.11,
+            "amount": -0.13,
             "operation": "add_multiplied_base",
-            "slot": "legs"
-          },
-          {
-            "type": "minecraft:knockback_resistance",
-            "id": "content_lock.basic_armor_stats_legs",
-            "amount": 0.13,
-            "operation": "add_value",
             "slot": "legs"
           }
         ],

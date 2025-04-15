@@ -19,22 +19,15 @@
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_chest",
-            "amount": 2,
+            "amount": 1,
             "operation": "add_value",
             "slot": "chest"
           },
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_armor_stats_chest",
-            "amount": -0.14,
+            "amount": -0.16,
             "operation": "add_multiplied_base",
-            "slot": "chest"
-          },
-          {
-            "type": "minecraft:knockback_resistance",
-            "id": "content_lock.basic_armor_stats_chest",
-            "amount": 0.15,
-            "operation": "add_value",
             "slot": "chest"
           }
         ],
