@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:czarnuh",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 8,
+    "spacing": 32,
+    "salt": 5324612
+  }
+}
