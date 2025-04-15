@@ -22,7 +22,7 @@ execute unless score $lockedGraves multipack.graves matches 0..1 run scoreboard 
 execute unless score $keepXp multipack.graves matches 0..1 run scoreboard players set $keepXp multipack.graves 0
 execute unless score $keepHotbar multipack.graves matches 0..1 run scoreboard players set $keepHotbar multipack.graves 1
 execute unless score $keepArmor multipack.graves matches 0..1 run scoreboard players set $keepArmor multipack.graves 1
-execute unless score $keepItems multipack.graves matches 0..1 run scoreboard players set $keepItems multipack.graves 0
+execute unless score $keepItems multipack.graves matches 0..1 run scoreboard players set $keepItems multipack.graves 1
 execute unless score $loseItems multipack.graves matches 0..1 run scoreboard players set $loseItems multipack.graves 0
 
 execute store result storage m_graves:grave_storage voidRecovery int 1 run scoreboard players get $voidRecovery multipack.graves
