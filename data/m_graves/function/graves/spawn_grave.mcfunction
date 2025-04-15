@@ -1,8 +1,6 @@
 ## Spawn a grave with the contents of 'm_graves:grave_storage'
 # Place grave marker and interaction entities
-tag @s add content_lock.remove_graves
-execute as @e[type=marker,tag=multipack.grave_marker] if score @s multipack.graves = @r[tag=content_lock.remove_graves] multipack.graves at @s run function m_graves:graves/open_grave
-tag @s remove content_lock.remove_graves
+
 #say loi
 summon interaction ~ ~ ~ {Tags:["multipack.grave_interaction"],width:1.3f,height:1f}
 summon marker ~ ~ ~ {Tags:["multipack.grave_marker"]}
