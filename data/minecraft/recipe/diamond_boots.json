@@ -40,7 +40,8 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 290
-    }
+      "unbreakable": {
+        "show_in_tooltip": false
+      }    }
   }
 }

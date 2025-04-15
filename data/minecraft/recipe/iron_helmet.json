@@ -12,35 +12,29 @@
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_head",
-            "amount": 2,
+            "amount": 1,
             "operation": "add_value",
             "slot": "head"
           },
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_head",
-            "amount": 1,
+            "amount": 2,
             "operation": "add_value",
             "slot": "head"
           },
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_armor_stats_head",
-            "amount": -0.09,
+            "amount": -0.18,
             "operation": "add_multiplied_base",
-            "slot": "head"
-          },
-          {
-            "type": "minecraft:knockback_resistance",
-            "id": "content_lock.basic_armor_stats_head",
-            "amount": 0.1,
-            "operation": "add_value",
             "slot": "head"
           }
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 260
-    }
+      "unbreakable": {
+        "show_in_tooltip": false
+      }    }
   }
 }

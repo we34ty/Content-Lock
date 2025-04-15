@@ -12,7 +12,7 @@
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": 3,
+            "amount": 2,
             "operation": "add_value",
             "slot": "legs"
           },
@@ -26,21 +26,15 @@
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": -0.18,
+            "amount": -0.26,
             "operation": "add_multiplied_base",
-            "slot": "legs"
-          },
-          {
-            "type": "minecraft:knockback_resistance",
-            "id": "content_lock.basic_armor_stats_legs",
-            "amount": 0.1,
-            "operation": "add_value",
             "slot": "legs"
           }
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 470
-    }
+      "unbreakable": {
+        "show_in_tooltip": false
+      }    }
   }
 }

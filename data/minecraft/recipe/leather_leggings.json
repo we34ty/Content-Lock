@@ -23,35 +23,23 @@
             {
               "type": "minecraft:armor_toughness",
               "id": "content_lock.basic_armor_stats_legs",
-              "amount": 1,
+              "amount": 0.5,
               "operation": "add_value",
               "slot": "legs"
             },
             {
               "type": "minecraft:movement_efficiency",
               "id": "content_lock.basic_armor_stats_legs",
-              "amount": -0.04,
+              "amount": -0.1,
               "operation": "add_multiplied_base",
-              "slot": "legs"
-            },
-            {
-              "type": "minecraft:fall_damage_multiplier",
-              "id": "content_lock.basic_armor_stats_legs",
-              "amount": -0.15,
-              "operation": "add_multiplied_total",
-              "slot": "legs"
-            },
-            {
-              "type": "minecraft:knockback_resistance",
-              "id": "content_lock.basic_armor_stats_legs",
-              "amount": 0.05,
-              "operation": "add_value",
               "slot": "legs"
             }
           ],
           "show_in_tooltip": true
         },
-        "minecraft:max_damage": 310
+        "unbreakable": {
+          "show_in_tooltip": false
+        }
       },
       "count": 1,
       "id": "minecraft:leather_leggings"
