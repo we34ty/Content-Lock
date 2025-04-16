@@ -12,14 +12,14 @@
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_boots",
-            "amount": 1.5,
+            "amount": 1.08  ,
             "operation": "add_value",
             "slot": "feet"
           },
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_boots",
-            "amount": 2,
+            "amount": 1.83,
             "operation": "add_value",
             "slot": "feet"
           },

@@ -19,7 +19,7 @@
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_head",
-            "amount": 2,
+            "amount": 2.5,
             "operation": "add_value",
             "slot": "head"
           },

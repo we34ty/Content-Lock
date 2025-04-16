@@ -12,14 +12,14 @@
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": 1.5,
+            "amount": 1.34,
             "operation": "add_value",
             "slot": "legs"
           },
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": 3,
+            "amount": 3.34,
             "operation": "add_value",
             "slot": "legs"
           },

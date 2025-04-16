@@ -1,8 +1,8 @@
 execute at @s unless predicate content_lock:is_dim_light run return run function content_lock:player/passives/sleep/random_mob_on_sleep
 execute at @s unless predicate content_lock:under_roof run return run function content_lock:player/passives/sleep/random_mob_on_sleep
-tag @e remove content_lock.kick_out_of_bed
-execute as @e[distance=..40,type=#hostile] on target run tag @s add content_lock.kick_out_of_bed
-execute if entity @s[tag=content_lock.kick_out_of_bed] run return run function content_lock:player/passives/sleep/random_mob_on_sleep
+#tag @e remove content_lock.kick_out_of_bed
+#execute as @e[distance=..40,type=#hostile] on target run tag @s add content_lock.kick_out_of_bed
+#execute if entity @s[tag=content_lock.kick_out_of_bed] run return run function content_lock:player/passives/sleep/random_mob_on_sleep
 #execute at @s positioned ~ ~ ~-1 unless predicate content_lock:is_dim_light run return run function content_lock:player/passives/sleep/random_mob_on_sleep
 #execute at @s positioned ~ ~ ~1 unless predicate content_lock:is_dim_light run return run function content_lock:player/passives/sleep/random_mob_on_sleep
 #execute at @s positioned ~-1 ~ ~ unless predicate content_lock:is_dim_light run return run function content_lock:player/passives/sleep/random_mob_on_sleep

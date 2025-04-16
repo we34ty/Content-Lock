@@ -12,14 +12,14 @@
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_head",
-            "amount": 2,
+            "amount": 1.33,
             "operation": "add_value",
             "slot": "head"
           },
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_head",
-            "amount": 1,
+            "amount": 0.25,
             "operation": "add_value",
             "slot": "head"
           },

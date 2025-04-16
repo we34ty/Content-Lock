@@ -1,6 +1,7 @@
 {
   "values": [
     "#m_graves:equipment",
-    "minecraft:experience_bottle"
+    "minecraft:experience_bottle",
+    "#minecraft:bundles"
   ]
 }

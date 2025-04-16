@@ -19,7 +19,7 @@
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_chest",
-            "amount": 1,
+            "amount": 0,
             "operation": "add_value",
             "slot": "chest"
           },

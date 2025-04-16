@@ -12,14 +12,14 @@
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_chest",
-            "amount": 2,
+            "amount": 2.67,
             "operation": "add_value",
             "slot": "chest"
           },
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.basic_armor_stats_chest",
-            "amount": 4,
+            "amount": 6.67,
             "operation": "add_value",
             "slot": "chest"
           },
