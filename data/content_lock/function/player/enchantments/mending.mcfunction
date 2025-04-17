@@ -1,5 +1,5 @@
 execute store result score @s content_lock.temp1 run attribute @s max_health get 1000
-scoreboard players set @s content_lock.temp2 4
+scoreboard players set @s content_lock.temp2 3
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp2
 
 execute store result score @s content_lock.temp2 run data get entity @s Health 1000

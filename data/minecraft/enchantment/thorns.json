@@ -6,41 +6,22 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "affected": "attacker",
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:damage_entity",
-              "damage_type": "minecraft:thorns",
-              "max_damage": {
-                "type": "minecraft:linear",
-                "base": 3,
-                "per_level_above_first": 4
-              },
-              "min_damage": {
-                "type": "minecraft:linear",
-                "base": 3,
-                "per_level_above_first": 3
-              }
-            },
-            {
-              "type": "minecraft:change_item_damage",
-              "amount": -4
-            }
-          ]
-        },
+        "affected": "victim",
         "enchanted": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "content_lock:player/enchantments/thorns"
+        },
         "requirements": {
+          "condition": "random_chance",
           "chance": {
             "type": "minecraft:enchantment_level",
             "amount": {
-              "type": "minecraft:linear",
-              "base": 0.3,
-              "per_level_above_first": 0.1
+              "type": "linear",
+              "base": 0.34,
+              "per_level_above_first": 0.33
             }
-          },
-          "condition": "minecraft:random_chance"
+          }
         }
       }
     ]
@@ -57,7 +38,7 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/diamond_armor",
   "weight": 1,
   "primary_items": []
 }

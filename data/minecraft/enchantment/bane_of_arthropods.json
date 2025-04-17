@@ -15,7 +15,7 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/weapon",
+  "supported_items": "#content_lock:enchantable/weapon",
   "weight": 5,
   "effects": {
     "minecraft:attributes": [
