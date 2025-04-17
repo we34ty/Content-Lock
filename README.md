@@ -2,7 +2,7 @@
 Minecraft datapack inspired by souls-likes and many other games, which strives to make the game more challenging in a fair way, whilst introducing some QoL features.
 
 Downloading:
-Place the main folder inside both your datapacks folder inside your save and in the resource pack folder.
+Place the main folder inside both your datapacks folder, in your save, and in the resource pack folder.
 For the terrain generation to function properly it's recommended to "regenerate" chosen world.
 
 Credits:
