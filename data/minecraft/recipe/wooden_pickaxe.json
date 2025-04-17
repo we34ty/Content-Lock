@@ -56,7 +56,7 @@
       "minecraft:tool": {
         "rules": [
           {
-            "blocks": "#content_lock:wooden_pickaxe",
+            "blocks": "#minecraft:mineable/pickaxe",
             "speed": 2,
             "correct_for_drops": true
           }
