@@ -8,8 +8,8 @@
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": -0.15,
-          "per_level_above_first": -0.15
+          "base": -0.05,
+          "per_level_above_first": -0.05
         },
         "attribute": "minecraft:burning_time",
         "id": "minecraft:enchantment.fire_protection",
@@ -22,8 +22,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 2.0,
-            "per_level_above_first": 2.0
+            "base": 0.5,
+            "per_level_above_first": 0.5
           }
         },
         "requirements": {
@@ -61,7 +61,7 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#minecraft:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/netherite_armor",
   "weight": 5,
   "primary_items": []
 }

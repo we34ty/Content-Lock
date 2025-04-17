@@ -4,20 +4,19 @@
     "translate": "enchantment.minecraft.sharpness"
   },
   "effects": {
-    "minecraft:damage": [
+    "attributes": [
       {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 1.0,
-            "per_level_above_first": 0.5
-          }
-        }
+        "attribute": "attack_damage",
+        "amount": {
+          "type": "linear",
+          "base": 0.05,
+          "per_level_above_first": 0.05
+        },
+        "id": "minecraft:enchantment.sharpness",
+        "operation": "add_multiplied_total"
       }
     ]
   },
-  "exclusive_set": "#minecraft:exclusive_set/damage",
   "max_cost": {
     "base": 1,
     "per_level_above_first": 0
@@ -30,7 +29,7 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "supported_items": "#content_lock:enchantable/weapon",
   "weight": 10,
   "primary_items": []
 }

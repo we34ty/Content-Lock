@@ -1,3 +1,4 @@
+execute unless entity @s[nbt={HurtTime:0s}] run return run scoreboard players add @s content_lock.bleed_stacks 1
 tag @s remove content_lock.bleed_active
 title @s subtitle {"translate": "content_lock:effect.bleed.activated","bold":true,"color":"dark_red"}
 title @s title {"text": ""}

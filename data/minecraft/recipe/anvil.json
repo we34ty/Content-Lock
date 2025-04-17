@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "minecraft:iron_block",
+    "i": "minecraft:iron_ingot",
+    "l": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    "iIi",
+    " l ",
+    "lil"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:anvil"
+  }
+}

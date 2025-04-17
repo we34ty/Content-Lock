@@ -10,8 +10,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 2.0,
-            "per_level_above_first": 2.0
+            "base": 1.0,
+            "per_level_above_first": 1.0
           }
         },
         "requirements": {
@@ -20,7 +20,7 @@
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:is_projectile"
+                "id": "content_lock:projectile_protection"
               },
               {
                 "expected": false,
@@ -44,7 +44,7 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#minecraft:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/chainmail_armor",
   "weight": 5,
   "primary_items": []
 }

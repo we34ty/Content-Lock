@@ -8,8 +8,8 @@
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.15,
-          "per_level_above_first": 0.15
+          "base": 0.25,
+          "per_level_above_first": 0.25
         },
         "attribute": "minecraft:explosion_knockback_resistance",
         "id": "minecraft:enchantment.blast_protection",
@@ -22,7 +22,7 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 2.0,
+            "base": 4.0,
             "per_level_above_first": 2.0
           }
         },
@@ -31,12 +31,8 @@
           "predicate": {
             "tags": [
               {
-                "expected": true,
-                "id": "minecraft:is_explosion"
-              },
-              {
-                "expected": false,
-                "id": "minecraft:bypasses_invulnerability"
+                "id": "is_explosion",
+                "expected": true
               }
             ]
           }
@@ -48,7 +44,7 @@
     "base": 1,
     "per_level_above_first": 0
   },
-  "max_level": 4,
+  "max_level": 1,
   "min_cost": {
     "base": 1,
     "per_level_above_first": 0
@@ -56,7 +52,7 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#minecraft:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/iron_armor",
   "weight": 2,
   "primary_items": []
 }

@@ -1,9 +1,10 @@
+#restoring stamina
 scoreboard players set @s content_lock.temp1 20
 scoreboard players operation @s content_lock.healing_from_food *= @s content_lock.temp1
 execute if score @s lsp.stamina < @s content_lock.max_stamina run scoreboard players operation @s lsp.stamina += @s content_lock.healing_from_food
 scoreboard players operation @s content_lock.healing_from_food /= @s content_lock.temp1
 
-
+#restoring health
 scoreboard players get @s content_lock.healing_from_food
 execute store result score @s content_lock.temp1 run data get entity @s Health 1000
 scoreboard players set @s content_lock.temp2 1000

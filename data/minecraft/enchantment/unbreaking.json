@@ -4,6 +4,18 @@
     "translate": "enchantment.minecraft.unbreaking"
   },
   "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_damage",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.15,
+          "per_level_above_first": -0.15
+        },
+        "id": "minecraft:enchantment.unbreaking",
+        "operation": "add_multiplied_total"
+      }
+    ],
     "minecraft:item_damage": [
       {
         "effect": {
@@ -70,7 +82,7 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/durability",
+  "supported_items": "#content_lock:enchantable/weapon",
   "weight": 5,
   "primary_items": []
 }
