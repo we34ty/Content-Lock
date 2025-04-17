@@ -19,4 +19,4 @@ scoreboard objectives add lsp.stamina dummy
     scoreboard players set sprint.stamina.consumption lsp.Values 1
     scoreboard players set sprint.stamina.restoration lsp.Values 3
     scoreboard players set sprint.stamina.jump.consumption lsp.Values 30
-    scoreboard players set blocking.stamina.consumption lsp.Values 100
+    scoreboard players set blocking.stamina.consumption lsp.Values 140

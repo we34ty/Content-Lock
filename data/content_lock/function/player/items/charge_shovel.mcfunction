@@ -1,3 +1,5 @@
+execute unless items entity @s weapon.mainhand iron_shovel[custom_data={"content_lock.guardian_shovel":true}] run return 0
+
 
 tag @s add content_lock.charging_shovel_atm
 execute if entity @s[nbt={OnGround:1b}] run return 0

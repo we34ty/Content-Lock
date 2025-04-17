@@ -5,6 +5,6 @@ scoreboard players set @s content_lock.temp2 200
 scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
 scoreboard players operation @s content_lock.temp2 < @s lsp.stamina
 execute unless score @s lsp.stamina matches ..0 run scoreboard players operation @s lsp.stamina -= @s content_lock.temp2
-execute if score @s lsp.stamina matches ..0 run function lsp:change_speed with storage lsp:macro stamina
 execute if score @s lsp.stamina matches ..0 run scoreboard players set @s lsp.stamina 0
+execute if score @s lsp.stamina matches ..0 run function lsp:change_speed with storage lsp:macro stamina
 #execute if score @s content_lock.stamina_delay_timer matches 1.. run scoreboard players set @s content_lock.stamina_delay_timer 0
