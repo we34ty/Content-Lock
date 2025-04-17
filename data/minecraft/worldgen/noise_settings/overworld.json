@@ -40,7 +40,7 @@
               "type": "minecraft:blend_density",
               "argument": {
                 "type": "minecraft:add",
-                "argument1": 0.1671875,
+                "argument1": 0.1171875,
                 "argument2": {
                   "type": "minecraft:mul",
                   "argument1": {
@@ -109,7 +109,7 @@
                                         "type": "minecraft:clamp",
                                         "input": {
                                           "type": "minecraft:add",
-                                          "argument1": 0.37,
+                                          "argument1": 0.27,
                                           "argument2": {
                                             "type": "minecraft:noise",
                                             "noise": "minecraft:cave_cheese",
@@ -401,7 +401,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:obsidian"
+            "Name": "minecraft:bedrock"
           }
         }
       },
