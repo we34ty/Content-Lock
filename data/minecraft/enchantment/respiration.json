@@ -7,9 +7,8 @@
     "minecraft:attributes": [
       {
         "amount": {
-          "type": "minecraft:linear",
-          "base": 1.0,
-          "per_level_above_first": 1.0
+          "type": "minecraft:levels_squared",
+          "added": 0
         },
         "attribute": "minecraft:oxygen_bonus",
         "id": "minecraft:enchantment.respiration",
@@ -29,7 +28,7 @@
   "slots": [
     "head"
   ],
-  "supported_items": "#minecraft:enchantable/head_armor",
+  "supported_items": "minecraft:turtle_helmet",
   "weight": 2,
   "primary_items": []
 }

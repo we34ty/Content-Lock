@@ -37,7 +37,7 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/sword",
+  "supported_items": "#content_lock:enchantable/weapon",
   "weight": 2,
   "primary_items": []
 }

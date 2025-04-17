@@ -4,16 +4,16 @@
     "translate": "enchantment.minecraft.knockback"
   },
   "effects": {
-    "minecraft:knockback": [
+    "attributes": [
       {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 1.0,
-            "per_level_above_first": 1.0
-          }
-        }
+        "attribute": "attack_knockback",
+        "amount": {
+          "type": "linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "operation": "add_value",
+        "id": "minecraft:enchantment.knockback"
       }
     ]
   },
@@ -29,7 +29,7 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/sword",
+  "supported_items": "#content_lock:enchantable/weapon",
   "weight": 5,
   "primary_items": []
 }

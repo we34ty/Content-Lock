@@ -4,31 +4,26 @@
     "translate": "enchantment.minecraft.feather_falling"
   },
   "effects": {
-    "minecraft:damage_protection": [
+    "attributes": [
       {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 3.0,
-            "per_level_above_first": 3.0
-          }
+        "attribute": "fall_damage_multiplier",
+        "amount": {
+          "type": "linear",
+          "base": -0.15,
+          "per_level_above_first": -0.15
         },
-        "requirements": {
-          "condition": "minecraft:damage_source_properties",
-          "predicate": {
-            "tags": [
-              {
-                "expected": true,
-                "id": "minecraft:is_fall"
-              },
-              {
-                "expected": false,
-                "id": "minecraft:bypasses_invulnerability"
-              }
-            ]
-          }
-        }
+        "id": "minecraft:enchantment.feather_falling",
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "safe_fall_distance",
+        "amount": {
+          "type": "linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "id": "minecraft:enchantment.feather_falling",
+        "operation": "add_value"
       }
     ]
   },

@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:turtle_scute"
+  },
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:turtle_helmet",
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 2,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 2,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": -0.08,
+            "operation": "add_multiplied_base",
+            "slot": "head"
+          }
+        ],
+        "show_in_tooltip": true
+      },
+      "unbreakable": {
+        "show_in_tooltip": false
+      }    }
+  }
+}
