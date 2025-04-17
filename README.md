@@ -6,7 +6,7 @@ Place the main folder inside both your datapacks folder inside your save and in 
 For the terrain generation to function properly it's recommended to "regenerate" chosen world.
 
 Credits:
-https://modrinth.com/datapack/limited-sprint
-https://modrinth.com/datapack/player-graves
+- https://modrinth.com/datapack/limited-sprint
+- https://modrinth.com/datapack/player-graves
 
 And thanks to people such as agentketna for help with the project.
