@@ -6,32 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 8
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
-              },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
-            }
-          ],
-          "name": "minecraft:bamboo"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
           "functions": [
             {
               "add": false,
@@ -88,11 +62,11 @@
               "function": "minecraft:enchanted_count_increase"
             }
           ],
-          "name": "minecraft:beef"
+          "name": "minecraft:cod"
         }
       ],
       "rolls": 1
     }
   ],
-  "random_sequence": "minecraft:entities/panda"
+  "random_sequence": "minecraft:entities/ocelot"
 }
