@@ -1,8 +1,7 @@
 execute if entity @s[type=#zombies] run function content_lock:mobs/customization/zombies
 execute if entity @s[type=#skeletons] run function content_lock:mobs/customization/skeletons
 execute if entity @s[type=creeper] run function content_lock:mobs/customization/creeper
-execute if entity @s[type=spider] run function content_lock:mobs/customization/spider
-execute if entity @s[type=cave_spider] run function content_lock:mobs/customization/spider
+execute if entity @s[type=#spiders] run function content_lock:mobs/customization/spider
 execute if entity @s[type=enderman] run function content_lock:mobs/customization/enderman
 execute if entity @s[type=witch] run function content_lock:mobs/customization/witch
 execute if entity @s[type=creaking] run function content_lock:mobs/customization/creaking
@@ -16,6 +15,7 @@ execute if entity @s[type=silverfish] run function content_lock:mobs/customizati
 execute if entity @s[type=bat] run function content_lock:mobs/customization/bat
 execute if entity @s[type=#rideable_healthbar] run function content_lock:mobs/customization/horse
 execute if entity @s[type=#minecraft:arrows] run function content_lock:mobs/customization/arrow
+execute if entity @s[type=iron_golem] run function content_lock:mobs/customization/iron_golem
 
 execute store result entity @s Health float 1 run attribute @s max_health get
 attribute @s follow_range modifier add content_lock.customized_content_lock 2 add_multiplied_total
