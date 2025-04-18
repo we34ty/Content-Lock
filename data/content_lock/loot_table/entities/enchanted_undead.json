@@ -41,8 +41,8 @@
                   "id": "content_lock.undead_book",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": 4,
-                    "max": 6
+                    "min": 8,
+                    "max": 12
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
@@ -52,17 +52,10 @@
                   "id": "content_lock.undead_book",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": -3.6,
-                    "max": -3
+                    "min": -3.7,
+                    "max": -3.6
                   },
                   "operation": "add_value",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:entity_interaction_range",
-                  "id": "content_lock.undead_book",
-                  "amount": -0.7,
-                  "operation": "add_multiplied_total",
                   "slot": "mainhand"
                 },
                 {
@@ -70,8 +63,8 @@
                   "id": "content_lock.undead_book",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": 6,
-                    "max": 13
+                    "min": 0.4,
+                    "max": 0.8
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
