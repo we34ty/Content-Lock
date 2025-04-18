@@ -13,6 +13,6 @@ execute if entity @s[scores={content_lock.attack_timer=..150}] run tp @s ^ ^ ^0.
 execute if entity @s[scores={content_lock.attack_timer=..150}] run execute unless block ~ ~-1 ~ #walkable run scoreboard players set @s content_lock.attack_timer 40
 execute if entity @s[scores={content_lock.attack_timer=40}] run playsound entity.iron_golem.damage hostile @a ~ ~ ~ 1 0.7
 execute if entity @s[scores={content_lock.attack_timer=40}] run particle block{block_state:{Name:iron_block}} ~ ~ ~ 2 1 2 1 200 force @a
-execute if entity @s[scores={content_lock.attack_timer=40}] as @a[distance=0..3] run damage @s 6 fly_into_wall
+execute if entity @s[scores={content_lock.attack_timer=40}] at @s run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1.5,distance:3,damage:3,damage_type:fly_into_wall}
 execute if entity @s[scores={content_lock.attack_timer=40}] run data merge entity @s {NoAI:0b} 
 execute if entity @s[scores={content_lock.attack_timer=40}] run tag @s remove content_lock.jump_towards_player

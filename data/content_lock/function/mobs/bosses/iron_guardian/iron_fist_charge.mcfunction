@@ -10,9 +10,9 @@ tp @s ^ ^ ^0.6
 
 playsound entity.iron_golem.damage hostile @a ~ ~ ~ 0.5 1.3
 particle block{block_state:{Name:iron_block}} ~ ~1.5 ~ 1 1.5 1 1 20 force @a
-execute as @a[distance=0..2] run damage @s 8 fly_into_wall
-execute positioned ~ ~1 ~ as @a[distance=0..2] run damage @s 8 fly_into_wall
-execute positioned ~ ~-1 ~ as @a[distance=0..2] run damage @s 8 fly_into_wall
+execute run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1,distance:2,damage:4,damage_type:fly_into_wall}
+execute positioned ~ ~1 ~ run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1,distance:2,damage:4,damage_type:fly_into_wall}
+execute positioned ~ ~-1 ~ run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1,distance:2,damage:4,damage_type:fly_into_wall}
 
 execute if entity @p[distance=0..2] run scoreboard players set @s content_lock.attack_timer 60
 execute positioned ~ ~1 ~ if entity @p[distance=0..2] run scoreboard players set @s content_lock.attack_timer 60
