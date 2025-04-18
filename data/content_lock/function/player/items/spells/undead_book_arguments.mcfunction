@@ -6,6 +6,7 @@ execute store result storage content_lock:saved_stats half_range float 0.01 run 
 execute store result score @s content_lock.temp1 run attribute @s attack_speed get 1000
 scoreboard players set @s content_lock.temp2 10000
 scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
+execute if score @s content_lock.temp2 matches ..1 run scoreboard players set @s content_lock.temp2 2
 execute store result storage content_lock:saved_stats attack_speed int 1 run scoreboard players get @s content_lock.temp2
 
 data modify storage content_lock:saved_stats UUID set from entity @s UUID

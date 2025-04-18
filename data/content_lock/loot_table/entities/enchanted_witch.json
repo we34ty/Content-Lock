@@ -36,7 +36,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -47,7 +47,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:skeleton_skull",
-          "weight": 1,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -122,7 +122,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_name",

@@ -7,6 +7,9 @@ particle enchant ~ ~ ~ 0 0 0 1 10 force @a
 particle explosion_emitter ~ ~ ~ 0 0 0 1 1 force @a
 playsound item.trident.thunder hostile @a ~ ~ ~ 0.1 0.5
 
+$execute positioned ~-$(half_range) ~-$(half_range) ~-$(half_range) if entity @e[type=!#entities,dx=$(range),dy=$(range),dz=$(range),nbt=!{UUID:$(UUID)}] run kill @s
+$execute positioned ~-$(half_range) ~-$(half_range) ~-$(half_range) if entity @e[type=!#entities,dx=$(range),dy=$(range),dz=$(range),nbt=!{UUID:$(UUID)}] run return 0
+
 execute unless block ~ ~ ~ #walkable run kill @s
 execute unless block ~ ~ ~ #walkable run return 0
 
