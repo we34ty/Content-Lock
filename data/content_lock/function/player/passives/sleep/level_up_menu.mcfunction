@@ -1,6 +1,7 @@
 #execute if entity @s[tag=content_lock.level_up_menu_up] run return 0
 
 scoreboard players set @s LevelUp.ContentLock 1
+function content_lock:player/levels/leveling_tellraw
 
 #scoreboard players enable @s LevelUp.ContentLock
 scoreboard players enable @s content_lock.LevelUp.atkrng
