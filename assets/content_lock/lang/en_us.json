@@ -9,6 +9,7 @@
     "content_lock:item.guardian_shovel": "Iron Guardian's Shovel",
     "content_lock:item.guardian_heart": "Iron Guardian's Heart",
     "content_lock:item.glowing_potion": "Potion of Glowing",
+    "content_lock:item.void_return": "Void Exit",
     "content_lock:item.item_upgrader_1": "Item Upgrader I",
     "content_lock:item.item_upgrader_2": "Item Upgrader II",
     "content_lock:item.item_upgrader_3": "Item Upgrader III",
@@ -79,6 +80,7 @@
     "content_lock:notifications.boss_summoned.iron_guardian": "Iron Guardian has been summoned!",
     "content_lock:notifications.level_up_menu.close": " is ready to skip the night.",
     "content_lock:notifications.leave_bed": " is no longer ready.",
-    "content_lock:notifications.error": "An error occured while trying to perform this action."
+    "content_lock:notifications.error": "An error occured while trying to perform this action.",
+    "content_lock:notifications.cannot_use_out_of_void": "Could not perform this action."
 
 }

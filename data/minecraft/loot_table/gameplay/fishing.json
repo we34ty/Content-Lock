@@ -12,21 +12,53 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "minecraft:fishing_hook",
-                  "in_open_water": true
-                }
-              }
-            }
-          ],
           "quality": 2,
           "value": "minecraft:gameplay/fishing/treasure",
           "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 2,
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition":"all_of",
+              "terms": [
+                {
+                  "condition":"any_of",
+                  "terms": [
+                    {
+                      "condition": "time_check",
+                      "value": {
+                        "min": 12000,
+                        "max": 24000
+                      },
+                      "period": 24000
+                    },
+                    {
+                      "condition": "weather_check",
+                      "raining": true
+                    },
+                    {
+                      "condition": "weather_check",
+                      "thundering": true
+                    }
+                  ]
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "minecraft:fishing_hook",
+                      "in_open_water": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",

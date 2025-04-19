@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "content_lock:item.void_return",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 25354366,
+                  "animation": "drink",
+                  "has_consume_particles": false
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:item_model": "minecraft:structure_void",
+                "minecraft:rarity": "rare"
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "content_lock.void_exit": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 4,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:obsidian",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "content_lock:enchantments/chest_obtainable"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:torch",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 5,
+                "max": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_stew"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 11
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

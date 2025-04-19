@@ -5,34 +5,26 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "weight": 4,
+          "quality": 30,
           "type": "minecraft:item",
           "name": "minecraft:name_tag"
         },
         {
+          "quality": 4,
+          "weight": 30,
           "type": "minecraft:item",
           "name": "minecraft:saddle"
         },
         {
+          "quality": 12,
+          "weight": 1,
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "damage": {
-                "type": "minecraft:uniform",
-                "max": 0.25,
-                "min": 0.0
-              },
-              "function": "minecraft:set_damage"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:bow"
+          "name": "minecraft:sniffer_egg"
         },
         {
+          "quality": 6,
+          "weight": 20,
           "type": "minecraft:item",
           "functions": [
             {
@@ -53,17 +45,14 @@
           "name": "minecraft:fishing_rod"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:book"
+          "quality": 7,
+          "weight": 40,
+          "type": "minecraft:loot_table",
+          "value": "content_lock:enchantments/chest_obtainable"
         },
         {
+          "quality": 6,
+          "weight": 20,
           "type": "minecraft:item",
           "name": "minecraft:nautilus_shell"
         }
