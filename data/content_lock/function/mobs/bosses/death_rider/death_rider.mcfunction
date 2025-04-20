@@ -3,23 +3,23 @@ execute unless predicate content_lock:is_night run function content_lock:mobs/bo
 
 attribute @s spawn_reinforcements base set 20
 
+tag @e remove content_lock.im_a_target
+execute on target run tag @s add content_lock.im_a_target
+
 #execute if entity @r[distance=0..40,nbt={HurtTime:1s}] as @a[distance=0..40,nbt={HurtTime:1s}] run scoreboard players add @s content_lock.bleed_stacks 100
 #execute if entity @r[distance=0..40,nbt={HurtTime:1s}] run effect give @s instant_damage 1 1 true
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..6] if predicate content_lock:true_random run tag @s add content_lock.stab_ground_repeat
-execute if entity @s[tag=content_lock.stab_ground_repeat] run function content_lock:mobs/bosses/death_rider/stab_ground_repeat
+execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/death_rider/choose_attack
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=6.1..] if predicate content_lock:true_random run tag @s add content_lock.charge_at_player
-execute if entity @s[tag=content_lock.charge_at_player] run function content_lock:mobs/bosses/death_rider/charge_at_player
+execute if entity @s[tag=content_lock.death_rider.small_jump] run function content_lock:mobs/bosses/death_rider/small_jump
+execute if entity @s[tag=content_lock.death_rider.spin_around] run function content_lock:mobs/bosses/death_rider/spin_around
+execute if entity @s[tag=content_lock.death_rider.under_punch] run function content_lock:mobs/bosses/death_rider/under_punch
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=6.1..] if predicate content_lock:true_random run tag @s add content_lock.teleport_and_spin
-execute if entity @s[tag=content_lock.teleport_and_spin] run function content_lock:mobs/bosses/death_rider/teleport_and_spin
+execute if entity @s[tag=content_lock.death_rider.rush_on_horse] run function content_lock:mobs/bosses/death_rider/rush_on_horse
+execute if entity @s[tag=content_lock.death_rider.throw_zombie_head] run function content_lock:mobs/bosses/death_rider/throw_zombie_head
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..6] if predicate content_lock:true_random run tag @s add content_lock.bite_from_below
-execute if entity @s[tag=content_lock.bite_from_below] run function content_lock:mobs/bosses/death_rider/bite_from_below
-
-#execute if entity @e[tag=iron_guardian_tracking_projectile_indicator] as @e[tag=iron_guardian_tracking_projectile_indicator] at @s run function content_lock:mobs/bosses/iron_guardian/iron_guardian_tracking_projectile_indicator
-
+execute if entity @s[tag=content_lock.death_rider.spin_teleport] run function content_lock:mobs/bosses/death_rider/spin_teleport
+execute if entity @s[tag=content_lock.death_rider.rush_without_horse] run function content_lock:mobs/bosses/death_rider/rush_without_horse
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
 function content_lock:mobs/bosses/music/boss_music {song:music.content_lock.death_rider,duration:3140}
@@ -34,5 +34,5 @@ execute if entity @s[scores={content_lock.boss_exhaustion=0},tag=content_lock.ex
 execute if entity @s[scores={content_lock.boss_exhaustion=1..},tag=content_lock.exhausted] run scoreboard players remove @s content_lock.boss_exhaustion 1
 
 
-ride @s mount @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest]
+ride @s[tag=!content_lock.death_rider.rush_without_horse.dismount] mount @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest]
 

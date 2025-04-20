@@ -2,35 +2,151 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "content_lock.magical_dust": true
+                },
+                "item_name": "{\"translate\":\"content_lock:item.magic_powder\"}",
+                "item_model": "blaze_powder"
+              }
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9,
+                "min": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:regeneration"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "content_lock:item.undead_book",
+                "translate": "content_lock:item.witchs_skull",
+                "color": "#d400ff",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:max_health",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.3,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 4
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.3,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "content_lock.witchs_skull",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.3,
+                    "max": 0.3
+                  },
+                  "operation": "add_multiplied_total",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:movement_efficiency",
+                  "id": "content_lock.witchs_skull",
+                   "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.05,
+                    "max": -0.02
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "content_lock:item.witchs_book",
                 "color": "#d400ff"
               },
               "target": "item_name"
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": {
-                "undead_book": true
-              }
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 326789,
-                  "animation": "brush",
+                  "animation": "block",
                   "has_consume_particles": false,
                   "on_consume_effects": []
                 }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "content_lock.witchs_book": true
               }
             },
             {
@@ -38,51 +154,73 @@
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
-                  "id": "undead_book",
+                  "id": "content_lock.witchs_book",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": 4,
-                    "max": 6
+                    "min": 6,
+                    "max": 8
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:attack_speed",
-                  "id": "undead_book",
+                  "id": "content_lock.witchs_book",
                   "amount": {
                     "type": "minecraft:uniform",
                     "min": -3.6,
-                    "max": -3
+                    "max": -3.4
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
                 },
                 {
-                  "attribute": "minecraft:entity_interaction_range",
-                  "id": "undead_book",
-                  "amount": -0.7,
-                  "operation": "add_multiplied_total",
-                  "slot": "mainhand"
-                },
-                {
                   "attribute": "minecraft:attack_knockback",
-                  "id": "undead_book",
+                  "id": "content_lock.witchs_book",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": 6,
-                    "max": 13
+                    "min": 0.1,
+                    "max": 0.3
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
                 }
               ]
             }
-          ],
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "content_lock:enchantments/chest_obtainable"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_mall",
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.01
+              "chance": 0.02
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "jukebox_playable": {
+                  "song": "minecraft:enchanted_witch",
+                  "show_in_tooltip": true
+                }
+              }
             }
           ]
         }

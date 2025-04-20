@@ -5,6 +5,7 @@
     "#minecraft:rideable_healthbar",
     "#minecraft:arrows",
     "#minecraft:minecarts_no_furrnace",
-    "minecraft:iron_golem"
+    "minecraft:iron_golem",
+    "block_display"
    ]
 }
