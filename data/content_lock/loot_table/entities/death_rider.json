@@ -217,7 +217,7 @@
               "function": "set_components",
               "components": {
                 "jukebox_playable": {
-                  "song": "minecraft:enchanted_witch",
+                  "song": "minecraft:death_rider",
                   "show_in_tooltip": true
                 }
               }

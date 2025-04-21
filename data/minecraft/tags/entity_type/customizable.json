@@ -6,6 +6,7 @@
     "#minecraft:arrows",
     "#minecraft:minecarts_no_furrnace",
     "minecraft:iron_golem",
-    "block_display"
+    "block_display",
+    "#minecraft:pets"
    ]
 }

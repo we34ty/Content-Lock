@@ -9,23 +9,18 @@ execute if score @s[tag=!content_lock.second_phase] content_lock.temporary_healt
 execute positioned ~ ~1 ~ if entity @e[type=potion,distance=0..1,limit=1] as @e[type=potion,distance=0..1] run kill @s
 #effect clear @e[distance=0..40] poison
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..7] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.taze_attack
-execute if entity @s[tag=content_lock.taze_attack] run function content_lock:mobs/bosses/enchanted_witch/taze_attack
+tag @e remove content_lock.im_a_target
+execute on target run tag @s add content_lock.im_a_target
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..7] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.teleport_away
-execute if entity @s[tag=content_lock.teleport_away] run function content_lock:mobs/bosses/enchanted_witch/teleport_away
+execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/enchanted_witch/choose_attack
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..7] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.control_flames
-execute if entity @s[tag=content_lock.control_flames] run function content_lock:mobs/bosses/enchanted_witch/control_flames
+execute if entity @s[tag=content_lock.enchanted_witch.taze_attack] run function content_lock:mobs/bosses/enchanted_witch/taze_attack
+execute if entity @s[tag=content_lock.enchanted_witch.teleport_away] run function content_lock:mobs/bosses/enchanted_witch/teleport_away
+execute if entity @s[tag=content_lock.enchanted_witch.control_flames] run function content_lock:mobs/bosses/enchanted_witch/control_flames
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=7.1..] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.necromancy_attack
-execute if entity @s[tag=content_lock.necromancy_attack] run function content_lock:mobs/bosses/enchanted_witch/necromancy_attack
-
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=7.1..] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.quick_laser
-execute if entity @s[tag=content_lock.quick_laser] run function content_lock:mobs/bosses/enchanted_witch/quick_laser
-
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=7.1..] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.frostbite_attack
-execute if entity @s[tag=content_lock.frostbite_attack] run function content_lock:mobs/bosses/enchanted_witch/frostbite_attack
+execute if entity @s[tag=content_lock.enchanted_witch.necromancy_attack] run function content_lock:mobs/bosses/enchanted_witch/necromancy_attack
+execute if entity @s[tag=content_lock.enchanted_witch.quick_laser] run function content_lock:mobs/bosses/enchanted_witch/quick_laser
+execute if entity @s[tag=content_lock.enchanted_witch.frostbite_attack] run function content_lock:mobs/bosses/enchanted_witch/frostbite_attack
 
 
 

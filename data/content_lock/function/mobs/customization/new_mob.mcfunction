@@ -16,6 +16,7 @@ execute if entity @s[type=bat] run function content_lock:mobs/customization/bat
 execute if entity @s[type=#rideable_healthbar] run function content_lock:mobs/customization/horse
 execute if entity @s[type=#minecraft:arrows] run function content_lock:mobs/customization/arrow
 execute if entity @s[type=iron_golem] run function content_lock:mobs/customization/iron_golem
+execute if entity @s[type=#pets] run function content_lock:mobs/customization/pets
 
 execute store result entity @s Health float 1 run attribute @s max_health get
 attribute @s follow_range modifier add content_lock.customized_content_lock 1 add_multiplied_total
