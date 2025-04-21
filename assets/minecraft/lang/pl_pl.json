@@ -1,0 +1,11 @@
+{
+  "block.minecraft.deepslate_diamond_ore": "Czernitowe złoże diamentu",
+  "item.minecraft.netherite_upgrade_smithing_template.new": "Diamentowe i Netherytowe Ulepszenie",
+  "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Złote i Żelazne Wyposażenie",
+  "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Diament lub Sztabka Netherytu",
+  "item.minecraft.snout_armor_trim_smithing_template.new": "Żelazne i Złote Ulepszenie",
+  "item.minecraft.wild_armor_trim_smithing_template.new": "Kolcze i Kamienne Ulepszenie",
+  "attribute.name.movement_efficiency": "Udźwig",
+  "item.minecraft.potion.effect.glowing": "Mikstura Blasku",
+  "enchantment.minecraft.unbreaking": "Klątwa Niezniszczalności"
+}
