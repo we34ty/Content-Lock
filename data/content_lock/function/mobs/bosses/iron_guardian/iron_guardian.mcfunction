@@ -14,19 +14,16 @@ execute if score L content_lock.timer1 matches 4 run data modify entity @s Angry
 #execute if entity @s[scores={attack_timer=0}] if score @s y_level_check > @p y_level_check if entity @p[distance=0..14] run tag @s add under_player
 #execute if entity @s[tag=under_player] run function content_lock:mobs/bosses/iron_guardian/under_player
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..6.9] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.potemkin_buster
+tag @e remove content_lock.im_a_target
+execute on target run tag @s add content_lock.im_a_target
+
+execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/iron_guardian/choose_attack
+
 execute if entity @s[tag=content_lock.potemkin_buster] run function content_lock:mobs/bosses/iron_guardian/potemkin_buster
-
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..6.9] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.iron_pillar_fall
 execute if entity @s[tag=content_lock.iron_pillar_fall] run function content_lock:mobs/bosses/iron_guardian/iron_pillar_fall
-
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=0..6.9] if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.upwards_throw
 execute if entity @s[tag=content_lock.upwards_throw] run function content_lock:mobs/bosses/iron_guardian/upwards_throw
 
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=7..] if predicate content_lock:three_random run tag @s add content_lock.jump_towards_player
 execute if entity @s[tag=content_lock.jump_towards_player] run function content_lock:mobs/bosses/iron_guardian/jump_towards_player
-
-execute if entity @s[scores={content_lock.attack_timer=0}] if entity @p[distance=7..] if predicate content_lock:three_random run tag @s add content_lock.iron_fist_charge
 execute if entity @s[tag=content_lock.iron_fist_charge] run function content_lock:mobs/bosses/iron_guardian/iron_fist_charge
 
 #execute if entity @e[tag=iron_guardian_tracking_projectile_indicator] as @e[tag=iron_guardian_tracking_projectile_indicator] at @s run function content_lock:bosses/iron_guardian/iron_guardian_tracking_projectile_indicator

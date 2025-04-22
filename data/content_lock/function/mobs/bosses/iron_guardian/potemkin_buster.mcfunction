@@ -4,7 +4,7 @@ execute if entity @s[scores={content_lock.attack_timer=230}] run data merge enti
 execute if entity @s[scores={content_lock.attack_timer=230}] facing entity @p feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 execute if entity @s[scores={content_lock.attack_timer=230}] run playsound entity.iron_golem.attack hostile @a ~ ~ ~ 1 0.7
 execute if entity @s[scores={content_lock.attack_timer=191..230}] run particle dust{color:[1, 0, 0],scale: 1} ^ ^ ^3 3 1 3 1 50 force @a
-execute if entity @s[scores={content_lock.attack_timer=190}] positioned ^ ^ ^3 as @a[distance=0..6] run tag @s add content_lock.caught_in_potemkin_buster
+execute if entity @s[scores={content_lock.attack_timer=190}] positioned ^ ^ ^3 positioned ~-3 ~-1 ~-3 as @e[type=#minecraft:boss_can_damage,dx=6,dy=6,dz=6] run tag @s add content_lock.caught_in_potemkin_buster
 execute if entity @s[scores={content_lock.attack_timer=190}] run tp @s ~ ~ ~ ~ -90
 execute if entity @s[scores={content_lock.attack_timer=149..189}] run tp @s ~ ~0.6 ~
 execute if entity @s[scores={content_lock.attack_timer=110..189}] run tp @a[tag=content_lock.caught_in_potemkin_buster,distance=0..12] ~ ~2 ~
