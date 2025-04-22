@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gunpowder",
+    [
+      "minecraft:flint",
+      "minecraft:blaze_powder"
+    ],
+    [
+      "minecraft:coal",
+      "minecraft:charcoal"
+    ]
+  ],
+  "result": {
+    "count": 12,
+    "id": "minecraft:fire_charge"
+  }
+}

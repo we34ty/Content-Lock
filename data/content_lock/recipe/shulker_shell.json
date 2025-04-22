@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": "minecraft:popped_chorus_fruit",
+    "Y":"minecraft:echo_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:shulker_shell"
+  }
+}

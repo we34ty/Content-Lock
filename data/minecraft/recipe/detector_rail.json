@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": [
+      "minecraft:heavy_weighted_pressure_plate",
+      "minecraft:light_weighted_pressure_plate"
+    ],
+    "R": "minecraft:redstone",
+    "X": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "X X",
+    "X#X",
+    "XRX"
+  ],
+  "result": {
+    "count": 32,
+    "id": "minecraft:detector_rail"
+  }
+}

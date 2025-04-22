@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": "#minecraft:wooden_tool_materials",
+    "o": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "WoW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:shield",
+    "components": {
+      "max_damage": 200,
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:attack_speed",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -0.1,
+          "operation": "add_multiplied_base",
+          "slot": "any"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -0.1,
+          "operation": "add_multiplied_base",
+          "slot": "any"
+        }
+      ]
+    }
+  }
+}

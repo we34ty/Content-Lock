@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:magma_cream",
+    "minecraft:torchflower",
+    "minecraft:magma_cream",
+    "minecraft:slime_ball",
+    "minecraft:shroomlight",
+    "minecraft:slime_ball",
+    "slime_ball",
+    "slime_ball",
+    "slime_ball"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:verdant_froglight"
+  }
+}

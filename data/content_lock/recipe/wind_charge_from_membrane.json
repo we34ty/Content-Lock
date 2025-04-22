@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wind_charge",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:phantom_membrane",
+    "snowball",
+    "gunpowder"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:wind_charge"
+  }
+}

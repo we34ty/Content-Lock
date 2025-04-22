@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_chain": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "minecraft:shroomlight"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lodestone"
+        "recipe": "content_lock:froglights/ochre_froglight"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,14 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_ingot"
+      "has_chain"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lodestone"
+      "content_lock:froglights/ochre_froglight",
+      "content_lock:froglights/verdant_froglight",
+      "content_lock:froglights/pearlescent_froglight"
     ]
   }
 }

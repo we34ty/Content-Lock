@@ -205,7 +205,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_mall",
+          "name": "minecraft:music_disc_otherside",
           "conditions": [
             {
               "condition": "minecraft:random_chance",

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "phantom_membrane"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lodestone"
+        "recipe": "content_lock:wind_charge_from_membrane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_ingot"
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lodestone"
+      "content_lock:wind_charge_from_membrane"
     ]
   }
 }

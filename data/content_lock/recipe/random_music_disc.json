@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#X#",
+    "X X",
+    "#X#"
+  ],
+  "key": {
+    "X": "minecraft:disc_fragment_5",
+    "#": "minecraft:resin_clump"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:structure_void",
+    "components": {
+      "custom_data": {
+        "content_lock.random_music_disc": true
+      },
+      "item_name": "{\"translate\":\"content_lock:item.random_music_disc\"}",
+      "item_model": "music_disc_11"
+    }
+  }
+}
