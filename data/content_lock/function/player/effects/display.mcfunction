@@ -1,2 +1,2 @@
 title @s times 0t 5t 0t
-$title @s actionbar {"text":"                           \u$(stamina)\u$(corruption)\u$(frost)\u$(bleed)","shadow_color": 0}
+$title @s actionbar [{"translate":"space.-14"},{"text":"\u$(bleed)","shadow_color": 0},{"translate":"space.106"},{"text":"\u$(stamina)\u$(frost)\u$(corruption)","shadow_color": 0}]

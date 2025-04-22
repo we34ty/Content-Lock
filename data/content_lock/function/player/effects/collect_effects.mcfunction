@@ -4,11 +4,12 @@ execute at @s if entity @e[distance=0..5,tag=content_lock.vehicle] run return ru
 
 data merge storage content_lock:saved_stats {bleed:E004,frost:E009,corruption:E014,stamina:E016}
 
-execute unless score @s content_lock.bleed_stacks matches 1.. run data merge storage content_lock:saved_stats {bleed:E004}
-execute if score @s content_lock.bleed_stacks matches 1..33 run data merge storage content_lock:saved_stats {bleed:E003}
-execute if score @s content_lock.bleed_stacks matches 34..66 run data merge storage content_lock:saved_stats {bleed:E002}
-execute if score @s content_lock.bleed_stacks matches 67..100 run data merge storage content_lock:saved_stats {bleed:E001}
-execute if score @s content_lock.bleed_stacks matches 101.. run data merge storage content_lock:saved_stats {bleed:E000}
+execute unless score @s content_lock.bleed_stacks matches 1.. run data merge storage content_lock:saved_stats {bleed:E048}
+execute if score @s content_lock.bleed_stacks matches 1..24 run data merge storage content_lock:saved_stats {bleed:E004}
+execute if score @s content_lock.bleed_stacks matches 25..49 run data merge storage content_lock:saved_stats {bleed:E003}
+execute if score @s content_lock.bleed_stacks matches 50..63 run data merge storage content_lock:saved_stats {bleed:E002}
+execute if score @s content_lock.bleed_stacks matches 64..87 run data merge storage content_lock:saved_stats {bleed:E001}
+execute if score @s content_lock.bleed_stacks matches 88.. run data merge storage content_lock:saved_stats {bleed:E000}
 
 
 execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
