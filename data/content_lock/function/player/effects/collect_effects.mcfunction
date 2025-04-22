@@ -5,11 +5,11 @@ execute at @s if entity @e[distance=0..5,tag=content_lock.vehicle] run return ru
 data merge storage content_lock:saved_stats {bleed:E004,frost:E009,corruption:E014,stamina:E016}
 
 execute unless score @s content_lock.bleed_stacks matches 1.. run data merge storage content_lock:saved_stats {bleed:E048}
-execute if score @s content_lock.bleed_stacks matches 1..24 run data merge storage content_lock:saved_stats {bleed:E004}
-execute if score @s content_lock.bleed_stacks matches 25..49 run data merge storage content_lock:saved_stats {bleed:E003}
-execute if score @s content_lock.bleed_stacks matches 50..63 run data merge storage content_lock:saved_stats {bleed:E002}
-execute if score @s content_lock.bleed_stacks matches 64..87 run data merge storage content_lock:saved_stats {bleed:E001}
-execute if score @s content_lock.bleed_stacks matches 88.. run data merge storage content_lock:saved_stats {bleed:E000}
+execute if score @s content_lock.bleed_stacks matches 1..29 run data merge storage content_lock:saved_stats {bleed:E004}
+execute if score @s content_lock.bleed_stacks matches 30..59 run data merge storage content_lock:saved_stats {bleed:E003}
+execute if score @s content_lock.bleed_stacks matches 60..89 run data merge storage content_lock:saved_stats {bleed:E002}
+execute if score @s content_lock.bleed_stacks matches 90..119 run data merge storage content_lock:saved_stats {bleed:E001}
+execute if score @s content_lock.bleed_stacks matches 120.. run data merge storage content_lock:saved_stats {bleed:E000}
 
 
 execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
@@ -26,10 +26,10 @@ execute if score @s content_lock.frostbite_stacks matches 301.. run data merge s
 
 
 execute unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E014}
-execute if score @s content_lock.corruption_meter matches 1..74 run data merge storage content_lock:saved_stats {corruption:E013}
-execute if score @s content_lock.corruption_meter matches 75..150 run data merge storage content_lock:saved_stats {corruption:E012}
-execute if score @s content_lock.corruption_meter matches 151..220 run data merge storage content_lock:saved_stats {corruption:E011}
-execute if score @s content_lock.corruption_meter matches 221.. run data merge storage content_lock:saved_stats {corruption:E010}
+execute if score @s content_lock.corruption_meter matches 1..2 run data merge storage content_lock:saved_stats {corruption:E013}
+execute if score @s content_lock.corruption_meter matches 3..4 run data merge storage content_lock:saved_stats {corruption:E012}
+execute if score @s content_lock.corruption_meter matches 5..6 run data merge storage content_lock:saved_stats {corruption:E011}
+execute if score @s content_lock.corruption_meter matches 7.. run data merge storage content_lock:saved_stats {corruption:E010}
 
 scoreboard objectives add tempmath dummy
 scoreboard players set .scale tempmath 100
