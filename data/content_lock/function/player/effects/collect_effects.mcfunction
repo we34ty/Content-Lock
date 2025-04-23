@@ -70,4 +70,10 @@ execute if score .staminaRATIO tempmath matches 87..90 run data merge storage co
 execute if score .staminaRATIO tempmath matches 91..95 run data merge storage content_lock:saved_stats {stamina:E043}
 execute if score .staminaRATIO tempmath matches 96.. run data merge storage content_lock:saved_stats {stamina:E015}
 
+execute store result score @s content_lock.temp1 run clear @s clock 0
+execute if predicate content_lock:underwater run scoreboard players set @s content_lock.temp1 0
+execute unless score @s content_lock.temp1 matches 1.. run data merge storage content_lock:saved_stats {time:E059}
+execute unless score @s content_lock.temp1 matches 1.. run data merge storage content_lock:saved_stats {nights_skipped:E060}
+execute if score @s content_lock.temp1 matches 1.. run function content_lock:player/passives/inventory_check/clock
+
 function content_lock:player/effects/display with storage content_lock:saved_stats
