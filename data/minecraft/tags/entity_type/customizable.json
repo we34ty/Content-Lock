@@ -7,6 +7,7 @@
     "#minecraft:minecarts_no_furrnace",
     "minecraft:iron_golem",
     "block_display",
-    "#minecraft:pets"
+    "#minecraft:pets",
+    "wandering_trader"
    ]
 }

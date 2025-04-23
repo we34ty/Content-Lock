@@ -84,6 +84,7 @@
     "content_lock:notifications.error": "Wystąpił błąd podczas wykonywania tej akcji.",
     "content_lock:notifications.cannot_use_out_of_void": "Nie można wykonać tej akcji.",
     "content_lock:notifications.progression.1": "Świat zaczyna się zmieniać.",
-    "content_lock:notifications.progression.2": "Czujesz, że płomienie netheru przygasły."
+    "content_lock:notifications.progression.2": "Czujesz, że płomienie netheru przygasły.",
+    "content_lock:notifications.wandering_trader.arrival": "Wędrowny handlarz przybył."
 
 }
