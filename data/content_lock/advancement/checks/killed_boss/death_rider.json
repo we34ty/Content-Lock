@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"content_lock.death_rider\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:progression/killed/death_rider"
+  }
+}

@@ -82,6 +82,8 @@
     "content_lock:notifications.level_up_menu.close": " jest gotowy na pominięcie nocy.",
     "content_lock:notifications.leave_bed": " już nie jest gotowy.",
     "content_lock:notifications.error": "Wystąpił błąd podczas wykonywania tej akcji.",
-    "content_lock:notifications.cannot_use_out_of_void": "Nie można wykonać tej akcji."
+    "content_lock:notifications.cannot_use_out_of_void": "Nie można wykonać tej akcji.",
+    "content_lock:notifications.progression.1": "Świat zaczyna się zmieniać.",
+    "content_lock:notifications.progression.2": "Czujesz, że płomienie netheru przygasły."
 
 }

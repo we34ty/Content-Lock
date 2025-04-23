@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          },
+          "periodic_tick": 40
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:progression/players/nether_before_wither"
+  }
+}

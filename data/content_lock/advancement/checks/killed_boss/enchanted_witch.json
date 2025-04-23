@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"content_lock.enchanted_witch\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:progression/killed/enchanted_witch"
+  }
+}

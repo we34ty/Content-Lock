@@ -82,6 +82,8 @@
     "content_lock:notifications.level_up_menu.close": " is ready to skip the night.",
     "content_lock:notifications.leave_bed": " is no longer ready.",
     "content_lock:notifications.error": "An error occured while trying to perform this action.",
-    "content_lock:notifications.cannot_use_out_of_void": "Could not perform this action."
+    "content_lock:notifications.cannot_use_out_of_void": "Could not perform this action.",
+    "content_lock:notifications.progression.1": "The world is starting to change.",
+    "content_lock:notifications.progression.2": "You feel the flames of Nether have died down."
 
 }

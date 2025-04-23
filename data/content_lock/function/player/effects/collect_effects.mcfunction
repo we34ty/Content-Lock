@@ -12,7 +12,8 @@ execute if score @s content_lock.bleed_stacks matches 90..119 run data merge sto
 execute if score @s content_lock.bleed_stacks matches 120.. run data merge storage content_lock:saved_stats {bleed:E000}
 
 
-execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
+#execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
+execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069}
 
 execute if score @s content_lock.frostbite_stacks matches -100..-1 run data merge storage content_lock:saved_stats {frost:E045}
 execute if score @s content_lock.frostbite_stacks matches -200..-101 run data merge storage content_lock:saved_stats {frost:E046}
@@ -25,7 +26,8 @@ execute if score @s content_lock.frostbite_stacks matches 201..300 run data merg
 execute if score @s content_lock.frostbite_stacks matches 301.. run data merge storage content_lock:saved_stats {frost:E005}
 
 
-execute unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E014}
+execute unless score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E068}
+execute if score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E014}
 execute if score @s content_lock.corruption_meter matches 1..2 run data merge storage content_lock:saved_stats {corruption:E013}
 execute if score @s content_lock.corruption_meter matches 3..4 run data merge storage content_lock:saved_stats {corruption:E012}
 execute if score @s content_lock.corruption_meter matches 5..6 run data merge storage content_lock:saved_stats {corruption:E011}
