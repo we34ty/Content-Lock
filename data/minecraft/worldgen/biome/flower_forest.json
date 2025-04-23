@@ -161,9 +161,9 @@
       },
       {
         "type": "minecraft:skeleton",
-        "maxCount": 2,
+        "maxCount": 1,
         "minCount": 1,
-        "weight": 40
+        "weight": 10
       },
       {
         "type": "minecraft:slime",

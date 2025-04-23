@@ -181,9 +181,9 @@
       },
       {
         "type": "minecraft:skeleton",
-        "maxCount": 3,
-        "minCount": 3,
-        "weight": 40
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
       },
       {
         "type": "minecraft:creeper",
