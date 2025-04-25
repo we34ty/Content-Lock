@@ -42,7 +42,7 @@ scoreboard players operation .staminaMAX tempmath = @s content_lock.max_stamina
 
 execute store result score .staminaRATIO tempmath run scoreboard players operation .stamina tempmath /= .staminaMAX tempmath
 
-execute if score .staminaRATIO tempmath matches 0 run data merge storage content_lock:saved_stats {stamina:E016}
+execute if score .staminaRATIO tempmath matches ..0 run data merge storage content_lock:saved_stats {stamina:E016}
 execute if score .staminaRATIO tempmath matches 1..3 run data merge storage content_lock:saved_stats {stamina:E017}
 execute if score .staminaRATIO tempmath matches 4..7 run data merge storage content_lock:saved_stats {stamina:E018}
 execute if score .staminaRATIO tempmath matches 8..10 run data merge storage content_lock:saved_stats {stamina:E019}
