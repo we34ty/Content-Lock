@@ -44,6 +44,8 @@
     "content_lock:effect.bleed.activated": "Bleeding",
     "content_lock:effect.corruption.activated": "You are Corrupted.",
     "content_lock:effect.corruption.deactivated": "You have recovered from Corruption.",
+    "content_lock:effect.frostbite.activated": "You are now Enraged.",
+    "content_lock:effect.frostbite.deactivated": "You are no longer Enraged.",
     "death.attack.content_lock.splinter": "%1$s couldn't pull a splinter out",
     "death.attack.content_lock.splinter.player": "%2$s put a splinter in %1$s",
     "death.attack.content_lock.bleed": "%1$s bled out",
