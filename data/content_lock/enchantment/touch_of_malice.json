@@ -1,0 +1,34 @@
+{
+  "description": {
+    "translate": "content_lock:enchantment.touch_of_malice"
+  },
+  "exclusive_set": "#content_lock:material_specific",
+  "primary_items": "#content_lock:enchantable/diamond_weapon",
+  "supported_items": "#content_lock:enchantable/diamond_weapon",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "post_attack": [
+      {
+      "affected": "attacker",
+      "enchanted": "attacker",
+      "effect": {
+        "type": "run_function",
+        "function": "content_lock:player/enchantments/touch_of_malice"
+        }
+      }
+    ]
+  }
+}

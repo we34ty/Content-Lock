@@ -17,6 +17,7 @@
 	  "minecraft:sonic_boom",
 	  "minecraft:outside_border",
 	  "content_lock:splinter",
-	  "content_lock:bleed"
+	  "content_lock:bleed",
+	  "content_lock:malice"
 	]
   }

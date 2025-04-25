@@ -1,6 +1,7 @@
 {
 	"values": [
 	  "minecraft:sonic_boom",
-	  "content_lock:splinter"
+	  "content_lock:splinter",
+	  "content_lock:malice"
 	]
   }

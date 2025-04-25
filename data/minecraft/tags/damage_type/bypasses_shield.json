@@ -4,6 +4,7 @@
 	  "minecraft:falling_anvil",
 	  "minecraft:falling_stalactite",
 	  "content_lock:splinter",
-	  "content_lock:bleed"
+	  "content_lock:bleed",
+	  "content_lock:malice"
 	]
   }

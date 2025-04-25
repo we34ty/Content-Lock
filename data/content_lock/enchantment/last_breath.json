@@ -13,11 +13,11 @@
     "base": 5,
     "per_level_above_first": 10
   },
-  "primary_items": "#content_lock:enchantable/iron_weapon",
+  "primary_items": "#content_lock:enchantable/golden_weapon",
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#content_lock:enchantable/iron_weapon",
+  "supported_items": "#content_lock:enchantable/golden_weapon",
   "weight": 1,
   "effects": {
     "minecraft:tick": [
