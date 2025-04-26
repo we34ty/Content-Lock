@@ -1,7 +1,7 @@
 execute unless predicate content_lock:is_night as @e[tag=content_lock.death_rider_horse] run function content_lock:mobs/bosses/boss_despawn
 execute unless predicate content_lock:is_night run function content_lock:mobs/bosses/boss_despawn
 
-attribute @s spawn_reinforcements base set 20
+#attribute @s spawn_reinforcements base set 20
 
 tag @e remove content_lock.im_a_target
 execute on target run tag @s add content_lock.im_a_target

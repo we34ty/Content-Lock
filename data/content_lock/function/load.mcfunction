@@ -234,7 +234,7 @@ bossbar set content_lock.enchanted_witch color purple
 bossbar set content_lock.enchanted_witch style notched_6
 bossbar set content_lock.enchanted_witch max 250
 
-bossbar add content_lock.zombified_piglin_princess {"text":"Projection of the Corrupted Princess","bold":true,"color":"gold"}
+bossbar add content_lock.zombified_piglin_princess {"translate":"content_lock:boss.zombified_piglin_princess","bold":true,"color":"gold"}
 bossbar set content_lock.zombified_piglin_princess color yellow
 bossbar set content_lock.zombified_piglin_princess style notched_6
 bossbar set content_lock.zombified_piglin_princess max 600

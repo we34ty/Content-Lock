@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:gold_nugget",
+    "X": "minecraft:melon_slice"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:glistering_melon_slice",
+    "components": {
+      "consumable": {
+        "animation": "eat",
+        "has_consume_particles": true,
+        "consume_seconds": 1.61,
+        "sound": "entity.generic.eat",
+        "on_consume_effects": [
+          {
+            "type": "apply_effects",
+            "effects": [
+              {
+                "id": "regeneration",
+                "duration": 40,
+                "amplifier": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

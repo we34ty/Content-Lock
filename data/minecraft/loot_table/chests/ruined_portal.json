@@ -115,6 +115,29 @@
                 "min": 4.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "consumable": {
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "consume_seconds": 1.61,
+                  "sound": "entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "regeneration",
+                          "duration": 40,
+                          "amplifier": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
             }
           ],
           "name": "minecraft:glistering_melon_slice",

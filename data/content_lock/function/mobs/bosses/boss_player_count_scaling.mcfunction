@@ -8,4 +8,4 @@ execute if score L content_lock.player_count_scaling matches 5.. run scoreboard 
 execute if score L content_lock.player_count_scaling matches 0 unless entity @s[type=ender_dragon] unless entity @s[type=ender_dragon] run function content_lock:mobs/bosses/boss_despawn
 execute if score L content_lock.player_count_scaling matches 2 run effect give @s resistance 1 1 true
 execute if score L content_lock.player_count_scaling matches 3 run effect give @s resistance 1 2 true
-execute if score L content_lock.player_count_scaling matches 4 run effect give @s resistance 1 3 true
+execute if score L content_lock.player_count_scaling matches 4.. run effect give @s resistance 1 3 true
