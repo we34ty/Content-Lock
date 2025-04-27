@@ -6,6 +6,15 @@ execute as @e[type=zombified_piglin,distance=..40,tag=!content_lock.boss] run fu
 execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/zombified_piglin_princess/choose_attack
 
 execute if entity @s[tag=content_lock.zombified_piglin_princess.fireball] run function content_lock:mobs/bosses/zombified_piglin_princess/fireball
+execute if entity @s[tag=content_lock.zombified_piglin_princess.rain_fireballs] run function content_lock:mobs/bosses/zombified_piglin_princess/rain_fireballs
+execute if entity @s[tag=content_lock.zombified_piglin_princess.phase_in] run function content_lock:mobs/bosses/zombified_piglin_princess/phase_in
+
+execute if entity @s[tag=content_lock.zombified_piglin_princess.laser] run function content_lock:mobs/bosses/zombified_piglin_princess/laser
+execute if entity @s[tag=content_lock.zombified_piglin_princess.bandit_bringer] run function content_lock:mobs/bosses/zombified_piglin_princess/bandit_bringer
+
+execute if entity @s[tag=content_lock.zombified_piglin_princess.left_right_combo] run function content_lock:mobs/bosses/zombified_piglin_princess/left_right_combo
+execute if entity @s[tag=content_lock.zombified_piglin_princess.volcanic_viper] run function content_lock:mobs/bosses/zombified_piglin_princess/volcanic_viper
+execute if entity @s[tag=content_lock.zombified_piglin_princess.gunflame] run function content_lock:mobs/bosses/zombified_piglin_princess/gunflame
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
 function content_lock:mobs/bosses/music/boss_music {song:music.content_lock.corrupted_princess,duration:3940}

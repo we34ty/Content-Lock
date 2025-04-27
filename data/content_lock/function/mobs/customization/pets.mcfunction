@@ -8,3 +8,5 @@ attribute @s water_movement_efficiency modifier add content_lock.customized_cont
 attribute @s knockback_resistance modifier add content_lock.customized_content_lock 0.3 add_value
 attribute @s jump_strength modifier add content_lock.customized_content_lock 0.4 add_multiplied_total
 attribute @s step_height modifier add content_lock.customized_content_lock 2 add_value
+
+effect give @s regeneration infinite 0 true

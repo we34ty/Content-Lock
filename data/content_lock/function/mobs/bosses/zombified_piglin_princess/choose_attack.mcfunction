@@ -7,7 +7,7 @@ execute if score @s content_lock.temp1 matches 1 store result score @s content_l
 execute if score @s content_lock.temp1 matches 2 store result score @s content_lock.temp2 run function content_lock:check_random_chance {chance:3}
 
 scoreboard players set @s content_lock.temp1 0
-scoreboard players set @s content_lock.temp2 1
+scoreboard players set @s content_lock.temp2 2
 
 #far
 execute if score @s content_lock.temp1 matches 0 if score @s content_lock.temp2 matches 1 run tag @s add content_lock.zombified_piglin_princess.fireball
