@@ -11,7 +11,7 @@ execute if entity @s[scores={content_lock.attack_timer=..64}] as @e[tag=content_
 execute if entity @s[scores={content_lock.attack_timer=40}] at @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run particle explosion_emitter ~ ~ ~ 0 0 0 1 1 force @a
 execute if entity @s[scores={content_lock.attack_timer=40}] at @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run playsound minecraft:entity.dragon_fireball.explode hostile @a ~ ~ ~ 1 0.1
 execute if entity @s[scores={content_lock.attack_timer=40}] at @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run particle soul_fire_flame ~ ~ ~ 0 0 0 0.7 60 normal @a
-execute if entity @s[scores={content_lock.attack_timer=40}] at @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:3,distance:6,damage:8,damage_type:explosion}
+execute if entity @s[scores={content_lock.attack_timer=40}] at @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:3,distance:6,damage:8,damage_type:player_explosion}
 execute if entity @s[scores={content_lock.attack_timer=40}] run attribute @s attack_damage modifier remove content_lock.no_attack
 execute if entity @s[scores={content_lock.attack_timer=40}] as @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run attribute @s movement_speed modifier remove content_lock.no_speed
 execute if entity @s[scores={content_lock.attack_timer=40}] run tag @s remove content_lock.death_rider.small_jump

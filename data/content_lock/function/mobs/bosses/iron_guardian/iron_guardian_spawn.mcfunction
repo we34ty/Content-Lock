@@ -5,6 +5,7 @@ execute if score @s content_lock.temp1 matches 1 run title @s actionbar {"transl
 execute if score @s content_lock.temp1 matches 1 run return 0
 
 summon iron_golem ~ ~ ~ {DeathLootTable:"content_lock:entities/iron_guardian",CustomName:'[{"translate":"content_lock:boss.iron_guardian","color":"gray","bold":true}]',CustomNameVisible:1b,Health:200,Glowing:1b,PersistenceRequired:1b,Tags:["content_lock.boss","content_lock.iron_guardian"],attributes:[{id:max_health,base:200f},{id:knockback_resistance,base:0.3f},{id:movement_speed,base:0.3f},{id:attack_knockback,base:3f},{id:scale,base:1.5f},{id:attack_damage,base:5f}]}
+execute if entity @s[type=player] run tag @e[type=iron_golem,tag=content_lock.iron_guardian] add content_lock.drop_summon_on_despawn
 execute as @e[type=iron_golem,tag=content_lock.iron_guardian] run scoreboard players set @s content_lock.attack_timer 100
 execute as @e[type=iron_golem,tag=content_lock.iron_guardian] at @s run spreadplayers ~ ~ 15 20 false @s
 

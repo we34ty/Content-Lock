@@ -228,6 +228,7 @@ scoreboard objectives add content_lock.time_since_rest minecraft.custom:minecraf
 scoreboard objectives add content_lock.LevelUp.close_menu trigger
 scoreboard objectives add content_lock.venom_billiard_cue_countdown dummy
 scoreboard objectives add content_lock.shield_damage_blocked minecraft.custom:damage_blocked_by_shield
+scoreboard objectives add content_lock.combo_counter dummy
 
 bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
