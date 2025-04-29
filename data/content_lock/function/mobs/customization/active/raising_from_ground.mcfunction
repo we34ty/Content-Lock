@@ -1,3 +1,5 @@
+execute at @s unless dimension overworld run return 0
+
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:100}
 
 tag @a remove content_lock.im_a_target
