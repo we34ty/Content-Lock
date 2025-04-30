@@ -6,9 +6,7 @@
     "#minecraft:arrows",
     "#minecraft:minecarts_no_furrnace",
     "minecraft:iron_golem",
-    "block_display",
     "#minecraft:pets",
-    "wandering_trader",
-    "area_effect_cloud"
+    "wandering_trader"
    ]
 }

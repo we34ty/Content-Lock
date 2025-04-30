@@ -19,3 +19,4 @@ execute if score L content_lock.nights_skipped_in_a_row matches 3 run data merge
 execute if score L content_lock.nights_skipped_in_a_row matches 4 run data merge storage content_lock:saved_stats {nights_skipped:E064}
 execute if score L content_lock.nights_skipped_in_a_row matches 5 run data merge storage content_lock:saved_stats {nights_skipped:E065}
 execute if score L content_lock.nights_skipped_in_a_row matches 6.. run data merge storage content_lock:saved_stats {nights_skipped:E066}
+execute if score L content_lock.options.player.sleep_exhaustion matches 0 run data merge storage content_lock:saved_stats {nights_skipped:E060}

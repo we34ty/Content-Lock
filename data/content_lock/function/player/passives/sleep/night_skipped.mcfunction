@@ -1,3 +1,5 @@
+execute if score L content_lock.options.player.leveling matches 0 run return 0 
+
 scoreboard players add L content_lock.nights_skipped_in_a_row 1
 
 execute if score L content_lock.nights_skipped_in_a_row matches 2.. run scoreboard players remove @a[scores={content_lock.corruption_meter=1..}] content_lock.corruption_meter 1

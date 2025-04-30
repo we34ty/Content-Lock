@@ -14,4 +14,4 @@ execute if score @s content_lock.temp2 matches ..0 run return 0
 #scoreboard players set @s content_lock.temp1 2
 #scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
 
-scoreboard players operation @s content_lock.bleed_stacks += @s content_lock.temp2
+execute if score L content_lock.options.player.bleed matches 1 run scoreboard players operation @s content_lock.bleed_stacks += @s content_lock.temp2
