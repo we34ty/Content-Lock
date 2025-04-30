@@ -67,5 +67,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "content_lock:entites/upgrade_1"
 }
