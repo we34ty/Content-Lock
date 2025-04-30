@@ -52,7 +52,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 240,
+      "minecraft:max_damage": 360,
       "minecraft:tool": {
         "rules": [
           {

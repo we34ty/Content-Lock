@@ -43,7 +43,7 @@
     "content_lock:boss.enchanted_witch": "Enchanted Witch",
     "content_lock:boss.death_rider": "Death Rider",
     "content_lock:boss.zombified_piglin_princess": "Zombified Piglin Princess",
-    "content_lock:effect.bleed.activated": "Bleeding",
+    "content_lock:effect.bleed.activated": "You are bleeding.",
     "content_lock:effect.corruption.activated": "You are Corrupted.",
     "content_lock:effect.corruption.deactivated": "You have recovered from Corruption.",
     "content_lock:effect.frostbite.activated": "You are now Enraged.",

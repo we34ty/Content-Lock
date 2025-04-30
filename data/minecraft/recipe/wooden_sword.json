@@ -59,7 +59,7 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 200
+      "minecraft:max_damage": 300
     },
     "count": 1,
     "id": "minecraft:wooden_sword"
