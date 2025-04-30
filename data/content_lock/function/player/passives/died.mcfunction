@@ -12,3 +12,5 @@ execute if score L content_lock.progression matches 2.. unless entity @s[tag=con
 scoreboard players operation @s lsp.stamina = @s content_lock.max_stamina
 scoreboard players set @s content_lock.health_percentage 100
 scoreboard players set @s content_lock.health_percentage_old 100
+
+execute at @s if entity @e[tag=content_lock.boss,distance=..40] run function content_lock:mobs/bosses/reduce_player_respawns
