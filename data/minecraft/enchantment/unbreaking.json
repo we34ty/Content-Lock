@@ -10,7 +10,7 @@
         "amount": {
           "type": "minecraft:linear",
           "base": -0.15,
-          "per_level_above_first": -0.15
+          "per_level_above_first": -0.1
         },
         "id": "minecraft:enchantment.unbreaking",
         "operation": "add_multiplied_total"

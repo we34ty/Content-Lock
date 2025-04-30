@@ -18,7 +18,7 @@
         {
           "type": "minecraft:loot_table",
           "value": "content_lock:enchantments/chest_obtainable",
-          "weight": 8
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -34,7 +34,7 @@
             }
           ],
           "name": "minecraft:experience_bottle",
-          "weight": 5
+          "weight": 2
         },
         {
           "type": "minecraft:item",
