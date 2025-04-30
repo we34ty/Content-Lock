@@ -1,0 +1,2 @@
+particle soul ~ ~1 ~ 0.4 1 0.4 0.01 5 force @a
+execute if entity @e[tag=content_lock.zombified_piglin_princess,limit=1,sort=nearest,distance=40..] run scoreboard players set @e[tag=content_lock.zombified_piglin_princess] content_lock.attack_timer 0

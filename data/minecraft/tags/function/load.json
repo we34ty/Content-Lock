@@ -2,6 +2,7 @@
 	"values": [
 		"content_lock:load",
 		"lsp:init",
-		"m_graves:load"
+		"m_graves:load",
+		"player_motion:internal/technical/load"
 	]
 }
