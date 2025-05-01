@@ -9,3 +9,6 @@ particle soul_fire_flame ~ ~ ~ 0 0 0 1 200 normal
 playsound block.conduit.deactivate hostile @a ~ ~ ~ 10 0.5
 
 execute as @a[scores={content_lock.time_since_death=0},distance=..40] run tag @s add content_lock.do_not_gain_corruption
+
+kill @e[tag=content_lock.iron_guardian_pillar_shaft]
+kill @e[tag=content_lock.iron_guardian_pillar_block]

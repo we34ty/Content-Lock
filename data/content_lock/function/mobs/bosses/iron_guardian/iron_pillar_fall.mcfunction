@@ -37,4 +37,4 @@ execute if entity @s[scores={content_lock.attack_timer=53}] run kill @e[tag=cont
 execute if entity @s[scores={content_lock.attack_timer=53}] run kill @e[tag=content_lock.iron_guardian_pillar_block,limit=5,sort=nearest]
 execute if entity @s[scores={content_lock.attack_timer=27}] run kill @e[tag=content_lock.iron_guardian_pillar_block,limit=5,sort=nearest]
 execute if entity @s[scores={content_lock.attack_timer=27}] run kill @e[tag=content_lock.iron_guardian_pillar_shaft,limit=1,sort=nearest]
-execute if entity @s[scores={content_lock.attack_timer=27}] run tag @s remove content_lock.iron_pillar_fall
+execute if entity @s[scores={content_lock.attack_timer=27}] run tag @s remove content_lock.iron_guardian.iron_pillar_fall

@@ -3,136 +3,29 @@ scoreboard objectives add content_lock.content_lock_version dummy
 scoreboard players set L content_lock.content_lock_version 303
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
-scoreboard objectives add content_lock.y_level_check dummy
 scoreboard objectives add content_lock.progression dummy
-scoreboard objectives add content_lock.witches_killed minecraft.killed:minecraft.witch
-scoreboard objectives add content_lock.zombified_piglins_killed minecraft.killed:minecraft.zombified_piglin
-scoreboard objectives add content_lock.fire_charge_in_use dummy
 scoreboard objectives add content_lock.watchers_gaze_used minecraft.used:minecraft.spyglass
 scoreboard objectives add content_lock.watchers_gaze_time dummy
-scoreboard objectives add content_lock.totem_of_overshield_use minecraft.used:minecraft.totem_of_undying
-scoreboard objectives add content_lock.princess_breastplate_time dummy
 scoreboard objectives add content_lock.endless_night_active dummy
-scoreboard objectives add content_lock.fall_distance_counter dummy
 scoreboard objectives add content_lock.totem_of_undying_use minecraft.used:minecraft.totem_of_undying
-scoreboard objectives add content_lock.time_since_hit_countdown dummy
 scoreboard objectives add content_lock.check_for_damage_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add content_lock.sneak_time_counter minecraft.custom:minecraft.sneak_time
-scoreboard objectives add content_lock.check_for_kill totalKillCount
-scoreboard objectives add content_lock.offensive_ender_bottom_countdown dummy
-scoreboard objectives add content_lock.memento_mori dummy
-scoreboard objectives add content_lock.fragiles_distance_ran minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add content_lock.fragiles_distance_ran2 minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add content_lock.fragiles_jumped minecraft.custom:minecraft.jump
-scoreboard objectives add content_lock.fragiles_counter dummy
-scoreboard objectives add content_lock.cures_kill_detect minecraft.custom:minecraft.mob_kills
-scoreboard objectives add content_lock.molten_armor_melting dummy
 scoreboard objectives add content_lock.timer1 dummy
-scoreboard objectives add content_lock.fire_charge_drop_chance minecraft.custom:minecraft.mob_kills
-scoreboard objectives add content_lock.stunned_by_picky dummy
-scoreboard objectives add content_lock.offensive_ender_armor_dot dummy
-scoreboard objectives add content_lock.momenta_ender_armor_dot dummy
 scoreboard objectives add content_lock.huhhealth1 dummy
 scoreboard objectives add content_lock.huhhealth2 dummy
-scoreboard objectives add content_lock.makeshift_fireball_damage dummy
 scoreboard objectives add content_lock.temporary_health_holder dummy
 scoreboard objectives add content_lock.arrow_damage dummy
-scoreboard objectives add content_lock.toxic_meter dummy
-scoreboard objectives add content_lock.soul_sand dummy
-scoreboard objectives add content_lock.soul_soil dummy
 scoreboard objectives add content_lock.corruption_meter dummy
-scoreboard objectives add content_lock.zombified_piglin_princess_phase_1_health dummy
 scoreboard objectives add content_lock.attack_timer dummy
-scoreboard objectives add content_lock.DamageCheck trigger
 scoreboard objectives add content_lock.damage_amount_for_check dummy
-scoreboard objectives add content_lock.moonlight_greatsword_attack_number dummy
-scoreboard objectives add content_lock.moonlight_greatsword_attack_timer dummy
-scoreboard objectives add content_lock.moonlight_greatsword_attack_charging dummy
-scoreboard objectives add content_lock.mana_mile dummy
-scoreboard objectives add content_lock.moonlight_greatsword_freezing dummy
 scoreboard objectives add content_lock.ice_hail_stacks dummy
-scoreboard objectives add content_lock.twenty dummy
 scoreboard objectives add content_lock.damage_dealt_to_absorption minecraft.custom:minecraft.damage_dealt_absorbed
 scoreboard objectives add content_lock.check_for_death minecraft.custom:minecraft.deaths
-scoreboard objectives add content_lock.fire_charges_count dummy
-scoreboard objectives add content_lock.fire_charges_limit dummy
-scoreboard objectives add content_lock.fire_charges_timer_between_use dummy
-scoreboard objectives add content_lock.fire_charges_timer_on_limit dummy
 scoreboard objectives add content_lock.player_count_scaling dummy
 scoreboard objectives add content_lock.timer2 dummy
 scoreboard objectives add content_lock.RestartMusic trigger
-scoreboard objectives add content_lock.detect_right_click minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add content_lock.max_mana_amount dummy
-scoreboard objectives add content_lock.spike_rain_projectile_amount dummy
-scoreboard objectives add content_lock.spike_rain_damge_save dummy
-scoreboard objectives add content_lock.dragonslayer_greataxe_damage_scale dummy
-scoreboard objectives add content_lock.dragonslayer_greataxe_damage_scale_current dummy
-scoreboard objectives add content_lock.dragonslayer_greataxe_damage_scale_current2 dummy
-scoreboard objectives add content_lock.iron_mined minecraft.mined:iron_ore
-scoreboard objectives add content_lock.spectre_levitation_timer dummy
-scoreboard objectives add content_lock.check_for_elytra minecraft.custom:minecraft.aviate_one_cm
-scoreboard objectives add content_lock.crescent_moon_amount dummy
-scoreboard objectives add content_lock.crescent_moon_bullets dummy
-scoreboard objectives add content_lock.spell_charging dummy
-scoreboard objectives add content_lock.spectre_axe_counter dummy
-scoreboard objectives add content_lock.detect_soul_meteor_bow minecraft.used:minecraft.bow
-scoreboard objectives add content_lock.detect_shield_block dummy
-scoreboard objectives add content_lock.parry_timer dummy
-scoreboard objectives add content_lock.parry_cooldown dummy
-scoreboard objectives add content_lock.dialogue_with_dragons_apprentice dummy
-scoreboard objectives add content_lock.dragons_apprentice_quest_progression dummy
-scoreboard objectives add content_lock.item_counter dummy
-scoreboard objectives add content_lock.rollnumber1 dummy
-scoreboard objectives add content_lock.reachaction dummy
-scoreboard objectives add content_lock.rollnumber2 dummy
-scoreboard objectives add content_lock.rollnumber3 dummy
-scoreboard objectives add content_lock.riggedroll dummy
-scoreboard objectives add content_lock.rollcount dummy
-scoreboard objectives add content_lock.hakari_domain_time dummy
-scoreboard objectives add content_lock.spectre_top_counter dummy
-scoreboard objectives add content_lock.spectre_armor_take_damage dummy
-scoreboard objectives add content_lock.player_sleep_check dummy
 scoreboard objectives add content_lock.time_since_death minecraft.custom:minecraft.time_since_death
-scoreboard objectives add content_lock.dialogue_with_blaze_lord dummy
-scoreboard objectives add content_lock.blaze_lord_quest_progression dummy
-scoreboard objectives add content_lock.bat_amount dummy
-scoreboard objectives add content_lock.zombi_piglin_amount dummy
-scoreboard objectives add content_lock.crescent_moon_reload_sneak_timer dummy
-scoreboard objectives add content_lock.crescent_moon_reload_sneak_check dummy
-scoreboard objectives add content_lock.axl_sickle_attack_timer dummy
-scoreboard objectives add content_lock.axl_sickle_attack_timer2 dummy
-scoreboard objectives add content_lock.axl_sickle_attack_left dummy
-scoreboard objectives add content_lock.axl_sickle_attack_right dummy
-scoreboard objectives add content_lock.axl_special dummy
-scoreboard objectives add content_lock.player_id dummy
-scoreboard objectives add content_lock.walk_detection minecraft.custom:walk_one_cm
-scoreboard objectives add content_lock.anchor_movement dummy
-scoreboard objectives add content_lock.ready_for_launch_tatsugeki dummy
-scoreboard objectives add content_lock.anchor_sneaking dummy
-scoreboard objectives add content_lock.mending_disabled dummy
 scoreboard objectives add content_lock.time_playing_music_player dummy
-scoreboard objectives add content_lock.throwablade_attack dummy
-scoreboard objectives add content_lock.princess_ace_damage dummy
-scoreboard objectives add content_lock.zomcess_connection dummy
-scoreboard objectives add content_lock.aggresive_mob_amount dummy
-scoreboard objectives add content_lock.max_aggresive_mob_amount dummy
-scoreboard objectives add content_lock.zomcess_prev_health dummy
-scoreboard objectives add content_lock.carapacer_count dummy
-scoreboard objectives add content_lock.truth_seeker_amount dummy
-scoreboard objectives add content_lock.passive_mob_amount dummy
-scoreboard objectives add content_lock.max_passive_mob_amount dummy
-scoreboard objectives add content_lock.crafting_disabled dummy
-scoreboard objectives add content_lock.weapon_damage dummy
-scoreboard objectives add content_lock.v2_arm_charge dummy
-scoreboard objectives add content_lock.danger_time dummy
-scoreboard objectives add content_lock.danger_interval dummy
-scoreboard objectives add content_lock.CombatMusicOff trigger
-scoreboard objectives add content_lock.zombified_piglin_princess_killed trigger
-scoreboard objectives add content_lock.officers_killed trigger
-scoreboard objectives add content_lock.enchanting_tables dummy
-scoreboard objectives add content_lock.enchanted_books dummy
-scoreboard objectives add content_lock.player_running minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add content_lock.player_running_reset dummy
 scoreboard objectives add content_lock.player_hunger food
 scoreboard objectives add content_lock.can_player_run dummy
 scoreboard objectives add content_lock.playtime minecraft.custom:play_time
@@ -303,31 +196,6 @@ bossbar set content_lock.slime_god_shield color blue
 bossbar set content_lock.slime_god_shield style progress
 bossbar set content_lock.slime_god_shield max 500
 
-bossbar add content_lock.corruption {"text":"Corruption","color":"red"}
-bossbar set content_lock.corruption color red
-bossbar set content_lock.corruption style progress
-bossbar set content_lock.corruption max 1000
-
-bossbar add content_lock.frostbite {"text":"Frostbite","color":"blue"}
-bossbar set content_lock.frostbite color blue
-bossbar set content_lock.frostbite style notched_6
-bossbar set content_lock.frostbite max 200
-
-bossbar add content_lock.bleed {"text":"Bleed","color":"dark_red"}
-bossbar set content_lock.bleed color red
-bossbar set content_lock.bleed style progress
-bossbar set content_lock.bleed max 1200
-
-bossbar add content_lock.mana {"text":"World Mana","color":"aqua"}
-bossbar set content_lock.mana color blue
-bossbar set content_lock.mana style progress
-bossbar set content_lock.mana max 1
-
-bossbar add content_lock.crescent_moon_bullets {"text":"Bullets","color":"gold"}
-bossbar set content_lock.crescent_moon_bullets color yellow
-bossbar set content_lock.crescent_moon_bullets style notched_6
-bossbar set content_lock.crescent_moon_bullets max 6
-
 bossbar add content_lock.iron_guardian {"translate":"content_lock:boss.iron_guardian","bold":true,"color":"gray"}
 bossbar set content_lock.iron_guardian color white
 bossbar set content_lock.iron_guardian style notched_6
@@ -353,15 +221,6 @@ team add content_lock.wandering_traders_passive_zombies
 
 scoreboard players add L content_lock.endless_night_active 0
 scoreboard players add L content_lock.progression 0
-scoreboard players add L content_lock.mending_disabled 0
-scoreboard players add L content_lock.max_aggresive_mob_amount 0
-scoreboard players add L content_lock.max_passive_mob_amount 0
-scoreboard players add L content_lock.carapacer_count 0
-scoreboard players add L content_lock.truth_seeker_amount 0
-scoreboard players add L content_lock.crafting_disabled 0
-scoreboard players add L content_lock.mana_mile 0
-scoreboard players add L content_lock.zombified_piglin_princess_killed 0
-scoreboard players add L content_lock.officers_killed 0
 scoreboard players add L content_lock.nights_skipped_in_a_row 0
 scoreboard players add L2 content_lock.nights_skipped_in_a_row 0
 

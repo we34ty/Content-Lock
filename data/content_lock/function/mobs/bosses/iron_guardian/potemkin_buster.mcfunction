@@ -10,11 +10,11 @@ execute if entity @s[scores={content_lock.attack_timer=149..189}] run tp @s ~ ~0
 execute if entity @s[scores={content_lock.attack_timer=110..189}] run tp @a[tag=content_lock.caught_in_potemkin_buster,distance=0..12] ~ ~2 ~
 execute if entity @s[scores={content_lock.attack_timer=..189}] run effect give @a[tag=content_lock.caught_in_potemkin_buster,distance=0..12] slow_falling 1 0 true
 execute if entity @s[scores={content_lock.attack_timer=121..130}] run tp @s ~ ~-2.4 ~
-execute if entity @s[scores={content_lock.attack_timer=110}] as @a[tag=content_lock.caught_in_potemkin_buster,distance=0..12] run damage @s 6 fall by @e[tag=content_lock.potemkin_buster,limit=1]
-execute if entity @s[scores={content_lock.attack_timer=110}] as @a[tag=!content_lock.caught_in_potemkin_buster,distance=0..5] run damage @s 3 explosion by @e[tag=content_lock.potemkin_buster,limit=1]
+execute if entity @s[scores={content_lock.attack_timer=110}] as @a[tag=content_lock.caught_in_potemkin_buster,distance=0..12] run damage @s 6 fall by @e[tag=content_lock.iron_guardian.potemkin_buster,limit=1]
+execute if entity @s[scores={content_lock.attack_timer=110}] as @a[tag=!content_lock.caught_in_potemkin_buster,distance=0..5] run damage @s 3 explosion by @e[tag=content_lock.iron_guardian.potemkin_buster,limit=1]
 execute if entity @s[scores={content_lock.attack_timer=110}] run particle explosion ~ ~ ~ 0 0 0 1 1 force @a
 execute if entity @s[scores={content_lock.attack_timer=110}] run playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
 execute if entity @s[scores={content_lock.attack_timer=110..190}] run effect give @s resistance 1 255
 execute if entity @s[scores={content_lock.attack_timer=100}] run data merge entity @s {NoAI:0b} 
-execute if entity @s[scores={content_lock.attack_timer=100}] run tag @s remove content_lock.potemkin_buster
+execute if entity @s[scores={content_lock.attack_timer=100}] run tag @s remove content_lock.iron_guardian.potemkin_buster
 execute if entity @s[scores={content_lock.attack_timer=100}] run tag @a remove content_lock.caught_in_potemkin_buster

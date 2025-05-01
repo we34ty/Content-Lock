@@ -5,4 +5,4 @@ execute if entity @s[scores={content_lock.attack_timer=100}] facing entity @p fe
 particle dust{color:[1, 0, 0],scale: 1} ~ ~ ~ 3.5 1 3.5 1 100 force @a
 execute if entity @s[scores={content_lock.attack_timer=60}] run effect give @a[distance=0..7] levitation 1 14 true
 execute if entity @s[scores={content_lock.attack_timer=60}] run data merge entity @s {NoAI:0b} 
-execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.upwards_throw
+execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.iron_guardian.upwards_throw

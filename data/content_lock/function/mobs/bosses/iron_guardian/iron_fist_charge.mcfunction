@@ -18,4 +18,4 @@ execute if entity @p[distance=0..2] run scoreboard players set @s content_lock.a
 execute positioned ~ ~1 ~ if entity @p[distance=0..2] run scoreboard players set @s content_lock.attack_timer 60
 execute positioned ~ ~-1 ~ if entity @p[distance=0..2] run scoreboard players set @s content_lock.attack_timer 60
 execute if entity @s[scores={content_lock.attack_timer=60}] run data merge entity @s {NoAI:0b} 
-execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.iron_fist_charge
+execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.iron_guardian.iron_fist_charge
