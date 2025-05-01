@@ -8,4 +8,4 @@ execute if entity @s[tag=content_lock.drop_summon_on_despawn,tag=content_lock.ir
 particle soul_fire_flame ~ ~ ~ 0 0 0 1 200 normal
 playsound block.conduit.deactivate hostile @a ~ ~ ~ 10 0.5
 
-execute as @a[scores={content_lock.time_since_death=0}] run tag @s add content_lock.do_not_gain_corruption
+execute as @a[scores={content_lock.time_since_death=0},distance=..40] run tag @s add content_lock.do_not_gain_corruption
