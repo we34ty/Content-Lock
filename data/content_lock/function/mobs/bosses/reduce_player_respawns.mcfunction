@@ -1,5 +1,6 @@
 tag @s add content_lock.spectator
 gamemode spectator @s
+scoreboard players remove @s content_lock.corruption_meter 2
 
 data merge storage content_lock:saved_stats {x:0,y:63,z:0}
 execute store result storage content_lock:saved_stats x double 1 run data get entity @s LastDeathLocation.pos[0]
