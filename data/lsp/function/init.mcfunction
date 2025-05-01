@@ -5,8 +5,8 @@ scoreboard objectives add lsp.stamina dummy
     scoreboard players set sprintable.speed lsp.Values 10
     scoreboard players set unsprintable.speed lsp.Values 5
 
-    # ENABLED = (1=TRUE,0=FALSE);
-    scoreboard players set enabled lsp.Values 1
+    # ENABLED = (1=TRUE,0=FALSE); Moved to content_lock:options as a togglable in-game option
+    #scoreboard players set enabled lsp.Values 1
     
     # 1 second = 20 ticks
     # 10 seconds = 200 ticks

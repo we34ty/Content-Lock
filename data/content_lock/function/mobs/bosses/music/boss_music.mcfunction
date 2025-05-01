@@ -1,4 +1,6 @@
 #stopsound @a[tag=!listening_to_music,distance=0..80] music
+execute if score L content_lock.options.player.boss_music matches 0 run return 0
+
 $execute as @a[distance=0..80,tag=!content_lock.listening_to_music] at @s run playsound $(song) music @s ~ ~ ~ 1 1
 tag @a[distance=0..80,tag=!content_lock.listening_to_music] add content_lock.listening_to_music
 #stopsound @a[tag=listening_to_music,distance=81..100] music

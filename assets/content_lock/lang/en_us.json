@@ -108,8 +108,16 @@
     "content_lock:options.player.leveling.description": "Toggle the display of leveling menu when players go to sleep.",
     "content_lock:options.player.sleep_exhaustion": "Sleep Exhaustion ",
     "content_lock:options.player.sleep_exhaustion.description": "Toggle the debuffs from sleeping too many nights in a row.",
+    "content_lock:options.player.stamina": "Stamina ",
+    "content_lock:options.player.stamina.description": "Toggle the stamina.",
+    "content_lock:options.player.clock_display": "Clock Display ",
+    "content_lock:options.player.clock_display.description": "Toggle clock icon when player has a clock in their inventory.",
+    "content_lock:options.player.boss_music": "Boss Music ",
+    "content_lock:options.player.boss_music.description": "Toggle the music that plays during boss fights.",
     "content_lock:options.enemy.customization": "Enemy Customization ",
     "content_lock:options.enemy.customization.description": "Toggle custom stats of mobs or some custom mob spawns during certain parts of progression (turning this option off is not recommended).",
     "content_lock:options.enemy.scaling": "Enemy Scaling ",
-    "content_lock:options.enemy.scaling.description": "Toggle chance of enemies spawning as a stronger version of themselves based on progression."
+    "content_lock:options.enemy.scaling.description": "Toggle chance of enemies spawning as a stronger version of themselves based on progression.",
+    "content_lock:options.progression.nether_damage": "Nether Damage ",
+    "content_lock:options.progression.nether_damage.description": "Toggle players periodically taking fire damage in the Nether before killing the Wither."
 }

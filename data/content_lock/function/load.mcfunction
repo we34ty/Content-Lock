@@ -231,7 +231,7 @@ scoreboard objectives add content_lock.shield_damage_blocked minecraft.custom:da
 scoreboard objectives add content_lock.combo_counter dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
-scoreboard objectives add content_lock.options.progression dummy
+scoreboard objectives add content_lock.options.progression.nether_damage dummy
 scoreboard objectives add content_lock.options.player.bleed dummy
 scoreboard objectives add content_lock.options.player.corruption dummy
 scoreboard objectives add content_lock.options.enemy.customization dummy
@@ -240,6 +240,8 @@ scoreboard objectives add content_lock.options.player.nightmares dummy
 scoreboard objectives add content_lock.options.player.stamina dummy
 scoreboard objectives add content_lock.options.player.leveling dummy
 scoreboard objectives add content_lock.options.player.sleep_exhaustion dummy
+scoreboard objectives add content_lock.options.player.clock_display dummy
+scoreboard objectives add content_lock.options.player.boss_music dummy
 
 bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
@@ -365,7 +367,7 @@ scoreboard players add L2 content_lock.nights_skipped_in_a_row 0
 
 #Default Values of Options In Game
 execute unless score L content_lock.options.player.limited_boss_respawn matches 0.. run scoreboard players set L content_lock.options.player.limited_boss_respawn 1
-execute unless score L content_lock.options.progression matches 0.. run scoreboard players set L content_lock.options.progression 1
+execute unless score L content_lock.options.progression.nether_damage matches 0.. run scoreboard players set L content_lock.options.progression.nether_damage 1
 execute unless score L content_lock.options.player.bleed matches 0.. run scoreboard players set L content_lock.options.player.bleed 1
 execute unless score L content_lock.options.player.corruption matches 0.. run scoreboard players set L content_lock.options.player.corruption 1
 execute unless score L content_lock.options.enemy.customization matches 0.. run scoreboard players set L content_lock.options.enemy.customization 1
@@ -374,6 +376,8 @@ execute unless score L content_lock.options.player.nightmares matches 0.. run sc
 execute unless score L content_lock.options.player.stamina matches 0.. run scoreboard players set L content_lock.options.player.stamina 1
 execute unless score L content_lock.options.player.leveling matches 0.. run scoreboard players set L content_lock.options.player.leveling 1
 execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. run scoreboard players set L content_lock.options.player.sleep_exhaustion 1
+execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
+execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
 
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
