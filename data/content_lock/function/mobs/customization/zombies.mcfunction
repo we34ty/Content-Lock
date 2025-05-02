@@ -15,12 +15,12 @@ scoreboard players set @s content_lock.temp1 0
 execute if score L content_lock.progression matches 2.. run return 0
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:12}
 execute if score @s content_lock.temp1 matches 1..2 run function content_lock:mobs/bosses/boss_despawn
-execute if score @s content_lock.temp1 matches 1 run return run summon wither_skeleton ~ ~ ~ {DeathLootTable:"content_lock:entities/wither_skeleton_with_soul_sand",attributes:[{id:"minecraft:scale",base:0.8},{id:"minecraft:attack_damage",base:1}]}
+execute if score @s content_lock.temp1 matches 1 run return run summon wither_skeleton ~ ~ ~ {DeathLootTable:"content_lock:entities/wither_skeleton_with_soul_sand",attributes:[{id:"minecraft:scale",base:0.8},{id:"minecraft:attack_damage",base:1},{id:"minecraft:max_health",base:10}]}
 execute if score @s content_lock.temp1 matches 2 run return run summon zombified_piglin ~ ~ ~
 
 scoreboard players set @s content_lock.temp1 0
 execute unless score L content_lock.progression matches 1 run return 0
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:6}
 execute if score @s content_lock.temp1 matches 1..2 run function content_lock:mobs/bosses/boss_despawn
-execute if score @s content_lock.temp1 matches 1 run return run summon wither_skeleton ~ ~ ~ {DeathLootTable:"content_lock:entities/wither_skeleton_with_soul_sand",attributes:[{id:"minecraft:scale",base:0.8},{id:"minecraft:attack_damage",base:1}]}
+execute if score @s content_lock.temp1 matches 1 run return run summon wither_skeleton ~ ~ ~ {DeathLootTable:"content_lock:entities/wither_skeleton_with_soul_sand",attributes:[{id:"minecraft:scale",base:0.8},{id:"minecraft:attack_damage",base:1},{id:"minecraft:max_health",base:10}]}
 execute if score @s content_lock.temp1 matches 2 run return run summon zombified_piglin ~ ~ ~
