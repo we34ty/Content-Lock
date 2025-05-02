@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"content_lock.zombified_piglin_princess\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:progression/killed/zombified_piglin_princess"
+  }
+}

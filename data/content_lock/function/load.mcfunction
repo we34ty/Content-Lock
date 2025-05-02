@@ -211,11 +211,14 @@ bossbar set content_lock.zomcess_connection color green
 bossbar set content_lock.zomcess_connection style notched_6
 bossbar set content_lock.zomcess_connection max 60
 
-team add content_lock.piglin_light
-team modify content_lock.piglin_light color blue
+team add content_lock.invader_enemies
+team modify content_lock.invader_enemies color white
+team modify content_lock.invader_enemies friendlyFire false
+team modify content_lock.invader_enemies seeFriendlyInvisibles true
 
-team add content_lock.jackpot
-team modify content_lock.jackpot color green
+team add content_lock.invader
+team modify content_lock.invader color red
+team modify content_lock.invader friendlyFire true
 
 team add content_lock.wandering_traders_passive_zombies
 

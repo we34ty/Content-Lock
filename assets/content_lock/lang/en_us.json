@@ -95,6 +95,7 @@
     "content_lock:notifications.cannot_use_out_of_void": "Could not perform this action.",
     "content_lock:notifications.progression.1": "The world is starting to change.",
     "content_lock:notifications.progression.2": "You feel the flames of Nether have died down.",
+    "content_lock:notifications.progression.3": "content_lock:notifications.progression.3",
     "content_lock:notifications.wandering_trader.arrival": "A wandering trader has arrived.",
     "content_lock:options.player.limited_boss_respawn": "Limit player respawns at bosses ",
     "content_lock:options.player.limited_boss_respawn.description": "When enabled players that died near a boss go into spectator mode for the time it stays alive.",
