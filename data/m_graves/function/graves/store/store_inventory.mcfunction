@@ -5,5 +5,5 @@ execute if score $loseItems multipack.graves matches 1 run clear @s #m_graves:lo
 data modify storage m_graves:grave_storage Items set from entity @s Inventory
 execute if score $keepItems multipack.graves matches 0 run function m_graves:graves/store/clear_items
 execute if score $keepItems multipack.graves matches 1 run function m_graves:graves/store/keep_items
-execute if score $keepXp multipack.graves matches 0 run function m_graves:graves/store/experience
-execute if score $keepXp multipack.graves matches 1 run data modify storage m_graves:grave_storage Xp set value 0
+#execute if score $keepXp multipack.graves matches 0 run function m_graves:graves/store/experience
+#execute if score $keepXp multipack.graves matches 1 run data modify storage m_graves:grave_storage Xp set value 0

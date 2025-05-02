@@ -1,6 +1,6 @@
 function content_lock:player/modify_wandering_trader/random_trade1
 function content_lock:player/modify_wandering_trader/random_trade2
 function content_lock:player/modify_wandering_trader/random_trade3
-function content_lock:player/modify_wandering_trader/random_trade4
-function content_lock:player/modify_wandering_trader/random_trade5
+#function content_lock:player/modify_wandering_trader/random_trade4
+#function content_lock:player/modify_wandering_trader/random_trade5
 tag @s add content_lock.randomised_trades
