@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:rotten_flesh",
+    "minecraft:diamond",
+    "minecraft:blaze_powder",
+    "minecraft:fire_charge",
+    "minecraft:blaze_powder"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:pink_dye",
+    "components": {
+      "custom_data": {
+        "content_lock.zombified_piglin_princess_summon": true
+      },
+      "item_name": "{\"translate\":\"content_lock:item.boss_summon.zombified_piglin_princess\"}",
+      "item_model": "minecraft:nether_star",
+      "consumable": {
+        "animation": "drink",
+        "consume_seconds": 42342534
+      },
+      "rarity": "rare",
+      "max_stack_size": 1
+    }
+  }
+}
