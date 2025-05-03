@@ -26,20 +26,20 @@
         "id": "armor_level",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.1,
-          "per_level_above_first": 0.1
+          "base": 0.5,
+          "per_level_above_first": 0.5
         },
-        "operation": "add_multiplied_base"
+        "operation": "add_value"
       },
       {
         "attribute": "minecraft:armor_toughness",
         "id": "armor_level",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.1,
-          "per_level_above_first": 0.1
+          "base": 0.5,
+          "per_level_above_first": 0.5
         },
-        "operation": "add_multiplied_base"
+        "operation": "add_value"
       }
     ]
   }

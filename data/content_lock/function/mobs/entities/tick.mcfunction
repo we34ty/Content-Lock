@@ -1,3 +1,3 @@
 execute if entity @e[type=block_display,tag=content_lock.venom_billiard_ball] as @e[type=block_display,tag=content_lock.venom_billiard_ball] at @s run function content_lock:mobs/entities/venom_billiard/tick
 execute if entity @e[type=block_display,tag=content_lock.prism_stone] as @e[type=block_display,tag=content_lock.prism_stone] at @s run function content_lock:mobs/entities/prism_stone
-execute if entity @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] as @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] at @s run function content_lock:mobs/entities/prism_stone_light
+#execute if entity @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] as @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] at @s run function content_lock:mobs/entities/prism_stone_light
