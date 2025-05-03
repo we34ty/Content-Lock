@@ -25,6 +25,7 @@ execute as @a run item modify entity @s player.cursor content_lock:remove_repair
 
 execute if entity @r[scores={LevelUp.ContentLock=1..}] as @a[scores={LevelUp.ContentLock=1..}] run function content_lock:player/levels/leveling_tellraw
 execute if entity @r[scores={content_lock.cake_eaten=1..}] as @a[scores={content_lock.cake_eaten=1..}] run function content_lock:player/passives/eaten
+execute if entity @r[scores={content_lock.combo_timer=1..}] as @a[scores={content_lock.combo_timer=1..}] run function content_lock:player/enchantments/combo_decrease
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:player/ticks/tick7
 
