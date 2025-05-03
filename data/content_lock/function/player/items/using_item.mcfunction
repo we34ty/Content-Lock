@@ -1,3 +1,5 @@
+execute if score @s content_lock.time_since_death matches 0 run return 0
+
 execute if items entity @s weapon.mainhand enchanted_book run function content_lock:player/items/spells/check_spell
 #execute if items entity @s weapon.mainhand #minecraft:swords run function content_lock:player/items/block_with_sword
 execute if items entity @s weapon.mainhand #minecraft:shovels run function content_lock:player/items/charge_shovel

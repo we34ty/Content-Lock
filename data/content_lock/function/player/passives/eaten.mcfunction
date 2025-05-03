@@ -41,6 +41,8 @@ execute if score @s content_lock.golden_carrot_eaten matches 1.. run scoreboard 
 execute if score @s content_lock.golden_apple_eaten matches 1.. run scoreboard players set @s content_lock.healing_from_food 8
 execute if score @s content_lock.rabbit_stew_eaten matches 1.. run scoreboard players set @s content_lock.healing_from_food 9
 execute if score @s content_lock.enchanted_golden_apple_eaten matches 1.. run scoreboard players set @s content_lock.healing_from_food 10
+execute if score @s content_lock.milk_eaten matches 1.. run scoreboard players set @s content_lock.healing_from_food 6
+execute if score @s content_lock.potion_eaten matches 1.. run scoreboard players add @s lsp.stamina 100
 
 #execute if score @s content_lock.pufferfish_eaten matches 1.. run effect give @s nausea 10 0 false
 #execute if score @s content_lock.pufferfish_eaten matches 1.. run effect give @s poison 10 0 false
@@ -124,5 +126,7 @@ scoreboard players set @s content_lock.enchanted_golden_apple_eaten 0
 scoreboard players set @s content_lock.pufferfish_eaten 0
 scoreboard players set @s content_lock.mushroom_stew_eaten 0
 scoreboard players set @s content_lock.rabbit_stew_eaten 0
+scoreboard players set @s content_lock.milk_eaten 0
+scoreboard players set @s content_lock.potion_eaten 0
 
 

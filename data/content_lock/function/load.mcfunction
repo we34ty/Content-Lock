@@ -75,6 +75,8 @@ scoreboard objectives add content_lock.spider_eye_eaten minecraft.used:minecraft
 scoreboard objectives add content_lock.rotten_flesh_eaten minecraft.used:minecraft.rotten_flesh
 scoreboard objectives add content_lock.mushroom_stew_eaten minecraft.used:minecraft.mushroom_stew
 scoreboard objectives add content_lock.rabbit_stew_eaten minecraft.used:minecraft.rabbit_stew
+scoreboard objectives add content_lock.milk_eaten minecraft.used:minecraft.milk_bucket
+scoreboard objectives add content_lock.potion_eaten minecraft.used:minecraft.potion
 scoreboard objectives add content_lock.xp_level dummy
 scoreboard objectives add content_lock.xp_level_old dummy
 scoreboard objectives add content_lock.xp_point dummy
