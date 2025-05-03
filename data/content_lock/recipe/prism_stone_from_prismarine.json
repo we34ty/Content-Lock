@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group":"prism_stone",
+  "pattern": [
+    "Y#Y"
+  ],
+  "key": {
+    "#":"minecraft:glow_ink_sac",
+    "Y": "prismarine_crystals"
+  },
+  "result": {
+    "count": 18,
+    "id": "minecraft:yellow_dye",
+    "components": {
+      "custom_data": {
+        "content_lock.prism_stone": true
+      },
+      "item_name": "{\"translate\":\"content_lock:item.prism_stone\"}",
+      "item_model": "prismarine_crystals",
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 1236871678,
+        "has_consume_particles": false
+      }
+    }
+  }
+}

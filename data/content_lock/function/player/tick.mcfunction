@@ -27,5 +27,7 @@ execute if entity @r[scores={LevelUp.ContentLock=1..}] as @a[scores={LevelUp.Con
 execute if entity @r[scores={content_lock.cake_eaten=1..}] as @a[scores={content_lock.cake_eaten=1..}] run function content_lock:player/passives/eaten
 execute if entity @r[scores={content_lock.combo_timer=1..}] as @a[scores={content_lock.combo_timer=1..}] run function content_lock:player/enchantments/combo_decrease
 
+execute if entity @r[scores={content_lock.item_use_cooldown=1..}] as @a[scores={content_lock.item_use_cooldown=1..}] run scoreboard players remove @s content_lock.item_use_cooldown 1
+
 execute if score L content_lock.timer1 matches 7 run function content_lock:player/ticks/tick7
 

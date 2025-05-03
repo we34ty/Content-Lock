@@ -123,6 +123,7 @@ scoreboard objectives add content_lock.venom_billiard_cue_countdown dummy
 scoreboard objectives add content_lock.shield_damage_blocked minecraft.custom:damage_blocked_by_shield
 scoreboard objectives add content_lock.combo_counter dummy
 scoreboard objectives add content_lock.combo_timer dummy
+scoreboard objectives add content_lock.item_use_cooldown dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
