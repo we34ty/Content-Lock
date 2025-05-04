@@ -6,8 +6,8 @@ execute if score @s content_lock.temp1 matches 0 store result score @s content_l
 execute if score @s content_lock.temp1 matches 1 store result score @s content_lock.temp2 run function content_lock:check_random_chance {chance:2}
 execute if score @s content_lock.temp1 matches 2 store result score @s content_lock.temp2 run function content_lock:check_random_chance {chance:3}
 
-#scoreboard players set @s content_lock.temp1 0
-#scoreboard players set @s content_lock.temp2 2
+#scoreboard players set @s content_lock.temp1 2
+#scoreboard players set @s content_lock.temp2 3
 
 #far
 execute if score @s content_lock.temp1 matches 0 if score @s content_lock.temp2 matches 1 run tag @s add content_lock.death_rider.spin_teleport
