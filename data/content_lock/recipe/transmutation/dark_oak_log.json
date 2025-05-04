@@ -9,7 +9,7 @@
   ],
   "key": {
     "#": "#minecraft:logs",
-    "X": "minecraft:coal"
+    "X": "minecraft:ink_sac"
   },
   "result": {
     "id": "minecraft:dark_oak_log",
