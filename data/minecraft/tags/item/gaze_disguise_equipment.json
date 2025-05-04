@@ -1,12 +1,6 @@
 {
   "values": [
     "minecraft:carved_pumpkin",
-    "minecraft:skeleton_skull",
-    "minecraft:wither_skeleton_skull",
-    "minecraft:zombie_head",
-    "minecraft:piglin_head",
-    "minecraft:dragon_head",
-    "minecraft:creeper_head",
-    "minecraft:player_head"
+    "#minecraft:skulls"
   ]
 }

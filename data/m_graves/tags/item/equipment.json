@@ -23,6 +23,11 @@
     "minecraft:shears",
     "minecraft:brush",
     "minecraft:clock",
-    "minecraft:spyglass"
+    "minecraft:spyglass",
+    "water_bucket",
+    "lava_bucket",
+    "bucket",
+    "#minecraft:skulls",
+    "carved_pumpkin"
   ]
 }

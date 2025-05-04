@@ -59,7 +59,18 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 300
+      "minecraft:max_damage": 300,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:sword_efficient",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
     },
     "count": 1,
     "id": "minecraft:wooden_sword"

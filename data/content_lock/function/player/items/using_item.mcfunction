@@ -1,3 +1,4 @@
+advancement revoke @s only content_lock:checks/using_item
 execute if score @s content_lock.time_since_death matches 0 run return 0
 
 execute if items entity @s weapon.mainhand enchanted_book run function content_lock:player/items/spells/check_spell
@@ -8,4 +9,3 @@ execute if items entity @s weapon.mainhand minecraft:yellow_dye run function con
 execute if items entity @s weapon.mainhand #minecraft:hoes run function content_lock:player/items/hoe_check
 
 #function content_lock:player/passives/update_health_percentage
-advancement revoke @s only content_lock:checks/using_item
