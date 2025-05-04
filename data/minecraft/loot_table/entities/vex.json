@@ -6,22 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1,
-                "min": 0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:iron_sword"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
