@@ -14,6 +14,12 @@
         },
         "operation": "add_value",
         "id": "minecraft:enchantment.knockback"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "minecraft:enchantment.knockback",
+        "amount": 0.05,
+        "operation": "add_multiplied_total"
       }
     ]
   },

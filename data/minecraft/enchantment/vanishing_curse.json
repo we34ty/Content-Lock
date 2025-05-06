@@ -4,7 +4,19 @@
     "translate": "enchantment.minecraft.vanishing_curse"
   },
   "effects": {
-    "minecraft:prevent_equipment_drop": {}
+    "minecraft:prevent_equipment_drop": {},
+    "attributes": [
+      {
+        "attribute": "attack_damage",
+        "id": "minecraft:enchantment.vanishing_curse",
+        "amount": {
+          "type": "linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "operation": "add_multiplied_total"
+      }
+    ]
   },
   "max_cost": {
     "base": 1,

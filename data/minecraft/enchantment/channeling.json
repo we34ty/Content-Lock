@@ -72,17 +72,28 @@
           "condition": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:weather_check",
-              "thundering": true
-            },
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "location": {
-                  "can_see_sky": true
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "weather_check",
+                  "raining": true
+                },
+                {
+                  "condition": "weather_check",
+                  "thundering": true
+                },
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "location": {
+                      "fluid": {
+                        "fluids": "#minecraft:water"
+                      }
+                    }
+                  }
                 }
-              }
+              ]
             },
             {
               "condition": "minecraft:entity_properties",

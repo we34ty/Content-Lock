@@ -1,0 +1,57 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.flawless"
+  },
+  "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_damage",
+        "id": "content_lock.flawless",
+        "amount": {
+          "type": "linear",
+          "base": 0.5,
+          "per_level_above_first": 0.4
+        },
+        "operation": "add_multiplied_total"
+      }
+    ],
+    "post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/flawless_disable"
+        },
+        "requirements": {
+          "condition": "damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "content_lock:doesnt_ruin_flawless",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/golden_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/golden_weapon",
+  "weight": 1
+}

@@ -22,6 +22,26 @@
         "attribute": "minecraft:sweeping_damage_ratio",
         "id": "minecraft:enchantment.sweeping_edge",
         "operation": "add_value"
+      },
+      {
+        "attribute": "attack_damage",
+        "id": "minecraft:enchantment.sweeping_edge",
+        "amount": {
+          "type": "linear",
+          "base": 0.05,
+          "per_level_above_first": 0.05
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "attack_speed",
+        "id": "minecraft:enchantment.sweeping_edge",
+        "amount": {
+          "type": "linear",
+          "base": -0.025,
+          "per_level_above_first": -0.025
+        },
+        "operation": "add_multiplied_total"
       }
     ]
   },
@@ -29,7 +49,7 @@
     "base": 1,
     "per_level_above_first": 0
   },
-  "max_level": 3,
+  "max_level": 4,
   "min_cost": {
     "base": 1,
     "per_level_above_first": 0

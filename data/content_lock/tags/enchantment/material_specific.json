@@ -5,6 +5,12 @@
     "content_lock:regrowth",
     "content_lock:depth_meter",
     "content_lock:earthquake",
-    "content_lock:earthbound"
+    "content_lock:earthbound",
+    "content_lock:combo",
+    "content_lock:flawless",
+    "content_lock:touch_of_malice",
+    "content_lock:iron_grip",
+    "content_lock:last_breath",
+    "content_lock:sharpness2"
   ]
 }

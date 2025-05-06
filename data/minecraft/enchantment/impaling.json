@@ -7,24 +7,40 @@
     "minecraft:damage": [
       {
         "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 2.5,
-            "per_level_above_first": 2.5
+          "type": "minecraft:multiply",
+          "factor": {
+            "type": "linear",
+            "base": 0.05,
+            "per_level_above_first": 0.05
           }
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type": "#minecraft:sensitive_to_impaling"
-          }
+          "condition": "any_of",
+          "terms": [
+            {
+              "condition": "weather_check",
+              "raining": true
+            },
+            {
+              "condition": "weather_check",
+              "thundering": true
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "fluid": {
+                    "fluids": "#minecraft:water"
+                  }
+                }
+              }
+            }
+          ]
         }
       }
     ]
   },
-  "exclusive_set": "#minecraft:exclusive_set/damage",
   "max_cost": {
     "base": 1,
     "per_level_above_first": 0
