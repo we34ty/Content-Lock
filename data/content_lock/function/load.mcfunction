@@ -127,6 +127,8 @@ scoreboard objectives add content_lock.combo_counter dummy
 scoreboard objectives add content_lock.combo_timer dummy
 scoreboard objectives add content_lock.item_use_cooldown dummy
 scoreboard objectives add content_lock.flawless_countdown dummy
+scoreboard objectives add content_lock.durability dummy
+scoreboard objectives add content_lock.durability_reversed dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
