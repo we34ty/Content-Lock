@@ -11,6 +11,7 @@
     "content_lock:item.void_return": "Wyjście z pustki",
     "content_lock:item.random_music_disc": "Losowa płyta muzyczna",
     "content_lock:item.prism_stone": "Kamień pryzmatyczny",
+    "content_lock:item.mays_anchor": "Kotwica Maji",
     "content_lock:item.item_upgrader_1": "Ulepszenie przedmiotu I",
     "content_lock:item.item_upgrader_2": "Ulepszenie przedmiotu II",
     "content_lock:item.item_upgrader_3": "Ulepszenie przedmiotu III",
@@ -39,9 +40,12 @@
     "content_lock:enchantment.regrowth": "Regrowth",
     "content_lock:enchantment.touch_of_malice": "Dotyk złośliwości",
     "content_lock:enchantment.combo": "Kombo",
+    "content_lock:enchantment.flawless": "Bezbłędny",
+    "content_lock:enchantment.sharpness2": "Ostrość V2",
     "content_lock:mob.enchanted_undead": "Zaklęty nieumarły",
     "content_lock:mob.zombie_head": "Głowa zombie",
     "content_lock:mob.living_armor": "Żywa zbroja",
+    "content_lock:mob.tatsugeki.dolphin": "Tatsugeki",
     "content_lock:boss.iron_guardian": "Żelazny strażnik",
     "content_lock:boss.enchanted_witch": "Zaklęta wiedźma",
     "content_lock:boss.death_rider": "Jeździec śmierci",
@@ -125,5 +129,4 @@
     "content_lock:options.enemy.scaling.description": "Wyłącza/włącza szansę na pojawienie się potężniejszych przeciwników na podstawie postępu.",
     "content_lock:options.progression.nether_damage": "Obrażenia od netheru ",
     "content_lock:options.progression.nether_damage.description": "Wyłącza/włącza cykliczne otrzymywanie obrażeń od ognia przez graczy przed zabiciem withera."
-
 }

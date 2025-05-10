@@ -75,8 +75,29 @@
                   "animation": "spear",
                   "has_consume_particles": false
                 },
-                "minecraft:custom_name": "{\"translate\":\"content_lock:item.mays_anchor\",\"italic\": false}"
+                "minecraft:custom_name": "{\"translate\":\"content_lock:item.mays_anchor\",\"italic\": false}",
+                "minecraft:max_damage": 60,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#mineable/pickaxe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
               }
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.25,
+                "max": 0.85
+              },
+              "add": false
             }
           ]
         }

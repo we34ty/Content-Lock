@@ -19,3 +19,6 @@ playsound entity.dolphin.attack player @a ~ ~ ~ 1 0.7
 particle falling_water ~ ~1 ~ 1 1 1 1 40 normal @a 
 particle bubble_column_up ~ ~1 ~ 1 1 1 1 40 normal @a 
 particle white_smoke ~ ~1 ~ 0.5 0.5 0.5 0.2 10 normal @a
+
+scoreboard players set @s content_lock.temp1 -40
+item modify entity @s weapon.mainhand content_lock:durability_from_scoreboard_add
