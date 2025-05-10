@@ -12,6 +12,9 @@ execute store result storage content_lock:saved_stats value double 0.01 run attr
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.forward] positioned ~-1 ~-0.3 ~-1 as @e[type=!#entities,dx=2,dy=1,dz=2,tag=!content_lock.im_a_passanger,tag=!content_lock.tatsugeki.dolphin] run function content_lock:mobs/entities/tatsugeki/damage with storage content_lock:saved_stats
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.upward] positioned ~-0.5 ~-1 ~-0.5 as @e[type=!#entities,dx=1,dy=2,dz=1,tag=!content_lock.im_a_passanger,tag=!content_lock.tatsugeki.dolphin] run function content_lock:mobs/entities/tatsugeki/damage with storage content_lock:saved_stats
 
+execute if entity @s[tag=content_lock.tatsugeki.dolphin.forward] if score @s content_lock.attack_timer matches 20.. run kill @s
+execute if entity @s[tag=content_lock.tatsugeki.dolphin.upward] if score @s content_lock.attack_timer matches 40.. run kill @s
+
 execute unless entity @s[tag=content_lock.tatsugeki.dolphin.upward] run return 0
 execute unless score @s content_lock.attack_timer matches 20 run return 0
 
