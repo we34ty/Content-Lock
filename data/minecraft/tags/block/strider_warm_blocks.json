@@ -12,5 +12,19 @@
     "minecraft:warped_hyphae",
     "minecraft:warped_wart_block",
     "minecraft:twisting_vines_plant",
-    "minecraft:twisting_vines"  ]
+    "minecraft:twisting_vines",
+    "netherrack",
+    "nether_quartz_ore",
+    "crimson_nylium",
+    "crimson_roots",
+    "crimson_fungus",
+    "crimson_hyphae",
+    "weeping_vines",
+    "weeping_vines_plant",
+    "basalt",
+    "smooth_basalt",
+    "polished_basalt",
+    "diamond_ore",
+    "ancient_debris"
+    ]
 }

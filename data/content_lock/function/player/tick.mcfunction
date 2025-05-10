@@ -31,3 +31,4 @@ execute if entity @r[scores={content_lock.item_use_cooldown=1..}] as @a[scores={
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:player/ticks/tick7
 
+execute if entity @r[scores={content_lock.sneak_time_counter=1..}] as @a[scores={content_lock.sneak_time_counter=1..}] run scoreboard players set @s content_lock.sneak_time_counter 0

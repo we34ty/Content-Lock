@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:mays_anchor"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/anchor"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/iron_pickaxe"
+	  }
+	}
+  }

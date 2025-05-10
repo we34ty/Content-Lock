@@ -7,5 +7,6 @@ execute if items entity @s weapon.mainhand #minecraft:shovels run function conte
 execute if items entity @s weapon.mainhand minecraft:pink_dye run function content_lock:player/items/boss_summons/check
 execute if items entity @s weapon.mainhand minecraft:yellow_dye run function content_lock:player/items/special/check
 execute if items entity @s weapon.mainhand #minecraft:hoes run function content_lock:player/items/hoe_check
+execute if items entity @s weapon.mainhand iron_pickaxe[custom_data={"content_lock:mays_anchor":true}] at @s run function content_lock:player/items/custom_weapons/tatsugeki/check
 
 #function content_lock:player/passives/update_health_percentage

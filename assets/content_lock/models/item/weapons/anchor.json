@@ -1,6 +1,4 @@
 {
-	"credit": "Made with Blockbench",
-	"texture_size": [64, 64],
 	"textures": {
 		"0": "item/anchor",
 		"particle": "item/anchor"
@@ -46,34 +44,34 @@
 			"from": [7, 24, 6],
 			"to": [7, 26, 10],
 			"faces": {
-				"north": {"uv": [0, 0, 0, 0.5], "texture": "#0"},
+				"north": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
 				"east": {"uv": [3.75, 7, 4.75, 7.5], "texture": "#0"},
-				"south": {"uv": [0, 0, 0, 0.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
 				"west": {"uv": [6, 7.25, 7, 7.75], "texture": "#0"},
-				"up": {"uv": [0, 1, 0, 0], "texture": "#0"},
-				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+				"up": {"uv": [0, 1, 0.5, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0.5, 1], "texture": "#0"}
 			}
 		},
 		{
 			"from": [9, 24, 6],
 			"to": [9, 26, 10],
 			"faces": {
-				"north": {"uv": [0, 0, 0, 0.5], "texture": "#0"},
+				"north": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
 				"east": {"uv": [3.5, 7.5, 4.5, 8], "texture": "#0"},
-				"south": {"uv": [0, 0, 0, 0.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
 				"west": {"uv": [7, 7.5, 8, 8], "texture": "#0"},
-				"up": {"uv": [0, 1, 0, 0], "texture": "#0"},
-				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+				"up": {"uv": [0, 1, 0.5, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0.5, 1], "texture": "#0"}
 			}
 		},
 		{
 			"from": [7, 26, 6],
 			"to": [9, 26, 10],
 			"faces": {
-				"north": {"uv": [0, 0, 0.5, 0], "texture": "#0"},
-				"east": {"uv": [0, 0, 1, 0], "texture": "#0"},
-				"south": {"uv": [0, 0, 0.5, 0], "texture": "#0"},
-				"west": {"uv": [0, 0, 1, 0], "texture": "#0"},
+				"north": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 0.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 0.5], "texture": "#0"},
 				"up": {"uv": [5, 8.5, 4.5, 7.5], "texture": "#0"},
 				"down": {"uv": [8.25, 2.5, 7.75, 3.5], "texture": "#0"}
 			}
@@ -82,10 +80,10 @@
 			"from": [7, 24, 6],
 			"to": [9, 24, 10],
 			"faces": {
-				"north": {"uv": [0, 0, 0.5, 0], "texture": "#0"},
-				"east": {"uv": [0, 0, 1, 0], "texture": "#0"},
-				"south": {"uv": [0, 0, 0.5, 0], "texture": "#0"},
-				"west": {"uv": [0, 0, 1, 0], "texture": "#0"},
+				"north": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 0.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.5, 0.5], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 0.5], "texture": "#0"},
 				"up": {"uv": [8.25, 4.5, 7.75, 3.5], "texture": "#0"},
 				"down": {"uv": [6.5, 7.75, 6, 8.75], "texture": "#0"}
 			}

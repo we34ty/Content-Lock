@@ -1,0 +1,1 @@
+$damage @s $(value) player_attack by @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=nearest] from @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest]
