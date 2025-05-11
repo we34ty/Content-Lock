@@ -9,7 +9,7 @@
 		  ],
 		  "model": {
 			"type": "model",
-			"model": "content_lock:item/weapons/anchor"
+			"model": "content_lock:item/weapons/netherite_anchor"
 		  }
 		}
 	  ],
