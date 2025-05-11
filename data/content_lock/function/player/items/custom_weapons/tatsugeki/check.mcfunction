@@ -1,8 +1,9 @@
-execute unless score @s lsp.stamina matches ..0 unless entity @s[tag=content_lock.tatsugeki.moving_forward] if entity @e[tag=content_lock.tatsugeki_movement_check,distance=..3.99] run scoreboard players add @s content_lock.anchor_movement 2
+execute unless score @s lsp.stamina matches ..0 unless entity @s[tag=content_lock.tatsugeki.moving_forward] if entity @e[tag=content_lock.tatsugeki_movement_check,distance=..3.9999] run scoreboard players add @s content_lock.anchor_movement 2
 execute unless score @s lsp.stamina matches ..0 unless entity @s[tag=content_lock.tatsugeki.moving_forward] rotated ~ 0 positioned ^ ^ ^-4 run summon area_effect_cloud ~ ~ ~ {Tags:["content_lock.tatsugeki_movement_check"],Duration:2} 
 
 execute unless score @s lsp.stamina matches ..0 unless entity @s[tag=content_lock.tatsugeki.moving_forward] if predicate content_lock:sneaking run scoreboard players add @s content_lock.anchor_sneak 2
 
+execute unless predicate content_lock:sneaking run tag @s remove content_lock.tatsugeki.anchor_sneak_counted
 execute unless entity @s[tag=content_lock.tatsugeki.anchor_sneak_counted] if score @s content_lock.anchor_sneak matches 20.. run playsound block.note_block.bell master @s ~ ~ ~ 1 2
 execute unless entity @s[tag=content_lock.tatsugeki.anchor_sneak_counted] if score @s content_lock.anchor_sneak matches 20.. run tag @s add content_lock.tatsugeki.anchor_sneak_counted
 
