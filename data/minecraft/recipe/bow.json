@@ -54,7 +54,13 @@
         ],
         "show_in_tooltip": true
       },
-      "minecraft:max_damage": 48
+      "minecraft:max_damage": 48,
+      "repairable": {
+        "items": [
+          "bow",
+          "string"
+        ]
+      }
     }
   }
 }
