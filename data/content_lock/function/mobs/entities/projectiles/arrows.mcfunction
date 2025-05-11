@@ -13,3 +13,5 @@ execute if entity @e[tag=content_lock.owner] unless score @e[tag=content_lock.ow
 execute if entity @e[tag=content_lock.owner] run tag @s add content_lock.arrow.changed_damage
 
 execute if entity @e[tag=content_lock.owner] run scoreboard players set @e[tag=content_lock.owner] content_lock.bow_charge 0
+
+execute if score L content_lock.options.player.stamina matches 1.. as @e[tag=content_lock.owner] run function lsp:attacking
