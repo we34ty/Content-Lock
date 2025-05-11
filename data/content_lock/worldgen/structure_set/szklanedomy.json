@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "content_lock:void_exit",
+      "structure": "content_lock:szklanedomy",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "separation": 800,
-    "spacing": 3200,
-    "salt": 5324133612
+    "separation": 26,
+    "spacing": 32,
+    "salt": 435788
   }
 }

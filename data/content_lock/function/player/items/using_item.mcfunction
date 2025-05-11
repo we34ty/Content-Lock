@@ -8,6 +8,8 @@ execute if items entity @s weapon.mainhand minecraft:pink_dye run function conte
 execute if items entity @s weapon.mainhand minecraft:yellow_dye run function content_lock:player/items/special/check
 execute if items entity @s weapon.mainhand #minecraft:hoes run function content_lock:player/items/hoe_check
 execute if items entity @s weapon.mainhand *[custom_data={"content_lock:mays_anchor":true}] at @s run function content_lock:player/items/custom_weapons/tatsugeki/check
+execute if items entity @s weapon.mainhand bow run function content_lock:player/items/bow
+
 #execute if items entity @s weapon.offhand *[custom_data={"content_lock:mays_anchor":true}] at @s run function content_lock:player/items/custom_weapons/tatsugeki/check
 
 #function content_lock:player/passives/update_health_percentage

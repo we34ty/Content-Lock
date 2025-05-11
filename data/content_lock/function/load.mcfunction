@@ -132,6 +132,7 @@ scoreboard objectives add content_lock.durability_reversed dummy
 scoreboard objectives add content_lock.durability_reversed dummy
 scoreboard objectives add content_lock.anchor_movement dummy
 scoreboard objectives add content_lock.anchor_sneak dummy
+scoreboard objectives add content_lock.bow_charge dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy

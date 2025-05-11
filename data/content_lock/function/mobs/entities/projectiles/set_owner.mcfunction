@@ -1,0 +1,1 @@
+$tag @e[nbt={UUID:$(UUID)}] add content_lock.owner

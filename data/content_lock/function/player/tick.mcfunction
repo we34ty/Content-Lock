@@ -36,3 +36,4 @@ execute if entity @r[scores={content_lock.sneak_time_counter=1..}] as @a[scores=
 execute if entity @r[scores={content_lock.anchor_movement=1..}] as @a[scores={content_lock.anchor_movement=1..}] run scoreboard players remove @s content_lock.anchor_movement 1
 execute if entity @r[scores={content_lock.anchor_sneak=1}] as @a[scores={content_lock.anchor_sneak=1}] run tag @s remove content_lock.tatsugeki.anchor_sneak_counted
 execute if entity @r[scores={content_lock.anchor_sneak=1..}] as @a[scores={content_lock.anchor_sneak=1..}] run scoreboard players remove @s content_lock.anchor_sneak 1
+execute if entity @r[scores={content_lock.bow_charge=1..}] as @a[scores={content_lock.bow_charge=1..}] unless items entity @s weapon.mainhand bow run scoreboard players set @s content_lock.bow_charge 0

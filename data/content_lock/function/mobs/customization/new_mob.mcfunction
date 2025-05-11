@@ -14,7 +14,6 @@ execute if entity @s[type=blaze] run function content_lock:mobs/customization/bl
 execute if entity @s[type=silverfish] run function content_lock:mobs/customization/silverfish
 execute if entity @s[type=bat] run function content_lock:mobs/customization/bat
 execute if entity @s[type=#rideable_healthbar] run function content_lock:mobs/customization/horse
-execute if entity @s[type=#minecraft:arrows] run function content_lock:mobs/customization/arrow
 execute if entity @s[type=iron_golem] run function content_lock:mobs/customization/iron_golem
 execute if entity @s[type=#pets] run function content_lock:mobs/customization/pets
 execute if entity @s[type=wandering_trader] run function content_lock:mobs/customization/wandering_trader

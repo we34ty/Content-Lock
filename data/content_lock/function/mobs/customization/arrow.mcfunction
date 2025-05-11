@@ -1,1 +1,0 @@
-#execute if predicate content_lock:true_random if predicate content_lock:true_random run tag @s add content_lock.can_ricoshet

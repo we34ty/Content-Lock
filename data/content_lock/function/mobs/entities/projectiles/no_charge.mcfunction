@@ -1,0 +1,3 @@
+execute store result entity @s damage double 0.0001 run attribute @e[tag=content_lock.owner,limit=1,sort=nearest] attack_damage get 1000
+execute if items entity @e[tag=content_lock.owner,limit=1,sort=nearest] weapon.mainhand minecraft:bow store result entity @s damage double 0.0001 run attribute @e[tag=content_lock.owner,limit=1,sort=nearest] attack_damage get 1000
+execute if items entity @e[tag=content_lock.owner,limit=1,sort=nearest] weapon.mainhand minecraft:crossbow store result entity @s damage double 0.0003 run attribute @e[tag=content_lock.owner,limit=1,sort=nearest] attack_damage get 1000
