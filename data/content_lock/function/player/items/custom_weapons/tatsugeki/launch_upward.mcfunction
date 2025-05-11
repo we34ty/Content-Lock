@@ -1,8 +1,10 @@
 scoreboard players set @s content_lock.anchor_sneak 0
 tag @s add content_lock.tatsugeki.anchor_sneak
-summon dolphin ~ ~ ~ {Silent:1b,Tags:["content_lock.tatsugeki.dolphin","content_lock.tatsugeki.dolphin.upward"],DeathLootTable:"",attributes:[{id:"max_health",base:0},{id:"fall_damage_multiplier",base:-1}],Moistness:40,DeathTime:20s,CustomName:'[{"translate":"content_lock:mob.tatsugeki.dolphin"}]',CustomNameVisible:0b}
+summon dolphin ~ ~ ~ {Silent:1b,Tags:["content_lock.tatsugeki.dolphin","content_lock.tatsugeki.dolphin.upward"],DeathLootTable:"",attributes:[{id:"max_health",base:0},{id:"fall_damage_multiplier",base:-1},{id:"attack_damage",base:1}],Moistness:40,DeathTime:20s,CustomName:'[{"translate":"content_lock:mob.tatsugeki.dolphin"}]',CustomNameVisible:0b}
 ride @s mount @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=nearest]
 tag @s remove content_lock.tatsugeki.anchor_sneak_counted
+
+execute store result entity @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=nearest] attributes[2].base double 0.001 run attribute @s attack_damage get 1000
 
 data merge storage content_lock:saved_stats {speed:1}
 execute store result storage content_lock:saved_stats speed double 0.01 run attribute @s movement_speed get 1500

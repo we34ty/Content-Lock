@@ -8,7 +8,7 @@ execute if entity @s[tag=content_lock.tatsugeki.dolphin.forward] run effect give
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.upward] run effect give @e[tag=content_lock.im_a_passanger] resistance 1 4 true
 
 data merge storage content_lock:saved_stats {value:1}
-execute store result storage content_lock:saved_stats value double 0.01 run attribute @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest] attack_damage get 100
+execute store result storage content_lock:saved_stats value double 0.001 run attribute @s attack_damage get 1000
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.forward] positioned ~-1 ~-0.3 ~-1 as @e[type=!#entities,dx=2,dy=1,dz=2,tag=!content_lock.im_a_passanger,tag=!content_lock.tatsugeki.dolphin] run function content_lock:mobs/entities/tatsugeki/damage with storage content_lock:saved_stats
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.upward] positioned ~-0.5 ~-1 ~-0.5 as @e[type=!#entities,dx=1,dy=2,dz=1,tag=!content_lock.im_a_passanger,tag=!content_lock.tatsugeki.dolphin] run function content_lock:mobs/entities/tatsugeki/damage with storage content_lock:saved_stats
 

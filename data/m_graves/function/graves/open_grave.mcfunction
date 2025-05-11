@@ -15,3 +15,5 @@ kill @n[distance=..0.1,type=interaction,tag=multipack.grave_interaction]
 kill @e[distance=..0.1,type=block_display,tag=multipack.grave_display,limit=2,sort=nearest]
 kill @e[distance=..0.1,type=text_display,tag=multipack.grave_display,limit=2,sort=nearest]
 kill @s
+
+forceload remove ~-1 ~-1 ~1 ~1
