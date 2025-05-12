@@ -9,10 +9,14 @@ execute if block ~ ~ ~ reinforced_deepslate run return fail
 
 particle dust{color:14643215,scale:1} ~ ~0.1 ~ 0.1 0.1 0.1 1 3 normal @a
 
-execute if block ~ ~ ~ #air positioned ~ ~-1 ~ run function mining_quarries:mine_look_deep
+execute if block ~ ~ ~ #airs_and_liquids positioned ~ ~-1 ~ run function mining_quarries:mine_look_deep
 
-execute unless block ~ ~ ~ #air run function mining_quarries:mine_generate_loot
-tp @e[type=item,distance=..1] @e[tag=content_lock.quarry,limit=1,sort=nearest]
+scoreboard players set @s content_lock.temp1 0
+execute unless block ~ ~ ~ #airs_and_liquids if items block ~ ~ ~ container.* * run scoreboard players set @s content_lock.temp1 1
 
-execute unless block ~ ~ ~ #air run setblock ~ ~ ~ air
+execute unless block ~ ~ ~ #airs_and_liquids if score @s content_lock.temp1 matches 0 run function mining_quarries:mine_generate_loot
+tp @e[type=item,distance=..0.1] @e[tag=content_lock.quarry,limit=1,sort=nearest]
+
+execute unless block ~ ~ ~ #airs_and_liquids if score @s content_lock.temp1 matches 1 run setblock ~ ~ ~ air destroy
+execute unless block ~ ~ ~ #airs_and_liquids if score @s content_lock.temp1 matches 0 run setblock ~ ~ ~ air
 #kill @e[type=item,distance=..1] 
