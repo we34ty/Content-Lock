@@ -2,6 +2,7 @@
   "values": [
     "minecraft:vanishing_curse",
     "minecraft:binding_curse",
-    "minecraft:unbreaking"
+    "minecraft:unbreaking",
+    "content_lock:charge_time_increase"
   ]
 }

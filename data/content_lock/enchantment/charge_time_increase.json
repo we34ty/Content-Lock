@@ -1,0 +1,32 @@
+{
+  "description": {
+    "translate": "content_lock:enchantment.charge_time_increase",
+    "color": "#ffffff"
+  },
+  "supported_items": "crossbow",
+  "primary_items": "crossbow",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "hand"
+  ],
+  "effects": {
+    "crossbow_charge_time": {
+      "type": "multiply",
+      "factor": {
+        "type": "linear",
+        "base": 2.5,
+        "per_level_above_first": 1.5
+      }
+    }
+  }
+}
