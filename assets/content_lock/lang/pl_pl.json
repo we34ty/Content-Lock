@@ -85,6 +85,8 @@
     "content_lock:levels.skill_points_2": " niewykorzystanych punktów umiejętności",
     "content_lock:levels.close_menu": "Zamknij Menu",
     "content_lock:levels.close_menu.description": "Zamknij menu poziomów i idź spać",
+    "content_lock:levels.reset": "Reset",
+    "content_lock:levels.reset.description": "Zrelokuj swoje punkty umiejętności",
     "content_lock:advancement.creeper.title": "Aw Man",
     "content_lock:advancement.creeper.description": "Dostań obrażenia od eksplozji creepera",
     "content_lock:notifications.too_many_skipped_nights": "Pominąłeś zbyt wiele nocy pod rząd! Przez 3 kolejne noce nie zaznasz spoczynku.",

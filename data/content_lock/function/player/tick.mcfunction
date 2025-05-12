@@ -6,6 +6,7 @@ function content_lock:player/passives/health_regen
 function content_lock:player/items/tick
 function content_lock:player/remove_bossbar
 execute if score L content_lock.timer1 matches 4 as @a run function content_lock:player/levels/check_level
+execute as @a run function content_lock:player/levels/check_triggers
 execute if entity @r[scores={content_lock.spoken_with_villager=1..}] as @a[scores={content_lock.spoken_with_villager=1..}] run function content_lock:player/passives/check_for_villager_spoken
 
 execute if entity @r[scores={content_lock.cavalry_counter=1}] as @a[scores={content_lock.cavalry_counter=1}] run function content_lock:player/enchantments/cavalry_disable
@@ -23,7 +24,6 @@ execute if entity @r[tag=content_lock.last_breath] as @a[tag=content_lock.last_b
 
 execute as @a run item modify entity @s player.cursor content_lock:remove_repair_cost
 
-execute if entity @r[scores={LevelUp.ContentLock=1..}] as @a[scores={LevelUp.ContentLock=1..}] run function content_lock:player/levels/leveling_tellraw
 execute if entity @r[scores={content_lock.cake_eaten=1..}] as @a[scores={content_lock.cake_eaten=1..}] run function content_lock:player/passives/eaten
 execute if entity @r[scores={content_lock.combo_timer=1..}] as @a[scores={content_lock.combo_timer=1..}] run function content_lock:player/enchantments/combo_decrease
 

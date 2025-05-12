@@ -11,6 +11,7 @@ scoreboard players enable @s content_lock.LevelUp.eqld
 scoreboard players enable @s content_lock.LevelUp.hp
 scoreboard players enable @s content_lock.LevelUp.mvtspd
 scoreboard players enable @s content_lock.LevelUp.close_menu
+scoreboard players enable @s content_lock.LevelUp.reset
 
 tag @s add content_lock.level_up_menu_up
-execute unless score @s content_lock.player_unused_skill_points matches 1.. run function content_lock:player/levels/close_menu
+execute unless score @s content_lock.player_skill_level matches 1.. run function content_lock:player/levels/close_menu
