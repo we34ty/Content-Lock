@@ -1,15 +1,15 @@
-scoreboard objectives remove quarry_damage
-scoreboard objectives add quarry_damage dummy
+scoreboard objectives remove content_lock.quarry_damage
+scoreboard objectives add content_lock.quarry_damage dummy
 
-scoreboard objectives remove quarry_temp_var
-scoreboard objectives add quarry_temp_var dummy
+scoreboard objectives remove content_lock.quarry_temp_var
+scoreboard objectives add content_lock.quarry_temp_var dummy
 
-scoreboard objectives add quarry_cooldown dummy
+scoreboard objectives add content_lock.quarry_cooldown dummy
 
-scoreboard objectives add quarry_place minecraft.used:minecraft.dropper
+scoreboard objectives add content_lock.quarry_place minecraft.used:minecraft.dropper
 
 
-scoreboard players set mining_quarry_2 quarry_temp_var 2
+scoreboard players set mining_quarry_2 content_lock.quarry_temp_var 2
 
 
 schedule function mining_quarries:tick 2t replace

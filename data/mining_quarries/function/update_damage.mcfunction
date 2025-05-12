@@ -1,1 +1,2 @@
-execute at @s store result score @s quarry_damage run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:damage"execute at @s store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:damage" int 1 run scoreboard players add @s quarry_damage 1
+execute at @s store result score @s content_lock.quarry_damage run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:damage"
+execute at @s store result block ~ ~ ~ Items[{Slot:4b}].components."minecraft:damage" int 1 run scoreboard players add @s content_lock.quarry_damage 1

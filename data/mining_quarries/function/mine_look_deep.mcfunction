@@ -12,7 +12,7 @@ particle dust{color:14643215,scale:1} ~ ~0.1 ~ 0.1 0.1 0.1 1 3 normal @a
 execute if block ~ ~ ~ #air positioned ~ ~-1 ~ run function mining_quarries:mine_look_deep
 
 execute unless block ~ ~ ~ #air run function mining_quarries:mine_generate_loot
-tp @e[type=item,distance=..1] @e[tag=quarry,limit=1,sort=nearest]
+tp @e[type=item,distance=..1] @e[tag=content_lock.quarry,limit=1,sort=nearest]
 
 execute unless block ~ ~ ~ #air run setblock ~ ~ ~ air
 #kill @e[type=item,distance=..1] 

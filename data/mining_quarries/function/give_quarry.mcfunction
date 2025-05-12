@@ -1,1 +1,1 @@
-give @s minecraft:dropper[minecraft:custom_name='{"extra":[{"color":"yellow","italic":false,"text":"Quarry"}],"text":""}']
+give @s minecraft:dropper[minecraft:custom_name='{"translate": "content_lock:item.quarry","italic": false}',rarity="uncommon"]
