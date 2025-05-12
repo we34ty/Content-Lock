@@ -7,12 +7,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:saddle",
-          "weight": 20
+          "weight": 35
         },
         {
           "type": "minecraft:loot_table",
           "value": "content_lock:enchantments/chest_obtainable",
-          "weight": 30
+          "weight": 40
         },
         {
           "type": "minecraft:item",
@@ -28,7 +28,7 @@
             }
           ],
           "name": "minecraft:experience_bottle",
-          "weight": 17
+          "weight": 25
         },
         {
           "type": "minecraft:item",
