@@ -3,6 +3,7 @@
 		"content_lock:load",
 		"lsp:init",
 		"m_graves:load",
-		"player_motion:internal/technical/load"
+		"player_motion:internal/technical/load",
+		"mining_quarries:init"
 	]
 }
