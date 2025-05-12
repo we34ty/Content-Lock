@@ -1,1 +1,2 @@
-$loot insert ^ ^ ^1 loot {"pools":[{"rolls":{"type":"minecraft:constant","value":$(count)},"entries":[{"type":"item","name":"$(id)","functions":[]}]}]}kill @s
+$loot insert ^ ^ ^1 loot {"pools":[{"rolls":{"type":"minecraft:constant","value":$(count)},"entries":[{"type":"item","name":"$(id)","functions":[]}]}]}
+kill @s

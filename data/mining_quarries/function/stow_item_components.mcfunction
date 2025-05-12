@@ -1,0 +1,3 @@
+$loot insert ^ ^ ^1 loot {"pools":[{"rolls":{"type":"minecraft:constant","value":$(count)},"entries":[{"type":"item","name":"$(id)","functions":[{function:"set_components",components:{$(components)}}]}]}]}
+#loot insert ^ ^ ^1 loot {"pools":[{"rolls":{"type":"minecraft:constant","value":1},"entries":[{"type":"item","name":"iron_sword","functions":[{function:"set_components",components:{}}]}]}]}
+kill @s
