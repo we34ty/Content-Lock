@@ -13,3 +13,4 @@ execute if score L content_lock.timer1 matches 18 run function content_lock:mobs
 function content_lock:mobs/entities/tick
 
 execute if score L content_lock.timer1 matches 4 if predicate content_lock:day_begins run function content_lock:mobs/passives/check_for_wandering_trader_spawn
+execute if score L content_lock.timer1 matches 8 if entity @e[scores={content_lock.crashful_counter=1..}] as @e[scores={content_lock.crashful_counter=1..}] run function content_lock:player/enchantments/crashful_recover

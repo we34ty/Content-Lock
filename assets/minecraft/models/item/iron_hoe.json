@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:item/handheld_rod",
-  "textures": {
-    "layer0": "minecraft:item/iron_hoe"
-  },
-  "overrides":[
-    {"predicate":{"custom_model_data":327},"model":"minecraft:item/axl_sickles"}
-  ]
-}
