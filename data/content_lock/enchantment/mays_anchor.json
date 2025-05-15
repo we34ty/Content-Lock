@@ -1,0 +1,23 @@
+{
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.mays_anchor",
+    "color": "#8ac4cd"
+  },
+  "effects": {
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/weapon",
+  "weight": 1
+}

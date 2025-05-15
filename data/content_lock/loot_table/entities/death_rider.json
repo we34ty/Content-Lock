@@ -10,50 +10,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:glistering_melon_slice",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "custom_data": {
-                  "content_lock.magical_dust": true
-                },
-                "item_name": "{\"translate\":\"content_lock:item.magic_powder\"}",
-                "item_model": "blaze_powder"
-              }
-            },
-            {
-              "function": "set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9,
-                "min": 5
-              }
-            }
-          ]
+          "name": "minecraft:snout_armor_trim_smithing_template",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:regeneration"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:skeleton_skull",
-          "weight": 3,
+          "name": "minecraft:yellow_dye",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "content_lock:item.witchs_skull",
-                "color": "#d400ff",
+                "translate": "content_lock:item.riders_eye",
+                "color": "#980b38",
                 "italic": false
               }
             },
@@ -61,92 +30,95 @@
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {
-                  "attribute": "minecraft:max_health",
-                  "id": "content_lock.witchs_skull",
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.riders_eye",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": -0.3,
-                    "max": 0.3
+                    "min": -0.1,
+                    "max": 0.25
                   },
                   "operation": "add_multiplied_total",
-                  "slot": "head"
+                  "slot": "offhand"
                 },
                 {
-                  "attribute": "minecraft:armor",
-                  "id": "content_lock.witchs_skull",
+                  "attribute": "minecraft:block_interaction_range",
+                  "id": "content_lock.riders_eye",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": 1,
-                    "max": 4
+                    "min": 0,
+                    "max": 1.5
                   },
                   "operation": "add_value",
-                  "slot": "head"
+                  "slot": "offhand"
                 },
                 {
-                  "attribute": "minecraft:attack_speed",
-                  "id": "content_lock.witchs_skull",
+                  "attribute": "minecraft:entity_interaction_range",
+                  "id": "content_lock.riders_eye",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": -0.3,
-                    "max": 0.3
+                    "min": -0.5,
+                    "max": 0.5
                   },
-                  "operation": "add_multiplied_total",
-                  "slot": "head"
-                },
-                {
-                  "attribute": "minecraft:attack_damage",
-                  "id": "content_lock.witchs_skull",
-                  "amount": {
-                    "type": "minecraft:uniform",
-                    "min": -0.3,
-                    "max": 0.3
-                  },
-                  "operation": "add_multiplied_total",
-                  "slot": "head"
+                  "operation": "add_value",
+                  "slot": "offhand"
                 },
                 {
                   "attribute": "minecraft:movement_efficiency",
-                  "id": "content_lock.witchs_skull",
-                   "amount": {
+                  "id": "content_lock.riders_eye",
+                  "amount": {
                     "type": "minecraft:uniform",
-                    "min": -0.05,
-                    "max": -0.02
+                    "min": -0.1,
+                    "max": 0.2
                   },
-                  "operation": "add_value",
-                  "slot": "head"
+                  "operation": "add_multiplied_base",
+                  "slot": "offhand"
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "content_lock.riders_eye": true
+                },
+                "item_model": "spider_eye",
+                "enchantment_glint_override": true,
+                "consumable": {
+                  "animation": "spyglass",
+                  "consume_seconds": 36747893729,
+                  "has_consume_particles": false
+                }
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
-          "weight": 2,
+          "name": "minecraft:gold_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 14
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "content_lock:item.witchs_book",
-                "color": "#d400ff"
-              },
-              "target": "item_name"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:consumable": {
-                  "consume_seconds": 326789,
-                  "animation": "block",
-                  "has_consume_particles": false,
-                  "on_consume_effects": []
-                }
-              }
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": {
-                "content_lock.witchs_book": true
+                "translate": "content_lock:item.quickstep_dagger",
+                "color": "#525252",
+                "italic": false
               }
             },
             {
@@ -154,72 +126,78 @@
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
-                  "id": "content_lock.witchs_book",
+                  "id": "content_lock.quickstep_dagger",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": 6,
-                    "max": 8
+                    "min": 3.4,
+                    "max": 4.6
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:sweeping_damage_ratio",
+                  "id": "content_lock.quickstep_dagger",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0,
+                    "max": 0.2
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:attack_speed",
-                  "id": "content_lock.witchs_book",
+                  "id": "content_lock.quickstep_dagger",
                   "amount": {
                     "type": "minecraft:uniform",
-                    "min": -3.6,
-                    "max": -3.4
+                    "min": -2.2,
+                    "max": -1.6
                   },
                   "operation": "add_value",
                   "slot": "mainhand"
                 },
                 {
+                  "attribute": "minecraft:entity_interaction_range",
+                  "id": "content_lock.quickstep_dagger",
+                  "amount": -0.2,
+                  "operation": "add_multiplied_base",
+                  "slot": "mainhand"
+                },
+                {
                   "attribute": "minecraft:attack_knockback",
-                  "id": "content_lock.witchs_book",
-                  "amount": {
-                    "type": "minecraft:uniform",
-                    "min": 0.1,
-                    "max": 0.3
-                  },
+                  "id": "content_lock.quickstep_dagger",
+                  "amount": -1,
                   "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:movement_efficiency",
+                  "id": "content_lock.quickstep_dagger",
+                  "amount": -0.01,
+                  "operation": "add_multiplied_base",
                   "slot": "mainhand"
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "value": "content_lock:enchantments/chest_obtainable"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_otherside",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.02
-            }
-          ],
-          "functions": [
+            },
             {
               "function": "set_components",
               "components": {
-                "jukebox_playable": {
-                  "song": "minecraft:death_rider",
-                  "show_in_tooltip": true
-                }
+                "enchantments": {
+                  "content_lock:quickstep_dagger": 1
+                },
+                "enchantment_glint_override": false,
+                "custom_model_data": {
+                  "strings": [
+                    "content_lock:quickstep_dagger"
+                  ]
+                },
+                "consumable": {
+                  "animation": "spear",
+                  "consume_seconds": 36747893729,
+                  "has_consume_particles": false
+                },
+                "max_damage": 146
               }
             }
           ]

@@ -3,6 +3,11 @@
     "minecraft:vanishing_curse",
     "minecraft:binding_curse",
     "minecraft:unbreaking",
-    "content_lock:charge_time_increase"
+    "content_lock:charge_time_increase",
+    "content_lock:mays_anchor",
+    "content_lock:guardian_shovel",
+    "content_lock:armor_level",
+    "content_lock:weapon_level",
+    "content_lock:quickstep_dagger"
   ]
 }

@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:quickstep_dagger"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/quickstep_dagger"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/netherite_sword"
+	  }
+	}
+  }
