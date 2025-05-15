@@ -1,3 +1,4 @@
+#tag @s remove content_lock.turn_to_spectator_after_death
 tag @s add content_lock.spectator
 gamemode spectator @s
 scoreboard players remove @s content_lock.corruption_meter 2

@@ -8,5 +8,6 @@ execute if score L content_lock.nights_skipped_in_a_row matches 1.. if predicate
 function content_lock:player/passives/night_time_management
 execute as @a run function content_lock:player/passives/random_sounds/tick
 execute if entity @r[tag=content_lock.spectator] unless entity @e[tag=content_lock.boss] as @a[tag=content_lock.spectator] run function content_lock:mobs/bosses/turn_off_spectator
+execute if entity @r[tag=content_lock.turn_to_spectator_after_death] unless entity @e[tag=content_lock.boss] as @a[tag=content_lock.turn_to_spectator_after_death] run tag @s remove content_lock.turn_to_spectator_after_death
 
 execute if score @r content_lock.flawless_countdown matches 1.. as @a[scores={content_lock.flawless_countdown=1..}] at @s run function content_lock:player/enchantments/flawless_countdown

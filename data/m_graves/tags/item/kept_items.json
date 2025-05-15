@@ -2,6 +2,7 @@
   "values": [
     "#m_graves:equipment",
     "minecraft:experience_bottle",
-    "#minecraft:bundles"
+    "#minecraft:bundles",
+    "enchanted_book"
   ]
 }
