@@ -113,6 +113,17 @@
                 "minecraft:max_damage": 94,
                 "minecraft:custom_data": {
                   "content_lock.guardian_shovel": true
+                },
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#mineable/pickaxe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
                 }
               }
             }
