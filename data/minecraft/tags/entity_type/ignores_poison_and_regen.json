@@ -1,6 +1,6 @@
 {
+  "replace": true,
   "values": [
-    "#minecraft:undead",
-    "minecraft:creeper"
+    "creeper"
   ]
 }

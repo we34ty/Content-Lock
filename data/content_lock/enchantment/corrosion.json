@@ -1,0 +1,57 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.corrosion"
+  },
+  "effects": {
+    "post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "apply_mob_effect",
+          "max_amplifier": {
+            "type": "linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "min_amplifier": {
+            "type": "linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "min_duration": 5,
+          "max_duration": 5,
+          "to_apply": [
+            "poison"
+          ]
+        },
+        "requirements": {
+          "condition": "random_chance",
+          "chance": {
+            "type": "score",
+            "target": "attacker",
+            "score": "content_lock.durability_reversed",
+            "scale": 0.0005
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/iron_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/iron_weapon",
+  "weight": 1
+}
