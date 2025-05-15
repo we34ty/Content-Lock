@@ -1,12 +1,5 @@
 {
   "values": [
-    "content_lock:cavalry",
-    "content_lock:splinter",
-    "content_lock:regrowth",
-    "content_lock:depth_meter",
-    "content_lock:earthbound",
-    "content_lock:earthquake",
-    "content_lock:iron_grip",
-    "content_lock:last_breath"
+    "#content_lock:material_specific"
   ]
 }

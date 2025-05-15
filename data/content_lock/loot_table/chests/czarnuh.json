@@ -98,8 +98,8 @@
           ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:wild_armor_trim_smithing_template",
+          "type": "minecraft:loot_table",
+          "value": "content_lock:entities/upgrade_2",
           "weight": 1,
           "functions": [
             {
