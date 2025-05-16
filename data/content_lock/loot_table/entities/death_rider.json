@@ -197,7 +197,18 @@
                   "consume_seconds": 36747893729,
                   "has_consume_particles": false
                 },
-                "max_damage": 146
+                "max_damage": 146,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:sword_efficient",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
               }
             }
           ]

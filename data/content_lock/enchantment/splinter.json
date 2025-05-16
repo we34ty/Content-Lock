@@ -1,6 +1,6 @@
 {
   "exclusive_set": "#content_lock:material_specific",
-  "anvil_cost": 100,
+  "anvil_cost": 1,
   "description": {
     "translate": "content_lock:enchantment.splinter"
   },
