@@ -12,4 +12,4 @@ scoreboard players reset @s content_lock.LevelUp.reset
 
 execute unless entity @r[tag=content_lock.level_up_menu_up,tag=!content_lock.level_up_menu_down] run function content_lock:player/passives/sleep/enable_sleeping with storage content_lock:saved_stats
 
-execute if entity @r[tag=content_lock.level_up_menu_up,tag=!content_lock.level_up_menu_down] run tellraw @a [{"selector": "@s","color": "blue"},{"translate":"content_lock:notifications.level_up_menu.close","color":"blue"}]
+execute if entity @r[tag=!content_lock.level_up_menu_down] run tellraw @a [{"selector": "@s","color": "blue"},{"translate":"content_lock:notifications.level_up_menu.close","color":"blue"}]

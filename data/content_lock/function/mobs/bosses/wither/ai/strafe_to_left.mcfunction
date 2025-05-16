@@ -1,1 +1,0 @@
-execute facing entity @p feet rotated ~ 0 run tp @s ^0.5 ^ ^0.03
