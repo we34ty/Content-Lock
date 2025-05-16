@@ -11,3 +11,6 @@ execute if entity @r[tag=content_lock.spectator] unless entity @e[tag=content_lo
 execute if entity @r[tag=content_lock.turn_to_spectator_after_death] unless entity @e[tag=content_lock.boss] as @a[tag=content_lock.turn_to_spectator_after_death] run tag @s remove content_lock.turn_to_spectator_after_death
 
 execute if score @r content_lock.flawless_countdown matches 1.. as @a[scores={content_lock.flawless_countdown=1..}] at @s run function content_lock:player/enchantments/flawless_countdown
+
+execute if entity @r[team=content_lock.invisibility] as @a[team=content_lock.invisibility] run team leave @s
+execute if entity @r[nbt={active_effects:[{id:"minecraft:invisibility"}]}] as @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run team join content_lock.invisibility
