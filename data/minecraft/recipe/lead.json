@@ -2,7 +2,6 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "O": "minecraft:slime_ball",
     "~": "minecraft:string"
   },
   "pattern": [

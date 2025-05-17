@@ -1,6 +1,6 @@
 #setblock ~ ~ ~ air destroy
 
-execute if predicate content_lock:can_have_nightmare_sleep run time add 2000
+execute if predicate content_lock:can_have_nightmare_sleep unless entity @r[distance=0.1..] run time add 2000
 
 damage @s 1 mob_attack
 
