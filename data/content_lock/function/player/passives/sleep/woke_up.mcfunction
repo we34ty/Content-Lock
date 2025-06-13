@@ -1,5 +1,5 @@
 tag @s remove content_lock.level_up_menu_up
-execute if entity @s[tag=content_lock.level_up_menu_down] if entity @r[tag=content_lock.level_up_menu_up] run tellraw @a [{"selector": "@s","color": "gold"},{"translate":"content_lock:notifications.leave_bed","color":"gold"}]
+execute if entity @s[tag=content_lock.level_up_menu_down] if entity @r[distance=0.1..] run tellraw @a [{"selector": "@s","color": "gold"},{"translate":"content_lock:notifications.leave_bed","color":"gold"}]
 tag @s remove content_lock.level_up_menu_down
 
 scoreboard players reset @s LevelUp.ContentLock

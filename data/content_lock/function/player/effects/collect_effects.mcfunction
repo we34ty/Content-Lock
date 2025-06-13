@@ -73,6 +73,8 @@ execute if score .staminaRATIO tempmath matches 87..90 run data merge storage co
 execute if score .staminaRATIO tempmath matches 91..95 run data merge storage content_lock:saved_stats {stamina:E043}
 execute if score .staminaRATIO tempmath matches 96.. run data merge storage content_lock:saved_stats {stamina:E015}
 execute if score L content_lock.options.player.stamina matches 0 run data merge storage content_lock:saved_stats {stamina:E070}
+execute if entity @s[gamemode=creative] run data merge storage content_lock:saved_stats {stamina:E070}
+execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {stamina:E070}
 
 execute store result score @s content_lock.temp2 run clear @s clock 0
 execute if predicate content_lock:underwater run scoreboard players set @s content_lock.temp2 0

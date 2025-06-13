@@ -137,6 +137,8 @@ scoreboard objectives add content_lock.bow_charge dummy
 scoreboard objectives add content_lock.quickstep_dagger_charge dummy
 scoreboard objectives add content_lock.crashful_counter dummy
 scoreboard objectives add content_lock.death_count deathCount
+scoreboard objectives add content_lock.ai_timer dummy
+scoreboard objectives add content_lock.ai_option dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
