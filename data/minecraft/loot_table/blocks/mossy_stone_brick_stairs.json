@@ -26,21 +26,16 @@
                   }
                 }
               ],
-              "name": "minecraft:clay"
+              "name": "minecraft:mossy_stone_brick_stairs"
             },
             {
               "type": "minecraft:item",
-              "functions": [
+              "conditions": [
                 {
-                  "add": false,
-                  "count": 9,
-                  "function": "minecraft:set_count"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
+                  "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "minecraft:clay_ball"
+              "name": "minecraft:stone_brick_stairs"
             }
           ]
         }
@@ -48,5 +43,5 @@
       "rolls": 1
     }
   ],
-  "random_sequence": "minecraft:blocks/clay"
+  "random_sequence": "minecraft:blocks/mossy_stone_brick_stairs"
 }
