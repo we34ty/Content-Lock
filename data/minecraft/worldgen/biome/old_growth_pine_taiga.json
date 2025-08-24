@@ -83,6 +83,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "content_lock:cave_vines",
+      "content_lock:cave_spiderweb",
       "minecraft:patch_large_fern",
       "minecraft:trees_old_growth_pine_taiga",
       "minecraft:flower_default",

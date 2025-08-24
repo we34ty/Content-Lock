@@ -74,6 +74,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "content_lock:cave_vines",
+      "content_lock:cave_spiderweb",
       "minecraft:pale_garden_vegetation",
       "minecraft:pale_moss_patch",
       "minecraft:pale_garden_flowers",

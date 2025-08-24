@@ -86,6 +86,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "content_lock:cave_vines",
+      "content_lock:cave_spiderweb",
       "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
       "minecraft:patch_dead_bush_2",

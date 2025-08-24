@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": "minecraft:air"
+    },
+    "direction": "down",
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "data": {
+                "type": "minecraft:constant",
+                "value": 1
+              },
+              "weight": 5
+            }
+          ]
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "data": {
+                "Name": "minecraft:cobweb"
+              },
+              "weight": 1
+            }
+          ]
+        }
+      }
+    ],
+    "prioritize_tip": true
+  }
+}

@@ -82,6 +82,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "content_lock:cave_vines",
+      "content_lock:cave_spiderweb",
       "minecraft:trees_sparse_jungle",
       "minecraft:flower_warm",
       "minecraft:patch_grass_jungle",

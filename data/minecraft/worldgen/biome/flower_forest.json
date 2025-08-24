@@ -82,6 +82,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "content_lock:cave_vines",
+      "content_lock:cave_spiderweb",
       "minecraft:flower_forest_flowers",
       "minecraft:trees_flower_forest",
       "minecraft:flower_flower_forest",

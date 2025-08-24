@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "minecraft:heavy_weighted_pressure_plate",
+    "#": "#minecraft:planks",
+    "Y": "#minecraft:wooden_slabs"
+  },
+  "pattern": [
+    "#X#",
+    "# #",
+    "#Y#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:barrel"
+  }
+}

@@ -82,6 +82,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "content_lock:cave_vines",
+      "content_lock:cave_spiderweb",
       "minecraft:forest_flowers",
       "minecraft:birch_tall",
       "minecraft:flower_default",
