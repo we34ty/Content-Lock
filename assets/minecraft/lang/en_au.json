@@ -8,5 +8,6 @@
   "attribute.name.movement_efficiency": "Equip Load",
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
   "enchantment.minecraft.unbreaking": "Curse of Unbreaking",
-  "block.minecraft.stonecutter": "Table Saw"
+  "block.minecraft.stonecutter": "Table Saw",
+  "container.stonecutter": "Table Saw"
 }

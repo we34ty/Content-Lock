@@ -8,5 +8,6 @@
   "attribute.name.movement_efficiency": "udźwigu",
   "item.minecraft.potion.effect.glowing": "Mikstura blasku",
   "enchantment.minecraft.unbreaking": "Klątwa niezniszczalności",
-  "block.minecraft.stonecutter": "Piła stołowa"
+  "block.minecraft.stonecutter": "Piła stołowa",
+  "container.stonecutter": "Piła stołowa"
 }

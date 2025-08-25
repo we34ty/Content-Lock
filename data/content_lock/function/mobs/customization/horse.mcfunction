@@ -4,7 +4,7 @@ execute if entity @s[type=strider] run attribute @s step_height modifier add con
 attribute @s[type=!pig] movement_speed modifier add content_lock.customized_content_lock 0.5 add_multiplied_base
 attribute @s safe_fall_distance modifier add content_lock.customized_content_lock 5 add_value
 attribute @s step_height modifier add content_lock.customized_content_lock 1 add_value
-attribute @s jump_strength modifier add content_lock.customized_content_lock 1 add_value
+attribute @s jump_strength modifier add content_lock.customized_content_lock 0.5 add_value
 attribute @s jump_strength modifier add content_lock.customized_content_lock2 0.25 add_multiplied_total
 execute if entity @s[type=strider] run attribute @s tempt_range modifier add content_lock.customized_content_lock 5 add_multiplied_total
 data merge entity @s {Strength:5}
