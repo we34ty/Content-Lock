@@ -1,13 +1,6 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "redstone",
-  "group": "wooden_pressure_plate",
-  "key": {
-    "#": "minecraft:oak_planks"
-  },
-  "pattern": [
-    "##"
-  ],
+  "type": "minecraft:stonecutting",
+  "ingredient":"oak_planks",
   "result": {
     "count": 4,
     "id": "minecraft:oak_pressure_plate"

@@ -7,5 +7,6 @@
   "item.minecraft.wild_armor_trim_smithing_template.new": "Kolcze i Kamienne Ulepszenie",
   "attribute.name.movement_efficiency": "udźwigu",
   "item.minecraft.potion.effect.glowing": "Mikstura blasku",
-  "enchantment.minecraft.unbreaking": "Klątwa niezniszczalności"
+  "enchantment.minecraft.unbreaking": "Klątwa niezniszczalności",
+  "block.minecraft.stonecutter": "Piła stołowa"
 }

@@ -7,5 +7,6 @@
   "item.minecraft.wild_armor_trim_smithing_template.new": "Chainmail & Stone Upgrade",
   "attribute.name.movement_efficiency": "Equip Load",
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
-  "enchantment.minecraft.unbreaking": "Curse of Unbreaking"
+  "enchantment.minecraft.unbreaking": "Curse of Unbreaking",
+  "block.minecraft.stonecutter": "Table Saw"
 }
