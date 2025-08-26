@@ -1,12 +1,6 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "redstone",
-  "key": {
-    "#": "minecraft:stone"
-  },
-  "pattern": [
-    "##"
-  ],
+  "type": "minecraft:stonecutting",
+  "ingredient":"stone",
   "result": {
     "count": 4,
     "id": "minecraft:stone_pressure_plate"
