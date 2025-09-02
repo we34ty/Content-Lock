@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "content_lock:maps",
+  "ingredients": [
+    "minecraft:map",
+    "minecraft:wither_skeleton_skull",
+    "chest"
+    ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:chest",
+    "components": {
+      "item_name": "{\"translate\":\"content_lock:item.map.sigma\"}",
+      "container_loot": {
+        "loot_table": "content_lock:recipes/sigma_map"
+      }
+    }
+  }
+}
