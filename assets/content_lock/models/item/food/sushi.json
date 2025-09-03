@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/tropical_fish",
+  "textures": {
+    "layer0": "minecraft:item/sushi"
+  }
+}

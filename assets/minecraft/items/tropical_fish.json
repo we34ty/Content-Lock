@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:sushi"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/food/sushi"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/tropical_fish"
+	  }
+	}
+  }

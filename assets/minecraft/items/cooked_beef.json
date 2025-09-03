@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:pierogi"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/food/pierogi"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/cooked_beef"
+	  }
+	}
+  }

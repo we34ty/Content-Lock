@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glow_berries",
+    "melon_slice",
+    "beetroot",
+    "glow_berries",
+    "bowl",
+    "carrot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mushroom_stew",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.glow_salad\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:glow_salad"
+      ]
+    },
+    "food": {
+      "nutrition": 4,
+      "saturation": 3
+    },
+    "consumable": {
+      "animation": "eat",
+      "on_consume_effects": [
+        {
+          "type": "apply_effects",
+          "effects": [
+            {
+              "id": "glowing",
+              "duration": 400
+            },
+            {
+              "id": "night_vision",
+              "duration": 400
+            }
+          ]
+        }
+      ]
+    }
+  }
+  }
+}

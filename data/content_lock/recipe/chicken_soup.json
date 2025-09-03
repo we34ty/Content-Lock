@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:chicken",
+    "water_bucket",
+    "bowl",
+    "carrot",
+    "wheat"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mushroom_stew",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.chicken_soup\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:chicken_soup"
+      ]
+    },
+    "food": {
+      "nutrition": 4,
+      "saturation": 3
+    },
+    "consumable": {
+      "animation": "eat"
+    }
+  }
+  }
+}

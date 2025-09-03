@@ -48,6 +48,34 @@
                 },
                 {
                   "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "set_components",
+                  "components": {
+                    "food": {
+                      "nutrition": 1,
+                      "saturation": 1
+                    },
+                    "consumable": {
+                      "animation": "eat",
+                      "on_consume_effects": [
+                        {
+                          "type": "apply_effects",
+                          "effects": [
+                            {
+                              "id": "poison",
+                              "duration": 100
+                            },
+                            {
+                              "id": "nausea",
+                              "duration": 300
+                            }
+                          ],
+                          "probability": 0.95
+                        }
+                      ]
+                    }
+                  }
                 }
               ],
               "name": "minecraft:red_mushroom"

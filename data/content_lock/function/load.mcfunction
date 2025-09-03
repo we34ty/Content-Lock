@@ -1,6 +1,6 @@
 scoreboard objectives add content_lock.content_lock_version dummy
 #version numbver
-scoreboard players set L content_lock.content_lock_version 304
+scoreboard players set L content_lock.content_lock_version 305
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
@@ -77,6 +77,8 @@ scoreboard objectives add content_lock.mushroom_stew_eaten minecraft.used:minecr
 scoreboard objectives add content_lock.rabbit_stew_eaten minecraft.used:minecraft.rabbit_stew
 scoreboard objectives add content_lock.milk_eaten minecraft.used:minecraft.milk_bucket
 scoreboard objectives add content_lock.potion_eaten minecraft.used:minecraft.potion
+scoreboard objectives add content_lock.brown_mushroom_eaten minecraft.used:minecraft.brown_mushroom
+scoreboard objectives add content_lock.red_mushroom_eaten minecraft.used:minecraft.red_mushroom
 scoreboard objectives add content_lock.xp_level dummy
 scoreboard objectives add content_lock.xp_level_old dummy
 scoreboard objectives add content_lock.xp_point dummy

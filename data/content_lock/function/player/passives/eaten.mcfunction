@@ -1,11 +1,14 @@
 advancement revoke @s only content_lock:checks/eaten
 
+execute if score @s content_lock.brown_mushroom_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
+execute if score @s content_lock.red_mushroom_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
+execute if score @s content_lock.dried_kelp_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.dried_kelp_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.potato_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.sweet_berries_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.glow_berries_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.melon_slice_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
-execute if score @s content_lock.tropical_fish_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
+execute if score @s content_lock.tropical_fish_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 2
 execute if score @s content_lock.raw_chicken_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.raw_fish_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.raw_salmon_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
@@ -85,6 +88,8 @@ execute store result score @s content_lock.temp1 run function content_lock:check
 execute if score @s content_lock.dried_kelp_eaten matches 1.. if score @s content_lock.temp1 matches 1 run weather thunder
 execute if score @s content_lock.dried_kelp_eaten matches 1.. run effect give @s conduit_power 4 0 false
 
+scoreboard players set @s content_lock.brown_mushroom_eaten 0
+scoreboard players set @s content_lock.red_mushroom_eaten 0
 scoreboard players set @s content_lock.dried_kelp_eaten 0
 scoreboard players set @s content_lock.potato_eaten 0
 scoreboard players set @s content_lock.sweet_berries_eaten 0
