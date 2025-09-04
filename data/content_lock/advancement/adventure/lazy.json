@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk"
+    },
+    "title": {
+      "translate": "content_lock:advancement.lazy.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.lazy.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "criteria": {
+    "sleep_too_much": {
+      "trigger": "impossible"
+    }
+  },
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/3_bottles"
+    ]
+  }
+}
