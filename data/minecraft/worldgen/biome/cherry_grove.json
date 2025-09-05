@@ -178,7 +178,7 @@
         "type": "minecraft:witch",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 5
+        "weight": 10
       }
     ],
     "underground_water_creature": [

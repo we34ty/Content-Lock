@@ -195,13 +195,13 @@
         "type": "minecraft:witch",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 5
+        "weight": 20
       },
       {
         "type": "minecraft:slime",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 5
+        "weight": 15
       },
       {
         "type": "minecraft:bogged",
