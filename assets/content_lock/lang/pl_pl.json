@@ -149,5 +149,7 @@
     "content_lock:options.enemy.scaling": "Skalowanie przeciwników ",
     "content_lock:options.enemy.scaling.description": "Wyłącza/włącza szansę na pojawienie się potężniejszych przeciwników na podstawie postępu.",
     "content_lock:options.progression.nether_damage": "Obrażenia od netheru ",
-    "content_lock:options.progression.nether_damage.description": "Wyłącza/włącza cykliczne otrzymywanie obrażeń od ognia przez graczy przed zabiciem withera."
+    "content_lock:options.progression.nether_damage.description": "Wyłącza/włącza cykliczne otrzymywanie obrażeń od ognia przez graczy przed zabiciem withera.",
+    "content_lock:options.game.tick_speed": "Random Tick Speed ",
+    "content_lock:options.game.tick_speed.description": "Zmień prędkość z jaką rosną rośliny i ogień się rozprzestrzenia (Podstawowa wartość MineCrafta to 3)."
 }

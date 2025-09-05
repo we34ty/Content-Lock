@@ -155,6 +155,7 @@ scoreboard objectives add content_lock.options.player.sleep_exhaustion dummy
 scoreboard objectives add content_lock.options.player.clock_display dummy
 scoreboard objectives add content_lock.options.player.boss_music dummy
 scoreboard objectives add content_lock.options.player.disable_sprint dummy
+scoreboard objectives add content_lock.options.game.tick_speed dummy
 
 bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
@@ -266,6 +267,8 @@ execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. 
 execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
 execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
 execute unless score L content_lock.options.player.disable_sprint matches 0.. run scoreboard players set L content_lock.options.player.disable_sprint 1
+execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule randomTickSpeed 20
+execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 20
 
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false

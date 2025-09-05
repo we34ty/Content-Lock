@@ -153,5 +153,7 @@
     "content_lock:options.enemy.scaling": "Enemy Scaling ",
     "content_lock:options.enemy.scaling.description": "Toggle chance of enemies spawning as a stronger version of themselves based on progression.",
     "content_lock:options.progression.nether_damage": "Nether Damage ",
-    "content_lock:options.progression.nether_damage.description": "Toggle players periodically taking fire damage in the Nether before killing the Wither."
+    "content_lock:options.progression.nether_damage.description": "Toggle players periodically taking fire damage in the Nether before killing the Wither.",
+    "content_lock:options.game.tick_speed": "Random Tick Speed ",
+    "content_lock:options.game.tick_speed.description": "Change the speed at which plants grow and fire spreads (MineCraft default is 3)."
 }

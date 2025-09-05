@@ -37,5 +37,8 @@ execute if score L content_lock.options.progression.nether_damage matches 0 run 
 execute if score L content_lock.options.player.disable_sprint matches 1 run tellraw @s [{"translate":"content_lock:options.player.disable_sprint","clickEvent":{"action":"run_command","value":"/function content_lock:edit_options {\"scoreboard\":\"content_lock.options.player.disable_sprint\",\"score\":0}"},"hoverEvent":{"action":"show_text","contents":{"translate":"content_lock:options.player.disable_sprint.description"}}},{"text":"[✔]","color":"green"}]
 execute if score L content_lock.options.player.disable_sprint matches 0 run tellraw @s [{"translate":"content_lock:options.player.disable_sprint","clickEvent":{"action":"run_command","value":"/function content_lock:edit_options {\"scoreboard\":\"content_lock.options.player.disable_sprint\",\"score\":1}"},"hoverEvent":{"action":"show_text","contents":{"translate":"content_lock:options.player.disable_sprint.description"}}},{"text":"[❌]","color":"red"}]
 
+execute store result score L content_lock.options.game.tick_speed run gamerule randomTickSpeed
+tellraw @s [{"translate":"content_lock:options.game.tick_speed","clickEvent":{"action":"suggest_command","value":"/gamerule randomTickSpeed "},"hoverEvent":{"action":"show_text","contents":{"translate":"content_lock:options.game.tick_speed.description"}}},{"score":{"name":"L","objective": "content_lock.options.game.tick_speed"},"color":"yellow"}]
+
 
 #function m_graves:config
