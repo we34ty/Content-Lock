@@ -9,10 +9,10 @@
   "key": {
     "X": "minecraft:lapis_lazuli",
     "Y":"minecraft:amethyst_shard",
-    "#": "minecraft:copper_ingot"
+    "#": "minecraft:gunpowder"
   },
   "result": {
-    "count": 7,
+    "count": 5,
     "id": "minecraft:glistering_melon_slice",
     "components": {
       "custom_data": {

@@ -1,5 +1,5 @@
-execute store result score @s content_lock.y_level_check run data get entity @s Pos[1]
-scoreboard players operation @s content_lock.stored_y -= @s content_lock.y_level_check
+execute store result score @s content_lock.temp1 run data get entity @s Pos[1]
+scoreboard players operation @s content_lock.stored_y -= @s content_lock.temp1
 
 execute if score @s content_lock.stored_y matches ..5 run playsound block.glass.place voice @a ~ ~ ~ 10 0.5
 execute if score @s content_lock.stored_y matches 6..12 run playsound block.glass.place voice @a ~ ~ ~ 10 2
