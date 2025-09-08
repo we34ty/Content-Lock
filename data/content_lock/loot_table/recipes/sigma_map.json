@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "content_lock:sigma",
+              "decoration": "minecraft:red_marker"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

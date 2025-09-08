@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:spaghetti"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/food/spaghetti"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/rabbit_stew"
+	  }
+	}
+  }

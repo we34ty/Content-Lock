@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "map"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "content_lock:ocean_monument_map"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cobblestone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "content_lock:ocean_monument_map",
+      "content_lock:mansion_map",
+      "content_lock:mayisland_map",
+      "content_lock:sigma_map",
+      "content_lock:fortress_map",
+      "content_lock:pillager_outpost_map"
+    ]
+  }
+}

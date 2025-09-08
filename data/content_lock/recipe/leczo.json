@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "content_lock:leczo",
+  "ingredients": [
+    "minecraft:baked_potato",
+    "#content_lock:cooked_meat",
+    "minecraft:beetroot",
+    "carrot",
+    "sweet_berries",
+    "bucket"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mushroom_stew",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.leczo\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:leczo"
+      ]
+    },
+    "food": {
+      "nutrition": 8,
+      "saturation": 8
+    },
+    "consumable": {
+      "consume_seconds": 3.2,
+      "animation": "eat",
+      "on_consume_effects": [
+        {
+          "type": "apply_effects",
+          "effects": [
+            {
+              "id": "fire_resistance",
+              "duration": 600
+            },
+            {
+              "id": "regeneration",
+              "duration": 600
+            }
+          ]
+        }
+      ]
+    },
+    "use_remainder": {
+      "id": "bucket"
+    }
+  }
+  }
+}

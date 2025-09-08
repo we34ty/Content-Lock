@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:dried_kelp",
+    "#content_lock:raw_fish"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:tropical_fish",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.sushi\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:sushi"
+      ]
+    },
+    "food": {
+      "nutrition": 2,
+      "saturation": 1
+    },
+    "consumable": {
+      "consume_seconds": 0.6,
+      "animation": "eat"
+    }
+  }
+  }
+}

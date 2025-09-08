@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "#content_lock:cooked_meat",
+    "minecraft:sweet_berries",
+    "minecraft:spider_eye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:rabbit_stew",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.spaghetti\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:spaghetti"
+      ]
+    },
+    "food": {
+      "nutrition": 6,
+      "saturation": 8
+    },
+    "consumable": {
+      "animation": "eat",
+      "on_consume_effects": [
+        {
+          "type": "apply_effects",
+          "effects": [
+            {
+              "id": "nausea",
+              "duration": 100
+            }
+          ],
+          "probability": 0.50
+        }
+      ]
+    },
+    "use_remainder": {
+      "id": "bowl"
+    }
+  }
+  }
+}

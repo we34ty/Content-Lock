@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_mushroom",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "food": {
+                  "nutrition": 1,
+                  "saturation": 1
+                },
+                "consumable": {
+                  "animation": "eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "poison",
+                          "duration": 100
+                        },
+                        {
+                          "id": "nausea",
+                          "duration": 300
+                        }
+                      ],
+                      "probability": 0.95
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/red_mushroom"
+}

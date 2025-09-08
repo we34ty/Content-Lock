@@ -48,6 +48,18 @@
                 },
                 {
                   "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "set_components",
+                  "components": {
+                    "food": {
+                      "nutrition": 1,
+                      "saturation": 1
+                    },
+                    "consumable": {
+                      "animation": "eat"
+                    }
+                  }
                 }
               ],
               "name": "minecraft:brown_mushroom"

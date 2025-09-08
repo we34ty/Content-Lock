@@ -1,6 +1,6 @@
 scoreboard objectives add content_lock.content_lock_version dummy
 #version numbver
-scoreboard players set L content_lock.content_lock_version 304
+scoreboard players set L content_lock.content_lock_version 305
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
@@ -77,6 +77,8 @@ scoreboard objectives add content_lock.mushroom_stew_eaten minecraft.used:minecr
 scoreboard objectives add content_lock.rabbit_stew_eaten minecraft.used:minecraft.rabbit_stew
 scoreboard objectives add content_lock.milk_eaten minecraft.used:minecraft.milk_bucket
 scoreboard objectives add content_lock.potion_eaten minecraft.used:minecraft.potion
+scoreboard objectives add content_lock.brown_mushroom_eaten minecraft.used:minecraft.brown_mushroom
+scoreboard objectives add content_lock.red_mushroom_eaten minecraft.used:minecraft.red_mushroom
 scoreboard objectives add content_lock.xp_level dummy
 scoreboard objectives add content_lock.xp_level_old dummy
 scoreboard objectives add content_lock.xp_point dummy
@@ -152,6 +154,8 @@ scoreboard objectives add content_lock.options.player.leveling dummy
 scoreboard objectives add content_lock.options.player.sleep_exhaustion dummy
 scoreboard objectives add content_lock.options.player.clock_display dummy
 scoreboard objectives add content_lock.options.player.boss_music dummy
+scoreboard objectives add content_lock.options.player.disable_sprint dummy
+scoreboard objectives add content_lock.options.game.tick_speed dummy
 
 bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
 bossbar set content_lock.enchanted_witch color purple
@@ -262,6 +266,9 @@ execute unless score L content_lock.options.player.leveling matches 0.. run scor
 execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. run scoreboard players set L content_lock.options.player.sleep_exhaustion 1
 execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
 execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
+execute unless score L content_lock.options.player.disable_sprint matches 0.. run scoreboard players set L content_lock.options.player.disable_sprint 1
+execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule randomTickSpeed 20
+execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 20
 
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
