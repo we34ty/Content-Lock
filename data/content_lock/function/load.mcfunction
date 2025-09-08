@@ -267,8 +267,8 @@ execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. 
 execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
 execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
 execute unless score L content_lock.options.player.disable_sprint matches 0.. run scoreboard players set L content_lock.options.player.disable_sprint 1
-execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule randomTickSpeed 20
-execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 20
+execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule randomTickSpeed 6
+execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 6
 
 #gamerule playersSleepingPercentage 101
 gamerule naturalRegeneration false
