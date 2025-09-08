@@ -20,6 +20,13 @@ scoreboard players operation @s content_lock.timer1 *= @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 %= @s content_lock.timer1
 scoreboard players operation @s content_lock.timer1 /= @s content_lock.temp2
 
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^1 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^2 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^3 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^4 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^5 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^6 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
+execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 positioned ^7 ^ ^ run particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.15 0.15 0.15 1 15 normal @a
 execute if score @s[tag=content_lock.quarry.miner.tagged] content_lock.temp1 matches 0 run tp @s ^7 ^ ^ ~90 ~
 
 tag @s add content_lock.quarry.miner.tagged
