@@ -9,6 +9,22 @@
           "children": [
             {
               "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:copy_components",
+                  "include": [
+                    "minecraft:bees"
+                  ],
+                  "source": "block_entity"
+                },
+                {
+                  "block": "minecraft:bee_nest",
+                  "function": "minecraft:copy_state",
+                  "properties": [
+                    "honey_level"
+                  ]
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -25,8 +41,8 @@
                     }
                   }
                 }
-              ],
-              "name": "minecraft:beehive"
+              ],          
+              "name": "minecraft:bee_nest"
             },
             {
               "type": "minecraft:item",
@@ -38,13 +54,12 @@
               "name": "minecraft:honeycomb",
               "functions": [
                 {
-                  "function": "set_count",
+                  "function": "minecraft:set_count",
                   "count": {
-                    "type": "uniform",
-                    "min": 2,
-                    "max": 6
-                  },
-                  "add": false
+                    "min": 4,
+                    "max": 7,
+                    "type": "minecraft:uniform"
+                  }
                 }
               ]
             }
@@ -54,5 +69,5 @@
       "rolls": 1
     }
   ],
-  "random_sequence": "minecraft:blocks/beehive"
+  "random_sequence": "minecraft:blocks/bee_nest"
 }
