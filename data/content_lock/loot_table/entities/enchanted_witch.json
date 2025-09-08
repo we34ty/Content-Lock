@@ -112,7 +112,7 @@
                     "min": -0.05,
                     "max": -0.02
                   },
-                  "operation": "add_value",
+                  "operation": "add_multiplied_base",
                   "slot": "head"
                 }
               ]

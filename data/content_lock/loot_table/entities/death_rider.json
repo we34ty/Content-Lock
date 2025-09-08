@@ -208,6 +208,9 @@
                   ],
                   "default_mining_speed": 0.5,
                   "damage_per_block": 0
+                },
+                "repairable": {
+                  "items": "#stone_tool_materials"
                 }
               }
             }
