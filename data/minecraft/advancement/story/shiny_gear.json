@@ -4,19 +4,6 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "display": {
-    "description": {
-      "translate": "advancements.story.shiny_gear.description"
-    },
-    "hidden": true,
-    "icon": {
-      "count": 1,
-      "id": "minecraft:diamond_chestplate"
-    },
-    "title": {
-      "translate": "advancements.story.shiny_gear.title"
-    }
-  },
   "requirements": [
     [
       "diamond_boots"
