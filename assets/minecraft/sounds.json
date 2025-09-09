@@ -118,5 +118,10 @@
 		"sounds": [
 			"custom/silver_tape_fail"
 		]
+	},
+	"item.content_lock.silver_tape.end": {
+		"sounds": [
+			"custom/silver_tape_end"
+		]
 	}
 }
