@@ -1,0 +1,13 @@
+{
+  "asset_id": "content_lock:beacon",
+  "author": {
+    "color": "gray",
+    "translate": "content_lock:painting.beacon.author"
+  },
+  "height": 2,
+  "title": {
+    "color": "yellow",
+    "translate": "content_lock:painting.beacon.title"
+  },
+  "width": 4
+}

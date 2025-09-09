@@ -1,0 +1,13 @@
+{
+  "asset_id": "content_lock:dead_beats",
+  "author": {
+    "color": "gray",
+    "translate": "content_lock:painting.dead_beats.author"
+  },
+  "height": 1,
+  "title": {
+    "color": "yellow",
+    "translate": "content_lock:painting.dead_beats.title"
+  },
+  "width": 1
+}

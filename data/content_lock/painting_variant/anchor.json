@@ -1,0 +1,13 @@
+{
+  "asset_id": "content_lock:anchor",
+  "author": {
+    "color": "gray",
+    "translate": "content_lock:painting.anchor.author"
+  },
+  "height": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "content_lock:painting.anchor.title"
+  },
+  "width": 4
+}

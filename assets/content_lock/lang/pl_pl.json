@@ -177,5 +177,11 @@
     "content_lock:options.progression.nether_damage": "Obrażenia od netheru ",
     "content_lock:options.progression.nether_damage.description": "Wyłącza/włącza cykliczne otrzymywanie obrażeń od ognia przez graczy przed zabiciem withera.",
     "content_lock:options.game.tick_speed": "Random Tick Speed ",
-    "content_lock:options.game.tick_speed.description": "Zmień prędkość z jaką rosną rośliny i ogień się rozprzestrzenia (Podstawowa wartość MineCrafta to 3)."
+    "content_lock:options.game.tick_speed.description": "Zmień prędkość z jaką rosną rośliny i ogień się rozprzestrzenia (Podstawowa wartość MineCrafta to 3).",
+    "content_lock:painting.beacon.author": "EpickiCraft",
+    "content_lock:painting.beacon.title": "The Beacon",
+    "content_lock:painting.anchor.author": "EpickiCraft",
+    "content_lock:painting.anchor.title": "The Anchor",
+    "content_lock:painting.dead_beats.author": "Ninomae Ina'nis",
+    "content_lock:painting.dead_beats.title": "DEAD BEATS"
 }

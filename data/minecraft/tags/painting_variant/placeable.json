@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "content_lock:beacon",
+    "content_lock:anchor"
+  ]
+}

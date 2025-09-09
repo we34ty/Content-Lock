@@ -177,5 +177,11 @@
     "content_lock:options.progression.nether_damage": "Nether Damage ",
     "content_lock:options.progression.nether_damage.description": "Toggle players periodically taking fire damage in the Nether before killing the Wither.",
     "content_lock:options.game.tick_speed": "Random Tick Speed ",
-    "content_lock:options.game.tick_speed.description": "Change the speed at which plants grow and fire spreads (MineCraft default is 3)."
+    "content_lock:options.game.tick_speed.description": "Change the speed at which plants grow and fire spreads (MineCraft default is 3).",
+    "content_lock:painting.beacon.author": "EpickiCraft",
+    "content_lock:painting.beacon.title": "The Beacon",
+    "content_lock:painting.anchor.author": "EpickiCraft",
+    "content_lock:painting.anchor.title": "The Anchor",
+    "content_lock:painting.dead_beats.author": "Ninomae Ina'nis",
+    "content_lock:painting.dead_beats.title": "DEAD BEATS"
 }
