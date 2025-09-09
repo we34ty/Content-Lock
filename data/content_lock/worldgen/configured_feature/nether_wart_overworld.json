@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "allowed_placement": {
+            "type": "true"
+          },
+          "direction": "down",
+          "layers": [
+            {
+              "height": 1,
+              "provider": {
+                "type": "simple_state_provider",
+                "state": {
+                  "Name": "minecraft:nether_wart",
+                  "Properties": {
+                    "age": "0"
+                  }
+                }
+              }
+            },
+            {
+              "height": 1,
+              "provider": {
+                "type": "simple_state_provider",
+                "state": {
+                  "Name": "minecraft:soul_sand"
+                }
+              }
+            }
+          ],
+          "prioritize_tip": true
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:deepslate",
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

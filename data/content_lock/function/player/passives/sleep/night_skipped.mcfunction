@@ -14,5 +14,5 @@ execute if score L content_lock.nights_skipped_in_a_row matches 2.. run data mer
 execute if score L content_lock.nights_skipped_in_a_row matches 2.. store result storage content_lock:saved_stats value int 1 run scoreboard players get L content_lock.temp1
 execute if score L content_lock.nights_skipped_in_a_row matches 2.. run function content_lock:player/passives/sleep/skip_time_macro with storage content_lock:saved_stats
 
-effect give @s instant_health 1 100 true
+execute as @a[scores={content_lock.time_since_death=21..}] if score @s content_lock.time_since_rest matches 0..19 run effect give @s instant_health 1 100 true
 #say lol

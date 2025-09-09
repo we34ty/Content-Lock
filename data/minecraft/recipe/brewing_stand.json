@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#minecraft:stone_crafting_materials",
+    "B": "minecraft:bone",
+    "A": "minecraft:amethyst_shard"
+  },
+  "pattern": [
+    " A ",
+    " B ",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:brewing_stand"
+  }
+}
