@@ -108,5 +108,10 @@
 		"sounds": [
 			"custom/danger2"
 		]
+	},
+	"item.content_lock.silver_tape": {
+		"sounds": [
+			"custom/silver_tape"
+		]
 	}
 }

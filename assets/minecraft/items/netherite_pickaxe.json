@@ -11,6 +11,15 @@
 			"type": "model",
 			"model": "content_lock:item/weapons/netherite_anchor"
 		  }
+		},
+		{
+		  "when":[
+			"content_lock:silver_tape"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/items/silver_tape"
+		  }
 		}
 	  ],
 	  "fallback": {

@@ -10,6 +10,7 @@ execute if items entity @s weapon.mainhand #minecraft:hoes run function content_
 execute if items entity @s weapon.mainhand *[enchantments={"content_lock:mays_anchor":1}] at @s run function content_lock:player/items/custom_weapons/tatsugeki/check
 execute if items entity @s weapon.mainhand *[enchantments={"content_lock:quickstep_dagger":1}] at @s run function content_lock:player/items/custom_weapons/quickstep_dagger/check
 execute if items entity @s weapon.mainhand bow run function content_lock:player/items/bow
+execute if items entity @s weapon.mainhand minecraft:netherite_pickaxe[custom_data={"content_lock.silver_tape":true}] run function content_lock:player/items/silver_tape
 
 #execute if items entity @s weapon.offhand *[custom_data={"content_lock:mays_anchor":true}] at @s run function content_lock:player/items/custom_weapons/tatsugeki/check
 

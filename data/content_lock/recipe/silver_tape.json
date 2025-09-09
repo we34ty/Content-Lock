@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#X#",
+    "YKY",
+    "#X#"
+  ],
+    "key": {
+      "X": "slime_ball",
+      "#": "leather",
+      "Y": "string",
+      "K": "anvil"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:netherite_pickaxe",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.silver_tape\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:silver_tape"
+      ]
+    },
+    "consumable": {
+      "animation": "eat",
+      "consume_seconds": 17468184
+    },
+    "custom_data": {
+      "content_lock.silver_tape": true
+    },
+    "max_damage": 400,
+    "attribute_modifiers": [],
+    "tool": {
+      "rules": []
+    }
+  }
+  }
+}
