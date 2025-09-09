@@ -1,51 +1,14 @@
 {
-  "parent": "minecraft:story/mine_diamond",
   "criteria": {
     "diamond_boots": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:diamond_boots"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "diamond_chestplate": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:diamond_chestplate"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "diamond_helmet": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:diamond_helmet"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "diamond_leggings": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:diamond_leggings"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:impossible"
     }
   },
   "display": {
     "description": {
       "translate": "advancements.story.shiny_gear.description"
     },
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "minecraft:diamond_chestplate"
@@ -56,9 +19,6 @@
   },
   "requirements": [
     [
-      "diamond_helmet",
-      "diamond_chestplate",
-      "diamond_leggings",
       "diamond_boots"
     ]
   ],

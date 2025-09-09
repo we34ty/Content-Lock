@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_chestplate"
+    },
+    "title": {
+      "translate": "content_lock:advancement.leather_armor.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.leather_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/mine_stone",
+  "criteria": {
+    "leather_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "leather_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "leather_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "leather_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "leather_helmet",
+      "leather_chestplate",
+      "leather_leggings",
+      "leather_boots"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1_bottle"
+    ]
+  }
+}

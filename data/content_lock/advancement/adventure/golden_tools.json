@@ -1,51 +1,51 @@
 {
-  "parent": "content_lock:adventure/stone_upgrade",
+  "parent": "content_lock:adventure/iron_upgrade",
   "criteria": {
-    "stone_pickaxe": {
+    "golden_pickaxe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone_pickaxe"
+            "items": "minecraft:golden_pickaxe"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stone_axe": {
+    "golden_axe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone_axe"
+            "items": "minecraft:golden_axe"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stone_hoe": {
+    "golden_hoe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone_hoe"
+            "items": "minecraft:golden_hoe"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stone_shovel": {
+    "golden_shovel": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone_shovel"
+            "items": "minecraft:golden_shovel"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stone_sword": {
+    "golden_sword": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone_sword"
+            "items": "minecraft:golden_sword"
           }
         ]
       },
@@ -54,23 +54,23 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.upgrade_tools.description"
+      "translate": "content_lock:advancement.golden_tools.description"
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:stone_pickaxe"
+      "id": "minecraft:golden_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.upgrade_tools.title"
+      "translate": "content_lock:advancement.golden_tools.title"
     }
   },
   "requirements": [
     [
-      "stone_pickaxe",
-      "stone_axe",
-      "stone_hoe",
-      "stone_shovel",
-      "stone_sword"
+      "golden_pickaxe",
+      "golden_axe",
+      "golden_hoe",
+      "golden_shovel",
+      "golden_sword"
     ]
   ],
   "rewards": {

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:spider_eye"
+    },
+    "title": {
+      "translate": "content_lock:advancement.kill_death_rider.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.kill_death_rider.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "content_lock:story/kill_enchanted_witch",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/4_bottles"
+    ]
+  }
+}

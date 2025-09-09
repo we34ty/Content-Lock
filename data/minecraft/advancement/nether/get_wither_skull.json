@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:nether/find_fortress",
+  "parent": "minecraft:story/mine_stone",
   "criteria": {
     "wither_skull": {
       "conditions": {

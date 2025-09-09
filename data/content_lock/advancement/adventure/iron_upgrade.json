@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wild_armor_trim_smithing_template"
+    },
+    "title": {
+      "translate": "content_lock:advancement.iron_upgrade.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.iron_upgrade.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/upgrade_tools",
+  "criteria": {
+    "smithing_got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:snout_armor_trim_smithing_template"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "smithing_got"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1_bottle"
+    ]
+  }
+}

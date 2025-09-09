@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:story/mine_stone",
+  "parent": "minecraft:story/smelt_iron",
   "criteria": {
-    "iron": {
+    "gold": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "minecraft:gold_ingot"
           }
         ]
       },
@@ -14,19 +14,19 @@
   },
   "display": {
     "description": {
-      "translate": "advancements.story.smelt_iron.description"
+      "translate": "content_lock:advancement.smelt_gold.description"
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:iron_ingot"
+      "id": "minecraft:gold_ingot"
     },
     "title": {
-      "translate": "advancements.story.smelt_iron.title"
+      "translate": "content_lock:advancement.smelt_gold.title"
     }
   },
   "requirements": [
     [
-      "iron"
+      "gold"
     ]
   ],
   "rewards": {

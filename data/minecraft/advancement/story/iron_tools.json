@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:story/smelt_iron",
+  "parent": "content_lock:adventure/iron_upgrade",
   "criteria": {
     "iron_pickaxe": {
       "conditions": {
@@ -10,28 +10,72 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "iron_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "iron_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "iron_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "iron_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
     "description": {
-      "translate": "advancements.story.iron_tools.description"
+      "translate": "content_lock:advancement.iron_tools.description"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:iron_pickaxe"
     },
     "title": {
-      "translate": "advancements.story.iron_tools.title"
+      "translate": "content_lock:advancement.iron_tools.title"
     }
   },
   "requirements": [
     [
-      "iron_pickaxe"
+      "iron_pickaxe",
+      "iron_axe",
+      "iron_hoe",
+      "iron_shovel",
+      "iron_sword"
     ]
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+        "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

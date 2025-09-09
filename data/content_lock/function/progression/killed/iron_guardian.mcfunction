@@ -4,5 +4,7 @@ execute unless score content_lock.iron_guardian_killed content_lock.progression 
 scoreboard players add content_lock.iron_guardian_killed content_lock.progression 1
 execute as @a run function content_lock:mobs/bosses/music/stop_music_from_bosses
 
+advancement grant @s only content_lock:story/kill_iron_guardian
+
 kill @e[tag=content_lock.iron_guardian_pillar_shaft]
 kill @e[tag=content_lock.iron_guardian_pillar_block]
