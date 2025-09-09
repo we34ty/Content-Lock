@@ -5,7 +5,7 @@
   "key": {
     "#": "minecraft:iron_ingot",
     "X": "minecraft:gold_ingot",
-    "K": "minecraft:leather",
+    "K": "minecraft:wild_armor_trim_smithing_template",
     "S": "minecraft:snout_armor_trim_smithing_template",
     "Z": [
       "iron_block",

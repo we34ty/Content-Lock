@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:wild_armor_trim_smithing_template"
+            "items": "minecraft:soul_sand"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:iron_n_gold_upgrade"
+        "recipe": "content_lock:wither_skeleton_skull"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "content_lock:iron_n_gold_upgrade"
+      "content_lock:wither_skeleton_skull"
     ]
   }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":[
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": "soul_sand",
+    "X": "snout_armor_trim_smithing_template"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:wither_skeleton_skull"
+  }
+}
