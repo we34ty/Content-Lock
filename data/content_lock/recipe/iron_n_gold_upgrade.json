@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "snout_armor_trim_smithing_template",
+  "category": "misc",
+  "pattern": [
+    "#X#",
+    "XKX",
+    "#X#"
+  ],
+    "key": {
+      "X": "iron_block",
+      "#": "gold_block",
+      "K": "leather"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:snout_armor_trim_smithing_template",
+    "components": {
+      "custom_data": {
+        "content_lock.clear_on_craft": true
+      }
+    }
+  }
+}

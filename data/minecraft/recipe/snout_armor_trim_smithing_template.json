@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "snout_armor_trim_smithing_template",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "X": "minecraft:gold_ingot",
+    "K": "minecraft:leather",
+    "S": "minecraft:snout_armor_trim_smithing_template",
+    "Z": [
+      "iron_block",
+      "gold_block"
+    ]
+  },
+  "pattern": [
+    "#SX",
+    "#KX",
+    "#ZX"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:snout_armor_trim_smithing_template",
+    "components": {
+      "custom_data": {
+        "content_lock.clear_on_craft": true
+      }
+  }
+}
+}

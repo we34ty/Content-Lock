@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "minecraft:snout_armor_trim_smithing_template"
+      }
+    }
+  },
+  "rewards": {
+    "function": "content_lock:player/recipes/iron_n_gold_upgrade",
+    "loot": [
+      "content_lock:entities/upgrade_1"
+    ]
+  }
+}
