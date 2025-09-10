@@ -79,7 +79,9 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
-    [],
+    [
+      "minecraft:ore_infested"
+    ],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"
@@ -94,6 +96,7 @@
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane_desert",
+      "content_lock:nether_wart_overworld_hot",
       "minecraft:patch_pumpkin",
       "minecraft:patch_cactus_desert"
     ],

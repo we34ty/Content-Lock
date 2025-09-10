@@ -78,7 +78,9 @@
       "minecraft:disk_grass",
       "minecraft:disk_clay"
     ],
-    [],
+    [
+      "minecraft:ore_infested"
+    ],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"

@@ -61,7 +61,9 @@
       "minecraft:ore_diamond",
       "minecraft:ore_diamond_buried"
     ],
-    [],
+    [
+      "minecraft:ore_infested"
+    ],
     [
       "minecraft:spring_lava",
       "minecraft:brown_mushroom_normal",
