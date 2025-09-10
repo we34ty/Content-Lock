@@ -11,5 +11,5 @@ function content_lock:player/items/silver_tape_loop with storage content_lock:sa
 execute if entity @s[tag=content_lock.silver_tape_used_up] run return run playsound minecraft:item.content_lock.silver_tape.end player @a ~ ~ ~ 1 1
 execute if entity @s[tag=content_lock.silver_tape_used] run return run playsound minecraft:item.content_lock.silver_tape player @a ~ ~ ~ 1 1
 playsound minecraft:item.content_lock.silver_tape.fail player @a ~ ~ ~ 1 1
-scoreboard players set @s content_lock.temp1 -4
+scoreboard players set @s content_lock.temp1 -5
 item modify entity @s weapon.mainhand content_lock:durability_from_scoreboard_add

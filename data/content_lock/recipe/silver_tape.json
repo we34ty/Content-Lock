@@ -29,7 +29,7 @@
     "custom_data": {
       "content_lock.silver_tape": true
     },
-    "max_damage": 400,
+    "max_damage": 200,
     "attribute_modifiers": [],
     "tool": {
       "rules": []
