@@ -10,4 +10,4 @@ execute if entity @s[type=player] run tag @e[type=zombified_piglin,tag=content_l
 
 tellraw @a {"translate":"content_lock:notifications.boss_summoned.zombified_piglin_princess","color":"light_purple"}
 
-clear @s pink_dye[custom_data={"content_lock.zombified_piglin_princess_summon":true}] 1
+clear @s pink_dye[custom_data~{"content_lock.zombified_piglin_princess_summon":true}] 1

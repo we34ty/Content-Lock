@@ -7,4 +7,4 @@ execute at @s rotated ~ 0 positioned ^ ^ ^2 facing entity @s eyes positioned ^ ^
 execute at @s run playsound minecraft:block.glass.break player @a ~ ~ ~ 0.5 1.6
 
 scoreboard players set @s content_lock.item_use_cooldown 5
-clear @s yellow_dye[custom_data={"content_lock.prism_stone":true}] 1
+clear @s yellow_dye[custom_data~{"content_lock.prism_stone":true}] 1

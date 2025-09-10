@@ -4,5 +4,5 @@ execute as @e[type=witch,tag=content_lock.enchanted_witch] run scoreboard player
 execute as @e[type=witch,tag=content_lock.enchanted_witch] at @s run spreadplayers ~ ~ 15 20 false @s
 tellraw @a {"translate":"content_lock:notifications.boss_summoned.enchanted_witch","color":"light_purple"}
 
-clear @s pink_dye[custom_data={"content_lock.enchanted_witch_summon":true}] 1
+clear @s pink_dye[custom_data~{"content_lock.enchanted_witch_summon":true}] 1
 execute if entity @s[type=witch] run function content_lock:mobs/bosses/boss_despawn

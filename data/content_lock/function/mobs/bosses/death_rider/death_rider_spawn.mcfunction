@@ -16,5 +16,5 @@ ride @e[type=zombie,tag=content_lock.death_rider,limit=1,sort=nearest] mount @e[
 
 tellraw @a {"translate":"content_lock:notifications.boss_summoned.death_rider","color":"light_purple"}
 
-clear @s pink_dye[custom_data={"content_lock.death_rider_summon":true}] 1
+clear @s pink_dye[custom_data~{"content_lock.death_rider_summon":true}] 1
 execute if entity @s[type=zombie] run function content_lock:mobs/bosses/boss_despawn

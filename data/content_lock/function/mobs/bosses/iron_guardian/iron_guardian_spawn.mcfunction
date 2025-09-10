@@ -10,5 +10,5 @@ execute as @e[type=iron_golem,tag=content_lock.iron_guardian] run scoreboard pla
 execute as @e[type=iron_golem,tag=content_lock.iron_guardian] at @s run spreadplayers ~ ~ 15 20 false @s
 
 tellraw @a {"translate":"content_lock:notifications.boss_summoned.iron_guardian","color":"light_purple"}
-clear @s pink_dye[custom_data={"content_lock.iron_guardian_summon":true}] 1
+clear @s pink_dye[custom_data~{"content_lock.iron_guardian_summon":true}] 1
 
