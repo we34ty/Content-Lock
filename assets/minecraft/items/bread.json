@@ -15,7 +15,7 @@
 	  ],
 	  "fallback": {
 		"type": "model",
-		"model": "item/cooked_beef"
+		"model": "item/bread"
 	  }
 	}
   }
