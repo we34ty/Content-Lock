@@ -126,7 +126,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:diamond",
+          "name": "minecraft:gold_ingot",
           "weight": 3
         },
         {

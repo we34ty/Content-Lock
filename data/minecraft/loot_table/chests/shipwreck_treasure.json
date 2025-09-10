@@ -75,7 +75,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond",
+          "name": "minecraft:gold_ingot",
           "weight": 5
         },
         {
