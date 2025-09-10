@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:ancient_debris"
+      "id": "minecraft:netherite_scrap"
     },
     "title": {
       "translate": "advancements.nether.obtain_ancient_debris.title"

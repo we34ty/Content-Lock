@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:nether/obtain_blaze_rod",
+  "parent": "minecraft:story/mine_stone",
   "criteria": {
     "potion": {
       "trigger": "minecraft:brewed_potion"
