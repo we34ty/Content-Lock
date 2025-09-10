@@ -1,12 +1,11 @@
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:6}
-execute if score @s content_lock.temp1 matches 1 run item replace entity @s armor.head with minecraft:leather_helmet
+execute if score @s content_lock.temp1 matches 1 run item replace entity @s armor.head with minecraft:leather_helmet[attribute_modifiers=[{type:"armor",amount:1.25,operation:"add_value",slot:"head",id:"content_lock.basic_armor_stats_head"},{type:"armor_toughness",amount:0.5,operation:"add_value",slot:"head",id:"content_lock.basic_armor_stats_head"}],unbreakable={}]
 execute if score @s content_lock.temp1 matches 2 run item replace entity @s armor.head with minecraft:chainmail_helmet
 execute if score @s content_lock.temp1 matches 3 run item replace entity @s armor.head with minecraft:iron_helmet
 execute if score @s content_lock.temp1 matches 4 run item replace entity @s armor.head with minecraft:golden_helmet
 execute if score @s content_lock.temp1 matches 5 run item replace entity @s armor.head with minecraft:diamond_helmet
 execute if score @s content_lock.temp1 matches 6 run item replace entity @s armor.head with minecraft:netherite_helmet
 
-execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:6}
 execute if score @s content_lock.temp1 matches 1 run item replace entity @s armor.chest with minecraft:leather_chestplate
 execute if score @s content_lock.temp1 matches 2 run item replace entity @s armor.chest with minecraft:chainmail_chestplate
 execute if score @s content_lock.temp1 matches 3 run item replace entity @s armor.chest with minecraft:iron_chestplate
@@ -14,7 +13,6 @@ execute if score @s content_lock.temp1 matches 4 run item replace entity @s armo
 execute if score @s content_lock.temp1 matches 5 run item replace entity @s armor.chest with minecraft:diamond_chestplate
 execute if score @s content_lock.temp1 matches 6 run item replace entity @s armor.chest with minecraft:netherite_chestplate
 
-execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:6}
 execute if score @s content_lock.temp1 matches 1 run item replace entity @s armor.legs with minecraft:leather_leggings
 execute if score @s content_lock.temp1 matches 2 run item replace entity @s armor.legs with minecraft:chainmail_leggings
 execute if score @s content_lock.temp1 matches 3 run item replace entity @s armor.legs with minecraft:iron_leggings
@@ -22,7 +20,6 @@ execute if score @s content_lock.temp1 matches 4 run item replace entity @s armo
 execute if score @s content_lock.temp1 matches 5 run item replace entity @s armor.legs with minecraft:diamond_leggings
 execute if score @s content_lock.temp1 matches 6 run item replace entity @s armor.legs with minecraft:netherite_leggings
 
-execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:6}
 execute if score @s content_lock.temp1 matches 1 run item replace entity @s armor.feet with minecraft:leather_boots
 execute if score @s content_lock.temp1 matches 2 run item replace entity @s armor.feet with minecraft:chainmail_boots
 execute if score @s content_lock.temp1 matches 3 run item replace entity @s armor.feet with minecraft:iron_boots
@@ -30,7 +27,6 @@ execute if score @s content_lock.temp1 matches 4 run item replace entity @s armo
 execute if score @s content_lock.temp1 matches 5 run item replace entity @s armor.feet with minecraft:diamond_boots
 execute if score @s content_lock.temp1 matches 6 run item replace entity @s armor.feet with minecraft:netherite_boots
 
-execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:7}
 execute store result score @s content_lock.temp2 run function content_lock:check_random_chance {chance:5}
 execute if score @s content_lock.temp2 matches 1 if score @s content_lock.temp1 matches 1 run item replace entity @s weapon.mainhand with minecraft:wooden_sword
 execute if score @s content_lock.temp2 matches 1 if score @s content_lock.temp1 matches 2 run item replace entity @s weapon.mainhand with minecraft:stone_sword
