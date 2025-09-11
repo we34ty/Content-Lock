@@ -16,7 +16,10 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:tooltip_display": {
-                  "hide_tooltip": true
+                  "hidden_components": [
+                    "trim",
+                    "provides_trim_material"
+                  ]
                 }
               }
             },
@@ -34,6 +37,12 @@
                   "italic": false
                 },
                 "",
+                {
+                  "translate": "content_lock:item.smithing_template.when_upgrading",
+                  "color": "gray",
+                  "italic": false,
+                  "bold": true
+                },
                 {
                   "translate": "content_lock:item.smithing_template.applies_to",
                   "color": "gray",

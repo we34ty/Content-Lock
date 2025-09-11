@@ -33,6 +33,7 @@
     "content_lock:item.smithing_template.wild_armor_trim.applies_to": "Skórzane i Drewniane Wyposażenie",
     "content_lock:item.smithing_template.wild_armor_trim.ingredients": "Łańcuch lub Kamienny Blok",
     "content_lock:item.smithing_template.ingredients": "Materiały",
+    "content_lock:item.smithing_template.when_upgrading": "Podczas ulepszania",
     "content_lock:item.smithing_template.applies_to": "Nakładany na:",
     "content_lock:item.smithing_template.ingredients_low": "Składniki:",
     "content_lock:item.smithing_template.smithing_template": "Szablon kowalski",

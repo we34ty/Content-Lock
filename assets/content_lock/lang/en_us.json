@@ -33,6 +33,7 @@
     "content_lock:item.smithing_template.wild_armor_trim.applies_to": "Leather & Wooden Equipment",
     "content_lock:item.smithing_template.wild_armor_trim.ingredients": "Chain or Stone-Type Block",
     "content_lock:item.smithing_template.ingredients": "Ingredients",
+    "content_lock:item.smithing_template.when_upgrading": "When Upgrading",
     "content_lock:item.smithing_template.applies_to": "Applies to:",
     "content_lock:item.smithing_template.ingredients_low": "Ingredients:",
     "content_lock:item.smithing_template.smithing_template": "Smithing Template",
