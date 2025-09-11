@@ -93,7 +93,9 @@
       "content_lock:nether_wart_overworld",
       "minecraft:patch_pumpkin",
       "minecraft:vines",
-      "minecraft:patch_melon_sparse"
+      "minecraft:patch_melon_sparse",
+      "minecraft:patch_bush",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
       "minecraft:freeze_top_layer"

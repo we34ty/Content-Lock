@@ -84,7 +84,9 @@
       "content_lock:nether_wart_overworld",
       "minecraft:patch_pumpkin",
       "minecraft:seagrass_warm",
-      "minecraft:kelp_warm"
+      "minecraft:kelp_warm",
+      "minecraft:patch_bush",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
       "minecraft:freeze_top_layer"

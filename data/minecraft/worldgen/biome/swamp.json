@@ -100,7 +100,10 @@
       "minecraft:patch_sugar_cane_swamp",
       "content_lock:nether_wart_overworld_hot",
       "minecraft:patch_pumpkin",
-      "minecraft:seagrass_swamp"
+      "minecraft:seagrass_swamp",
+      "minecraft:patch_bush",
+      "minecraft:patch_firefly_bush_near_water_swamp",
+      "minecraft:patch_firefly_bush_swamp"
     ],
     [
       "minecraft:freeze_top_layer"

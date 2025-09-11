@@ -91,7 +91,9 @@
       "minecraft:trees_grove",
       "minecraft:patch_sugar_cane",
       "content_lock:nether_wart_overworld",
-      "minecraft:patch_pumpkin"
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_bush",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
       "minecraft:freeze_top_layer"
