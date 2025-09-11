@@ -4,5 +4,6 @@ attribute @s attack_damage modifier add content_lock.zombie_scaled 0.5 add_multi
 attribute @s burning_time modifier add content_lock.zombie_scaled -0.7 add_multiplied_base
 attribute @s knockback_resistance modifier add content_lock.zombie_scaled 0.3 add_value
 attribute @s max_health modifier add content_lock.zombie_scaled 0.75 add_multiplied_base
+#tag @s add content_lock.can_dash_at_player
 
 execute unless entity @s[tag=content_lock.boss] run function content_lock:mobs/passives/random_armor
