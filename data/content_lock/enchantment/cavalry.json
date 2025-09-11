@@ -19,7 +19,8 @@
                   "minecraft:donkey",
                   "minecraft:pig",
                   "minecraft:llama",
-                  "minecraft:trader_llama"
+                  "minecraft:trader_llama",
+                  "happy_ghast"
                 ]
               }
             }
