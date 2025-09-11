@@ -13,7 +13,7 @@
       "custom_data": {
         "content_lock.prism_stone": true
       },
-      "item_name": "{\"translate\":\"content_lock:item.prism_stone\"}",
+      "item_name": [{"translate":"content_lock:item.prism_stone"}],
       "item_model": "prismarine_crystals",
       "consumable": {
         "animation": "none",

@@ -17,7 +17,7 @@
       "custom_data": {
         "content_lock.random_music_disc": true
       },
-      "item_name": "{\"translate\":\"content_lock:item.random_music_disc\"}",
+      "item_name": [{"translate":"content_lock:item.random_music_disc"}],
       "item_model": "music_disc_11"
     }
   }

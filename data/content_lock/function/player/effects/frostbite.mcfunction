@@ -7,5 +7,5 @@ scoreboard players operation @s lsp.stamina = @s content_lock.max_stamina
 
 scoreboard players set @s content_lock.frostbite_stacks -350
 execute if entity @s[tag=content_lock.frostbite_active] run return 0
-tellraw @s {"translate": "content_lock:effect.frostbite.activated","color":"gold"}
+tellraw @s [{"translate": "content_lock:effect.frostbite.activated","color":"gold"}]
 tag @s add content_lock.frostbite_active

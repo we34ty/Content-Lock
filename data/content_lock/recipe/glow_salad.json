@@ -13,7 +13,7 @@
     "count": 1,
     "id": "minecraft:mushroom_stew",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.glow_salad\"}",
+    "item_name": [{"translate":"content_lock:item.glow_salad"}],
     "custom_model_data":{
       "strings": [
         "content_lock:glow_salad"

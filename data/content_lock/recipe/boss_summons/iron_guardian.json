@@ -17,7 +17,7 @@
       "custom_data": {
         "content_lock.iron_guardian_summon": true
       },
-      "item_name": "{\"translate\":\"content_lock:item.boss_summon.iron_guardian\"}",
+      "item_name": [{"translate":"content_lock:item.boss_summon.iron_guardian"}],
       "item_model": "minecraft:furnace",
       "consumable": {
         "animation": "drink",

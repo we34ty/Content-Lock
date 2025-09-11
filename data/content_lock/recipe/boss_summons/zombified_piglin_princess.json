@@ -16,7 +16,7 @@
       "custom_data": {
         "content_lock.zombified_piglin_princess_summon": true
       },
-      "item_name": "{\"translate\":\"content_lock:item.boss_summon.zombified_piglin_princess\"}",
+      "item_name": [{"translate":"content_lock:item.boss_summon.zombified_piglin_princess"}],
       "item_model": "minecraft:nether_star",
       "consumable": {
         "animation": "drink",

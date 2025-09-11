@@ -16,7 +16,7 @@
       "custom_data": {
         "content_lock.enchanted_witch_summon": true
       },
-      "item_name": "{\"translate\":\"content_lock:item.boss_summon.enchanted_witch\"}",
+      "item_name": [{"translate":"content_lock:item.boss_summon.enchanted_witch"}],
       "item_model": "minecraft:ominous_bottle",
       "consumable": {
         "animation": "drink",

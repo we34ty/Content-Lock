@@ -16,7 +16,7 @@
     "count": 1,
     "id": "minecraft:netherite_pickaxe",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.silver_tape\"}",
+    "item_name": [{"translate":"content_lock:item.silver_tape"}],
     "custom_model_data":{
       "strings": [
         "content_lock:silver_tape"

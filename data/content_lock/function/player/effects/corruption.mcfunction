@@ -3,5 +3,5 @@ attribute @s entity_interaction_range modifier add content_lock.corruption 0.5 a
 attribute @s block_interaction_range modifier add content_lock.corruption 1 add_value
 
 execute if entity @s[tag=content_lock.corrupted_meter_full] run return 0
-tellraw @s {"translate": "content_lock:effect.corruption.activated","color":"red"}
+tellraw @s [{"translate": "content_lock:effect.corruption.activated","color":"red"}]
 tag @s add content_lock.corrupted_meter_full

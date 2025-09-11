@@ -157,12 +157,12 @@ scoreboard objectives add content_lock.options.player.boss_music dummy
 scoreboard objectives add content_lock.options.player.disable_sprint dummy
 scoreboard objectives add content_lock.options.game.tick_speed dummy
 
-bossbar add content_lock.enchanted_witch {"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}
+bossbar add content_lock.enchanted_witch [{"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}]
 bossbar set content_lock.enchanted_witch color purple
 bossbar set content_lock.enchanted_witch style notched_6
 bossbar set content_lock.enchanted_witch max 250
 
-bossbar add content_lock.zombified_piglin_princess {"translate":"content_lock:boss.zombified_piglin_princess","bold":true,"color":"gold"}
+bossbar add content_lock.zombified_piglin_princess [{"translate":"content_lock:boss.zombified_piglin_princess","bold":true,"color":"gold"}]
 bossbar set content_lock.zombified_piglin_princess color yellow
 bossbar set content_lock.zombified_piglin_princess style notched_6
 bossbar set content_lock.zombified_piglin_princess max 600
@@ -217,12 +217,12 @@ bossbar set content_lock.slime_god_shield color blue
 bossbar set content_lock.slime_god_shield style progress
 bossbar set content_lock.slime_god_shield max 500
 
-bossbar add content_lock.iron_guardian {"translate":"content_lock:boss.iron_guardian","bold":true,"color":"gray"}
+bossbar add content_lock.iron_guardian [{"translate":"content_lock:boss.iron_guardian","bold":true,"color":"gray"}]
 bossbar set content_lock.iron_guardian color white
 bossbar set content_lock.iron_guardian style notched_6
 bossbar set content_lock.iron_guardian max 200
 
-bossbar add content_lock.death_rider {"translate":"content_lock:boss.death_rider","bold":true,"color":"dark_gray"}
+bossbar add content_lock.death_rider [{"translate":"content_lock:boss.death_rider","bold":true,"color":"dark_gray"}]
 bossbar set content_lock.death_rider color white
 bossbar set content_lock.death_rider style notched_6
 bossbar set content_lock.death_rider max 100

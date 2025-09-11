@@ -8,7 +8,7 @@ attribute @s movement_speed modifier add content_lock.customized_content_lock2 -
 attribute @s max_health modifier remove content_lock.customized_content_lock
 attribute @s max_health modifier add content_lock.customized_content_lock -0.15 add_multiplied_base
 
-data merge entity @s {Silent:1b,DrownedConversionTime:100000000,DeathLootTable:"content_lock:entities/living_armor",CustomName:'{"translate": "content_lock:mob.living_armor"}',CustomNameVisible:0b}
+data merge entity @s {Silent:1b,DrownedConversionTime:100000000,DeathLootTable:"content_lock:entities/living_armor",CustomName:{"translate": "content_lock:mob.living_armor"},CustomNameVisible:0b}
 effect give @s invisibility infinite 0 true
 
 item replace entity @s armor.head with iron_helmet[attribute_modifiers=[{"type": "minecraft:armor","id": "content_lock.basic_armor_stats_head","amount": 1,"operation": "add_value","slot": "head"},{"type": "minecraft:armor_toughness","id": "content_lock.basic_armor_stats_head","amount": 2.5,"operation": "add_value","slot": "head"},{"type": "minecraft:movement_efficiency","id": "content_lock.basic_armor_stats_head","amount": -0.18,"operation": "add_multiplied_base","slot": "head"}]]

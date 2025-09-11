@@ -2,7 +2,7 @@ scoreboard players enable @s content_lock.LevelUp.eqld
 scoreboard players set @s content_lock.LevelUp.eqld 0
 
 tellraw @s ["\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n \n\n\n\n\n"]
-execute unless score @s content_lock.player_unused_skill_points matches 1.. run tellraw @s {"translate":"content_lock:levels.not_enough_points","color":"red"}
+execute unless score @s content_lock.player_unused_skill_points matches 1.. run tellraw @s [{"translate":"content_lock:levels.not_enough_points","color":"red"}]
 
 execute if score @s content_lock.player_unused_skill_points matches 1.. run scoreboard players add @s content_lock.eqld_from_level 1
 

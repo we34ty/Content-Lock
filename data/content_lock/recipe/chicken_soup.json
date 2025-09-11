@@ -12,7 +12,7 @@
     "count": 1,
     "id": "minecraft:mushroom_stew",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.chicken_soup\"}",
+    "item_name": [{"translate":"content_lock:item.chicken_soup"}],
     "custom_model_data":{
       "strings": [
         "content_lock:chicken_soup"

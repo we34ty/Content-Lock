@@ -13,7 +13,7 @@
     "count": 1,
     "id": "minecraft:rabbit_stew",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.spaghetti\"}",
+    "item_name": [{"translate":"content_lock:item.spaghetti"}],
     "custom_model_data":{
       "strings": [
         "content_lock:spaghetti"

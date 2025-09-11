@@ -9,7 +9,7 @@
     "count": 2,
     "id": "minecraft:tropical_fish",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.sushi\"}",
+    "item_name": [{"translate":"content_lock:item.sushi"}],
     "custom_model_data":{
       "strings": [
         "content_lock:sushi"

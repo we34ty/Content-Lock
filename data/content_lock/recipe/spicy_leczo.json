@@ -15,7 +15,7 @@
     "count": 1,
     "id": "minecraft:mushroom_stew",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.spicy_leczo\"}",
+    "item_name": [{"translate":"content_lock:item.spicy_leczo"}],
     "custom_model_data":{
       "strings": [
         "content_lock:leczo"

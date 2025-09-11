@@ -16,7 +16,7 @@
     "count": 1,
     "id": "minecraft:structure_void",
     "components": {
-      "minecraft:item_name": "{\"translate\":\"content_lock:item.xp_bundle_3\"}",
+      "minecraft:item_name": [{"translate":"content_lock:item.xp_bundle_3"}],
       "minecraft:rarity": "epic",
       "item_model": "minecraft:purple_bundle"
     }

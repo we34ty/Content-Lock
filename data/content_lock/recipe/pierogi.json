@@ -10,7 +10,7 @@
     "count": 2,
     "id": "minecraft:bread",
     "components": {
-    "item_name": "{\"translate\":\"content_lock:item.pierogi\"}",
+    "item_name": [{"translate":"content_lock:item.pierogi"}],
     "custom_model_data":{
       "strings": [
         "content_lock:pierogi"

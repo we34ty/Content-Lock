@@ -1,1 +1,1 @@
-give @s minecraft:dropper[minecraft:custom_name='{"translate": "content_lock:item.quarry","italic": false}',rarity="uncommon"]
+give @s minecraft:dropper[minecraft:custom_name={"translate": "content_lock:item.quarry","italic": false},rarity="uncommon"]

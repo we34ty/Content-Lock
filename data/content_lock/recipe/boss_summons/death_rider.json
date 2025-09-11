@@ -16,7 +16,7 @@
       "custom_data": {
         "content_lock.death_rider_summon": true
       },
-      "item_name": "{\"translate\":\"content_lock:item.boss_summon.death_rider\"}",
+      "item_name": [{"translate":"content_lock:item.boss_summon.death_rider"}],
       "item_model": "minecraft:ominous_bottle",
       "consumable": {
         "animation": "drink",

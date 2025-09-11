@@ -16,7 +16,7 @@
     "count": 1,
     "id": "minecraft:structure_void",
     "components": {
-      "minecraft:item_name": "{\"translate\":\"content_lock:item.xp_bundle_1\"}",
+      "minecraft:item_name": [{"translate":"content_lock:item.xp_bundle_1"}],
       "minecraft:rarity": "uncommon",
       "item_model": "minecraft:yellow_bundle"
     }

@@ -2,7 +2,7 @@
 scoreboard players set @s LevelUp.ContentLock 0
 scoreboard players enable @s LevelUp.ContentLock
 
-execute unless score @s content_lock.player_unused_skill_points matches 1.. run tellraw @s {"translate":"content_lock:levels.no_skill_points"}
+execute unless score @s content_lock.player_unused_skill_points matches 1.. run tellraw @s [{"translate":"content_lock:levels.no_skill_points"}]
 execute if score @s content_lock.player_unused_skill_points matches 1.. run tellraw @s ["",{"translate":"content_lock:levels.skill_points_1","bold":false},{"score":{"name":"@s","objective":"content_lock.player_unused_skill_points"},"bold":true,"color":"yellow"},{"translate":"content_lock:levels.skill_points_2","bold":false}]
 
 tellraw @s ["",{"text":"[+]","bold":true,"color":"green","click_event":{"action":"run_command","command":"/trigger content_lock.LevelUp.hp"},"hover_event":{"action":"show_text","value":{"translate":"content_lock:levels.hp.description"}}},{"translate":"content_lock:levels.hp","color":"white"},{"score":{"name":"@s","objective":"content_lock.hp_from_level"}},{"text":")"}]
