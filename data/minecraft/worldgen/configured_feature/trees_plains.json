@@ -12,6 +12,10 @@
           "feature": "minecraft:fancy_oak_bees_005",
           "placement": []
         }
+      },
+      {
+        "chance": 0.0045,
+        "feature": "minecraft:fallen_oak_tree"
       }
     ]
   }

@@ -12,8 +12,12 @@
         "feature": "minecraft:jungle_bush"
       },
       {
-        "chance": 0.56,
+        "chance": 0.55,
         "feature": "minecraft:mega_jungle_tree_checked"
+      },
+      {
+        "chance": 0.0125,
+        "feature": "minecraft:fallen_jungle_tree"
       }
     ]
   }

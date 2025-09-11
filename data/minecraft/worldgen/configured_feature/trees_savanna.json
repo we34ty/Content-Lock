@@ -6,6 +6,10 @@
       {
         "chance": 0.95,
         "feature": "minecraft:acacia_checked"
+      },
+      {
+        "chance": 0.0045,
+        "feature": "minecraft:fallen_oak_tree"
       }
     ]
   }
