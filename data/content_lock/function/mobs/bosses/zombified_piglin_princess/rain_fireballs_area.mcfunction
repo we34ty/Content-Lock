@@ -1,7 +1,7 @@
 scoreboard players add @s content_lock.attack_timer 1
 execute unless score @s content_lock.attack_timer matches 5.. run return 0
 
-summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["content_lock.zombified_piglin_princess.rain_fireballs.projectile","content_lock.yet_to_be_spread"]}
+summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["content_lock.zombified_piglin_princess.rain_fireballs.projectile","content_lock.yet_to_be_spread"],Radius:0.0f}
 execute as @e[tag=content_lock.zombified_piglin_princess.rain_fireballs.projectile,tag=content_lock.yet_to_be_spread] store result score @s content_lock.temp1 run data get entity @s Pos[1]
 execute as @e[tag=content_lock.zombified_piglin_princess.rain_fireballs.projectile,tag=content_lock.yet_to_be_spread] run scoreboard players add @s content_lock.temp1 10
 spreadplayers ~ ~ 2 4 false @e[tag=content_lock.zombified_piglin_princess.rain_fireballs.projectile,tag=content_lock.yet_to_be_spread]

@@ -1,4 +1,4 @@
-summon area_effect_cloud ~ ~1 ~ {Tags:[content_lock.enemy_fireball],Duration:160}
+summon area_effect_cloud ~ ~1 ~ {Tags:[content_lock.enemy_fireball],Duration:160,Radius:0.0f}
 particle small_flame ~ ~1 ~ 0.2 0.2 0.2 0.2 40 normal
 playsound item.firecharge.use hostile @a ~ ~ ~ 2 1.2
 playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 1.8

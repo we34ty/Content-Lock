@@ -1,6 +1,6 @@
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.boss_exhaustion 240
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players set @s content_lock.attack_timer 160
-execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.im_a_target,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Duration:61,Tags:[content_lock.enchanted_witch.teleport_away.area]}
+execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.im_a_target,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Duration:61,Tags:[content_lock.enchanted_witch.teleport_away.area],Radius:0.0f}
 execute if entity @s[scores={content_lock.attack_timer=160}] at @e[tag=content_lock.im_a_target,limit=1,sort=nearest] as @e[tag=content_lock.enchanted_witch.teleport_away.area,limit=1,sort=nearest] run spreadplayers ~ ~ 20 30 false @s
 execute if entity @s[scores={content_lock.attack_timer=160}] run data merge entity @s {NoAI:1b}
 execute if entity @s[scores={content_lock.attack_timer=160}] positioned ~-7 ~-7 ~-7 as @e[type=#minecraft:boss_can_damage,dx=14,dy=14,dz=14] run effect give @s slowness 3 2 true

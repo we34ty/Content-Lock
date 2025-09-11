@@ -1,6 +1,6 @@
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.boss_exhaustion 120
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players set @s content_lock.attack_timer 80
-execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-7 ~-7 ~-7 at @e[type=#minecraft:boss_can_damage,dx=14,dz=14,dy=14] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:[content_lock.enchanted_witch.taze_attack.area]}
+execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-7 ~-7 ~-7 at @e[type=#minecraft:boss_can_damage,dx=14,dz=14,dy=14] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:[content_lock.enchanted_witch.taze_attack.area],Radius:0.0f}
 execute if entity @s[scores={content_lock.attack_timer=40..80}] at @e[tag=content_lock.enchanted_witch.taze_attack.area,distance=0..40] run particle electric_spark ~ ~ ~ 2.5 2.5 2.5 0 300 force @a
 execute if entity @s[scores={content_lock.attack_timer=70}] at @e[tag=content_lock.enchanted_witch.taze_attack.area,distance=0..40] run playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.5 2
 execute if entity @s[scores={content_lock.attack_timer=50}] at @e[tag=content_lock.enchanted_witch.taze_attack.area,distance=0..40] run playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.5 2

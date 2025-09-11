@@ -20,5 +20,5 @@ execute unless score @s content_lock.attack_timer matches 20 run return 0
 
 data merge storage content_lock:saved_stats {speed:1}
 execute as @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest] store result storage content_lock:saved_stats speed double 0.01 run attribute @s movement_speed get 4000
-execute rotated as @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest] rotated ~ 60 run summon area_effect_cloud ^ ^ ^5 {Tags:["content_lock.tatsugeki.dolphin.area"],Duration:1}
+execute rotated as @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest] rotated ~ 60 run summon area_effect_cloud ^ ^ ^5 {Tags:["content_lock.tatsugeki.dolphin.area"],Duration:1,Radius:0.0f}
 function content_lock:player/items/custom_weapons/tatsugeki/motion with storage content_lock:saved_stats

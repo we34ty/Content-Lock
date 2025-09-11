@@ -4,7 +4,7 @@ execute if entity @s[scores={content_lock.attack_timer=120}] run attribute @s at
 execute if entity @s[scores={content_lock.attack_timer=120}] as @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest] run attribute @s movement_speed modifier add content_lock.no_speed -1 add_multiplied_total
 
 execute if entity @s[scores={content_lock.attack_timer=120}] run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1
-execute if entity @s[scores={content_lock.attack_timer=120}] at @e[tag=content_lock.im_a_target,type=#boss_can_damage,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:["content_lock.death_rider.spin_teleport.area"]}
+execute if entity @s[scores={content_lock.attack_timer=120}] at @e[tag=content_lock.im_a_target,type=#boss_can_damage,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:["content_lock.death_rider.spin_teleport.area"],Radius:0.0f}
 execute if entity @s[scores={content_lock.attack_timer=90..120}] at @e[tag=content_lock.death_rider.spin_teleport.area] run particle portal ~ ~1 ~ 0.1 0.1 0.1 1 10 force @a
 execute if entity @s[scores={content_lock.attack_timer=90..120}] at @e[tag=content_lock.death_rider.spin_teleport.area] run particle soul ~ ~1 ~ 0.1 1 0.1 0.05 5 normal @a
 execute if entity @s[scores={content_lock.attack_timer=60..120}] run rotate @s ~35 0

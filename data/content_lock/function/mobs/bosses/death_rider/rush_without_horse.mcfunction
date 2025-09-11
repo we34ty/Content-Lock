@@ -8,7 +8,7 @@ execute if entity @s[scores={content_lock.attack_timer=150}] run playsound entit
 execute if entity @s[scores={content_lock.attack_timer=140}] run playsound entity.zombie.attack_iron_door hostile @a ~ ~ ~ 3 1.6
 execute if entity @s[scores={content_lock.attack_timer=130..160}] run particle crit ~ ~1 ~ 1 1 1 1 30 normal @a
 
-execute if entity @s[scores={content_lock.attack_timer=131}] facing entity @e[tag=content_lock.im_a_target,type=#boss_can_damage,limit=1,sort=nearest] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^40 {Duration:32,Tags:[content_lock.death_rider.rush_without_horse.area]}
+execute if entity @s[scores={content_lock.attack_timer=131}] facing entity @e[tag=content_lock.im_a_target,type=#boss_can_damage,limit=1,sort=nearest] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^40 {Duration:32,Tags:[content_lock.death_rider.rush_without_horse.area],Radius:0.0f}
 execute if entity @s[scores={content_lock.attack_timer=131}] facing entity @e[tag=content_lock.death_rider.rush_without_horse.area,limit=1,sort=nearest] feet rotated ~ 0 run rotate @s ~ ~
 execute if entity @s[scores={content_lock.attack_timer=130}] run tag @s add content_lock.death_rider.rush_without_horse.dismount
 execute if entity @s[scores={content_lock.attack_timer=130}] run ride @s dismount

@@ -10,7 +10,7 @@ execute if entity @s[scores={content_lock.attack_timer=180}] positioned ~ ~2 ~ r
 execute if entity @s[scores={content_lock.attack_timer=180}] positioned ~ ~2 ~ run particle flame ^ ^ ^6 0.2 0.2 0.2 0.1 10 force @a
 
 execute if entity @s[scores={content_lock.attack_timer=200}] run playsound entity.zombified_piglin.hurt hostile @a ~ ~ ~ 5 0.6
-execute if entity @s[scores={content_lock.attack_timer=200}] at @e[type=#minecraft:boss_can_damage,distance=..40] run summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["content_lock.zombified_piglin_princess.rain_fireballs.area"]}
+execute if entity @s[scores={content_lock.attack_timer=200}] at @e[type=#minecraft:boss_can_damage,distance=..40] run summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["content_lock.zombified_piglin_princess.rain_fireballs.area"],Radius:0.0f}
 execute if entity @s[scores={content_lock.attack_timer=100..160}] as @e[tag=content_lock.zombified_piglin_princess.rain_fireballs.area] at @s run function content_lock:mobs/bosses/zombified_piglin_princess/rain_fireballs_area
 execute if entity @s[scores={content_lock.attack_timer=20..160}] as @e[tag=content_lock.zombified_piglin_princess.rain_fireballs.projectile] at @s run function content_lock:mobs/bosses/zombified_piglin_princess/rain_fireballs_projectile
 
