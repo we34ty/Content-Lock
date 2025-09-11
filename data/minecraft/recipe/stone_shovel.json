@@ -11,8 +11,7 @@
   "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "components": {
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
+      "minecraft:attribute_modifiers": [
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
@@ -49,8 +48,6 @@
             "slot": "mainhand"
           }
         ],
-        "show_in_tooltip": true
-      },
       "minecraft:max_damage": 72,
       "minecraft:tool": {
         "rules": [

@@ -1,4 +1,4 @@
-execute store result score @s content_lock.temp1 run data get entity @s SelectedItem.components."minecraft:enchantments".levels."content_lock:iron_grip"
+execute store result score @s content_lock.temp1 run data get entity @s SelectedItem.components."minecraft:enchantments"."content_lock:iron_grip"
 
 execute if score @s content_lock.temp1 matches 1 run attribute @s attack_damage modifier add content_lock.iron_grip 0.15 add_multiplied_base
 execute if score @s content_lock.temp1 matches 1 run attribute @s entity_interaction_range modifier add content_lock.iron_grip 0.1 add_multiplied_base

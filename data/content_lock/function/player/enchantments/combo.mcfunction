@@ -7,7 +7,7 @@ scoreboard players set @s content_lock.temp1 15000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.combo_counter
 scoreboard players operation @s content_lock.temp2 = @s content_lock.combo_counter
-execute store result score @s content_lock.temp3 run data get entity @s SelectedItem.components."minecraft:enchantments".levels."content_lock:combo"
+execute store result score @s content_lock.temp3 run data get entity @s SelectedItem.components."minecraft:enchantments"."content_lock:combo"
 scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp3
 scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp3
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2

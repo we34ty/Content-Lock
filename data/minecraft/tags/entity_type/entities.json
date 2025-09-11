@@ -43,5 +43,5 @@
     "minecraft:glow_item_frame",
     "minecraft:interaction",
     "minecraft:marker",
-    "minecraft:potion"  ]
+    "minecraft:splash_potion"  ]
 }

@@ -112,10 +112,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:jukebox_playable": {
-                  "song": "minecraft:jackpotmusiclong",
-                  "show_in_tooltip": true
-                }
+                "minecraft:jukebox_playable": "minecraft:jackpotmusiclong"
               }
             }
           ]

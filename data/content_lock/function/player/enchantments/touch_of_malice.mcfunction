@@ -3,8 +3,8 @@ execute unless predicate content_lock:1_durability run return 0
 attribute @s attack_damage modifier add content_lock.touch_of_malice 1 add_multiplied_total
 tag @s add content_lock.touch_of_malice_active
 
-execute if entity @s[nbt={Inventory:[{Slot:-106b}]}] run summon item ~ ~ ~ {Tags:["content_lock.modify_from_offhand"],Item:{id:"structure_void"}}
-execute if entity @s[nbt={Inventory:[{Slot:-106b}]}] run data modify entity @e[type=item,tag=content_lock.modify_from_offhand,limit=1,sort=nearest] Item set from entity @s Inventory[{Slot:-106b}]
+execute if entity @s[nbt={equipment:{offhand:{}}}] run summon item ~ ~ ~ {Tags:["content_lock.modify_from_offhand"],Item:{id:"structure_void"}}
+execute if entity @s[nbt={equipment:{offhand:{}}}] run data modify entity @e[type=item,tag=content_lock.modify_from_offhand,limit=1,sort=nearest] Item set from entity @s equipment.offhand
 
 scoreboard players set @s content_lock.temp1 1
 item modify entity @s weapon.mainhand content_lock:durability_from_scoreboard_add

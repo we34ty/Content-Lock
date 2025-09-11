@@ -216,10 +216,7 @@
             {
               "function": "set_components",
               "components": {
-                "jukebox_playable": {
-                  "song": "minecraft:enchanted_witch",
-                  "show_in_tooltip": true
-                }
+                "jukebox_playable": "minecraft:enchanted_witch"
               }
             }
           ]

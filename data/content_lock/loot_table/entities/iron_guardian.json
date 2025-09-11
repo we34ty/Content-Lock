@@ -230,10 +230,7 @@
             {
               "function": "set_components",
               "components": {
-                "jukebox_playable": {
-                  "song": "minecraft:iron_guardian",
-                  "show_in_tooltip": true
-                }
+                "jukebox_playable": "minecraft:iron_guardian"
               }
             }
           ]

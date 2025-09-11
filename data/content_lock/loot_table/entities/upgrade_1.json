@@ -11,7 +11,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": true
+                }
               }
             },
             {

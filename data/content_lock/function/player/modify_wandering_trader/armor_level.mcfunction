@@ -3,11 +3,11 @@ execute at @s at @e[type=wandering_trader,limit=1,sort=nearest] run particle hap
 
 execute at @s run data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].buy set from entity @s SelectedItem
 execute at @s run data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].sell set from entity @s SelectedItem
-execute store result score @s content_lock.temp1 run data get entity @s SelectedItem.components."minecraft:enchantments".levels."content_lock:armor_level"
+execute store result score @s content_lock.temp1 run data get entity @s SelectedItem.components."minecraft:enchantments"."content_lock:armor_level"
 scoreboard players set @s content_lock.temp2 1
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 execute at @s run scoreboard players operation @e[type=wandering_trader,limit=1,sort=nearest] content_lock.temp1 = @s content_lock.temp1
-execute at @s as @e[type=wandering_trader,limit=1,sort=nearest] store result entity @s Offers.Recipes[0].sell.components."minecraft:enchantments".levels."content_lock:armor_level" int 1 run scoreboard players get @s content_lock.temp1
+execute at @s as @e[type=wandering_trader,limit=1,sort=nearest] store result entity @s Offers.Recipes[0].sell.components."minecraft:enchantments"."content_lock:armor_level" int 1 run scoreboard players get @s content_lock.temp1
 
 data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].maxUses set value 1
 data modify entity @e[type=wandering_trader,limit=1,sort=nearest] Offers.Recipes[0].uses set value 0

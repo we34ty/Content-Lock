@@ -63,4 +63,4 @@ execute if score @s content_lock.temp2 matches 5 if score @s content_lock.temp1 
 execute if score @s content_lock.temp2 matches 5 if score @s content_lock.temp1 matches 5 run item replace entity @s weapon.mainhand with minecraft:diamond_hoe
 execute if score @s content_lock.temp2 matches 5 if score @s content_lock.temp1 matches 6 run item replace entity @s weapon.mainhand with minecraft:netherite_hoe
 
-data merge entity @s {HandDropChances:[0.0F,0.0F],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}
+data merge entity @s {drop_chances:{chest:0.0f,feet:0.0f,head:0.0f,legs:0.0f,mainhand:0.0f,offhand:0.0f}}

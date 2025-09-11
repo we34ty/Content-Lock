@@ -21,7 +21,7 @@ execute if score @s content_lock.temp1 matches 16 run give @s minecraft:music_di
 execute if score @s content_lock.temp1 matches 17 run give @s minecraft:music_disc_pigstep
 execute if score @s content_lock.temp1 matches 18 run give @s minecraft:music_disc_precipice
 execute if score @s content_lock.temp1 matches 19 run give @s minecraft:music_disc_relic
-execute if score @s content_lock.temp1 matches 20 run give @s minecraft:music_disc_mall[jukebox_playable={song:"minecraft:enchanted_witch",show_in_tooltip:true}]
-execute if score @s content_lock.temp1 matches 21 run give @s minecraft:music_disc_strad[jukebox_playable={song:"minecraft:iron_guardian",show_in_tooltip:true}]
-execute if score @s content_lock.temp1 matches 22 run give @s minecraft:music_disc_otherside[jukebox_playable={song:"minecraft:death_rider",show_in_tooltip:true}]
+execute if score @s content_lock.temp1 matches 20 run give @s minecraft:music_disc_mall[jukebox_playable="minecraft:enchanted_witch"]
+execute if score @s content_lock.temp1 matches 21 run give @s minecraft:music_disc_strad[jukebox_playable="minecraft:iron_guardian"]
+execute if score @s content_lock.temp1 matches 22 run give @s minecraft:music_disc_otherside[jukebox_playable="minecraft:death_rider"]
 execute if score @s content_lock.temp1 matches 23 run give @s minecraft:music_disc_creator_music_box

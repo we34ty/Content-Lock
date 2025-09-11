@@ -7,8 +7,7 @@
     "count": 1,
     "id": "minecraft:diamond_chestplate",
     "components": {
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
+      "minecraft:attribute_modifiers": [
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_chest",
@@ -31,10 +30,11 @@
             "slot": "chest"
           }
         ],
-        "show_in_tooltip": true
-      },
-      "unbreakable": {
-        "show_in_tooltip": false
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
       }    }
   }
 }

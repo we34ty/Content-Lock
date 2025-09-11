@@ -6,8 +6,7 @@
   "result": {
     "id": "minecraft:iron_horse_armor",
     "components": {
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
+      "minecraft:attribute_modifiers": [
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.horse_saddle_conten_lock",
@@ -36,9 +35,7 @@
             "operation": "add_value",
             "slot": "body"
           }
-        ],
-        "show_in_tooltip": true
-      }
+        ]
     }
   }
 }

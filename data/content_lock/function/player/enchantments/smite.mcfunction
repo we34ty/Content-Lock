@@ -2,7 +2,7 @@ execute store result score @s content_lock.temp1 run data get entity @s Health 1
 execute store result score @s content_lock.temp2 run attribute @s max_health get 1
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp2
 
-execute store result score @s content_lock.temp2 on attacker run data get entity @s SelectedItem.components."minecraft:enchantments".levels."minecraft:smite"
+execute store result score @s content_lock.temp2 on attacker run data get entity @s SelectedItem.components."minecraft:enchantments"."minecraft:smite"
 tag @e remove content_lock.attacker
 execute on attacker run tag @s add content_lock.attacker
 

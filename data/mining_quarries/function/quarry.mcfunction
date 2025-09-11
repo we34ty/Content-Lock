@@ -9,7 +9,7 @@ execute if score @s content_lock.attack_timer matches 3.. unless entity @e[tag=c
 execute if score @s content_lock.attack_timer matches 3.. as @e[tag=content_lock.quarry.miner,limit=1,sort=nearest] at @s run function mining_quarries:mine
 
 #scoreboard players set @s content_lock.quarry_temp_var 0
-#execute store result score @s content_lock.quarry_temp_var run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantments".levels."minecraft:fortune"
+#execute store result score @s content_lock.quarry_temp_var run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantments"."minecraft:fortune"
 #scoreboard players add @s content_lock.quarry_temp_var 1
 #function mining_quarries:spawn_loot_loop
 

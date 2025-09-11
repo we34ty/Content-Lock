@@ -6,8 +6,7 @@
   "result": {
     "id": "minecraft:golden_horse_armor",
     "components": {
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
+      "minecraft:attribute_modifiers": [
           {
             "type": "minecraft:armor_toughness",
             "id": "content_lock.horse_saddle_conten_lock",
@@ -43,9 +42,7 @@
             "operation": "add_multiplied_total",
             "slot": "body"
           }
-        ],
-        "show_in_tooltip": true
-      }
+        ]
     }
   }
 }

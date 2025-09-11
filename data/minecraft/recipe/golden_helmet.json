@@ -7,8 +7,7 @@
     "count": 1,
     "id": "minecraft:golden_helmet",
     "components": {
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
+      "minecraft:attribute_modifiers":  [
           {
             "type": "minecraft:armor",
             "id": "content_lock.basic_armor_stats_head",
@@ -31,10 +30,11 @@
             "slot": "head"
           }
         ],
-        "show_in_tooltip": true
-      },
-      "unbreakable": {
-        "show_in_tooltip": false
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
       }    }
   }
 }

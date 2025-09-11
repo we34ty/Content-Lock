@@ -1,5 +1,5 @@
 data merge entity @s {HurtTime:0s}
-execute positioned ~-1.5 ~-0.5 ~-1.5 as @e[dx=3,dy=1,dz=3,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{levels:{"content_lock:earthquake":1}}}}}] positioned ~1.5 ~1.5 ~1.5 run damage @s 5 player_attack by @p[nbt={SelectedItem:{components:{"minecraft:enchantments":{levels:{"content_lock:earthquake":1}}}}}]
-execute positioned ~-1.5 ~-0.5 ~-1.5 as @e[dx=3,dy=1,dz=3,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{levels:{"content_lock:earthquake":1}}}}}] positioned ~1.5 ~1.5 ~1.5 run damage @s 4 magic by @p[nbt={SelectedItem:{components:{"minecraft:enchantments":{levels:{"content_lock:earthquake":1}}}}}]
-execute positioned ~-1.5 ~-0.5 ~-1.5 as @e[dx=3,dy=1,dz=3,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{levels:{"content_lock:earthquake":1}}}}}] run effect give @s slowness 3 0 false 
+execute positioned ~-1.5 ~-0.5 ~-1.5 as @e[dx=3,dy=1,dz=3,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"content_lock:earthquake":1}}}}] positioned ~1.5 ~1.5 ~1.5 run damage @s 5 player_attack by @p[nbt={SelectedItem:{components:{"minecraft:enchantments":{"content_lock:earthquake":1}}}}]
+execute positioned ~-1.5 ~-0.5 ~-1.5 as @e[dx=3,dy=1,dz=3,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"content_lock:earthquake":1}}}}] positioned ~1.5 ~1.5 ~1.5 run damage @s 4 magic by @p[nbt={SelectedItem:{components:{"minecraft:enchantments":{"content_lock:earthquake":1}}}}]
+execute positioned ~-1.5 ~-0.5 ~-1.5 as @e[dx=3,dy=1,dz=3,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"content_lock:earthquake":1}}}}] run effect give @s slowness 3 0 false 
 particle block_crumble{block_state:stone} ~ ~ ~ 3 1 3 1 100 normal @a
