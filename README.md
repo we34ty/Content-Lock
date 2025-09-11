@@ -4,6 +4,7 @@ Minecraft datapack inspired by souls-likes and many other games, which strives t
 The project is still in development, so any improvement ideas and bugs should be reported.
 
 Downloading:
+The datapack was made on 1.21.4 and recently ported to 1.21.8, so it's strongly recommended to play on this version of the game.
 Place the main folder inside both your datapacks folder, in your save, and in the resource pack folder.
 For the terrain generation to function properly it's recommended to "regenerate" chosen world.
 For any additional setting you can use "/function content_lock:options".
