@@ -1,4 +1,5 @@
 #execute if entity @s[type=pig] run attribute @s movement_speed modifier add content_lock.customized_content_lock2 0.3 add_value
+execute if entity @s[type=happy_ghast] run attribute @s flying_speed modifier add content_lock.customized_content_lock2 1 add_multiplied_base
 execute if entity @s[type=pig] run attribute @s step_height modifier add content_lock.customized_content_lock2 1 add_value
 execute if entity @s[type=strider] run attribute @s step_height modifier add content_lock.customized_content_lock2 1 add_value
 attribute @s[type=!pig] movement_speed modifier add content_lock.customized_content_lock 0.5 add_multiplied_base
