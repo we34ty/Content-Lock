@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:ancient_debris"
+            "items": "minecraft:netherite_scrap"
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:netherite_scrap"
+      "id": "minecraft:ancient_debris"
     },
     "title": {
       "translate": "advancements.nether.obtain_ancient_debris.title"
