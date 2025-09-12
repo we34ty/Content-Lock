@@ -1,0 +1,74 @@
+{
+	"textures": {
+		"0": "content_lock:item/carapacer/carapacer_small_body_inner",
+		"1": "content_lock:item/carapacer/carapacer_small_body",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [2, 11, -1],
+			"to": [14, 20, 16],
+			"faces": {
+				"north": {
+					"uv": [7, 0, 10.5, 2.5],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 4.75, 4.75, 7.25],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 7.25, 3.5, 9.75],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [4.75, 4.75, 9.5, 7.25],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [3.5, 4.75, 0, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [7, 0, 3.5, 4.75],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"from": [1, 11, -2],
+			"to": [15, 21, 17],
+			"faces": {
+				"north": {
+					"uv": [7, 0, 10.5, 2.5],
+					"texture": "#1"
+				},
+				"east": {
+					"uv": [0, 4.75, 4.75, 7.25],
+					"texture": "#1"
+				},
+				"south": {
+					"uv": [0, 7.25, 3.5, 9.75],
+					"texture": "#1"
+				},
+				"west": {
+					"uv": [4.75, 4.75, 9.5, 7.25],
+					"texture": "#1"
+				},
+				"up": {
+					"uv": [3.5, 4.75, 0, 0],
+					"texture": "#1"
+				},
+				"down": {
+					"uv": [7, 0, 3.5, 4.75],
+					"texture": "#1"
+				}
+			}
+		}
+	]
+}

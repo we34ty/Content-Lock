@@ -1,6 +1,7 @@
 {
 	"values": [
 		"content_lock:tick",
-		"lsp:loop"
+		"lsp:loop",
+		"animated_java:global/on_tick"
 	]
 }

@@ -1,0 +1,8 @@
+{
+	"parent": "animated_java:blueprint/carapacer/left",
+	"textures": {
+		"1": "content_lock:item/carapacer/carapacer_small_body_damage",
+		"2": "content_lock:item/carapacer/carapacer_small_legs_damage",
+		"3": "content_lock:item/carapacer/carapacer_head_damage"
+	}
+}

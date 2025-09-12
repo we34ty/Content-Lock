@@ -4,6 +4,8 @@
 		"lsp:init",
 		"m_graves:load",
 		"player_motion:internal/technical/load",
-		"mining_quarries:init"
+		"mining_quarries:init",
+		"animated_java:global/internal/gu/load", 
+		"animated_java:global/on_load"
 	]
 }
