@@ -138,6 +138,7 @@
     "content_lock:notifications.boss_already_exists": "Only one boss can be summoned at a time.",
     "content_lock:notifications.can_only_spawn_at_night": "Cannot perform this action during the day.",
     "content_lock:notifications.can_only_spawn_at_day": "Cannot perform this action during the night.",
+    "content_lock:notifications.can_only_spawn_in_overworld": "Must be used in The Overworld.",
     "content_lock:notifications.can_only_spawn_in_nether_wastes": "Must be used in Nether Wastes.",
     "content_lock:notifications.magic_powder.not_enough": "Not enough Spellbound Dust",
     "content_lock:notifications.boss_summoned.enchanted_witch": "Enchanted Witch has been summoned!",

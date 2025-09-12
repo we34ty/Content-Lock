@@ -138,6 +138,7 @@
     "content_lock:notifications.boss_already_exists": "Tylko jeden Boss może istnieć w tym samym czasie.",
     "content_lock:notifications.can_only_spawn_at_night": "Nie można wykonać tej akcji podczas dnia.",
     "content_lock:notifications.can_only_spawn_at_day": "Nie można wykonać tej akcji podczas nocy.",
+    "content_lock:notifications.can_only_spawn_in_overworld": "Musi być użyte w nadziemiu.",
     "content_lock:notifications.can_only_spawn_in_nether_wastes": "Musi być użyte w netherowych pustkowiach.",
     "content_lock:notifications.magic_powder.not_enough": "Niewystarczająco magicznego pyłu",
     "content_lock:notifications.boss_summoned.enchanted_witch": "Zaklęta Wiedźma została przywołana!",
