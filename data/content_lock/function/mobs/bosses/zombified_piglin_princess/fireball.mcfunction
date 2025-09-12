@@ -5,7 +5,7 @@ execute if entity @s[scores={content_lock.attack_timer=120}] run attribute @s mo
 
 execute if entity @s[scores={content_lock.attack_timer=100..120}] run particle flame ~ ~3 ~ 0.2 0.2 0.2 0.1 10 force @a
 execute if entity @s[scores={content_lock.attack_timer=100..120}] run playsound item.firecharge.use hostile @a ~ ~ ~ 5 1
-execute if entity @s[scores={content_lock.attack_timer=100}] facing entity @e[tag=content_lock.im_a_target,limit=1,sort=nearest,type=#minecraft:boss_can_damage] eyes run summon area_effect_cloud ~ ~3 ~ {Duration:80,Tags:["content_lock.zombified_piglin_princess.fireball.area"],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=100}] facing entity @e[tag=content_lock.im_a_target,limit=1,sort=nearest,type=#minecraft:boss_can_damage] eyes run summon area_effect_cloud ~ ~3 ~ {Duration:80,Tags:["content_lock.zombified_piglin_princess.fireball.area"],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=20..100}] as @e[tag=content_lock.zombified_piglin_princess.fireball.area] at @s run function content_lock:mobs/bosses/zombified_piglin_princess/fireball_area
 
 execute if entity @s[scores={content_lock.attack_timer=100}] run attribute @s attack_damage modifier remove content_lock.no_attack

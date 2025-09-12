@@ -5,11 +5,11 @@ execute if entity @s[scores={content_lock.attack_timer=60}] run scoreboard playe
 execute if entity @s[scores={content_lock.attack_timer=60}] run attribute @s attack_damage modifier add content_lock.no_attack -1 add_multiplied_total
 execute if entity @s[scores={content_lock.attack_timer=60}] run attribute @s movement_speed modifier add content_lock.no_speed -1 add_multiplied_total
 
-execute if entity @s[scores={content_lock.attack_timer=50}] facing entity @e[tag=content_lock.im_a_target,limit=1,sort=nearest,type=#boss_can_damage] feet positioned ^ ^ ^20 run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:["content_lock.zombified_piglin_princess.gunflame.area.point"],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=50}] facing entity @e[tag=content_lock.im_a_target,limit=1,sort=nearest,type=#boss_can_damage] feet positioned ^ ^ ^20 run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:["content_lock.zombified_piglin_princess.gunflame.area.point"],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=60}] run playsound entity.zombified_piglin.hurt hostile @a ~ ~ ~ 1 1.5
 execute if entity @s[scores={content_lock.attack_timer=50}] run playsound entity.zombified_piglin.hurt hostile @a ~ ~ ~ 1 1.2
 execute if entity @s[scores={content_lock.attack_timer=40}] run playsound entity.breeze.shoot hostile @a ~ ~ ~ 1 0.8
-execute if entity @s[scores={content_lock.attack_timer=40}] run summon area_effect_cloud ~ ~ ~ {Duration:21,Tags:["content_lock.zombified_piglin_princess.gunflame.area.attack"],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=40}] run summon area_effect_cloud ~ ~ ~ {Duration:21,Tags:["content_lock.zombified_piglin_princess.gunflame.area.attack"],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=20..40}] as @e[tag=content_lock.zombified_piglin_princess.gunflame.area.attack] at @s facing entity @e[tag=content_lock.zombified_piglin_princess.gunflame.area.point,limit=1,sort=nearest] feet rotated ~ 0 if block ^ ^ ^0.42 #minecraft:walkable run tp @s ^ ^ ^0.42
 execute if entity @s[scores={content_lock.attack_timer=20..40}] as @e[tag=content_lock.zombified_piglin_princess.gunflame.area.attack] at @s facing entity @e[tag=content_lock.zombified_piglin_princess.gunflame.area.point,limit=1,sort=nearest] feet rotated ~ 0 unless block ^ ^ ^0.42 #minecraft:walkable run tp @s ^ ^1 ^0.42
 execute if entity @s[scores={content_lock.attack_timer=20..40}] as @e[tag=content_lock.zombified_piglin_princess.gunflame.area.attack] at @s run particle flame ~ ~ ~ 0.5 0.5 0.5 0.02 10 force @a

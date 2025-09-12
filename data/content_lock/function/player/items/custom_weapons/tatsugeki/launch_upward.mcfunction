@@ -8,7 +8,7 @@ execute store result entity @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=n
 
 data merge storage content_lock:saved_stats {speed:1}
 execute store result storage content_lock:saved_stats speed double 0.01 run attribute @s movement_speed get 1500
-execute as @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=nearest] at @s rotated as @p[tag=content_lock.tatsugeki.anchor_sneak] rotated ~ -60 run summon area_effect_cloud ^ ^ ^5 {Tags:["content_lock.tatsugeki.dolphin.area"],Duration:1,Radius:0.0f}
+execute as @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=nearest] at @s rotated as @p[tag=content_lock.tatsugeki.anchor_sneak] rotated ~ -60 run summon area_effect_cloud ^ ^ ^5 {Tags:["content_lock.tatsugeki.dolphin.area"],Duration:1,custom_particle:{type:"block",block_state:"air"}}
 execute as @e[tag=content_lock.tatsugeki.dolphin,limit=1,sort=nearest] at @s run function content_lock:player/items/custom_weapons/tatsugeki/motion with storage content_lock:saved_stats
 
 execute if score L content_lock.options.player.stamina matches 1.. run function lsp:attacking

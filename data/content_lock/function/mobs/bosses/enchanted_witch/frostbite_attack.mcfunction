@@ -1,6 +1,6 @@
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.boss_exhaustion 260
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.attack_timer 240
-execute if entity @s[scores={content_lock.attack_timer=240}] at @e[type=#minecraft:boss_can_damage,tag=content_lock.im_a_target] run summon area_effect_cloud ~ ~ ~ {Duration:91,Tags:[content_lock.enchanted_witch.frostbite_attack.area],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=240}] at @e[type=#minecraft:boss_can_damage,tag=content_lock.im_a_target] run summon area_effect_cloud ~ ~ ~ {Duration:91,Tags:[content_lock.enchanted_witch.frostbite_attack.area],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=185..240}] at @e[tag=content_lock.enchanted_witch.frostbite_attack.area,distance=0..40] run particle snowflake ~ ~ ~ 1 0.3 1 0.1 20 force @a
 execute if entity @s[scores={content_lock.attack_timer=240}] at @e[tag=content_lock.enchanted_witch.frostbite_attack.area,distance=0..40] run playsound entity.player.hurt_freeze hostile @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={content_lock.attack_timer=240}] at @e[tag=content_lock.enchanted_witch.frostbite_attack.area,distance=0..40] run playsound entity.player.hurt_freeze hostile @a ~ ~ ~ 2 0.5

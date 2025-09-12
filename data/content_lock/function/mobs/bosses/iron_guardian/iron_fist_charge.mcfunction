@@ -3,7 +3,7 @@ execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard player
 execute if entity @s[scores={content_lock.attack_timer=160}] run data merge entity @s {NoAI:1b} 
 execute if entity @s[scores={content_lock.attack_timer=160}] facing entity @p feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
-summon area_effect_cloud ~ ~ ~ {Tags:[content_lock.direction_to_look_for_iron_guardian]}
+summon area_effect_cloud ~ ~ ~ {Tags:[content_lock.direction_to_look_for_iron_guardian],custom_particle:{type:"block",block_state:"air"},Duration:0}
 execute as @e[tag=content_lock.direction_to_look_for_iron_guardian,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ facing entity @p
 execute anchored eyes rotated as @e[tag=content_lock.direction_to_look_for_iron_guardian,limit=1,sort=nearest] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 tp @s ^ ^ ^0.6

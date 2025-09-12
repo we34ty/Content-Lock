@@ -1,6 +1,6 @@
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.boss_exhaustion 115
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players set @s content_lock.attack_timer 100
-execute if entity @s[scores={content_lock.attack_timer=100}] positioned ~-7 ~-7 ~-7 at @e[type=#minecraft:boss_can_damage,dx=14,dy=14,dz=14] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:[content_lock.enchanted_witch.control_flames.area],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=100}] positioned ~-7 ~-7 ~-7 at @e[type=#minecraft:boss_can_damage,dx=14,dy=14,dz=14] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:[content_lock.enchanted_witch.control_flames.area],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=100}] positioned ~-7 ~-7 ~-7 at @e[type=#minecraft:boss_can_damage,dx=14,dy=14,dz=14] run playsound item.firecharge.use hostile @a ~ ~ ~ 1 1
 execute if entity @s[scores={content_lock.attack_timer=90..100}] at @e[tag=content_lock.enchanted_witch.control_flames.area,distance=0..40] run particle small_flame ~ ~ ~ 0.1 0.2 0.1 0.04 10 force @a 
 execute if entity @s[scores={content_lock.attack_timer=80..89}] at @e[tag=content_lock.enchanted_witch.control_flames.area,distance=0..40] run particle small_flame ~ ~ ~ 0.3 0.5 0.3 0.04 20 force @a 

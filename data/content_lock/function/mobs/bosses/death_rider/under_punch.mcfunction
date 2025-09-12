@@ -1,7 +1,7 @@
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.boss_exhaustion 130
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players set @s content_lock.attack_timer 120
 
-execute if entity @s[scores={content_lock.attack_timer=120}] positioned ~-4 ~-4 ~-4 at @e[dx=8,dz=8,dy=8,type=#boss_can_damage] run summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["content_lock.death_rider.under_punch.area"],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=120}] positioned ~-4 ~-4 ~-4 at @e[dx=8,dz=8,dy=8,type=#boss_can_damage] run summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["content_lock.death_rider.under_punch.area"],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=100..120}] at @e[tag=content_lock.death_rider.under_punch.area] run particle soul ~ ~ ~ 0.1 0.1 0.1 0.03 6 force @a
 execute if entity @s[scores={content_lock.attack_timer=100..120}] at @e[tag=content_lock.death_rider.under_punch.area] run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.1 2
 execute if entity @s[scores={content_lock.attack_timer=60..99}] as @e[tag=content_lock.death_rider.under_punch.area] at @s facing entity @e[type=#minecraft:boss_can_damage,limit=1,sort=nearest] feet run tp @s ^ ^ ^0.15

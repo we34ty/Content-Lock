@@ -1,6 +1,6 @@
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.boss_exhaustion 135
 execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard players add @s content_lock.attack_timer 120
-execute if entity @s[scores={content_lock.attack_timer=120}] at @e[type=#boss_can_damage,tag=content_lock.im_a_target] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:[content_lock.enchanted_witch.necromancy_attack.area],Radius:0.0f}
+execute if entity @s[scores={content_lock.attack_timer=120}] at @e[type=#boss_can_damage,tag=content_lock.im_a_target] run summon area_effect_cloud ~ ~ ~ {Duration:41,Tags:[content_lock.enchanted_witch.necromancy_attack.area],custom_particle:{type:"block",block_state:"air"}}
 execute if entity @s[scores={content_lock.attack_timer=80..120}] at @e[tag=content_lock.enchanted_witch.necromancy_attack.area,distance=0..40] run particle soul ~ ~ ~ 1 0.3 1 0.1 20 force @a
 execute if entity @s[scores={content_lock.attack_timer=80}] run scoreboard players set L content_lock.temp1 0
 execute if entity @s[scores={content_lock.attack_timer=80}] as @e[tag=content_lock.enchanted_undead] run scoreboard players add L content_lock.temp1 1
