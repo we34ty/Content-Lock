@@ -5,6 +5,7 @@ scoreboard players set @s content_lock.max_stamina 400
 scoreboard players set @s content_lock.stamina_delay 50
 scoreboard players set @s content_lock.stamina_delay_timer 0
 scoreboard players set @s content_lock.bleed_stacks 0
+tag @s remove content_lock.bleed_active
 scoreboard players set @s content_lock.corruption_meter 0
 scoreboard players set @s content_lock.frostbite_stacks 0
 scoreboard players add @s content_lock.player_skill_level 0

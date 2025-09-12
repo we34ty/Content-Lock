@@ -1,0 +1,4 @@
+execute unless entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt=!{Motion:[0.0,0.0,0.0]}] run function animated_java:carapacer/animations/walk_big_new/play
+execute unless entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt=!{Motion:[0.0,0.0,0.0]}] run function animated_java:carapacer/animations/idle_big_new/stop
+execute if entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={Motion:[0.0,0.0,0.0]}] run function animated_java:carapacer/animations/walk_big_new/stop
+execute if entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={Motion:[0.0,0.0,0.0]}] run function animated_java:carapacer/animations/idle_big_new/play

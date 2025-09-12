@@ -1,0 +1,3 @@
+summon zoglin ~ ~ ~ {CustomName:[{translate:"content_lock:mob.carapacer"}],CustomNameVisible:false,Tags:[content_lock.carapacer],Silent:1b,attributes:[{id:"scale","base":0.9},{id:"attack_damage",base:-10}],active_effects:[{id:"invisibility",duration:-1,show_particles:0b}]}
+execute as @e[tag=content_lock.carapacer,limit=1,sort=nearest] run attribute @s attack_damage modifier add content_lock.carapacer -1 add_multiplied_total
+function animated_java:carapacer/summon with storage aj:temp

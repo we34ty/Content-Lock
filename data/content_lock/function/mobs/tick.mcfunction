@@ -15,3 +15,8 @@ function content_lock:mobs/entities/tick
 execute if score L content_lock.timer1 matches 4 if predicate content_lock:day_begins run function content_lock:mobs/passives/check_for_wandering_trader_spawn
 execute if score L content_lock.timer1 matches 8 if entity @e[scores={content_lock.crashful_counter=1..}] as @e[scores={content_lock.crashful_counter=1..}] run function content_lock:player/enchantments/crashful_recover
 execute if score L content_lock.timer1 matches 12 if entity @e[type=#hostile,team=!content_lock.invisibility] as @e[type=#hostile,team=!content_lock.invisibility] run team join content_lock.invisibility
+
+execute at @a if entity @e[tag=content_lock.carapacer,distance=..40] as @e[tag=content_lock.carapacer,distance=..40] at @s run function content_lock:mobs/custom/carapacer/tick
+execute if entity @e[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] as @e[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] run function animated_java:carapacer/remove/this
+execute if entity @e[tag=content_lock.carapacer.taken_shape] run tag @e remove content_lock.carapacer.taken_shape
+
