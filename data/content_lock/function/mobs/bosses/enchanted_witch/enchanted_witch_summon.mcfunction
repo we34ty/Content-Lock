@@ -1,3 +1,4 @@
+scoreboard players set @s content_lock.temp1 0
 execute unless dimension minecraft:overworld run scoreboard players set @s content_lock.temp1 2
 execute if score @s content_lock.temp1 matches 2 run title @s times 2 8 3
 execute if score @s content_lock.temp1 matches 2 run title @s actionbar [{"translate":"content_lock:notifications.can_only_spawn_in_overworld","color":"dark_red"}]
