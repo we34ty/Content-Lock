@@ -14,5 +14,6 @@ Credits:
 - [Graves](https://modrinth.com/datapack/player-graves)
 - [Player Motion](https://modrinth.com/datapack/player_motion)
 - [Mining Quarries](https://modrinth.com/datapack/mining-quarries)
+- [Better Stars](https://modrinth.com/resourcepack/better-stars)
 
-And thanks to people such as agentketna for help with the project.
+And thanks to people such as agentketna and Roughtrebel for help with the project.
