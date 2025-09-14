@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:mine_rails",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 12,
+    "spacing": 15,
+    "salt": 5324612352
+  }
+}
