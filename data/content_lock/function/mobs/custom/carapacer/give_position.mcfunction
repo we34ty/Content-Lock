@@ -12,8 +12,8 @@ execute if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt
 tag @e remove content_lock.im_a_target
 execute as @e[tag=content_lock.carapacer.current,limit=1,sort=nearest] on target run tag @s add content_lock.im_a_target
 
-execute unless score @s content_lock.ai_timer matches 100.. if entity @e[tag=content_lock.im_a_target,limit=1,distance=..40] run scoreboard players add @s content_lock.ai_timer 1
-execute unless score @s content_lock.ai_timer matches 100.. unless entity @e[tag=content_lock.im_a_target,limit=1,distance=..40] run scoreboard players set @s content_lock.ai_timer 0
+execute unless score @s content_lock.ai_timer matches 100.. if entity @e[tag=content_lock.im_a_target,limit=1,distance=..4] run scoreboard players add @s content_lock.ai_timer 1
+execute unless score @s content_lock.ai_timer matches 100.. unless entity @e[tag=content_lock.im_a_target,limit=1,distance=..4] run scoreboard players set @s content_lock.ai_timer 0
 
 execute if score @s content_lock.ai_timer matches 161.. unless score @s content_lock.ai_option matches 1.. if entity @e[tag=content_lock.im_a_target,limit=1,distance=..3] run scoreboard players add @s content_lock.ai_option 1
 execute if score @s content_lock.ai_option matches 1.. run function content_lock:mobs/custom/carapacer/attack

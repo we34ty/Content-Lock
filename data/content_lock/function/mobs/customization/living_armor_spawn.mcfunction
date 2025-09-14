@@ -7,6 +7,7 @@ attribute @s knockback_resistance modifier add content_lock.customized_content_l
 attribute @s movement_speed modifier add content_lock.customized_content_lock2 -0.25 add_multiplied_base
 attribute @s max_health modifier remove content_lock.customized_content_lock
 attribute @s max_health modifier add content_lock.customized_content_lock -0.15 add_multiplied_base
+attribute @s safe_fall_distance modifier add content_lock.customized_content_lock 100 add_value
 
 data merge entity @s {Silent:1b,DrownedConversionTime:100000000,DeathLootTable:"content_lock:entities/living_armor",CustomName:{"translate": "content_lock:mob.living_armor"},CustomNameVisible:0b}
 effect give @s invisibility infinite 0 true

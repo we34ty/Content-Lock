@@ -14,3 +14,4 @@ execute if score @r content_lock.flawless_countdown matches 1.. as @a[scores={co
 
 execute if entity @r[team=content_lock.invisibility] as @a[team=content_lock.invisibility] run team leave @s
 execute if entity @r[nbt={active_effects:[{id:"minecraft:invisibility"}]}] as @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run team join content_lock.invisibility
+execute as @a at @s if dimension content_lock:the_void run function content_lock:player/passives/in_void
