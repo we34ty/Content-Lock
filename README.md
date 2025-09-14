@@ -13,5 +13,6 @@ Credits:
 - [Stamina](https://modrinth.com/datapack/limited-sprint)
 - [Graves](https://modrinth.com/datapack/player-graves)
 - [Player Motion](https://modrinth.com/datapack/player_motion)
+- [Mining Quarries](https://modrinth.com/datapack/mining-quarries)
 
 And thanks to people such as agentketna for help with the project.
