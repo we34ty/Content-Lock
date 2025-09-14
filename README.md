@@ -15,5 +15,6 @@ Credits:
 - [Player Motion](https://modrinth.com/datapack/player_motion)
 - [Mining Quarries](https://modrinth.com/datapack/mining-quarries)
 - [Better Stars](https://modrinth.com/resourcepack/better-stars)
+- [Better Fog](https://modrinth.com/shader/javiers-improved-fog)
 
 And thanks to people such as agentketna and Roughtrebel for help with the project.
