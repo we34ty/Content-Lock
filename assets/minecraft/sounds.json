@@ -144,13 +144,15 @@
 	
 	"entity.content_lock.carapacer.attack": {
 		"sounds": [
-			"custom/carapacer/attack"
+			"custom/carapacer/attack1",
+			"custom/carapacer/attack2"
 		]
 	},
 	
-	"entity.content_lock.carapacer.walk": {
+	"entity.content_lock.carapacer.damaged": {
 		"sounds": [
-			"custom/carapacer/carapacewalk"
+			"custom/carapacer/damaged1",
+			"custom/carapacer/damaged2"
 		]
 	}
 }

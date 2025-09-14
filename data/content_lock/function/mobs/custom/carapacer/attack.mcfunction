@@ -4,6 +4,7 @@ execute if score @s content_lock.ai_option matches 1 run function animated_java:
 execute if score @s content_lock.ai_option matches 1 run function animated_java:carapacer/animations/idle_big_new/stop
 execute if score @s content_lock.ai_option matches 1 run function animated_java:carapacer/animations/attack_new/play
 execute if score @s content_lock.ai_option matches 1 run data merge entity @e[tag=content_lock.carapacer.current,limit=1] {NoAI:1b}
+execute if score @s content_lock.ai_option matches 1 run playsound minecraft:entity.content_lock.carapacer.attack hostile @a ~ ~ ~ 1
 
 tag @s add content_lock.attacker
 execute if score @s content_lock.ai_option matches 5 positioned ^ ^ ^1 run execute positioned ~-1 ~-1 ~-1 if entity @e[type=#boss_can_damage,tag=!content_lock.boss,dx=2,dy=2,dz=2] as @e[type=#boss_can_damage,tag=!content_lock.boss,dx=2,dy=2,dz=2] run damage @s 4 mob_attack by @e[tag=content_lock.carapacer.current,limit=1] from @e[tag=content_lock.carapacer.current,limit=1]

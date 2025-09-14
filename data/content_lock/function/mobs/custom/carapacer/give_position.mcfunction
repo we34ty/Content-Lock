@@ -5,6 +5,7 @@ tag @e remove content_lock.carapacer.current
 tag @e[tag=content_lock.carapacer,tag=!content_lock.carapacer.taken_shape,limit=1,sort=nearest] add content_lock.carapacer.current
 tag @e[tag=content_lock.carapacer,tag=!content_lock.carapacer.taken_shape,limit=1,sort=nearest] add content_lock.carapacer.taken_shape
 
+execute if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={HurtTime:9s}] run playsound minecraft:entity.content_lock.carapacer.damaged hostile @a ~ ~ ~ 1
 execute if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={HurtTime:9s}] run function animated_java:carapacer/variants/damaged/apply
 execute if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={HurtTime:0s}] run function animated_java:carapacer/variants/default/apply
 
