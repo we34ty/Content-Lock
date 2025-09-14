@@ -57,7 +57,7 @@ void main() {
         }
     }
     else{
-        color*=min(1.0,max(sky_brightness,block_brightness));
+        color*=min(1.0,max(sky_brightness+0.5,block_brightness));
     }
 
     if (lightmapInfo.UseBrightLightmap == 0) {
