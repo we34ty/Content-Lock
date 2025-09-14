@@ -1,42 +1,42 @@
 {
 	"music.content_lock.yhorm": {
 		"sounds": [
-			"custom/yhorm"
+			"custom/boss_music/yhorm"
 		]
 	},
 	"music.content_lock.both_officers": {
 		"sounds": [
-			"custom/both_officers"
+			"custom/boss_music/both_officers"
 		]
 	},
 	"music.content_lock.one_officer": {
 		"sounds": [
-			"custom/one_officer"
+			"custom/boss_music/one_officer"
 		]
 	},
 	"music.content_lock.corrupted_princess": {
 		"sounds": [
-			"custom/corrupted_princess_longer"
+			"custom/boss_music/corrupted_princess_longer"
 		]
 	},
 	"music.content_lock.blaze_lord_phase1": {
 		"sounds": [
-			"custom/blaze_lord_phase1"
+			"custom/boss_music/blaze_lord_phase1"
 		]
 	},
 	"music.content_lock.blaze_lord_phase2": {
 		"sounds": [
-			"custom/blaze_lord_phase2"
+			"custom/boss_music/blaze_lord_phase2"
 		]
 	},
 	"music.content_lock.corrupted_princess_enemies": {
 		"sounds": [
-			"custom/corrupted_princess_enemies"
+			"custom/boss_music/corrupted_princess_enemies"
 		]
 	},
 	"music.content_lock.ender_watcher": {
 		"sounds": [
-			"custom/ender_watcher"
+			"custom/boss_music/ender_watcher"
 		]
 	},
 	"music.content_lock.drift": {
@@ -71,32 +71,32 @@
 	},
 	"music.content_lock.wither1": {
 		"sounds": [
-			"custom/wither1"
+			"custom/boss_music/wither1"
 		]
 	},
 	"music.content_lock.dragons_apprentice_phase1": {
 		"sounds": [
-			"custom/dragons_apprentice_phase1"
+			"custom/boss_music/dragons_apprentice_phase1"
 		]
 	},
 	"music.content_lock.dragons_apprentice_phase2": {
 		"sounds": [
-			"custom/dragons_apprentice_phase2"
+			"custom/boss_music/dragons_apprentice_phase2"
 		]
 	},
 	"music.content_lock.zomcess": {
 		"sounds": [
-			"custom/zomcess"
+			"custom/boss_music/zomcess"
 		]
 	},
 	"music.content_lock.iron_guardian": {
 		"sounds": [
-			"custom/iron_guardian"
+			"custom/boss_music/iron_guardian"
 		]
 	},
 	"music.content_lock.death_rider": {
 		"sounds": [
-			"custom/death_rider"
+			"custom/boss_music/death_rider"
 		]
 	},
 	"music.content_lock.danger1": {
@@ -111,17 +111,46 @@
 	},
 	"item.content_lock.silver_tape": {
 		"sounds": [
-			"custom/silver_tape"
+			"custom/item/silver_tape"
 		]
 	},
 	"item.content_lock.silver_tape.fail": {
 		"sounds": [
-			"custom/silver_tape_fail"
+			"custom/item/silver_tape_fail"
 		]
 	},
 	"item.content_lock.silver_tape.end": {
 		"sounds": [
-			"custom/silver_tape_end"
+			"custom/item/silver_tape_end"
+		]
+	},
+	"entity.content_lock.living_armor.walk": {
+		"sounds": [
+			"custom/living_armor/walk"
+		]
+	},
+	"entity.content_lock.living_armor.idle": {
+		"sounds": [
+			"custom/living_armor/idle1",
+			"custom/living_armor/idle2",
+			"custom/living_armor/idle3"
+		]
+	},
+	"entity.content_lock.living_armor.damaged": {
+		"sounds": [
+			"custom/living_armor/damaged"
+		]
+	},
+	
+	"entity.content_lock.carapacer.attack": {
+		"sounds": [
+			"custom/carapacer/attack"
+		]
+	},
+	
+	"entity.content_lock.carapacer.walk": {
+		"sounds": [
+			"custom/carapacer/carapacewalk"
 		]
 	}
 }
