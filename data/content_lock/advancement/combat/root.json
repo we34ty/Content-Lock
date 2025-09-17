@@ -9,7 +9,7 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:block/mossy_cobblestone",
+    "background": "minecraft:block/gilded_blackstone",
     "description": {
       "translate": "content_lock:advancement.combat.description"
     },
