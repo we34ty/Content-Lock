@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:minecart"
+    },
+    "title": {
+      "translate": "content_lock:advancement.minecarting.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.minecarting.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "ride_through_mine_rails": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecart"
+          },
+          "location": {
+            "structures": [
+              "content_lock:mine_rails"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ride_through_mine_rails"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1-4_bottles"
+    ]
+  }
+}

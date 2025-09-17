@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/minecraft_trials_edition",
+  "parent": "content_lock:combat/root",
   "criteria": {
     "blowback": {
       "conditions": {

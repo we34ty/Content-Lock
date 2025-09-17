@@ -136,7 +136,7 @@
       {
         "type": "minecraft:zombie",
         "maxCount": 8,
-        "minCount": 4,
+        "minCount": 2,
         "weight": 20
       },
       {
@@ -154,7 +154,7 @@
       {
         "type": "minecraft:creeper",
         "maxCount": 6,
-        "minCount": 4,
+        "minCount": 3,
         "weight": 100
       },
       {

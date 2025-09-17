@@ -1,6 +1,120 @@
 {
   "parent": "minecraft:husbandry/plant_seed",
   "criteria": {
+    "leczo": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:mushroom_stew",
+          "components": {
+            "custom_model_data":{
+              "strings": [
+                "content_lock:leczo"
+              ]
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "pierogi": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:bread",
+          "components": {
+            "custom_model_data":{
+              "strings": [
+                "content_lock:pierogi"
+              ]
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "sushi": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:tropical_fish",
+          "components": {
+            "custom_model_data":{
+              "strings": [
+                "content_lock:sushi"
+              ]
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "chicken_broth": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:mushroom_stew",
+          "components": {
+            "custom_model_data":{
+              "strings": [
+                "content_lock:chicken_broth"
+              ]
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "glistering_melon_slice": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:glistering_melon_slice"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "red_mushroom": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:red_mushroom"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brown_mushroom": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:brown_mushroom"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "glow_salad": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:mushroom_stew",
+          "components": {
+            "custom_model_data":{
+              "strings": [
+                "content_lock:glow_salad"
+              ]
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "spaghetti": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:rabbit_stew",
+          "components": {
+            "custom_model_data":{
+              "strings": [
+                "content_lock:spaghetti"
+              ]
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
     "apple": {
       "conditions": {
         "item": {
@@ -336,6 +450,33 @@
     }
   },
   "requirements": [
+    [
+      "leczo"
+    ],
+    [
+      "pierogi"
+    ],
+    [
+      "sushi"
+    ],
+    [
+      "chicken_broth"
+    ],
+    [
+      "glow_salad"
+    ],
+    [
+      "spaghetti"
+    ],
+    [
+      "glistering_melon_slice"
+    ],
+    [
+      "red_mushroom"
+    ],
+    [
+      "brown_mushroom"
+    ],
     [
       "apple"
     ],

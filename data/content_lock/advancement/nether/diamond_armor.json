@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_chestplate"
+    },
+    "title": {
+      "translate": "content_lock:advancement.diamond_armor.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.diamond_armor.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/mine_diamond",
+  "criteria": {
+    "diamond_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_helmet"
+          },
+          {
+            "items": "minecraft:diamond_chestplate"
+          },
+          {
+            "items": "minecraft:diamond_leggings"
+          },
+          {
+            "items": "minecraft:diamond_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_armor"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/4_bottles"
+    ]
+  }
+}

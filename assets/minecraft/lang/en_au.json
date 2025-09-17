@@ -9,5 +9,7 @@
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
   "enchantment.minecraft.unbreaking": "Curse of Unbreaking",
   "block.minecraft.stonecutter": "Table Saw",
-  "container.stonecutter": "Table Saw"
+  "container.stonecutter": "Table Saw",
+  "advancements.nether.brew_potion.description": "Brew a potion base using Water and Nether Warts",
+  "advancements.adventure.root.description": "Adventure and exploration"
 }

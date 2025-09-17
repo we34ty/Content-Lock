@@ -2,7 +2,10 @@
   "parent": "minecraft:story/mine_stone",
   "criteria": {
     "potion": {
-      "trigger": "minecraft:brewed_potion"
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": "awkward"
+      }
     }
   },
   "display": {

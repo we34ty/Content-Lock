@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:spider_eye"
+      "id": "minecraft:potion"
     },
     "title": {
-      "translate": "content_lock:advancement.kill_death_rider.title"
+      "translate": "content_lock:advancement.kill_enchanted_witch.title"
     },
     "description": {
-      "translate": "content_lock:advancement.kill_death_rider.description"
+      "translate": "content_lock:advancement.kill_enchanted_witch.description"
     },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "content_lock:story/kill_enchanted_witch",
+  "parent": "content_lock:combat/kill_iron_guardian",
   "criteria": {
     "impossible": {
       "trigger": "minecraft:impossible"
@@ -27,7 +27,7 @@
   ],
   "rewards": {
     "loot": [
-      "content_lock:advancements/4_bottles"
+      "content_lock:advancements/3_bottles"
     ]
   }
 }

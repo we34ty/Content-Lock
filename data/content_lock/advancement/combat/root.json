@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "killed_by_something": {
+      "trigger": "minecraft:entity_killed_player"
+    },
+    "killed_something": {
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/mossy_cobblestone",
+    "description": {
+      "translate": "content_lock:advancement.combat.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_sword"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "content_lock:advancement.combat.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_something",
+      "killed_by_something"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
