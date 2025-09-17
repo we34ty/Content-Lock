@@ -7,7 +7,7 @@ execute store result score @s content_lock.huhhealth1 run attribute @s max_healt
 execute if score @s[tag=!content_lock.second_phase] content_lock.temporary_health_holder <= @s content_lock.huhhealth1 run function content_lock:mobs/bosses/enchanted_witch/second_phase_transition
 
 
-execute positioned ~ ~1 ~ if entity @e[type=splash_potion,distance=0..1,limit=1] as @e[type=splash_potion,distance=0..1] run kill @s
+execute positioned ~ ~2 ~ if entity @e[type=splash_potion,distance=0..1,limit=1] as @e[type=splash_potion,distance=0..1] run kill @s
 #effect clear @e[distance=0..40] poison
 
 tag @e remove content_lock.im_a_target
