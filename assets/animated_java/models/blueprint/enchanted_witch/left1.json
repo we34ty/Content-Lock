@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "content_lock:item/enchanted_witch/enchanted_witch",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [7, -13, 6.5],
+			"to": [9, 9, 9.5],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 7, 8.5]
+			},
+			"faces": {
+				"north": {
+					"uv": [5.75, 7.625, 6, 10.375],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [2.25, 6.625, 2.625, 9.375],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [6, 7.625, 6.25, 10.375],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [2.625, 6.625, 3, 9.375],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [5.75, 5.125, 5.5, 4.75],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [6, 2.25, 5.75, 2.625],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}
