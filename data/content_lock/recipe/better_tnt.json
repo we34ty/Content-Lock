@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":[
+    "EXE",
+    "X#X",
+    "EXE"
+  ],
+  "key": {
+    "#": "barrel",
+    "X": "tnt",
+    "E": "ender_pearl"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:zombie_spawn_egg",
+    "components": {
+      "entity_data":{
+        "id": "tnt",
+        "fuse": 200,
+        "explosion_power": 20,
+        "block_state": {
+          "Name": "barrel",
+          "Properties": {
+            "facing": "up",
+            "open": "true"
+          }
+        }
+      },
+      "item_name": [{"translate":"content_lock:item.better_tnt"}],
+      "item_model": "barrel"
+    }
+  }
+}
