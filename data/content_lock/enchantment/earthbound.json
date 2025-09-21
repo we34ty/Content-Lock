@@ -66,10 +66,10 @@
         "id": "earthbound",
         "amount": {
           "type": "minecraft:linear",
-          "base": -0.01,
-          "per_level_above_first": -0.01
+          "base": 0.01,
+          "per_level_above_first": 0.01
         },
-        "operation": "add_multiplied_total"
+        "operation": "add_value"
       }
     ]
   }

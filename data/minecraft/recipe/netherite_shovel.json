@@ -37,8 +37,8 @@
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -0.05,
-            "operation": "add_multiplied_base",
+            "amount": 0.05,
+            "operation": "add_value",
             "slot": "mainhand"
           }
         ],

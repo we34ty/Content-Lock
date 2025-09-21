@@ -29,8 +29,8 @@
             {
               "type": "minecraft:movement_efficiency",
               "id": "content_lock.basic_armor_stats_chest",
-              "amount": -0.13,
-              "operation": "add_multiplied_base",
+              "amount": 0.13,
+              "operation": "add_value",
               "slot": "chest"
             }
           ],

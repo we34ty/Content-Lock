@@ -25,8 +25,8 @@
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_armor_stats_legs",
-            "amount": -0.26,
-            "operation": "add_multiplied_base",
+            "amount": 0.26,
+            "operation": "add_value",
             "slot": "legs"
           }
         ],

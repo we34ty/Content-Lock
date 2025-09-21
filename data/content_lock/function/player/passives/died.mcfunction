@@ -1,4 +1,4 @@
-attribute @s movement_efficiency modifier add content_lock.basic_stats 0.25 add_value
+attribute @s movement_efficiency modifier remove content_lock.basic_stats
 attribute @s max_health modifier add content_lock.basic_stats -8 add_value
 attribute @s scale modifier add content_lock.basic_stats -0.1 add_multiplied_base
 

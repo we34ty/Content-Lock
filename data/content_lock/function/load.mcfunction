@@ -1,6 +1,6 @@
 scoreboard objectives add content_lock.content_lock_version dummy
 #version numbver
-scoreboard players set L content_lock.content_lock_version 311
+scoreboard players set L content_lock.content_lock_version 312
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
@@ -141,6 +141,7 @@ scoreboard objectives add content_lock.crashful_counter dummy
 scoreboard objectives add content_lock.death_count deathCount
 scoreboard objectives add content_lock.ai_timer dummy
 scoreboard objectives add content_lock.ai_option dummy
+scoreboard objectives add content_lock.stamina_regen dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
