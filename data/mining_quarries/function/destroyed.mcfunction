@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:marker,tag=content_lock.quarry.miner] if score @s content_lock.quarry_id = @e[type=minecraft:marker,tag=content_lock.quarry,limit=1,sort=nearest,distance=..0.01] content_lock.quarry_id run kill @s
+kill @e[type=minecraft:marker,tag=content_lock.quarry,distance=..0.01]

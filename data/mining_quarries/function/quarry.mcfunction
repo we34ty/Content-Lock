@@ -1,3 +1,4 @@
+execute unless score @s content_lock.quarry_id matches 1.. run function mining_quarries:add_id
 function mining_quarries:add_cooldown
 function mining_quarries:align_rotation
 execute at @s unless function mining_quarries:dont_mine_if run return fail
@@ -5,8 +6,10 @@ execute at @s unless function mining_quarries:dont_mine_if run return fail
 
 scoreboard players add @s content_lock.attack_timer 1
 
-execute if score @s content_lock.attack_timer matches 3.. unless entity @e[tag=content_lock.quarry.miner,distance=..20] run summon marker ^ ^ ^-1 {Tags:["content_lock.quarry.miner"]}
-execute if score @s content_lock.attack_timer matches 3.. as @e[tag=content_lock.quarry.miner,limit=1,sort=nearest] at @s run function mining_quarries:mine
+execute if score @s content_lock.attack_timer matches 3.. run tag @e remove content_lock.quarry.miner.current
+execute if score @s content_lock.attack_timer matches 3.. as @e[type=minecraft:marker,tag=content_lock.quarry.miner,distance=..100] if score @s content_lock.quarry_id = @e[type=minecraft:marker,tag=content_lock.quarry,limit=1,sort=nearest,distance=..0.01] content_lock.quarry_id run tag @s add content_lock.quarry.miner.current
+execute if score @s content_lock.attack_timer matches 3.. unless entity @e[type=minecraft:marker,tag=content_lock.quarry.miner.current,distance=..100] run function mining_quarries:summon_subid
+execute if score @s content_lock.attack_timer matches 3.. as @e[type=minecraft:marker,tag=content_lock.quarry.miner.current,limit=1,sort=nearest,distance=..100] at @s run function mining_quarries:mine
 
 #scoreboard players set @s content_lock.quarry_temp_var 0
 #execute store result score @s content_lock.quarry_temp_var run data get block ~ ~ ~ Items[{Slot:4b}].components."minecraft:enchantments"."minecraft:fortune"

@@ -11,6 +11,8 @@ scoreboard objectives add content_lock.quarry_place minecraft.used:minecraft.dro
 
 scoreboard players set mining_quarry_2 content_lock.quarry_temp_var 2
 
+scoreboard objectives add content_lock.quarry_id dummy
+
 
 schedule function mining_quarries:tick 2t replace
 schedule function mining_quarries:quarry_tick 10t replace
