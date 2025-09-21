@@ -11,4 +11,4 @@ execute if score @s content_lock.temp1 matches 3 run loot spawn ~ ~ ~ mine ~ ~ ~
 execute if score @s content_lock.temp1 matches 4 run loot spawn ~ ~ ~ mine ~ ~ ~ netherite_pickaxe[enchantments={silk_touch:1}]
 tp @e[type=item,distance=..1] @e[tag=content_lock.quarry,limit=1,sort=nearest]
 
-playsound block.bubble_column.whirlpool_inside ambient @a ~ ~ ~ 0.1 1.5
+playsound minecraft:block.content_lock.quarry.break ambient @a ~ ~ ~ 0.5 0.5

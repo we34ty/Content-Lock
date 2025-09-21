@@ -22,4 +22,4 @@ execute as @e[type=minecraft:item,distance=..0.1] if entity @s[nbt={Item:{compon
 execute as @e[type=minecraft:item,distance=..0.1] unless entity @s[nbt={Item:{components:{}}}] run function mining_quarries:stow_item with entity @s Item
 
 #function mining_quarries:take_unbreaking_damage
-playsound block.bubble_column.whirlpool_inside ambient @a ~ ~ ~ 0.1 2
+playsound minecraft:block.content_lock.quarry.break ambient @a ~ ~ ~ 0.2 0.6

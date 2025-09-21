@@ -154,5 +154,11 @@
 			"custom/carapacer/damaged1",
 			"custom/carapacer/damaged2"
 		]
+	},
+	
+	"block.content_lock.quarry.break": {
+		"sounds": [
+			"custom/utility/quarry_break"
+		]
 	}
 }
