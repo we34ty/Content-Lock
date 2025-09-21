@@ -160,5 +160,11 @@
 		"sounds": [
 			"custom/utility/quarry_break"
 		]
+	},
+	
+	"block.content_lock.quarry.idle": {
+		"sounds": [
+			"custom/utility/quarry_idle"
+		]
 	}
 }
