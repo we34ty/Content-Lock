@@ -205,7 +205,7 @@
     "content_lock:sounds.carapacer.attack": "Skoruper atakuje",
     "content_lock:sounds.carapacer.damaged": "Skoruper cierpi",
     "content_lock:sounds.quarry.break": "Kamieniołomownica kopie",
-    "content_lock:sounds.quarry.idle": "Kamieniołomownica pracuje",
+    "content_lock:sounds.quarry.idle": "Kamieniołomownica buczy",
     "content_lock:sounds.wormhole.open": "Wyrwa otwiera się",
     "content_lock:sounds.wormhole.close": "Wyrwa zamyka się",
     "content_lock:sounds.wormhole.teleport": "Gracz używa wyrwy"

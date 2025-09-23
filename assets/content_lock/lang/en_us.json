@@ -205,7 +205,7 @@
     "content_lock:sounds.carapacer.attack": "Carapacer attacks",
     "content_lock:sounds.carapacer.damaged": "Carapacer hurts",
     "content_lock:sounds.quarry.break": "Quarry mines",
-    "content_lock:sounds.quarry.idle": "Quarry idles",
+    "content_lock:sounds.quarry.idle": "Quarry hums",
     "content_lock:sounds.wormhole.open": "Wormhole opens",
     "content_lock:sounds.wormhole.close": "Wormhole closes",
     "content_lock:sounds.wormhole.teleport": "Player uses wormhole"
