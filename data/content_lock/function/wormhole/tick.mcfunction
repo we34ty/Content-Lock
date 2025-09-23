@@ -1,5 +1,8 @@
 execute if entity @e[tag=aj.wormhole.root,tag=!content_lock.wormhole] as @e[tag=aj.wormhole.root,tag=!content_lock.wormhole] at @s run function content_lock:wormhole/spawn
 
+execute if entity @r[tag=content_lock.load_chunk_no_gravity] as @a[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run attribute @s gravity modifier remove content_lock.load_chunk_no_gravity
+execute if entity @r[tag=content_lock.load_chunk_no_gravity] as @a[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run tag @s remove content_lock.load_chunk_no_gravity
+
 execute at @a if entity @e[tag=aj.wormhole.root,tag=!content_lock.wormhole.checked_for_blocks,distance=..40] at @e[tag=aj.wormhole.root,tag=!content_lock.wormhole.checked_for_blocks,distance=..40] if block ~ ~-1 ~ #air run setblock ~ ~-1 ~ warped_nylium destroy
 execute at @a if entity @e[tag=aj.wormhole.root,tag=!content_lock.wormhole.checked_for_blocks,distance=..40] at @e[tag=aj.wormhole.root,tag=!content_lock.wormhole.checked_for_blocks,distance=..40] unless block ~ ~ ~ #air run setblock ~ ~ ~ air destroy
 execute at @a if entity @e[tag=aj.wormhole.root,tag=!content_lock.wormhole.checked_for_blocks,distance=..40] at @e[tag=aj.wormhole.root,tag=!content_lock.wormhole.checked_for_blocks,distance=..40] unless block ~ ~1 ~ #air run setblock ~ ~1 ~ air destroy
