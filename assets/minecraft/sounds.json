@@ -67,7 +67,8 @@
 	"entity.content_lock.player.parry": {
 		"sounds": [
 			"custom/parry"
-		]
+		],
+		"subtitle": "content_lock:sounds.parry"
 	},
 	"music.content_lock.wither1": {
 		"sounds": [
@@ -112,76 +113,89 @@
 	"item.content_lock.silver_tape": {
 		"sounds": [
 			"custom/item/silver_tape"
-		]
+		],
+		"subtitle": "content_lock:sounds.silver_tape"
 	},
 	"item.content_lock.silver_tape.fail": {
 		"sounds": [
 			"custom/item/silver_tape_fail"
-		]
+		],
+		"subtitle": "content_lock:sounds.silver_tape.fail"
 	},
 	"item.content_lock.silver_tape.end": {
 		"sounds": [
 			"custom/item/silver_tape_end"
-		]
+		],
+		"subtitle": "content_lock:sounds.silver_tape.end"
 	},
 	"entity.content_lock.living_armor.walk": {
 		"sounds": [
 			"custom/living_armor/walk"
-		]
+		],
+		"subtitle": "content_lock:sounds.living_armor.walk"
 	},
 	"entity.content_lock.living_armor.idle": {
 		"sounds": [
 			"custom/living_armor/idle1",
 			"custom/living_armor/idle2",
 			"custom/living_armor/idle3"
-		]
+		],
+		"subtitle": "content_lock:sounds.living_armor.idle"
 	},
 	"entity.content_lock.living_armor.damaged": {
 		"sounds": [
 			"custom/living_armor/damaged"
-		]
+		],
+		"subtitle": "content_lock:sounds.living_armor.damaged"
 	},
 	
 	"entity.content_lock.carapacer.attack": {
 		"sounds": [
 			"custom/carapacer/attack1",
 			"custom/carapacer/attack2"
-		]
+		],
+		"subtitle": "content_lock:sounds.carapacer.attack"
 	},
 	
 	"entity.content_lock.carapacer.damaged": {
 		"sounds": [
 			"custom/carapacer/damaged1",
 			"custom/carapacer/damaged2"
-		]
+		],
+		"subtitle": "content_lock:sounds.carapacer.damaged"
 	},
 	
 	"block.content_lock.quarry.break": {
 		"sounds": [
 			"custom/utility/quarry_break"
-		]
+		],
+		"subtitle": "content_lock:sounds.quarry.break"
 	},
 	
 	"block.content_lock.quarry.idle": {
 		"sounds": [
 			"custom/utility/quarry_idle"
-		]
+		],
+		"subtitle": "content_lock:sounds.quarry.idle"
 	},
 	
 	"block.content_lock.wormhole.open": {
 		"sounds": [
 			"custom/wormhole/open"
-		]
+		],
+		"subtitle": "content_lock:sounds.wormhole.open"
 	},
 	
 	"block.content_lock.wormhole.close": {
 		"sounds": [
 			"custom/wormhole/close"
-		]
+		],
+		"subtitle": "content_lock:sounds.wormhole.close"
 	},
 	"block.content_lock.wormhole.teleport": {
 		"sounds": [
 			"custom/wormhole/teleport"
-		]
+		],
+		"subtitle": "content_lock:sounds.wormhole.teleport"
 	}
 }
