@@ -166,5 +166,22 @@
 		"sounds": [
 			"custom/utility/quarry_idle"
 		]
+	},
+	
+	"block.content_lock.wormhole.open": {
+		"sounds": [
+			"custom/wormhole/open"
+		]
+	},
+	
+	"block.content_lock.wormhole.close": {
+		"sounds": [
+			"custom/wormhole/close"
+		]
+	},
+	"block.content_lock.wormhole.teleport": {
+		"sounds": [
+			"custom/wormhole/teleport"
+		]
 	}
 }
