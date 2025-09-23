@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "content_lock:item/wormhole/wormhole_closed",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [7, 8, 7],
+			"to": [23, 10, 23],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [8, 0, 16, 1],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [8, 1, 16, 2],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [8, 2, 16, 3],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [8, 3, 16, 4],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [8, 8, 0, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [8, 8, 0, 16],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

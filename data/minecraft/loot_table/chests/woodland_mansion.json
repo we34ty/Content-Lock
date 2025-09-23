@@ -57,6 +57,22 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:nether_wart",
+          "weight": 10,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "function": "minecraft:enchant_randomly",

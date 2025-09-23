@@ -61,11 +61,15 @@
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": {
+                "type": "uniform",
+                "min": 1.0,
+                "max": 5.0
+              },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:lead",
+          "name": "minecraft:nether_wart",
           "weight": 2
         },
         {
@@ -83,11 +87,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_13",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_cat",
           "weight": 2
         },
         {

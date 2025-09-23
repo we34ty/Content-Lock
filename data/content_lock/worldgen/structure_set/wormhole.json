@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:wormhole",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 6,
+    "spacing": 8,
+    "salt": 354631
+  }
+}
