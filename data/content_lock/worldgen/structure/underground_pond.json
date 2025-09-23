@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#is_overworld",
+  "step": "underground_decoration",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "content_lock:underground_pond",
+  "size": 1,
+  "start_height": {
+    "type": "uniform",
+    "max_inclusive": {
+      "absolute": 40
+    },
+    "min_inclusive": {
+      "absolute": -20
+    }
+  },
+  "max_distance_from_center": 1,
+  "use_expansion_hack": false
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:underground_pond",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 8,
+    "spacing": 14,
+    "salt": 311235
+  }
+}

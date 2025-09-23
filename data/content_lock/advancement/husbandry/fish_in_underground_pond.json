@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_block"
+    },
+    "title": {
+      "translate": "content_lock:advancement.fish_in_underground_pond.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.fish_in_underground_pond.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:husbandry/fishy_business",
+  "criteria": {
+    "fish_in_underground_pond": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "entity": {
+          "location": {
+            "structures": [
+              "content_lock:underground_pond"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fish_in_underground_pond"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/3_bottles"
+    ]
+  }
+}

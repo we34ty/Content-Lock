@@ -18,42 +18,89 @@
         },
         {
           "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "minecraft:gameplay/fishing/underground",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "position": {
+                  "y": {
+                    "max": 40
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "minecraft:gameplay/fishing/underground_pond",
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "structures": [
+                  "content_lock:underground_pond"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
           "quality": 2,
           "value": "minecraft:gameplay/fishing/treasure",
           "weight": 15,
           "conditions": [
             {
-              "condition":"all_of",
+              "condition":"any_of",
               "terms": [
                 {
-                  "condition":"any_of",
+                  "condition":"all_of",
                   "terms": [
                     {
-                      "condition": "time_check",
-                      "value": {
-                        "min": 12000,
-                        "max": 24000
-                      },
-                      "period": 24000
+                      "condition":"any_of",
+                      "terms": [
+                        {
+                          "condition": "time_check",
+                          "value": {
+                            "min": 12000,
+                            "max": 24000
+                          },
+                          "period": 24000
+                        },
+                        {
+                          "condition": "weather_check",
+                          "raining": true
+                        },
+                        {
+                          "condition": "weather_check",
+                          "thundering": true
+                        }
+                      ]
                     },
                     {
-                      "condition": "weather_check",
-                      "raining": true
-                    },
-                    {
-                      "condition": "weather_check",
-                      "thundering": true
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "type_specific": {
+                          "type": "minecraft:fishing_hook",
+                          "in_open_water": true
+                        }
+                      }
                     }
                   ]
                 },
                 {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
+                  "condition": "location_check",
                   "predicate": {
-                    "type_specific": {
-                      "type": "minecraft:fishing_hook",
-                      "in_open_water": true
-                    }
+                    "structures": [
+                      "content_lock:underground_pond"
+                    ]
                   }
                 }
               ]
