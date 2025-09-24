@@ -1,0 +1,82 @@
+{
+  "parent": "content_lock:nether/netherite_upgrade",
+  "criteria": {
+    "diamond_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "content_lock:advancement.diamond_tools.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_pickaxe"
+    },
+    "title": {
+      "translate": "content_lock:advancement.diamond_tools.title"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_pickaxe",
+      "diamond_axe",
+      "diamond_hoe",
+      "diamond_shovel",
+      "diamond_sword"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+        "content_lock:advancements/2_bottles"
+    ]
+  },
+  "sends_telemetry_event": true
+}

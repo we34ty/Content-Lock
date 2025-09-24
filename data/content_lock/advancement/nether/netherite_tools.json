@@ -1,0 +1,82 @@
+{
+  "parent": "content_lock:nether/netherite_upgrade",
+  "criteria": {
+    "netherite_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "content_lock:advancement.netherite_tools.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:netherite_pickaxe"
+    },
+    "title": {
+      "translate": "content_lock:advancement.netherite_tools.title"
+    }
+  },
+  "requirements": [
+    [
+      "netherite_pickaxe",
+      "netherite_axe",
+      "netherite_hoe",
+      "netherite_shovel",
+      "netherite_sword"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+        "content_lock:advancements/2_bottles"
+    ]
+  },
+  "sends_telemetry_event": true
+}
