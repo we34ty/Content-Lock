@@ -5,4 +5,4 @@ scoreboard players add content_lock.enchanted_witch_killed content_lock.progress
 execute as @a run function content_lock:mobs/bosses/music/stop_music_from_bosses
 function animated_java:enchanted_witch/remove/all
 
-advancement grant @s only content_lock:story/kill_enchanted_witch
+advancement grant @s only content_lock:combat/kill_enchanted_witch

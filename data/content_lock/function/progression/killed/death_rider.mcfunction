@@ -4,4 +4,4 @@ execute unless score content_lock.death_rider_killed content_lock.progression ma
 scoreboard players add content_lock.death_rider_killed content_lock.progression 1
 execute as @a run function content_lock:mobs/bosses/music/stop_music_from_bosses
 
-advancement grant @s only content_lock:story/kill_death_rider
+advancement grant @s only content_lock:combat/kill_death_rider
