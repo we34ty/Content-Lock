@@ -1,6 +1,8 @@
 execute if entity @s[tag=content_lock.quarry.miner.tagged] run scoreboard players add @s content_lock.attack_timer 1
 execute unless score @s content_lock.timer1 matches 1.. run scoreboard players set @s content_lock.timer1 16
+execute at @s as @e[type=minecraft:marker,tag=content_lock.quarry,distance=..100] if score @s content_lock.quarry_id = @e[type=minecraft:marker,tag=content_lock.quarry.miner,limit=1,sort=nearest,distance=..0.01] content_lock.quarry_id run tag @s add content_lock.quarry.current
 execute if entity @s[tag=content_lock.quarry.miner.tagged] run function mining_quarries:mine_look_deep
+tag @e remove content_lock.quarry.current
 particle dust{color:14671631,scale:1} ~ ~0.2 ~ 0.4 0.4 0.4 1 30 force @a
 execute unless entity @s[tag=content_lock.quarry.miner.tagged] facing entity @e[tag=content_lock.quarry,limit=1,sort=nearest] feet rotated as @e[tag=content_lock.quarry,limit=1,sort=nearest] run rotate @s ~90 0
 

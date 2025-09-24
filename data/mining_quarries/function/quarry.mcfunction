@@ -16,10 +16,10 @@ execute if score @s content_lock.attack_timer matches 3.. as @e[type=minecraft:m
 #scoreboard players add @s content_lock.quarry_temp_var 1
 #function mining_quarries:spawn_loot_loop
 
-execute if function mining_quarries:should_filter unless items block ~ ~ ~ container.7 minecraft:redstone_torch as @e[type=minecraft:item,distance=..0.1] run function mining_quarries:filter_item with entity @s Item
-execute if function mining_quarries:should_filter if items block ~ ~ ~ container.7 minecraft:redstone_torch as @e[type=minecraft:item,distance=..0.1] run function mining_quarries:blacklist_item with entity @s Item
-execute as @e[type=minecraft:item,distance=..0.1] if entity @s[nbt={Item:{components:{}}}] run function mining_quarries:stow_item_components with entity @s Item
-execute as @e[type=minecraft:item,distance=..0.1] unless entity @s[nbt={Item:{components:{}}}] run function mining_quarries:stow_item with entity @s Item
+execute as @e[tag=content_lock.quarry] at @s if function mining_quarries:should_filter unless items block ~ ~ ~ container.7 minecraft:redstone_torch as @e[type=minecraft:item,distance=..1] run function mining_quarries:filter_item with entity @s Item
+execute as @e[tag=content_lock.quarry] at @s if function mining_quarries:should_filter if items block ~ ~ ~ container.7 minecraft:redstone_torch as @e[type=minecraft:item,distance=..1] run function mining_quarries:blacklist_item with entity @s Item
+execute at @e[tag=content_lock.quarry] as @e[type=minecraft:item,distance=..0.1] if entity @s[nbt={Item:{components:{}}}] run function mining_quarries:stow_item_components with entity @s Item
+execute at @e[tag=content_lock.quarry] as @e[type=minecraft:item,distance=..0.1] unless entity @s[nbt={Item:{components:{}}}] run function mining_quarries:stow_item with entity @s Item
 
 #function mining_quarries:take_unbreaking_damage
 playsound minecraft:block.content_lock.quarry.idle block @a ~ ~ ~ 1 0.6

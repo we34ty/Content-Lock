@@ -16,7 +16,7 @@ execute unless block ~ ~ ~ #airs_and_liquids if items block ~ ~ ~ container.* * 
 
 execute unless block ~ ~ ~ #airs_and_liquids if score @s content_lock.temp1 matches 0 run function mining_quarries:mine_generate_loot
 execute unless block ~ ~ ~ #airs_and_liquids if score @s content_lock.temp1 matches 1 run setblock ~ ~ ~ air destroy
-tp @e[type=item,distance=..1] @e[tag=content_lock.quarry,limit=1,sort=nearest]
+tp @e[type=item,distance=..1] @e[tag=content_lock.quarry.current,limit=1,sort=nearest]
 
 execute unless block ~ ~ ~ #airs_and_liquids run setblock ~ ~ ~ air
 #kill @e[type=item,distance=..1] 
