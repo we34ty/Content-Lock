@@ -4,7 +4,7 @@ execute if entity @s[scores={content_lock.attack_timer=170}] run data merge enti
 execute if entity @s[scores={content_lock.attack_timer=150..169}] facing entity @p feet rotated ~ -45 run tp @s ~ ~0.2 ~ ~ ~
 
 #execute if entity @s[scores={content_lock.attack_timer=21..}] run function content_lock:player_passives/parry/projectile_parry_rotate
-execute if entity @s[scores={content_lock.attack_timer=..150}] run summon area_effect_cloud ~ ~ ~ {Tags:[content_lock.direction_to_look_for_iron_guardian],custom_particle:{type:"block",block_state:"air"}}
+execute if entity @s[scores={content_lock.attack_timer=..150}] run summon area_effect_cloud ~ ~ ~ {Tags:[content_lock.direction_to_look_for_iron_guardian],custom_particle:{type:"block",block_state:"air"},Duration:0}
 execute if entity @s[scores={content_lock.attack_timer=..150}] as @e[tag=content_lock.direction_to_look_for_iron_guardian,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ facing entity @p
 execute if entity @s[scores={content_lock.attack_timer=..150}] anchored eyes rotated as @e[tag=content_lock.direction_to_look_for_iron_guardian,limit=1,sort=nearest] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^50 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~
 
