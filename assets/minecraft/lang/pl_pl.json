@@ -10,6 +10,7 @@
   "enchantment.minecraft.unbreaking": "Klątwa niezniszczalności",
   "block.minecraft.stonecutter": "Piła stołowa",
   "container.stonecutter": "Piła stołowa",
-  "advancements.nether.brew_potion.description": "Uwarz bazę do miktur używając wody i netherowych brodawek",
-  "advancements.adventure.root.description": "Przygoda i eksploracja"
+  "advancements.nether.brew_potion.description": "Uwarz bazę do miktur używając wody i alchemicznych brodawek",
+  "advancements.adventure.root.description": "Przygoda i eksploracja",
+  "item.minecraft.nether_wart": "Brodawka Alchemiczna"
 }
