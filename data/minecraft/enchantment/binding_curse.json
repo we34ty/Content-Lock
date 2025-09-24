@@ -4,13 +4,12 @@
     "translate": "enchantment.minecraft.binding_curse"
   },
   "effects": {
-    "minecraft:prevent_armor_change": {},
-    "minecraft:attributes": [
+    "attributes": [
       {
-        "attribute": "max_health",
-        "id": "minecraft:binding_curse",
-        "amount": 0.15,
-        "operation": "add_multiplied_total"
+        "attribute": "movement_efficiency",
+        "amount": 0.1,
+        "operation": "add_value",
+        "id": "enchantment.binding_curse"
       }
     ]
   },

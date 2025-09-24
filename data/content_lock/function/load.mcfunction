@@ -241,7 +241,7 @@ team modify content_lock.invader_enemies seeFriendlyInvisibles true
 team add content_lock.invisibility
 team modify content_lock.invisibility color white
 team modify content_lock.invisibility friendlyFire false
-team modify content_lock.invader_enemies seeFriendlyInvisibles false
+team modify content_lock.invisibility seeFriendlyInvisibles false
 
 team add content_lock.invader
 team modify content_lock.invader color red

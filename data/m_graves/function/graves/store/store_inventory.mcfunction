@@ -1,5 +1,5 @@
 ## Clear and store this player's inventory and xp
-clear @s *[enchantments~[{"enchantments":"vanishing_curse"}]]
+#clear @s *[enchantments~[{"enchantments":"vanishing_curse"}]]
 execute if score $loseItems multipack.graves matches 1 run clear @s #m_graves:lost_items
 
 data modify storage m_graves:grave_storage Items set from entity @s Inventory

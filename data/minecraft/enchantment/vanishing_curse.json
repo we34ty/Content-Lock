@@ -4,17 +4,21 @@
     "translate": "enchantment.minecraft.vanishing_curse"
   },
   "effects": {
-    "minecraft:prevent_equipment_drop": {},
-    "attributes": [
+    "minecraft:post_attack": [
       {
-        "attribute": "attack_damage",
-        "id": "minecraft:enchantment.vanishing_curse",
-        "amount": {
-          "type": "linear",
-          "base": 0.25,
-          "per_level_above_first": 0.25
+        "affected": "victim",
+        "enchanted": "victim",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/vanishing_curse"
         },
-        "operation": "add_multiplied_total"
+        "requirements": {
+          "condition": "random_chance",
+          "chance": {
+            "type": "constant",
+            "value": 0.3
+          }
+        }
       }
     ]
   },
@@ -28,9 +32,9 @@
     "per_level_above_first": 0
   },
   "slots": [
-    "any"
+    "armor"
   ],
-  "supported_items": "#minecraft:enchantable/vanishing",
+  "supported_items": "#minecraft:enchantable/equippable",
   "weight": 1,
   "primary_items": []
 }
