@@ -8,6 +8,8 @@ execute store result storage content_lock:saved_stats z double 1 run scoreboard 
 tag @s add content_lock.load_chunk_no_gravity
 attribute @s gravity modifier add content_lock.load_chunk_no_gravity -1 add_multiplied_total
 
+damage @s 1 mob_attack by @e[tag=aj.wormhole.root,limit=1,sort=nearest] from @e[tag=aj.wormhole.root,limit=1,sort=nearest] 
+
 function content_lock:wormhole/teleport_with_args with storage content_lock:saved_stats
 
 
