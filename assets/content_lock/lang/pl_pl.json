@@ -212,5 +212,14 @@
     "content_lock:sounds.quarry.idle": "Kamieniołomownica buczy",
     "content_lock:sounds.wormhole.open": "Wyrwa otwiera się",
     "content_lock:sounds.wormhole.close": "Wyrwa zamyka się",
-    "content_lock:sounds.wormhole.teleport": "Gracz używa wyrwy"
+    "content_lock:sounds.wormhole.teleport": "Gracz używa wyrwy",
+    "content_lock:sounds.death_rider_dagger": "Gracz doskakuje",
+    "content_lock:sounds.death_rider_eye": "Gracz patrzy wgłąb",
+    "content_lock:sounds.spell.charging": "Ładowanie zaklęcia",
+    "content_lock:sounds.spell.undead_book": "Drapie sie po jajach",
+    "content_lock:sounds.prism_stone.throw": "Kamień pryzmatyczny rzucony",
+    "content_lock:sounds.prism_stone.small": "Mały upadek",
+    "content_lock:sounds.prism_stone.medium": "Średni upadek",
+    "content_lock:sounds.prism_stone.big": "Duży upadek",
+    "content_lock:sounds.prism_stone.deadly": "Śmiertelny upadek"
 }

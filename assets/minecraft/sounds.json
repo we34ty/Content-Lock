@@ -197,5 +197,59 @@
 			"custom/wormhole/teleport"
 		],
 		"subtitle": "content_lock:sounds.wormhole.teleport"
+	},
+	"item.content_lock.death_rider_dagger": {
+		"sounds": [
+			"custom/item/death_rider_dagger"
+		],
+		"subtitle": "content_lock:sounds.death_rider_dagger"
+	},
+	"item.content_lock.death_rider_eye": {
+		"sounds": [
+			"custom/item/death_rider_eye"
+		],
+		"subtitle": "content_lock:sounds.death_rider_eye"
+	},
+	"item.content_lock.spell.charging": {
+		"sounds": [
+			"custom/spell/charging"
+		],
+		"subtitle": "content_lock:sounds.spell.charging"
+	},
+	"item.content_lock.spell.undead_book": {
+		"sounds": [
+			"custom/spell/undead_book"
+		],
+		"subtitle": "content_lock:sounds.spell.undead_book"
+	},
+	"item.content_lock.prism_stone.throw": {
+		"sounds": [
+			"custom/item/prism_stone/throw"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.throw"
+	},
+	"item.content_lock.prism_stone.small": {
+		"sounds": [
+			"custom/item/prism_stone/small"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.small"
+	},
+	"item.content_lock.prism_stone.medium": {
+		"sounds": [
+			"custom/item/prism_stone/medium"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.medium"
+	},
+	"item.content_lock.prism_stone.big": {
+		"sounds": [
+			"custom/item/prism_stone/big"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.big"
+	},
+	"item.content_lock.prism_stone.deadly": {
+		"sounds": [
+			"custom/item/prism_stone/deadly"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.deadly"
 	}
 }

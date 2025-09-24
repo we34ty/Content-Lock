@@ -1,18 +1,22 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group": "prism_stone",
-  "ingredients": [
-    [
+  "pattern": [
+    "#X#",
+    " W "
+  ],
+  "key": {
+    "#":[
       "glowstone_dust",
       "redstone"
     ],
-    "minecraft:glow_ink_sac",
-    [
-      "glowstone_dust",
-      "redstone"
+    "X":"glow_ink_sac",
+    "W":[
+      "soul_sand",
+      "soul_soil"
     ]
-  ],
+  },
   "result": {
     "count": 6,
     "id": "minecraft:yellow_dye",

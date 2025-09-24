@@ -212,5 +212,14 @@
     "content_lock:sounds.quarry.idle": "Quarry hums",
     "content_lock:sounds.wormhole.open": "Wormhole opens",
     "content_lock:sounds.wormhole.close": "Wormhole closes",
-    "content_lock:sounds.wormhole.teleport": "Player uses wormhole"
+    "content_lock:sounds.wormhole.teleport": "Player uses wormhole",
+    "content_lock:sounds.death_rider_dagger": "Player Quicksteps",
+    "content_lock:sounds.death_rider_eye": "Player looks deeper",
+    "content_lock:sounds.spell.charging": "Spell charges",
+    "content_lock:sounds.spell.undead_book": "Scractches balls",
+    "content_lock:sounds.prism_stone.throw": "Prism Stone thrown",
+    "content_lock:sounds.prism_stone.small": "Small fall",
+    "content_lock:sounds.prism_stone.medium": "Medium fall",
+    "content_lock:sounds.prism_stone.big": "Big fall",
+    "content_lock:sounds.prism_stone.deadly": "Deadly fall"
 }

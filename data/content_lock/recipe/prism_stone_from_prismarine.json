@@ -1,11 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group":"prism_stone",
-  "ingredients": [
-    "minecraft:glow_ink_sac",
-    "prismarine_crystals"
+  "pattern":[
+    "X#",
+    "W "
   ],
+  "key": {
+    "X":"glow_ink_sac",
+    "W":[
+      "soul_sand",
+      "soul_soil"
+    ],
+    "#":"prismarine_crystals"
+  },
   "result": {
     "count": 9,
     "id": "minecraft:yellow_dye",
