@@ -1,7 +1,7 @@
 #execute if entity @s[tag=content_lock.shimmered] run return 0
 execute if entity @s[nbt={Item:{id:"minecraft:water_bucket"}}] run return run function content_lock:player/shimmer/generic {item:"water_bucket",count:1}
 execute if entity @s[nbt={Item:{id:"minecraft:enchanted_book"}}] run return run function content_lock:player/shimmer/enchanted_book
-execute if entity @s[nbt={Item:{id:"minecraft:compass"}}] run return run function content_lock:player/shimmer/generic {item:"recovery_compass",count:1}
+#execute if entity @s[nbt={Item:{id:"minecraft:compass"}}] run return run function content_lock:player/shimmer/generic {item:"recovery_compass",count:1}
 execute if entity @s[nbt={Item:{id:"minecraft:fermented_spider_eye"}}] run return run function content_lock:player/shimmer/generic {item:"spider_eye",count:1}
 
 execute if entity @s[nbt={Item:{id:"minecraft:wind_charge"}}] run return run function content_lock:player/shimmer/generic {item:"fire_charge",count:1}
