@@ -1,14 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    "minecraft:rotten_flesh",
-    "minecraft:rotten_flesh",
-    "minecraft:rotten_flesh",
-    "minecraft:iron_ingot",
-    "minecraft:glass_bottle",
-    "minecraft:iron_ingot"
+  "pattern":[
+    "###",
+    "XOX"
   ],
+  "key": {
+    "#":"rotten_flesh",
+    "X":"iron_ingot",
+    "O":"glass_bottle"
+  },
   "result": {
     "count": 1,
     "id": "minecraft:pink_dye",
