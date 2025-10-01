@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XX",
+    "X#"
+  ],
+  "key":{
+    "X":"blue_ice",
+    "#":"sugar"
+  },
+  "result": {
+    "count": 6,
+    "id": "minecraft:cookie",
+    "components": {
+    "item_name": "{\"translate\":\"content_lock:item.ice_candy\"}",
+    "custom_model_data":{
+      "strings": [
+        "content_lock:ice_candy"
+      ]
+    },
+    "food": {
+      "nutrition": 1,
+      "saturation": 2
+    },
+    "consumable": {
+      "animation": "eat",
+      "consume_seconds": 0.2,
+      "on_consume_effects": [
+        {
+          "type": "apply_effects",
+          "effects": [
+            {
+              "id": "regeneration",
+              "duration": 300
+            },
+            {
+              "id": "speed",
+              "duration": 200
+            }
+          ]
+        },
+        {
+          "type": "apply_effects",
+          "effects": [
+            {
+              "id": "wither",
+              "duration": 200
+            }
+          ],
+          "probability": 0.05
+        }
+      ]
+    }
+  }
+  }
+}

@@ -17,3 +17,5 @@ execute if entity @r[nbt={active_effects:[{id:"minecraft:invisibility"}]}] as @a
 execute as @a at @s if dimension content_lock:the_void run function content_lock:player/passives/in_void
 
 execute at @a as @e[type=item,distance=..10,tag=!content_lock.shimmered] at @s if predicate content_lock:underground_pond if block ~ ~ ~ #water_filled run function content_lock:player/shimmer/check
+
+execute at @a if entity @e[type=villager,distance=..40,tag=!content_lock.villager_modified] as @e[type=villager,distance=..40,tag=!content_lock.villager_modified] run function content_lock:player/passives/modify_villagers/check

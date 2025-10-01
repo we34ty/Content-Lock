@@ -10,6 +10,27 @@
   ],
   "result": {
     "count": 12,
-    "id": "minecraft:cookie"
+    "id": "minecraft:cookie",
+    "components": {
+      "consumable": {
+        "animation": "eat",
+        "on_consume_effects": [
+          {
+            "type": "apply_effects",
+            "effects": [
+              {
+                "id": "haste",
+                "duration": 200
+              },
+              {
+                "id": "speed",
+                "duration": 200,
+                "amplifier": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
   }
 }

@@ -3,7 +3,6 @@ advancement revoke @s only content_lock:checks/eaten
 execute if score @s content_lock.brown_mushroom_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.red_mushroom_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.dried_kelp_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
-execute if score @s content_lock.dried_kelp_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.potato_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.sweet_berries_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
 execute if score @s content_lock.glow_berries_eaten matches 1.. run scoreboard players add @s content_lock.healing_from_food 1
@@ -65,9 +64,6 @@ execute store result score @s content_lock.temp1 run function content_lock:check
 #execute if score @s content_lock.chorus_fruit_eaten matches 1.. at @s run playsound minecraft:item.chorus_fruit.teleport player @s ~ ~ ~ 1 1
 
 execute if score @s content_lock.sweet_berries_eaten matches 1.. run effect give @s speed 5 1 false
-
-execute if score @s content_lock.cookie_eaten matches 1.. run effect give @s speed 10 1 false
-execute if score @s content_lock.cookie_eaten matches 1.. run effect give @s haste 10 0 false
 
 execute if score @s content_lock.glow_berries_eaten matches 1.. run effect give @s glowing 10 0 false
 execute if score @s content_lock.glow_berries_eaten matches 1.. run effect give @s night_vision 10 0 false

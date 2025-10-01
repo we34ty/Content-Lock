@@ -1,0 +1,6 @@
+$data modify entity @s Offers.Recipes[$(slot)].buy set value $(buy)
+$data modify entity @s Offers.Recipes[$(slot)].buyB set value $(buy2)
+$data modify entity @s Offers.Recipes[$(slot)].sell set value $(sell)
+$data modify entity @s Offers.Recipes[$(slot)].maxUses set value $(maxUses)
+$data modify entity @s Offers.Recipes[$(slot)].demand set value $(demand)
+$data modify entity @s Offers.Recipes[$(slot)].priceMultiplier set value $(priceMultiplier)

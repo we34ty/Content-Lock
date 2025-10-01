@@ -3,7 +3,7 @@ data merge storage content_lock:saved_stats {UUID:0}
 data modify storage content_lock:saved_stats UUID set from entity @s Owner
 function content_lock:mobs/entities/projectiles/set_owner with storage content_lock:saved_stats
 
-execute if entity @e[tag=content_lock.owner,limit=1,sort=nearest,type=!player] run return 0
+execute if entity @e[tag=content_lock.owner,limit=1,sort=nearest,type=!player] run return run tag @s add content_lock.arrow.changed_damage
 
 scoreboard players set @s content_lock.temp2 25000
 execute if entity @e[tag=content_lock.owner] store result score @s content_lock.temp1 run attribute @e[tag=content_lock.owner,limit=1,sort=nearest] attack_speed get 1000

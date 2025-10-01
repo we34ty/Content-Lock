@@ -20,7 +20,8 @@
                 "minecraft:aqua_affinity": 1
               }
             }            
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -38,7 +39,8 @@
                 "minecraft:bane_of_arthropods": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -56,7 +58,8 @@
                 "minecraft:blast_protection": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -74,7 +77,8 @@
                 "minecraft:binding_curse": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -92,7 +96,8 @@
                 "minecraft:channeling": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -110,7 +115,8 @@
                 "minecraft:vanishing_curse": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -128,7 +134,8 @@
                 "minecraft:depth_strider": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -146,7 +153,8 @@
                 "minecraft:efficiency": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -164,7 +172,8 @@
                 "minecraft:feather_falling": 1
               }
             }
-          ]
+          ],
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -182,7 +191,8 @@
                 "minecraft:fire_aspect": 1
               }
             }
-          ]
+          ],
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -200,7 +210,8 @@
                 "minecraft:fire_protection": 1
               }
             }
-          ]
+          ],
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -218,7 +229,8 @@
                 "minecraft:flame": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -236,7 +248,8 @@
                 "minecraft:fortune": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -254,7 +267,8 @@
                 "minecraft:frost_walker": 1
               }
             }
-          ]
+          ],
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -272,7 +286,8 @@
                 "minecraft:impaling": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -290,7 +305,8 @@
                 "minecraft:infinity": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -308,7 +324,8 @@
                 "minecraft:knockback": 1
               }
             }
-          ]
+          ],
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -326,7 +343,8 @@
                 "minecraft:looting": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -344,7 +362,8 @@
                 "minecraft:loyalty": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -362,7 +381,8 @@
                 "minecraft:luck_of_the_sea": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -380,7 +400,8 @@
                 "minecraft:lure": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -398,7 +419,8 @@
                 "minecraft:multishot": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -416,7 +438,8 @@
                 "minecraft:piercing": 1
               }
             }
-          ]
+          ],
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -431,10 +454,11 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:power": 1
+                "minecraft:power": 5
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -452,7 +476,8 @@
                 "minecraft:projectile_protection": 1
               }
             }
-          ]
+          ],
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -470,7 +495,8 @@
                 "minecraft:protection": 1
               }
             }
-          ]
+          ],
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -488,7 +514,8 @@
                 "minecraft:quick_charge": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -506,7 +533,8 @@
                 "minecraft:respiration": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -524,7 +552,8 @@
                 "minecraft:sharpness": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -542,7 +571,8 @@
                 "minecraft:silk_touch": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -560,7 +590,8 @@
                 "minecraft:smite": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -578,7 +609,8 @@
                 "minecraft:soul_speed": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -596,7 +628,8 @@
                 "minecraft:sweeping_edge": 1
               }
             }
-          ]
+          ],
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -614,7 +647,8 @@
                 "minecraft:thorns": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -632,7 +666,8 @@
                 "minecraft:breach": 1
               }
             }
-          ]
+          ],
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -650,7 +685,8 @@
                 "minecraft:density": 1
               }
             }
-          ]
+          ],
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -668,7 +704,8 @@
                 "minecraft:wind_burst": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -686,7 +723,8 @@
                 "minecraft:mending": 1
               }
             }
-          ]
+          ],
+          "weight": 1
         },
         {
           "type": "minecraft:item",
@@ -704,7 +742,8 @@
                 "minecraft:punch": 1
               }
             }
-          ]
+          ],
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -722,7 +761,8 @@
                 "minecraft:riptide": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -740,7 +780,8 @@
                 "minecraft:swift_sneak": 1
               }
             }
-          ]
+          ],
+          "weight": 3
         }
       ]
     }

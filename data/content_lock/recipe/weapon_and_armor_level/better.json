@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":[
+    "EXE",
+    "X#X",
+    "EXE"
+  ],
+  "key": {
+    "#": "enchanted_book",
+    "X": [
+      "fire_charge",
+      "quartz"
+    ],
+    "E": [
+      "netherite_scrap",
+      "diamond"
+    ]
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:enchanted_book",
+    "components": {
+      "stored_enchantments": {
+        "content_lock:weapon_level": 4,
+        "content_lock:armor_level": 4
+      },
+      "item_model": "writable_book",
+      "max_stack_size": 64
+    }
+  }
+}

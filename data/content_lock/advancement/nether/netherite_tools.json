@@ -3,53 +3,33 @@
   "criteria": {
     "netherite_pickaxe": {
       "conditions": {
-        "items": [
-          {
-            "items": "minecraft:netherite_pickaxe"
-          }
-        ]
+        "recipe_id": "minecraft:netherite_pickaxe"
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     },
     "netherite_axe": {
       "conditions": {
-        "items": [
-          {
-            "items": "minecraft:netherite_axe"
-          }
-        ]
+        "recipe_id": "minecraft:netherite_axe"
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     },
     "netherite_hoe": {
       "conditions": {
-        "items": [
-          {
-            "items": "minecraft:netherite_hoe"
-          }
-        ]
+        "recipe_id": "minecraft:netherite_hoe"
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     },
     "netherite_shovel": {
       "conditions": {
-        "items": [
-          {
-            "items": "minecraft:netherite_shovel"
-          }
-        ]
+        "recipe_id": "minecraft:netherite_shovel"
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     },
     "netherite_sword": {
       "conditions": {
-        "items": [
-          {
-            "items": "minecraft:netherite_sword"
-          }
-        ]
+        "recipe_id": "minecraft:netherite_sword"
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     }
   },
   "display": {
