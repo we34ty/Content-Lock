@@ -1,10 +1,13 @@
 data merge entity @s {Xp:250,VillagerData:{level:5},Offers:{Recipes:[{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}},{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}},{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}},{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}},{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}},{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}},{buy:{id:"rotten_flesh"},sell:{id:"rotten_flesh"}}]}}
 
 scoreboard players set @s content_lock.temp1 0
-execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:3}
+execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:6}
 execute if score @s content_lock.temp1 matches 1 run function content_lock:player/passives/modify_villagers/trade_macro {slot:0,buy:{id:"rotten_flesh",count:14},buy2:{},sell:{id:"emerald",count:1},maxUses:1,demand:-34,priceMultiplier:0.3}
 execute if score @s content_lock.temp1 matches 2 run function content_lock:player/passives/modify_villagers/trade_macro {slot:0,buy:{id:"rotten_flesh",count:19},buy2:{},sell:{id:"emerald",count:1},maxUses:2,demand:-26,priceMultiplier:0.3}
 execute if score @s content_lock.temp1 matches 3 run function content_lock:player/passives/modify_villagers/trade_macro {slot:0,buy:{id:"rotten_flesh",count:25},buy2:{},sell:{id:"emerald",count:1},maxUses:3,demand:-20,priceMultiplier:0.3}
+execute if score @s content_lock.temp1 matches 4 run function content_lock:player/passives/modify_villagers/trade_macro {slot:0,buy:{id:"bone",count:17},buy2:{},sell:{id:"emerald",count:1},maxUses:1,demand:-34,priceMultiplier:0.1}
+execute if score @s content_lock.temp1 matches 5 run function content_lock:player/passives/modify_villagers/trade_macro {slot:0,buy:{id:"bone",count:24},buy2:{},sell:{id:"emerald",count:1},maxUses:2,demand:-26,priceMultiplier:0.1}
+execute if score @s content_lock.temp1 matches 6 run function content_lock:player/passives/modify_villagers/trade_macro {slot:0,buy:{id:"bone",count:28},buy2:{},sell:{id:"emerald",count:1},maxUses:3,demand:-20,priceMultiplier:0.1}
 
 scoreboard players set @s content_lock.temp1 0
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:4}
