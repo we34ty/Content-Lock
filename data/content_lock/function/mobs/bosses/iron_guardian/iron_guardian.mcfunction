@@ -3,7 +3,7 @@
 
 execute if predicate content_lock:is_night run function content_lock:mobs/bosses/boss_despawn
 
-execute if score L content_lock.timer1 matches 4 run data modify entity @s AngryAt set from entity @p UUID
+execute if score L content_lock.timer1 matches 4 run data modify entity @s angry_at set from entity @p UUID
  
 #execute as @p at @s store result score @s y_level_check run data get entity @s Pos[1]
 #execute store result score @s y_level_check run data get entity @s Pos[1]

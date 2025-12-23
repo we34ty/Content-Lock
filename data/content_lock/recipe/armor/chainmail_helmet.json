@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": "minecraft:leather_helmet",
-  "addition": "minecraft:chain",
+  "addition": "minecraft:iron_chain",
   "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "count": 1,

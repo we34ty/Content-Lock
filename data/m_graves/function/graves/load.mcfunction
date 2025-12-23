@@ -7,11 +7,11 @@ scoreboard objectives add multipack.graves dummy
 scoreboard players reset @a multipack.death
 advancement revoke @a only m_graves:left_click_interaction
 advancement revoke @a only m_graves:right_click_interaction
-gamerule keepInventory true
-execute in minecraft:overworld run gamerule keepInventory true
-execute in minecraft:the_nether run gamerule keepInventory true
-execute in minecraft:the_end run gamerule keepInventory true
-gamerule doImmediateRespawn false
+gamerule keep_inventory true
+execute in minecraft:overworld run gamerule keep_inventory true
+execute in minecraft:the_nether run gamerule keep_inventory true
+execute in minecraft:the_end run gamerule keep_inventory true
+gamerule immediate_respawn false
 
 execute unless score $playerGraves multipack.graves matches 0..1 run scoreboard players set $playerGraves multipack.graves 1
 execute unless score $graveDespawnTime multipack.graves matches 0.. run scoreboard players set $graveDespawnTime multipack.graves -1

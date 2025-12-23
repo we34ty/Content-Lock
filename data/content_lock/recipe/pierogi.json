@@ -29,7 +29,7 @@
             {
               "id": "regeneration",
               "duration": 120,
-              "amplifier": 1
+              "amplifier": 2
             }
           ]
         }

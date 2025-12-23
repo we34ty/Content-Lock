@@ -37,8 +37,8 @@ execute if score L content_lock.options.progression.nether_damage matches 0 run 
 execute if score L content_lock.options.player.disable_sprint matches 1 run tellraw @s [{"translate":"content_lock:options.player.disable_sprint","click_event":{"action":"run_command","command":"/function content_lock:edit_options {\"scoreboard\":\"content_lock.options.player.disable_sprint\",\"score\":0}"},"hover_event":{"action":"show_text","value":{"translate":"content_lock:options.player.disable_sprint.description"}}},{"text":"[✔]","color":"green"}]
 execute if score L content_lock.options.player.disable_sprint matches 0 run tellraw @s [{"translate":"content_lock:options.player.disable_sprint","click_event":{"action":"run_command","command":"/function content_lock:edit_options {\"scoreboard\":\"content_lock.options.player.disable_sprint\",\"score\":1}"},"hover_event":{"action":"show_text","value":{"translate":"content_lock:options.player.disable_sprint.description"}}},{"text":"[❌]","color":"red"}]
 
-execute store result score L content_lock.options.game.tick_speed run gamerule randomTickSpeed
-tellraw @s [{"translate":"content_lock:options.game.tick_speed","click_event":{"action":"suggest_command","command":"/gamerule randomTickSpeed "},"hover_event":{"action":"show_text","value":{"translate":"content_lock:options.game.tick_speed.description"}}},{"score":{"name":"L","objective": "content_lock.options.game.tick_speed"},"color":"yellow"}]
+execute store result score L content_lock.options.game.tick_speed run gamerule random_tick_speed
+tellraw @s [{"translate":"content_lock:options.game.tick_speed","click_event":{"action":"suggest_command","command":"/gamerule random_tick_speed "},"hover_event":{"action":"show_text","value":{"translate":"content_lock:options.game.tick_speed.description"}}},{"score":{"name":"L","objective": "content_lock.options.game.tick_speed"},"color":"yellow"}]
 
 
 #function m_graves:config

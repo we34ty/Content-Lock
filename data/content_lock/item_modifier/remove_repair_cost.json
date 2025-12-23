@@ -6,7 +6,7 @@
 				"minecraft:repair_cost": 1
 			}
 		},
-		"modifier": {
+		"on_pass": {
 			"function": "minecraft:set_components",
 			"components": {
 				"minecraft:repair_cost": 0
@@ -20,7 +20,7 @@
 				"minecraft:repair_cost": 3
 			}
 		},
-		"modifier": {
+		"on_pass": {
 			"function": "minecraft:set_components",
 			"components": {
 				"minecraft:repair_cost": 0
@@ -34,7 +34,7 @@
 				"minecraft:repair_cost": 7
 			}
 		},
-		"modifier": {
+		"on_pass": {
 			"function": "minecraft:set_components",
 			"components": {
 				"minecraft:repair_cost": 0
@@ -48,7 +48,7 @@
 				"minecraft:repair_cost": 15
 			}
 		},
-		"modifier": {
+		"on_pass": {
 			"function": "minecraft:set_components",
 			"components": {
 				"minecraft:repair_cost": 0
@@ -62,7 +62,7 @@
 				"minecraft:repair_cost": 31
 			}
 		},
-		"modifier": {
+		"on_pass": {
 			"function": "minecraft:set_components",
 			"components": {
 				"minecraft:repair_cost": 0
@@ -76,7 +76,7 @@
 				"minecraft:repair_cost": 63
 			}
 		},
-		"modifier": {
+		"on_pass": {
 			"function": "minecraft:set_components",
 			"components": {
 				"minecraft:repair_cost": 0

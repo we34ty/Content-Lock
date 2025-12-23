@@ -268,22 +268,22 @@ execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. 
 execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
 execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
 execute unless score L content_lock.options.player.disable_sprint matches 0.. run scoreboard players set L content_lock.options.player.disable_sprint 1
-execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule randomTickSpeed 6
+execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule random_tick_speed 6
 execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 6
 
 #gamerule playersSleepingPercentage 101
-gamerule naturalRegeneration false
-execute in minecraft:overworld run gamerule naturalRegeneration false
-execute in minecraft:the_nether run gamerule naturalRegeneration false
-execute in minecraft:the_end run gamerule naturalRegeneration false
-execute in content_lock:the_void run gamerule naturalRegeneration false
-gamerule doInsomnia false
+gamerule natural_health_regeneration false
+execute in minecraft:overworld run gamerule natural_health_regeneration false
+execute in minecraft:the_nether run gamerule natural_health_regeneration false
+execute in minecraft:the_end run gamerule natural_health_regeneration false
+execute in content_lock:the_void run gamerule natural_health_regeneration false
+gamerule spawn_phantoms false
 function content_lock:minecarts
-execute in content_lock:the_void run gamerule reducedDebugInfo true
-execute in minecraft:overworld run gamerule reducedDebugInfo false
-execute in minecraft:the_nether run gamerule reducedDebugInfo false
-execute in minecraft:the_end run gamerule reducedDebugInfo false
-gamerule tntExplosionDropDecay true
+execute in content_lock:the_void run gamerule reduced_debug_info true
+execute in minecraft:overworld run gamerule reduced_debug_info false
+execute in minecraft:the_nether run gamerule reduced_debug_info false
+execute in minecraft:the_end run gamerule reduced_debug_info false
+gamerule tnt_explosion_drop_decay true
 
 #pretty important
 scoreboard players set L content_lock.temporary_health_holder 1000

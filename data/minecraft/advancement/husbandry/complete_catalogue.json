@@ -8,8 +8,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:all_black"
               }
             }
@@ -25,8 +25,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:black"
               }
             }
@@ -42,8 +42,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:british_shorthair"
               }
             }
@@ -59,8 +59,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:calico"
               }
             }
@@ -76,8 +76,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:jellie"
               }
             }
@@ -93,8 +93,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:persian"
               }
             }
@@ -110,8 +110,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:ragdoll"
               }
             }
@@ -127,8 +127,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:red"
               }
             }
@@ -144,8 +144,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:siamese"
               }
             }
@@ -161,8 +161,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:tabby"
               }
             }
@@ -178,8 +178,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type_specific": {
-                "type": "minecraft:cat",
+              "type": "cat",
+              "nbt": {
                 "variant": "minecraft:white"
               }
             }

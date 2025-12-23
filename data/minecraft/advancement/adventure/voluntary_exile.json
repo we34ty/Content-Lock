@@ -99,7 +99,6 @@
             "pattern": "minecraft:border"
           }
         ],
-        "minecraft:hide_additional_tooltip": {},
         "minecraft:item_name": "{\"translate\":\"block.minecraft.ominous_banner\"}",
         "minecraft:rarity": "uncommon"
       },
