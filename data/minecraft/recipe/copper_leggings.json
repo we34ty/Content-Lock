@@ -1,33 +1,33 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:copper_chestplate",
-  "addition": "minecraft:gold_ingot",
-  "template": "minecraft:snout_armor_trim_smithing_template",
+  "base": "minecraft:leather_leggings",
+  "addition": "minecraft:copper_ingot",
+  "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "count": 1,
-    "id": "minecraft:golden_chestplate",
+    "id": "minecraft:copper_leggings",
     "components": {
       "minecraft:attribute_modifiers": [
           {
             "type": "minecraft:armor",
-            "id": "content_lock.basic_armor_stats_chest",
-            "amount": 3.56,
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 1.89,
             "operation": "add_value",
-            "slot": "chest"
+            "slot": "legs"
           },
           {
             "type": "minecraft:armor_toughness",
-            "id": "content_lock.basic_armor_stats_chest",
-            "amount": 0.67,
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.22,
             "operation": "add_value",
-            "slot": "chest"
+            "slot": "legs"
           },
           {
             "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_armor_stats_chest",
-            "amount": 0.19,
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.18,
             "operation": "add_value",
-            "slot": "chest"
+            "slot": "legs"
           }
         ],
       "unbreakable": {},
@@ -35,6 +35,6 @@
         "hidden_components": [
           "unbreakable"
         ]
-      }    }
+      }   }
   }
 }

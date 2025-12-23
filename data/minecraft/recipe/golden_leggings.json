@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:chainmail_leggings",
+  "base": "minecraft:copper_leggings",
   "addition": "minecraft:gold_ingot",
   "template": "minecraft:snout_armor_trim_smithing_template",
   "result": {

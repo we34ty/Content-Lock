@@ -42,11 +42,9 @@
             "slot": "mainhand"
           }
         ],
-        
-        "minimum_attack_charge": 1,
-        
-      "minecraft:max_damage": 39,
-      "minecraft:tool": {
+        "minimum_attack_charge": 1,    
+        "minecraft:max_damage": 39,
+        "minecraft:tool": {
         "rules": [
           {
             "blocks": "#minecraft:mineable/axe",

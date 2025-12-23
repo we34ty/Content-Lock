@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:chainmail_boots",
+  "base": "minecraft:copper_boots",
   "addition": "minecraft:gold_ingot",
   "template": "minecraft:snout_armor_trim_smithing_template",
   "result": {

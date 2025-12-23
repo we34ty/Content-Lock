@@ -56,6 +56,7 @@
             "slot": "mainhand"
           }
         ],
+        "minimum_attack_charge": 1,
       "minecraft:max_damage": 300,
       "minecraft:tool": {
         "rules": [

@@ -1,13 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": "minecraft:wooden_sword",
-  "addition": [
-    "minecraft:cobblestone",
-    "minecraft:stone",
-    "minecraft:blackstone",
-    "minecraft:deepslate",
-    "minecraft:cobbled_deepslate"
-  ],
+  "addition": "minecraft:copper_ingot",
   "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "components": {
@@ -15,21 +9,21 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 5.2,
+            "amount": 4.1,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:sweeping_damage_ratio",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 0.7,
+            "amount": 0.5,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -2.6,
+            "amount": -2.1,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -43,7 +37,7 @@
           {
             "type": "minecraft:attack_knockback",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 0,
+            "amount": -0.2,
             "operation": "add_value",
             "slot": "mainhand"
           },
@@ -56,7 +50,7 @@
           }
         ],
         "minimum_attack_charge": 1,
-      "minecraft:max_damage": 207,
+      "minecraft:max_damage": 299,
       "minecraft:tool": {
         "rules": [
           {
@@ -70,6 +64,6 @@
       }
     },
     "count": 1,
-    "id": "minecraft:stone_sword"
+    "id": "minecraft:copper_sword"
   }
 }

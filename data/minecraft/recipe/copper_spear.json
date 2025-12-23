@@ -1,13 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "minecraft:wooden_pickaxe",
-  "addition": [
-    "minecraft:cobblestone",
-    "minecraft:stone",
-    "minecraft:blackstone",
-    "minecraft:deepslate",
-    "minecraft:cobbled_deepslate"
-  ],
+  "base": "minecraft:wooden_spear",
+  "addition": "minecraft:copper_ingot",
   "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "components": {
@@ -15,54 +9,64 @@
           {
             "type": "minecraft:attack_damage",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 14.5,
+            "amount": 1.6,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_speed",
             "id": "content_lock.basic_weapon_stats",
-            "amount": -3.6,
+            "amount": -3.35,
             "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:entity_interaction_range",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -0.1,
-            "operation": "add_multiplied_base",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:attack_knockback",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 1.4,
+            "amount": -1,
             "operation": "add_value",
             "slot": "mainhand"
           },
           {
             "type": "minecraft:movement_efficiency",
             "id": "content_lock.basic_weapon_stats",
-            "amount": 0.05,
+            "amount": 0.02,
             "operation": "add_value",
             "slot": "mainhand"
           }
         ],
         "minimum_attack_charge": 1,
-      "minecraft:max_damage": 75,
-      "minecraft:tool": {
-        "rules": [
-          {
-            "blocks": "#minecraft:mineable/pickaxe",
-            "speed": 2,
-            "correct_for_drops": true
-          }
-        ],
-        "default_mining_speed": 0.5,
-        "damage_per_block": 0
+      "minecraft:max_damage": 89,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 40
       }
     },
     "count": 1,
-    "id": "minecraft:stone_pickaxe"
+    "id": "minecraft:copper_spear"
   }
 }
