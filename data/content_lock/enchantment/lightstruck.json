@@ -1,0 +1,64 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 1,
+  "description": {
+    "translate": "content_lock:enchantment.lightstruck"
+  },
+  "effects": {
+    "post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/lightstruck"
+        }
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/lightstruck_tag"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "content_lock:lightstruck",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/copper_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/copper_weapon",
+  "weight": 1
+}

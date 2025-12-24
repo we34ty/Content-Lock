@@ -13,6 +13,8 @@ execute if score @s content_lock.temp2 matches ..0 run return 0
 #scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp1
 #scoreboard players set @s content_lock.temp1 2
 #scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
+execute unless score @s content_lock.enchantment.bloodthirst.fight_time matches 1.. run scoreboard players set @s content_lock.enchantment.bloodthirst.kills 0
+scoreboard players set @s content_lock.enchantment.bloodthirst.fight_time 200
 
 execute if score L content_lock.options.player.bleed matches 1 run scoreboard players operation @s content_lock.bleed_stacks += @s content_lock.temp2
 

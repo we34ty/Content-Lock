@@ -1,0 +1,114 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 1,
+  "description": {
+    "translate": "content_lock:enchantment.bloodthirst"
+  },
+  "effects": {
+    "post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bloodthirst/fight"
+        }
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bloodthirst/bloodthirst1"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "content_lock:bloodthirst",
+                          "levels": 1
+                        }
+                      ]
+                    }
+                  }
+                }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bloodthirst/bloodthirst2"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "content_lock:bloodthirst",
+                          "levels": 2
+                        }
+                      ]
+                    }
+                  }
+                }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bloodthirst/bloodthirst3"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "content_lock:bloodthirst",
+                          "levels": 3
+                        }
+                      ]
+                    }
+                  }
+                }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/copper_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/copper_weapon",
+  "weight": 1
+}

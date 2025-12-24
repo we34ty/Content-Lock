@@ -1,0 +1,78 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 1,
+  "description": {
+    "translate": "content_lock:enchantment.immovable"
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/immovable/immovable1"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "content_lock:immovable",
+                          "levels": 1
+                        }
+                      ]
+                    }
+                  }
+                }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/immovable/immovable2"
+        },
+        "requirements": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                  "weapon.mainhand": {
+                    "predicates": {
+                      "enchantments": [
+                        {
+                          "enchantments": "content_lock:immovable",
+                          "levels": 2
+                        }
+                      ]
+                    }
+                  }
+                }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/copper_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/copper_weapon",
+  "weight": 1
+}

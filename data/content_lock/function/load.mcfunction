@@ -142,6 +142,9 @@ scoreboard objectives add content_lock.death_count deathCount
 scoreboard objectives add content_lock.ai_timer dummy
 scoreboard objectives add content_lock.ai_option dummy
 scoreboard objectives add content_lock.stamina_regen dummy
+scoreboard objectives add content_lock.enchantment.bloodthirst dummy
+scoreboard objectives add content_lock.enchantment.bloodthirst.fight_time dummy
+scoreboard objectives add content_lock.enchantment.bloodthirst.kills minecraft.custom:mob_kills
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
