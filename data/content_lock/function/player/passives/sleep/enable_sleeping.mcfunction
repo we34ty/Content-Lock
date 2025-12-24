@@ -1,1 +1,1 @@
-$gamerule playersSleepingPercentage $(playersSleepingPercentage)
+$gamerule players_sleeping_percentage $(playersSleepingPercentage)

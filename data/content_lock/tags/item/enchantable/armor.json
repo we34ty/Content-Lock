@@ -32,6 +32,10 @@
     "minecraft:zombie_head",
     "minecraft:player_head",
     "minecraft:creeper_head",
-    "minecraft:piglin_head"
+    "minecraft:piglin_head",
+    "copper_helmet",
+    "copper_chestplate",
+    "copper_leggings",
+    "copper_boots"
   ]
 }
