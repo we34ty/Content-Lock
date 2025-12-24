@@ -24,6 +24,5 @@ scoreboard players add @s content_lock.mvtspd_from_level 0
 #scoreboard players enable @s content_lock.LevelUp.mvtspd
 
 #xp add @s 1 points
-gamerule players_sleeping_percentage 100
 
 scoreboard players operation @s content_lock.content_lock_version = L content_lock.content_lock_version
