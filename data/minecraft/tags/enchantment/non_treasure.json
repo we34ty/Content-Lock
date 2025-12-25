@@ -14,6 +14,8 @@
     "content_lock:sharpness2",
     "content_lock:corrosion",
     "content_lock:toughness",
-    "content_lock:crashful"
+    "content_lock:crashful",
+    "content_lock:bloodthirst",
+    "content_lock:lightstruck"
   ]
 }
