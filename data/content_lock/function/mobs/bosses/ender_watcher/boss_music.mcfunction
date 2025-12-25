@@ -1,5 +1,5 @@
 stopsound @a[tag=!listening_to_music,distance=0..80] music
-execute as @a[distance=0..80,tag=!listening_to_music] at @s run playsound music.content_lock.ender_watcher music @s ~ ~ ~ 1 1
+execute as @a[distance=0..80,tag=!listening_to_music] at @s run playsound content_lock:music.ender_watcher music @s ~ ~ ~ 1 1
 tag @a[distance=0..80,tag=!listening_to_music] add listening_to_music
 stopsound @a[tag=listening_to_music,distance=81..120] music
 tag @a[tag=listening_to_music,distance=81..120] remove listening_to_music

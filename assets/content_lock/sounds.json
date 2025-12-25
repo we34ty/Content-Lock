@@ -1,0 +1,273 @@
+{
+	"music.yhorm": {
+		"sounds": [
+			"content_lock:boss_music/yhorm"
+		]
+	},
+	"music.both_officers": {
+		"sounds": [
+			"content_lock:boss_music/both_officers"
+		]
+	},
+	"music.one_officer": {
+		"sounds": [
+			"content_lock:boss_music/one_officer"
+		]
+	},
+	"music.corrupted_princess": {
+		"sounds": [
+			"content_lock:boss_music/corrupted_princess_longer"
+		]
+	},
+	"music.blaze_lord_phase1": {
+		"sounds": [
+			"content_lock:boss_music/blaze_lord_phase1"
+		]
+	},
+	"music.blaze_lord_phase2": {
+		"sounds": [
+			"content_lock:boss_music/blaze_lord_phase2"
+		]
+	},
+	"music.corrupted_princess_enemies": {
+		"sounds": [
+			"content_lock:boss_music/corrupted_princess_enemies"
+		]
+	},
+	"music.ender_watcher": {
+		"sounds": [
+			"content_lock:boss_music/ender_watcher"
+		]
+	},
+	"music.drift": {
+		"sounds": [
+			"content_lock:drift"
+		]
+	},
+	"music.drift_lyrics": {
+		"sounds": [
+			"content_lock:drift_lyrics"
+		]
+	},
+	"music.slotstart": {
+		"sounds": [
+			"content_lock:slotstart"
+		]
+	},
+	"music.jackpotmusic": {
+		"sounds": [
+			"content_lock:jackpotmusic"
+		]
+	},
+	"music.jackpotmusiclong": {
+		"sounds": [
+			"content_lock:jackpotmusiclong"
+		]
+	},
+	"entity.player.parry": {
+		"sounds": [
+			"content_lock:parry"
+		],
+		"subtitle": "content_lock:sounds.parry"
+	},
+	"music.wither1": {
+		"sounds": [
+			"content_lock:boss_music/wither1"
+		]
+	},
+	"music.dragons_apprentice_phase1": {
+		"sounds": [
+			"content_lock:boss_music/dragons_apprentice_phase1"
+		]
+	},
+	"music.dragons_apprentice_phase2": {
+		"sounds": [
+			"content_lock:boss_music/dragons_apprentice_phase2"
+		]
+	},
+	"music.zomcess": {
+		"sounds": [
+			"content_lock:boss_music/zomcess"
+		]
+	},
+	"music.iron_guardian": {
+		"sounds": [
+			"content_lock:boss_music/iron_guardian"
+		]
+	},
+	"music.death_rider": {
+		"sounds": [
+			"content_lock:boss_music/death_rider"
+		]
+	},
+	"music.danger1": {
+		"sounds": [
+			"content_lock:danger1"
+		]
+	},
+	"music.danger2": {
+		"sounds": [
+			"content_lock:danger2"
+		]
+	},
+	"item.silver_tape": {
+		"sounds": [
+			"content_lock:item/silver_tape"
+		],
+		"subtitle": "content_lock:sounds.silver_tape"
+	},
+	"item.silver_tape.fail": {
+		"sounds": [
+			"content_lock:item/silver_tape_fail"
+		],
+		"subtitle": "content_lock:sounds.silver_tape.fail"
+	},
+	"item.silver_tape.end": {
+		"sounds": [
+			"content_lock:item/silver_tape_end"
+		],
+		"subtitle": "content_lock:sounds.silver_tape.end"
+	},
+	"entity.living_armor.walk": {
+		"sounds": [
+			"content_lock:living_armor/walk"
+		],
+		"subtitle": "content_lock:sounds.living_armor.walk"
+	},
+	"entity.living_armor.idle": {
+		"sounds": [
+			"content_lock:living_armor/idle1",
+			"content_lock:living_armor/idle2",
+			"content_lock:living_armor/idle3"
+		],
+		"subtitle": "content_lock:sounds.living_armor.idle"
+	},
+	"entity.living_armor.damaged": {
+		"sounds": [
+			"content_lock:living_armor/damaged"
+		],
+		"subtitle": "content_lock:sounds.living_armor.damaged"
+	},
+	
+	"entity.carapacer.attack": {
+		"sounds": [
+			"content_lock:carapacer/attack1",
+			"content_lock:carapacer/attack2"
+		],
+		"subtitle": "content_lock:sounds.carapacer.attack"
+	},
+	
+	"entity.carapacer.damaged": {
+		"sounds": [
+			"content_lock:carapacer/damaged1",
+			"content_lock:carapacer/damaged2"
+		],
+		"subtitle": "content_lock:sounds.carapacer.damaged"
+	},
+	
+	"block.quarry.break": {
+		"sounds": [
+			"content_lock:utility/quarry_break"
+		],
+		"subtitle": "content_lock:sounds.quarry.break"
+	},
+	
+	"block.quarry.idle": {
+		"sounds": [
+			"content_lock:utility/quarry_idle"
+		],
+		"subtitle": "content_lock:sounds.quarry.idle"
+	},
+	
+	"block.wormhole.open": {
+		"sounds": [
+			"content_lock:wormhole/open"
+		],
+		"subtitle": "content_lock:sounds.wormhole.open"
+	},
+	
+	"block.wormhole.close": {
+		"sounds": [
+			"content_lock:wormhole/close"
+		],
+		"subtitle": "content_lock:sounds.wormhole.close"
+	},
+	"block.wormhole.teleport": {
+		"sounds": [
+			"content_lock:wormhole/teleport"
+		],
+		"subtitle": "content_lock:sounds.wormhole.teleport"
+	},
+	"item.death_rider_dagger": {
+		"sounds": [
+			"content_lock:item/death_rider_dagger"
+		],
+		"subtitle": "content_lock:sounds.death_rider_dagger"
+	},
+	"item.death_rider_eye": {
+		"sounds": [
+			"content_lock:item/death_rider_eye"
+		],
+		"subtitle": "content_lock:sounds.death_rider_eye"
+	},
+	"item.spell.charging": {
+		"sounds": [
+			"content_lock:spell/charging"
+		],
+		"subtitle": "content_lock:sounds.spell.charging"
+	},
+	"item.spell.undead_book": {
+		"sounds": [
+			"content_lock:spell/undead_book"
+		],
+		"subtitle": "content_lock:sounds.spell.undead_book"
+	},
+	"item.prism_stone.throw": {
+		"sounds": [
+			"content_lock:item/prism_stone/throw"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.throw"
+	},
+	"item.prism_stone.small": {
+		"sounds": [
+			"content_lock:item/prism_stone/small"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.small"
+	},
+	"item.prism_stone.medium": {
+		"sounds": [
+			"content_lock:item/prism_stone/medium"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.medium"
+	},
+	"item.prism_stone.big": {
+		"sounds": [
+			"content_lock:item/prism_stone/big"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.big"
+	},
+	"item.prism_stone.deadly": {
+		"sounds": [
+			"content_lock:item/prism_stone/deadly"
+		],
+		"subtitle": "content_lock:sounds.prism_stone.deadly"
+	},
+	"item.enchantment.lightstruck": {
+		"sounds": [
+			"content_lock:enchantments/lightstruck_passive"
+		],
+		"subtitle": "content_lock:sounds.lightstruck"
+	},
+	"item.enchantment.lightstruck.attack": {
+		"sounds": [
+			"content_lock:enchantments/lightstruck_active"
+		],
+		"subtitle": "content_lock:sounds.lightstruck.attack"
+	},
+	"item.enchantment.lightstruck.end": {
+		"sounds": [
+			"content_lock:enchantments/lightstruck_active_alt"
+		],
+		"subtitle": "content_lock:sounds.lightstruck.end"
+	}
+}

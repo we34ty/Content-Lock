@@ -7,7 +7,7 @@ function content_lock:player/items/custom_weapons/quickstep_dagger/teleport_rayc
 
 execute unless entity @e[tag=content_lock.im_a_target] run return 0
 
-playsound minecraft:item.content_lock.death_rider_dagger player @a ~ ~ ~ 1 1
+playsound minecraft:content_lock:item.death_rider_dagger player @a ~ ~ ~ 1 1
 particle dust{color:3552822,scale:1} ~ ~1 ~ 0.3 1 0.3 1 20 normal @a
 effect give @s resistance 1 3 true
 execute rotated as @e[tag=content_lock.im_a_target,limit=1,sort=nearest] at @e[tag=content_lock.im_a_target,limit=1,sort=nearest] rotated ~ 0 positioned ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~

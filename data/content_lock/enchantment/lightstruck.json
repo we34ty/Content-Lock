@@ -11,7 +11,7 @@
         "affected": "attacker",
         "effect": {
           "type": "run_function",
-          "function": "content_lock:player/enchantments/lightstruck"
+          "function": "content_lock:player/enchantments/lightstruck/attack"
         }
       }
     ],
@@ -19,7 +19,7 @@
       {
         "effect": {
           "type": "run_function",
-          "function": "content_lock:player/enchantments/lightstruck_tag"
+          "function": "content_lock:player/enchantments/lightstruck/lightstruck_tag"
         },
         "requirements": [
           {

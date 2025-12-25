@@ -63,6 +63,7 @@
     "content_lock:enchantment.crashful": "Crashful",
     "content_lock:enchantment.charge_time_increase": "Charge Time Increase",
     "content_lock:enchantment.bloodthirst": "Bloodthirst",
+    "content_lock:enchantment.lightstruck": "Lightstruck",
     "content_lock:mob.enchanted_undead": "Enchanted Undead",
     "content_lock:mob.zombie_head": "Zombie Head",
     "content_lock:mob.living_armor": "Living Armor",
@@ -229,5 +230,8 @@
     "content_lock:sounds.prism_stone.small": "Small fall",
     "content_lock:sounds.prism_stone.medium": "Medium fall",
     "content_lock:sounds.prism_stone.big": "Big fall",
-    "content_lock:sounds.prism_stone.deadly": "Deadly fall"
+    "content_lock:sounds.prism_stone.deadly": "Deadly fall",
+    "content_lock:sounds.lightstruck": "Lightstruck charges",
+    "content_lock:sounds.lightstruck.attack": "Lightstruck releases",
+    "content_lock:sounds.lightstruck.end": "Lightstruck dissipates"
 }

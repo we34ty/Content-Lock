@@ -2,5 +2,6 @@ execute if entity @e[type=block_display,tag=content_lock.venom_billiard_ball] as
 execute if entity @e[type=block_display,tag=content_lock.prism_stone] as @e[type=block_display,tag=content_lock.prism_stone] at @s run function content_lock:mobs/entities/prism_stone
 execute if entity @e[type=dolphin,tag=content_lock.tatsugeki.dolphin] as @e[type=dolphin,tag=content_lock.tatsugeki.dolphin] at @s run function content_lock:mobs/entities/tatsugeki/dolphin
 execute if entity @e[type=#arrows,tag=!content_lock.arrow.changed_damage] as @e[type=#arrows,tag=!content_lock.arrow.changed_damage] at @s run function content_lock:mobs/entities/projectiles/arrows
+execute if entity @e[type=marker,tag=content_lock.enchantment.lightstruck.lightning] as @e[type=marker,tag=content_lock.enchantment.lightstruck.lightning] at @s run function content_lock:player/enchantments/lightstruck/lightning
 #execute if entity @e[type=trident,tag=!content_lock.arrow.changed_damage] as @e[type=trident,tag=!content_lock.arrow.changed_damage] at @s run function content_lock:mobs/entities/projectiles/arrows
 #execute if entity @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] as @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] at @s run function content_lock:mobs/entities/prism_stone_light

@@ -3,6 +3,6 @@
     "description": "Officers (Phase 1)",
     "length_in_seconds": 221.0,
     "sound_event": {
-      "sound_id": "minecraft:music.content_lock.both_officers"
+      "sound_id": "content_lock:music.both_officers"
     }
  }

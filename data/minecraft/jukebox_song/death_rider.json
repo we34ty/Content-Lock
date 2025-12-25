@@ -3,6 +3,6 @@
     "description": "Death Rider",
     "length_in_seconds": 160.0,
     "sound_event": {
-      "sound_id": "minecraft:music.content_lock.death_rider"
+      "sound_id": "content_lock:music.death_rider"
     }
  }

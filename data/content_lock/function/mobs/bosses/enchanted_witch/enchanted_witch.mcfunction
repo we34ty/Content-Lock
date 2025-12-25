@@ -34,7 +34,7 @@ execute if entity @s[scores={content_lock.boss_exhaustion=0},tag=content_lock.ex
 execute if entity @s[scores={content_lock.boss_exhaustion=1..},tag=content_lock.exhausted] run scoreboard players remove @s content_lock.boss_exhaustion 1
 execute if score L content_lock.timer1 matches 2 if entity @s[scores={content_lock.boss_exhaustion=2..},tag=content_lock.second_phase] run scoreboard players remove @s content_lock.boss_exhaustion 2
 
-function content_lock:mobs/bosses/music/boss_music {song:music.content_lock.yhorm,duration:4080}
+function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.yhorm",duration:4080}
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
 function content_lock:mobs/bosses/boss_bars/enchanted_witch
 function content_lock:mobs/bosses/enchanted_witch/dsiplay

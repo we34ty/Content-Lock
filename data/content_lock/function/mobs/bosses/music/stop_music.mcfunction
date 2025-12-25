@@ -18,5 +18,5 @@ stopsound @s music music.overworld.meadow
 stopsound @s music music.overworld.snowy_slopes
 stopsound @s music music.overworld.stony_peaks
 stopsound @s music music.under_water
-#stopsound @s music music.content_lock.danger1
-#stopsound @s music music.content_lock.danger2
+#stopsound @s music content_lock:music.danger1
+#stopsound @s music content_lock:music.danger2

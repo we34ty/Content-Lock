@@ -1,0 +1,1 @@
+$damage @n[tag=content_lock.enchantment.lightstruck.to_be_damaged] $(damage) lightning_bolt by @p

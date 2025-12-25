@@ -1,10 +1,10 @@
 execute store result score @s content_lock.temp1 run data get entity @s Pos[1]
 scoreboard players operation @s content_lock.stored_y -= @s content_lock.temp1
 
-execute if score @s content_lock.stored_y matches ..5 run playsound minecraft:item.content_lock.prism_stone.small player @a ~ ~ ~ 10 1
-execute if score @s content_lock.stored_y matches 6..12 run playsound minecraft:item.content_lock.prism_stone.medium player @a ~ ~ ~ 10 1
-execute if score @s content_lock.stored_y matches 13..25 run playsound minecraft:item.content_lock.prism_stone.big player @a ~ ~ ~ 10 1
-execute if score @s content_lock.stored_y matches 26.. run playsound minecraft:item.content_lock.prism_stone.deadly player @a ~ ~ ~ 10 1
+execute if score @s content_lock.stored_y matches ..5 run playsound minecraft:content_lock:item.prism_stone.small player @a ~ ~ ~ 10 1
+execute if score @s content_lock.stored_y matches 6..12 run playsound minecraft:content_lock:item.prism_stone.medium player @a ~ ~ ~ 10 1
+execute if score @s content_lock.stored_y matches 13..25 run playsound minecraft:content_lock:item.prism_stone.big player @a ~ ~ ~ 10 1
+execute if score @s content_lock.stored_y matches 26.. run playsound minecraft:content_lock:item.prism_stone.deadly player @a ~ ~ ~ 10 1
 #execute if score @s content_lock.stored_y matches 26.. run return run kill @s
 
 rotate @s ~ 0

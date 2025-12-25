@@ -63,6 +63,7 @@
     "content_lock:enchantment.crashful": "Wypadkowa",
     "content_lock:enchantment.charge_time_increase": "Zwiększenie Czasu Ładowania",
     "content_lock:enchantment.bloodthirst": "Żądza krwi",
+    "content_lock:enchantment.lightstruck": "Błyskotliwość",
     "content_lock:mob.enchanted_undead": "Zaklęty nieumarły",
     "content_lock:mob.zombie_head": "Głowa zombie",
     "content_lock:mob.living_armor": "Żywa zbroja",
@@ -229,5 +230,8 @@
     "content_lock:sounds.prism_stone.small": "Mały upadek",
     "content_lock:sounds.prism_stone.medium": "Średni upadek",
     "content_lock:sounds.prism_stone.big": "Duży upadek",
-    "content_lock:sounds.prism_stone.deadly": "Śmiertelny upadek"
+    "content_lock:sounds.prism_stone.deadly": "Śmiertelny upadek",
+    "content_lock:sounds.lightstruck": "Błyskotliwość ładuje się",
+    "content_lock:sounds.lightstruck.attack": "Błyskotliwość uwalnia się",
+    "content_lock:sounds.lightstruck.end": "Błyskotliwość zanika"
 }

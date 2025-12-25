@@ -22,4 +22,4 @@ execute at @e[tag=content_lock.quarry] as @e[type=minecraft:item,distance=..0.1]
 execute at @e[tag=content_lock.quarry] as @e[type=minecraft:item,distance=..0.1] unless entity @s[nbt={Item:{components:{}}}] run function mining_quarries:stow_item with entity @s Item
 
 #function mining_quarries:take_unbreaking_damage
-playsound minecraft:block.content_lock.quarry.idle block @a ~ ~ ~ 1 0.6
+playsound minecraft:content_lock:block.quarry.idle block @a ~ ~ ~ 1 0.6

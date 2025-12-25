@@ -3,6 +3,6 @@
     "description": "Iron Guardian",
     "length_in_seconds": 170.0,
     "sound_event": {
-      "sound_id": "minecraft:music.content_lock.iron_guardian"
+      "sound_id": "content_lock:music.iron_guardian"
     }
  }
