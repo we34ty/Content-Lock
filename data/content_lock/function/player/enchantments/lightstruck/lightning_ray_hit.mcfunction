@@ -7,5 +7,6 @@ execute store result storage content_lock:saved_stats damage float 1 run scorebo
 function content_lock:player/enchantments/lightstruck/lightning_damage_macro with storage content_lock:saved_stats
 scoreboard players set @s content_lock.temp1 0
 
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#entities,dx=1,dy=1,dz=1] run tag @s add content_lock.enchantment.lightstruck.damaged
 tag @n[tag=content_lock.enchantment.lightstruck.to_be_damaged] add content_lock.enchantment.lightstruck.damaged
 tag @n[tag=content_lock.enchantment.lightstruck.to_be_damaged] remove content_lock.enchantment.lightstruck.to_be_damaged
