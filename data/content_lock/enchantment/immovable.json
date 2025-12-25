@@ -9,54 +9,8 @@
       {
         "effect": {
           "type": "run_function",
-          "function": "content_lock:player/enchantments/immovable/immovable1"
-        },
-        "requirements": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                  "weapon.mainhand": {
-                    "predicates": {
-                      "enchantments": [
-                        {
-                          "enchantments": "content_lock:immovable",
-                          "levels": 1
-                        }
-                      ]
-                    }
-                  }
-                }
-            }
-          }
-        ]
-      },
-      {
-        "effect": {
-          "type": "run_function",
-          "function": "content_lock:player/enchantments/immovable/immovable2"
-        },
-        "requirements": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                  "weapon.mainhand": {
-                    "predicates": {
-                      "enchantments": [
-                        {
-                          "enchantments": "content_lock:immovable",
-                          "levels": 2
-                        }
-                      ]
-                    }
-                  }
-                }
-            }
-          }
-        ]
+          "function": "content_lock:player/enchantments/immovable/immovable_tag"
+        }
       }
     ]
   },

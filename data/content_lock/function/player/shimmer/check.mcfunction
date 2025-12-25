@@ -43,6 +43,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:netherite_helmet"}}] run return ru
 execute if entity @s[nbt={Item:{id:"minecraft:netherite_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"iron_chestplate"}
 execute if entity @s[nbt={Item:{id:"minecraft:netherite_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"iron_leggings"}
 execute if entity @s[nbt={Item:{id:"minecraft:netherite_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"iron_boots"}
+execute if entity @s[nbt={Item:{id:"minecraft:netherite_spear"}}] run return run function content_lock:player/shimmer/transmute {item:"iron_spear"}
 
 execute if entity @s[nbt={Item:{id:"minecraft:diamond_axe"}}] run return run function content_lock:player/shimmer/transmute {item:"golden_axe"}
 execute if entity @s[nbt={Item:{id:"minecraft:diamond_pickaxe"}}] run return run function content_lock:player/shimmer/transmute {item:"golden_pickaxe"}
@@ -53,6 +54,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:diamond_helmet"}}] run return run 
 execute if entity @s[nbt={Item:{id:"minecraft:diamond_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"golden_chestplate"}
 execute if entity @s[nbt={Item:{id:"minecraft:diamond_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"golden_leggings"}
 execute if entity @s[nbt={Item:{id:"minecraft:diamond_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"golden_boots"}
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_spear"}}] run return run function content_lock:player/shimmer/transmute {item:"golden_spear"}
 
 execute if entity @s[nbt={Item:{id:"minecraft:iron_axe"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_axe"}
 execute if entity @s[nbt={Item:{id:"minecraft:iron_pickaxe"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_pickaxe"}
@@ -63,17 +65,18 @@ execute if entity @s[nbt={Item:{id:"minecraft:iron_helmet"}}] run return run fun
 execute if entity @s[nbt={Item:{id:"minecraft:iron_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_chestplate"}
 execute if entity @s[nbt={Item:{id:"minecraft:iron_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_leggings"}
 execute if entity @s[nbt={Item:{id:"minecraft:iron_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_boots"}
+execute if entity @s[nbt={Item:{id:"minecraft:iron_spear"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_spear"}
 
-execute if entity @s[nbt={Item:{id:"minecraft:golden_axe"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_axe"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_pickaxe"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_pickaxe"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_shovel"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_shovel"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_hoe"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_hoe"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_sword"}}] run return run function content_lock:player/shimmer/transmute {item:"stone_sword"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_helmet"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_helmet"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_chestplate"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_leggings"}
-execute if entity @s[nbt={Item:{id:"minecraft:golden_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"chainmail_boots"}
-
+execute if entity @s[nbt={Item:{id:"minecraft:golden_axe"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_axe"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_pickaxe"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_pickaxe"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_shovel"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_shovel"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_hoe"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_hoe"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_sword"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_sword"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_helmet"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_helmet"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_chestplate"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_leggings"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_boots"}
+execute if entity @s[nbt={Item:{id:"minecraft:golden_spear"}}] run return run function content_lock:player/shimmer/transmute {item:"copper_spear"}
 
 execute if entity @s[nbt={Item:{id:"minecraft:stone_axe"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_axe"}
 execute if entity @s[nbt={Item:{id:"minecraft:stone_pickaxe"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_pickaxe"}
@@ -84,3 +87,15 @@ execute if entity @s[nbt={Item:{id:"minecraft:chainmail_helmet"}}] run return ru
 execute if entity @s[nbt={Item:{id:"minecraft:chainmail_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_chestplate"}
 execute if entity @s[nbt={Item:{id:"minecraft:chainmail_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_leggings"}
 execute if entity @s[nbt={Item:{id:"minecraft:chainmail_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_boots"}
+execute if entity @s[nbt={Item:{id:"minecraft:stone_spear"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_spear"}
+
+execute if entity @s[nbt={Item:{id:"minecraft:copper_axe"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_axe"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_pickaxe"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_pickaxe"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_shovel"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_shovel"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_hoe"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_hoe"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_sword"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_sword"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_helmet"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_helmet"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_chestplate"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_chestplate"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_leggings"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_leggings"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_boots"}}] run return run function content_lock:player/shimmer/transmute {item:"leather_boots"}
+execute if entity @s[nbt={Item:{id:"minecraft:copper_spear"}}] run return run function content_lock:player/shimmer/transmute {item:"wooden_spear"}

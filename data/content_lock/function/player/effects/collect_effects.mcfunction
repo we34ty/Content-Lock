@@ -76,11 +76,11 @@ execute if score L content_lock.options.player.stamina matches 0 run data merge 
 execute if entity @s[gamemode=creative] run data merge storage content_lock:saved_stats {stamina:E070}
 execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {stamina:E070}
 
-execute store result score @s content_lock.temp2 run clear @s clock 0
-execute if predicate content_lock:underwater run scoreboard players set @s content_lock.temp2 0
-execute at @s unless dimension minecraft:overworld run scoreboard players set @s content_lock.temp2 0
+execute store result score @s content_lock.does_clock_display run clear @s clock 0
+execute if predicate content_lock:underwater run scoreboard players set @s content_lock.does_clock_display 0
+execute at @s unless dimension minecraft:overworld run scoreboard players set @s content_lock.does_clock_display 0
 data merge storage content_lock:saved_stats {time:E059}
 data merge storage content_lock:saved_stats {nights_skipped:E060}
-execute if score L content_lock.options.player.clock_display matches 1 if score @s content_lock.temp2 matches 1.. run function content_lock:player/passives/inventory_check/clock
+execute if score L content_lock.options.player.clock_display matches 1 if score @s content_lock.does_clock_display matches 1.. run function content_lock:player/passives/inventory_check/clock
 
 function content_lock:player/effects/display with storage content_lock:saved_stats

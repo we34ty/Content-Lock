@@ -145,8 +145,10 @@ scoreboard objectives add content_lock.stamina_regen dummy
 scoreboard objectives add content_lock.enchantment.bloodthirst dummy
 scoreboard objectives add content_lock.enchantment.bloodthirst.fight_time dummy
 scoreboard objectives add content_lock.enchantment.bloodthirst.kills minecraft.custom:mob_kills
-    scoreboard objectives add content_lock.enchantment.lightstruck.distance minecraft.custom:sprint_one_cm
+scoreboard objectives add content_lock.enchantment.lightstruck.distance minecraft.custom:sprint_one_cm
 scoreboard objectives add content_lock.enchantment.lightstruck dummy
+scoreboard objectives add content_lock.enchantment.immovable dummy
+scoreboard objectives add content_lock.does_clock_display dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
