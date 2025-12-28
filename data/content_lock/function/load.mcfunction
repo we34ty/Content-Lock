@@ -152,6 +152,8 @@ scoreboard objectives add content_lock.does_clock_display dummy
 scoreboard objectives add content_lock.enchantment.faura.pieces dummy
 scoreboard objectives add content_lock.enchantment.faura dummy
 scoreboard objectives add content_lock.enchantment.faura.regen dummy
+scoreboard objectives add content_lock.enchantment.combat_knowledge dummy
+scoreboard objectives add content_lock.enchantment.combat_knowledge.pieces dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy

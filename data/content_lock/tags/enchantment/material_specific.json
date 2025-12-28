@@ -18,6 +18,10 @@
     "content_lock:guardian_shovel",
     "content_lock:quickstep_dagger",
     "content_lock:mays_anchor",
-    "content_lock:lightstruck"
+    "content_lock:lightstruck",
+    "content_lock:bloodthirst",
+    "content_lock:immovable",
+    "content_lock:combat_knowledge",
+    "content_lock:faura"
   ]
 }

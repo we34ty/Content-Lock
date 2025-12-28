@@ -1,0 +1,42 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 1,
+  "description": {
+    "translate": "content_lock:enchantment.combat_knowledge"
+  },
+  "effects": {
+    "post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bloodthirst/fight"
+        }
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/combat_knowledge/tag"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/copper_armor",
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#content_lock:enchantable/copper_armor",
+  "weight": 1
+}
