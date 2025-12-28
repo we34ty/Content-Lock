@@ -140,7 +140,8 @@
                   "animation": "block",
                   "has_consume_particles": false,
                   "on_consume_effects": []
-                }
+                },
+                "minimum_attack_charge": 1
               }
             },
             {
