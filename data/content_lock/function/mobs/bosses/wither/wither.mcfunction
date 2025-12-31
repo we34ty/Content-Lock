@@ -12,7 +12,7 @@ execute if score @s content_lock.timer1 matches 221.. if entity @s[scores={conte
 
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
-function content_lock:mobs/bosses/music/boss_music {song:content_lock:music.wither1,duration:6820}
+function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.wither1",duration:6820}
 
 scoreboard players add @s content_lock.attack_timer 0
 scoreboard players add @s content_lock.boss_exhaustion 0
