@@ -6,7 +6,8 @@
   },
   "features": {
     "enabled": [
-      "minecraft:vanilla"
+      "minecraft:vanilla",
+      "minecraft:minecart_improvements"
     ]
   }
 }
