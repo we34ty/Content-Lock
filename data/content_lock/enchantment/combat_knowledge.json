@@ -5,16 +5,6 @@
     "translate": "content_lock:enchantment.combat_knowledge"
   },
   "effects": {
-    "post_attack": [
-      {
-        "enchanted": "attacker",
-        "affected": "attacker",
-        "effect": {
-          "type": "run_function",
-          "function": "content_lock:player/enchantments/bloodthirst/fight"
-        }
-      }
-    ],
     "tick": [
       {
         "effect": {

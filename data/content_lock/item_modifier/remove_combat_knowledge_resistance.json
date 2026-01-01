@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 0
+    },
+    "add": false
+  }
+]

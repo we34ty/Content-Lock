@@ -1,0 +1,82 @@
+{
+  "anvil_cost": 1000,
+  "description": {
+    "translate": "content_lock:enchantment.combat_knowledge.resistance",
+    "color": "#e7d669",
+    "italic": true
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/combat_knowledge/remove_enchantment"
+        },
+        "requirements": {
+          "condition": "entity_scores",
+          "entity": "this",
+          "scores": {
+            "content_lock.enchantment.combat_knowledge.fight_time": {
+              "max": 0
+            }
+          }
+        }
+      }
+    ],
+    "damage_protection": [
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 0.01,
+            "per_level_above_first": 0.005
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": true,
+            "tags": [
+              {
+                "id": "bypasses_enchantments",
+                "expected": false
+              },
+              {
+                "id": "bypasses_armor",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "attribute": "movement_speed",
+        "id": "content_lock.combat_knowledge_resistance",
+        "operation": "add_multiplied_total",
+        "amount": {
+          "type": "linear",
+          "base": -0.01,
+          "per_level_above_first": -0.003
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 21,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/copper_armor",
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#content_lock:enchantable/copper_armor",
+  "weight": 1
+}

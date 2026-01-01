@@ -1,6 +1,8 @@
 {
 	"values": [
 		"content_lock:tick",
+		"content_lock:player/tick",
+		"content_lock:mobs/tick",
 		"lsp:loop",
 		"animated_java:global/on_tick"
 	]

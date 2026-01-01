@@ -1,0 +1,1 @@
+$attribute @s movement_speed modifier add content_lock.combat_knowledge.2 $(speed) add_multiplied_total

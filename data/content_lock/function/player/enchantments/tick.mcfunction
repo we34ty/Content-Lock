@@ -2,6 +2,7 @@ execute if entity @s[tag=content_lock.enchantment.bloodthirst] run function cont
 execute if entity @s[tag=content_lock.enchantment.lightstruck] run function content_lock:player/enchantments/lightstruck/lightstruck
 execute if entity @s[tag=content_lock.enchantment.immovable] run function content_lock:player/enchantments/immovable/immovable
 execute if entity @s[tag=content_lock.enchantment.faura] run function content_lock:player/enchantments/faura/faura
+execute if entity @s[tag=content_lock.enchantment.combat_knowledge] run function content_lock:player/enchantments/combat_knowledge/combat_knowledge
 
 
 

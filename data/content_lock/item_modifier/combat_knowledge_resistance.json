@@ -1,0 +1,342 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 1
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": {
+            "max": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 2
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 3
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 3
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 4
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 4
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 5
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 5
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 6
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 6
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 7
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 7
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 8
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 8
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 9
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 9
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 10
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 10
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 11
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 11
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 12
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 12
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 13
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 13
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 14
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 14
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 15
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 15
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 16
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 16
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 17
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 17
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 18
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 18
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 19
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 19
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 20
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": 20
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:combat_knowledge_resistance": 21
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.enchantment.combat_knowledge.temp": {
+            "min": 21
+          }
+        }
+      }
+    ]
+  }
+]

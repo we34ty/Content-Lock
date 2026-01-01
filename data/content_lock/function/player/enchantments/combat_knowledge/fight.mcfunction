@@ -1,0 +1,1 @@
+scoreboard players set @s content_lock.enchantment.combat_knowledge.fight_time 200

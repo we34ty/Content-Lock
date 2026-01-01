@@ -16,6 +16,9 @@
     "content_lock:toughness",
     "content_lock:crashful",
     "content_lock:bloodthirst",
-    "content_lock:lightstruck"
+    "content_lock:lightstruck",
+    "content_lock:immovable",
+    "content_lock:combat_knowledge",
+    "content_lock:faura"
   ]
 }

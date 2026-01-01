@@ -67,6 +67,8 @@
     "content_lock:enchantment.lightstruck": "Lightstruck",
     "content_lock:enchantment.immovable": "Immovable",
     "content_lock:enchantment.faura": "Faura",
+    "content_lock:enchantment.combat_knowledge": "Warmonger",
+    "content_lock:enchantment.combat_knowledge.resistance": "Defense boost",
     "content_lock:mob.enchanted_undead": "Enchanted Undead",
     "content_lock:mob.zombie_head": "Zombie Head",
     "content_lock:mob.living_armor": "Living Armor",
