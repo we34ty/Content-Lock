@@ -45,14 +45,6 @@
               }
             },
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "content_lock:item.guardian_shovel",
-                "color": "#9c9c9c",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -125,7 +117,12 @@
                   "default_mining_speed": 0.5,
                   "damage_per_block": 0
                 },
-                "minimum_attack_charge": 1
+                "minimum_attack_charge": 1,
+                "item_name": {
+                  "translate": "content_lock:item.guardian_shovel",
+                  "color": "#9c9c9c",
+                  "italic": false
+                }
               }
             }
           ]
@@ -135,14 +132,6 @@
           "name": "minecraft:iron_nugget",
           "weight": 2,
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "content_lock:item.guardian_heart",
-                "color": "#a1a1a1",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
@@ -208,6 +197,12 @@
               "components": {
                 "minecraft:custom_data": {
                   "guardian_heart": true
+                },
+                "minimum_attack_charge": 1,
+                "item_name": {
+                  "translate": "content_lock:item.guardian_heart",
+                  "color": "#a1a1a1",
+                  "italic": false
                 }
               }
             }

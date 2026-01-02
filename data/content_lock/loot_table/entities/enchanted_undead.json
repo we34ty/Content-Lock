@@ -9,12 +9,13 @@
           "name": "minecraft:enchanted_book",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "content_lock:item.undead_book",
-                "color": "#d400ff"
-              },
-              "target": "item_name"
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "content_lock:item.undead_book",
+                  "color": "#d400ff"
+                }
+              }
             },
             {
               "function": "minecraft:set_custom_data",

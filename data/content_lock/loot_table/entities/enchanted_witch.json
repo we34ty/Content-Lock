@@ -50,11 +50,13 @@
           "weight": 3,
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "content_lock:item.witchs_skull",
-                "color": "#d400ff",
-                "italic": false
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "content_lock:item.witchs_skull",
+                  "color": "#d400ff",
+                  "italic": false
+                }
               }
             },
             {
@@ -125,12 +127,13 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "content_lock:item.witchs_book",
-                "color": "#d400ff"
-              },
-              "target": "item_name"
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "content_lock:item.witchs_book",
+                  "color": "#d400ff"
+                }
+              }
             },
             {
               "function": "minecraft:set_components",

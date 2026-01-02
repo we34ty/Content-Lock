@@ -160,6 +160,14 @@ scoreboard objectives add content_lock.enchantment.combat_knowledge.chest dummy
 scoreboard objectives add content_lock.enchantment.combat_knowledge.legs dummy
 scoreboard objectives add content_lock.enchantment.combat_knowledge.feet dummy
 scoreboard objectives add content_lock.enchantment.combat_knowledge.temp dummy
+scoreboard objectives add content_lock.fishing.timer dummy
+scoreboard objectives add content_lock.fishing.progress dummy
+scoreboard objectives add content_lock.fishing.pitch dummy
+scoreboard objectives add content_lock.fishing.yaw dummy
+scoreboard objectives add content_lock.fishing.temp1 dummy
+scoreboard objectives add content_lock.fishing.temp2 dummy
+scoreboard objectives add content_lock.fishing.is_fishing minecraft.used:minecraft.fishing_rod
+scoreboard objectives add content_lock.fishing.stress dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy

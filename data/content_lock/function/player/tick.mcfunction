@@ -5,6 +5,7 @@ function content_lock:player/passives/hunger
 function content_lock:player/passives/health_regen
 function content_lock:player/items/tick
 function content_lock:player/remove_bossbar
+function content_lock:player/passives/fishing/tick
 execute if score L content_lock.timer1 matches 4 as @a run function content_lock:player/levels/check_level
 execute as @a run function content_lock:player/levels/check_triggers
 execute if entity @r[scores={content_lock.spoken_with_villager=1..}] as @a[scores={content_lock.spoken_with_villager=1..}] run function content_lock:player/passives/check_for_villager_spoken
