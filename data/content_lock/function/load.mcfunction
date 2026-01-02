@@ -168,6 +168,7 @@ scoreboard objectives add content_lock.fishing.temp1 dummy
 scoreboard objectives add content_lock.fishing.temp2 dummy
 scoreboard objectives add content_lock.fishing.is_fishing minecraft.used:minecraft.fishing_rod
 scoreboard objectives add content_lock.fishing.stress dummy
+scoreboard objectives add content_lock.fishing.display dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
