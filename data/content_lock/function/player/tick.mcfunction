@@ -32,7 +32,7 @@ execute if entity @r[scores={content_lock.item_use_cooldown=1..}] as @a[scores={
 execute if score L content_lock.timer1 matches 7 run function content_lock:player/ticks/tick7
 
 execute if entity @r[scores={content_lock.enchantment.bloodthirst=1..}] as @a[scores={content_lock.enchantment.bloodthirst=1..}] run function content_lock:player/enchantments/bloodthirst/remove_bonus
-execute if entity @r[scores={content_lock.enchantment.combat_knowledge=1..}] as @a[scores={content_lock.enchantment.combat_knowledge=1..}] run function content_lock:player/enchantments/combat_knowledge/remove_bonus
+#execute if entity @r[scores={content_lock.enchantment.combat_knowledge=1..}] as @a[scores={content_lock.enchantment.combat_knowledge=1..}] run function content_lock:player/enchantments/combat_knowledge/remove_bonus
 
 execute if entity @r[tag=content_lock.enchantment.faura,tag=!content_lock.enchantment.faura] as @a[tag=content_lock.enchantment.faura.stats,tag=!content_lock.enchantment.faura] run function content_lock:player/enchantments/faura/remove_stats
 execute if entity @r[tag=content_lock.enchantment.immovable.stats,tag=!content_lock.enchantment.immovable] as @a[tag=content_lock.enchantment.immovable.stats,tag=!content_lock.enchantment.immovable] run function content_lock:player/enchantments/immovable/remove_stats

@@ -72,7 +72,7 @@
                 "minecraft:rarity": "rare",
                 "minecraft:consumable": {
                   "consume_seconds": 62578963,
-                  "animation": "spear",
+                  "animation": "trident",
                   "has_consume_particles": false
                 },
                 "minecraft:custom_name": "{\"translate\":\"content_lock:item.mays_anchor\",\"italic\": false}",

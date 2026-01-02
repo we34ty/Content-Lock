@@ -193,7 +193,7 @@
                   ]
                 },
                 "consumable": {
-                  "animation": "spear",
+                  "animation": "trident",
                   "consume_seconds": 36747893729,
                   "has_consume_particles": false
                 },
