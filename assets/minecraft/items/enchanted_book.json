@@ -1,0 +1,30 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:witchs_book"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/witchs_book"
+		  }
+		},
+		{
+		  "when":[
+			"content_lock:undead_book"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/undead_book"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/enchanted_book"
+	  }
+	}
+  }

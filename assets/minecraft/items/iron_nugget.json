@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:guardian_heart"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/items/guardian_heart"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/iron_nugget"
+	  }
+	}
+  }

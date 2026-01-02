@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/ender_pearl",
+  "textures": {
+    "layer0": "content_lock:item/deathridereye"
+  }
+}

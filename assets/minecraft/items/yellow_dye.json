@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:riders_eye"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/items/riders_eye"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/yellow_dye"
+	  }
+	}
+  }

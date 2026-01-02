@@ -198,6 +198,11 @@
                 "minecraft:custom_data": {
                   "guardian_heart": true
                 },
+                "custom_model_data":{
+                  "strings": [
+                    "content_lock:guardian_heart"
+                  ]
+                },
                 "minimum_attack_charge": 1,
                 "item_name": {
                   "translate": "content_lock:item.guardian_heart",

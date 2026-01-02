@@ -81,7 +81,11 @@
                 "minecraft:custom_data": {
                   "content_lock.riders_eye": true
                 },
-                "item_model": "spider_eye",
+                "custom_model_data":{
+                  "strings": [
+                    "content_lock:riders_eye"
+                  ]
+                },
                 "enchantment_glint_override": true,
                 "consumable": {
                   "animation": "spyglass",

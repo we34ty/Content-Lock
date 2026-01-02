@@ -19,7 +19,9 @@
                 "custom_data": {
                   "content_lock.magical_dust": true
                 },
-                "item_name": "{\"translate\":\"content_lock:item.magic_powder\"}",
+                "item_name": {
+                  "translate": "content_lock:item.magic_powder"
+                },
                 "item_model": "blaze_powder"
               }
             },
@@ -132,6 +134,11 @@
                 "item_name": {
                   "translate": "content_lock:item.witchs_book",
                   "color": "#d400ff"
+                },
+                "custom_model_data": {
+                  "strings": [
+                    "content_lock:witchs_book"
+                  ]
                 }
               }
             },
