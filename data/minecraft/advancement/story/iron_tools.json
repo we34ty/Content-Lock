@@ -1,5 +1,5 @@
 {
-  "parent": "content_lock:adventure/iron_upgrade",
+  "parent": "content_lock:adventure/stone_upgrade",
   "criteria": {
     "iron_pickaxe": {
       "conditions": {

@@ -160,6 +160,8 @@
     "content_lock:advancement.netherite_tools.description": "Combine iron tools with netherite to increase their durability",
     "content_lock:advancement.diamond_tools.title": "Lucky Star",
     "content_lock:advancement.diamond_tools.description": "Turn your golden tools into diamond",
+    "content_lock:advancement.copper_tools.title": "Gimmick Girl",
+    "content_lock:advancement.copper_tools.description": "Give one of your wooden tools a copper coating",
     "content_lock:notifications.too_many_skipped_nights": "You have skipped too many nights in a row! The next 3 nights will be restless.",
     "content_lock:notifications.boss_already_exists": "Only one boss can be summoned at a time.",
     "content_lock:notifications.can_only_spawn_at_night": "Cannot perform this action during the day.",

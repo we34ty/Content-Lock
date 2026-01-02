@@ -1,51 +1,51 @@
 {
-  "parent": "content_lock:adventure/copper_tools",
+  "parent": "content_lock:adventure/stone_upgrade",
   "criteria": {
-    "golden_pickaxe": {
+    "copper_pickaxe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:golden_pickaxe"
+            "items": "minecraft:copper_pickaxe"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "golden_axe": {
+    "copper_axe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:golden_axe"
+            "items": "minecraft:copper_axe"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "golden_hoe": {
+    "copper_hoe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:golden_hoe"
+            "items": "minecraft:copper_hoe"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "golden_shovel": {
+    "copper_shovel": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:golden_shovel"
+            "items": "minecraft:copper_shovel"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "golden_sword": {
+    "copper_sword": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:golden_sword"
+            "items": "minecraft:copper_sword"
           }
         ]
       },
@@ -54,23 +54,23 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.golden_tools.description"
+      "translate": "content_lock:advancement.copper_tools.description"
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:golden_pickaxe"
+      "id": "minecraft:copper_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.golden_tools.title"
+      "translate": "content_lock:advancement.copper_tools.title"
     }
   },
   "requirements": [
     [
-      "golden_pickaxe",
-      "golden_axe",
-      "golden_hoe",
-      "golden_shovel",
-      "golden_sword"
+      "copper_pickaxe",
+      "copper_axe",
+      "copper_hoe",
+      "copper_shovel",
+      "copper_sword"
     ]
   ],
   "rewards": {

@@ -160,6 +160,8 @@
     "content_lock:advancement.netherite_tools.description": "Połącz swoje żelazne narzędzie z netherytem, aby zwiększyć jego wytrzymałość",
     "content_lock:advancement.diamond_tools.title": "Za ostatni grosz",
     "content_lock:advancement.diamond_tools.description": "Zamień swoje złote narzędzie w diament",
+    "content_lock:advancement.copper_tools.title": "Kryzysowa narzeczona",
+    "content_lock:advancement.copper_tools.description": "Nadaj jednemu ze swoich drewnianych narzędzi miedzianą powłokę",
     "content_lock:notifications.too_many_skipped_nights": "Pominąłeś zbyt wiele nocy pod rząd! Przez 3 kolejne noce nie zaznasz spoczynku.",
     "content_lock:notifications.boss_already_exists": "Tylko jeden Boss może istnieć w tym samym czasie.",
     "content_lock:notifications.can_only_spawn_at_night": "Nie można wykonać tej akcji podczas dnia.",
