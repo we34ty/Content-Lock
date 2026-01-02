@@ -5,5 +5,5 @@ $execute rotated $(yaw) 0 positioned ^ ^ ^0.2 unless block ~ ~-0.2 ~ #water_fill
 
 $execute if entity @p[tag=content_lock.fishing.hooked_tag,distance=3..10] rotated $(yaw) 0 run tp @s ^ ^ ^0.2
 execute if entity @p[tag=content_lock.fishing.hooked_tag,distance=10.1..] facing entity @p[tag=content_lock.fishing.hooked_tag] feet rotated ~ 0 run tp @s ^ ^ ^0.2
-execute unless entity @p[tag=content_lock.fishing.hooked_tag,distance=..2.9] facing entity @p[tag=content_lock.fishing.hooked_tag] feet rotated ~180 0 run tp @s ^ ^ ^0.2
+execute if entity @p[tag=content_lock.fishing.hooked_tag,distance=..2.9] facing entity @p[tag=content_lock.fishing.hooked_tag] feet rotated ~180 0 run tp @s ^ ^ ^0.2
 tp @n[tag=content_lock.fishing.bobber] @s
