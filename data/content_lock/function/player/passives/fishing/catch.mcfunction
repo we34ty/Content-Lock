@@ -1,4 +1,4 @@
-execute as @e[tag=content_lock.fishing.fish] at @s unless entity @n[tag=content_lock.fishing.bobber,distance=..0.3] run tag @s add content_lock.fishing.fish.current
+execute as @e[tag=content_lock.fishing.fish] at @s unless entity @n[type=fishing_bobber,distance=..1] run tag @s add content_lock.fishing.fish.current
 execute at @n[tag=content_lock.fishing.fish.current] run loot spawn ~ ~ ~ fish gameplay/fishing ~ ~-0.2 ~
 execute at @n[tag=content_lock.fishing.fish.current] as @e[type=item,distance=..1] run function content_lock:player/passives/fishing/loot
 
@@ -6,6 +6,7 @@ execute at @n[tag=content_lock.fishing.fish.current] run particle splash ~ ~-0.1
 execute at @n[tag=content_lock.fishing.fish.current] run playsound entity.tropical_fish.hurt neutral @a ~ ~ ~ 1 1
 
 kill @e[tag=content_lock.fishing.fish.current]
+kill @e[tag=content_lock.fishing.bobber]
 tag @s remove content_lock.fishing.hooked_fish
 tag @s remove content_lock.fishing
 
