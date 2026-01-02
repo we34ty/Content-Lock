@@ -15,9 +15,10 @@ execute if entity @s[tag=content_lock.fishing.hooked_fish,tag=content_lock.fishi
 execute at @n[tag=content_lock.fishing.bobber] run tag @n[tag=content_lock.fishing.fish] add content_lock.fishing.fish.current
 execute as @n[tag=content_lock.fishing.fish.current] at @s run function content_lock:player/passives/fishing/fish
 
-summon area_effect_cloud ~ ~ ~ {Tags:[content_lock.fishing.look_fish],custom_particle:{type:"block",block_state:"air"},Duration:0}
-execute as @e[tag=content_lock.fishing.look_fish,limit=1,sort=nearest] at @s run rotate @s facing entity @n[tag=content_lock.fishing.fish.current] feet
-execute anchored eyes rotated as @e[tag=content_lock.fishing.look_fish,limit=1,sort=nearest] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^120 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
+#summon area_effect_cloud ~ ~ ~ {Tags:[content_lock.fishing.look_fish],custom_particle:{type:"block",block_state:"air"},Duration:0}
+#execute as @n[tag=content_lock.fishing.look_fish] at @s run rotate @s facing entity @n[tag=content_lock.fishing.fish.current] feet
+#execute anchored eyes rotated as @n[tag=content_lock.fishing.look_fish] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^120 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
+#kill @e[type=area_effect_cloud,tag=content_lock.fishing.look_fish]
 
 execute store result score @s content_lock.fishing.pitch run data get entity @s Rotation[1]
 execute facing entity @n[tag=content_lock.fishing.fish.current] eyes rotated ~ 0 run summon armor_stand ~ ~ ~ {Tags:["content_lock.fishing.anchor"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Small:1b}
@@ -29,10 +30,10 @@ execute if score @s content_lock.fishing.yaw matches ..-1 run scoreboard players
 execute if score @s content_lock.fishing.temp1 matches ..-1 run scoreboard players add @s content_lock.fishing.temp1 360
 scoreboard players operation @s content_lock.fishing.yaw -= @s content_lock.fishing.temp1
 
-execute unless score @s content_lock.fishing.yaw matches -5..5 run scoreboard players add @s content_lock.fishing.stress 2
-execute unless score @s content_lock.fishing.yaw matches -5..5 run scoreboard players remove @s content_lock.fishing.progress 2
+execute unless score @s content_lock.fishing.yaw matches -15..15 run scoreboard players add @s content_lock.fishing.stress 2
+execute unless score @s content_lock.fishing.yaw matches -15..15 run scoreboard players remove @s content_lock.fishing.progress 2
+execute if score @s content_lock.fishing.yaw matches -10..10 run scoreboard players add @s content_lock.fishing.progress 1
 execute if score @s content_lock.fishing.yaw matches -5..5 run scoreboard players add @s content_lock.fishing.progress 1
-execute if score @s content_lock.fishing.yaw matches -2..2 run scoreboard players add @s content_lock.fishing.progress 1
 
 execute if score @s content_lock.fishing.pitch matches ..-20 run scoreboard players add @s content_lock.fishing.stress 2
 execute if score @s content_lock.fishing.pitch matches ..-20 run scoreboard players add @s content_lock.fishing.progress 3
@@ -52,7 +53,7 @@ execute if score @s content_lock.fishing.progress matches 250.. run tag @s add c
 execute if entity @s[tag=content_lock.fishing.switch_around] if score @s content_lock.fishing.progress matches ..249 run tag @s remove content_lock.fishing.switch_around
 
 execute if score @s content_lock.fishing.stress matches 100.. run function content_lock:player/passives/fishing/fish_break
-execute if score @s content_lock.fishing.timer matches ..-300 run function content_lock:player/passives/fishing/fish_free
-execute if score @s content_lock.fishing.progress matches ..-100 run function content_lock:player/passives/fishing/fish_free
+execute if score @s content_lock.fishing.timer matches ..-700 run function content_lock:player/passives/fishing/fish_free
+execute if score @s content_lock.fishing.progress matches ..-1 run scoreboard players set @s content_lock.fishing.progress 0
 
 function content_lock:player/passives/fishing/display
