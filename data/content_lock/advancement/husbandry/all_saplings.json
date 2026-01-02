@@ -105,6 +105,19 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "azalea": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "azalea",
+              "flowering_azalea"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
@@ -134,6 +147,9 @@
     ],
     [
       "spruce_sapling"
+    ],
+    [
+      "azalea"
     ]
   ],
   "rewards": {
