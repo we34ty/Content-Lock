@@ -143,6 +143,12 @@
         "weight": 20
       },
       {
+        "type": "minecraft:parched",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 20
+      },
+      {
         "type": "minecraft:creeper",
         "maxCount": 2,
         "minCount": 1,

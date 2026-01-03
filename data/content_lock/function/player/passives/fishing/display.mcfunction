@@ -1,6 +1,6 @@
-execute if score @s content_lock.fishing.stress matches ..29 run title @s subtitle {score:{name:"@s",objective:"content_lock.fishing.stress"},color:"green"}
-execute if score @s content_lock.fishing.stress matches 30..74 run title @s subtitle {score:{name:"@s",objective:"content_lock.fishing.stress"},color:"yellow"}
-execute if score @s content_lock.fishing.stress matches 75.. run title @s subtitle {score:{name:"@s",objective:"content_lock.fishing.stress"},color:"red"}
+execute if score @s content_lock.fishing.stress matches ..29 run title @s subtitle [{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"green"},{"text":"%",color:"green"}]
+execute if score @s content_lock.fishing.stress matches 30..74 run title @s subtitle [{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"yellow"},{"text":"%",color:"yellow"}]
+execute if score @s content_lock.fishing.stress matches 75.. run title @s subtitle [{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"red"},{"text":"%",color:"red"}]
 
 execute if score @s content_lock.fishing.display matches 2.. run scoreboard players set @s content_lock.fishing.display 0
 

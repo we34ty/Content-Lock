@@ -42,6 +42,7 @@
     "minecraft:warden",
     "minecraft:wandering_trader",
     "minecraft:bat",
-    "minecraft:creaking"
+    "minecraft:creaking",
+    "minecraft:parched"
    ]
 }

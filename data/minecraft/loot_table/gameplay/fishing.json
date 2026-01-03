@@ -37,6 +37,78 @@
         {
           "type": "minecraft:loot_table",
           "quality": 1,
+          "value": "minecraft:gameplay/fishing/lava",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "#lava"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "minecraft:gameplay/fishing/beach",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#is_beach"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "minecraft:gameplay/fishing/ocean",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#is_ocean"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "minecraft:gameplay/fishing/ocean",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#is_forest"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "minecraft:gameplay/fishing/mountain",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#is_mountain"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
           "value": "minecraft:gameplay/fishing/underground_pond",
           "weight": 20,
           "conditions": [
@@ -60,38 +132,23 @@
               "condition":"any_of",
               "terms": [
                 {
-                  "condition":"all_of",
+                  "condition":"any_of",
                   "terms": [
                     {
-                      "condition":"any_of",
-                      "terms": [
-                        {
-                          "condition": "time_check",
-                          "value": {
-                            "min": 12000,
-                            "max": 24000
-                          },
-                          "period": 24000
-                        },
-                        {
-                          "condition": "weather_check",
-                          "raining": true
-                        },
-                        {
-                          "condition": "weather_check",
-                          "thundering": true
-                        }
-                      ]
+                      "condition": "time_check",
+                      "value": {
+                        "min": 12000,
+                        "max": 24000
+                      },
+                      "period": 24000
                     },
                     {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
-                      "predicate": {
-                        "type_specific": {
-                          "type": "minecraft:fishing_hook",
-                          "in_open_water": true
-                        }
-                      }
+                      "condition": "weather_check",
+                      "raining": true
+                    },
+                    {
+                      "condition": "weather_check",
+                      "thundering": true
                     }
                   ]
                 },

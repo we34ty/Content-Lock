@@ -29,6 +29,7 @@
     "content_lock:item.glow_salad": "Świecąca sałatka",
     "content_lock:item.silver_tape": "Silver Tape",
     "content_lock:item.better_tnt": "Wybuchowa Beczka",
+    "content_lock:item.fishing_rod.lore": "Nie pozwól, aby naprężenie było zbyt wysokie!",
     "content_lock:item.smithing_template.snout_armor_trim.applies_to": "Kolcze, Kamienne i Miedziane Wyposażenie",
     "content_lock:item.smithing_template.snout_armor_trim.ingredients": "Sztabka Żelaza lub Sztabka Złota",
     "content_lock:item.smithing_template.wild_armor_trim.applies_to": "Skórzane i Drewniane Wyposażenie",

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "minecraft:string"
+  },
+  "pattern": [
+    "  #",
+    " #X",
+    "# X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:fishing_rod",
+    "components": {
+      "max_damage": 64,
+      "lore": [
+        {
+          "translate": "content_lock:item.fishing_rod.lore",
+          "color": "gray"
+        }
+      ]
+    }
+  }
+}
