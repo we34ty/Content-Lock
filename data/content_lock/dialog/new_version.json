@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "content_lock:dialogue.new_version.title"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.new_version.0322"
+      },
+      "width": 400
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": {
+        "translate": "content_lock:dialogue.close"
+      },
+      "width": 100
+    }
+  ]
+}

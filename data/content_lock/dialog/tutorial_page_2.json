@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "content_lock:dialogue.tutorial.title"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page2.text"
+      },
+      "width": 400
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": {
+        "translate": "content_lock:dialogue.previous_page"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "content_lock:tutorial_page_1"
+      }
+    },
+    {
+      "label": {
+        "translate": "content_lock:dialogue.next_page"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "content_lock:tutorial_page_3"
+      }
+    },
+    {
+      "label": {
+        "translate": "content_lock:dialogue.close"
+      },
+      "width": 100
+    }
+  ]
+}

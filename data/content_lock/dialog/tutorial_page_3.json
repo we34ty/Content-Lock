@@ -1,0 +1,288 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "content_lock:dialogue.tutorial.title"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page3.text1"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "wooden_pickaxe",
+        "components": {
+          "minecraft:attribute_modifiers": [
+            {
+              "type": "minecraft:attack_damage",
+              "id": "content_lock.basic_weapon_stats",
+              "amount": 7.3,
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "type": "minecraft:attack_speed",
+              "id": "content_lock.basic_weapon_stats",
+              "amount": -3.2,
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "type": "minecraft:entity_interaction_range",
+              "id": "content_lock.basic_weapon_stats",
+              "amount": -0.1,
+              "operation": "add_multiplied_base",
+              "slot": "mainhand"
+            },
+            {
+              "type": "minecraft:attack_knockback",
+              "id": "content_lock.basic_weapon_stats",
+              "amount": 0.6,
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "type": "minecraft:movement_efficiency",
+              "id": "content_lock.basic_weapon_stats",
+              "amount": 0.03,
+              "operation": "add_value",
+              "slot": "mainhand"
+            }
+          ],
+          "minimum_attack_charge": 1,
+        "minecraft:max_damage": 147,
+        "minecraft:tool": {
+          "rules": [
+            {
+              "blocks": "#minecraft:mineable/pickaxe",
+              "speed": 2,
+              "correct_for_drops": true
+            }
+          ],
+          "default_mining_speed": 0.5,
+          "damage_per_block": 0
+        }
+        }
+      },
+      "show_decorations": true,
+      "width": 60,
+      "height": 8
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "stone_pickaxe",
+        "components": {
+          "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 14.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.1,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.05,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 75,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/pickaxe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+        }
+      },
+      "show_decorations": true,
+      "width": 40,
+      "height": 8
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "copper_pickaxe",
+        "components": {
+          "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 9.8,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.14,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.1,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.05,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 163,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#mineable/pickaxe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+        }
+      },
+      "show_decorations": true,
+      "height": 8
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page3.text2"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "smithing_table"
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page3.smithing_table_description",
+        "color": "gray"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page3.text3"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "wild_armor_trim_smithing_template"
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page3.stone_upgrade_description",
+        "color": "gray"
+      },
+      "show_tooltip": false,
+      "show_decorations": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "snout_armor_trim_smithing_template"
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page3.iron_upgrade_description",
+        "color": "gray"
+      },
+      "show_tooltip": false,
+      "show_decorations": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "netherite_upgrade_smithing_template"
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page3.netherite_upgrade_description",
+        "color": "gray"
+      },
+      "show_tooltip": false,
+      "show_decorations": false
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": {
+        "translate": "content_lock:dialogue.previous_page"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "content_lock:tutorial_page_2"
+      }
+    },
+    {
+      "label": {
+        "translate": "content_lock:dialogue.next_page"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "content_lock:tutorial_page_4"
+      }
+    },
+    {
+      "label": {
+        "translate": "content_lock:dialogue.close"
+      },
+      "width": 100
+    }
+  ]
+}

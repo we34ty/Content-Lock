@@ -2,13 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern":[
-    "###",
+    "#P#",
     "XOX"
   ],
   "key": {
     "#":"rotten_flesh",
-    "X":"iron_ingot",
-    "O":"glass_bottle"
+    "X":"gold_block",
+    "O":"glass_bottle",
+    "P":"jack_o_lantern"
   },
   "result": {
     "count": 1,

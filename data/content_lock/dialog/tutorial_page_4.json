@@ -1,0 +1,161 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "content_lock:dialogue.tutorial.title"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page4.text1"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "pink_dye",
+        "components": {
+          "custom_data": {
+            "content_lock.iron_guardian_summon": true
+          },
+          "item_name": [{"translate":"content_lock:item.boss_summon.iron_guardian"}],
+          "item_model": "minecraft:furnace",
+          "consumable": {
+            "animation": "drink",
+            "consume_seconds": 42342534
+          },
+          "rarity": "uncommon",
+          "enchantment_glint_override": true,
+          "max_stack_size": 1
+        }
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page4.iron_guardian_description",
+        "color": "gray"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page4.text2"
+      },
+      "width": 400
+    },
+    {
+      "type": "item",
+      "item": {
+        "id": "pink_dye",
+        "components": {
+          "custom_data": {
+           "content_lock.enchanted_witch_summon": true
+          },
+          "item_name": [{"translate":"content_lock:item.boss_summon.enchanted_witch"}],
+          "item_model": "minecraft:ominous_bottle",
+          "consumable": {
+            "animation": "drink",
+            "consume_seconds": 42342534
+          },
+          "rarity": "uncommon",
+          "enchantment_glint_override": true,
+          "max_stack_size": 1
+        }
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page4.enchanted_witch_description",
+        "color": "gray"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page4.text3"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "pink_dye",
+        "components": {
+          "custom_data": {
+            "content_lock.death_rider_summon": true
+          },
+          "item_name": [{"translate":"content_lock:item.boss_summon.death_rider"}],
+          "item_model": "minecraft:ominous_bottle",
+          "consumable": {
+            "animation": "drink",
+            "consume_seconds": 42342534
+          },
+          "rarity": "uncommon",
+          "max_stack_size": 1
+        }
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page4.death_rider_description",
+        "color": "gray"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "content_lock:dialogue.tutorial.page4.text4"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "pink_dye",
+        "components": {
+          "custom_data": {
+            "content_lock.zombified_piglin_princess_summon": true
+          },
+          "item_name": [{"translate":"content_lock:item.boss_summon.zombified_piglin_princess"}],
+          "item_model": "minecraft:nether_star",
+          "consumable": {
+            "animation": "drink",
+            "consume_seconds": 42342534
+          },
+          "rarity": "rare",
+          "max_stack_size": 1
+        }
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page4.zombified_piglin_princess_description",
+        "color": "gray"
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": {
+        "translate": "content_lock:dialogue.previous_page"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "content_lock:tutorial_page_3"
+      }
+    },
+    {
+      "label": {
+        "translate": "content_lock:dialogue.next_page"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "content_lock:tutorial_page_5"
+      }
+    },
+    {
+      "label": {
+        "translate": "content_lock:dialogue.close"
+      },
+      "width": 100
+    }
+  ]
+}

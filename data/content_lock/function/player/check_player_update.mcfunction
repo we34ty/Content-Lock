@@ -1,10 +1,15 @@
 function content_lock:player/passives/died
 
+dialog show @s content_lock:new_version
+execute unless entity @s[tag=content_lock.initialized] run dialog show @s content_lock:begin
+execute unless entity @s[tag=content_lock.initialized] run tag @s add content_lock.initialized
+
 #attribute @s oxygen_bonus modifier add basic_stats -10 add_value
 scoreboard players set @s content_lock.max_stamina 400
 scoreboard players set @s content_lock.stamina_delay 50
 scoreboard players set @s content_lock.stamina_delay_timer 0
 scoreboard players set @s content_lock.bleed_stacks 0
+scoreboard players set @s content_lock.respawn_timer 0
 tag @s remove content_lock.bleed_active
 scoreboard players set @s content_lock.corruption_meter 0
 scoreboard players set @s content_lock.frostbite_stacks 0
