@@ -1,3 +1,4 @@
+data merge entity @s {PickupDelay:0}
 execute facing entity @p[tag=content_lock.fishing.hooked_tag] eyes positioned ^ ^ ^1 run summon area_effect_cloud ~ ~ ~ {Tags:["content_lock.fishing.loot_motion"],custom_particle:{type:"block",block_state:"air"},Duration:0}
 execute store result score @s content_lock.temp1 positioned ^ ^ ^1 run data get entity @e[tag=content_lock.fishing.loot_motion,limit=1,sort=nearest] Pos[0] 100
 execute store result score @s content_lock.temp2 run data get entity @s Pos[0] 100
