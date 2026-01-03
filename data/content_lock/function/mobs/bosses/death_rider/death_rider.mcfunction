@@ -23,8 +23,9 @@ execute if entity @s[tag=content_lock.death_rider.throw_zombie_head] run functio
 execute if entity @s[tag=content_lock.death_rider.spin_teleport] run function content_lock:mobs/bosses/death_rider/spin_teleport
 execute if entity @s[tag=content_lock.death_rider.rush_without_horse] run function content_lock:mobs/bosses/death_rider/rush_without_horse
 
+execute if score L content_lock.timer1 matches 7 as @e[tag=content_lock.death_rider_horse] run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
-function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.death_rider",duration:3140}
+function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.death_rider",duration:157}
 function content_lock:mobs/bosses/boss_bars/death_rider
 
 scoreboard players add @s content_lock.attack_timer 0

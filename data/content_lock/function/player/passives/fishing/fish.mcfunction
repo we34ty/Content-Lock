@@ -1,4 +1,4 @@
-execute unless block ~ ~-0.2 ~ #water_filled run return run kill @s
+execute unless block ~ ~-0.2 ~ #water_filled as @p[tag=content_lock.fishing.hooked_tag] run return run function content_lock:player/passives/fishing/fish_free
 
 execute store result score @s content_lock.fishing.temp1 run random value -20..20
 scoreboard players operation @s content_lock.fishing.yaw += @s content_lock.fishing.temp1

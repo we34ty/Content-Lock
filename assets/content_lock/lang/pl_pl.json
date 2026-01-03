@@ -181,6 +181,8 @@
     "content_lock:notifications.progression.2": "Czujesz, że płomienie netheru przygasły.",
     "content_lock:notifications.progression.3": "content_lock:notifications.progression.3",
     "content_lock:notifications.wandering_trader.arrival": "Wędrowny handlarz przybył.",
+    "content_lock:notifications.respawn.countdown": "Odrodzenie za  ",
+    "content_lock:notifications.respawn.ready": "Gotowe",
     "content_lock:options.player.limited_boss_respawn": "Ogranicz odrodzenia graczy podczas bossów ",
     "content_lock:options.player.limited_boss_respawn.description": "Kiedy ta opcja jest włączona gracze, którzy umrą niedaleko bossa zostają przełączeni w tryb obserwatora tak długo jak on żyje.",
     "content_lock:options.player.bleed": "Krwawienie ",

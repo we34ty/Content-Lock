@@ -3,6 +3,7 @@ tag @e remove content_lock.fishing.fish.current
 tag @e remove content_lock.fishing.bobber
 tag @s add content_lock.fishing.hooked_tag
 execute as @e[type=fishing_bobber] at @s on origin if entity @s[tag=content_lock.fishing.hooked_tag] run tag @n[type=fishing_bobber,distance=..0.1] add content_lock.fishing.bobber
+execute unless entity @s[tag=content_lock.fishing.hooked_fish] if entity @n[tag=content_lock.fishing.bobber] at @n[tag=content_lock.fishing.bobber] unless block ~ ~-0.2 ~ #water_filled run return run function content_lock:player/passives/fishing/no_water
 execute unless entity @s[tag=content_lock.fishing.hooked_fish] unless entity @n[tag=content_lock.fishing.bobber] run return run function content_lock:player/passives/fishing/fish_free
 execute unless entity @s[tag=content_lock.fishing.hooked_fish] at @n[tag=content_lock.fishing.bobber] run summon marker ~ ~ ~ {Tags:["content_lock.fishing.fish","content_lock.fishing.fish.current"]}
 execute unless entity @s[tag=content_lock.fishing.hooked_fish] store result score @n[tag=content_lock.fishing.fish] content_lock.fishing.yaw run random value -180..180

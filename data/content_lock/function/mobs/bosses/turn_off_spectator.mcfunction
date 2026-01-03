@@ -1,5 +1,6 @@
 tag @s remove content_lock.spectator
 gamemode survival @s
+scoreboard players set @s content_lock.respawn_timer 0
 
 data merge storage content_lock:saved_stats {x:0,y:63,z:0,dimension:"minecraft:overworld"}
 execute store result storage content_lock:saved_stats x double 1 run data get entity @s respawn.pos[0]

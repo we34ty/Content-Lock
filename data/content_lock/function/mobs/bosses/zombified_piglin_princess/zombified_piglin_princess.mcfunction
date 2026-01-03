@@ -20,8 +20,8 @@ execute if entity @s[tag=content_lock.zombified_piglin_princess.volcanic_viper] 
 execute if entity @s[tag=content_lock.zombified_piglin_princess.gunflame] run function content_lock:mobs/bosses/zombified_piglin_princess/gunflame
 
 execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
-execute if entity @s[tag=content_lock.zombified_piglin_princess.phase2] run function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.corrupted_princess",duration:3940}
-execute unless entity @s[tag=content_lock.zombified_piglin_princess.phase2] run function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.corrupted_princess_enemies",duration:3860}
+execute if entity @s[tag=content_lock.zombified_piglin_princess.phase2] run function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.corrupted_princess",duration:197}
+execute unless entity @s[tag=content_lock.zombified_piglin_princess.phase2] run function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.corrupted_princess_enemies",duration:193}
 function content_lock:mobs/bosses/boss_bars/zombified_piglin_princess
 
 scoreboard players add @s content_lock.attack_timer 0

@@ -181,6 +181,8 @@
     "content_lock:notifications.progression.2": "You feel the flames of Nether have died down.",
     "content_lock:notifications.progression.3": "content_lock:notifications.progression.3",
     "content_lock:notifications.wandering_trader.arrival": "A wandering trader has arrived.",
+    "content_lock:notifications.respawn.countdown": "Respawning in ",
+    "content_lock:notifications.respawn.ready": "Ready",
     "content_lock:options.player.limited_boss_respawn": "Limit player respawns at bosses ",
     "content_lock:options.player.limited_boss_respawn.description": "When enabled players that died near a boss go into spectator mode for the time it stays alive.",
     "content_lock:options.player.bleed": "Bleed ",
