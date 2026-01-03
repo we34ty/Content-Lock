@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    "soul_sand",
+    "soul_soil"
+  ],
+  "result": {
+    "id": "minecraft:red_stained_glass"
+  },
+  "cookingtime": 200,
+  "category": "blocks"
+}
