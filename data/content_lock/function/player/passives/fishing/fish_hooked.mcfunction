@@ -53,6 +53,7 @@ execute if entity @s[tag=!content_lock.fishing.switch_around] if score @s conten
 execute if score @s content_lock.fishing.progress matches 250.. run tag @s add content_lock.fishing.switch_around
 execute if entity @s[tag=content_lock.fishing.switch_around] if score @s content_lock.fishing.progress matches ..249 run tag @s remove content_lock.fishing.switch_around
 
+execute if score @s content_lock.fishing.stress matches 101.. run scoreboard players set @s content_lock.fishing.stress 100
 execute if score @s content_lock.fishing.stress matches 100.. run function content_lock:player/passives/fishing/fish_break
 execute if score @s content_lock.fishing.timer matches ..-700 run function content_lock:player/passives/fishing/fish_free
 execute if score @s content_lock.fishing.progress matches ..-1 run scoreboard players set @s content_lock.fishing.progress 0

@@ -104,7 +104,7 @@
             {
               "function": "set_components",
               "components": {
-                "max_damage": 64,
+                "max_damage": 32,
                 "lore": [
                   {
                     "translate": "content_lock:item.fishing_rod.lore",

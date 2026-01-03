@@ -14,7 +14,7 @@
     "count": 1,
     "id": "minecraft:fishing_rod",
     "components": {
-      "max_damage": 64,
+      "max_damage": 32,
       "lore": [
         {
           "translate": "content_lock:item.fishing_rod.lore",
