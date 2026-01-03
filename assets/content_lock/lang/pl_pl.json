@@ -188,7 +188,7 @@
     "content_lock:dialogue.next_page": "Następna strona",
     "content_lock:dialogue.previous_page": "Poprzednia strona",
     "content_lock:dialogue.new_version.title": "Content Lock 0.322",
-    "content_lock:dialogue.new_version.0322": " - Dodano nowy dialog informujący graczy o nowej wersji \n - Dodano nowy samouczek \n - Dodano wiadomość powitalną dla nowych graczy \n - Zmieniono przepis na miksturę przyzywającą Jeźdźca Śmierci \n - Dodano nowe łupy składające się ze złota i bloków złota do Jeźdźca Śmierci",
+    "content_lock:dialogue.new_version.0322": " - Dodano nowy dialog informujący graczy o nowej wersji \n - Dodano nowy samouczek \n - Dodano wiadomość powitalną dla nowych graczy \n - Zmieniono przepis na miksturę przyzywającą Jeźdźca Śmierci \n - Dodano nowe łupy składające się ze złota i bloków złota do Jeźdźca Śmierci \n - Dodano timer odrodzenia podczas walki z bossami \n - Naprawiono błąd, w którym gracze nie przechodzili w tryb widza podczas walk z bossami",
     "content_lock:dialogue.begin.title": "Content Lock",
     "content_lock:dialogue.begin.line1": "Witaj w Content Lock! \n Ten datapack modyfikuje progresję Minecrafta, aby uczynić ją bardziej wymagającą i satysfakcjonującą. Przygotuj się na unikalną przygodę, podczas której będziesz poruszać się po nowych mechanikach, bossach, zaklęciach i wielu innych. \n \n To bardzo rozbudowany datapack, więc koniecznie sprawdź swoje osiągnięcia, aby zapoznać się z nowymi funkcjami i ścieżką rozwoju. \n Powodzenia i miłej zabawy!",
     "content_lock:dialogue.begin.open_tutorial": "Samouczek",

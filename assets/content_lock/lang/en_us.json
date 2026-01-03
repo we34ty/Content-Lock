@@ -188,7 +188,7 @@
     "content_lock:dialogue.next_page": "Next Page",
     "content_lock:dialogue.previous_page": "Previous Page",
     "content_lock:dialogue.new_version.title": "Content Lock 0.322",
-    "content_lock:dialogue.new_version.0322": " - Added new dialogue to inform players about the new version \n - Added a new tutorial \n - Added a welcome message for first time players \n - Changed the recipe for Death Rider Summoning Potion \n - Added new loot consisting of gold and gold blocks to Death Rider",
+    "content_lock:dialogue.new_version.0322": " - Added new dialogue to inform players about the new version \n - Added a new tutorial \n - Added a welcome message for first time players \n - Changed the recipe for Death Rider Summoning Potion \n - Added new loot consisting of gold and gold blocks to Death Rider \n - Added a respawn timer when dying during a boss fight \n - Fixed a bug where players wouldn't go into spectator mode during boss fight",
     "content_lock:dialogue.begin.title": "Content Lock",
     "content_lock:dialogue.begin.line1": "Welcome to Content Lock! \n This datapack modifies Minecraft's progression to make it more challenging and rewarding. Prepare yourself for a unique adventure as you navigate through new mechanics, bosses, enchantments and much more. \n \n This is a very extensive datapack, so make sure to check out your advancements to get familiar with new features and progression path. \n Good luck, and have fun!",
     "content_lock:dialogue.begin.open_tutorial": "Tutorial",
