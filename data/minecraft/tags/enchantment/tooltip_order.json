@@ -1,8 +1,11 @@
 {
   "values": [
+    "content_lock:spell",
     "content_lock:charge_time_increase",
     "content_lock:armor_level",
     "content_lock:weapon_level",
+    "content_lock:spell_cooldown",
+    "content_lock:combat_knowledge_resistance",
     "#content_lock:material_specific",
     "minecraft:binding_curse",
     "minecraft:vanishing_curse",

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/cooked_beef",
   "textures": {
-    "layer0": "minecraft:item/pierogi"
+    "layer0": "content_lock:item/food/pierogi"
   }
 }

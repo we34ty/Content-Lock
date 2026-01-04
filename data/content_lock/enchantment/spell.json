@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 1000,
+  "description": {
+    "translate": "content_lock:enchantment.spell",
+    "color": "#ffffff"
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "change_item_damage",
+          "amount": -1
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/weapon",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#content_lock:enchantable/weapon",
+  "weight": 1
+}

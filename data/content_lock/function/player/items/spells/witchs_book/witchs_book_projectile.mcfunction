@@ -16,4 +16,4 @@ execute unless block ~ ~ ~ #walkable run return 0
 execute if score @s content_lock.timer1 matches 20.. run kill @s
 execute if score @s content_lock.timer1 matches 20.. run return 0
 
-$execute facing entity @p[nbt={UUID:$(UUID)}] feet rotated ~180 ~ rotated as @p[nbt={UUID:$(UUID)}] positioned ^ ^ ^1 run function content_lock:player/items/spells/witchs_book_projectile {half_range:$(half_range),range:$(range),UUID:$(UUID),damage:$(damage)}
+$execute facing entity @p[nbt={UUID:$(UUID)}] feet rotated ~180 ~ rotated as @p[nbt={UUID:$(UUID)}] positioned ^ ^ ^1 run function content_lock:player/items/spells/witchs_book/witchs_book_projectile {half_range:$(half_range),range:$(range),UUID:$(UUID),damage:$(damage)}

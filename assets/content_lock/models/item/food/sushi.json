@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/tropical_fish",
   "textures": {
-    "layer0": "minecraft:item/sushi"
+    "layer0": "content_lock:item/food/sushi"
   }
 }

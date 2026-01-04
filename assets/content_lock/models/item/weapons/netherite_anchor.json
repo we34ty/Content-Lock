@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "item/netherite_anchor",
-		"particle": "item/netherite_anchor"
+		"0": "content_lock:item/weapon/netherite_anchor",
+		"particle": "content_lock:item/weapon/netherite_anchor"
 	},
 	"elements": [
 		{

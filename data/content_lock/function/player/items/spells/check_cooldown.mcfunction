@@ -1,0 +1,2 @@
+execute store result score @s content_lock.temp2 run data get entity @s SelectedItem.components."minecraft:damage"
+execute if score @s content_lock.temp2 matches 0 run item modify entity @s weapon.mainhand content_lock:spell_cooldown_remove

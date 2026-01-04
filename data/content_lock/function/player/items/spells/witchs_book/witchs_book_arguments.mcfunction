@@ -1,4 +1,4 @@
-data merge storage content_lock:saved_stats {damage:1.0f,range:1.0f,attack_speed:1,UUID:[]}
+data merge storage content_lock:saved_stats {damage:1.0f,range:1.0f,half_range:1.0f,attack_speed:1,UUID:[]}
 execute store result storage content_lock:saved_stats damage float 0.01 run attribute @s attack_damage get 100
 execute store result storage content_lock:saved_stats range float 0.02 run attribute @s attack_knockback get 1000
 execute store result storage content_lock:saved_stats half_range float 0.01 run attribute @s attack_knockback get 1000
@@ -10,4 +10,4 @@ execute if score @s content_lock.temp2 matches ..1 run scoreboard players set @s
 execute store result storage content_lock:saved_stats attack_speed int 1 run scoreboard players get @s content_lock.temp2
 
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
-function content_lock:player/items/spells/undead_book with storage content_lock:saved_stats
+function content_lock:player/items/spells/witchs_book/witchs_book with storage content_lock:saved_stats

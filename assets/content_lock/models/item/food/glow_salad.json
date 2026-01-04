@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/bowl",
   "textures": {
-    "layer0": "content_lock:item/glowsalad"
+    "layer0": "content_lock:item/food/glowsalad"
   }
 }

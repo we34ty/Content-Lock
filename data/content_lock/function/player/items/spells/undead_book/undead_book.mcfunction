@@ -5,9 +5,7 @@ $execute if score @s content_lock.undead_book_charge matches 1..$(attack_speed) 
 execute if score @s content_lock.undead_book_charge matches 1 run playsound content_lock:item.spell.charging player @a ~ ~ ~ 1 1
 $execute if score @s content_lock.undead_book_charge matches 1..$(attack_speed) positioned ~-$(half_range) ~-$(half_range) ~-$(half_range) as @e[type=!#entities,dx=$(range),dy=$(range),dz=$(range),nbt=!{UUID:$(UUID)}] unless entity @s[nbt={Owner:$(UUID)}] at @s run particle block_crumble{block_state:dirt} ~ ~ ~ 0.5 0.5 0.5 1 10 normal
 $execute if score @s content_lock.undead_book_charge matches 1..$(attack_speed) positioned ~-$(half_range) ~-$(half_range) ~-$(half_range) as @e[type=!#entities,dx=$(range),dy=$(range),dz=$(range),nbt=!{UUID:$(UUID)}] unless entity @s[nbt={Owner:$(UUID)}] run effect give @s slowness 1 0 false
-$execute if score @s content_lock.undead_book_charge matches $(attack_speed) run playsound content_lock:item.spell.undead_book player @a ~ ~ ~ 1 1
-$execute if score @s content_lock.undead_book_charge matches $(attack_speed) run clear @s *[custom_data~{"content_lock.magical_dust":true}] 1
-$execute if score @s content_lock.undead_book_charge matches $(attack_speed) positioned ~-$(half_range) ~-$(half_range) ~-$(half_range) as @e[type=!#entities,dx=$(range),dy=$(range),dz=$(range),nbt=!{UUID:$(UUID)}] unless entity @s[nbt={Owner:$(UUID)}] run damage @s $(damage) fly_into_wall by @p[nbt={UUID:$(UUID)}]
+$execute if score @s content_lock.undead_book_charge matches $(attack_speed) run function content_lock:player/items/spells/undead_book/undead_book_ready {half_range:$(half_range),range:$(range),UUID:$(UUID),damage:$(damage)}
 scoreboard players set @s content_lock.temp1 14
 scoreboard players operation @s content_lock.temp2 = @s content_lock.undead_book_charge
 scoreboard players operation @s content_lock.temp2 -= @s content_lock.temp1

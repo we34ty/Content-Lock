@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1000,
+  "description": {
+    "translate": "content_lock:enchantment.spell_cooldown",
+    "color": "#a6a6a6",
+    "italic": true
+  },
+  "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_speed",
+        "id": "content_lock.spell_cooldown",
+        "operation": "add_multiplied_total",
+        "amount": -1
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#content_lock:enchantable/weapon",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#content_lock:enchantable/weapon",
+  "weight": 1
+}

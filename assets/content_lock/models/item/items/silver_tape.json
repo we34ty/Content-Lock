@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/mushroom_stew",
   "textures": {
-    "layer0": "minecraft:item/silver_tape"
+    "layer0": "content_lock:item/silver_tape"
   }
 }

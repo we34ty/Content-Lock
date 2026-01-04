@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "item/anchor",
-		"particle": "item/anchor"
+		"0": "content_lock:item/weapon/anchor",
+		"particle": "content_lock:item/weapon/anchor"
 	},
 	"elements": [
 		{

@@ -10,33 +10,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:glistering_melon_slice",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "custom_data": {
-                  "content_lock.magical_dust": true
-                },
-                "item_name": {
-                  "translate": "content_lock:item.magic_powder"
-                },
-                "item_model": "blaze_powder"
-              }
-            },
-            {
-              "function": "set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9,
-                "min": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 1,
           "functions": [
@@ -125,7 +98,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
+          "name": "minecraft:netherite_pickaxe",
           "weight": 2,
           "functions": [
             {
@@ -151,7 +124,11 @@
                   "has_consume_particles": false,
                   "on_consume_effects": []
                 },
-                "minimum_attack_charge": 1
+                "minimum_attack_charge": 1,
+                "max_damage": 200,
+                "enchantments":{
+                  "content_lock:spell": 1
+                }
               }
             },
             {

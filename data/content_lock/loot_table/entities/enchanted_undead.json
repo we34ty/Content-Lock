@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
+          "name": "minecraft:netherite_pickaxe",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -36,6 +36,10 @@
                   "animation": "brush",
                   "has_consume_particles": false,
                   "on_consume_effects": []
+                },
+                "max_damage": 1000,
+                "enchantments": {
+                  "content_lock:spell": 1
                 }
               }
             },

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/bowl",
   "textures": {
-    "layer0": "minecraft:item/chicken_soup"
+    "layer0": "content_lock:item/food/chicken_soup"
   }
 }

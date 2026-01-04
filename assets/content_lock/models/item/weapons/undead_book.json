@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/book",
   "textures": {
-    "layer0": "content_lock:item/nermonomicon"
+    "layer0": "content_lock:item/weapon/nermonomicon"
   }
 }
