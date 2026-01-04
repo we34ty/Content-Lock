@@ -6,6 +6,8 @@
   "effects": {
     "minecraft:post_attack": [
       {
+        "enchanted": "victim",
+        "affected": "victim",
         "requirements": {
           "condition": "minecraft:random_chance",
           "chance": 0.1
@@ -13,9 +15,7 @@
         "effect": {
           "type": "minecraft:run_function",
           "function": "content_lock:player/enchantments/mending"
-        },
-        "enchanted": "victim",
-        "affected": "victim"
+        }
       }
     ]
   },
