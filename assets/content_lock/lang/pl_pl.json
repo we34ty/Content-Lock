@@ -192,7 +192,7 @@
     "content_lock:dialogue.previous_page": "Poprzednia strona",
     "content_lock:dialogue.new_version.title": "Patch Notes",
     "content_lock:dialogue.new_version.0322": "Content Lock 0.322 \n\n - Dodano nowy dialog informujący graczy o nowej wersji \n - Dodano nowy samouczek \n - Dodano wiadomość powitalną dla nowych graczy \n - Zmieniono przepis na miksturę przyzywającą Jeźdźca Śmierci \n - Dodano nowe łupy składające się ze złota i bloków złota do Jeźdźca Śmierci \n - Dodano timer odrodzenia podczas walki z bossami \n - Naprawiono błąd, w którym gracze nie przechodzili w tryb widza podczas walk z bossami \n - Dodano recepturę na szkło z piasku dusz \n",
-    "content_lock:dialogue.new_version.0323": "Content Lock 0.323 \n\n - Zreworkowano system zaklęć \n - Dodano nowe, wytwarzalne zaklęcie: Księga czarów ognistych kul \n - Zmieniono większość dźwięków na mono \n",
+    "content_lock:dialogue.new_version.0323": "Content Lock 0.323 \n\n - Zreworkowano system zaklęć \n - Dodano nowe, wytwarzalne zaklęcie: Księga czarów ognistych kul \n - Zmieniono większość dźwięków na mono, dzięki czemu dźwięk kierunkowy działa na niektóre odgłosy \n",
     "content_lock:dialogue.begin.title": "Content Lock",
     "content_lock:dialogue.begin.line1": "Witaj w Content Lock! \n Ten datapack modyfikuje progresję Minecrafta, aby uczynić ją bardziej wymagającą i satysfakcjonującą. Przygotuj się na unikalną przygodę, podczas której będziesz poruszać się po nowych mechanikach, bossach, zaklęciach i wielu innych. \n \n To bardzo rozbudowany datapack, więc koniecznie sprawdź swoje osiągnięcia, aby zapoznać się z nowymi funkcjami i ścieżką rozwoju. \n Powodzenia i miłej zabawy!",
     "content_lock:dialogue.begin.open_tutorial": "Samouczek",
