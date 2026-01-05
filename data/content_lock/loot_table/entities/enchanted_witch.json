@@ -44,7 +44,8 @@
                 },
                 "repairable": {
                   "items": "#repairs_iron_armor"
-                }
+                },
+                "enchantment_glint_override": false
               }
             }
           ]
