@@ -8,6 +8,8 @@
     "content_lock:guardian_shovel",
     "content_lock:armor_level",
     "content_lock:weapon_level",
-    "content_lock:quickstep_dagger"
+    "content_lock:quickstep_dagger",
+    "content_lock:spell",
+    "content_lock:spell_cooldown"
   ]
 }

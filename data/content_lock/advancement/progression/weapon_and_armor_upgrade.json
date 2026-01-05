@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "enchantment_glint_override": true
+      }
+    },
+    "title": {
+      "translate": "content_lock:advancement.weapon_and_armor_upgrade.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.weapon_and_armor_upgrade.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "content_lock:progression/root",
+  "criteria": {
+    "smithing_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:enchanted_book",
+            "components": {
+              "enchantments": {
+                "content_lock:weapon_level": 1,
+                "content_lock:armor_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "smithing_table"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1_bottle"
+    ]
+  }
+}

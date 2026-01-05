@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "title": {
+      "translate": "content_lock:advancement.spawn_enchanted_witch.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.spawn_enchanted_witch.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "content_lock:progression/spawn_iron_guardian",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1_bottle"
+    ]
+  }
+}

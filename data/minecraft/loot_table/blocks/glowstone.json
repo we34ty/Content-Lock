@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "minecraft:red_mushroom_block"
+              "name": "minecraft:glowstone"
             },
             {
               "type": "minecraft:item",
@@ -35,50 +35,31 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 2,
-                    "min": -2
+                    "max": 4,
+                    "min": 2
                   },
                   "function": "minecraft:set_count"
                 },
                 {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "bonusMultiplier": 1
+                  }
+                },
+                {
                   "function": "minecraft:limit_count",
                   "limit": {
-                    "min": 0
+                    "max": 4,
+                    "min": 1
                   }
                 },
                 {
                   "function": "minecraft:explosion_decay"
-                },
-                {
-                  "function": "set_components",
-                  "components": {
-                    "food": {
-                      "nutrition": 1,
-                      "saturation": 1
-                    },
-                    "consumable": {
-                      "animation": "eat",
-                      "on_consume_effects": [
-                        {
-                          "type": "apply_effects",
-                          "effects": [
-                            {
-                              "id": "poison",
-                              "duration": 100
-                            },
-                            {
-                              "id": "nausea",
-                              "duration": 300
-                            }
-                          ],
-                          "probability": 0.95
-                        }
-                      ]
-                    }
-                  }
                 }
               ],
-              "name": "minecraft:red_mushroom"
+              "name": "minecraft:glowstone_dust"
             }
           ]
         }
@@ -90,14 +71,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:red_mushroom",
+          "name": "minecraft:glowstone_dust",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 3
+                "max": 2
               }
             }
           ],
@@ -117,5 +98,5 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:blocks/red_mushroom_block"
+  "random_sequence": "minecraft:blocks/glowstone"
 }

@@ -68,6 +68,37 @@
         }
       ],
       "rolls": 1
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brown_mushroom",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "components": {
+                  "enchantments": {
+                    "content_lock:alchemical_extractor": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:blocks/brown_mushroom_block"

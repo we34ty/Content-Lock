@@ -1,6 +1,6 @@
 scoreboard objectives add content_lock.content_lock_version dummy
 #version numbver
-scoreboard players set L content_lock.content_lock_version 323
+scoreboard players set L content_lock.content_lock_version 324
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
@@ -316,13 +316,20 @@ execute in minecraft:the_end run gamerule reduced_debug_info false
 gamerule tnt_explosion_drop_decay true
 
 #pretty important
-scoreboard players set L content_lock.temporary_health_holder 1000
+scoreboard players set L content_lock.temp1 10000
+scoreboard players set L content_lock.temp2 100
 scoreboard players operation L content_lock.huhhealth1 = L content_lock.content_lock_version
 scoreboard players operation L content_lock.huhhealth2 = L content_lock.content_lock_version
-scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temporary_health_holder
-scoreboard players operation L content_lock.huhhealth1 *= L content_lock.temporary_health_holder
+scoreboard players operation L content_lock.temp3 = L content_lock.content_lock_version
+scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temp1
+scoreboard players operation L content_lock.huhhealth1 *= L content_lock.temp1
 scoreboard players operation L content_lock.huhhealth2 -= L content_lock.huhhealth1
-scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temporary_health_holder
+scoreboard players operation L content_lock.huhhealth2 /= L content_lock.temp2
+scoreboard players operation L content_lock.huhhealth2 *= L content_lock.temp2
+scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth1
+scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth2
+scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temp1
+scoreboard players operation L content_lock.huhhealth2 /= L content_lock.temp2
 
-tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":" Reloaded","color":"green"}]
+tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"text":" Reloaded","color":"green"}]
 

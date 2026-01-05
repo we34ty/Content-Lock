@@ -16,4 +16,5 @@ execute as @e[type=iron_golem,tag=content_lock.iron_guardian] at @s run spreadpl
 
 tellraw @a [{"translate":"content_lock:notifications.boss_summoned.iron_guardian","color":"light_purple"}]
 clear @s pink_dye[custom_data~{"content_lock.iron_guardian_summon":true}] 1
+advancement grant @s only content_lock:progression/spawn_iron_guardian
 

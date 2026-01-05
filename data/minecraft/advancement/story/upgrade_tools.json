@@ -1,5 +1,5 @@
 {
-  "parent": "content_lock:adventure/stone_upgrade",
+  "parent": "content_lock:progression/stone_upgrade",
   "criteria": {
     "stone_pickaxe": {
       "conditions": {

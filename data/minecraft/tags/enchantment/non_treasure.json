@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "content_lock:splinter",
     "content_lock:cavalry",

@@ -57,11 +57,11 @@ void main() {
         }
     }
     else{
-        if (sky_brightness>0.001){
-            color*=min(1.0,max(sky_brightness+0.5,block_brightness));
+        if (sky_brightness+lightmapInfo.AmbientLightFactor>0.001){
+            color*=min(1.0,max(sky_brightness+lightmapInfo.AmbientLightFactor+0.5,block_brightness));
         }
         else{
-            color*=min(1.0,max(sky_brightness,block_brightness));
+            color*=min(1.0,max(sky_brightness+lightmapInfo.AmbientLightFactor,block_brightness));
         }
     }
 

@@ -1,5 +1,5 @@
 {
-  "parent": "content_lock:adventure/copper_tools",
+  "parent": "content_lock:progression/copper_tools",
   "criteria": {
     "golden_pickaxe": {
       "conditions": {

@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "content_lock:adventure/stone_upgrade",
+  "parent": "content_lock:progression/stone_upgrade",
   "criteria": {
     "smithing_got": {
       "trigger": "minecraft:inventory_changed",

@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "minecraft:story/mine_stone",
+  "parent": "content_lock:progression/root",
   "criteria": {
     "leather_boots": {
       "conditions": {

@@ -1,35 +1,35 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:wild_armor_trim_smithing_template"
+      "id": "minecraft:smithing_table"
     },
     "title": {
-      "translate": "content_lock:advancement.stone_upgrade.title"
+      "translate": "content_lock:advancement.smithing_table.title"
     },
     "description": {
-      "translate": "content_lock:advancement.stone_upgrade.description"
+      "translate": "content_lock:advancement.smithing_table.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "content_lock:adventure/creeper",
+  "parent": "content_lock:progression/stone_upgrade",
   "criteria": {
-    "smithing_got": {
-      "trigger": "minecraft:inventory_changed",
+    "smithing_table": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:wild_armor_trim_smithing_template"
+            "items": "minecraft:smithing_table"
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "smithing_got"
+      "smithing_table"
     ]
   ],
   "rewards": {

@@ -43,6 +43,7 @@
     "minecraft:wandering_trader",
     "minecraft:bat",
     "minecraft:creaking",
-    "minecraft:parched"
+    "minecraft:parched",
+    "bogged"
    ]
 }

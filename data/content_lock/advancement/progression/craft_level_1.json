@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:yellow_bundle"
+    },
+    "title": {
+      "translate": "content_lock:advancement.craft_level_1.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.craft_level_1.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "content_lock:progression/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1_bottle"
+    ]
+  }
+}

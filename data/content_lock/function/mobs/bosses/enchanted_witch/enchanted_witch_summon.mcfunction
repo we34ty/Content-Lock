@@ -15,3 +15,4 @@ execute if entity @s[type=witch] run function content_lock:mobs/bosses/boss_desp
 
 function animated_java:enchanted_witch/summon {args:{}}
 execute as @e[type=item_display,tag=aj.enchanted_witch.node] run data merge entity @s {Glowing:1b}
+advancement grant @s only content_lock:progression/spawn_enchanted_witch

@@ -1,4 +1,6 @@
-#execute if entity @s[tag=content_lock.shimmered] run return 0
+execute if entity @s[tag=content_lock.checked_for_shimmer] run return 0
+tag @s add content_lock.checked_for_shimmer
+
 execute if entity @s[nbt={Item:{id:"minecraft:water_bucket"}}] run return run function content_lock:player/shimmer/generic {item:"water_bucket",count:1}
 execute if entity @s[nbt={Item:{id:"minecraft:enchanted_book"}}] run return run function content_lock:player/shimmer/enchanted_book
 #execute if entity @s[nbt={Item:{id:"minecraft:compass"}}] run return run function content_lock:player/shimmer/generic {item:"recovery_compass",count:1}

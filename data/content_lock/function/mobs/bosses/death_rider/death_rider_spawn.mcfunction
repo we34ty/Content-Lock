@@ -23,3 +23,4 @@ tellraw @a [{"translate":"content_lock:notifications.boss_summoned.death_rider",
 
 clear @s pink_dye[custom_data~{"content_lock.death_rider_summon":true}] 1
 execute if entity @s[type=zombie] run function content_lock:mobs/bosses/boss_despawn
+advancement grant @s only content_lock:progression/spawn_death_rider

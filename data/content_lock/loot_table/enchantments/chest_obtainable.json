@@ -131,6 +131,25 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
+                "minecraft:unbreaking": 1
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "max_stack_size": 64
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
                 "minecraft:depth_strider": 1
               }
             }
@@ -454,7 +473,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:power": 5
+                "minecraft:power": 1
               }
             }
           ],

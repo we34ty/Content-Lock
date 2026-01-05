@@ -7,7 +7,7 @@
     "attributes": [
       {
         "attribute": "movement_efficiency",
-        "amount": 0.1,
+        "amount": -0.1,
         "operation": "add_value",
         "id": "enchantment.binding_curse"
       }

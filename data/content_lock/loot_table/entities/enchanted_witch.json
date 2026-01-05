@@ -2,6 +2,56 @@
   "type": "minecraft:entity",
   "pools": [
     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "shears",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_name": {
+                  "translate": "content_lock:item.alchemical_extractor"
+                },
+                "max_damage": 112,
+                "rarity": "uncommon",
+                "custom_model_data": {
+                  "strings": [
+                    "content_lock:alchemical_extractor"
+                  ]
+                },
+                "custom_data": {
+                  "content_lock.alchemical_extractor": true
+                },
+                "enchantments": {
+                  "content_lock:alchemical_extractor": 1
+                },
+                "weapon": {
+                  "item_damage_per_attack": 1,
+                  "disable_blocking_for_seconds": 0.2
+                },
+                "tool": {
+                  "rules": [
+                    {
+                      "blocks": "#content_lock:alchemical_extractor",
+                      "speed": 3,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 1
+                },
+                "repairable": {
+                  "items": "#repairs_iron_armor"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "rolls": {
         "type": "minecraft:uniform",
         "min": 1,

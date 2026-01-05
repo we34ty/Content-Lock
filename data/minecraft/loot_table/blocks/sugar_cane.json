@@ -11,22 +11,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:brown_mushroom",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "food": {
-                  "nutrition": 1,
-                  "saturation": 1
-                },
-                "consumable": {
-                  "animation": "eat"
-                }
-              }
-            }
-          ]
-        }
+          "name": "minecraft:sugar_cane"
+        }        
       ],
       "rolls": 1
     },
@@ -35,7 +21,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:brown_mushroom",
+          "name": "minecraft:sugar",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -62,5 +48,5 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:blocks/brown_mushroom"
+  "random_sequence": "minecraft:blocks/sugar_cane"
 }

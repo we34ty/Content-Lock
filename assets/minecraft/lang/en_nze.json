@@ -13,6 +13,8 @@
   "advancements.nether.brew_potion.description": "Brew a potion base using Water and Alchemical Warts",
   "advancements.adventure.root.description": "Adventure and exploration",
   "item.minecraft.nether_wart": "Alchemical Wart",
+  "item.minecraft.nether_wart_block": "Alchemical Wart Block",
+  "item.minecraft.experience_bottle": "Experience Bottle",
   "enchantment.level.11": "XI",
   "enchantment.level.12": "XII",
   "enchantment.level.13": "XIII",

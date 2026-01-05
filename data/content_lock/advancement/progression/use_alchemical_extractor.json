@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:shears",
+      "components": {
+        "custom_model_data": {
+          "strings": [
+            "content_lock:alchemical_extractor"
+          ]
+        }
+      }
+    },
+    "title": {
+      "translate": "content_lock:advancement.use_alchemical_extractor.title"
+    },
+    "description": {
+      "translate": "content_lock:advancement.use_alchemical_extractor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "content_lock:progression/spawn_enchanted_witch",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "content_lock:advancements/1_bottle"
+    ]
+  }
+}

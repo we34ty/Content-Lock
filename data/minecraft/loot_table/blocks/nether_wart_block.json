@@ -11,38 +11,34 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:brown_mushroom",
-          "functions": [
+          "name": "minecraft:nether_wart_block",
+          "conditions": [
             {
-              "function": "set_components",
-              "components": {
-                "food": {
-                  "nutrition": 1,
-                  "saturation": 1
-                },
-                "consumable": {
-                  "animation": "eat"
+              "condition": "inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "shears",
+                  "components": {
+                    "enchantments": {
+                      "content_lock:alchemical_extractor": 1
+                    }
+                  }
                 }
               }
             }
           ]
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
-          "name": "minecraft:brown_mushroom",
+          "name": "minecraft:nether_wart",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
+                "min": 3,
+                "max": 7
               }
             }
           ],
@@ -59,8 +55,9 @@
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1
     }
   ],
-  "random_sequence": "minecraft:blocks/brown_mushroom"
+  "random_sequence": "minecraft:blocks/nether_wart_block"
 }

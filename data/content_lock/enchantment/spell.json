@@ -28,5 +28,6 @@
     "hand"
   ],
   "supported_items": "#content_lock:enchantable/weapon",
-  "weight": 1
+  "weight": 1,
+  "exclusive_set": "#content_lock:material_specific"
 }

@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_wart_block",
+          "conditions": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "shears",
+                  "components": {
+                    "enchantments": {
+                      "content_lock:alchemical_extractor": 1
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "weight": 7,
+              "type": "minecraft:item",
+              "name": "minecraft:nether_wart",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 2,
+                    "max": 4
+                  }
+                }
+              ]
+            },
+            {
+              "weight": 1,
+              "type": "item",
+              "name": "ender_pearl",
+              "functions": [
+                {
+                  "function": "set_count",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "components": {
+                  "enchantments": {
+                    "content_lock:alchemical_extractor": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/warped_wart_block"
+}

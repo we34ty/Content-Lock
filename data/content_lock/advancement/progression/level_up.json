@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "content_lock:story/smelt_gold",
+  "parent": "content_lock:progression/craft_level_1",
   "criteria": {
     "impossible": {
       "trigger": "minecraft:impossible"

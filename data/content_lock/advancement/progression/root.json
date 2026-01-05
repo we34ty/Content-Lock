@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/diorite",
+    "description": {
+      "translate": "content_lock:advancement.progression.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:compass"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "content_lock:advancement.progression.title"
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
