@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:alchemical_extractor"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/items/alchemical_extractor"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/shears"
+	  }
+	}
+  }

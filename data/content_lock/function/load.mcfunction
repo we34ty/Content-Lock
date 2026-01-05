@@ -331,5 +331,6 @@ scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth2
 scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temp1
 scoreboard players operation L content_lock.huhhealth2 /= L content_lock.temp2
 
-tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"text":" Reloaded","color":"green"}]
+execute unless score L content_lock.temp3 matches ..9 run tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"text":" Reloaded","color":"green"}]
+execute if score L content_lock.temp3 matches ..9 run tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".0","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"text":" Reloaded","color":"green"}]
 
