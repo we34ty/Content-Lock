@@ -1,5 +1,6 @@
 execute if entity @s[gamemode=creative] if entity @s[gamemode=spectator] run return 0
 
+scoreboard players set @s content_lock.fight_time 200
 
 data merge storage content_lock:saved_stats {attack_speed:0.0f}
 execute store result storage content_lock:saved_stats attack_speed float 0.01 run attribute @s attack_speed get 10000

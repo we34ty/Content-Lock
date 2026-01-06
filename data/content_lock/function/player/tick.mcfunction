@@ -44,6 +44,7 @@ execute if entity @r[scores={content_lock.enchantment.lightstruck.distance=100..
 execute if entity @r[scores={content_lock.sneak_time_counter=1..}] as @a[scores={content_lock.sneak_time_counter=1..}] run scoreboard players set @s content_lock.sneak_time_counter 0
 execute if entity @r[scores={content_lock.enchantment.bloodthirst.fight_time=1..}] as @a[scores={content_lock.enchantment.bloodthirst.fight_time=1..}] run scoreboard players remove @s content_lock.enchantment.bloodthirst.fight_time 1
 execute if entity @r[scores={content_lock.enchantment.combat_knowledge.fight_time=1..}] as @a[scores={content_lock.enchantment.combat_knowledge.fight_time=1..}] run scoreboard players remove @s content_lock.enchantment.combat_knowledge.fight_time 1
+execute if entity @r[scores={content_lock.fight_time=1..}] as @a[scores={content_lock.fight_time=1..}] run scoreboard players remove @s content_lock.fight_time 1
 execute if entity @r[scores={content_lock.anchor_movement=1..}] as @a[scores={content_lock.anchor_movement=1..}] run scoreboard players remove @s content_lock.anchor_movement 1
 execute if entity @r[scores={content_lock.anchor_sneak=1}] as @a[scores={content_lock.anchor_sneak=1}] run tag @s remove content_lock.tatsugeki.anchor_sneak_counted
 execute if entity @r[scores={content_lock.anchor_sneak=1..}] as @a[scores={content_lock.anchor_sneak=1..}] run scoreboard players remove @s content_lock.anchor_sneak 1

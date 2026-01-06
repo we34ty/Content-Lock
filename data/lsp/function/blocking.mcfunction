@@ -1,5 +1,7 @@
 #execute if score @s lsp.stamina matches ..0 run rotate @s ~40 ~
 
+scoreboard players set @s content_lock.fight_time 200
+
 execute unless score @s lsp.stamina matches ..0 run scoreboard players operation @s lsp.stamina -= blocking.stamina.consumption lsp.Values
 execute if score @s lsp.stamina matches ..0 run scoreboard players set @s lsp.stamina 0
 #execute if score @s content_lock.stamina_delay_timer matches 1.. run scoreboard players set @s content_lock.stamina_delay_timer 0
