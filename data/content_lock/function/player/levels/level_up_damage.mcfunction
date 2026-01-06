@@ -13,4 +13,4 @@ function content_lock:player/passives/sleep/level_up_menu
 
 function content_lock:player/passives/reset_level_stats
 
-execute unless entity @s[advancements={content_lock:story/level_up=true}] run advancement grant @s only content_lock:story/level_up
+execute unless entity @s[advancements={content_lock:progression/level_up=true}] run advancement grant @s only content_lock:progression/level_up

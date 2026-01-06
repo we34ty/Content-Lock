@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:guardian_shovel"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/guardian_shovel"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/iron_shovel"
+	  }
+	}
+  }

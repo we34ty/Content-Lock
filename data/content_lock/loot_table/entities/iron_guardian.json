@@ -115,6 +115,12 @@
                 "minecraft:custom_data": {
                   "content_lock.guardian_shovel": true
                 },
+                "custom_model_data":{
+                  "strings": [
+                    "content_lock:guardian_shovel"
+                  ]
+                },
+                "enchantment_glint_override": false,
                 "minecraft:tool": {
                   "rules": [
                     {
