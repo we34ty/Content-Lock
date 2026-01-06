@@ -38,6 +38,11 @@ execute if score @s content_lock.fishing.yaw matches -5..5 run scoreboard player
 
 execute if score @s content_lock.fishing.pitch matches ..-20 run scoreboard players add @s content_lock.fishing.stress 2
 execute if score @s content_lock.fishing.pitch matches ..-20 run scoreboard players add @s content_lock.fishing.progress 3
+scoreboard players operation @s content_lock.fishing.temp1 = @s content_lock.enchantment.lure
+scoreboard players set @s content_lock.fishing.temp2 2
+scoreboard players operation @s content_lock.fishing.temp1 /= @s content_lock.fishing.temp2
+execute if score @s content_lock.fishing.pitch matches ..-20 if score @s content_lock.fishing.temp1 matches 1.. run scoreboard players operation @s content_lock.fishing.stress += @s content_lock.fishing.temp1
+execute if score @s content_lock.fishing.pitch matches ..-20 if score @s content_lock.enchantment.lure matches 1.. run scoreboard players operation @s content_lock.fishing.progress += @s content_lock.enchantment.lure
 execute if score @s content_lock.fishing.pitch matches -19..-6 run scoreboard players add @s content_lock.fishing.progress 1
 execute if score @s content_lock.fishing.pitch matches -5..20 run scoreboard players remove @s content_lock.fishing.stress 1
 execute if score @s content_lock.fishing.pitch matches 21.. run scoreboard players remove @s content_lock.fishing.progress 3

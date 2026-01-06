@@ -13,7 +13,7 @@ execute positioned ~ ~2 ~ if entity @e[type=splash_potion,distance=0..1,limit=1]
 tag @e remove content_lock.im_a_target
 execute on target run tag @s add content_lock.im_a_target
 
-execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/enchanted_witch/choose_attack
+execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/enchanted_witch/choose_attack
 
 execute if entity @s[tag=content_lock.enchanted_witch.taze_attack] run function content_lock:mobs/bosses/enchanted_witch/taze_attack
 execute if entity @s[tag=content_lock.enchanted_witch.teleport_away] run function content_lock:mobs/bosses/enchanted_witch/teleport_away

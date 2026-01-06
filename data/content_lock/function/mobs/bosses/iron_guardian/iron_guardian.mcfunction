@@ -17,7 +17,7 @@ execute if score L content_lock.timer1 matches 4 run data modify entity @s angry
 tag @e remove content_lock.im_a_target
 execute on target run tag @s add content_lock.im_a_target
 
-execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/iron_guardian/choose_attack
+execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/iron_guardian/choose_attack
 
 execute if entity @s[tag=content_lock.iron_guardian.potemkin_buster] run function content_lock:mobs/bosses/iron_guardian/potemkin_buster
 execute if entity @s[tag=content_lock.iron_guardian.iron_pillar_fall] run function content_lock:mobs/bosses/iron_guardian/iron_pillar_fall
@@ -35,7 +35,7 @@ function content_lock:mobs/bosses/boss_bars/iron_guardian
 
 scoreboard players add @s content_lock.attack_timer 0
 scoreboard players add @s content_lock.boss_exhaustion 0
-execute if entity @s[scores={content_lock.attack_timer=1..}] run scoreboard players remove @s content_lock.attack_timer 1
+execute if entity @s[scores={content_lock.attack_timer=1..},tag=!content_lock.exhausted] run scoreboard players remove @s content_lock.attack_timer 1
 execute if entity @s[scores={content_lock.boss_exhaustion=1..}] run scoreboard players remove @s content_lock.boss_exhaustion 1
 execute if entity @s[scores={content_lock.boss_exhaustion=400..,content_lock.attack_timer=1},tag=!content_lock.exhausted] run function content_lock:mobs/bosses/exhausted
 execute if entity @s[scores={content_lock.boss_exhaustion=0},tag=content_lock.exhausted] run function content_lock:mobs/bosses/recovered_from_exhaustion

@@ -4,15 +4,11 @@
     "translate": "enchantment.minecraft.lure"
   },
   "effects": {
-    "minecraft:fishing_time_reduction": [
+    "tick": [
       {
         "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 5.0,
-            "per_level_above_first": 5.0
-          }
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/lure/lure"
         }
       }
     ]

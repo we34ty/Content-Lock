@@ -11,7 +11,7 @@ execute on target run tag @s add content_lock.im_a_target
 #execute if entity @r[distance=0..40,nbt={HurtTime:1s}] as @a[distance=0..40,nbt={HurtTime:1s}] run scoreboard players add @s content_lock.bleed_stacks 100
 #execute if entity @r[distance=0..40,nbt={HurtTime:1s}] run effect give @s instant_damage 1 1 true
 
-execute if entity @s[scores={content_lock.attack_timer=0}] run function content_lock:mobs/bosses/death_rider/choose_attack
+execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/death_rider/choose_attack
 
 execute if entity @s[tag=content_lock.death_rider.small_jump] run function content_lock:mobs/bosses/death_rider/small_jump
 execute if entity @s[tag=content_lock.death_rider.spin_around] run function content_lock:mobs/bosses/death_rider/spin_around

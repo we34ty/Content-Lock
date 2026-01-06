@@ -1,0 +1,2 @@
+$execute facing entity @n[tag=content_lock.wither.3_lasers.pointer,scores={content_lock.timer1=30}] feet run rotate @s ~ ~$(pitch)
+$execute at @s positioned ~ ~2 ~ facing entity @n[tag=content_lock.wither.3_lasers.pointer,scores={content_lock.timer1=30}] feet rotated ~ ~$(pitch) positioned ^ ^ ^1 run function content_lock:mobs/bosses/wither/3_lasers_laser

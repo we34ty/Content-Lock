@@ -14,6 +14,7 @@ particle block{block_state:"coarse_dirt"} ~ ~.125 ~ 0.75 0.5 0.5 2 10
 kill @n[distance=..0.1,type=interaction,tag=multipack.grave_interaction]
 kill @e[distance=..0.1,type=block_display,tag=multipack.grave_display,limit=2,sort=nearest]
 kill @e[distance=..0.1,type=text_display,tag=multipack.grave_display,limit=2,sort=nearest]
+kill @e[distance=..0.1,type=marker,tag=multipack.grave_marker,limit=1,sort=nearest]
 kill @s
 
 forceload remove ~-1 ~-1 ~1 ~1

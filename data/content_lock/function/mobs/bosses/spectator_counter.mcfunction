@@ -1,6 +1,6 @@
 scoreboard players add @s content_lock.respawn_timer 1
 
-execute unless entity @n[tag=content_lock.boss,distance=..40] at @n[tag=content_lock.boss,distance=..40] run tp @s @p
+execute unless entity @n[tag=content_lock.boss,distance=..40] at @n[tag=content_lock.boss] run tp @s @p[distance=..40]
 
 execute if score @s content_lock.respawn_timer matches 1 run tellraw @s [{"translate":"content_lock:notifications.respawn.countdown","color":"yellow"},{"text":"60","color":"yellow",bold:true}]
 execute if score @s content_lock.respawn_timer matches 15 run tellraw @s [{"translate":"content_lock:notifications.respawn.countdown","color":"yellow"},{"text":"45","color":"yellow",bold:true}]

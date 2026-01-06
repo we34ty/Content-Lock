@@ -1,0 +1,1 @@
+execute store result score @s content_lock.enchantment.lure run data get entity @s SelectedItem.components."minecraft:enchantments"."minecraft:lure"
