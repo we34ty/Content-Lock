@@ -50,6 +50,16 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "golden_spear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_spear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -70,7 +80,8 @@
       "golden_axe",
       "golden_hoe",
       "golden_shovel",
-      "golden_sword"
+      "golden_sword",
+      "golden_spear"
     ]
   ],
   "rewards": {

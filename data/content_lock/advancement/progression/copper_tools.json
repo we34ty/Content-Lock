@@ -50,6 +50,16 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "copper_spear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:copper_spear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -70,7 +80,8 @@
       "copper_axe",
       "copper_hoe",
       "copper_shovel",
-      "copper_sword"
+      "copper_sword",
+      "copper_spear"
     ]
   ],
   "rewards": {

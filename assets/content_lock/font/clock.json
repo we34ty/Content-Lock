@@ -1,0 +1,137 @@
+{
+    "providers":[
+                {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_00.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE049"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_06.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE050"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_12.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE051"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_18.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE052"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_24.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE053"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_33.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE054"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_39.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE055"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_45.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE056"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_51.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE057"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_57.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE058"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/clock_empty.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE059"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/0_nights.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE060"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/1_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE061"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/2_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE062"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/3_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE063"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/4_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE064"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/5_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE065"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/6_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE066"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/clock/0_night.png",
+            "ascent": -16,
+            "height": 8,
+            "chars": ["\uE067"]
+        } 
+    ]
+}

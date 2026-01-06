@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:wild_armor_trim_smithing_template"
+      "id": "minecraft:snout_armor_trim_smithing_template"
     },
     "title": {
       "translate": "content_lock:advancement.iron_upgrade.title"

@@ -50,6 +50,16 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "iron_spear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_spear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -70,7 +80,8 @@
       "iron_axe",
       "iron_hoe",
       "iron_shovel",
-      "iron_sword"
+      "iron_sword",
+      "iron_spear"
     ]
   ],
   "rewards": {

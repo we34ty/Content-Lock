@@ -1,0 +1,46 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed/bleed1.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE000"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed/bleed3.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE001"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed/bleed4.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE002"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed/bleed5.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed/bleed6.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE004"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/bleed/bleed_empty.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE048"]
+        }
+    ]
+}

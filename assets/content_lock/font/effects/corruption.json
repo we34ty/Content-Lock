@@ -1,0 +1,46 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption/corruption1.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE010"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption/corruption2.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE011"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption/corruption3.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE012"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption/corruption4.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE013"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption/corruption5.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE014"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/corruption/corruption_empty.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE068"]
+        }
+    ]
+}

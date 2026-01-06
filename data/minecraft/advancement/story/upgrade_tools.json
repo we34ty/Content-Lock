@@ -50,6 +50,16 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "stone_spear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_spear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -70,7 +80,8 @@
       "stone_axe",
       "stone_hoe",
       "stone_shovel",
-      "stone_sword"
+      "stone_sword",
+      "stone_spear"
     ]
   ],
   "rewards": {

@@ -1,0 +1,74 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost1.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE005"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost2.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE006"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost3.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE007"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost4.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE008"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost5.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE009"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost6.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE044"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost7.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE045"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost8.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE046"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost9.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE047"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/frost/frost_empty.png",
+            "ascent": -9,
+            "height": 26,
+            "chars": ["\uE069"]
+        }
+    ]
+}
