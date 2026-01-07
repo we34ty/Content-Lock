@@ -13,7 +13,12 @@ execute if score @s content_lock.bleed_stacks matches 120.. run data merge stora
 
 
 #execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
-execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069}
+#execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069}
+execute if score @s content_lock.heat matches 0 run data merge storage content_lock:saved_stats {frost:E069}
+execute if score @s content_lock.heat matches 1..199 run data merge storage content_lock:saved_stats {frost:E045}
+execute if score @s content_lock.heat matches 200..349 run data merge storage content_lock:saved_stats {frost:E046}
+execute if score @s content_lock.heat matches 350..499 run data merge storage content_lock:saved_stats {frost:E047}
+execute if score @s content_lock.heat matches 500.. run data merge storage content_lock:saved_stats {frost:E044}
 
 execute if score @s content_lock.frostbite_stacks matches -100..-1 run data merge storage content_lock:saved_stats {frost:E045}
 execute if score @s content_lock.frostbite_stacks matches -200..-101 run data merge storage content_lock:saved_stats {frost:E046}

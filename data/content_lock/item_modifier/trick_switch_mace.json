@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "content_lock:trick_switched_mace": 1
+    },
+    "add": false
+  }
+]

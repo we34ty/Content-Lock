@@ -22,6 +22,7 @@
     "content_lock:bloodthirst",
     "content_lock:immovable",
     "content_lock:combat_knowledge",
-    "content_lock:faura"
+    "content_lock:faura",
+    "content_lock:trick_switch"
   ]
 }

@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:trick_switch_hoe"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/trick_switch_hoe"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/netherite_hoe"
+	  }
+	}
+  }

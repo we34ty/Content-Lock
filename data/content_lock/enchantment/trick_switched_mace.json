@@ -1,0 +1,53 @@
+{
+  "exclusive_set": "#content_lock:material_specific",
+  "anvil_cost": 1,
+  "description": {
+    "translate": "content_lock:enchantment.trick_switched_mace",
+    "color": "white"
+  },
+  "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_damage",
+        "amount": 3,
+        "id": "content_lock.trick_switched_mace",
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "attack_speed",
+        "amount": -0.8,
+        "id": "content_lock.trick_switched_mace",
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "entity_interaction_range",
+        "amount": -0.5,
+        "id": "content_lock.trick_switched_mace",
+        "operation": "add_multiplied_base"
+      }
+    ],
+    "smash_damage_per_fallen_block": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": -1.5
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "primary_items": "#content_lock:enchantable/weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:enchantable/weapon",
+  "weight": 1
+}

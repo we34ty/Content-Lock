@@ -5,6 +5,7 @@
 	  "minecraft:falling_stalactite",
 	  "content_lock:splinter",
 	  "content_lock:bleed",
-	  "content_lock:malice"
+	  "content_lock:malice",
+	  "content_lock:heat"
 	]
   }

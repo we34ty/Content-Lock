@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/netherite_hoe",
+  "textures": {
+    "layer0": "content_lock:item/weapon/trick_switch_hoe"
+  }
+}

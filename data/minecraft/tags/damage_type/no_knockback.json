@@ -29,6 +29,7 @@
 	  "minecraft:generic_kill",
 	  "minecraft:campfire",
 	  "content_lock:bleed",
-	  "content_lock:malice"
+	  "content_lock:malice",
+	  "content_lock:heat"
 	]
   }

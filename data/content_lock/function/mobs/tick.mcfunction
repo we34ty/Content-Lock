@@ -10,6 +10,8 @@ execute if entity @e[tag=content_lock.splintered] as @e[tag=content_lock.splinte
 function content_lock:mobs/bosses/check_for_bosses
 #execute if score L content_lock.timer1 matches 18 run function content_lock:mobs/chance_to_turn_into_boss/tick
 
+execute if entity @n[type=!#entities,nbt={HurtTime:1s}] as @e[type=!#entities,nbt={HurtTime:1s}] if predicate content_lock:on_fire run function content_lock:mobs/passives/heat_accumulation
+execute if entity @n[tag=content_lock.heat_will_explode,nbt={HurtTime:0s}] as @e[tag=content_lock.heat_will_explode,nbt={HurtTime:0s}] at @s run function content_lock:player/effects/heat_explode
 function content_lock:mobs/entities/tick
 
 #execute if score L content_lock.timer1 matches 4 if predicate content_lock:day_begins run function content_lock:mobs/passives/check_for_wandering_trader_spawn
@@ -19,4 +21,4 @@ execute if score L content_lock.timer1 matches 12 if entity @e[type=#invisibilit
 execute at @a if entity @e[tag=content_lock.carapacer,distance=..40] as @e[tag=content_lock.carapacer,distance=..40] at @s run function content_lock:mobs/custom/carapacer/tick
 execute if entity @e[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] as @e[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] run function animated_java:carapacer/remove/this
 execute if entity @e[tag=content_lock.carapacer.taken_shape] run tag @e remove content_lock.carapacer.taken_shape
-
+execute if entity @n[scores={content_lock.heat=1..}] as @e[scores={content_lock.heat=1..}] run scoreboard players remove @s content_lock.heat 1
