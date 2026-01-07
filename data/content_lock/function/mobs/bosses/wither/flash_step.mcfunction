@@ -4,7 +4,11 @@ execute if entity @s[scores={content_lock.attack_timer=0}] run scoreboard player
 execute if entity @s[scores={content_lock.attack_timer=100}] run tag @s add content_lock.NoAI
 execute if entity @s[scores={content_lock.attack_timer=100}] run playsound entity.wither.ambient hostile @a ~ ~ ~ 4 0.5
 execute if entity @s[scores={content_lock.attack_timer=100}] run particle crit ~ ~2 ~ 1 2 1 1 50 force @a
+execute if entity @s[scores={content_lock.attack_timer=100}] run particle dust{color:7341426,scale:2} ~ ~ ~ 5 5 5 1 50 force @a
 
+execute if entity @s[scores={content_lock.attack_timer=21}] run particle dust{color:6622477,scale:2} ~ ~2 ~ 1 1 1 1 30 force @a
+execute if entity @s[scores={content_lock.attack_timer=21}] run particle dust{color:7341426,scale:2} ~ ~ ~ 5 5 5 1 50 force @a
+execute if entity @s[scores={content_lock.attack_timer=21}] run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:5,distance:10,damage:6,damage_type:mob_attack}
 execute if entity @s[scores={content_lock.attack_timer=20}] at @n[tag=content_lock.im_a_target] rotated as @n[tag=content_lock.im_a_target] rotated ~ 0 positioned ^ ^ ^2 if block ~ ~2 ~ #walkable facing entity @n[tag=content_lock.im_a_target] eyes run tp @s ~ ~ ~ ~ ~
 execute if entity @s[scores={content_lock.attack_timer=20}] at @n[tag=content_lock.im_a_target] rotated as @n[tag=content_lock.im_a_target] rotated ~ 0 positioned ^ ^ ^2 unless block ~ ~2 ~ #walkable at @s facing entity @n[tag=content_lock.im_a_target] eyes positioned ^ ^2 ^ run tp @n[tag=content_lock.im_a_target] ~ ~ ~ facing entity @n[type=wither] eyes
 execute if entity @s[scores={content_lock.attack_timer=20}] run particle crit ~ ~2 ~ 1 2 1 1 50 force @a

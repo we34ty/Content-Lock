@@ -16,7 +16,7 @@ execute if entity @s[scores={content_lock.attack_timer=60..110}] run playsound e
 execute if entity @s[scores={content_lock.attack_timer=60..110}] run particle dust{color:4276551,scale:2} ~ ~2 ~ 1 1 1 1 20 normal @a
 execute if entity @s[scores={content_lock.attack_timer=60..110}] run particle block_crumble{block_state:stone} ~ ~2 ~ 1 1 1 1 20 normal @a
 execute if entity @s[scores={content_lock.attack_timer=60..110}] run particle block{block_state:dirt} ~ ~ ~ 1 0.2 1 1 10 normal @a
-execute if entity @s[scores={content_lock.attack_timer=60..110}] run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:2,distance:4,damage:6,damage_type:mob_attack}
+execute if entity @s[scores={content_lock.attack_timer=60..110}] run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1.5,distance:3,damage:6,damage_type:mob_attack}
 
 execute if entity @s[scores={content_lock.attack_timer=60}] run kill @e[tag=content_lock.wither.ai.charging_forward.pointer]
 execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.wither.ai.charging_forward

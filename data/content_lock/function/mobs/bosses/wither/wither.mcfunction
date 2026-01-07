@@ -35,7 +35,7 @@ execute if entity @s[tag=content_lock.wither.triple_pushback_roar] run function 
 execute if entity @s[tag=content_lock.wither.area_effect_cloud] run function content_lock:mobs/bosses/wither/area_effect_cloud
 
 
-execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
+execute if score L content_lock.timer1 matches 7 run function content_lock:mobs/bosses/boss_player_count_scaling {distance:80}
 function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.wither1",duration:341}
 
 execute if score @s content_lock.wither_regen matches 1.. if entity @s[nbt={HurtTime:0s}] run function content_lock:mobs/bosses/wither/wither_heal
