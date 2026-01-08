@@ -21,8 +21,8 @@
         "attribute": "minecraft:gravity",
         "amount": {
           "type": "linear",
-          "base": 0.75,
-          "per_level_above_first": 0.75
+          "base": 0.25,
+          "per_level_above_first": 0.25
         },
         "id": "minecraft.enchantment.density",
         "operation": "add_multiplied_total"
@@ -31,8 +31,8 @@
         "attribute": "minecraft:jump_strength",
         "amount": {
           "type": "linear",
-          "base": 0.25,
-          "per_level_above_first": 0.25
+          "base": 0.1,
+          "per_level_above_first": 0.1
         },
         "id": "minecraft.enchantment.density",
         "operation": "add_multiplied_total"

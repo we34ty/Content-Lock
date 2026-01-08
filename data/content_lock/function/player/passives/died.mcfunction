@@ -15,6 +15,8 @@ scoreboard players operation @s lsp.stamina = @s content_lock.max_stamina
 scoreboard players set @s content_lock.health_percentage 100
 scoreboard players set @s content_lock.health_percentage_old 100
 tag @s remove content_lock.bleed_active
+scoreboard players set @s content_lock.heat 0
+tag @s remove content_lock.heat_will_explode
 
 execute if score L content_lock.options.player.limited_boss_respawn matches 1.. at @s if entity @e[tag=content_lock.boss,distance=..40] run function content_lock:mobs/bosses/reduce_player_respawns
 execute if score L content_lock.options.player.limited_boss_respawn matches 1.. at @s unless entity @e[tag=content_lock.boss,distance=..40] if entity @s[tag=content_lock.turn_to_spectator_after_death] run function content_lock:mobs/bosses/reduce_player_respawns
