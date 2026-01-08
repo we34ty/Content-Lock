@@ -114,7 +114,7 @@
                 "minecraft:max_damage": 94,
                 "minecraft:custom_data": {
                   "content_lock.guardian_shovel": true,
-                  "content_lock.unshimmerable": true
+                  "content_lock:unshimmerable": true
                 },
                 "custom_model_data":{
                   "strings": [

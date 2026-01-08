@@ -1,4 +1,5 @@
 execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{"content_lock:unshimmerable":true}}}}] run return 0
+
 particle bubble ~ ~ ~ 0.3 0.3 0.3 1 20 normal @a
 playsound entity.zombie.converted_to_drowned neutral @a ~ ~ ~ 1 2
 

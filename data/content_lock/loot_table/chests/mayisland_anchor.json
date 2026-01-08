@@ -68,7 +68,7 @@
                     "content_lock:mays_anchor"
                   ]
                 },
-                "minecraft:custom_data": {"content_lock:mays_anchor": true,"content_lock.unshimmerable": true},
+                "minecraft:custom_data": {"content_lock:mays_anchor": true,"content_lock:unshimmerable": true},
                 "minecraft:rarity": "rare",
                 "minecraft:consumable": {
                   "consume_seconds": 62578963,

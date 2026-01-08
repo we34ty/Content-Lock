@@ -228,7 +228,7 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "content_lock.unshimmerable": true
+                  "content_lock:unshimmerable": true
                 },
                 "consumable": {
                   "animation": "trident",

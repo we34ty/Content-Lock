@@ -85,7 +85,8 @@
                 },
                 "custom_data": {
                   "content_lock:item_for_switch": "minecraft:mace",
-                  "content_lock:item_type": "minecraft:netherite_hoe"
+                  "content_lock:item_type": "minecraft:netherite_hoe",
+                  "content_lock:unshimmerable": true
                 },
                 "enchantment_glint_override": false,
                 "repairable": {
