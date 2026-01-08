@@ -55,7 +55,10 @@
           "operation": "add_value",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "tool": {
+        "rules": []
+      }
     }
   }
 }

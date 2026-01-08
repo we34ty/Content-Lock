@@ -11,6 +11,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "tool":{
+                  "rules": []
+                },
                 "item_name": {
                   "translate": "content_lock:item.undead_book",
                   "color": "#d400ff"
@@ -85,8 +88,14 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:random_chance",
-              "chance": 0.01
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "unenchanted_chance": 0.03,
+              "enchanted_chance": {
+                "type": "linear",
+                "base": 0.01,
+                "per_level_above_first": 0.01
+              },
+              "enchantment": "minecraft:looting"
             }
           ]
         }

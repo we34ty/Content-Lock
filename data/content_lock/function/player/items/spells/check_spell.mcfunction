@@ -8,3 +8,4 @@ execute if items entity @s weapon.mainhand *[enchantments~[{enchantments:"conten
 execute if items entity @s weapon.mainhand *[custom_data~{"content_lock.undead_book":true}] run function content_lock:player/items/spells/undead_book/undead_book_arguments
 execute if items entity @s weapon.mainhand *[custom_data~{"content_lock.witchs_book":true}] run function content_lock:player/items/spells/witchs_book/witchs_book_arguments
 execute if items entity @s weapon.mainhand *[custom_data~{"content_lock.fireball_spellbook":true}] run function content_lock:player/items/spells/fireball_spellbook/fireball_spellbook_arguments
+execute if items entity @s weapon.mainhand *[custom_data~{"content_lock.wither_heal_book":true}] run function content_lock:player/items/spells/wither_heal_book/wither_heal_book_arguments

@@ -30,6 +30,8 @@ execute if entity @r[scores={content_lock.combo_timer=1..}] as @a[scores={conten
 
 execute if entity @r[scores={content_lock.item_use_cooldown=1..}] as @a[scores={content_lock.item_use_cooldown=1..}] run scoreboard players remove @s content_lock.item_use_cooldown 1
 
+execute if entity @r[scores={content_lock.wither_regen=1..}] as @a[scores={content_lock.wither_regen=1..}] at @s run function content_lock:player/passives/wither_regen
+
 execute if score L content_lock.timer1 matches 7 run function content_lock:player/ticks/tick7
 
 execute if entity @r[scores={content_lock.enchantment.bloodthirst=1..}] as @a[scores={content_lock.enchantment.bloodthirst=1..}] run function content_lock:player/enchantments/bloodthirst/remove_bonus

@@ -144,6 +144,224 @@
             }
           ],
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_dye",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:gravity",
+                  "id": "content_lock.withers_shield",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -0.15,
+                    "max": 0
+                  },
+                  "operation": "add_multiplied_base",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:max_health",
+                  "id": "content_lock.withers_shield",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0.05,
+                    "max": 0.15
+                  },
+                  "operation": "add_multiplied_base",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "id": "content_lock.withers_shield",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0.05,
+                    "max": 0.15
+                  },
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:armor_toughness",
+                  "id": "content_lock.withers_shield",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 3
+                  },
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "content_lock.withers_shield",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 3
+                  },
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:movement_efficiency",
+                  "id": "content_lock.withers_shield",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0.1,
+                    "max": 0.01
+                  },
+                  "operation": "add_value",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "content_lock:item.withers_shield",
+                  "color": "#980b38",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "content_lock.withers_shield": true
+                },
+                "custom_model_data":{
+                  "strings": [
+                    "content_lock:withers_shield"
+                  ]
+                },
+                "enchantment_glint_override": false,
+                "blocks_attacks": {
+                  "block_delay_seconds": 0,
+                  "item_damage": {
+                    "base": 0,
+                    "factor": 0,
+                    "threshold": 0
+                  },
+                  "damage_reductions": [
+                    {
+                      "type": "#is_projectile",
+                      "horizontal_blocking_angle": 360,
+                      "base": 1,
+                      "factor": 1
+                    }
+                  ]
+                },
+                "use_effects": {
+                  "can_sprint": true,
+                  "speed_multiplier": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_pickaxe",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "tool":{
+                  "rules": []
+                },
+                "item_name": {
+                  "translate": "content_lock:item.wither_heal_book",
+                  "color": "#073daa"
+                },
+                "custom_model_data": {
+                  "strings": [
+                    "content_lock:wither_heal_book"
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 326789,
+                  "animation": "block",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                },
+                "minimum_attack_charge": 1,
+                "max_damage": 980,
+                "enchantments":{
+                  "content_lock:spell": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "content_lock.wither_heal_book": true,
+                "content_lock:unshimmerable":true
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "content_lock.wither_heal_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 10,
+                    "max": 13
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "content_lock.wither_heal_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -3.9,
+                    "max": -3.87
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_knockback",
+                  "id": "content_lock.wither_heal_book",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 0.4,
+                    "max": 0.7
+                  },
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": {
+                  "Tags": ["content_lock.wither.charging_explosion_big_buff"]
+                }
+              }
+            }
+          ]
         }
       ]
     }

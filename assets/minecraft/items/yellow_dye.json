@@ -11,6 +11,15 @@
 			"type": "model",
 			"model": "content_lock:item/items/riders_eye"
 		  }
+		},
+		{
+		  "when":[
+			"content_lock:withers_shield"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/items/withers_shield"
+		  }
 		}
 	  ],
 	  "fallback": {

@@ -156,6 +156,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "tool":{
+                  "rules": []
+                },
                 "item_name": {
                   "translate": "content_lock:item.witchs_book",
                   "color": "#d400ff"

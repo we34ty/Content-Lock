@@ -47,6 +47,15 @@
 			"type": "model",
 			"model": "content_lock:item/weapons/fireball_spellbook"
 		  }
+		},
+		{
+		  "when":[
+			"content_lock:wither_heal_book"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/wither_heal_book"
+		  }
 		}
 	  ],
 	  "fallback": {
