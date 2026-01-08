@@ -27,13 +27,18 @@
       "consume_seconds": 17468184
     },
     "custom_data": {
-      "content_lock.silver_tape": true
+      "content_lock.silver_tape": true,
+      "content_lock.unshimmerable": true
     },
     "max_damage": 200,
     "attribute_modifiers": [],
     "tool": {
       "rules": []
-    }
+    },
+    "enchantments":{
+      "content_lock:silver_tape": 1
+    },
+    "enchantment_glint_override": false
   }
   }
 }

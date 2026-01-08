@@ -25,7 +25,8 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "content_lock.undead_book": true
+                "content_lock.undead_book": true,
+                "content_lock:unshimmerable":true
               }
             },
             {

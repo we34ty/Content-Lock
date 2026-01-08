@@ -68,14 +68,16 @@
                     "content_lock:mays_anchor"
                   ]
                 },
-                "minecraft:custom_data": {"content_lock:mays_anchor": true},
+                "minecraft:custom_data": {"content_lock:mays_anchor": true,"content_lock.unshimmerable": true},
                 "minecraft:rarity": "rare",
                 "minecraft:consumable": {
                   "consume_seconds": 62578963,
                   "animation": "trident",
                   "has_consume_particles": false
                 },
-                "minecraft:custom_name": "{\"translate\":\"content_lock:item.mays_anchor\",\"italic\": false}",
+                "minecraft:item_name": {
+                  "translate": "content_lock:item.mays_anchor"
+                },
                 "minecraft:max_damage": 60,
                 "minecraft:tool": {
                   "rules": [

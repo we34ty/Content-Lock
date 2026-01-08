@@ -2,6 +2,7 @@
   "replace": true,
   "values": [
     "content_lock:trick_switched_mace",
+    "content_lock:silver_tape",
     "content_lock:spell",
     "content_lock:charge_time_increase",
     "content_lock:armor_level",
@@ -50,6 +51,7 @@
     "minecraft:thorns",
     "minecraft:loyalty",
     "minecraft:infinity",
-    "minecraft:mending"
+    "minecraft:mending",
+    "minecraft:lunge"
   ]
 }

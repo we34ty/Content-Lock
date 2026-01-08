@@ -22,7 +22,8 @@
                   ]
                 },
                 "custom_data": {
-                  "content_lock.alchemical_extractor": true
+                  "content_lock.alchemical_extractor": true,
+                  "content_lock:unshimmerable":true
                 },
                 "enchantments": {
                   "content_lock:alchemical_extractor": 1
@@ -185,7 +186,8 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "content_lock.witchs_book": true
+                "content_lock.witchs_book": true,
+                "content_lock:unshimmerable":true
               }
             },
             {

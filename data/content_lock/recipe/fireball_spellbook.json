@@ -29,7 +29,8 @@
         "on_consume_effects": []
       },
       "custom_data": {
-        "content_lock.fireball_spellbook": true
+        "content_lock.fireball_spellbook": true,
+        "content_lock:unshimmerable":true
       },
       "minimum_attack_charge": 1,
       "attribute_modifiers": [

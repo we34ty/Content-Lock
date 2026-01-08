@@ -1,0 +1,3640 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_axe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 5.2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:movement_efficiency",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.03,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minimum_attack_charge": 1,
+                "minecraft:max_damage": 207,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:stone_axe"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_axe"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                  "minecraft:attribute_modifiers":  [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 7.8,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -3.2,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:entity_interaction_range",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0,
+                      "operation": "add_multiplied_base",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_knockback",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 1,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:movement_efficiency",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.05,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "minimum_attack_charge": 1,
+                "minecraft:max_damage": 138,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_axe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers":  [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 6.5,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -3.1,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:entity_interaction_range",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0,
+                      "operation": "add_multiplied_base",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_knockback",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.8,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:movement_efficiency",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.05,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "minimum_attack_charge": 1,
+                  "minecraft:max_damage": 207,
+                  "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_axe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_axe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers":  [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 6.7,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -2.9,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:movement_efficiency",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.04,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minimum_attack_charge": 1,
+                "minecraft:max_damage": 268,
+                "minecraft:tool": {
+                "rules": [
+                  {
+                    "blocks": "#minecraft:mineable/axe",
+                    "speed": 2,
+                    "correct_for_drops": true
+                  }
+                ],
+                "default_mining_speed": 0.5,
+                "damage_per_block": 0
+              }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_axe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_axe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 7.7,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:movement_efficiency",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.04,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minimum_attack_charge": 1,
+                "minecraft:max_damage": 92,
+                "minecraft:tool": {
+                "rules": [
+                  {
+                    "blocks": "#minecraft:mineable/axe",
+                    "speed": 2,
+                    "correct_for_drops": true
+                  }
+                ],
+                "default_mining_speed": 0.5,
+                "damage_per_block": 0
+              }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_axe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_pickaxe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 7.3,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -3.2,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:entity_interaction_range",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -0.1,
+                      "operation": "add_multiplied_base",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_knockback",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.6,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:movement_efficiency",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.03,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "minimum_attack_charge": 1,
+                  "minecraft:max_damage": 147,
+                  "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/pickaxe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:stone_pickaxe"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_pickaxe"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                  "minecraft:attribute_modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 14.5,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -3.6,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:entity_interaction_range",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -0.1,
+                      "operation": "add_multiplied_base",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_knockback",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 1.4,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:movement_efficiency",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.05,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "minimum_attack_charge": 1,
+                "minecraft:max_damage": 75,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/pickaxe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_pickaxe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 9.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -3.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 1.2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:movement_efficiency",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.05,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minimum_attack_charge": 1,
+              "minecraft:max_damage": 144,
+              "minecraft:tool": {
+                "rules": [
+                  {
+                    "blocks": "#mineable/pickaxe",
+                    "speed": 2,
+                    "correct_for_drops": true
+                  }
+                ],
+                "default_mining_speed": 0.5,
+                "damage_per_block": 0
+              }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_pickaxe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_pickaxe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 9.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -3.14,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:entity_interaction_range",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": -0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_knockback",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 1.2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:movement_efficiency",
+                    "id": "content_lock.basic_weapon_stats",
+                    "amount": 0.05,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minimum_attack_charge": 1,
+              "minecraft:max_damage": 163,
+              "minecraft:tool": {
+                "rules": [
+                  {
+                    "blocks": "#mineable/pickaxe",
+                    "speed": 2,
+                    "correct_for_drops": true
+                  }
+                ],
+                "default_mining_speed": 0.5,
+                "damage_per_block": 0
+              }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_pickaxe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_pickaxe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 10.7,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -3.3,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:entity_interaction_range",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": -0.1,
+                      "operation": "add_multiplied_base",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_knockback",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.9,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:movement_efficiency",
+                      "id": "content_lock.basic_weapon_stats",
+                      "amount": 0.04,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "minimum_attack_charge": 1,
+                "minecraft:max_damage": 66,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#mineable/pickaxe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_pickaxe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_shovel",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 7.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 120,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/shovel",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:stone_shovel"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_shovel"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 12,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 2.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.04,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 72,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/shovel",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_shovel"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 8.3,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 2.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.04,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 129,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/shovel",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_shovel"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_shovel",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 9.0,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 2.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.04,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 101,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/shovel",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_shovel"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 9.7,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.8,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 46,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/shovel",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_shovel"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 3.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:sweeping_damage_ratio",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.2,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.7,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 300,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:sword_efficient",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:stone_sword"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_sword"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 5.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:sweeping_damage_ratio",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.7,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -2.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.2,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 207,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:sword_efficient",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_sword"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 3.8,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:sweeping_damage_ratio",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -2.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.2,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 356,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:sword_efficient",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_sword"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_sword",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 4.1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:sweeping_damage_ratio",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -2.1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.2,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 299,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:sword_efficient",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_sword"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 4.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:sweeping_damage_ratio",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.2,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 156,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:sword_efficient",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_sword"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_hoe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 3.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.8,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.4,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 360,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/hoe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:stone_hoe"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_hoe"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_hoe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 3.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.4,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1.2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 360,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/hoe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_hoe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 3.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.4,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.9,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 462,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/hoe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_hoe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_hoe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 3.9,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.4,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.9,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.03,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 461,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/hoe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_hoe"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 4.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -0.9,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:entity_interaction_range",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.4,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1.7,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 188,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:mineable/hoe",
+            "speed": 2,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 0.5,
+        "damage_per_block": 0
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_hoe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_spear",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 101,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 40
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:stone_spear"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_spear"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_spear",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.7,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.34,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 95,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 50
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_spear"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_spear",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 2.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.56,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 121,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 40
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_spear"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_spear",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.35,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 89,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 40
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_spear"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_spear",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 1.5,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -3.27,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_knockback",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": -1,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_weapon_stats",
+            "amount": 0.02,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minimum_attack_charge": 1,
+      "minecraft:max_damage": 101,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 30
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_spear"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+            {
+              "type": "minecraft:armor",
+              "id": "content_lock.basic_armor_stats_head",
+              "amount": 1.25,
+              "operation": "add_value",
+              "slot": "head"
+            },
+            {
+              "type": "minecraft:armor_toughness",
+              "id": "content_lock.basic_armor_stats_head",
+              "amount": 0.5,
+              "operation": "add_value",
+              "slot": "head"
+            },
+            {
+              "type": "minecraft:movement_efficiency",
+              "id": "content_lock.basic_armor_stats_head",
+              "amount": 0.08,
+              "operation": "add_value",
+              "slot": "head"
+            }
+          ],
+        "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:chainmail_helmet"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_helmet"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 1.17,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 1.17,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.12,
+            "operation": "add_value",
+            "slot": "head"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_helmet"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 2.5,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.18,
+            "operation": "add_value",
+            "slot": "head"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_helmet"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_helmet",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 1.42,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.17,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.16,
+            "operation": "add_value",
+            "slot": "head"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_helmet"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers":  [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 1.33,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.25,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_head",
+            "amount": 0.13,
+            "operation": "add_value",
+            "slot": "head"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_helmet"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+            {
+              "type": "minecraft:armor",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": 3.33,
+              "operation": "add_value",
+              "slot": "chest"
+            },
+            {
+              "type": "minecraft:armor_toughness",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": 1.33,
+              "operation": "add_value",
+              "slot": "chest"
+            },
+            {
+              "type": "minecraft:movement_efficiency",
+              "id": "content_lock.basic_armor_stats_chest",
+              "amount": 0.13,
+              "operation": "add_value",
+              "slot": "chest"
+            }
+          ],
+        "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:chainmail_chestplate"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_chestplate"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 3.11,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 3.11,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 0.20,
+            "operation": "add_value",
+            "slot": "chest"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_chestplate"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 2.67,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 6.67,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 0.24,
+            "operation": "add_value",
+            "slot": "chest"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_chestplate"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_chestplate",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 3.78,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 0.44,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 0.22,
+            "operation": "add_value",
+            "slot": "chest"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_chestplate"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 3.56,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 0.67,
+            "operation": "add_value",
+            "slot": "chest"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_chest",
+            "amount": 0.19,
+            "operation": "add_value",
+            "slot": "chest"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_chestplate"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+            {
+              "type": "minecraft:armor",
+              "id": "content_lock.basic_armor_stats_legs",
+              "amount":1.67,
+              "operation": "add_value",
+              "slot": "legs"
+            },
+            {
+              "type": "minecraft:armor_toughness",
+              "id": "content_lock.basic_armor_stats_legs",
+              "amount": 0.67,
+              "operation": "add_value",
+              "slot": "legs"
+            },
+            {
+              "type": "minecraft:movement_efficiency",
+              "id": "content_lock.basic_armor_stats_legs",
+              "amount": 0.1,
+              "operation": "add_value",
+              "slot": "legs"
+            }
+          ],
+        "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:chainmail_leggings"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_leggings"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 1.56,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 1.56,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.16,
+            "operation": "add_value",
+            "slot": "legs"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_leggings"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 1.34,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 3.34,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.21,
+            "operation": "add_value",
+            "slot": "legs"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_leggings"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_leggings",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 1.89,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.22,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.18,
+            "operation": "add_value",
+            "slot": "legs"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_leggings"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_leggings",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 1.78,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.34,
+            "operation": "add_value",
+            "slot": "legs"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_legs",
+            "amount": 0.16,
+            "operation": "add_value",
+            "slot": "legs"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_leggings"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+            {
+              "type": "minecraft:armor",
+              "id": "content_lock.basic_armor_stats_boots",
+              "amount": 1.25,
+              "operation": "add_value",
+              "slot": "feet"
+            },
+            {
+              "type": "minecraft:armor_toughness",
+              "id": "content_lock.basic_armor_stats_boots",
+              "amount": 0.5,
+              "operation": "add_value",
+              "slot": "feet"
+            },
+            {
+              "type": "minecraft:movement_efficiency",
+              "id": "content_lock.basic_armor_stats_boots",
+              "amount": 0.08,
+              "operation": "add_value",
+              "slot": "feet"
+            }
+          ],
+        "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:chainmail_boots"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "item",
+                    "nbt": {
+                      "Item": {
+                        "id": "minecraft:copper_boots"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 1.17,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 1.17,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 0.12,
+            "operation": "add_value",
+            "slot": "feet"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:iron_boots"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 1,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 2.5,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 0.18,
+            "operation": "add_value",
+            "slot": "feet"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:netherite_boots"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_boots",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 1.42,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 0.17,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 0.16,
+            "operation": "add_value",
+            "slot": "feet"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:golden_boots"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+"minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 1.33,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 0.25,
+            "operation": "add_value",
+            "slot": "feet"
+          },
+          {
+            "type": "minecraft:movement_efficiency",
+            "id": "content_lock.basic_armor_stats_boots",
+            "amount": 0.13,
+            "operation": "add_value",
+            "slot": "feet"
+          }
+        ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "item",
+                "nbt": {
+                  "Item": {
+                    "id": "minecraft:diamond_boots"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
