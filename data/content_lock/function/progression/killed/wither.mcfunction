@@ -4,6 +4,8 @@ execute unless score content_lock.wither_killed content_lock.progression matches
 scoreboard players add content_lock.wither_killed content_lock.progression 1
 execute as @a run function content_lock:mobs/bosses/music/stop_music_from_bosses
 
+advancement grant @s only content_lock:combat/kill_wither
+
 kill @e[tag=content_lock.wither.big_ball_to_rain.rain_pointer]
 kill @e[tag=content_lock.wither.big_ball_to_rain.pointer]
 kill @e[tag=content_lock.wither.3_lasers.pointer]

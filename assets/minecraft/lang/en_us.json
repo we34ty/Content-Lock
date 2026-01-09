@@ -12,6 +12,7 @@
   "container.stonecutter": "Table Saw",
   "advancements.nether.brew_potion.description": "Brew a potion base using Water and Alchemical Warts",
   "advancements.adventure.root.description": "Adventure and exploration",
+  "advancements.story.summon_wither.description": "Summon the Wither by placing 3 Wither Skeleton Skulls on top of 4 Soul Sand blocks in a T shape",
   "item.minecraft.nether_wart": "Alchemical Wart",
   "item.minecraft.nether_wart_block": "Alchemical Wart Block",
   "item.minecraft.experience_bottle": "Experience Bottle",

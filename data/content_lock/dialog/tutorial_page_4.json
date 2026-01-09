@@ -99,6 +99,23 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
+        "translate": "content_lock:dialogue.tutorial.page4.text5"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "wither_skeleton_skull"
+      },
+      "description": {
+        "translate": "content_lock:dialogue.tutorial.page4.wither",
+        "color": "gray"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
         "translate": "content_lock:dialogue.tutorial.page4.text4"
       },
       "width": 400

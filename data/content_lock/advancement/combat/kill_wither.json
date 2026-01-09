@@ -1,27 +1,27 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:iron_nugget",
+      "id": "minecraft:netherite_pickaxe",
       "components": {
         "custom_model_data": {
           "strings": [
-            "content_lock:guardian_heart"
+            "content_lock:wither_heal_book"
           ]
         }
       }
     },
     "title": {
-      "translate": "content_lock:advancement.kill_iron_guardian.title"
+      "translate": "content_lock:advancement.kill_wither.title"
     },
     "description": {
-      "translate": "content_lock:advancement.kill_iron_guardian.description"
+      "translate": "content_lock:advancement.kill_wither.description"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "content_lock:combat/root",
+  "parent": "content_lock:combat/kill_death_rider",
   "criteria": {
     "impossible": {
       "trigger": "minecraft:impossible"
@@ -34,7 +34,7 @@
   ],
   "rewards": {
     "loot": [
-      "content_lock:advancements/2_bottles"
+      "content_lock:advancements/4_bottles"
     ]
   }
 }

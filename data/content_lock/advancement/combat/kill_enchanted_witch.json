@@ -1,7 +1,14 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:potion"
+      "id": "minecraft:netherite_pickaxe",
+      "components": {
+        "custom_model_data": {
+          "strings": [
+            "content_lock:witchs_book"
+          ]
+        }
+      }
     },
     "title": {
       "translate": "content_lock:advancement.kill_enchanted_witch.title"
@@ -12,7 +19,7 @@
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "parent": "content_lock:combat/kill_iron_guardian",
   "criteria": {

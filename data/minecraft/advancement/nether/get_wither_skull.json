@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:story/mine_stone",
+  "parent": "content_lock:progression/iron_upgrade",
   "criteria": {
     "wither_skull": {
       "conditions": {
