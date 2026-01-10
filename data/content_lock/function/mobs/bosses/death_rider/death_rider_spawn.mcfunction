@@ -17,7 +17,7 @@ summon zombie_horse ~ ~ ~ {DeathLootTable:"",Health:1000,Glowing:1b,Tags:["conte
 execute if entity @s[type=player] run tag @e[type=zombie_horse,tag=content_lock.death_rider_horse] add content_lock.drop_summon_on_despawn
 execute as @e[type=zombie,tag=content_lock.death_rider] run scoreboard players set @s content_lock.attack_timer 100
 execute as @e[type=zombie_horse,tag=content_lock.death_rider_horse] at @s run spreadplayers ~ ~ 15 20 false @s
-ride @e[type=zombie,tag=content_lock.death_rider,limit=1,sort=nearest] mount @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest]
+ride @n[type=zombie,tag=content_lock.death_rider] mount @n[tag=content_lock.death_rider_horse]
 
 tellraw @a [{"translate":"content_lock:notifications.boss_summoned.death_rider","color":"light_purple"}]
 

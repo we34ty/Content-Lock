@@ -7,6 +7,13 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
+        "translate": "content_lock:dialogue.new_version.0331"
+      },
+      "width": 400
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
         "translate": "content_lock:dialogue.new_version.0330"
       },
       "width": 400

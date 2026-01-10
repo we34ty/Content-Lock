@@ -37,5 +37,5 @@ execute if entity @s[scores={content_lock.boss_exhaustion=0},tag=content_lock.ex
 execute if entity @s[scores={content_lock.boss_exhaustion=1..},tag=content_lock.exhausted] run scoreboard players remove @s content_lock.boss_exhaustion 1
 
 
-ride @s[tag=!content_lock.death_rider.rush_without_horse.dismount] mount @e[tag=content_lock.death_rider_horse,limit=1,sort=nearest]
+ride @s[tag=!content_lock.death_rider.rush_without_horse.dismount] mount @n[tag=content_lock.death_rider_horse]
 

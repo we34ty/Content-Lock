@@ -3,14 +3,6 @@ execute if entity @e[type=zombified_piglin, tag=zombified_piglin_princess] as @e
 execute if entity @e[type=zombified_piglin, tag=zombified_piglin_princess] as @e[type=zombified_piglin, tag=zombified_piglin_princess, limit=1, sort=arbitrary] at @s run bossbar set minecraft:zombified_piglin_princess players @a[distance=0..50] 
 execute if entity @e[type=zombified_piglin, tag=zombified_piglin_princess_phase_1] as @e[type=zombified_piglin, tag=zombified_piglin_princess_phase_1, limit=1, sort=arbitrary] at @s run bossbar set minecraft:zombified_piglin_princess players @a[distance=0..50] 
 
-execute if entity @e[type=ghast, tag=ghast_revolution_leader] as @e[type=ghast, tag=ghast_revolution_leader, limit=1, sort=arbitrary] store result bossbar minecraft:ghast_revolution_leader max run attribute @s generic.max_health get
-execute if entity @e[type=ghast, tag=ghast_revolution_leader] as @e[type=ghast, tag=ghast_revolution_leader, limit=1, sort=arbitrary] store result bossbar minecraft:ghast_revolution_leader value run data get entity @s Health
-execute if entity @e[type=ghast, tag=ghast_revolution_leader] as @e[type=ghast, tag=ghast_revolution_leader, limit=1, sort=arbitrary] at @s run bossbar set minecraft:ghast_revolution_leader players @a[distance=0..50] 
-
-execute if entity @e[type=wither_skeleton, tag=wither_skeleton_revolution_leader] as @e[type=wither_skeleton, tag=wither_skeleton_revolution_leader, limit=1, sort=arbitrary] store result bossbar minecraft:wither_skeleton_revolution_leader max run attribute @s generic.max_health get 3.5
-execute if entity @e[type=wither_skeleton, tag=wither_skeleton_revolution_leader] as @e[type=wither_skeleton, tag=wither_skeleton_revolution_leader, limit=1, sort=arbitrary] store result bossbar minecraft:wither_skeleton_revolution_leader value run data get entity @s Health
-execute if entity @e[type=wither_skeleton, tag=wither_skeleton_revolution_leader] as @e[type=wither_skeleton, tag=wither_skeleton_revolution_leader, limit=1, sort=arbitrary] at @s run bossbar set minecraft:wither_skeleton_revolution_leader players @a[distance=0..50] 
-
 execute if entity @e[type=blaze, tag=blaze_lord] as @e[type=blaze, tag=blaze_lord, limit=1, sort=arbitrary] store result bossbar minecraft:blaze_lord max run attribute @s generic.max_health get
 execute if entity @e[type=blaze, tag=blaze_lord] as @e[type=blaze, tag=blaze_lord, limit=1, sort=arbitrary] store result bossbar minecraft:blaze_lord value run data get entity @s Health
 execute if entity @e[type=blaze, tag=blaze_lord] as @e[type=blaze, tag=blaze_lord, limit=1, sort=arbitrary] at @s run bossbar set minecraft:blaze_lord players @a[distance=0..50] 

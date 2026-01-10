@@ -1,6 +1,6 @@
 scoreboard objectives add content_lock.content_lock_version dummy
 #version numbver
-scoreboard players set L content_lock.content_lock_version 330
+scoreboard players set L content_lock.content_lock_version 331
 
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
@@ -209,15 +209,15 @@ bossbar set content_lock.zombified_piglin_princess color yellow
 bossbar set content_lock.zombified_piglin_princess style notched_6
 bossbar set content_lock.zombified_piglin_princess max 600
 
-bossbar add content_lock.ghast_revolution_leader {"text":"Treft the Suffering","bold":true}
-bossbar set content_lock.ghast_revolution_leader color white
-bossbar set content_lock.ghast_revolution_leader style progress
-bossbar set content_lock.ghast_revolution_leader max 400
+bossbar add content_lock.third_officer {"translate":"content_lock:boss.third_officer","bold":true}
+bossbar set content_lock.third_officer color white
+bossbar set content_lock.third_officer style progress
+bossbar set content_lock.third_officer max 350
 
-bossbar add content_lock.wither_skeleton_revolution_leader {"text":"Kareth the Run-Down by Curse Revolution Leader","bold":true,"color":"dark_red"}
-bossbar set content_lock.wither_skeleton_revolution_leader color red
-bossbar set content_lock.wither_skeleton_revolution_leader style progress
-bossbar set content_lock.wither_skeleton_revolution_leader max 1120
+bossbar add content_lock.second_officer {"translate":"content_lock:boss.second_officer","bold":true,"color":"dark_red"}
+bossbar set content_lock.second_officer color red
+bossbar set content_lock.second_officer style progress
+bossbar set content_lock.second_officer max 300
 
 bossbar add content_lock.blaze_lord {"text":"Blaze Lord","bold":true,"color":"red"}
 bossbar set content_lock.blaze_lord color red
