@@ -1,0 +1,73 @@
+[
+  {
+    "function": "enchant_randomly",
+    "only_compatible": true,
+    "options": "#minecraft:non_treasure"
+  },
+  {
+    "function": "set_enchantments",
+    "enchantments": {
+      "content_lock:armor_level": 2,
+      "content_lock:weapon_level": 2
+    },
+    "conditions": [
+      {
+        "condition": "entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.progression": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "set_enchantments",
+    "enchantments": {
+      "content_lock:armor_level": 4,
+      "content_lock:weapon_level": 4
+    },
+    "conditions": [
+      {
+        "condition": "entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.progression": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "set_enchantments",
+    "enchantments": {
+      "content_lock:armor_level": 6,
+      "content_lock:weapon_level": 6
+    },
+    "conditions": [
+      {
+        "condition": "entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.progression": 3
+        }
+      }
+    ]
+  },
+  {
+    "function": "set_enchantments",
+    "enchantments": {
+      "content_lock:armor_level": 7,
+      "content_lock:weapon_level": 7
+    },
+    "conditions": [
+      {
+        "condition": "entity_scores",
+        "entity": "this",
+        "scores": {
+          "content_lock.progression": {
+            "min": 4
+          }
+        }
+      }
+    ]
+  }
+]

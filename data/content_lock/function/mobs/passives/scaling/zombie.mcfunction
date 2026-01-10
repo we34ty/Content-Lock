@@ -6,4 +6,5 @@ attribute @s knockback_resistance modifier add content_lock.zombie_scaled 0.3 ad
 attribute @s max_health modifier add content_lock.zombie_scaled 0.75 add_multiplied_base
 #tag @s add content_lock.can_dash_at_player
 
+data merge entity @s {CanPickUpLoot:0b}
 execute unless entity @s[tag=content_lock.boss] run function content_lock:mobs/passives/random_armor

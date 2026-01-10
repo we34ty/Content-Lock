@@ -43,5 +43,6 @@
     "minecraft:glow_item_frame",
     "minecraft:interaction",
     "minecraft:marker",
-    "minecraft:splash_potion"  ]
+    "minecraft:splash_potion",
+    "minecraft:fishing_bobber"  ]
 }

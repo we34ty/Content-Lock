@@ -6,7 +6,7 @@ execute if score L content_lock.progression matches 4 store result score @s cont
 execute if score L content_lock.progression matches 5 store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:5}
 execute if score L content_lock.progression matches 6 store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:4}
 execute if score L content_lock.progression matches 7 store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:3}
-execute if score L content_lock.progression matches 8 store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:2}
+execute if score L content_lock.progression matches 8.. store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:2}
 
 execute unless score @s content_lock.temp1 matches 1 at @s if dimension minecraft:overworld if entity @s[y=0,dy=40] store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:100}
 execute unless score @s content_lock.temp1 matches 1 at @s if dimension minecraft:overworld if entity @s[y=-30,dy=30] store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:33}

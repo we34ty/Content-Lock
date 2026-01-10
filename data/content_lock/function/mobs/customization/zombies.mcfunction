@@ -4,6 +4,10 @@ data merge entity @s {CanBreakDoors:1b,CanPickUpLoot:1b}
 tag @s add content_lock.can_be_raised_from_ground
 tag @s add content_lock.can_charge_jump
 tag @s add content_lock.attacks_on_sight
+tag @s add content_lock.can_heal_with_food
+item replace entity @s weapon.mainhand with air
+item replace entity @s armor.feet with air
+item replace entity @s armor.legs with air
 
 execute if entity @s[tag=content_lock.enchanted_undead] run return 0
 
