@@ -12,7 +12,7 @@
   "container.stonecutter": "Piła stołowa",
   "advancements.nether.brew_potion.description": "Uwarz bazę do miktur używając wody i alchemicznych brodawek",
   "advancements.adventure.root.description": "Przygoda i eksploracja",
-  "advancements.story.summon_wither.description": "Przywołaj Withera, umieszczając 3 czaszki Szkieletów Withera na 4 blokach Piasku Dusz w kształcie litery T",
+  "advancements.nether.summon_wither.description": "Przywołaj Withera, umieszczając 3 czaszki Szkieletów Withera na 4 blokach Piasku Dusz w kształcie litery T",
   "item.minecraft.nether_wart": "Brodawka alchemiczna",
   "item.minecraft.nether_wart_block": "Blok brodawki alchemicznej",
   "item.minecraft.experience_bottle": "Butelka doświadczenia",
