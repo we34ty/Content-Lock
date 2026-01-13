@@ -1,7 +1,7 @@
 tag @e remove content_lock.im_a_target
 execute on target run tag @s add content_lock.im_a_target
 
-#execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/choose_attack
+execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/choose_attack
 execute if entity @s[nbt={HurtTime:1s}] run scoreboard players set @s content_lock.timer2 200
 
 execute unless entity @n[tag=content_lock.third_officer] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/survived

@@ -183,6 +183,8 @@ scoreboard objectives add content_lock.boss.temp2 dummy
 scoreboard objectives add content_lock.wither_regen.timer dummy
 scoreboard objectives add content_lock.wither_heal_book_charge dummy
 scoreboard objectives add content_lock.wither_regen.timer2 dummy
+scoreboard objectives add content_lock.defeated_officer dummy
+scoreboard objectives add content_lock.random_boss dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy

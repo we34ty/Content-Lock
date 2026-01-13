@@ -1,8 +1,17 @@
 tag @e remove content_lock.im_a_target
 execute on target run tag @s add content_lock.im_a_target
 
-#execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/second_and_third_officers/ghast/choose_attack
+execute if entity @s[scores={content_lock.attack_timer=0}] if entity @n[tag=content_lock.im_a_target] run function content_lock:mobs/bosses/second_and_third_officers/ghast/choose_attack
 execute if entity @s[nbt={HurtTime:1s}] run scoreboard players set @s content_lock.timer2 200
+execute if entity @n[type=fireball,distance=..40] as @e[type=fireball,distance=..40] run kill @s
+
+execute if entity @s[tag=content_lock.third_officer.fireball] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.blue_fireball] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.blue_laser] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.ram_into] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.stun_knockback] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.vortex_explode] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+
 
 execute unless entity @n[tag=content_lock.second_officer] run function content_lock:mobs/bosses/second_and_third_officers/ghast/survived
 function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.both_officers",duration:220}

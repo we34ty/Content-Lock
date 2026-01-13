@@ -1,0 +1,4 @@
+summon wither_skeleton ~ ~ ~ {DeathLootTable:"content_lock:entities/second_officer",CustomName:[{"translate":"content_lock:boss.second_officer","bold":true,"color":"dark_red"}],CustomNameVisible:1b,Health:500,Glowing:1b,PersistenceRequired:1b,Tags:["content_lock.boss","content_lock.customized","content_lock.second_officer","content_lock.second_phase"],attributes:[{id:max_health,base:700f},{id:armor,base:16f},{id:armor_toughness,base:8f},{id:movement_speed,base:0.4f},{id:knockback_resistance,base:0.2f},{id:follow_range,base:1000f},{id:scale,base:2f}]}
+execute as @e[type=wither_skeleton,tag=content_lock.second_officer] run scoreboard players set @s content_lock.attack_timer 100
+execute as @e[type=wither_skeleton,tag=content_lock.second_officer] at @s run spreadplayers ~ ~ 15 20 false @s
+tellraw @a [{"translate":"content_lock:notifications.boss_summoned.second_officer","color":"light_purple"}]
