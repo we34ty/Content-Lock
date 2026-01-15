@@ -1,4 +1,4 @@
-execute unless block ~ ~ ~ #air as @p unless entity @s[gamemode=creative] run give @s zombie_spawn_egg[item_name={translate:"content_lock:item.duplicator",italic:false},entity_data={id:"marker",Tags:["content_lock.duplicator"]},item_model="barrel"] 1
+execute unless block ~ ~ ~ #air as @p unless entity @s[gamemode=creative] run give @s zombie_spawn_egg[item_name={translate:"content_lock:item.duplicator",italic:false},entity_data={id:"marker",Tags:["content_lock.duplicator"]},item_model="content_lock:duplicator"] 1
 execute unless block ~ ~ ~ #air run return run kill @s
 
 setblock ~ ~ ~ barrel[facing=up]{CustomName:{"translate":"content_lock:item.duplicator","italic":false}}

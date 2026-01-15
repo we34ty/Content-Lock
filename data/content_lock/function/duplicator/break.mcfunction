@@ -1,4 +1,4 @@
-summon item ~ ~ ~ {Item:{id:zombie_spawn_egg,components:{item_name:{translate:"content_lock:item.duplicator",italic:false},entity_data:{id:"marker",Tags:["content_lock.duplicator"]},item_model:"barrel"}}}
+data merge entity @n[type=item,nbt={Item:{id:"minecraft:barrel"}}] {Item:{id:zombie_spawn_egg,components:{item_name:{translate:"content_lock:item.duplicator",italic:false},entity_data:{id:"marker",Tags:["content_lock.duplicator"]},item_model:"content_lock:duplicator"}}}
 
 scoreboard players set @s content_lock.temp1 9
 scoreboard players operation @s content_lock.temp2 = @s content_lock.duplication_storage

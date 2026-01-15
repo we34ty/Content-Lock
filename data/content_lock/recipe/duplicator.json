@@ -18,7 +18,7 @@
         "Tags": ["content_lock.duplicator"]
       },
       "item_name": [{"translate":"content_lock:item.duplicator"}],
-      "item_model": "barrel"
+      "item_model": "content_lock:duplicator"
     }
   }
 }
