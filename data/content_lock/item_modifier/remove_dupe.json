@@ -1,0 +1,11 @@
+[
+	{
+		"function": "set_components",
+		"components": {
+			"custom_data": {
+				"content_lock:duplication_result": false,
+				"content_lock:clear_in_inventory": false
+			}
+		}
+	}
+]

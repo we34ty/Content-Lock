@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "content_lock:item/gui/duplicator_vertical"
+	},
+	"display": {
+		"gui": {
+			"translation": [23, -5, -5],
+			"scale": [4, 4, 1]
+		}
+	}
+}

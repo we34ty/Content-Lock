@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":[
+    "   ",
+    " # ",
+    "   "
+  ],
+  "key": {
+    "#": "barrel"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:zombie_spawn_egg",
+    "components": {
+      "entity_data":{
+        "id": "marker",
+        "Tags": ["content_lock.duplicator"]
+      },
+      "item_name": [{"translate":"content_lock:item.duplicator"}],
+      "item_model": "barrel"
+    }
+  }
+}

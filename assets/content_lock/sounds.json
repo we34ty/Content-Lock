@@ -269,5 +269,11 @@
 			"content_lock:enchantments/lightstruck_active_alt"
 		],
 		"subtitle": "content_lock:sounds.lightstruck.end"
+	},
+	"block.duplicator.craft": {
+		"sounds": [
+			"content_lock:utility/duplicate"
+		],
+		"subtitle": "content_lock:sounds.duplicator.craft"
 	}
 }

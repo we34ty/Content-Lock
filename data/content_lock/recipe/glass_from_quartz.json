@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "ingredient": "quartz",
+  "cookingtime": 200,
+  "group": "glass",
+  "result": {
+    "id": "minecraft:glass"
+  }
+}
