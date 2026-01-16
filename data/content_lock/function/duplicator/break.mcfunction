@@ -15,5 +15,5 @@ data merge storage content_lock:saved_stats {item:"minecraft:lapis_lazuli",count
 execute store result storage content_lock:saved_stats count int 1 run scoreboard players get @s content_lock.temp3
 execute if score @s content_lock.temp3 matches 1.. run function content_lock:duplicator/lapis_spawn with storage content_lock:saved_stats
 
-kill @n[type=item_display,tag=content_lock.duplicator.display]
+execute positioned ~ ~1.1 ~ run kill @n[type=item_display,tag=content_lock.duplicator.display]
 kill @s
