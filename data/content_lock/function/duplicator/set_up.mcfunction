@@ -2,7 +2,7 @@ execute unless block ~ ~ ~ #replaceable as @p unless entity @s[gamemode=creative
 execute unless block ~ ~ ~ #replaceable run return run kill @s
 
 setblock ~ ~ ~ barrel[facing=up]{CustomName:{"translate":"content_lock:item.duplicator","italic":false}}
-summon item_display ~ ~1.1 ~ {item:{components: {"minecraft:item_model": "content_lock:duplicator"}, count: 1, id: "minecraft:stone"},transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.01f, 1.01f, 1.01f], translation: [0.0f, 0.0f, 0.0f]},Tags:["content_lock.duplicator.display"],brightness:{block:0,sky:15}}
+summon item_display ~ ~1.1 ~ {item:{components: {"minecraft:item_model": "content_lock:duplicator"}, count: 1, id: "minecraft:stone"},transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.01f, 1.01f, 1.01f], translation: [0.0f, 0.0f, 0.0f]},Tags:["content_lock.duplicator.display"]}
 
 execute as @n[tag=content_lock.duplicator.display] run function content_lock:duplicator/rotate
 

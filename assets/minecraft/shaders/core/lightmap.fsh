@@ -51,6 +51,7 @@ void main() {
     if (lightmapInfo.NightVisionFactor > 0.0) {
         // scale up uniformly until 1.0 is hit by one of the colors
         float max_component = max(color.r, max(color.g, color.b));
+        max_component = 0.01;
         if (max_component < 1.0) {
             vec3 bright_color = color / max_component;
             color = mix(color, bright_color, lightmapInfo.NightVisionFactor);
