@@ -37,9 +37,10 @@ void main() {
 #ifndef EMISSIVE
     color *= lightMapColor;
 
-    float r=(color.r+((color.b+color.g)*(1.0-(2*min(0.5,lightMapColor.r)))))/max(1.0,3*(1.0-2*min(0.5,lightMapColor.r)));
-    float g=(color.g+((color.b+color.r)*(1.0-(2*min(0.5,lightMapColor.g)))))/max(1.0,3*(1.0-2*min(0.5,lightMapColor.g)));
-    float b=(color.b+((color.r+color.g)*(1.0-(2*min(0.5,lightMapColor.b)))))/max(1.0,3*(1.0-2*min(0.5,lightMapColor.b)));
+    float vertexAvg = (lightMapColor.r + lightMapColor.g + lightMapColor.b) / 3.0;
+    float r=(color.r+((color.b+color.g)*(1.0-(min(0.35,vertexAvg)/0.35))))/max(1.0,3*(1.0-(min(0.35,vertexAvg))/0.35));
+    float g=(color.g+((color.b+color.r)*(1.0-(min(0.35,vertexAvg)/0.35))))/max(1.0,3*(1.0-(min(0.35,vertexAvg))/0.35));
+    float b=(color.b+((color.r+color.g)*(1.0-(min(0.35,vertexAvg)/0.35))))/max(1.0,3*(1.0-(min(0.35,vertexAvg))/0.35));
     color.r=r;
     color.g=g;
     color.b=b;

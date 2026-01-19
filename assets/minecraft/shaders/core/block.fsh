@@ -19,9 +19,10 @@ void main() {
         discard;
     }
 #endif
-    float r=(color.r+((color.b+color.g)*(1.0-(2*min(0.5,vertexColor.r)))))/max(1.0,3*(1.0-2*min(0.5,vertexColor.r)));
-    float g=(color.g+((color.b+color.r)*(1.0-(2*min(0.5,vertexColor.g)))))/max(1.0,3*(1.0-2*min(0.5,vertexColor.g)));
-    float b=(color.b+((color.r+color.g)*(1.0-(2*min(0.5,vertexColor.b)))))/max(1.0,3*(1.0-2*min(0.5,vertexColor.b)));
+    float vertexAvg = (vertexColor.r + vertexColor.g + vertexColor.b) / 3.0;
+    float r=(color.r+((color.b+color.g)*(1.0-(min(0.35,vertexAvg)/0.35))))/max(1.0,3*(1.0-(min(0.35,vertexAvg))/0.35));
+    float g=(color.g+((color.b+color.r)*(1.0-(min(0.35,vertexAvg)/0.35))))/max(1.0,3*(1.0-(min(0.35,vertexAvg))/0.35));
+    float b=(color.b+((color.r+color.g)*(1.0-(min(0.35,vertexAvg)/0.35))))/max(1.0,3*(1.0-(min(0.35,vertexAvg))/0.35));
     color.r=r;
     color.g=g;
     color.b=b;
