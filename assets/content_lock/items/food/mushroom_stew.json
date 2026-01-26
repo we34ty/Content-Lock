@@ -1,0 +1,39 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:chicken_soup"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/food/chicken_soup"
+		  }
+		},
+		{
+		  "when":[
+			"content_lock:leczo"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/food/leczo"
+		  }
+		},
+		{
+		  "when":[
+			"content_lock:glow_salad"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/food/glow_salad"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/mushroom_stew"
+	  }
+	}
+  }
