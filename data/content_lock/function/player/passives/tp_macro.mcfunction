@@ -1,1 +1,1 @@
-$execute in $(dimension) run tp @s $(x) $(y) $(z)
+$execute in $(dimension) positioned over motion_blocking run tp @s $(x) $(y) $(z)
