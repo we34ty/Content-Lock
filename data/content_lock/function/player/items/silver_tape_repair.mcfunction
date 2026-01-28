@@ -1,3 +1,5 @@
+$execute unless data entity @s Inventory[{Slot:$(value)b}].components."minecraft:damage" run return 0
+
 $execute store result score @s content_lock.temp1 run data get entity @s Inventory[{Slot:$(value)b}].components."minecraft:damage"
 
 execute if score @s content_lock.temp1 matches 1.. run tag @s add content_lock.silver_tape_used
