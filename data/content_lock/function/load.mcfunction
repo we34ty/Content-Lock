@@ -132,7 +132,6 @@ scoreboard objectives add content_lock.item_use_cooldown dummy
 scoreboard objectives add content_lock.flawless_countdown dummy
 scoreboard objectives add content_lock.durability dummy
 scoreboard objectives add content_lock.durability_reversed dummy
-scoreboard objectives add content_lock.durability_reversed dummy
 scoreboard objectives add content_lock.anchor_movement dummy
 scoreboard objectives add content_lock.anchor_sneak dummy
 scoreboard objectives add content_lock.bow_charge dummy

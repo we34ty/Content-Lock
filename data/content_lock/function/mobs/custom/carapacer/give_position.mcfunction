@@ -24,8 +24,9 @@ execute if score @s content_lock.ai_timer matches 100..160 run function content_
 
 execute unless score @s content_lock.ai_option matches 1..10 unless score @s content_lock.ai_timer matches 100..160 unless entity @s[tag=content_lock.carapacer.has_a_target] run function content_lock:mobs/custom/carapacer/has_no_target
 execute unless score @s content_lock.ai_option matches 1..10 unless score @s content_lock.ai_timer matches 100..160 if entity @s[tag=content_lock.carapacer.has_a_target] run function content_lock:mobs/custom/carapacer/has_target
-execute unless entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt=!{Motion:[0.0,0.0,0.0]}] run tag @s add content_lock.carapacer.moving
+execute unless entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt=!{Motion:[0.0,0.0,0.0],OnGround:0b}] run tag @s add content_lock.carapacer.moving
 execute if entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={Motion:[0.0,0.0,0.0]}] run tag @s remove content_lock.carapacer.moving
+execute if entity @s[tag=content_lock.carapacer.moving] if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={OnGround:0b}] run tag @s remove content_lock.carapacer.moving
 
 #execute if entity @s[tag=content_lock.carapacer.has_a_target] run function animated_java:carapacer/animations/walk_small_new/stop
 #execute if entity @s[tag=content_lock.carapacer.has_a_target] run function animated_java:carapacer/animations/idle_small_new/stop

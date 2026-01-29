@@ -1,11 +1,11 @@
 execute if entity @s[nbt={HurtTime:1s}] run tag @e[tag=content_lock.im_a_target] remove content_lock.im_a_target
 tag @e[tag=content_lock.im_a_target,distance=40..] remove content_lock.im_a_target
-tag @e[tag=content_lock.im_a_target,type=!#boss_can_damage] remove content_lock.im_a_target
+tag @e[tag=content_lock.im_a_target,type=!#content_lock:boss_can_damage] remove content_lock.im_a_target
 tag @a[tag=content_lock.im_a_target,gamemode=creative] remove content_lock.im_a_target
 tag @a[tag=content_lock.im_a_target,gamemode=spectator] remove content_lock.im_a_target
 
 execute unless entity @n[tag=content_lock.im_a_target] as @p[gamemode=!creative,gamemode=!spectator] run tag @s add content_lock.im_a_target
-execute unless entity @n[tag=content_lock.im_a_target] as @n[type=#boss_can_damage,type=!player,distance=..40] run tag @s add content_lock.im_a_target
+execute unless entity @n[tag=content_lock.im_a_target] as @n[type=#content_lock:boss_can_damage,type=!player,distance=..40] run tag @s add content_lock.im_a_target
 
 execute if score L content_lock.timer1 matches 7 if entity @r[distance=..40,nbt={active_effects:[{id:"minecraft:wither"}]}] as @a[distance=..40,nbt={active_effects:[{id:"minecraft:wither"}]}] run function content_lock:mobs/bosses/wither/bleed_for_wither
 execute if entity @n[type=wither_skull] run kill @e[type=wither_skull]

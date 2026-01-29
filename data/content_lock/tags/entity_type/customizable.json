@@ -2,8 +2,8 @@
   "replace": true,
   "values": [
     "#minecraft:hostile",
-    "#minecraft:rideable_healthbar",
-    "#minecraft:minecarts_no_furrnace",
+    "#content_lock:rideable_healthbar",
+    "#content_lock:minecarts_no_furrnace",
     "minecraft:iron_golem",
     "#minecraft:pets",
     "wandering_trader"

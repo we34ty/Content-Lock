@@ -11,8 +11,8 @@ execute if entity @s[scores={content_lock.attack_timer=130..160}] run particle c
 execute if entity @s[scores={content_lock.attack_timer=110..160}] at @n[tag=content_lock.death_rider_horse] run particle block{block_state:dirt} ~ ~ ~ 0.3 0.3 0.3 1 6 normal
 
 execute if entity @s[scores={content_lock.attack_timer=130}] as @n[tag=content_lock.death_rider_horse] run attribute @s movement_speed modifier remove content_lock.no_speed
-execute if entity @s[scores={content_lock.attack_timer=130}] as @n[tag=content_lock.death_rider_horse] facing entity @n[tag=content_lock.im_a_target,type=#boss_can_damage] feet run rotate @s ~ ~
-execute if entity @s[scores={content_lock.attack_timer=130}] facing entity @n[tag=content_lock.im_a_target,type=#boss_can_damage] feet run rotate @s ~ ~
+execute if entity @s[scores={content_lock.attack_timer=130}] as @n[tag=content_lock.death_rider_horse] facing entity @n[tag=content_lock.im_a_target,type=#content_lock:boss_can_damage] feet run rotate @s ~ ~
+execute if entity @s[scores={content_lock.attack_timer=130}] facing entity @n[tag=content_lock.im_a_target,type=#content_lock:boss_can_damage] feet run rotate @s ~ ~
 execute if entity @s[scores={content_lock.attack_timer=130}] run data merge storage content_lock:saved_stats {boss_speed:0}
 execute if entity @s[scores={content_lock.attack_timer=130}] as @n[tag=content_lock.death_rider_horse] run execute store result storage content_lock:saved_stats boss_speed double 0.01 run attribute @s movement_speed get 500
 execute if entity @s[scores={content_lock.attack_timer=110..130}] as @n[tag=content_lock.death_rider_horse] run function content_lock:mobs/bosses/death_rider/rush_on_horse_motion with storage content_lock:saved_stats

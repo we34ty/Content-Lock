@@ -13,6 +13,7 @@ execute if entity @s[type=player] run tag @e[type=wither_skeleton,tag=content_lo
 execute as @e[type=wither_skeleton,tag=content_lock.second_officer] run scoreboard players set @s content_lock.attack_timer 100
 execute as @e[type=ghast,tag=content_lock.third_officer] run scoreboard players set @s content_lock.attack_timer 100
 execute at @e[type=wither_skeleton,tag=content_lock.second_officer] run spreadplayers ~ ~ 15 20 false @e[tag=content_lock.boss]
+tp @n[tag=content_lock.third_officer.mount] @n[tag=content_lock.third_officer]
 tellraw @a [{"translate":"content_lock:notifications.boss_summoned.officers","color":"light_purple"}]
 
 #clear @s pink_dye[custom_data~{"content_lock.enchanted_witch_summon":true}] 1

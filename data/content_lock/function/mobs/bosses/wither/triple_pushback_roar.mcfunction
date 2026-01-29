@@ -19,7 +19,7 @@ execute if entity @s[scores={content_lock.attack_timer=60}] run playsound entity
 execute if entity @s[scores={content_lock.attack_timer=60}] run particle soul_fire_flame ~ ~2 ~ 0 0 0 1 50 force @a
 execute if entity @s[scores={content_lock.attack_timer=60}] run particle reverse_portal ~ ~2 ~ 0 0 0 1 50 normal @a
 execute if entity @s[scores={content_lock.attack_timer=60}] run scoreboard players set $strength player_motion.api.launch 30000
-execute if entity @s[scores={content_lock.attack_timer=60}] positioned ~-6 ~-6 ~-6 as @e[dx=12,dy=12,dz=12,type=#boss_can_damage] at @s facing entity @n[type=wither] feet rotated ~180 -30 run function player_motion:api/launch_looking
+execute if entity @s[scores={content_lock.attack_timer=60}] positioned ~-6 ~-6 ~-6 as @e[dx=12,dy=12,dz=12,type=#content_lock:boss_can_damage] at @s facing entity @n[type=wither] feet rotated ~180 -30 run function player_motion:api/launch_looking
 
 
 execute if entity @s[scores={content_lock.attack_timer=60}] run tag @s remove content_lock.NoAI

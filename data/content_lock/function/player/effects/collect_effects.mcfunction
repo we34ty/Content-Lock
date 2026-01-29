@@ -1,5 +1,5 @@
 tag @e remove content_lock.vehicle
-execute on vehicle run tag @s[type=#minecraft:rideable_healthbar] add content_lock.vehicle
+execute on vehicle run tag @s[type=#content_lock:rideable_healthbar] add content_lock.vehicle
 execute at @s if entity @e[distance=0..5,tag=content_lock.vehicle] run return run tag @e remove content_lock.vehicle
 
 data merge storage content_lock:saved_stats {bleed:E004,frost:E009,corruption:E014,stamina:E016}

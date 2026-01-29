@@ -1,6 +1,7 @@
 attribute @s spawn_reinforcements modifier add content_lock.customized_content_lock 0.6 add_multiplied_base
 attribute @s max_health modifier add content_lock.customized_content_lock -0.3 add_multiplied_total
 data merge entity @s {CanBreakDoors:1b,CanPickUpLoot:1b}
+data merge entity @s {drop_chances:{chest:1.0f,feet:1.0f,head:1.0f,legs:1.0f,mainhand:1.0f,offhand:1.0f}}
 tag @s add content_lock.can_be_raised_from_ground
 tag @s add content_lock.can_charge_jump
 tag @s add content_lock.attacks_on_sight
@@ -8,6 +9,8 @@ tag @s add content_lock.can_heal_with_food
 item replace entity @s weapon.mainhand with air
 item replace entity @s armor.feet with air
 item replace entity @s armor.legs with air
+item replace entity @s armor.chest with air
+execute unless items entity @s armor.head pumpkin unless items entity @s armor.head jack_o_lantern run item replace entity @s armor.head with air
 
 execute if entity @s[tag=content_lock.enchanted_undead] run return 0
 
