@@ -11,6 +11,8 @@ execute if entity @s[scores={content_lock.attack_timer=40..60}] run particle dus
 execute if entity @s[scores={content_lock.attack_timer=40..60}] facing entity @n[tag=content_lock.im_a_target] feet run rotate @s ~ ~
 execute if entity @s[scores={content_lock.attack_timer=41}] facing entity @n[tag=content_lock.im_a_target] feet positioned ~ ~1.5 ~ positioned ^ ^ ^2 run summon item_display ~ ~ ~ {item:{id:"magma_block"},transformation:[-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f],Tags:["content_lock.third_officer.fireball.projectile"]}
 execute if entity @s[scores={content_lock.attack_timer=40}] as @n[tag=content_lock.third_officer.fireball.projectile] at @s facing entity @n[tag=content_lock.im_a_target] feet run rotate @s ~ ~
+execute if entity @s[scores={content_lock.attack_timer=40}] facing entity @n[tag=content_lock.im_a_target] feet positioned ^ ^ ^1 run function content_lock:mobs/bosses/second_and_third_officers/ghast/raycast_damage_prediction
+execute if entity @s[scores={content_lock.attack_timer=40}] at @n[tag=content_lock.im_a_target] run particle dust{color:16711680,scale:2} ~ ~0.5 ~ 4 4 4 0.05 30 force @a
 
 execute if entity @s[scores={content_lock.attack_timer=40}] run tag @s remove content_lock.third_officer.attacking
 execute if entity @s[scores={content_lock.attack_timer=40}] run tag @s remove content_lock.third_officer.fireball

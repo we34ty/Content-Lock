@@ -6,7 +6,7 @@ execute if entity @s[tag=content_lock.second_phase] if score @s content_lock.tem
 execute unless entity @s[tag=content_lock.second_phase] if score @s content_lock.temp1 matches 1 store result score @s content_lock.temp2 run random value 6..8
 execute if entity @s[tag=content_lock.second_phase] if score @s content_lock.temp1 matches 1 store result score @s content_lock.temp2 run random value 6..10
 
-scoreboard players set @s content_lock.temp2 1
+scoreboard players set @s content_lock.temp2 3
 
 #far
 execute if score @s content_lock.temp2 matches 1 run tag @s add content_lock.third_officer.fireball

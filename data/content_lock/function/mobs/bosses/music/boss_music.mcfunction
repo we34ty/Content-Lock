@@ -5,6 +5,7 @@ execute if entity @s[tag=!content_lock.playing_music] run stopwatch create conte
 execute if entity @s[tag=!content_lock.playing_music] run stopwatch restart content_lock:boss_music_timer
 tag @s add content_lock.playing_music
 
+execute as @a[distance=0..80,tag=!content_lock.listening_to_music] run stopsound @s music
 $execute as @a[distance=0..80,tag=!content_lock.listening_to_music] at @s run playsound $(song) music @s ~ ~ ~ 1 1
 tag @a[distance=0..80,tag=!content_lock.listening_to_music] add content_lock.listening_to_music
 #stopsound @a[tag=listening_to_music,distance=81..100] music
