@@ -15,3 +15,7 @@ execute as @a[scores={content_lock.time_since_death=0},distance=..40] run tag @s
 kill @e[tag=content_lock.iron_guardian_pillar_shaft]
 kill @e[tag=content_lock.iron_guardian_pillar_block]
 execute as @e[tag=content_lock.zombified_piglin_princess.minion] at @s run function content_lock:mobs/bosses/boss_despawn
+execute as @e[tag=content_lock.third_officer.mount] at @s run function content_lock:mobs/bosses/boss_despawn
+kill @e[tag=content_lock.third_officer.helmet]
+kill @e[tag=content_lock.third_officer.blue_laser.target]
+kill @e[tag=content_lock.third_officer.explode_front.point]
