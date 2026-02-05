@@ -13,12 +13,12 @@
               "rules": [
                 {
                   "input_predicate": {
-                    "predicate_type": "always_true"
+                    "predicate_type": "block_match",
+                    "block": "minecraft:cobblestone"
                   },
                   "location_predicate": {
-                    "predicate_type": "minecraft:random_block_match",
-                    "block": "minecraft:cobblestone",
-                    "probability": 0.7
+                    "predicate_type": "block_match",
+                    "block": "minecraft:air"
                   },
                   "output_state": {
                     "Name": "minecraft:mossy_cobblestone"
