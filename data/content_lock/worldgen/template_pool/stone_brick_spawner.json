@@ -1,0 +1,27 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:random_nature/stone_brick_spawner",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "block_age",
+              "mossiness": 0.7
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#leaves"
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#logs"
+            }
+          ]
+        }
+      }
+    ]
+  }

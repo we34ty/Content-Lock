@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "content_lock:wormhole",
+      "structure": "content_lock:stone_brick_spawner",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
     "separation": 10,
-    "spacing": 16,
-    "salt": 354631
+    "spacing": 29,
+    "salt": 31769212
   }
 }

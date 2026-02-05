@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "content_lock:wormhole",
+      "structure": "content_lock:cobble_cave",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "separation": 10,
-    "spacing": 16,
-    "salt": 354631
+    "separation": 6,
+    "spacing": 18,
+    "salt": 33247212
   }
 }

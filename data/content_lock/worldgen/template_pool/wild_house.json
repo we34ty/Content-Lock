@@ -1,0 +1,115 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:wild_house/wild_blacksmith",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "block_age",
+              "mossiness": 0.35
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#leaves"
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#logs"
+            }
+          ]
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:wild_house/wild_hut",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "block_age",
+              "mossiness": 0.35
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#leaves"
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#logs"
+            }
+          ]
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:wild_house/wild_large_house",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "block_age",
+              "mossiness": 0.35
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#leaves"
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#logs"
+            }
+          ]
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:wild_house/wild_library",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "block_age",
+              "mossiness": 0.35
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#leaves"
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#logs"
+            }
+          ]
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:wild_house/wild_small_house",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "block_age",
+              "mossiness": 0.35
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#leaves"
+            },
+            {
+              "processor_type": "protected_blocks",
+              "value": "#logs"
+            }
+          ]
+        }
+      }
+    ]
+  }
