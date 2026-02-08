@@ -4,10 +4,12 @@
       "id": "minecraft:enchanted_book"
     },
     "title": {
-      "translate": "content_lock:advancement.spawn_enchanted_witch.title"
+      "translate": "content_lock:advancement.spawn_enchanted_witch.title",
+      "fallback": "Flowering Night"
     },
     "description": {
-      "translate": "content_lock:advancement.spawn_enchanted_witch.description"
+      "translate": "content_lock:advancement.spawn_enchanted_witch.description",
+      "fallback": "Summon the Enchanted Witch to delve into alchemy"
     },
     "frame": "goal",
     "show_toast": true,

@@ -2,12 +2,14 @@
   "asset_id": "content_lock:dead_beats",
   "author": {
     "color": "gray",
-    "translate": "content_lock:painting.dead_beats.author"
+    "translate": "content_lock:painting.dead_beats.author",
+    "fallback": "Ninomae Ina'nis"
   },
-  "height": 1,
+  "height": 4,
   "title": {
     "color": "yellow",
-    "translate": "content_lock:painting.dead_beats.title"
+    "translate": "content_lock:painting.dead_beats.title",
+    "fallback": "DEAD BEATS"
   },
   "width": 1
 }

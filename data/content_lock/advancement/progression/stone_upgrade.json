@@ -4,10 +4,12 @@
       "id": "minecraft:wild_armor_trim_smithing_template"
     },
     "title": {
-      "translate": "content_lock:advancement.stone_upgrade.title"
+      "translate": "content_lock:advancement.stone_upgrade.title",
+      "fallback": "Pillar Man"
     },
     "description": {
-      "translate": "content_lock:advancement.stone_upgrade.description"
+      "translate": "content_lock:advancement.stone_upgrade.description",
+      "fallback": "Obtain stone upgrade using explosions"
     },
     "frame": "task",
     "show_toast": true,

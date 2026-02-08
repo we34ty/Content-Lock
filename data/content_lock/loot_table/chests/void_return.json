@@ -12,6 +12,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "translate": "content_lock:item.void_return",
+                "fallback": "Void Exit",
                 "italic": false
               }
             },

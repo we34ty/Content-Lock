@@ -4,10 +4,12 @@
       "id": "minecraft:experience_bottle"
     },
     "title": {
-      "translate": "content_lock:advancement.level_up.title"
+      "translate": "content_lock:advancement.level_up.title",
+      "fallback": "You Are The Champion"
     },
     "description": {
-      "translate": "content_lock:advancement.level_up.description"
+      "translate": "content_lock:advancement.level_up.description",
+      "fallback": "Use your skill points during your sleep"
     },
     "frame": "task",
     "show_toast": true,

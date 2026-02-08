@@ -64,14 +64,16 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.copper_tools.description"
+      "translate": "content_lock:advancement.copper_tools.description",
+      "fallback": "Give one of your wooden tools a copper coating"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:copper_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.copper_tools.title"
+      "translate": "content_lock:advancement.copper_tools.title",
+      "fallback": "Gimmick Girl"
     }
   },
   "requirements": [

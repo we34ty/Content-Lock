@@ -1,7 +1,7 @@
-{
-  "anvil_cost": 100,
+{  "anvil_cost": 100,
   "description": {
     "translate": "content_lock:enchantment.quickstep_dagger",
+    "fallback": "Quickstep",
     "color": "#211925"
   },
   "effects": {

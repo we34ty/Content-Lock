@@ -11,10 +11,12 @@
       }
     },
     "title": {
-      "translate": "content_lock:advancement.use_alchemical_extractor.title"
+      "translate": "content_lock:advancement.use_alchemical_extractor.title",
+      "fallback": "Bad Crop"
     },
     "description": {
-      "translate": "content_lock:advancement.use_alchemical_extractor.description"
+      "translate": "content_lock:advancement.use_alchemical_extractor.description",
+      "fallback": "Attack a mob with the Alchemical Extractor to harvest some of its possesions"
     },
     "frame": "goal",
     "show_toast": true,

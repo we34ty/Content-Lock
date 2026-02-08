@@ -148,6 +148,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "translate": "content_lock:item.cezary_baryka",
+                "fallback": "Cezary Baryka",
                 "color": "#0e6bd5",
                 "italic": false
               }

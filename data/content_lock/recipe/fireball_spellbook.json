@@ -16,7 +16,7 @@
     "count": 1,
     "id": "minecraft:netherite_pickaxe",
     "components": {
-      "item_name": [{"translate":"content_lock:item.fireball_spellbook"}],
+      "item_name": [{"translate":"content_lock:item.fireball_spellbook","fallback":"Fireball Spellbook"}],
       "custom_model_data": {"strings":["content_lock:fireball_spellbook"]},
       "max_damage": 200,
       "enchantments": {

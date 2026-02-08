@@ -108,6 +108,7 @@
                 "lore": [
                   {
                     "translate": "content_lock:item.fishing_rod.lore",
+                    "fallback": "Don't let tension get too high!",
                     "color": "gray"
                   }
                 ]

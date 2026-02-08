@@ -1,13 +1,15 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "translate": "content_lock:dialogue.tutorial.title"
+    "translate": "content_lock:dialogue.tutorial.title",
+    "fallback": "Content Lock's Tutorial"
   },
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "content_lock:dialogue.tutorial.page5.text"
+        "translate": "content_lock:dialogue.tutorial.page5.text",
+        "fallback": "Part 3: Mechanics \n\n Content Lock introduces several new mechanics that add depth and complexity to the gameplay experience. Here are some of the key mechanics you'll encounter:\n\n1. Stamina Management: Many actions, such as sprinting and attacking, consume stamina. Keep an eye on your stamina bar and manage it wisely to avoid becoming exhausted during critical moments. The weight attribute addtitionally reduces player's stamina and increases the time needed to recover from running out of stamina, which can make or break your build, so remember to level up your load.\n\n2. Enemy Scaling: Some enemies can spawn in an enhanced state, which causes their stats to increase, as well es giving them powerful equipment and abilities. The chance of running across enhanced enemies increases along with progression, ensuring that combat remains challenging throughout your journey. Be prepared to adapt your strategies as you face more and more tough foes.\n\n3. Food Healing: The hunger no longer exists therefore food can heal you directly. Many of the old foods, as well as some of the previously inedible items, now grant various effects upon eating, which along with multiple new meals which can be made, give you additional advantages in fights.\n\n4. Status Effects: New status effects, such as Bleed and Corruption, can impact your gameplay. Learn how to manage and counteract these effects to maintain your advantage in combat.\n\n5. Leveling System: As you obtain Experience Bottles, you'll have the opportunity to craft levels and therefore level up and allocate skill points to enhance your character's abilities during your sleep. Experiment with different builds to find the playstyle that suits you best, since you have unlimited chances to reallocate your points.\n\n6. Sleep Mechanics: Sleeping in Content Lock comes with its own set of challenges, including potential nightmares and exhaustion from sleeping too many nights in a row. Plan your sleep schedule carefully to avoid negative consequences.\n\nBy mastering these mechanics, you'll be well-equipped to tackle the challenges that Content Lock has in store for you. Embrace the complexity and depth of the gameplay experience as you embark on your adventure."
       },
       "width": 400
     }
@@ -18,7 +20,8 @@
   "actions": [
     {
       "label": {
-        "translate": "content_lock:dialogue.previous_page"
+        "translate": "content_lock:dialogue.previous_page",
+        "fallback": "Previous Page"
       },
       "width": 100,
       "action": {
@@ -28,7 +31,8 @@
     },
     {
       "label": {
-        "translate": "content_lock:dialogue.close"
+        "translate": "content_lock:dialogue.close",
+        "fallback": "Close"
       },
       "width": 100
     }

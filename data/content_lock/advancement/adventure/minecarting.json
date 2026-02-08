@@ -4,10 +4,12 @@
       "id": "minecraft:minecart"
     },
     "title": {
-      "translate": "content_lock:advancement.minecarting.title"
+      "translate": "content_lock:advancement.minecarting.title",
+      "fallback": "Minecarting"
     },
     "description": {
-      "translate": "content_lock:advancement.minecarting.description"
+      "translate": "content_lock:advancement.minecarting.description",
+      "fallback": "Take a ride through the old mines"
     },
     "frame": "goal",
     "show_toast": true,

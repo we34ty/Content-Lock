@@ -4,10 +4,12 @@
       "id": "minecraft:sculk"
     },
     "title": {
-      "translate": "content_lock:advancement.lazy.title"
+      "translate": "content_lock:advancement.lazy.title",
+      "fallback": "Lazy Bones"
     },
     "description": {
-      "translate": "content_lock:advancement.lazy.description"
+      "translate": "content_lock:advancement.lazy.description",
+      "fallback": "Everything's good in moderation"
     },
     "frame": "goal",
     "show_toast": true,

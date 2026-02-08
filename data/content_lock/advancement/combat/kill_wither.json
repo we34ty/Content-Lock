@@ -11,10 +11,12 @@
       }
     },
     "title": {
-      "translate": "content_lock:advancement.kill_wither.title"
+      "translate": "content_lock:advancement.kill_wither.title",
+      "fallback": "The Hot Wind Blowing"
     },
     "description": {
-      "translate": "content_lock:advancement.kill_wither.description"
+      "translate": "content_lock:advancement.kill_wither.description",
+      "fallback": "Defeat the Wither"
     },
     "frame": "task",
     "show_toast": true,

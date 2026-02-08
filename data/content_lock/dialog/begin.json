@@ -1,13 +1,15 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "translate": "content_lock:dialogue.begin.title"
+    "translate": "content_lock:dialogue.begin.title",
+    "fallback": "Content Lock"
   },
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "content_lock:dialogue.begin.line1"
+        "translate": "content_lock:dialogue.begin.line1",
+        "fallback": "Welcome to Content Lock! \n This datapack modifies Minecraft's progression to make it more challenging and rewarding. Prepare yourself for a unique adventure as you navigate through new mechanics, bosses, enchantments and much more. \n \n This is a very extensive datapack, so make sure to check out your advancements to get familiar with new features and progression path. \n Good luck, and have fun!"
       },
       "width": 400
     }
@@ -18,16 +20,19 @@
   "actions": [
     {
       "label": {
-        "translate": "content_lock:dialogue.close"
+        "translate": "content_lock:dialogue.close",
+        "fallback": "Close"
       },
       "width": 100
     },
     {
       "label": {
-        "translate": "content_lock:dialogue.begin.open_tutorial"
+        "translate": "content_lock:dialogue.begin.open_tutorial",
+        "fallback": "Tutorial"
       },
       "tooltip": {
-        "translate": "content_lock:dialogue.begin.tutorial_description"
+        "translate": "content_lock:dialogue.begin.tutorial_description",
+        "fallback": "Open the tutorial to help you get started"
       },
       "width": 100,
       "action": {

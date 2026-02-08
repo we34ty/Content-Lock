@@ -17,7 +17,7 @@
         "id": "marker",
         "Tags": ["content_lock.duplicator"]
       },
-      "item_name": [{"translate":"content_lock:item.duplicator"}],
+      "item_name": [{"translate":"content_lock:item.duplicator","fallback":"Enchantment Duplicator"}],
       "item_model": "content_lock:block/duplicator/duplicator"
     }
   }

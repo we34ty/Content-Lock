@@ -1,6 +1,7 @@
 {
   "description": {
     "translate": "content_lock:enchantment.charge_time_increase",
+    "fallback": "Charge Time Increase",
     "color": "#ffffff"
   },
   "supported_items": "crossbow",

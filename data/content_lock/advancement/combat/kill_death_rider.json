@@ -11,10 +11,12 @@
       }
     },
     "title": {
-      "translate": "content_lock:advancement.kill_death_rider.title"
+      "translate": "content_lock:advancement.kill_death_rider.title",
+      "fallback": "Taste of Death"
     },
     "description": {
-      "translate": "content_lock:advancement.kill_death_rider.description"
+      "translate": "content_lock:advancement.kill_death_rider.description",
+      "fallback": "Defeat the Death Rider"
     },
     "frame": "goal",
     "show_toast": true,

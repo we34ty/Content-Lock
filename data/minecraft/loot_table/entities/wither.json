@@ -76,6 +76,7 @@
                 },
                 "item_name": {
                   "translate": "content_lock:item.trick_switch_hoe",
+                  "fallback": "Hoce",
                   "color": "#9d1d06"
                 },
                 "custom_model_data": {
@@ -226,6 +227,7 @@
               "components": {
                 "item_name": {
                   "translate": "content_lock:item.withers_shield",
+                  "fallback": "Wither's Projectile Shield",
                   "color": "#980b38",
                   "italic": false
                 },
@@ -280,6 +282,7 @@
                 },
                 "item_name": {
                   "translate": "content_lock:item.wither_heal_book",
+                  "fallback": "Wither's Explosive Regeneration Spellbook",
                   "color": "#073daa"
                 },
                 "custom_model_data": {

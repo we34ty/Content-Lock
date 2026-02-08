@@ -2,7 +2,8 @@
   "exclusive_set": "#content_lock:material_specific",
   "anvil_cost": 1,
   "description": {
-    "translate": "content_lock:enchantment.sharpness2"
+    "translate": "content_lock:enchantment.sharpness2",
+    "fallback": "Sharpness V2"
   },
   "effects": {
     "attributes": [

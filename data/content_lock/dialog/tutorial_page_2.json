@@ -1,13 +1,15 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "translate": "content_lock:dialogue.tutorial.title"
+    "translate": "content_lock:dialogue.tutorial.title",
+    "fallback": "Content Lock's Tutorial"
   },
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "content_lock:dialogue.tutorial.page2.text"
+        "translate": "content_lock:dialogue.tutorial.page2.text",
+        "fallback": "Part 1: Progression System\n\nThe progression system in Content Lock is designed to provide a structured yet flexible path for players to follow. Here are some key aspects of the progression system:\n\n1. Advancement Tracking: Your progress is tracked through advancements, which can be accessed via the in-game advancements menu. These advancements will guide you through the various stages of the datapack and provide goals to work towards.\n\n2. Unlocking New Content: As you complete advancements, you'll unlock new areas, items, and abilities. This encourages exploration and experimentation with different playstyles.\n\n3. Difficulty Scaling: The difficulty of enemies and challenges will scale based on your progression. This ensures that the game remains challenging and engaging throughout your journey.\n\n4. Resource Management: Certain resources may become more scarce or valuable as you progress, requiring you to adapt your strategies for gathering and utilizing them effectively.\n\n5. Replayability: The progression system is designed to encourage multiple playthroughs, with different paths and choices leading to unique experiences each time you play.\n\n6. Multiplayer: Content Lock is designed to be enjoyed in both single-player and multiplayer settings. The progression system will adapt to accommodate multiple players, ensuring a balanced and engaging experience for all participants.\n\nBy understanding and embracing the progression system, you'll be well-equipped to tackle the challenges that Content Lock has in store for you. The next page will delve into the basics of progression and how to get started."
       },
       "width": 400
     }
@@ -18,7 +20,8 @@
   "actions": [
     {
       "label": {
-        "translate": "content_lock:dialogue.previous_page"
+        "translate": "content_lock:dialogue.previous_page",
+        "fallback": "Previous Page"
       },
       "width": 100,
       "action": {
@@ -28,7 +31,8 @@
     },
     {
       "label": {
-        "translate": "content_lock:dialogue.next_page"
+        "translate": "content_lock:dialogue.next_page",
+        "fallback": "Next Page"
       },
       "width": 100,
       "action": {
@@ -38,7 +42,8 @@
     },
     {
       "label": {
-        "translate": "content_lock:dialogue.close"
+        "translate": "content_lock:dialogue.close",
+        "fallback": "Close"
       },
       "width": 100
     }

@@ -14,14 +14,16 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.smelt_gold.description"
+      "translate": "content_lock:advancement.smelt_gold.description",
+      "fallback": "Smelt a Gold Ingot"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:gold_ingot"
     },
     "title": {
-      "translate": "content_lock:advancement.smelt_gold.title"
+      "translate": "content_lock:advancement.smelt_gold.title",
+      "fallback": "Freed From Desire"
     }
   },
   "requirements": [

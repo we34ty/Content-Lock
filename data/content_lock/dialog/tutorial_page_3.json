@@ -1,13 +1,15 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "translate": "content_lock:dialogue.tutorial.title"
+    "translate": "content_lock:dialogue.tutorial.title",
+    "fallback": "Content Lock's Tutorial"
   },
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "content_lock:dialogue.tutorial.page3.text1"
+        "translate": "content_lock:dialogue.tutorial.page3.text1",
+        "fallback": "Tools: \n\n All of the tools in Content Lock can break all of the blocks that given type of tool can mine from the very beggining, removing the need to upgrade them for mining purposes. All of them also share rougly the same dps, meaning that upgrades are mostly sidegrades, which give you different utility or stats rather than just more damage."
       },
       "width": 400
     },
@@ -196,7 +198,8 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "content_lock:dialogue.tutorial.page3.text2"
+        "translate": "content_lock:dialogue.tutorial.page3.text2",
+        "fallback": "Upgrading Tools: \n\n To upgrade your tools, you'll need to use a smithing table along with the appropriate upgrade item as well as matching Upgrade Template and material. Simply place your tool along with mentioned items in the smithing table to apply the upgrade. Each upgrade doesn't change much, besides allowing for different enchants to be applied to given tool and changing both attack speed and damage as well as durability. Be sure to experiment with different upgrades to find the perfect combination for your playstyle."
       },
       "width": 400
     },
@@ -207,13 +210,15 @@
       },
       "description": {
         "translate": "content_lock:dialogue.tutorial.page3.smithing_table_description",
+        "fallback": "Smithing Table is used to upgrade your tools using Upgrade Templates and appropriate materials. It can be crafted using 4 wooden planks and 2 iron ingots.",
         "color": "gray"
       }
     },
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "content_lock:dialogue.tutorial.page3.text3"
+        "translate": "content_lock:dialogue.tutorial.page3.text3",
+        "fallback": "Upgrade Templates: \n\n Upgrade Templates are special items that allow your tools to be upgraded to another type in the path of your choosing. Each template corresponds to a specific upgrade path and material type. The upgrade paths go like this: \n - Wood->Copper/Stone/Chainmail, \n - Copper->Gold->Diamond, \n - Stone/Chainmail->Iron->Netherite. \n Each path has it's own quirks so make sure to use the correct template when upgrading your tools to ensure compatibility and unlock the desired benefits."
       },
       "width": 400
     },
@@ -224,6 +229,7 @@
       },
       "description": {
         "translate": "content_lock:dialogue.tutorial.page3.stone_upgrade_description",
+        "fallback": "Chainmail, Stone and Copper Upgrades can be obtained by blowing up stone.",
         "color": "gray"
       },
       "show_tooltip": false,
@@ -236,6 +242,7 @@
       },
       "description": {
         "translate": "content_lock:dialogue.tutorial.page3.iron_upgrade_description",
+        "fallback": "Iron and Golden Upgrades can be crafted with the lower tier of Upgrade as well as by killing Zombified Piglins in overworld.",
         "color": "gray"
       },
       "show_tooltip": false,
@@ -248,6 +255,7 @@
       },
       "description": {
         "translate": "content_lock:dialogue.tutorial.page3.netherite_upgrade_description",
+        "fallback": "Diamond and Netherite Upgrades can be found inside of Bastions in the Nether, as well as crafted using the lower tier of Upgrade.",
         "color": "gray"
       },
       "show_tooltip": false,
@@ -260,7 +268,8 @@
   "actions": [
     {
       "label": {
-        "translate": "content_lock:dialogue.previous_page"
+        "translate": "content_lock:dialogue.previous_page",
+        "fallback": "Previous Page"
       },
       "width": 100,
       "action": {
@@ -270,7 +279,8 @@
     },
     {
       "label": {
-        "translate": "content_lock:dialogue.next_page"
+        "translate": "content_lock:dialogue.next_page",
+        "fallback": "Next Page"
       },
       "width": 100,
       "action": {
@@ -280,7 +290,8 @@
     },
     {
       "label": {
-        "translate": "content_lock:dialogue.close"
+        "translate": "content_lock:dialogue.close",
+        "fallback": "Close"
       },
       "width": 100
     }

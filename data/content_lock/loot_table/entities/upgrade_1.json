@@ -24,23 +24,27 @@
               "lore": [
                 {
                   "translate": "content_lock:item.smithing_template.ingredients",
+                  "fallback": "Ingredients",
                   "color": "blue",
                   "italic": false
                 },
                 {
                   "translate": "content_lock:item.smithing_template.smithing_template",
+                  "fallback": "Smithing Template",
                   "color": "gray",
                   "italic": false
                 },
                 "",
                 {
                   "translate": "content_lock:item.smithing_template.when_upgrading",
+                  "fallback": "When Upgrading",
                   "color": "gray",
                   "italic": false,
                   "bold": true
                 },
                 {
                   "translate": "content_lock:item.smithing_template.applies_to",
+                  "fallback": "Applies to:",
                   "color": "gray",
                   "italic": false
                 },
@@ -49,6 +53,7 @@
                   "extra": [
                     {
                       "translate": "content_lock:item.smithing_template.snout_armor_trim.applies_to",
+                      "fallback": "Chainmail, Stone & Copper Equipment",
                       "color": "blue",
                       "italic": false
                     }
@@ -57,6 +62,7 @@
                 },
                 {
                   "translate": "content_lock:item.smithing_template.ingredients_low",
+                  "fallback": "Ingredients:",
                   "color": "gray",
                   "italic": false
                 },
@@ -65,6 +71,7 @@
                   "extra": [
                     {
                       "translate": "content_lock:item.smithing_template.snout_armor_trim.ingredients",
+                      "fallback": "Iron Ingot or Gold Ingot",
                       "color": "blue",
                       "italic": false
                     }

@@ -2,12 +2,14 @@
   "asset_id": "content_lock:beacon",
   "author": {
     "color": "gray",
-    "translate": "content_lock:painting.beacon.author"
+    "translate": "content_lock:painting.beacon.author",
+    "fallback": "EpickiCraft"
   },
   "height": 2,
   "title": {
     "color": "yellow",
-    "translate": "content_lock:painting.beacon.title"
+    "translate": "content_lock:painting.beacon.title",
+    "fallback": "The Beacon"
   },
   "width": 4
 }

@@ -12,7 +12,8 @@
               "function": "set_components",
               "components": {
                 "item_name": {
-                  "translate": "content_lock:item.alchemical_extractor"
+                  "translate": "content_lock:item.alchemical_extractor",
+                  "fallback": "Alchemical Extractor"
                 },
                 "max_damage": 112,
                 "rarity": "uncommon",
@@ -80,8 +81,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "item_name": {
-                  "translate": "content_lock:item.witchs_skull",
-                  "color": "#d400ff",
+                  "translate": "content_lock:item.witchs_skull",                  "fallback": "Enchanted Witch's Skull",                  "color": "#d400ff",
                   "italic": false
                 }
               }
@@ -161,6 +161,7 @@
                 },
                 "item_name": {
                   "translate": "content_lock:item.witchs_book",
+                  "fallback": "Enchanted Witch's Spellbook",
                   "color": "#d400ff"
                 },
                 "custom_model_data": {

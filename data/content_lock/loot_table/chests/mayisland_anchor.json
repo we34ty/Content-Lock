@@ -76,7 +76,8 @@
                   "has_consume_particles": false
                 },
                 "minecraft:item_name": {
-                  "translate": "content_lock:item.mays_anchor"
+                  "translate": "content_lock:item.mays_anchor",
+                  "fallback": "May's Anchor"
                 },
                 "minecraft:max_damage": 60,
                 "minecraft:tool": {

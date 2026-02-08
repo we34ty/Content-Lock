@@ -4,10 +4,12 @@
       "id": "minecraft:snout_armor_trim_smithing_template"
     },
     "title": {
-      "translate": "content_lock:advancement.iron_upgrade.title"
+      "translate": "content_lock:advancement.iron_upgrade.title",
+      "fallback": "Metal Heart"
     },
     "description": {
-      "translate": "content_lock:advancement.iron_upgrade.description"
+      "translate": "content_lock:advancement.iron_upgrade.description",
+      "fallback": "Obtain an iron and gold upgrade"
     },
     "frame": "task",
     "show_toast": true,

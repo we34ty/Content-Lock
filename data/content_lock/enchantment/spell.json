@@ -2,6 +2,7 @@
   "anvil_cost": 1000,
   "description": {
     "translate": "content_lock:enchantment.spell",
+    "fallback": "Spell",
     "color": "#ffffff"
   },
   "effects": {

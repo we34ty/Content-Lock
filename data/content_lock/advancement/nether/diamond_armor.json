@@ -4,10 +4,12 @@
       "id": "minecraft:diamond_chestplate"
     },
     "title": {
-      "translate": "content_lock:advancement.diamond_armor.title"
+      "translate": "content_lock:advancement.diamond_armor.title",
+      "fallback": "Halley's Comet"
     },
     "description": {
-      "translate": "content_lock:advancement.diamond_armor.description"
+      "translate": "content_lock:advancement.diamond_armor.description",
+      "fallback": "Obtain full set of diamond armor"
     },
     "frame": "challenge",
     "show_toast": true,

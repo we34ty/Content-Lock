@@ -11,10 +11,12 @@
       }
     },
     "title": {
-      "translate": "content_lock:advancement.kill_enchanted_witch.title"
+      "translate": "content_lock:advancement.kill_enchanted_witch.title",
+      "fallback": "Queen of The Night"
     },
     "description": {
-      "translate": "content_lock:advancement.kill_enchanted_witch.description"
+      "translate": "content_lock:advancement.kill_enchanted_witch.description",
+      "fallback": "Defeat the Enchanted Witch"
     },
     "frame": "goal",
     "show_toast": true,

@@ -16,6 +16,7 @@
                 },
                 "item_name": {
                   "translate": "content_lock:item.undead_book",
+                  "fallback": "Book of Undead",
                   "color": "#d400ff"
                 },
                 "custom_model_data": {

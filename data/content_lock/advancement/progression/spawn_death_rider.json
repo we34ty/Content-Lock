@@ -4,10 +4,12 @@
       "id": "minecraft:jack_o_lantern"
     },
     "title": {
-      "translate": "content_lock:advancement.spawn_death_rider.title"
+      "translate": "content_lock:advancement.spawn_death_rider.title",
+      "fallback": "I Bet My Life"
     },
     "description": {
-      "translate": "content_lock:advancement.spawn_death_rider.description"
+      "translate": "content_lock:advancement.spawn_death_rider.description",
+      "fallback": "Summon the Death Rider"
     },
     "frame": "goal",
     "show_toast": true,

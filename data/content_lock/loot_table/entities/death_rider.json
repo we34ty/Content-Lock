@@ -125,6 +125,7 @@
               "components": {
                 "item_name": {
                   "translate": "content_lock:item.riders_eye",
+                  "fallback": "Rider's Eye",
                   "color": "#980b38",
                   "italic": false
                 },
@@ -215,6 +216,7 @@
               "components": {
                 "item_name": {
                   "translate": "content_lock:item.quickstep_dagger",
+                  "fallback": "Quickstep Dagger",
                   "color": "#525252",
                   "italic": false
                 },

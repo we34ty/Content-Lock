@@ -4,10 +4,12 @@
       "id": "minecraft:netherite_upgrade_smithing_template"
     },
     "title": {
-      "translate": "content_lock:advancement.netherite_upgrade.title"
+      "translate": "content_lock:advancement.netherite_upgrade.title",
+      "fallback": "Override"
     },
     "description": {
-      "translate": "content_lock:advancement.netherite_upgrade.description"
+      "translate": "content_lock:advancement.netherite_upgrade.description",
+      "fallback": "Obtain the Diamond and Nethite Upgrade"
     },
     "frame": "task",
     "show_toast": true,

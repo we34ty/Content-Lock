@@ -3,6 +3,7 @@
   "anvil_cost": 1,
   "description": {
     "translate": "content_lock:enchantment.silver_tape",
+    "fallback": "Mend",
     "color": "#ffffff"
   },
   "effects": {

@@ -34,14 +34,16 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.netherite_tools.description"
+      "translate": "content_lock:advancement.netherite_tools.description",
+      "fallback": "Combine iron tools with netherite to increase their durability"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:netherite_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.netherite_tools.title"
+      "translate": "content_lock:advancement.netherite_tools.title",
+      "fallback": "Jetstream"
     }
   },
   "requirements": [

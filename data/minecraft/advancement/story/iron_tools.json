@@ -64,14 +64,16 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.iron_tools.description"
+      "translate": "content_lock:advancement.iron_tools.description",
+      "fallback": "Cover one of your stone tools in iron"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:iron_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.iron_tools.title"
+      "translate": "content_lock:advancement.iron_tools.title",
+      "fallback": "Wanted, Wasted"
     }
   },
   "requirements": [

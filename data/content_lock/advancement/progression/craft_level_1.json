@@ -4,10 +4,12 @@
       "id": "minecraft:yellow_bundle"
     },
     "title": {
-      "translate": "content_lock:advancement.craft_level_1.title"
+      "translate": "content_lock:advancement.craft_level_1.title",
+      "fallback": "Don't Spend It All in One Place"
     },
     "description": {
-      "translate": "content_lock:advancement.craft_level_1.description"
+      "translate": "content_lock:advancement.craft_level_1.description",
+      "fallback": "Combine 4 Experience Bottles, gained from achievements and chests, with some ores to level up"
     },
     "frame": "task",
     "show_toast": true,

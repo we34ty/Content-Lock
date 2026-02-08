@@ -1,6 +1,7 @@
 {
   "description": {
     "translate": "content_lock:enchantment.armor_level",
+    "fallback": "Armor Level",
     "color": "#9920d9"
   },
   "supported_items": "#content_lock:enchantable/armor",

@@ -4,10 +4,12 @@
       "id": "minecraft:leather_chestplate"
     },
     "title": {
-      "translate": "content_lock:advancement.leather_armor.title"
+      "translate": "content_lock:advancement.leather_armor.title",
+      "fallback": "Take a Hint"
     },
     "description": {
-      "translate": "content_lock:advancement.leather_armor.description"
+      "translate": "content_lock:advancement.leather_armor.description",
+      "fallback": "Use leather to craft yourself some protection"
     },
     "frame": "task",
     "show_toast": true,

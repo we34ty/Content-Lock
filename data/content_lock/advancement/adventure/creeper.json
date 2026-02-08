@@ -4,10 +4,12 @@
       "id": "minecraft:tnt"
     },
     "title": {
-      "translate": "content_lock:advancement.creeper.title"
+      "translate": "content_lock:advancement.creeper.title",
+      "fallback": "Aw Man"
     },
     "description": {
-      "translate": "content_lock:advancement.creeper.description"
+      "translate": "content_lock:advancement.creeper.description",
+      "fallback": "Take damage from Creeper's explosion"
     },
     "frame": "task",
     "show_toast": true,

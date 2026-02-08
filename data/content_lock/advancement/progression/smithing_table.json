@@ -4,10 +4,12 @@
       "id": "minecraft:smithing_table"
     },
     "title": {
-      "translate": "content_lock:advancement.smithing_table.title"
+      "translate": "content_lock:advancement.smithing_table.title",
+      "fallback": "Stronger Than a Table"
     },
     "description": {
-      "translate": "content_lock:advancement.smithing_table.description"
+      "translate": "content_lock:advancement.smithing_table.description",
+      "fallback": "Craft a Smithing Table to make use of your upgrades"
     },
     "frame": "task",
     "show_toast": true,

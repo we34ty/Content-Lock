@@ -11,7 +11,8 @@
     "announce_to_chat": false,
     "background": "minecraft:block/gilded_blackstone",
     "description": {
-      "translate": "content_lock:advancement.combat.description"
+      "translate": "content_lock:advancement.combat.description",
+      "fallback": "The challenges of fighting"
     },
     "icon": {
       "count": 1,
@@ -19,7 +20,8 @@
     },
     "show_toast": false,
     "title": {
-      "translate": "content_lock:advancement.combat.title"
+      "translate": "content_lock:advancement.combat.title",
+      "fallback": "Combat"
     }
   },
   "requirements": [

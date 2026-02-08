@@ -27,7 +27,7 @@
           }
         }
       },
-      "item_name": [{"translate":"content_lock:item.better_tnt"}],
+      "item_name": [{"translate":"content_lock:item.better_tnt","fallback":"Explosive Barrel"}],
       "item_model": "barrel"
     }
   }

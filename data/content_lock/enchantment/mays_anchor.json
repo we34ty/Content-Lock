@@ -1,8 +1,7 @@
 {
   "anvil_cost": 100,
   "description": {
-    "translate": "content_lock:enchantment.mays_anchor",
-    "color": "#8ac4cd"
+    "translate": "content_lock:enchantment.mays_anchor",    "fallback": "Tatsugeki",    "color": "#8ac4cd"
   },
   "effects": {
   },

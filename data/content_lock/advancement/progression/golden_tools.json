@@ -64,14 +64,16 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.golden_tools.description"
+      "translate": "content_lock:advancement.golden_tools.description",
+      "fallback": "Turn one of your copper tools to gold"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:golden_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.golden_tools.title"
+      "translate": "content_lock:advancement.golden_tools.title",
+      "fallback": "Il vento d'oro"
     }
   },
   "requirements": [

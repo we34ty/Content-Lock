@@ -11,10 +11,12 @@
       }
     },
     "title": {
-      "translate": "content_lock:advancement.kill_iron_guardian.title"
+      "translate": "content_lock:advancement.kill_iron_guardian.title",
+      "fallback": "Iron-Clad Faith"
     },
     "description": {
-      "translate": "content_lock:advancement.kill_iron_guardian.description"
+      "translate": "content_lock:advancement.kill_iron_guardian.description",
+      "fallback": "Defeat the Iron Guardian"
     },
     "frame": "goal",
     "show_toast": true,

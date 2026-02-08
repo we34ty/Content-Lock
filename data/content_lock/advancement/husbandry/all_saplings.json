@@ -4,10 +4,12 @@
       "id": "minecraft:oak_sapling"
     },
     "title": {
-      "translate": "content_lock:advancement.all_saplings.title"
+      "translate": "content_lock:advancement.all_saplings.title",
+      "fallback": "I am Groot"
     },
     "description": {
-      "translate": "content_lock:advancement.all_saplings.description"
+      "translate": "content_lock:advancement.all_saplings.description",
+      "fallback": "Find every type of sapling"
     },
     "frame": "challenge",
     "show_toast": true,

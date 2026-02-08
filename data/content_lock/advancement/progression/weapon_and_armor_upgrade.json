@@ -7,10 +7,12 @@
       }
     },
     "title": {
-      "translate": "content_lock:advancement.weapon_and_armor_upgrade.title"
+      "translate": "content_lock:advancement.weapon_and_armor_upgrade.title",
+      "fallback": "Hope for The Future"
     },
     "description": {
-      "translate": "content_lock:advancement.weapon_and_armor_upgrade.description"
+      "translate": "content_lock:advancement.weapon_and_armor_upgrade.description",
+      "fallback": "Combine an enchanted book with some ores to obtain an enchanted book that can be used to level up your weapons and armor"
     },
     "frame": "task",
     "show_toast": true,

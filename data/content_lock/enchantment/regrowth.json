@@ -2,7 +2,8 @@
   "exclusive_set": "#content_lock:material_specific",
   "anvil_cost": 1,
   "description": {
-    "translate": "content_lock:enchantment.regrowth"
+    "translate": "content_lock:enchantment.regrowth",
+    "fallback": "Regrowth"
   },
   "effects": {
     "minecraft:post_attack": [

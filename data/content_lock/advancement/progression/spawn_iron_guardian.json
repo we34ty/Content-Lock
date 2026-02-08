@@ -4,10 +4,12 @@
       "id": "minecraft:furnace"
     },
     "title": {
-      "translate": "content_lock:advancement.spawn_iron_guardian.title"
+      "translate": "content_lock:advancement.spawn_iron_guardian.title",
+      "fallback": "The Rock"
     },
     "description": {
-      "translate": "content_lock:advancement.spawn_iron_guardian.description"
+      "translate": "content_lock:advancement.spawn_iron_guardian.description",
+      "fallback": "Summon the Iron Guardian to help you with your smelting problems"
     },
     "frame": "task",
     "show_toast": true,

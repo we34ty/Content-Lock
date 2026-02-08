@@ -64,14 +64,16 @@
   },
   "display": {
     "description": {
-      "translate": "content_lock:advancement.upgrade_tools.description"
+      "translate": "content_lock:advancement.upgrade_tools.description",
+      "fallback": "Use smithing table to turn your wooden tool into stone"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:stone_pickaxe"
     },
     "title": {
-      "translate": "content_lock:advancement.upgrade_tools.title"
+      "translate": "content_lock:advancement.upgrade_tools.title",
+      "fallback": "Toughen Up"
     }
   },
   "requirements": [

@@ -4,10 +4,12 @@
       "id": "minecraft:nether_wart"
     },
     "title": {
-      "translate": "content_lock:advancement.get_alchemical_wart.title"
+      "translate": "content_lock:advancement.get_alchemical_wart.title",
+      "fallback": "Out of Place"
     },
     "description": {
-      "translate": "content_lock:advancement.get_alchemical_wart.description"
+      "translate": "content_lock:advancement.get_alchemical_wart.description",
+      "fallback": "Obtain Alchemical Warts, from the deepest parts of the world using the Alchemical Extractor, to brew potions"
     },
     "frame": "goal",
     "show_toast": true,

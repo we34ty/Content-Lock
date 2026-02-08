@@ -4,10 +4,12 @@
       "id": "minecraft:amethyst_block"
     },
     "title": {
-      "translate": "content_lock:advancement.fish_in_underground_pond.title"
+      "translate": "content_lock:advancement.fish_in_underground_pond.title",
+      "fallback": "Lucky Catch"
     },
     "description": {
-      "translate": "content_lock:advancement.fish_in_underground_pond.description"
+      "translate": "content_lock:advancement.fish_in_underground_pond.description",
+      "fallback": "Go fishing in a special underground pond"
     },
     "frame": "challenge",
     "show_toast": true,
