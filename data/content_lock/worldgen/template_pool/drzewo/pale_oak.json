@@ -1,0 +1,460 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "content_lock:random_nature/drzewo",
+          "projection": "rigid",
+          "processors": [
+            {
+              "processor_type": "rule",
+              "rules": [
+                {
+                  "input_predicate": {
+                    "block": "minecraft:oak_log",
+                    "predicate_type": "minecraft:block_match"
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_log"
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "block": "minecraft:oak_wood",
+                    "predicate_type": "minecraft:block_match"
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_wood"
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "false",
+                        "north": "false",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "false",
+                      "north": "false",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "false",
+                        "north": "false",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "false",
+                      "north": "false",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "true",
+                        "north": "false",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "true",
+                      "north": "false",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "false",
+                        "north": "true",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "false",
+                      "north": "true",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "false",
+                        "north": "false",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "false",
+                      "north": "false",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "true",
+                        "north": "false",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "true",
+                      "north": "false",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "false",
+                        "north": "true",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "false",
+                      "north": "true",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "false",
+                        "north": "false",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "false",
+                      "north": "false",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "true",
+                        "north": "true",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "true",
+                      "north": "true",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "true",
+                        "north": "false",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "true",
+                      "north": "false",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "false",
+                        "north": "true",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "false",
+                      "north": "true",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "true",
+                        "north": "true",
+                        "south": "false"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "true",
+                      "north": "true",
+                      "south": "false"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "true",
+                        "north": "false",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "false",
+                      "north": "true",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "false",
+                        "north": "true",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "false",
+                      "north": "true",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "false",
+                        "west": "true",
+                        "north": "true",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "false",
+                      "west": "true",
+                      "north": "true",
+                      "south": "true"
+                    }
+                  }
+                },
+                {
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:oak_fence",
+                      "Properties": {
+                        "east": "true",
+                        "west": "true",
+                        "north": "true",
+                        "south": "true"
+                      }
+                    }
+                  },
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:pale_oak_fence",
+                    "Properties": {
+                      "east": "true",
+                      "west": "true",
+                      "north": "true",
+                      "south": "true"
+                    }
+                  }
+                }
+              ]              
+            }
+          ]
+        }
+      }
+    ]
+  }

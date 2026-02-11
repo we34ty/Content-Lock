@@ -1,0 +1,34 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:drzewo/acacia",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:drzewo/oak",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:drzewo/pale_oak",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:drzewo/spruce",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:drzewo/birch",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:drzewo/dark_oak",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 2,
+    "spacing": 12,
+    "salt": 19236212
+  }
+}
