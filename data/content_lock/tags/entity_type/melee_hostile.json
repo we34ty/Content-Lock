@@ -1,0 +1,23 @@
+{
+  "replace": true,
+  "values": [
+    "#content_lock:zombies",
+    "piglin",
+    "piglin_brute",
+    "hoglin",
+    "zoglin",
+    "enderman",
+    "endermite",
+    "silverfish",
+    "#content_lock:spiders",
+    "minecraft:vindicator",
+    "vex",
+    "wither_skeleton",
+    "slime",
+    "magma_cube",
+    "polar_bear",
+    "ravager",
+    "creaking",
+    "iron_golem"
+   ]
+}

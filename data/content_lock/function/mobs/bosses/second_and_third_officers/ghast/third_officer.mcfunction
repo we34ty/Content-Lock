@@ -12,7 +12,7 @@ execute if entity @s[tag=content_lock.third_officer.fireball] run function conte
 execute if entity @s[tag=content_lock.third_officer.blue_fireball] run function content_lock:mobs/bosses/second_and_third_officers/ghast/blue_fireball
 execute if entity @s[tag=content_lock.third_officer.blue_laser] run function content_lock:mobs/bosses/second_and_third_officers/ghast/blue_laser
 execute if entity @s[tag=content_lock.third_officer.explode_front] run function content_lock:mobs/bosses/second_and_third_officers/ghast/explode_front
-execute if entity @s[tag=content_lock.third_officer.stun_knockback] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.stun_knockback] run function content_lock:mobs/bosses/second_and_third_officers/ghast/stun_knockback
 execute if entity @s[tag=content_lock.third_officer.vortex_explode] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
 
 

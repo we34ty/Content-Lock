@@ -21,6 +21,7 @@ execute if entity @s[type=iron_golem] run function content_lock:mobs/customizati
 execute if entity @s[type=#pets] run function content_lock:mobs/customization/pets
 execute if entity @s[type=wandering_trader] run function content_lock:mobs/customization/wandering_trader
 execute if entity @s[type=vex] run function content_lock:mobs/customization/vex
+execute if entity @s[type=#content_lock:melee_hostile] run tag @s add content_lock.limited_attack_range
 
 execute store result entity @s Health float 1 run attribute @s max_health get
 attribute @s follow_range modifier add content_lock.customized_content_lock 1 add_multiplied_total

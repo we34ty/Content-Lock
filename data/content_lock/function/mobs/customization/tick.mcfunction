@@ -9,5 +9,7 @@ execute if entity @s[tag=content_lock.customized,type=!#entities,tag=content_loc
 execute if entity @s[tag=content_lock.customized,type=#minecraft:arrows,tag=content_lock.can_ricoshet] run function content_lock:mobs/customization/active/check_for_ricoshet
 execute if entity @s[tag=content_lock.customized,type=#content_lock:minecarts_no_furrnace] if entity @e[type=furnace_minecart,distance=..4] run function content_lock:mobs/customization/active/minecart_follow_furnace_minecart
 execute if entity @s[tag=content_lock.customized,tag=content_lock.living_armor_sounds] run function content_lock:mobs/customization/active/living_armor_sounds
+execute if entity @s[tag=content_lock.customized,tag=content_lock.limited_attack_range,tag=!content_lock.limited_attack_range.reduced] run function content_lock:mobs/customization/active/melee_range_reduction
+execute if entity @s[tag=content_lock.customized,tag=content_lock.limited_attack_range.reduced] at @s run function content_lock:mobs/customization/active/melee_range_unreduction
 
 #execute if score L content_lock.timer1 matches 12 if entity @s[tag=content_lock.customized,type=enderman,tag=cannot_be_put_in_boat] run function content_lock:mobs/customization/active/go_out_of_boat
