@@ -13,12 +13,12 @@ execute if entity @s[tag=content_lock.third_officer.blue_fireball] run function 
 execute if entity @s[tag=content_lock.third_officer.blue_laser] run function content_lock:mobs/bosses/second_and_third_officers/ghast/blue_laser
 execute if entity @s[tag=content_lock.third_officer.explode_front] run function content_lock:mobs/bosses/second_and_third_officers/ghast/explode_front
 execute if entity @s[tag=content_lock.third_officer.stun_knockback] run function content_lock:mobs/bosses/second_and_third_officers/ghast/stun_knockback
-execute if entity @s[tag=content_lock.third_officer.vortex_explode] run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball
+execute if entity @s[tag=content_lock.third_officer.vortex_explode] run function content_lock:mobs/bosses/second_and_third_officers/ghast/vortex_explode
 
 
 execute unless entity @n[tag=content_lock.second_officer] run function content_lock:mobs/bosses/second_and_third_officers/ghast/survived
 function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.both_officers",duration:220}
-execute if score L content_lock.timer1 matches 7 at @p at @n[tag=content_lock.boss] as @e[tag=content_lock.boss] run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
+execute if score L content_lock.timer1 matches 7 at @p at @n[tag=content_lock.boss] as @e[tag=content_lock.boss] run function content_lock:mobs/bosses/boss_player_count_scaling {distance:80}
 function content_lock:mobs/bosses/boss_bars/officers_ghast
 
 scoreboard players add @s content_lock.attack_timer 0
@@ -38,5 +38,3 @@ execute if entity @s[tag=content_lock.third_officer.attacking] as @n[tag=content
 #execute if score @s content_lock.attack_timer matches 1 as @n[tag=content_lock.third_officer.mount] run data merge entity @s {NoAI:0b}
 execute at @n[tag=content_lock.third_officer.mount] rotated as @s run tp @s ~ ~-1 ~
 execute rotated as @s run rotate @n[tag=content_lock.third_officer.helmet] ~ 0
-
-give @s iron_sword[item_name={translate:"content_lock:item.sword_in_stone",fallback:"Sword in Stone"},item_model="content_lock:weapons/sword_in_stone",attribute_modifiers=[{type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand",id:"content_lock.basic_weapon_stats",display:{type:"hidden"}}],unbreakable={}]

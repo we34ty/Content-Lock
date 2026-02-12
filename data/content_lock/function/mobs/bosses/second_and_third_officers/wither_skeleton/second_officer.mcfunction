@@ -7,7 +7,7 @@ execute if entity @s[nbt={HurtTime:1s}] run scoreboard players set @s content_lo
 
 execute unless entity @n[tag=content_lock.third_officer] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/survived
 function content_lock:mobs/bosses/music/boss_music {song:"content_lock:music.both_officers",duration:220}
-execute if score L content_lock.timer1 matches 7 at @p at @n[tag=content_lock.boss] as @e[tag=content_lock.boss] run function content_lock:mobs/bosses/boss_player_count_scaling {distance:40}
+execute if score L content_lock.timer1 matches 7 at @p at @n[tag=content_lock.boss] as @e[tag=content_lock.boss] run function content_lock:mobs/bosses/boss_player_count_scaling {distance:80}
 function content_lock:mobs/bosses/boss_bars/officers_skeleton
 
 scoreboard players add @s content_lock.attack_timer 0
