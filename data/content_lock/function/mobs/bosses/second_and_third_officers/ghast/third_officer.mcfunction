@@ -38,3 +38,5 @@ execute if entity @s[tag=content_lock.third_officer.attacking] as @n[tag=content
 #execute if score @s content_lock.attack_timer matches 1 as @n[tag=content_lock.third_officer.mount] run data merge entity @s {NoAI:0b}
 execute at @n[tag=content_lock.third_officer.mount] rotated as @s run tp @s ~ ~-1 ~
 execute rotated as @s run rotate @n[tag=content_lock.third_officer.helmet] ~ 0
+
+give @s iron_sword[item_name={translate:"content_lock:item.sword_in_stone",fallback:"Sword in Stone"},item_model="content_lock:weapons/sword_in_stone",attribute_modifiers=[{type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand",id:"content_lock.basic_weapon_stats",display:{type:"hidden"}}],unbreakable={}]

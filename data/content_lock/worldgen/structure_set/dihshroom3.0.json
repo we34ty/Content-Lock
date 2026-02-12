@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:dihshroom3.0_blue",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:dihshroom3.0_red",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 2,
+    "spacing": 8,
+    "salt": 45167
+  }
+}

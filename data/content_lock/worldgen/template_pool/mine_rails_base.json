@@ -1,0 +1,13 @@
+{
+    "fallback": "content_lock:mine_rails_base",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:feature_pool_element",
+          "feature": "content_lock:mine_rails_base",
+          "projection": "rigid"
+        }
+      }
+    ]
+  }
