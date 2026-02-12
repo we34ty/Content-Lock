@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:badlandsw",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 4,
+    "spacing": 14,
+    "salt": 3559821
+  }
+}

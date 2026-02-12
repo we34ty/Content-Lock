@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:bees",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 16,
+    "spacing": 28,
+    "salt": 3559821
+  }
+}
