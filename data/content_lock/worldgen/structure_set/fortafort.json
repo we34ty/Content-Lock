@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:fortafort",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 32,
+    "spacing": 51,
+    "salt": 29417680
+  }
+}

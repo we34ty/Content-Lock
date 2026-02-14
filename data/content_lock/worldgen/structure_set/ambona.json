@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:ambona",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 14,
+    "spacing": 25,
+    "salt": 328728
+  }
+}

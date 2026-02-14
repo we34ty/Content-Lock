@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:shrekass",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 7,
+    "spacing": 18,
+    "salt": 43534
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:hatazbagna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 8,
+    "spacing": 22,
+    "salt": 46174
+  }
+}

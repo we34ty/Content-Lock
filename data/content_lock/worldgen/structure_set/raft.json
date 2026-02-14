@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:raft",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 24,
+    "spacing": 38,
+    "salt": 5681
+  }
+}

@@ -4,3 +4,4 @@ execute if entity @s[nbt={VillagerData:{profession:"minecraft:butcher"}}] run re
 execute if entity @s[nbt={VillagerData:{profession:"minecraft:cartographer"}}] run return run function content_lock:player/passives/modify_villagers/cartographer
 execute if entity @s[nbt={VillagerData:{profession:"minecraft:cleric"}}] run return run function content_lock:player/passives/modify_villagers/cleric
 execute if entity @s[nbt={VillagerData:{profession:"minecraft:farmer"}}] run return run function content_lock:player/passives/modify_villagers/farmer
+execute if entity @s[nbt={VillagerData:{profession:"minecraft:fisherman"}}] run return run function content_lock:player/passives/modify_villagers/fisherman
