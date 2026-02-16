@@ -10,7 +10,13 @@
         "max_reach": 0,
         "min_reach": 0
       },
-      "enchantment_glint_override": true
+      "swing_animation":{
+        "type": "none"
+      },
+      "enchantment_glint_override": true,
+      "custom_data": {
+        "content_lock.weapon": true
+      }
     }
   },
   {
