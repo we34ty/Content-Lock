@@ -13,7 +13,7 @@ execute if score @s content_lock.attack_timer matches ..69 run rotate @s facing 
 
 execute if score @s content_lock.attack_timer matches 70 run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump_motion
 
-execute if score @s content_lock.attack_timer matches 56..65 facing entity @n[tag=content_lock.second_officer.temp_target] feet rotated ~ 0 positioned ^ ^ ^1 run function content_lock:mobs/bosses/universal/damage_player_d {damage:1,damage_type:mob_attack,half_distance:1,distance:2}
+execute if score @s content_lock.attack_timer matches 56..65 facing entity @n[tag=content_lock.second_officer.temp_target] feet rotated ~ 0 positioned ^ ^ ^1 run function content_lock:mobs/bosses/universal/damage_player_d {damage:8,damage_type:mob_attack,half_distance:1,distance:2}
 
 execute if score @s content_lock.attack_timer matches 56..68 if entity @s[nbt={OnGround:1b}] as @e[type=item_display,tag=aj.second_officer.root,distance=..40] run function animated_java:second_officer/animations/jump/apply_frame {frame:45}
 execute if score @s content_lock.attack_timer matches 56..68 if entity @s[nbt={OnGround:1b}] as @e[type=item_display,tag=aj.second_officer.root,distance=..40] run scoreboard players set @s content_lock.attack_timer 55

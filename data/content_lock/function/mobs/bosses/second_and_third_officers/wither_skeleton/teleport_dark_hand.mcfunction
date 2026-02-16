@@ -11,7 +11,7 @@ execute if score @s content_lock.attack_timer matches ..61 run rotate @s facing 
 
 execute if score @s content_lock.attack_timer matches 61 at @n[tag=content_lock.second_officer.temp_target] positioned over motion_blocking run tp @s ~ ~ ~
 
-execute if score @s content_lock.attack_timer matches 40..50 facing entity @n[tag=content_lock.second_officer.temp_target] feet rotated ~ 0 positioned ^ ^ ^0.5 run function content_lock:mobs/bosses/universal/damage_player_d {damage:1,damage_type:mob_attack,half_distance:0.5,distance:1}
+execute if score @s content_lock.attack_timer matches 40..50 facing entity @n[tag=content_lock.second_officer.temp_target] feet rotated ~ 0 positioned ^ ^ ^0.5 run function content_lock:mobs/bosses/universal/damage_player_d {damage:10,damage_type:mob_attack,half_distance:0.5,distance:1}
 
 execute if score @s content_lock.attack_timer matches 40 as @e[type=item_display,tag=aj.second_officer.root,distance=..40] run function animated_java:second_officer/animations/teleport_dark_hand/stop
 execute if score @s content_lock.attack_timer matches 40 run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/enable_movement
