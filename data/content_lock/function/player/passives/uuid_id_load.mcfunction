@@ -1,0 +1,1 @@
+$data modify storage content_lock:saved_stats {} merge from storage content_lock:uuids UUIDs[{Id:$(Id)}].data

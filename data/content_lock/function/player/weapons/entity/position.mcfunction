@@ -1,0 +1,1 @@
+$execute at @n[nbt={UUID:$(UUID)}] rotated $(rotation) 0 positioned ~ ~$(distance) ~ positioned ^ ^ ^0.5 run tp @s ~ ~ ~

@@ -1,0 +1,3 @@
+execute if items entity @s weapon.offhand #content_lock:weapon run function content_lock:player/weapons/disable
+
+attribute @s attack_damage modifier remove content_lock.weapons.no_damage

@@ -124,7 +124,7 @@
     "content_lock:levels.damage.description": "Zwiększa zadawane obrażenia o 1.5%%",
     "content_lock:levels.hp": " Żywotnośc (",
     "content_lock:levels.hp.increase": "Żywotnośc została zwiększona do ",
-    "content_lock:levels.hp.description": "Zwiększa ilość życia o 0.5 (Zaokrąglone w górę do najbliższej liczby parzystej)",
+    "content_lock:levels.hp.description": "Zwiększa ilość życia o 0.5 (Zaokrąglone do najbliższej liczby parzystej)",
     "content_lock:levels.load": " Obciążenie (",
     "content_lock:levels.load.increase": "Obciążenie zostało zwiększone do ",
     "content_lock:levels.load.description": "Zwiększa udźwig o 5%%",

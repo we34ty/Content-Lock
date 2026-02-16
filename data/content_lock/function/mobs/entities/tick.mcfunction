@@ -15,6 +15,8 @@ execute if entity @s[tag=content_lock.duplicator] at @s run function content_loc
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{"content_lock:clear_in_inventory":true}}}}] run kill @s
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{"content_lock:duplication_result":true}}}}] run kill @s
 
+execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root] at @s run function content_lock:player/weapons/entity/sword
+
 execute if entity @s[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] run function animated_java:carapacer/remove/this
 execute if entity @s[tag=content_lock.carapacer.taken_shape] run tag @s remove content_lock.carapacer.taken_shape
 #execute if entity @e[type=trident,tag=!content_lock.arrow.changed_damage] as @e[type=trident,tag=!content_lock.arrow.changed_damage] at @s run function content_lock:mobs/entities/projectiles/arrows

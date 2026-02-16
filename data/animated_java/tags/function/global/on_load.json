@@ -4,6 +4,7 @@
 		"animated_java:carapacer/on_load",
 		"animated_java:enchanted_witch/on_load",
 		"animated_java:second_officer/on_load",
+		"animated_java:weapons/on_load",
 		"animated_java:wormhole/on_load"
 	]
 }

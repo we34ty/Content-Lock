@@ -38,6 +38,8 @@ execute if entity @s[tag=content_lock.enchantment.immovable.stats,tag=!content_l
 
 execute if entity @s[tag=content_lock.enchantment.active] run function content_lock:player/enchantments/tick
 
+function content_lock:player/weapons/tick
+
 execute if score @s content_lock.quarry_place matches 1.. at @s run function content_lock:player/passives/placed_special
 
 clear @s *[custom_data={"content_lock:clear_in_inventory":true}]

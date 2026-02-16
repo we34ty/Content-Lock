@@ -124,7 +124,7 @@
     "content_lock:levels.damage.description": "Increases amount of damage dealt by 1.5%%",
     "content_lock:levels.hp": " Vitality (",
     "content_lock:levels.hp.increase": "Vitality increased to ",
-    "content_lock:levels.hp.description": "Increases amount of health by 0.5 (Rounded up to even number)",
+    "content_lock:levels.hp.description": "Increases amount of health by 0.5 (Rounded to an even number)",
     "content_lock:levels.load": " Load (",
     "content_lock:levels.load.increase": "Load increased to ",
     "content_lock:levels.load.description": "Increases equipment load by 5%%",

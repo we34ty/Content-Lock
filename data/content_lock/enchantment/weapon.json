@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "content_lock:enchantment.weapon",
+    "color": "white"
+  },
+  "effects": {
+    "post_piercing_attack": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/weapons/attacked"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#content_lock:weapon",
+  "weight": 1
+}

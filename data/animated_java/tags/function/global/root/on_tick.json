@@ -4,6 +4,7 @@
 		"animated_java:carapacer/root/on_tick",
 		"animated_java:enchanted_witch/root/on_tick",
 		"animated_java:second_officer/root/on_tick",
+		"animated_java:weapons/root/on_tick",
 		"animated_java:wormhole/root/on_tick"
 	]
 }

@@ -187,6 +187,9 @@ scoreboard objectives add content_lock.random_boss dummy
 scoreboard objectives add content_lock.duplication_cost dummy
 scoreboard objectives add content_lock.duplication_storage dummy
 scoreboard objectives add content_lock.barrel_placed minecraft.used:minecraft.barrel
+scoreboard objectives add content_lock.weapons.hit_nr dummy
+scoreboard objectives add content_lock.weapons.hit_timer dummy
+scoreboard objectives add content_lock.weapons.cooldown dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
@@ -345,6 +348,11 @@ scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth1
 scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth2
 scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temp1
 scoreboard players operation L content_lock.huhhealth2 /= L content_lock.temp2
+
+scoreboard players set L content_lock.temp1 0
+execute store result score L content_lock.temp1 run data get storage content_lock:uuids UUIDs[0].data.loaded
+execute unless score L content_lock.temp1 matches 1 run data merge storage content_lock:uuids {UUIDs:[{Id:0,data:{loaded:1}}]}
+execute unless score L content_lock.temp1 matches 1 run scoreboard players set L content_lock.UUID_id 0
 
 execute unless score L content_lock.temp3 matches ..9 run tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"text":" Reloaded","color":"green"}]
 execute if score L content_lock.temp3 matches ..9 run tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".0","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"text":" Reloaded","color":"green"}]
