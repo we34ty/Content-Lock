@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "content_lock:item/second_officer",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [1, 8, 4],
+			"to": [15, 17, 12],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 1, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [3.5, 0, 5.25, 1.125],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [4.25, 6.75, 5.25, 7.875],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [3.5, 1.125, 5.25, 2.25],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [5.25, 6.75, 6.25, 7.875],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [1.75, 5.625, 0, 4.625],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [3.5, 4.625, 1.75, 5.625],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,83 @@
+{
+	"textures": {
+		"0": "content_lock:item/second_officer",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [4, -7, 6],
+			"to": [8, 9, 10],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [5, 5, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [7.75, 3, 8.25, 5],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [7.75, 6, 8.25, 8],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 7.875, 0.5, 9.875],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [0.5, 7.875, 1, 9.875],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [5, 9.375, 4.5, 8.875],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [5.5, 8.875, 5, 9.375],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"from": [3, -8, 5],
+			"to": [9, 10, 11],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [5, 5, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [5.5, 2.25, 6.25, 4.5],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [5.5, 4.5, 6.25, 6.75],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 5.625, 0.75, 7.875],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [0.75, 5.625, 1.5, 7.875],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [9.5, 6.25, 8.75, 5.5],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [7, 8.75, 6.25, 9.5],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}
