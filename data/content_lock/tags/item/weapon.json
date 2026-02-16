@@ -31,17 +31,10 @@
     "minecraft:netherite_shovel",
     "minecraft:netherite_hoe",
     "minecraft:mace",
-    "wooden_spear",
-    "stone_spear",
-    "iron_spear",
-    "golden_spear",
-    "diamond_spear",
-    "netherite_spear",
     "copper_axe",
     "copper_pickaxe",
     "copper_shovel",
     "copper_hoe",
-    "copper_sword",
-    "copper_spear"
+    "copper_sword"
   ]
 }
