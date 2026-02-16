@@ -11,7 +11,7 @@ execute if score L content_lock.timer1 matches 7 at @p at @n[tag=content_lock.bo
 function content_lock:mobs/bosses/boss_bars/officers_skeleton
 
 execute if entity @s[tag=content_lock.second_officer.jump] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump
-execute if entity @s[tag=content_lock.second_officer.send_projectile] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump
+execute if entity @s[tag=content_lock.second_officer.teleport_dark_hand] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump
 execute if entity @s[tag=content_lock.second_officer.stab_far] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump
 execute if entity @s[tag=content_lock.second_officer.left_right] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump
 execute if entity @s[tag=content_lock.second_officer.spin_slash] run function content_lock:mobs/bosses/second_and_third_officers/wither_skeleton/jump

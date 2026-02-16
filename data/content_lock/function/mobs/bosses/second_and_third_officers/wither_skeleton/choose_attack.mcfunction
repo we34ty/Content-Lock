@@ -8,7 +8,7 @@ execute if entity @s[tag=content_lock.second_phase] if score @s content_lock.tem
 
 #far
 execute if score @s content_lock.temp2 matches 1 run tag @s add content_lock.second_officer.jump
-execute if score @s content_lock.temp2 matches 2 run tag @s add content_lock.second_officer.send_projectile
+execute if score @s content_lock.temp2 matches 2 run tag @s add content_lock.second_officer.teleport_dark_hand
 execute if score @s content_lock.temp2 matches 3 run tag @s add content_lock.second_officer.stab_far
 
 #close
