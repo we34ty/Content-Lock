@@ -1,5 +1,5 @@
 scoreboard players add @s content_lock.attack_timer 1
-execute if score @s content_lock.attack_timer matches 10 run function animated_java:weapons/remove/this
+execute if score @s content_lock.attack_timer matches 10 run return run function animated_java:weapons/remove/this
 
 data merge storage content_lock:weapon_stats {xz:0.1,y:0.1,2xz:0.2,2y:0.2,UUID:[I;0,0,0,0],damage:0,damage_type:player_attack,rotation:0,distance:0,storage:"content_lock:weapon_stats"}
 execute store result storage content_lock:weapon_stats Id int 1 run scoreboard players get @s content_lock.UUID_id

@@ -2,6 +2,7 @@ execute unless predicate content_lock:is_night as @e[tag=content_lock.death_ride
 execute unless predicate content_lock:is_night run function content_lock:mobs/bosses/boss_despawn
 
 data merge entity @s {DrownedConversionTime:-1}
+attribute @s attack_damage modifier add content_lock.weapons.no_damage -1 add_multiplied_total
 
 #attribute @s spawn_reinforcements base set 20
 

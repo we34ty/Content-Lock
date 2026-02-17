@@ -1,5 +1,6 @@
 #attribute @s generic.attack_damage base set 5
 #attribute @s generic.attack_damage modifier add 15d5a6e0-c144-4cb5-ae95-f2fbec2ba2b9 xs5erydtuy -0.5 add_multiplied_total
+attribute @s attack_damage modifier add content_lock.weapons.no_damage -1 add_multiplied_total
 
 execute if predicate content_lock:is_night run function content_lock:mobs/bosses/boss_despawn
 
