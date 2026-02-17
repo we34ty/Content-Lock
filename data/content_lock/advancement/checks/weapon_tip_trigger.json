@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "weapon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#content_lock:weapon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "weapon"
+    ]
+  ],
+  "rewards": {
+    "function": "content_lock:player/passives/give_weapon_tip"
+  }
+}

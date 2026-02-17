@@ -1,0 +1,1 @@
+advancement revoke @a only content_lock:checks/weapon_tip

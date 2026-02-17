@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": [
+      {
+        "translate": "content_lock:advancement.weapon_tip.title1",
+        "fallback": "Press "
+      },
+      {
+        "keybind": "key.swapOffhand"
+      },
+      {
+        "translate": "content_lock:advancement.weapon_tip.title2",
+        "fallback": " to toggle weapon mode"
+      }
+    ],
+    "description": "",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible":{
+      "trigger": "impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}
