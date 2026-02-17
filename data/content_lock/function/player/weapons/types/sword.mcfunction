@@ -1,7 +1,7 @@
 function content_lock:player/weapons/uuid_save
 
+function content_lock:player/weapons/calculate_hit_timer
 scoreboard players add @s content_lock.weapons.hit_nr 1
-scoreboard players set @s content_lock.weapons.hit_timer 20
 scoreboard players set @s content_lock.weapons.cooldown 12
 
 $execute rotated ~ 0 positioned ^ ^ ^0.5 positioned ~ ~$(distance) ~ run function animated_java:weapons/summon {args:{}}

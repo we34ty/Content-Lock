@@ -10,11 +10,11 @@ execute store result storage content_lock:weapon_stats angle int 1 run data get 
 kill @n[type=minecraft:armor_stand,tag=content_lock.weapons.angle,distance=..5]
 execute store result storage content_lock:weapon_stats distance float 0.0008 run function content_lock:math/tan with storage content_lock:weapon_stats
 
-execute if items entity @s weapon.mainhand #minecraft:swords run function content_lock:player/weapons/types/sword with storage content_lock:weapon_stats
-execute if items entity @s weapon.mainhand #minecraft:pickaxes run function content_lock:player/weapons/types/pickaxe with storage content_lock:weapon_stats
-execute if items entity @s weapon.mainhand #minecraft:hoes run function content_lock:player/weapons/types/hoe with storage content_lock:weapon_stats
-execute if items entity @s weapon.mainhand #minecraft:axes run function content_lock:player/weapons/types/axe with storage content_lock:weapon_stats
-execute if items entity @s weapon.mainhand #minecraft:shovels run function content_lock:player/weapons/types/shovel with storage content_lock:weapon_stats
+execute if entity @s[nbt={OnGround:false}] run return run function content_lock:player/weapons/types/jumping with storage content_lock:weapon_stats
+execute if items entity @s weapon.mainhand #minecraft:swords run return run function content_lock:player/weapons/types/sword with storage content_lock:weapon_stats
+execute if items entity @s weapon.mainhand #minecraft:pickaxes run return run function content_lock:player/weapons/types/pickaxe with storage content_lock:weapon_stats
+execute if items entity @s weapon.mainhand #minecraft:hoes run return run function content_lock:player/weapons/types/hoe with storage content_lock:weapon_stats
+execute if items entity @s weapon.mainhand #minecraft:axes run return run function content_lock:player/weapons/types/axe with storage content_lock:weapon_stats
+execute if items entity @s weapon.mainhand #minecraft:shovels run return run function content_lock:player/weapons/types/shovel with storage content_lock:weapon_stats
 
 
-tag @s remove content_lock.weapons.attacking

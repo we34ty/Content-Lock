@@ -8,3 +8,4 @@ execute if entity @s[tag=aj.weapons.animation.axe1.playing] run function animate
 execute if entity @s[tag=aj.weapons.animation.axe2.playing] run function animated_java:weapons/animations/axe2/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.shovel1.playing] run function animated_java:weapons/animations/shovel1/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.shovel2.playing] run function animated_java:weapons/animations/shovel2/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.jump1.playing] run function animated_java:weapons/animations/jump1/zzz/on_tick

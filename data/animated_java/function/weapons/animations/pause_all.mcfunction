@@ -8,3 +8,4 @@ tag @s remove aj.weapons.animation.axe1.playing
 tag @s remove aj.weapons.animation.axe2.playing
 tag @s remove aj.weapons.animation.shovel1.playing
 tag @s remove aj.weapons.animation.shovel2.playing
+tag @s remove aj.weapons.animation.jump1.playing

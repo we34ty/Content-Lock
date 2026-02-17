@@ -15,11 +15,7 @@ execute if entity @s[tag=content_lock.duplicator] at @s run function content_loc
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{"content_lock:clear_in_inventory":true}}}}] run kill @s
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{"content_lock:duplication_result":true}}}}] run kill @s
 
-execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root,tag=content_lock.weapons.sword] at @s run function content_lock:player/weapons/entity/sword
-execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root,tag=content_lock.weapons.pickaxe] at @s run function content_lock:player/weapons/entity/pickaxe
-execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root,tag=content_lock.weapons.hoe] at @s run function content_lock:player/weapons/entity/hoe
-execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root,tag=content_lock.weapons.axe] at @s run function content_lock:player/weapons/entity/axe
-execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root,tag=content_lock.weapons.shovel] at @s run function content_lock:player/weapons/entity/shovel
+execute if entity @s[type=minecraft:item_display,tag=aj.weapons.root] at @s run function content_lock:player/weapons/entity/check_type
 
 execute if entity @s[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] run function animated_java:carapacer/remove/this
 execute if entity @s[tag=content_lock.carapacer.taken_shape] run tag @s remove content_lock.carapacer.taken_shape
