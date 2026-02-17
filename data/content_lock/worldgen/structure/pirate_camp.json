@@ -1,13 +1,14 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": [
-    "mangrove_swamp"
+    "minecraft:beach",
+    "minecraft:snowy_beach"
   ],
   "step": "surface_structures",
   "spawn_overrides": {
   },
   "terrain_adaptation": "beard_thin",
-  "start_pool": "content_lock:shrekass",
+  "start_pool": "content_lock:pirate_camp",
   "size": 1,
   "start_height": {
     "absolute": 0

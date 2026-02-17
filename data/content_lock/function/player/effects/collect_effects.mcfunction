@@ -90,5 +90,6 @@ execute if score L content_lock.options.player.clock_display matches 1 if score 
 
 execute if entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E080}
 execute unless entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E081}
+execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {weapon_mode:E081}
 
 function content_lock:player/effects/display with storage content_lock:saved_stats

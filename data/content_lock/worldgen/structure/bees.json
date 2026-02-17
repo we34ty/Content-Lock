@@ -7,7 +7,7 @@
     ],
   "step": "surface_structures",
   "spawn_overrides": {
-    "monster": {
+    "ambient": {
       "bounding_box": "piece",
       "spawns": [
         {

@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:pirate_camp",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:pirate_harbor",
+      "weight": 1
+    },
+    {
+      "structure": "content_lock:pirate_haven",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 8,
+    "spacing": 22,
+    "salt": 6573928
+  }
+}
