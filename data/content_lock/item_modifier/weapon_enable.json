@@ -15,10 +15,7 @@
       "swing_animation":{
         "type": "none"
       },
-      "enchantment_glint_override": true,
-      "custom_data": {
-        "content_lock.weapon": true
-      }
+      "enchantment_glint_override": true
     }
   },
   {
@@ -27,5 +24,11 @@
       "content_lock:weapon": 1
     },
     "add": false
+  },
+  {
+    "function": "set_custom_data",
+    "tag": {
+      "content_lock:weapon": true
+    }
   }
 ]

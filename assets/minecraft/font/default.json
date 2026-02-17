@@ -34,6 +34,10 @@
         {
             "type": "reference",
             "id": "content_lock:fishing"
-        }       
+        },
+        {
+            "type": "reference",
+            "id": "content_lock:weapon_mode"
+        }     
     ]
 }

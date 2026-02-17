@@ -1,0 +1,18 @@
+{
+    "providers":[
+                {
+            "type": "bitmap",
+            "file": "content_lock:custom/weapon_mode/active.png",
+            "ascent": -8,
+            "height": 26,
+            "chars": ["\uE080"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/weapon_mode/inactive.png",
+            "ascent": -8,
+            "height": 26,
+            "chars": ["\uE081"]
+        }
+    ]
+}
