@@ -8,8 +8,8 @@ function content_lock:player/passives/uuid_id_load with storage content_lock:wea
 function content_lock:player/weapons/entity/position with storage content_lock:weapon_stats
 
 execute if score @s content_lock.temp1 matches 10 run playsound entity.player.attack.crit player @a ~ ~ ~ 1 1
-execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.temp1 matches 10..11 rotated ~10 -25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.temp1 matches 13..14 rotated ~-10 -25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if score @s content_lock.temp1 matches 12 rotated ~ 0 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.temp1 matches 13..14 rotated ~-10 25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.temp1 matches 10..11 rotated ~10 25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.temp1 matches 11..12 rotated ~10 -25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.temp1 matches 14..15 rotated ~-10 -25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if score @s content_lock.temp1 matches 13 rotated ~ 0 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.temp1 matches 14..15 rotated ~-10 25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.temp1 matches 11..12 rotated ~10 25 positioned ^ ^ ^0.75 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
