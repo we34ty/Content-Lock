@@ -1,2 +1,3 @@
-$execute if entity @n[distance=0.01..,type=item_display,tag=aj.weapons.root,scores={content_lock.UUID_id=$(Id)}] if score @n[distance=0.01..,type=item_display,tag=aj.weapons.root,scores={content_lock.UUID_id=$(Id)}] content_lock.attack_timer <= @s content_lock.attack_timer run function animated_java:weapons/remove/this
-$execute at @n[nbt={UUID:$(UUID)}] rotated $(rotation) 0 positioned ~ ~$(distance) ~ positioned ^ ^ ^0.5 run tp @s ~ ~ ~
+#$execute if entity @n[distance=0.01..,type=item_display,tag=aj.weapons.root,scores={content_lock.UUID_id=$(Id)}] if score @n[distance=0.01..,type=item_display,tag=aj.weapons.root,scores={content_lock.UUID_id=$(Id)}] content_lock.attack_timer <= @s content_lock.attack_timer run function animated_java:weapons/remove/this
+$execute at @n[nbt={UUID:$(UUID)}] rotated $(yaw) $(pitch) positioned ~ ~$(distance) ~ positioned ^ ^ ^0.7 run tp @s ~ ~ ~
+$execute unless score @s content_lock.UUID_id = @n[nbt={UUID:$(UUID)}] content_lock.UUID_id run function animated_java:weapons/remove/this
