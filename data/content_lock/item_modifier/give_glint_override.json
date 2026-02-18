@@ -1,0 +1,14 @@
+[
+  {
+    "function": "set_custom_data",
+    "tag": {
+      "content_lock.glint_overriden": true
+    }
+  },
+  {
+    "function": "set_components",
+    "components": {
+      "enchantment_glint_override": false
+    }
+  }
+]
