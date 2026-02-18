@@ -2,7 +2,7 @@ data merge entity @s {drop_chances:{chest:0.0f,feet:0.0f,head:0.0f,legs:0.0f,mai
 data merge entity @s {CanPickUpLoot:0b}
 
 execute if entity @s[type=#content_lock:zombies] run function content_lock:mobs/customization/zombies
-execute if entity @s[type=#content_lock:rideable_healthbar] run function content_lock:mobs/customization/skeletons
+execute if entity @s[type=#content_lock:skeletons] run function content_lock:mobs/customization/skeletons
 execute if entity @s[type=creeper] run function content_lock:mobs/customization/creeper
 execute if entity @s[type=#content_lock:spiders] run function content_lock:mobs/customization/spider
 execute if entity @s[type=enderman] run function content_lock:mobs/customization/enderman
