@@ -16,7 +16,8 @@ execute if items entity @s weapon.mainhand netherite_sword run return run functi
 execute if items entity @s weapon.mainhand copper_sword run return run function content_lock:player/weapons/attacked_macro {name:"fast_sword",cooldown:10,visible_timer:22,max_combo:2,sound:entity.player.attack.strong,sound_pitch:0.8,anims:sword_fast,jumping_attack:1,running_attack:9}
 execute if items entity @s weapon.mainhand golden_sword run return run function content_lock:player/weapons/attacked_macro {name:"fast_sword",cooldown:10,visible_timer:22,max_combo:2,sound:entity.player.attack.strong,sound_pitch:0.8,anims:sword_fast,jumping_attack:1,running_attack:9}
 execute if items entity @s weapon.mainhand diamond_sword run return run function content_lock:player/weapons/attacked_macro {name:"fast_sword",cooldown:10,visible_timer:22,max_combo:2,sound:entity.player.attack.strong,sound_pitch:0.8,anims:sword_fast,jumping_attack:1,running_attack:9}
-execute if items entity @s weapon.mainhand #minecraft:swords run return run function content_lock:player/weapons/types/sword with storage content_lock:weapon_stats
+execute if items entity @s weapon.mainhand #minecraft:swords run return run function content_lock:player/weapons/attacked_macro {name:"sword",cooldown:12,visible_timer:30,max_combo:2,sound:entity.player.attack.strong,sound_pitch:0.7,anims:sword,jumping_attack:1,running_attack:9}
+
 execute if items entity @s weapon.mainhand #minecraft:pickaxes run return run function content_lock:player/weapons/types/pickaxe with storage content_lock:weapon_stats
 execute if items entity @s weapon.mainhand #minecraft:hoes run return run function content_lock:player/weapons/types/hoe with storage content_lock:weapon_stats
 execute if items entity @s weapon.mainhand #minecraft:axes run return run function content_lock:player/weapons/types/axe with storage content_lock:weapon_stats
