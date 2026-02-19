@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:sailor_ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 32,
+    "spacing": 64,
+    "salt": 67980
+  }
+}
