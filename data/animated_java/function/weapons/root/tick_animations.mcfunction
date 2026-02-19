@@ -2,10 +2,13 @@
 execute if entity @s[tag=aj.weapons.animation.sword1.playing] run function animated_java:weapons/animations/sword1/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.sword2.playing] run function animated_java:weapons/animations/sword2/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.sword_running.playing] run function animated_java:weapons/animations/sword_running/zzz/on_tick
-execute if entity @s[tag=aj.weapons.animation.sword1far.playing] run function animated_java:weapons/animations/sword1far/zzz/on_tick
-execute if entity @s[tag=aj.weapons.animation.sword2far.playing] run function animated_java:weapons/animations/sword2far/zzz/on_tick
-execute if entity @s[tag=aj.weapons.animation.sword3far.playing] run function animated_java:weapons/animations/sword3far/zzz/on_tick
-execute if entity @s[tag=aj.weapons.animation.sword_running_far.playing] run function animated_java:weapons/animations/sword_running_far/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_far1.playing] run function animated_java:weapons/animations/sword_far1/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_far2.playing] run function animated_java:weapons/animations/sword_far2/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_far3.playing] run function animated_java:weapons/animations/sword_far3/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_far_running.playing] run function animated_java:weapons/animations/sword_far_running/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_fast1.playing] run function animated_java:weapons/animations/sword_fast1/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_fast2.playing] run function animated_java:weapons/animations/sword_fast2/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.sword_fast_running.playing] run function animated_java:weapons/animations/sword_fast_running/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.hoe1.playing] run function animated_java:weapons/animations/hoe1/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.hoe2.playing] run function animated_java:weapons/animations/hoe2/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.pickaxe1.playing] run function animated_java:weapons/animations/pickaxe1/zzz/on_tick

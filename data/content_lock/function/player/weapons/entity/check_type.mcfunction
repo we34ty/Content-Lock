@@ -1,7 +1,8 @@
 execute unless entity @s[tag=content_lock.weapons.initialized] run return run function animated_java:weapons/remove/this
 execute if entity @s[tag=content_lock.weapons.sword] at @s run function content_lock:player/weapons/entity/sword
-execute if entity @s[tag=content_lock.weapons.stone_sword] at @s run function content_lock:player/weapons/entity/sword/stone
-execute if entity @s[tag=content_lock.weapons.wooden_sword] at @s run function content_lock:player/weapons/entity/sword/wooden
+execute if entity @s[tag=content_lock.weapons.far_sword] at @s run function content_lock:player/weapons/entity/sword/far
+execute if entity @s[tag=content_lock.weapons.sword] at @s run function content_lock:player/weapons/entity/sword/generic
+execute if entity @s[tag=content_lock.weapons.fast_sword] at @s run function content_lock:player/weapons/entity/sword/fast
 execute if entity @s[tag=content_lock.weapons.pickaxe] at @s run function content_lock:player/weapons/entity/pickaxe
 execute if entity @s[tag=content_lock.weapons.hoe] at @s run function content_lock:player/weapons/entity/hoe
 execute if entity @s[tag=content_lock.weapons.axe] at @s run function content_lock:player/weapons/entity/axe

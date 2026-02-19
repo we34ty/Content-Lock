@@ -3,10 +3,13 @@ data modify storage animated_java:weapons rig_hash set value 'c7a3e92ff11c05df65
 scoreboard objectives add aj.sword1.frame dummy
 scoreboard objectives add aj.sword2.frame dummy
 scoreboard objectives add aj.sword_running.frame dummy
-scoreboard objectives add aj.sword1far.frame dummy
-scoreboard objectives add aj.sword2far.frame dummy
-scoreboard objectives add aj.sword3far.frame dummy
-scoreboard objectives add aj.sword_running_far.frame dummy
+scoreboard objectives add aj.sword_far1.frame dummy
+scoreboard objectives add aj.sword_far2.frame dummy
+scoreboard objectives add aj.sword_far3.frame dummy
+scoreboard objectives add aj.sword_far_running.frame dummy
+scoreboard objectives add aj.sword_fast1.frame dummy
+scoreboard objectives add aj.sword_fast2.frame dummy
+scoreboard objectives add aj.sword_fast_running.frame dummy
 scoreboard objectives add aj.hoe1.frame dummy
 scoreboard objectives add aj.hoe2.frame dummy
 scoreboard objectives add aj.pickaxe1.frame dummy
