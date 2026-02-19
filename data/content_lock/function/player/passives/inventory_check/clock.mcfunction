@@ -1,6 +1,8 @@
 execute store result score @s content_lock.temp1 run time query daytime
 
-data merge storage content_lock:saved_stats {time:E054}
+data merge storage content_lock:saved_stats {time:E054,time_amount:0,value:"",type:"time_amount","end":"time"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.temp1
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 execute if score @s content_lock.temp1 matches 17000..19999 run data merge storage content_lock:saved_stats {time:E054}
 execute if score @s content_lock.temp1 matches 20000..21999 run data merge storage content_lock:saved_stats {time:E055}
 execute if score @s content_lock.temp1 matches 22000..24000 run data merge storage content_lock:saved_stats {time:E056}
@@ -12,7 +14,9 @@ execute if score @s content_lock.temp1 matches 11000..12999 run data merge stora
 execute if score @s content_lock.temp1 matches 13000..14999 run data merge storage content_lock:saved_stats {time:E052}
 execute if score @s content_lock.temp1 matches 15000..16999 run data merge storage content_lock:saved_stats {time:E053}
 
-data merge storage content_lock:saved_stats {nights_skipped:E067}
+data merge storage content_lock:saved_stats {nights_skipped:E067,nights_skipped_amount:0,value:"",type:"nights_skipped_amount","end":"skipped"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get L content_lock.nights_skipped_in_a_row
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 execute if score L content_lock.nights_skipped_in_a_row matches 1 run data merge storage content_lock:saved_stats {nights_skipped:E061}
 execute if score L content_lock.nights_skipped_in_a_row matches 2 run data merge storage content_lock:saved_stats {nights_skipped:E062}
 execute if score L content_lock.nights_skipped_in_a_row matches 3 run data merge storage content_lock:saved_stats {nights_skipped:E063}

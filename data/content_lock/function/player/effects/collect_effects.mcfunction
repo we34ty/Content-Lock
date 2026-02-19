@@ -4,7 +4,10 @@ execute at @s if entity @e[distance=0..5,tag=content_lock.vehicle] run return ru
 
 data merge storage content_lock:saved_stats {bleed:E004,frost:E009,corruption:E014,stamina:E016}
 
-execute unless score @s content_lock.bleed_stacks matches 1.. run data merge storage content_lock:saved_stats {bleed:E048}
+data merge storage content_lock:saved_stats {bleed_amount:"",value:"",type:"bleed_amount","end":"bleed"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.bleed_stacks
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
+execute unless score @s content_lock.bleed_stacks matches 1.. run data merge storage content_lock:saved_stats {bleed:E048,bleed_amount:""}
 execute if score @s content_lock.bleed_stacks matches 1..29 run data merge storage content_lock:saved_stats {bleed:E004}
 execute if score @s content_lock.bleed_stacks matches 30..59 run data merge storage content_lock:saved_stats {bleed:E003}
 execute if score @s content_lock.bleed_stacks matches 60..89 run data merge storage content_lock:saved_stats {bleed:E002}
@@ -12,9 +15,12 @@ execute if score @s content_lock.bleed_stacks matches 90..119 run data merge sto
 execute if score @s content_lock.bleed_stacks matches 120.. run data merge storage content_lock:saved_stats {bleed:E000}
 
 
+data merge storage content_lock:saved_stats {frost_amount:"",value:"",type:"frost_amount","end":"frost"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.heat
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 #execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
 #execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069}
-execute if score @s content_lock.heat matches 0 run data merge storage content_lock:saved_stats {frost:E069}
+execute if score @s content_lock.heat matches 0 run data merge storage content_lock:saved_stats {frost:E069,frost_amount:""}
 execute if score @s content_lock.heat matches 1..199 run data merge storage content_lock:saved_stats {frost:E045}
 execute if score @s content_lock.heat matches 200..349 run data merge storage content_lock:saved_stats {frost:E046}
 execute if score @s content_lock.heat matches 350..499 run data merge storage content_lock:saved_stats {frost:E047}
@@ -30,9 +36,11 @@ execute if score @s content_lock.frostbite_stacks matches 101..200 run data merg
 execute if score @s content_lock.frostbite_stacks matches 201..300 run data merge storage content_lock:saved_stats {frost:E006}
 execute if score @s content_lock.frostbite_stacks matches 301.. run data merge storage content_lock:saved_stats {frost:E005}
 
-
-execute if score L content_lock.options.player.corruption matches 0 run data merge storage content_lock:saved_stats {corruption:E068}
-execute unless score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E068}
+data merge storage content_lock:saved_stats {corruption_amount:"",value:"",type:"corruption_amount","end":"corruption"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.corruption_meter
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
+execute if score L content_lock.options.player.corruption matches 0 run data merge storage content_lock:saved_stats {corruption:E068,corruption_amount:""}
+execute unless score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E068,corruption_amount:""}
 execute if score L content_lock.options.player.corruption matches 1 if score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E014}
 execute if score @s content_lock.corruption_meter matches 1..2 run data merge storage content_lock:saved_stats {corruption:E013}
 execute if score @s content_lock.corruption_meter matches 3..4 run data merge storage content_lock:saved_stats {corruption:E012}
@@ -48,6 +56,9 @@ scoreboard players operation .staminaMAX tempmath = @s content_lock.max_stamina
 
 execute store result score .staminaRATIO tempmath run scoreboard players operation .stamina tempmath /= .staminaMAX tempmath
 
+data merge storage content_lock:saved_stats {stamina_amount:0,value:"",type:"stamina_amount","end":"stamina"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get .staminaRATIO tempmath
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 execute if score .staminaRATIO tempmath matches ..0 run data merge storage content_lock:saved_stats {stamina:E016}
 execute if score .staminaRATIO tempmath matches 1..3 run data merge storage content_lock:saved_stats {stamina:E017}
 execute if score .staminaRATIO tempmath matches 4..7 run data merge storage content_lock:saved_stats {stamina:E018}
@@ -77,19 +88,20 @@ execute if score .staminaRATIO tempmath matches 84..86 run data merge storage co
 execute if score .staminaRATIO tempmath matches 87..90 run data merge storage content_lock:saved_stats {stamina:E042}
 execute if score .staminaRATIO tempmath matches 91..95 run data merge storage content_lock:saved_stats {stamina:E043}
 execute if score .staminaRATIO tempmath matches 96.. run data merge storage content_lock:saved_stats {stamina:E015}
-execute if score L content_lock.options.player.stamina matches 0 run data merge storage content_lock:saved_stats {stamina:E070}
-execute if entity @s[gamemode=creative] run data merge storage content_lock:saved_stats {stamina:E070}
-execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {stamina:E070}
+execute if score L content_lock.options.player.stamina matches 0 run data merge storage content_lock:saved_stats {stamina:E070,stamina_amount:""}
+execute if entity @s[gamemode=creative] run data merge storage content_lock:saved_stats {stamina:E070,stamina_amount:""}
+execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {stamina:E070,stamina_amount:""}
 
 execute store result score @s content_lock.does_clock_display run clear @s clock 0
 execute if predicate content_lock:underwater run scoreboard players set @s content_lock.does_clock_display 0
 execute at @s unless dimension minecraft:overworld run scoreboard players set @s content_lock.does_clock_display 0
-data merge storage content_lock:saved_stats {time:E059}
-data merge storage content_lock:saved_stats {nights_skipped:E060}
+data merge storage content_lock:saved_stats {time:E059,time_amount:""}
+data merge storage content_lock:saved_stats {nights_skipped:E060,nights_skipped_amount:""}
 execute if score L content_lock.options.player.clock_display matches 1 if score @s content_lock.does_clock_display matches 1.. run function content_lock:player/passives/inventory_check/clock
 
-execute if entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E080}
-execute unless entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E081}
-execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {weapon_mode:E081}
+execute if entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E080,weapon_mode_bool:"(attack mode) "}
+execute unless entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E081,weapon_mode_bool:""}
+execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {weapon_mode:E081,weapon_mode_bool:""}
 
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 function content_lock:player/effects/display with storage content_lock:saved_stats
