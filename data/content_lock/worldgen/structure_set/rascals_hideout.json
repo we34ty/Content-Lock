@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:rascals_hideout",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 8,
+    "spacing": 22,
+    "salt": 4673981
+  }
+}

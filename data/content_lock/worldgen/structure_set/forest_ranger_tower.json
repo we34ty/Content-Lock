@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:forest_ranger_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 24,
+    "spacing": 52,
+    "salt": 5427698
+  }
+}

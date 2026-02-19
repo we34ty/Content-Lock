@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:oil_mine",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 21,
+    "spacing": 42,
+    "salt": 45129678
+  }
+}

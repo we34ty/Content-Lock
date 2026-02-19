@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "content_lock:wild_west_bridge",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 21,
+    "spacing": 42,
+    "salt": 4561798
+  }
+}
