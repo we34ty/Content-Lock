@@ -1,0 +1,21 @@
+{
+	"model": {
+	  "type": "select",
+	  "property": "custom_model_data",
+	  "cases": [
+		{
+		  "when":[
+			"content_lock:weapons.invisible"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/invisible/iron_sword"
+		  }
+		}
+	  ],
+	  "fallback": {
+		"type": "model",
+		"model": "item/iron_sword"
+	  }
+	}
+  }

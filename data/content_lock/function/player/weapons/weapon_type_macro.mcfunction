@@ -7,8 +7,8 @@ scoreboard players add @s content_lock.weapons.hit_nr 1
 $scoreboard players set @s content_lock.weapons.cooldown $(cooldown)
 $scoreboard players set @s content_lock.weapons.weapon_visible_timer $(visible_timer)
 
-execute if entity @s[nbt={OnGround:false}] run scoreboard players set @s content_lock.weapons.hit_nr 3
-execute if entity @s[predicate=lsp:is_sprinting] run scoreboard players set @s content_lock.weapons.hit_nr 9
+$execute if entity @s[nbt={OnGround:false}] run scoreboard players set @s content_lock.weapons.hit_nr $(jumping_attack)
+$execute if entity @s[predicate=lsp:is_sprinting] run scoreboard players set @s content_lock.weapons.hit_nr $(running_attack)
 
 scoreboard players operation @s content_lock.UUID_id = L content_lock.UUID_id
 $execute rotated ~ 0 positioned ^ ^ ^0.5 positioned ~ ~$(distance) ~ run function animated_java:weapons/summon {args:{}}

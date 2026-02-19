@@ -11,6 +11,15 @@
 			"type": "model",
 			"model": "content_lock:item/weapons/quickstep_dagger"
 		  }
+		},
+		{
+		  "when":[
+			"content_lock:weapons.invisible"
+		  ],
+		  "model": {
+			"type": "model",
+			"model": "content_lock:item/weapons/invisible/netherite_sword"
+		  }
 		}
 	  ],
 	  "fallback": {

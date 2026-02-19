@@ -5,5 +5,5 @@ execute store result storage content_lock:weapon_stats yaw int 1 run data get en
 kill @n[type=minecraft:armor_stand,tag=content_lock.weapons.angle,distance=..5]
 execute store result storage content_lock:weapon_stats distance float 0.0007 run function content_lock:math/tan with storage content_lock:weapon_stats
 
-$data merge storage content_lock:weapon_stats {name:$(name),cooldown:$(cooldown),visible_timer:$(visible_timer),max_combo:$(max_combo),sound:$(sound),sound_pitch:$(sound_pitch),anims:$(anims)}
+$data merge storage content_lock:weapon_stats {name:$(name),cooldown:$(cooldown),visible_timer:$(visible_timer),max_combo:$(max_combo),sound:$(sound),sound_pitch:$(sound_pitch),anims:$(anims),jumping_attack:$(jumping_attack),running_attack:$(running_attack)}
 function content_lock:player/weapons/weapon_type_macro with storage content_lock:weapon_stats
