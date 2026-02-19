@@ -19,7 +19,7 @@ $execute if score @s content_lock.weapons.hit_nr matches 3 as @n[type=minecraft:
 $execute if score @s content_lock.weapons.hit_nr matches 9 as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run function animated_java:weapons/animations/$(anims)_running/play
 $execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] at @s rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 $execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run scoreboard players operation @s content_lock.UUID_id = L content_lock.UUID_id
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run scoreboard players operation @s content_lock.weapons.weapon_visible_timer = @p[tag=content_lock.weapons.attacking] content_lock.weapons.weapon_visible_timer
+$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run scoreboard players operation @s content_lock.weapons.weapon_visible_timer = @n[tag=content_lock.weapons.attacking] content_lock.weapons.weapon_visible_timer
 $execute if score @s content_lock.weapons.hit_nr matches 1 as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.hit1
 $execute if score @s content_lock.weapons.hit_nr matches 2 as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.hit2
 $execute if score @s content_lock.weapons.hit_nr matches 3 as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.hit3
