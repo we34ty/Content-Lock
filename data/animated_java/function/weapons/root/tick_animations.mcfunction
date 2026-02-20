@@ -11,6 +11,7 @@ execute if entity @s[tag=aj.weapons.animation.sword_fast2.playing] run function 
 execute if entity @s[tag=aj.weapons.animation.sword_fast_running.playing] run function animated_java:weapons/animations/sword_fast_running/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.hoe1.playing] run function animated_java:weapons/animations/hoe1/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.hoe2.playing] run function animated_java:weapons/animations/hoe2/zzz/on_tick
+execute if entity @s[tag=aj.weapons.animation.hoe3.playing] run function animated_java:weapons/animations/hoe3/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.pickaxe1.playing] run function animated_java:weapons/animations/pickaxe1/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.axe1.playing] run function animated_java:weapons/animations/axe1/zzz/on_tick
 execute if entity @s[tag=aj.weapons.animation.axe2.playing] run function animated_java:weapons/animations/axe2/zzz/on_tick

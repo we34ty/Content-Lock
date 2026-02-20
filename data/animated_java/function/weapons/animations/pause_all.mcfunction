@@ -11,6 +11,7 @@ tag @s remove aj.weapons.animation.sword_fast2.playing
 tag @s remove aj.weapons.animation.sword_fast_running.playing
 tag @s remove aj.weapons.animation.hoe1.playing
 tag @s remove aj.weapons.animation.hoe2.playing
+tag @s remove aj.weapons.animation.hoe3.playing
 tag @s remove aj.weapons.animation.pickaxe1.playing
 tag @s remove aj.weapons.animation.axe1.playing
 tag @s remove aj.weapons.animation.axe2.playing

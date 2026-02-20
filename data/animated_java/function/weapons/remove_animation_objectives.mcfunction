@@ -11,6 +11,7 @@ scoreboard objectives remove aj.sword_fast2.frame
 scoreboard objectives remove aj.sword_fast_running.frame
 scoreboard objectives remove aj.hoe1.frame
 scoreboard objectives remove aj.hoe2.frame
+scoreboard objectives remove aj.hoe3.frame
 scoreboard objectives remove aj.pickaxe1.frame
 scoreboard objectives remove aj.axe1.frame
 scoreboard objectives remove aj.axe2.frame
