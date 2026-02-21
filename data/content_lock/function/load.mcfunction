@@ -192,6 +192,8 @@ scoreboard objectives add content_lock.weapons.hit_timer dummy
 scoreboard objectives add content_lock.weapons.cooldown dummy
 scoreboard objectives add content_lock.weapons.buffer dummy
 scoreboard objectives add content_lock.weapons.weapon_visible_timer dummy
+scoreboard objectives add content_lock.weapons.xz dummy
+scoreboard objectives add content_lock.weapons.y dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
