@@ -2,6 +2,7 @@
 	"values": [
 	  "minecraft:player_attack",
 	  "minecraft:mace_smash",
-	  "content_lock:malice"
+	  "content_lock:malice",
+	  "content_lock:multihit"
 	]
   }

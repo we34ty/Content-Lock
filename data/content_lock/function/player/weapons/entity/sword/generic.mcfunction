@@ -8,11 +8,11 @@ function content_lock:player/passives/uuid_id_load with storage content_lock:wea
 
 function content_lock:player/weapons/entity/position with storage content_lock:weapon_stats
 
-execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.attack_timer matches 7..8 rotated ~50 0 positioned ^ ^ ^0.6 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.attack_timer matches 10..11 rotated ~50 0 positioned ^ ^ ^0.6 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if score @s content_lock.attack_timer matches 9 rotated ~ 0 positioned ^ ^ ^0.7 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.attack_timer matches 10..11 rotated ~-50 0 positioned ^ ^ ^0.6 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
-execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.attack_timer matches 7..8 rotated ~-50 0 positioned ^ ^ ^0.6 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.attack_timer matches 7..8 rotated ~50 0 positioned ^ ^ ^0.4 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.attack_timer matches 10..11 rotated ~50 0 positioned ^ ^ ^0.4 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if score @s content_lock.attack_timer matches 9 rotated ~ 0 positioned ^ ^ ^0.45 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit1] if score @s content_lock.attack_timer matches 10..11 rotated ~-50 0 positioned ^ ^ ^0.4 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
+execute if entity @s[tag=content_lock.weapons.hit2] if score @s content_lock.attack_timer matches 7..8 rotated ~-50 0 positioned ^ ^ ^0.4 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
 
 execute if entity @s[tag=content_lock.weapons.hit_running] if score @s content_lock.attack_timer matches 7..8 rotated ~ 0 positioned ^ ^ ^0.3 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
 execute if entity @s[tag=content_lock.weapons.hit_running] if score @s content_lock.attack_timer matches 9..10 rotated ~ 0 positioned ^ ^ ^0.5 run function content_lock:player/weapons/entity/damage with storage content_lock:weapon_stats
