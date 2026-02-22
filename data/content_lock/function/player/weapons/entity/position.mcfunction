@@ -1,4 +1,5 @@
 #$execute if entity @n[distance=0.01..,type=item_display,tag=aj.weapons.root,scores={content_lock.UUID_id=$(Id)}] if score @n[distance=0.01..,type=item_display,tag=aj.weapons.root,scores={content_lock.UUID_id=$(Id)}] content_lock.attack_timer <= @s content_lock.attack_timer run function animated_java:weapons/remove/this
+#return 0
 tag @e remove content_lock.im_a_target
 $tag @p[nbt={UUID:$(UUID)}] add content_lock.im_a_target
 $execute unless entity @r[tag=content_lock.im_a_target] run tag @n[nbt={UUID:$(UUID)}] add content_lock.im_a_target

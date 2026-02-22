@@ -1,0 +1,1 @@
+$execute positioned ~-$(xz) ~-$(y) ~-$(xz) run summon block_display ~ ~ ~ {block_state:{Name:"blue_stained_glass"},Tags:["content_lock.weapons.hitbox.display"],transformation:{scale:[$(2xz)f,$(2y)f,$(2xz)f],left_rotation:{angle:0,axis:[0.0f,1.0f,0.0f]},right_rotation:{angle:0,axis:[0.0f,1.0f,0.0f]},translation:[0.0f,0.0f,0.0f]}}

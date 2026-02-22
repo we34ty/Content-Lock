@@ -8,6 +8,6 @@ execute if score @s content_lock.weapons.weapon_visible_timer matches 0 if items
 execute if score @s content_lock.weapons.buffer matches 1.. if score @s content_lock.weapons.cooldown matches 0 at @s run function content_lock:player/weapons/attacked
 execute if score @s content_lock.weapons.hit_nr matches 1.. if score @s content_lock.weapons.hit_timer matches 0 run scoreboard players set @s content_lock.weapons.hit_nr 0
 
-
-execute if entity @s[tag=content_lock.weapons.enabled] run return run function content_lock:player/weapons/combat_enabled
+execute if score L content_lock.options.player.custom_weapon_animations matches 0 run tag @s remove content_lock.weapons.enabled
+execute if score L content_lock.options.player.custom_weapon_animations matches 1 if entity @s[tag=content_lock.weapons.enabled] run return run function content_lock:player/weapons/combat_enabled
 execute unless entity @s[tag=content_lock.weapons.enabled] run return run function content_lock:player/weapons/combat_disabled

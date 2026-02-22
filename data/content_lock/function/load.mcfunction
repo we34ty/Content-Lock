@@ -208,6 +208,9 @@ scoreboard objectives add content_lock.options.player.sleep_exhaustion dummy
 scoreboard objectives add content_lock.options.player.clock_display dummy
 scoreboard objectives add content_lock.options.player.boss_music dummy
 scoreboard objectives add content_lock.options.player.disable_sprint dummy
+scoreboard objectives add content_lock.options.player.custom_weapon_animations dummy
+scoreboard objectives add content_lock.options.player.weapon_hitbox_visible dummy
+scoreboard objectives add content_lock.options.player.uncalculated_weapon_hitbox_visible dummy
 scoreboard objectives add content_lock.options.game.tick_speed dummy
 
 bossbar add content_lock.enchanted_witch [{"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}]
@@ -320,6 +323,9 @@ execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. 
 execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
 execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
 execute unless score L content_lock.options.player.disable_sprint matches 0.. run scoreboard players set L content_lock.options.player.disable_sprint 1
+execute unless score L content_lock.options.player.custom_weapon_animations matches 0.. run scoreboard players set L content_lock.options.player.custom_weapon_animations 1
+execute unless score L content_lock.options.player.weapon_hitbox_visible matches 0.. run scoreboard players set L content_lock.options.player.weapon_hitbox_visible 0
+execute unless score L content_lock.options.player.uncalculated_weapon_hitbox_visible matches 0.. run scoreboard players set L content_lock.options.player.uncalculated_weapon_hitbox_visible 0
 execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule random_tick_speed 6
 execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 6
 
