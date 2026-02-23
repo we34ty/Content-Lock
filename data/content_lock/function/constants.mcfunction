@@ -2,7 +2,7 @@
 scoreboard players set L content_lock.content_lock_version 400
 
 #constants
-scoreboard players set L content_lock.UUID_id.max 256
+scoreboard players set L content_lock.UUID_id.max 4096
 
 #Default Values of Options In Game
 execute unless score L content_lock.options.player.limited_boss_respawn matches 0.. run scoreboard players set L content_lock.options.player.limited_boss_respawn 1
