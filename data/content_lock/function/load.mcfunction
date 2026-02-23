@@ -1,7 +1,4 @@
 scoreboard objectives add content_lock.content_lock_version dummy
-#version numbver
-scoreboard players set L content_lock.content_lock_version 336
-
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
 scoreboard objectives add content_lock.watchers_gaze_used minecraft.used:minecraft.spyglass
@@ -194,6 +191,7 @@ scoreboard objectives add content_lock.weapons.buffer dummy
 scoreboard objectives add content_lock.weapons.weapon_visible_timer dummy
 scoreboard objectives add content_lock.weapons.xz dummy
 scoreboard objectives add content_lock.weapons.y dummy
+scoreboard objectives add content_lock.UUID_id.max dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
@@ -288,82 +286,20 @@ bossbar set content_lock.zomcess_connection color green
 bossbar set content_lock.zomcess_connection style notched_6
 bossbar set content_lock.zomcess_connection max 60
 
-team add content_lock.invader_enemies
-team modify content_lock.invader_enemies color white
-team modify content_lock.invader_enemies friendlyFire false
-team modify content_lock.invader_enemies seeFriendlyInvisibles true
-
 team add content_lock.invisibility
 team modify content_lock.invisibility color white
 team modify content_lock.invisibility friendlyFire false
 team modify content_lock.invisibility seeFriendlyInvisibles false
-
-team add content_lock.invader
-team modify content_lock.invader color red
-team modify content_lock.invader friendlyFire true
-
-team add content_lock.wandering_traders_passive_zombies
 
 scoreboard players add L content_lock.endless_night_active 0
 scoreboard players add L content_lock.progression 0
 scoreboard players add L content_lock.nights_skipped_in_a_row 0
 scoreboard players add L2 content_lock.nights_skipped_in_a_row 0
 
-#Default Values of Options In Game
-execute unless score L content_lock.options.player.limited_boss_respawn matches 0.. run scoreboard players set L content_lock.options.player.limited_boss_respawn 1
-execute unless score L content_lock.options.progression.nether_damage matches 0.. run scoreboard players set L content_lock.options.progression.nether_damage 1
-execute unless score L content_lock.options.player.bleed matches 0.. run scoreboard players set L content_lock.options.player.bleed 1
-execute unless score L content_lock.options.player.corruption matches 0.. run scoreboard players set L content_lock.options.player.corruption 1
-execute unless score L content_lock.options.enemy.customization matches 0.. run scoreboard players set L content_lock.options.enemy.customization 1
-execute unless score L content_lock.options.enemy.scaling matches 0.. run scoreboard players set L content_lock.options.enemy.scaling 1
-execute unless score L content_lock.options.player.nightmares matches 0.. run scoreboard players set L content_lock.options.player.nightmares 1
-execute unless score L content_lock.options.player.stamina matches 0.. run scoreboard players set L content_lock.options.player.stamina 1
-execute unless score L content_lock.options.player.leveling matches 0.. run scoreboard players set L content_lock.options.player.leveling 1
-execute unless score L content_lock.options.player.sleep_exhaustion matches 0.. run scoreboard players set L content_lock.options.player.sleep_exhaustion 1
-execute unless score L content_lock.options.player.clock_display matches 0.. run scoreboard players set L content_lock.options.player.clock_display 1
-execute unless score L content_lock.options.player.boss_music matches 0.. run scoreboard players set L content_lock.options.player.boss_music 1
-execute unless score L content_lock.options.player.disable_sprint matches 0.. run scoreboard players set L content_lock.options.player.disable_sprint 1
-execute unless score L content_lock.options.player.custom_weapon_animations matches 0.. run scoreboard players set L content_lock.options.player.custom_weapon_animations 1
-execute unless score L content_lock.options.player.weapon_hitbox_visible matches 0.. run scoreboard players set L content_lock.options.player.weapon_hitbox_visible 0
-execute unless score L content_lock.options.player.uncalculated_weapon_hitbox_visible matches 0.. run scoreboard players set L content_lock.options.player.uncalculated_weapon_hitbox_visible 0
-execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule random_tick_speed 6
-execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 6
-
-#gamerule playersSleepingPercentage 101
-gamerule natural_health_regeneration false
-execute in minecraft:overworld run gamerule natural_health_regeneration false
-execute in minecraft:the_nether run gamerule natural_health_regeneration false
-execute in minecraft:the_end run gamerule natural_health_regeneration false
-execute in content_lock:the_void run gamerule natural_health_regeneration false
-gamerule spawn_phantoms false
-function content_lock:minecarts
-execute in content_lock:the_void run gamerule reduced_debug_info true
-execute in minecraft:overworld run gamerule reduced_debug_info false
-execute in minecraft:the_nether run gamerule reduced_debug_info false
-execute in minecraft:the_end run gamerule reduced_debug_info false
-gamerule tnt_explosion_drop_decay true
-
-#pretty important
-scoreboard players set L content_lock.temp1 10000
-scoreboard players set L content_lock.temp2 100
-scoreboard players operation L content_lock.huhhealth1 = L content_lock.content_lock_version
-scoreboard players operation L content_lock.huhhealth2 = L content_lock.content_lock_version
-scoreboard players operation L content_lock.temp3 = L content_lock.content_lock_version
-scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temp1
-scoreboard players operation L content_lock.huhhealth1 *= L content_lock.temp1
-scoreboard players operation L content_lock.huhhealth2 -= L content_lock.huhhealth1
-scoreboard players operation L content_lock.huhhealth2 /= L content_lock.temp2
-scoreboard players operation L content_lock.huhhealth2 *= L content_lock.temp2
-scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth1
-scoreboard players operation L content_lock.temp3 -= L content_lock.huhhealth2
-scoreboard players operation L content_lock.huhhealth1 /= L content_lock.temp1
-scoreboard players operation L content_lock.huhhealth2 /= L content_lock.temp2
-
 scoreboard players set L content_lock.temp1 0
 execute store result score L content_lock.temp1 run data get storage content_lock:uuids UUIDs[0].data.loaded
 execute unless score L content_lock.temp1 matches 1 run data merge storage content_lock:uuids {UUIDs:[{Id:0,data:{loaded:1}}]}
 execute unless score L content_lock.temp1 matches 1 run scoreboard players set L content_lock.UUID_id 0
 
-execute unless score L content_lock.temp3 matches ..9 run tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"translate":"content_lock:notifications.reload_v0","color":"green",fallback:" Reloaded - Resource pack invalid or missing"}]
-execute if score L content_lock.temp3 matches ..9 run tellraw @a ["",{"text":"Content Lock ","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth1"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"L","objective":"content_lock.huhhealth2"},"color":"green"},{"text":".0","color":"green"},{"score":{"name":"L","objective":"content_lock.temp3"},"color":"green"},{"translate":"content_lock:notifications.reload_v0","color":"green",fallback:" Reloaded - Resource pack invalid or missing"}]
-
+function content_lock:constants
+function content_lock:reload_version

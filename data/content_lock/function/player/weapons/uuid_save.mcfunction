@@ -10,4 +10,4 @@ execute store result storage content_lock:weapon_stats data.pitch int 1 run data
 
 function content_lock:player/passives/uuid_id_save with storage content_lock:weapon_stats
 
-execute if score L content_lock.UUID_id matches 200.. run scoreboard players set L content_lock.UUID_id 0
+execute if score L content_lock.UUID_id >= L content_lock.UUID_id.max run scoreboard players set L content_lock.UUID_id 0
