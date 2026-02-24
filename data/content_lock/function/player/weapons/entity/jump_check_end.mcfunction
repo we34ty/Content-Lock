@@ -1,1 +1,0 @@
-$execute if entity @n[nbt={UUID:$(UUID),OnGround:true}] run function content_lock:player/weapons/entity/jump_end with storage content_lock:weapon_stats
