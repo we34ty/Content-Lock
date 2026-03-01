@@ -9,11 +9,11 @@
     "attributes": [
       {
         "attribute": "attack_damage",
-        "id": "content_lock.flawless",
+        "id": "content_lock.sharpness2",
         "amount": {
           "type": "linear",
-          "base": 0.1,
-          "per_level_above_first": 0.1
+          "base": 0.08,
+          "per_level_above_first": 0.07
         },
         "operation": "add_multiplied_total"
       }
