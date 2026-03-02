@@ -13,5 +13,5 @@ scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp3
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 
 data merge storage content_lock:saved_stats {value:0}
-execute store result storage content_lock:saved_stats value float 0.01 run scoreboard players get @s content_lock.temp1
+execute store result storage content_lock:saved_stats value float 0.005 run scoreboard players get @s content_lock.temp1
 function content_lock:player/enchantments/combo_macro with storage content_lock:saved_stats

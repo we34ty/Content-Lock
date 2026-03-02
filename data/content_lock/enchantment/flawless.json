@@ -12,8 +12,8 @@
         "id": "content_lock.flawless",
         "amount": {
           "type": "linear",
-          "base": 0.5,
-          "per_level_above_first": 0.4
+          "base": 0.25,
+          "per_level_above_first": 0.15
         },
         "operation": "add_multiplied_total"
       }

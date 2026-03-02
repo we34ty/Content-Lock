@@ -9,8 +9,8 @@
         "attribute": "attack_damage",
         "amount": {
           "type": "linear",
-          "base": 0.04,
-          "per_level_above_first": 0.04
+          "base": 0.02,
+          "per_level_above_first": 0.02
         },
         "id": "minecraft:enchantment.sharpness",
         "operation": "add_multiplied_total"
