@@ -35,4 +35,9 @@ scoreboard players add @s content_lock.mvtspd_from_level 0
 
 #xp add @s 1 points
 
+data merge storage content_lock:saved_stats {UUID:[I;0,0,0,0]}
+data modify storage content_lock:saved_stats UUID set from entity @s UUID
+function content_lock:player/passives/player_data_create with storage content_lock:saved_stats
+function content_lock:player/effects/stamina_draw
+
 scoreboard players operation @s content_lock.content_lock_version = L content_lock.content_lock_version

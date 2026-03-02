@@ -209,6 +209,48 @@
             "ascent": -9,
             "height": 25,
             "chars": ["\uE070"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina/stamina_begin_empty.png",
+            "ascent": -25,
+            "height": 10,
+            "chars": ["\uE082"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina/stamina_begin_full.png",
+            "ascent": -25,
+            "height": 10,
+            "chars": ["\uE083"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina/stamina_segment_empty.png",
+            "ascent": -25,
+            "height": 10,
+            "chars": ["\uE084"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina/stamina_segment_full.png",
+            "ascent": -25,
+            "height": 10,
+            "chars": ["\uE085"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina/stamina_end_empty.png",
+            "ascent": -25,
+            "height": 10,
+            "chars": ["\uE086"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/stamina/stamina_end_full.png",
+            "ascent": -25,
+            "height": 10,
+            "chars": ["\uE087"]
         }
     ]
 }

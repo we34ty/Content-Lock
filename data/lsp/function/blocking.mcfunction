@@ -7,3 +7,5 @@ execute if score @s lsp.stamina matches ..0 run scoreboard players set @s lsp.st
 #execute if score @s content_lock.stamina_delay_timer matches 1.. run scoreboard players set @s content_lock.stamina_delay_timer 0
 scoreboard players set @s content_lock.shield_damage_blocked 0
 execute if score @s lsp.stamina matches ..0 run function lsp:change_speed with storage lsp:macro stamina
+function content_lock:player/effects/stamina_draw
+

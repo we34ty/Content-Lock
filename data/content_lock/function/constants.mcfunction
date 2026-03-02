@@ -7,8 +7,10 @@ scoreboard players set L content_lock.UUID_id.max 4096
 #Default Values of Options In Game
 execute unless score L content_lock.options.player.limited_boss_respawn matches 0.. run scoreboard players set L content_lock.options.player.limited_boss_respawn 1
 execute unless score L content_lock.options.progression.nether_damage matches 0.. run scoreboard players set L content_lock.options.progression.nether_damage 1
+execute unless score L content_lock.options.progression.bosses matches 0.. run scoreboard players set L content_lock.options.progression.bosses 1
 execute unless score L content_lock.options.player.bleed matches 0.. run scoreboard players set L content_lock.options.player.bleed 1
 execute unless score L content_lock.options.player.corruption matches 0.. run scoreboard players set L content_lock.options.player.corruption 1
+execute unless score L content_lock.options.enemy.random_boss_spawning matches 0.. run scoreboard players set L content_lock.options.enemy.random_boss_spawning 1
 execute unless score L content_lock.options.enemy.customization matches 0.. run scoreboard players set L content_lock.options.enemy.customization 1
 execute unless score L content_lock.options.enemy.scaling matches 0.. run scoreboard players set L content_lock.options.enemy.scaling 1
 execute unless score L content_lock.options.player.nightmares matches 0.. run scoreboard players set L content_lock.options.player.nightmares 1

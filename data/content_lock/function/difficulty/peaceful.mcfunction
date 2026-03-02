@@ -1,0 +1,11 @@
+scoreboard players set L content_lock.options.player.limited_boss_respawn 0
+scoreboard players set L content_lock.options.progression.nether_damage 0
+scoreboard players set L content_lock.options.progression.bosses 0
+scoreboard players set L content_lock.options.enemy.random_boss_spawning 0
+scoreboard players set L content_lock.options.player.bleed 0
+scoreboard players set L content_lock.options.player.corruption 0
+scoreboard players set L content_lock.options.enemy.scaling 0
+scoreboard players set L content_lock.options.player.nightmares 0
+scoreboard players set L content_lock.options.player.stamina 0
+scoreboard players set L content_lock.options.player.sleep_exhaustion 0
+#scoreboard players set L content_lock.options.player.disable_sprint 1

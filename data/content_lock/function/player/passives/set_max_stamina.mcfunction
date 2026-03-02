@@ -9,7 +9,7 @@ scoreboard players operation @s content_lock.temp2 -= @s content_lock.temp1
 #giving player said reversed movement efficiency for each equip load level
 scoreboard players operation @s content_lock.temp1 = @s content_lock.eqld_from_level
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp2
-scoreboard players set @s content_lock.temp2 1000
+scoreboard players set @s content_lock.temp2 10000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp2
 
 scoreboard players operation @s content_lock.max_stamina += @s content_lock.temp1
@@ -37,3 +37,5 @@ scoreboard players set @s content_lock.temp1 1000
 scoreboard players operation @s content_lock.temp2 = @s content_lock.max_stamina
 scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
 scoreboard players operation @s content_lock.stamina_regen += @s content_lock.temp2
+
+function content_lock:player/effects/stamina_draw

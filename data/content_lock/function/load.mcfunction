@@ -192,11 +192,16 @@ scoreboard objectives add content_lock.weapons.weapon_visible_timer dummy
 scoreboard objectives add content_lock.weapons.xz dummy
 scoreboard objectives add content_lock.weapons.y dummy
 scoreboard objectives add content_lock.UUID_id.max dummy
+scoreboard objectives add content_lock.difficulty dummy
+scoreboard objectives add content_lock.stamina.current_old dummy
+scoreboard objectives add content_lock.stamina.max_old dummy
 
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
+scoreboard objectives add content_lock.options.progression.bosses dummy
 scoreboard objectives add content_lock.options.player.bleed dummy
 scoreboard objectives add content_lock.options.player.corruption dummy
+scoreboard objectives add content_lock.options.enemy.random_boss_spawning dummy
 scoreboard objectives add content_lock.options.enemy.customization dummy
 scoreboard objectives add content_lock.options.enemy.scaling dummy
 scoreboard objectives add content_lock.options.player.nightmares dummy
@@ -301,5 +306,10 @@ execute store result score L content_lock.temp1 run data get storage content_loc
 execute unless score L content_lock.temp1 matches 1 run data merge storage content_lock:uuids {UUIDs:[{Id:0,data:{loaded:1}}]}
 execute unless score L content_lock.temp1 matches 1 run scoreboard players set L content_lock.UUID_id 0
 
+scoreboard players set L content_lock.temp1 0
+execute store result score L content_lock.temp1 run data get storage content_lock:player_data UUIDs[0].data.loaded
+execute unless score L content_lock.temp1 matches 1 run data merge storage content_lock:player_data {UUIDs:[{Id:0,data:{loaded:1}}]}
+
 function content_lock:constants
 function content_lock:reload_version
+function content_lock:difficulty/tick

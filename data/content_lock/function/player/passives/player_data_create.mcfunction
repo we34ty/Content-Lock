@@ -1,0 +1,1 @@
+$data modify storage content_lock:player_data UUIDs append value {UUID:$(UUID),data:{}}
