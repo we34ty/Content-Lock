@@ -1,6 +1,7 @@
 scoreboard players set @s content_lock.quarry_place 0
 scoreboard players set @s content_lock.barrel_placed 0
 
+##Checks each block in the direction of where player is looking to see if it is the quarry
 execute at @s anchored eyes positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run function content_lock:player/passives/check_area
 execute at @s anchored eyes positioned ^ ^ ^2 align xyz positioned ~0.5 ~ ~0.5 run function content_lock:player/passives/check_area
 execute at @s anchored eyes positioned ^ ^ ^3 align xyz positioned ~0.5 ~ ~0.5 run function content_lock:player/passives/check_area

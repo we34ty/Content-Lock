@@ -3,6 +3,7 @@
 scoreboard players set @s LevelUp.ContentLock 1
 function content_lock:player/levels/leveling_tellraw
 
+##Allow the player to use all of the options for leveling
 #scoreboard players enable @s LevelUp.ContentLock
 scoreboard players enable @s content_lock.LevelUp.atkrng
 scoreboard players enable @s content_lock.LevelUp.atkspd

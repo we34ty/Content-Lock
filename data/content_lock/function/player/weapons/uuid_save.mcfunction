@@ -1,3 +1,4 @@
+##Transfer some of the information to the projectile array, such as projectile Id, player UUID, damage, distance from player and rotation info (which is stored as bytes).
 scoreboard players add L content_lock.UUID_id 1
 scoreboard players operation @s content_lock.UUID_id = L content_lock.UUID_id
 data merge storage content_lock:weapon_stats {Id:0,data:{UUID:[I;0,0,0,0],damage:0,distance:0,pitch:0b,yaw:0b}}
@@ -8,6 +9,7 @@ data modify storage content_lock:weapon_stats data.distance set from storage con
 execute store result storage content_lock:weapon_stats data.yaw byte 0.7 run data get entity @n[tag=content_lock.weapons.attacking] Rotation[0]
 execute store result storage content_lock:weapon_stats data.pitch byte 1 run data get entity @n[tag=content_lock.weapons.attacking] Rotation[1]
 
+##Use this function to add values to the projectile array
 function content_lock:player/passives/uuid_id_save with storage content_lock:weapon_stats
 
 execute if score L content_lock.UUID_id >= L content_lock.UUID_id.max run scoreboard players set L content_lock.UUID_id 0

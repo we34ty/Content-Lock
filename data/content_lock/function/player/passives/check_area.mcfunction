@@ -1,3 +1,4 @@
+##Checks the area around the block to see if it is the quarry
 execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:dropper run function content_lock:player/passives/is_dropper
 execute positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:dropper run function content_lock:player/passives/is_dropper
 execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:dropper run function content_lock:player/passives/is_dropper

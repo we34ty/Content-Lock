@@ -1,10 +1,10 @@
-#version numbver
+##version numbver
 scoreboard players set L content_lock.content_lock_version 400
 
-#constants
+##constants
 scoreboard players set L content_lock.UUID_id.max 4096
 
-#Default Values of Options In Game
+##Default Values of Options In Game
 execute unless score L content_lock.options.player.limited_boss_respawn matches 0.. run scoreboard players set L content_lock.options.player.limited_boss_respawn 1
 execute unless score L content_lock.options.progression.nether_damage matches 0.. run scoreboard players set L content_lock.options.progression.nether_damage 1
 execute unless score L content_lock.options.progression.bosses matches 0.. run scoreboard players set L content_lock.options.progression.bosses 1
@@ -26,6 +26,7 @@ execute unless score L content_lock.options.player.uncalculated_weapon_hitbox_vi
 execute unless score L content_lock.options.game.tick_speed matches 0.. run gamerule random_tick_speed 6
 execute unless score L content_lock.options.game.tick_speed matches 0.. run scoreboard players set L content_lock.options.game.tick_speed 6
 
+##Default gamerules, which shouldn't be modified
 #gamerule playersSleepingPercentage 101
 gamerule natural_health_regeneration false
 execute in minecraft:overworld run gamerule natural_health_regeneration false
@@ -38,5 +39,5 @@ execute in minecraft:overworld run gamerule reduced_debug_info false
 execute in minecraft:the_nether run gamerule reduced_debug_info false
 execute in minecraft:the_end run gamerule reduced_debug_info false
 gamerule tnt_explosion_drop_decay true
-#in case minecraft improvements are not turned on this is a separate function
+##in case minecraft improvements are not turned on this is a separate function
 function content_lock:minecarts

@@ -6,4 +6,5 @@ scoreboard players set @s content_lock.fishing.is_fishing 0
 scoreboard players set @s content_lock.fishing.stress 0
 scoreboard players set @s content_lock.fishing.display 0
 
+##sets a random time for when a fish will catch the bait
 execute store result score @s content_lock.fishing.timer run random value 20..140

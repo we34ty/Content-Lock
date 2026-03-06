@@ -1,6 +1,8 @@
 playsound item.lead.break neutral @a ~ ~ ~ 1 0.7
+##makes the fish escape
 function content_lock:player/passives/fishing/fish_free
 
+##damages the fishing rod used by the player
 scoreboard players set @s content_lock.temp1 -100
 execute if items entity @s weapon.mainhand minecraft:fishing_rod run return run function content_lock:player/passives/fishing/damage_right
 execute if items entity @s weapon.offhand minecraft:fishing_rod run item modify entity @s weapon.offhand content_lock:durability_from_scoreboard_add

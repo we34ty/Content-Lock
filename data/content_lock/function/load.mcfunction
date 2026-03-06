@@ -1,3 +1,4 @@
+##all variables
 scoreboard objectives add content_lock.content_lock_version dummy
 scoreboard objectives add content_lock.wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add content_lock.progression dummy
@@ -196,6 +197,7 @@ scoreboard objectives add content_lock.difficulty dummy
 scoreboard objectives add content_lock.stamina.current_old dummy
 scoreboard objectives add content_lock.stamina.max_old dummy
 
+##all options that can be changed to modify the content lock experience
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy
 scoreboard objectives add content_lock.options.progression.nether_damage dummy
 scoreboard objectives add content_lock.options.progression.bosses dummy
@@ -216,6 +218,8 @@ scoreboard objectives add content_lock.options.player.weapon_hitbox_visible dumm
 scoreboard objectives add content_lock.options.player.uncalculated_weapon_hitbox_visible dummy
 scoreboard objectives add content_lock.options.game.tick_speed dummy
 
+##bossbars used for displaying boss health 
+##(maybe I could switch to using UUID based ones to support multiple bossbars of the same type)
 bossbar add content_lock.enchanted_witch [{"translate":"content_lock:boss.enchanted_witch","bold":true,"color":"light_purple"}]
 bossbar set content_lock.enchanted_witch color purple
 bossbar set content_lock.enchanted_witch style notched_6
@@ -291,25 +295,30 @@ bossbar set content_lock.zomcess_connection color green
 bossbar set content_lock.zomcess_connection style notched_6
 bossbar set content_lock.zomcess_connection max 60
 
+##team for invisible players so mobs don't attack them
 team add content_lock.invisibility
 team modify content_lock.invisibility color white
 team modify content_lock.invisibility friendlyFire false
 team modify content_lock.invisibility seeFriendlyInvisibles false
 
+##make sure these are not uninitialized
 scoreboard players add L content_lock.endless_night_active 0
 scoreboard players add L content_lock.progression 0
 scoreboard players add L content_lock.nights_skipped_in_a_row 0
 scoreboard players add L2 content_lock.nights_skipped_in_a_row 0
 
+##storage for projectile and entity special values, which need to persist for more than one tick without use of scoreboard
 scoreboard players set L content_lock.temp1 0
 execute store result score L content_lock.temp1 run data get storage content_lock:uuids UUIDs[0].data.loaded
 execute unless score L content_lock.temp1 matches 1 run data merge storage content_lock:uuids {UUIDs:[{Id:0,data:{loaded:1}}]}
 execute unless score L content_lock.temp1 matches 1 run scoreboard players set L content_lock.UUID_id 0
 
+##same thing for the players
 scoreboard players set L content_lock.temp1 0
 execute store result score L content_lock.temp1 run data get storage content_lock:player_data UUIDs[0].data.loaded
 execute unless score L content_lock.temp1 matches 1 run data merge storage content_lock:player_data {UUIDs:[{Id:0,data:{loaded:1}}]}
 
+##other functions initialized at the start/restart
 function content_lock:constants
 function content_lock:reload_version
 function content_lock:difficulty/tick

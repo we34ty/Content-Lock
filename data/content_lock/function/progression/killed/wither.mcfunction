@@ -1,11 +1,15 @@
 advancement revoke @s only content_lock:checks/killed_boss/wither
-#say lol
+##increases the progression to 2 (triggers only once)
 execute unless score content_lock.wither_killed content_lock.progression matches 1.. run function content_lock:progression/increase_progression/2
+##globally saves the fact that the wither had been defeated
 scoreboard players add content_lock.wither_killed content_lock.progression 1
+##stop music, just in case it keeps playing
 execute as @a run function content_lock:mobs/bosses/music/stop_music_from_bosses
 
+##the visible advancement
 advancement grant @s only content_lock:combat/kill_wither
 
+##get rid of all "projectiles", which could be left behind by the boss
 kill @e[tag=content_lock.wither.big_ball_to_rain.rain_pointer]
 kill @e[tag=content_lock.wither.big_ball_to_rain.pointer]
 kill @e[tag=content_lock.wither.3_lasers.pointer]

@@ -22,3 +22,5 @@ execute at @s if entity @n[type=item,distance=..10,tag=!content_lock.shimmered] 
 execute at @s if entity @n[type=villager,distance=..40,tag=!content_lock.villager_modified] as @e[type=villager,distance=..40,tag=!content_lock.villager_modified] run function content_lock:player/passives/modify_villagers/check
 
 execute if entity @s[scores={content_lock.enchantment.lightstruck=1..}] run scoreboard players remove @s content_lock.enchantment.lightstruck 1
+
+execute if entity @s[scores={content_lock.sneak_time_counter=1..}] at @s if entity @n[tag=content_lock.wormhole,distance=..1.5] run function content_lock:mobs/entities/wormhole/teleport

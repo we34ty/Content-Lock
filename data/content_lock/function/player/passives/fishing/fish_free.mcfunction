@@ -1,3 +1,4 @@
+##removes the fish with no bobber near them
 execute as @e[tag=content_lock.fishing.fish] at @s unless entity @n[type=fishing_bobber,distance=..1] run tag @s add content_lock.fishing.fish.current
 
 execute at @n[tag=content_lock.fishing.fish.current] run playsound entity.fishing_bobber.splash neutral @a ~ ~ ~ 0.5 0.7

@@ -1,9 +1,12 @@
+##change stress color as it gets higher
 execute if score @s content_lock.fishing.stress matches ..29 run title @s subtitle [{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"green"},{"text":"%",color:"green"}]
-execute if score @s content_lock.fishing.stress matches 30..74 run title @s subtitle [{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"yellow"},{"text":"%",color:"yellow"}]
-execute if score @s content_lock.fishing.stress matches 75.. run title @s subtitle [{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"red"},{"text":"%",color:"red"}]
+execute if score @s content_lock.fishing.stress matches 30..74 run title @s subtitle [{"text":"! ",color:"yellow"},{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"yellow"},{"text":"% !",color:"yellow"}]
+execute if score @s content_lock.fishing.stress matches 75.. run title @s subtitle [{"text":"!!! ",color:"red"},{score:{name:"@s",objective:"content_lock.fishing.stress"},color:"red"},{"text":"% !!!",color:"red"}]
 
+##turns the pointer around the second time
 execute if score @s content_lock.fishing.display matches 2.. run scoreboard players set @s content_lock.fishing.display 0
 
+##manages the display of fishing progress
 execute if score @s content_lock.fishing.progress matches ..60 unless score @s content_lock.fishing.display matches 1 run title @s title {"text":"\uE072","shadow_color": 0}
 execute if score @s content_lock.fishing.progress matches ..60 if score @s content_lock.fishing.display matches 1 run title @s title {"text":"\uE078","shadow_color": 0}
 

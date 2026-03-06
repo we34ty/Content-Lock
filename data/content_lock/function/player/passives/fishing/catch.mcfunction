@@ -1,3 +1,4 @@
+##grants some fishing loot and removes the current fish instance
 execute as @e[tag=content_lock.fishing.fish] at @s unless entity @n[type=fishing_bobber,distance=..1] run tag @s add content_lock.fishing.fish.current
 execute at @n[tag=content_lock.fishing.fish.current] as @p[tag=content_lock.fishing.hooked_tag] run loot spawn ~ ~ ~ fish gameplay/fishing ~ ~-0.2 ~
 execute at @n[tag=content_lock.fishing.fish.current] as @e[type=item,distance=..1] run function content_lock:player/passives/fishing/loot

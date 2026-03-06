@@ -21,4 +21,4 @@ execute if score @s content_lock.temp2 matches 2 run scoreboard players operatio
 execute if score @s content_lock.temp2 matches 2 run scoreboard players remove @s content_lock.stored_z 100
 execute store result storage content_lock:saved_stats z double 1 run scoreboard players get @s content_lock.stored_z
 
-execute as @e[tag=content_lock.wormhole.yet_to_be_teleported,limit=1,sort=nearest] at @s run function content_lock:wormhole/tp_second_point with storage content_lock:saved_stats
+execute as @e[tag=content_lock.wormhole.yet_to_be_teleported,limit=1,sort=nearest] at @s run function content_lock:mobs/entities/wormhole/tp_second_point with storage content_lock:saved_stats

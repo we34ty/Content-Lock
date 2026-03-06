@@ -1,1 +1,0 @@
-$execute positioned $(x) $(y) $(z) run summon marker ~ ~ ~ {Tags:["content_lock.wormhole.remover"]}

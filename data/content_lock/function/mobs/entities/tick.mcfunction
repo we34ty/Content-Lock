@@ -21,5 +21,12 @@ execute if entity @s[type=minecraft:block_display,tag=content_lock.weapons.hitbo
 
 execute if entity @s[tag=!content_lock.carapacer.taken_shape,tag=aj.carapacer.root] run function animated_java:carapacer/remove/this
 execute if entity @s[tag=content_lock.carapacer.taken_shape] run tag @s remove content_lock.carapacer.taken_shape
+
+#removal of wormholes based on entity near their position (if they weren't loaded before)
+execute if entity @s[tag=content_lock.wormhole.remover] at @s as @e[tag=aj.wormhole.root,distance=..1] run function animated_java:wormhole/remove/this
+execute if entity @s[tag=content_lock.wormhole.remover] run kill @s
+#functions for wormholes
+execute if entity @s[type=minecraft:item_display,tag=aj.wormhole.root,tag=content_lock.wormhole.open] run function content_lock:mobs/entities/wormhole/tick
+
 #execute if entity @e[type=trident,tag=!content_lock.arrow.changed_damage] as @e[type=trident,tag=!content_lock.arrow.changed_damage] at @s run function content_lock:mobs/entities/projectiles/arrows
 #execute if entity @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] as @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] at @s run function content_lock:mobs/entities/prism_stone_light

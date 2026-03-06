@@ -1,14 +1,19 @@
+##reset stats, just in case something important changed
 function content_lock:player/passives/died
 
+##the gui with changelog
 dialog show @s content_lock:new_version
 
+##create the world spawn, which determines where players will be respawned by default when dying during a boss fight (assigned only if the vaue was uninitialized)
 execute unless score L content_lock.stored_x matches -2147483648..2147483647 store result score L content_lock.stored_x run data get entity @s Pos[0]
 execute unless score L content_lock.stored_y matches -2147483648..2147483647 store result score L content_lock.stored_y run data get entity @s Pos[1]
 execute unless score L content_lock.stored_z matches -2147483648..2147483647 store result score L content_lock.stored_z run data get entity @s Pos[2]
 
+##show the dialogue for first-timers
 execute unless entity @s[tag=content_lock.initialized] run dialog show @s content_lock:begin
 execute unless entity @s[tag=content_lock.initialized] run tag @s add content_lock.initialized
 
+##set basic values for all players, and initialize some needed ones
 #attribute @s oxygen_bonus modifier add basic_stats -10 add_value
 scoreboard players set @s content_lock.max_stamina 400
 scoreboard players set @s content_lock.stamina_delay 50
@@ -35,9 +40,12 @@ scoreboard players add @s content_lock.mvtspd_from_level 0
 
 #xp add @s 1 points
 
+##add the player's UUID to the storage of all players
 data merge storage content_lock:saved_stats {UUID:[I;0,0,0,0]}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
 function content_lock:player/passives/player_data_create with storage content_lock:saved_stats
+##draw the player's stamina, so it initializes
 function content_lock:player/effects/stamina_draw
 
+##sets the player's version to the current one
 scoreboard players operation @s content_lock.content_lock_version = L content_lock.content_lock_version
