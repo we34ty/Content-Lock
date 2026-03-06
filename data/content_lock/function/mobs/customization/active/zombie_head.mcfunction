@@ -1,6 +1,6 @@
 tag @e remove content_lock.vehicle
 execute on vehicle run tag @s add content_lock.vehicle
-execute rotated as @e[tag=content_lock.vehicle,tag=content_lock.death_rider.throw_zombie_head.entity,limit=1,sort=nearest] run rotate @s ~ 0
+execute rotated as @n[tag=content_lock.vehicle,tag=content_lock.death_rider.throw_zombie_head.entity] run rotate @s ~ 0
 execute unless entity @e[tag=content_lock.vehicle,tag=content_lock.death_rider.throw_zombie_head.entity] run particle cloud ~ ~ ~ 0.1 0.1 0.1 0.05 10 force
 execute unless entity @e[tag=content_lock.vehicle,tag=content_lock.death_rider.throw_zombie_head.entity] run kill @s
 

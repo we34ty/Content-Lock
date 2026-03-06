@@ -1,4 +1,4 @@
-execute rotated as @e[tag=content_lock.carapacer,tag=!content_lock.carapacer.taken_shape,limit=1,sort=nearest] run tp @s ~ ~ ~ ~ 0
+execute rotated as @n[tag=content_lock.carapacer,tag=!content_lock.carapacer.taken_shape] run tp @s ~ ~ ~ ~ 0
 #execute as @e[tag=aj.carapacer.bone.head.tree,limit=1,sort=nearest] rotated as @e[tag=content_lock.carapacer,tag=content_lock.carapacer.taken_shape,limit=1,sort=nearest] run rotate @s ~ ~
 tag @s add content_lock.carapacer.taken_shape
 tag @e remove content_lock.carapacer.current
@@ -10,7 +10,7 @@ execute if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt
 execute if entity @e[tag=content_lock.carapacer.current,limit=1,sort=nearest,nbt={HurtTime:0s}] run function animated_java:carapacer/variants/default/apply
 
 tag @e remove content_lock.im_a_target
-execute as @e[tag=content_lock.carapacer.current,limit=1,sort=nearest] on target run tag @s add content_lock.im_a_target
+execute as @n[tag=content_lock.carapacer.current] on target run tag @s add content_lock.im_a_target
 
 execute unless score @s content_lock.ai_timer matches 100.. if entity @e[tag=content_lock.im_a_target,limit=1,distance=..4] run scoreboard players add @s content_lock.ai_timer 1
 execute unless score @s content_lock.ai_timer matches 100.. unless entity @e[tag=content_lock.im_a_target,limit=1,distance=..4] run scoreboard players set @s content_lock.ai_timer 0

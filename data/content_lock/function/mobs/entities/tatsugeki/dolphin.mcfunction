@@ -3,7 +3,7 @@ scoreboard players add @s content_lock.attack_timer 1
 tag @e remove content_lock.im_a_passanger
 execute on passengers run tag @s add content_lock.im_a_passanger
 execute unless entity @e[tag=content_lock.im_a_passanger] run kill @s
-execute rotated as @e[tag=content_lock.im_a_passanger] run rotate @s ~ 0
+execute rotated as @n[tag=content_lock.im_a_passanger] run rotate @s ~ 0
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.forward] run effect give @e[tag=content_lock.im_a_passanger] resistance 1 1 true
 execute if entity @s[tag=content_lock.tatsugeki.dolphin.upward] run effect give @e[tag=content_lock.im_a_passanger] resistance 1 4 true
 
@@ -19,6 +19,6 @@ execute unless entity @s[tag=content_lock.tatsugeki.dolphin.upward] run return 0
 execute unless score @s content_lock.attack_timer matches 20 run return 0
 
 data merge storage content_lock:saved_stats {speed:1}
-execute as @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest] store result storage content_lock:saved_stats speed double 0.01 run attribute @s movement_speed get 4000
-execute rotated as @e[tag=content_lock.im_a_passanger,limit=1,sort=nearest] rotated ~ 60 run summon area_effect_cloud ^ ^ ^5 {Tags:["content_lock.tatsugeki.dolphin.area"],Duration:1,custom_particle:{type:"block",block_state:"air"}}
+execute as @n[tag=content_lock.im_a_passanger] store result storage content_lock:saved_stats speed double 0.01 run attribute @s movement_speed get 4000
+execute rotated as @n[tag=content_lock.im_a_passanger] rotated ~ 60 run summon area_effect_cloud ^ ^ ^5 {Tags:["content_lock.tatsugeki.dolphin.area"],Duration:1,custom_particle:{type:"block",block_state:"air"}}
 function content_lock:player/items/custom_weapons/tatsugeki/motion with storage content_lock:saved_stats
