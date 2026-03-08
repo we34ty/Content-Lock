@@ -13,50 +13,34 @@
   "result": {
     "components": {
       "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:attack_damage",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 3.6,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:sweeping_damage_ratio",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.2,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_speed",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -1.6,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:entity_interaction_range",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.2,
-            "operation": "add_multiplied_base",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_knockback",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -0.7,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.02,
-            "operation": "add_value",
-            "slot": "mainhand"
-          }
-        ],
-        "minimum_attack_charge": 1,
+        {
+          "type": "minecraft:attack_damage",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -1,
+          "operation": "add_multiplied_total",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -1.6,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_knockback",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -0.7,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "tooltip_display":{
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minimum_attack_charge": 1,
       "minecraft:max_damage": 300,
       "minecraft:tool": {
         "rules": [
@@ -68,6 +52,43 @@
         ],
         "default_mining_speed": 0.5,
         "damage_per_block": 0
+      },
+      "custom_data": {
+        "content_lock:weapon":{
+          "type": "sword",
+          "damage_type": "melee",
+          "damage":{
+            "physical": 0.36,
+            "fire": 0,
+            "frost": 0,
+            "wither": 0,
+            "ender": 0,
+            "void": 0
+          },
+          "status_effects":{
+            "bleed":0,
+            "poison":0,
+            "corruption": 0
+          },
+          "damage_modifiers":{
+            "physical": [],
+            "fire": [],
+            "frost": [],
+            "wither": [],
+            "ender": [],
+            "void": []
+          },
+          "status_effect_modifiers":{
+            "bleed": [],
+            "poison": [],
+            "corruption": []
+          },
+          "scaling":{
+            "strength": 1,
+            "dexterity": 0.5,
+            "intelligence": 0
+          }
+        }
       }
     },
     "count": 1,
