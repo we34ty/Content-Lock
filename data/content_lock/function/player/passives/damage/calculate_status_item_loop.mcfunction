@@ -11,4 +11,4 @@ scoreboard players operation @s content_lock.temp2 += @s content_lock.huhhealth2
 
 scoreboard players add @s content_lock.timer1 1
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
-function content_lock:player/passives/damage/calculate_status_storage_loop with storage content_lock:saved_stats
+function content_lock:player/passives/damage/calculate_status_item_loop with storage content_lock:saved_stats
