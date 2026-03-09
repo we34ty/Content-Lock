@@ -1,6 +1,8 @@
 {
+	"replace": false,
 	"values": [
 	  "content_lock:bleed",
-	  "content_lock:multihit"
+	  "content_lock:multihit",
+	  "#content_lock:melee"
 	]
   }

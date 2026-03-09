@@ -32,8 +32,8 @@ execute if score L content_lock.options.player.stamina matches 0 run data merge 
 execute if entity @s[gamemode=creative] run data merge storage content_lock:saved_stats {stamina:"",stamina_amount:"",stamina_spaces:0}
 execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {stamina:"",stamina_amount:"",stamina_spaces:0}
 
-data merge storage content_lock:saved_stats {data:{stamina:0,stamina_spaces:0},UUID:[I;0,0,0,0]}
+data merge storage content_lock:saved_stats {data:{stamina:0,stamina_spaces:0},UUID:[I;0,0,0,0],path:"stamina"}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
 data modify storage content_lock:saved_stats data.stamina set from storage content_lock:saved_stats stamina
 data modify storage content_lock:saved_stats data.stamina_spaces set from storage content_lock:saved_stats stamina_spaces
-function content_lock:player/passives/player_data_save with storage content_lock:saved_stats
+function content_lock:player/passives/storage/player_data/save_path with storage content_lock:saved_stats

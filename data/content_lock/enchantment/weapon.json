@@ -2,6 +2,7 @@
   "anvil_cost": 1,
   "description": {
     "translate": "content_lock:enchantment.weapon",
+    "fallback": "Weapon Mode Active",
     "color": "white"
   },
   "effects": {

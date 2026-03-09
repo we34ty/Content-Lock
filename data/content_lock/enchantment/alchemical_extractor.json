@@ -3,6 +3,7 @@
   "anvil_cost": 1,
   "description": {
     "translate": "content_lock:enchantment.alchemical_extractor",
+    "fallback": "Extraction",
     "color": "white"
   },
   "effects": {

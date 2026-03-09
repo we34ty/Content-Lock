@@ -9,8 +9,8 @@ tag @e remove content_lock.weapons.attacking
 tag @s add content_lock.weapons.attacking
 
 ##Additional damage from jumping/running attacks
-execute if entity @s[nbt={OnGround:false}] run attribute @s attack_damage modifier add content_lock.weapons.crit 0.5 add_multiplied_total
-execute if entity @s[predicate=lsp:is_sprinting] run attribute @s attack_damage modifier add content_lock.weapons.running 0.1 add_multiplied_total
+execute if entity @s[nbt={OnGround:false}] run tag @s add content_lock.weapons.add_jumping_damage
+execute if entity @s[predicate=lsp:is_sprinting] run tag @s add content_lock.weapons.add_running_damage
 
 ##Macros for each weapon availible, where:
 ##name: category of weapon behaviors (hitboxes, timings, etc), which the weapon is going to use
@@ -23,7 +23,7 @@ execute if entity @s[predicate=lsp:is_sprinting] run attribute @s attack_damage 
 ##anims: category of animation which the weapon uses
 ##jumping_attack: the attack index which the weapon is going to assign to the jumping attacks (default is 31 for index '_jumping')
 ##running_attack: the attack index which the weapon is going to assign to the running attacks (default is 30 for index '_running')
-execute if items entity @s weapon.mainhand wooden_sword run return run function content_lock:player/weapons/attacked_macro {name:"sword",cooldown:12,visible_timer:25,max_combo:2,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.7,anims:sword,jumping_attack:1,running_attack:30}
+execute if items entity @s weapon.mainhand *[custom_data~{"content_lock:weapon":{type:"sword"}}] run return run function content_lock:player/weapons/attacked_macro {name:"sword",cooldown:12,visible_timer:25,max_combo:2,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.7,anims:sword,jumping_attack:1,running_attack:30}
 execute if items entity @s weapon.mainhand stone_sword run return run function content_lock:player/weapons/attacked_macro {name:"far_sword",cooldown:17,visible_timer:31,max_combo:3,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.5,anims:sword_far,jumping_attack:3,running_attack:30}
 execute if items entity @s weapon.mainhand iron_sword run return run function content_lock:player/weapons/attacked_macro {name:"far_sword",cooldown:17,visible_timer:31,max_combo:3,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.5,anims:sword_far,jumping_attack:3,running_attack:30}
 execute if items entity @s weapon.mainhand netherite_sword run return run function content_lock:player/weapons/attacked_macro {name:"far_sword",cooldown:17,visible_timer:31,max_combo:3,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.5,anims:sword_far,jumping_attack:3,running_attack:30}

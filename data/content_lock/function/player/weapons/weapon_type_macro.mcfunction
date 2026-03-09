@@ -15,15 +15,8 @@ scoreboard players operation @s content_lock.UUID_id = L content_lock.UUID_id
 $execute rotated ~ 0 positioned ^ ^ ^0.5 positioned ~ ~$(distance) ~ run function animated_java:weapons/summon {args:{}}
 ##Set the item model based on your weapon
 $data modify entity @n[type=minecraft:item_display,tag=aj.weapons.bone.weapon.child.item_display,tag=!content_lock.weapons.$(name)] item set from entity @s SelectedItem
-##Set the animation
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run function animated_java:weapons/animations/$(anims)$(attack_anim_id)/play
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] at @s rotated ~ 0 run tp @s ~ ~ ~ ~ ~
-##Give the weapon a projectile ID
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run scoreboard players operation @s content_lock.UUID_id = L content_lock.UUID_id
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run scoreboard players operation @s content_lock.weapons.weapon_visible_timer = @n[tag=content_lock.weapons.attacking] content_lock.weapons.weapon_visible_timer
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.hit$(attack_anim_id)
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.initialized
-$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.$(name)
+##Item display actions
+$execute as @n[type=minecraft:item_display,tag=aj.weapons.root,tag=!content_lock.weapons.$(name)] run function content_lock:player/weapons/weapon_type_macro_display with storage content_lock:weapon_stats
 $execute as @n[type=minecraft:item_display,tag=aj.weapons.bone.weapon.child.item_display,tag=!content_lock.weapons.$(name)] run tag @s add content_lock.weapons.$(name)
 
 ##Reset the combo when it raches max
