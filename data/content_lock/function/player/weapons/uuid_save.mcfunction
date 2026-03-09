@@ -2,6 +2,7 @@
 scoreboard players add L content_lock.UUID_id 1
 scoreboard players operation @s content_lock.UUID_id = L content_lock.UUID_id
 data merge storage content_lock:weapon_stats {Id:0,data:{UUID:[I;0,0,0,0],damage_type:"melee",distance:0,pitch:0b,yaw:0b,physical_damage:0,fire_damage:0,frost_damage:0,magic_damage:0,wither_damage:0,ender_damage:0,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}}
+data merge storage content_lock:weapon_stats {UUID:[I;0,0,0,0],damage_type:"melee",distance:0,pitch:0b,yaw:0b,physical_damage:0,fire_damage:0,frost_damage:0,magic_damage:0,wither_damage:0,ender_damage:0,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}
 execute store result storage content_lock:weapon_stats Id int 1 run scoreboard players get @s content_lock.UUID_id
 data modify storage content_lock:weapon_stats data.UUID set from entity @s UUID
 

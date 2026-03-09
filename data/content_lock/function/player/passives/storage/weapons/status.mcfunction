@@ -1,0 +1,11 @@
+#data merge storage content_lock:saved_stats {type:0,value:0,id:0}
+data merge storage content_lock:saved_stats {type:bleed}
+function content_lock:player/enchantments/weapon_level/write_status with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:poison}
+function content_lock:player/enchantments/weapon_level/write_status with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:corruption}
+function content_lock:player/enchantments/weapon_level/write_status with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:wither}
+function content_lock:player/enchantments/weapon_level/write_status with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:frostbite}
+function content_lock:player/enchantments/weapon_level/write_status with storage content_lock:saved_stats

@@ -1,4 +1,4 @@
 $execute positioned ~-$(xz_length) ~-$(y_length) ~-$(xz_length) positioned ~$(xz) ~$(y) ~$(xz) as @e[type=!#entities,dx=$(xz_length),dz=$(xz_length),dy=$(y_length),nbt=!{UUID:$(UUID)}] positioned ~$(xz_length) ~$(y_length) ~$(xz_length) positioned ~-$(2xz) ~-$(2y) ~-$(2xz) if entity @s[dx=$(xz_length),dz=$(xz_length),dy=$(y_length)] unless entity @s[tag=content_lock.weapons.hit_id.$(Id)] at @s run function content_lock:player/weapons/entity/damage_all with storage content_lock:weapon_stats
-#$say $(physical_damage) $(fire_damage) $(frost_damage) $(magic_damage) $(wither_damage) $(ender_damage)
+
 execute if score L content_lock.options.player.weapon_hitbox_visible matches 1 run function content_lock:player/weapons/entity/damage_hitbox_display with storage content_lock:weapon_stats
 execute if score L content_lock.options.player.uncalculated_weapon_hitbox_visible matches 1 run function content_lock:player/weapons/entity/damage_uncalculated_hitbox_display with storage content_lock:weapon_stats

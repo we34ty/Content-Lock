@@ -1,0 +1,13 @@
+#data merge storage content_lock:saved_stats {type:0,value:0,id:0}
+data merge storage content_lock:saved_stats {type:physical}
+function content_lock:player/enchantments/weapon_level/write with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:fire}
+function content_lock:player/enchantments/weapon_level/write with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:frost}
+function content_lock:player/enchantments/weapon_level/write with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:magic}
+function content_lock:player/enchantments/weapon_level/write with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:wither}
+function content_lock:player/enchantments/weapon_level/write with storage content_lock:saved_stats
+data merge storage content_lock:saved_stats {type:ender}
+function content_lock:player/enchantments/weapon_level/write with storage content_lock:saved_stats

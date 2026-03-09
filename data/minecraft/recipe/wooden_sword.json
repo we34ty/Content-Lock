@@ -57,7 +57,7 @@
           "type": "sword",
           "damage_type": "melee",
           "damage":{
-            "physical": 3.6,
+            "physical": 3.61,
             "fire": 0,
             "frost": 0,
             "magic": 0,

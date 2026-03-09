@@ -1,7 +1,7 @@
 execute store result score @s content_lock.weapons.xz run data get storage content_lock:weapon_stats xz 1000
 execute store result score @s content_lock.weapons.y run data get storage content_lock:weapon_stats y 1000
 
-data merge storage content_lock:weapon_stats {2xy:0,2y:0,xz_length:0,xz_length:0}
+data merge storage content_lock:weapon_stats {2xy:0,2y:0,xz_length:0,y_length:0}
 
 scoreboard players set @s content_lock.temp1 2
 scoreboard players operation @s content_lock.weapons.xz *= @s content_lock.temp1

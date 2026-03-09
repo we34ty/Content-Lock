@@ -1,0 +1,2 @@
+$execute unless data storage content_lock:saved_stats modifiers.$(type)[{id:$(id)}] run return run data modify entity @n[type=item,tag=content_lock.weapons.temporary_item] Item.components."minecraft:custom_data"."content_lock:weapon".status_effect_modifiers.$(type) append value {id:$(id),operation:"multiply",value:$(value)}
+$data modify entity @n[type=item,tag=content_lock.weapons.temporary_item] Item.components."minecraft:custom_data"."content_lock:weapon".status_effect_modifiers.$(type)[{id:$(id)}] set value {id:$(id),operation:"multiply",value:$(value)}
