@@ -6,15 +6,29 @@ execute store result storage content_lock:weapon_stats Id int 1 run scoreboard p
 data modify storage content_lock:weapon_stats data.UUID set from entity @s UUID
 
 ##Calculate all of the damage values of the weapon and store them in the projectile array
-data merge storage content_lock:saved_stats {display:{physical:0,fire:0,frost:0,magic:0,wither:0,ender:0}}
+data merge storage content_lock:saved_stats {storage:"content_lock:saved_stats",path:"weapon_runtime",UUID:[I;0,0,0,0]}
+data modify storage content_lock:saved_stats UUID set from entity @s UUID
+function content_lock:player/passives/storage/player_data/load_path with storage content_lock:saved_stats
 function content_lock:player/passives/damage/calculate_damage with storage content_lock:weapon_stats
-execute store result storage content_lock:saved_stats display.physical int 1 run data get storage content_lock:weapon_stats data.physical_damage 10
-execute store result storage content_lock:saved_stats display.fire int 1 run data get storage content_lock:weapon_stats data.fire_damage 10
-execute store result storage content_lock:saved_stats display.frost int 1 run data get storage content_lock:weapon_stats data.frost_damage 10
-execute store result storage content_lock:saved_stats display.magic int 1 run data get storage content_lock:weapon_stats data.magic_damage 10
-execute store result storage content_lock:saved_stats display.wither int 1 run data get storage content_lock:weapon_stats data.wither_damage 10
-execute store result storage content_lock:saved_stats display.ender int 1 run data get storage content_lock:weapon_stats data.ender_damage 10
-item modify entity @s weapon.mainhand content_lock:weapon_update_stats
+
+scoreboard players set @s content_lock.temp3 -1
+execute store result score @s content_lock.temp3 run data get storage content_lock:saved_stats lore_checksum 1
+
+scoreboard players set @s content_lock.temp1 0
+execute store result score @s content_lock.temp1 run data get storage content_lock:saved_stats display_checksum 1
+
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run data merge storage content_lock:saved_stats {display:{physical:0,fire:0,frost:0,magic:0,wither:0,ender:0}}
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.physical int 1 run data get storage content_lock:weapon_stats data.physical_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.fire int 1 run data get storage content_lock:weapon_stats data.fire_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.frost int 1 run data get storage content_lock:weapon_stats data.frost_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.magic int 1 run data get storage content_lock:weapon_stats data.magic_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.wither int 1 run data get storage content_lock:weapon_stats data.wither_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.ender int 1 run data get storage content_lock:weapon_stats data.ender_damage 10
+
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run item modify entity @s weapon.mainhand content_lock:weapon_update_stats
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run data merge storage content_lock:saved_stats {storage:"content_lock:saved_stats",path:"weapon_runtime",data:{lore_checksum:0}}
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats data.lore_checksum int 1 run scoreboard players get @s content_lock.temp1
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run function content_lock:player/passives/storage/player_data/save_path with storage content_lock:saved_stats
 
 data modify storage content_lock:weapon_stats data.distance set from storage content_lock:weapon_stats distance
 execute store result storage content_lock:weapon_stats data.yaw byte 0.7 run data get entity @n[tag=content_lock.weapons.attacking] Rotation[0]

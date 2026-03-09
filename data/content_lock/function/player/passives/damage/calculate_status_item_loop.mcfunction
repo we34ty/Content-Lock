@@ -1,6 +1,6 @@
-$execute unless data entity @s SelectedItem.components."minecraft:custom_data"."content_lock:weapon".status_effect_modifiers.$(type)[$(i)] run return run scoreboard players set @s content_lock.timer1 0
+$execute unless data storage content_lock:saved_stats weapon_cache.status_effect_modifiers.$(type)[$(i)] run return run scoreboard players set @s content_lock.timer1 0
 
-$data modify storage content_lock:saved_stats status_effect_modifier set from entity @s SelectedItem.components."minecraft:custom_data"."content_lock:weapon".status_effect_modifiers.$(type)[$(i)]
+$data modify storage content_lock:saved_stats status_effect_modifier set from storage content_lock:saved_stats weapon_cache.status_effect_modifiers.$(type)[$(i)]
 
 $function content_lock:player/passives/damage/check_operation_status {damage_type:$(damage_type)}
 
