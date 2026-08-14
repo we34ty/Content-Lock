@@ -20,26 +20,12 @@
     "mainhand"
   ],
   "effects": {
-    "minecraft:attributes": [
+    "post_piercing_attack": [
       {
-        "attribute": "minecraft:attack_damage",
-        "id": "weapon_level",
-        "amount": {
-          "type": "minecraft:linear",
-          "base": 0.1,
-          "per_level_above_first": 0.1
-        },
-        "operation": "add_multiplied_base"
-      },
-      {
-        "attribute": "minecraft:mining_efficiency",
-        "id": "weapon_level",
-        "amount": {
-          "type": "minecraft:linear",
-          "base": 0.8,
-          "per_level_above_first": 0.8
-        },
-        "operation": "add_value"
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/weapon_level/tick"
+        }
       }
     ]
   }

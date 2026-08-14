@@ -1,0 +1,10 @@
+{
+	"values": [
+	  "content_lock:melee/physical",
+	  "content_lock:melee/fire",
+	  "content_lock:melee/frost",
+	  "content_lock:melee/magic",
+	  "content_lock:melee/wither",
+	  "content_lock:melee/ender"
+	]
+  }

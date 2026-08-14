@@ -43,7 +43,7 @@ scoreboard players add @s content_lock.mvtspd_from_level 0
 ##add the player's UUID to the storage of all players
 data merge storage content_lock:saved_stats {UUID:[I;0,0,0,0]}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
-function content_lock:player/passives/player_data_create with storage content_lock:saved_stats
+function content_lock:player/passives/storage/player_data/create with storage content_lock:saved_stats
 ##draw the player's stamina, so it initializes
 function content_lock:player/effects/stamina_draw
 
