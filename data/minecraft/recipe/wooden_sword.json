@@ -65,11 +65,11 @@
             "ender": 0
           },
           "status_effects":{
-            "bleed":0,
+            "bleed":22,
             "poison":0,
             "corruption": 0,
             "wither": 0,
-            "frostbite": 0
+            "frostbite": -4
           },
           "damage_modifiers":{
             "physical": [],
@@ -87,9 +87,10 @@
             "frostbite": []
           },
           "scaling":{
-            "strength": 2,
-            "dexterity": 1,
-            "intelligence": 0
+            "strength": 1,
+            "dexterity": 1.5,
+            "notardness": 0,
+            "promiles": 2.5
           }
         }
       },
