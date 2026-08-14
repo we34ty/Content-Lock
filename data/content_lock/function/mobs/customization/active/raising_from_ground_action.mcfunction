@@ -6,3 +6,4 @@ execute if entity @s[type=#content_lock:zombies] at @p run playsound entity.zomb
 execute if entity @s[type=#content_lock:skeletons] at @p run playsound entity.skeleton.hurt hostile @a ~ ~ ~ 1 0.8
 execute at @p run particle block_crumble{block_state:{Name:"minecraft:dirt"}} ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal
 execute at @p run particle block{block_state:{Name:"minecraft:dirt"}} ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal
+scoreboard players set @p[distance=..25,scores={content_lock.dark_timer=200..},nbt=!{RootVehicle:{}}] content_lock.dark_timer 0

@@ -21,6 +21,8 @@ scoreboard objectives add content_lock.damage_dealt_to_absorption minecraft.cust
 scoreboard objectives add content_lock.check_for_death minecraft.custom:minecraft.deaths
 scoreboard objectives add content_lock.player_count_scaling dummy
 scoreboard objectives add content_lock.timer2 dummy
+scoreboard objectives add content_lock.dark_timer dummy
+scoreboard objectives add content_lock.dark_sound_cooldown dummy
 scoreboard objectives add content_lock.RestartMusic trigger
 scoreboard objectives add content_lock.time_since_death minecraft.custom:minecraft.time_since_death
 scoreboard objectives add content_lock.time_playing_music_player dummy
