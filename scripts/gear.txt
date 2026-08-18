@@ -1,0 +1,102 @@
+## Weapons
+# Durability Modifiers
+Base: 200
+Wood: 1
+Stone: 1.2
+Copper: 0.7
+Iron: 1.3
+Gold: 0.6
+Diamond: 0.75
+Netherite: 1.5
+
+Sword: 1
+Hoe: 1.3
+Axe: 0.8
+Pickaxe: 0.5
+Shovel: 0.35
+Spear: 0.63
+
+# DPS
+Base: 2.7
+
+Sword: 2.7
+Hoe: 2.5
+Axe: 2.8
+Pickaxe: 3
+Shovel: 3.2
+Spear: 2.4
+
+# Attack Speed (Maxes out at 1 every 0.5s)
+# Base MC attack speed is 4 as in 1/4th of a second
+# Thus we remove values from it to make it slower
+Base: 4
+# Base - x = values below
+Sword: 1.5
+Hoe: 1.8
+Axe: 1.1
+Pickaxe: 0.6
+Shovel: 0.45
+Spear: 0.87
+
+# Multipliers for the values higher up
+Wood: 1.3
+Stone: 0.6
+Copper: 1
+Iron: 0.75
+Gold: 1.15
+Netherite: 0.5
+Diamond: 1.23
+
+# Resource Locations:
+Wood: "../data/minecraft/recipe/"
+Stone: "../data/minecraft/recipe/"
+Copper: "../data/minecraft/recipe/"
+Iron: "../data/minecraft/recipe/"
+Gold: "../data/minecraft/recipe/"
+Netherite: "../data/minecraft/recipe/"
+Diamond: "../data/minecraft/recipe/"
+
+## Armor
+# Armor points
+Leather: 7.5
+Chainmail: 7
+Copper: 8.5
+Iron: 6
+Gold: 8
+Netherite: 6.5
+Diamond: 9
+
+# Armor toughness points
+Leather: 3
+Chainmail: 7
+Copper: 1
+Iron: 15
+Gold: 1.5
+Netherite: 11
+Diamond: 0
+
+# Movement efficiency
+Leather: 0.15
+Chainmail: 0.3
+Copper: 0.35
+Iron: 0.65
+Gold: 0.5
+Netherite: 0.9
+Diamond: 0.4
+
+# Armor Piece split (rougly adds up to 1)
+# Applies to every armor stat mentioned before
+# Rounded up to 2 digits after a comma
+Helmet: 0.166
+Chestplate: 0.444
+Leggings: 0.222
+Boots: 0.166
+
+# Resource Locations:
+Leather: "../data/minecraft/recipe/"
+Chainmail: "../data/content_lock/recipe/"
+Copper: "../data/minecraft/recipe/"
+Iron: "../data/minecraft/recipe/"
+Gold: "../data/minecraft/recipe/"
+Netherite: "../data/minecraft/recipe/"
+Diamond: "../data/minecraft/recipe/"
