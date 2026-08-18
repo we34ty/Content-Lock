@@ -47,6 +47,172 @@ Gold: 1.15
 Netherite: 0.5
 Diamond: 1.23
 
+# Stat Splits
+# Damage
+Default:
+ Physical: 1
+ Fire: 0
+ Frost: 0
+ Magic: 0
+ Wither: 0
+ Ender: 0
+
+Wood:
+ Physical: 1
+ Fire: 0
+ Frost: 0
+ Magic: 0
+ Wither: 0
+ Ender: 0
+
+Stone:
+ Physical: 0.7
+ Fire: 0
+ Frost: 0
+ Magic: 0
+ Wither: 0.3
+ Ender: 0
+
+Copper:
+ Physical: 0.5
+ Fire: 0
+ Frost: 0
+ Magic: 0.5
+ Wither: 0
+ Ender: 0
+
+Iron:
+ Physical: 0.35
+ Fire: 0
+ Frost: 0.75
+ Magic: 0
+ Wither: 0
+ Ender: 0
+
+Gold:
+ Physical: 0.5
+ Fire: 0.25
+ Frost: 0
+ Magic: 0.25
+ Wither: 0
+ Ender: 0
+
+Netherite:
+ Physical: 0.35
+ Fire: 0.45
+ Frost: 0
+ Magic: 0
+ Wither: 0.2
+ Ender: 0
+
+Diamond:
+ Physical: 0.15
+ Fire: 0
+ Frost: 0.25
+ Magic: 0.25
+ Wither: 0
+ Ender: 0.35
+
+# Status effects (also based off of attack speed)
+# Formula: (Weapon type / attack speed) * material
+Default:
+ Bleed: 0
+ Poison: 0
+ Corruption: 0
+ Wither: 0
+ Frostbite: 0
+
+Sword:
+ Bleed: 40
+ Poison: 40
+ Corruption: 40
+ Wither: 40
+ Frostbite: 40
+
+Hoe:
+ Bleed: 30
+ Poison: 30
+ Corruption: 30
+ Wither: 30
+ Frostbite: 30
+
+Axe:
+ Bleed: 50
+ Poison: 50
+ Corruption: 50
+ Wither: 50
+ Frostbite: 50
+
+Pickaxe:
+ Bleed: 35
+ Poison: 35
+ Corruption: 35
+ Wither: 35
+ Frostbite: 35
+
+Shovel:
+ Bleed: 44
+ Poison: 44
+ Corruption: 44
+ Wither: 44
+ Frostbite: 44
+
+Spear:
+ Bleed: 28
+ Poison: 28
+ Corruption: 28
+ Wither: 28
+ Frostbite: 28
+
+Wood:
+ Bleed: 1
+ Poison: 0
+ Corruption: 0
+ Wither: 0
+ Frostbite: -0.25
+
+Stone:
+ Bleed: 0
+ Poison: 0
+ Corruption: 0
+ Wither: 0.5
+ Frostbite: 0.2
+
+Copper:
+ Bleed: 0.1
+ Poison: 0
+ Corruption: 0.1
+ Wither: 0
+ Frostbite: 0
+
+Iron:
+ Bleed: 0
+ Poison: 0
+ Corruption: 0
+ Wither: 0
+ Frostbite: 1
+
+Gold:
+ Bleed: 0.05
+ Poison: 0
+ Corruption: 0.2
+ Wither: 0
+ Frostbite: -0.5
+
+Netherite:
+ Bleed: 0
+ Poison: 0
+ Corruption: 0
+ Wither: 1
+ Frostbite: -1
+
+Diamond:
+ Bleed: 0.5
+ Poison: 0
+ Corruption: 0
+ Wither: 0
+ Frostbite: 0.25
+
 # Resource Locations:
 Wood: "../data/minecraft/recipe/"
 Stone: "../data/minecraft/recipe/"

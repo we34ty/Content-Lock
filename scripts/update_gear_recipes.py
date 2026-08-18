@@ -2,8 +2,8 @@
 """Update datapack recipe values from scripts/gear.txt.
 
 The gear file contains the balancing tables for weapon durability, attack speed,
-and armor stats. This script applies those values to matching recipe JSON files
-listed in gear.txt resource-location folders.
+stat splits, status effects, and armor stats. This script applies those values to
+matching recipe JSON files listed in gear.txt resource-location folders.
 
 It intentionally leaves combat flavor values that are not defined in gear.txt
 alone, such as sweeping ratio and knockback.
@@ -38,6 +38,11 @@ WEAPON_DURABILITY_KEYS = [
 WEAPON_DPS_KEYS = ["Base", "Sword", "Hoe", "Axe", "Pickaxe", "Shovel", "Spear"]
 WEAPON_SPEED_KEYS = ["Base", "Sword", "Hoe", "Axe", "Pickaxe", "Shovel", "Spear"]
 WEAPON_MULTIPLIER_KEYS = ["Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
+WEAPON_DAMAGE_SPLIT_KEYS = ["Default", "Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
+WEAPON_DAMAGE_TYPES = ["Physical", "Fire", "Frost", "Magic", "Wither", "Ender"]
+WEAPON_STATUS_TYPE_KEYS = ["Default", "Sword", "Hoe", "Axe", "Pickaxe", "Shovel", "Spear"]
+WEAPON_STATUS_MATERIAL_KEYS = ["Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
+WEAPON_STATUS_EFFECTS = ["Bleed", "Poison", "Corruption", "Wither", "Frostbite"]
 WEAPON_RESOURCE_KEYS = ["Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
 
 ARMOR_POINTS_KEYS = ["Leather", "Chainmail", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
@@ -84,8 +89,6 @@ SUFFIX_TO_SLOT = {
     "leggings": "Leggings",
     "boots": "Boots",
 }
-
-
 def parse_value(raw_value: str) -> Any:
     value = raw_value.strip()
     if value.startswith('"') and value.endswith('"') and len(value) >= 2:
@@ -100,10 +103,13 @@ def parse_value(raw_value: str) -> Any:
 def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
     lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines()]
     data_lines = [line for line in lines if line and not line.startswith("#")]
-    gear: dict[str, dict[str, dict[str, Any]]] = {"Weapons": {}, "Armor": {}}
+    gear: dict[str, dict[str, dict[str, Any]]] = {
+        "Weapons": {"Stat Splits": {"Damage": {}, "Status effects": {}}},
+        "Armor": {},
+    }
     index = 0
 
-    def consume_table(section: str, table_name: str, keys: list[str]) -> None:
+    def consume_table(section: str, table_name: str, keys: list[str]) -> dict[str, Any]:
         nonlocal index
         table: dict[str, Any] = {}
         for expected_key in keys:
@@ -120,18 +126,49 @@ def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
                 )
             table[actual_key] = parse_value(raw_value)
             index += 1
-        gear[section][table_name] = table
+        return table
 
-    consume_table("Weapons", "Durability Modifiers", WEAPON_DURABILITY_KEYS)
-    consume_table("Weapons", "DPS", WEAPON_DPS_KEYS)
-    consume_table("Weapons", "Attack Speed (Maxes out at 1 every 0.5s)", WEAPON_SPEED_KEYS)
-    consume_table("Weapons", "Multipliers for the values higher up", WEAPON_MULTIPLIER_KEYS)
-    consume_table("Weapons", "Resource Locations", WEAPON_RESOURCE_KEYS)
-    consume_table("Armor", "Armor points", ARMOR_POINTS_KEYS)
-    consume_table("Armor", "Armor toughness points", ARMOR_TOUGHNESS_KEYS)
-    consume_table("Armor", "Movement efficiency", ARMOR_MOVEMENT_KEYS)
-    consume_table("Armor", "Armor Piece split (rougly adds up to 1)", ARMOR_SPLIT_KEYS)
-    consume_table("Armor", "Resource Locations", ARMOR_RESOURCE_KEYS)
+    def consume_labeled_tables(section: str, table_name: str, table_keys: list[str], keys: list[str]) -> dict[str, dict[str, Any]]:
+        nonlocal index
+        tables: dict[str, dict[str, Any]] = {}
+        for expected_table in table_keys:
+            if index >= len(data_lines):
+                raise ValueError(f"gear.txt ended early while reading {section} / {table_name}")
+            line = data_lines[index]
+            if ":" not in line:
+                raise ValueError(f"invalid gear.txt line: {line!r}")
+            actual_key, raw_value = line.split(":", 1)
+            actual_key = actual_key.strip()
+            if actual_key != expected_table or raw_value.strip():
+                raise ValueError(
+                    f"expected table label {expected_table!r} while reading {section} / {table_name}, got {line!r}"
+                )
+            index += 1
+            tables[actual_key] = consume_table(section, f"{table_name} / {actual_key}", keys)
+        return tables
+
+    gear["Weapons"]["Durability Modifiers"] = consume_table("Weapons", "Durability Modifiers", WEAPON_DURABILITY_KEYS)
+    gear["Weapons"]["DPS"] = consume_table("Weapons", "DPS", WEAPON_DPS_KEYS)
+    gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"] = consume_table(
+        "Weapons", "Attack Speed (Maxes out at 1 every 0.5s)", WEAPON_SPEED_KEYS
+    )
+    gear["Weapons"]["Multipliers for the values higher up"] = consume_table(
+        "Weapons", "Multipliers for the values higher up", WEAPON_MULTIPLIER_KEYS
+    )
+    gear["Weapons"]["Stat Splits"]["Damage"] = consume_labeled_tables(
+        "Weapons", "Damage split", WEAPON_DAMAGE_SPLIT_KEYS, WEAPON_DAMAGE_TYPES
+    )
+    gear["Weapons"]["Stat Splits"]["Status effects"] = consume_labeled_tables(
+        "Weapons", "Status effects", WEAPON_STATUS_TYPE_KEYS + WEAPON_STATUS_MATERIAL_KEYS, WEAPON_STATUS_EFFECTS
+    )
+    gear["Weapons"]["Resource Locations"] = consume_table("Weapons", "Resource Locations", WEAPON_RESOURCE_KEYS)
+    gear["Armor"]["Armor points"] = consume_table("Armor", "Armor points", ARMOR_POINTS_KEYS)
+    gear["Armor"]["Armor toughness points"] = consume_table("Armor", "Armor toughness points", ARMOR_TOUGHNESS_KEYS)
+    gear["Armor"]["Movement efficiency"] = consume_table("Armor", "Movement efficiency", ARMOR_MOVEMENT_KEYS)
+    gear["Armor"]["Armor Piece split (rougly adds up to 1)"] = consume_table(
+        "Armor", "Armor Piece split (rougly adds up to 1)", ARMOR_SPLIT_KEYS
+    )
+    gear["Armor"]["Resource Locations"] = consume_table("Armor", "Resource Locations", ARMOR_RESOURCE_KEYS)
 
     if index != len(data_lines):
         leftover = data_lines[index:]
@@ -243,6 +280,159 @@ def iter_recipe_files(gear: dict[str, dict[str, dict[str, Any]]], gear_file: Pat
     return files
 
 
+def weapon_split_table(gear: dict[str, dict[str, dict[str, Any]]], material_key: str) -> dict[str, Any]:
+    damage_tables = gear["Weapons"]["Stat Splits"]["Damage"]
+    return damage_tables.get(material_key, damage_tables["Default"])
+
+
+def weapon_status_tables(
+    gear: dict[str, dict[str, dict[str, Any]]],
+    material_key: str,
+    suffix: str,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    status_tables = gear["Weapons"]["Stat Splits"]["Status effects"]
+    weapon_table = status_tables.get(SUFFIX_TO_TOOL[suffix], status_tables["Default"])
+    material_table = status_tables.get(material_key, status_tables["Default"])
+    return weapon_table, material_table
+
+
+def build_weapon_damage_map(attack_damage: float, split_table: dict[str, Any]) -> dict[str, float]:
+    damage_map: dict[str, float] = {}
+    for damage_type in WEAPON_DAMAGE_TYPES:
+        value = attack_damage * float(split_table[damage_type])
+        damage_map[damage_type.lower()] = canonical_number(value)
+    return damage_map
+
+
+def build_weapon_status_map(
+    effective_attack_speed: float,
+    weapon_table: dict[str, Any],
+    material_table: dict[str, Any],
+) -> dict[str, float]:
+    status_map: dict[str, float] = {}
+    for status_effect in WEAPON_STATUS_EFFECTS:
+        value = float(weapon_table[status_effect]) * float(material_table[status_effect]) / effective_attack_speed
+        status_map[status_effect.lower()] = canonical_number(value)
+    return status_map
+
+
+def lore_number(value: float | int) -> str:
+    return str(canonical_number(value))
+
+
+def build_weapon_lore(damage_map: dict[str, float], status_map: dict[str, float]) -> list[dict[str, Any]]:
+    lore: list[dict[str, Any]] = [
+        {
+            "translate": "content_lock:weapons.damage",
+            "fallback": "Damage",
+            "bold": True,
+        }
+    ]
+
+    damage_labels = [
+        ("physical", "Physical", "blue"),
+        ("fire", "Fire", "blue"),
+        ("frost", "Frost", "blue"),
+        ("magic", "Magic", "blue"),
+        ("wither", "Wither", "blue"),
+        ("ender", "Ender", "blue"),
+    ]
+    for key, label, color in damage_labels:
+        lore.append(
+            {
+                "translate": f"content_lock.weapon.{key}",
+                "fallback": f"{label}: ",
+                "italic": False,
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": lore_number(damage_map[key] * 10),
+                        "italic": False,
+                        "color": color,
+                    }
+                ],
+            }
+        )
+
+    lore.append(
+        {
+            "translate": "content_lock:weapons.status_effects",
+            "fallback": "Status Effects",
+            "bold": True,
+        }
+    )
+
+    status_labels = [
+        ("bleed", "Bleed"),
+        ("poison", "Poison"),
+        ("corruption", "Corruption"),
+        ("wither", "Wither"),
+        ("frostbite", "Frostbite"),
+    ]
+    for key, label in status_labels:
+        lore.append(
+            {
+                "translate": f"content_lock.weapon.status.{key}",
+                "fallback": f"{label}: ",
+                "italic": False,
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": lore_number(status_map[key]),
+                        "italic": False,
+                        "color": "red",
+                    }
+                ],
+            }
+        )
+
+    return lore
+
+
+def ensure_weapon_custom_data(
+    components: dict[str, Any],
+    weapon_type: str,
+    damage_map: dict[str, float],
+    status_map: dict[str, float],
+) -> tuple[dict[str, Any], bool]:
+    existing_custom_data = components.get("custom_data")
+    if not isinstance(existing_custom_data, dict):
+        existing_custom_data = {}
+
+    weapon_data = existing_custom_data.get("content_lock:weapon")
+    if not isinstance(weapon_data, dict):
+        weapon_data = {}
+
+    weapon_data["type"] = weapon_type
+    weapon_data["damage_type"] = "melee"
+    weapon_data["damage"] = damage_map
+    weapon_data["status_effects"] = status_map
+
+    existing_damage_modifiers = weapon_data.get("damage_modifiers")
+    if not isinstance(existing_damage_modifiers, dict):
+        weapon_data["damage_modifiers"] = {damage_type.lower(): [] for damage_type in WEAPON_DAMAGE_TYPES}
+    else:
+        weapon_data["damage_modifiers"] = {
+            damage_type.lower(): existing_damage_modifiers.get(damage_type.lower(), [])
+            for damage_type in WEAPON_DAMAGE_TYPES
+        }
+
+    existing_status_modifiers = weapon_data.get("status_effect_modifiers")
+    if not isinstance(existing_status_modifiers, dict):
+        weapon_data["status_effect_modifiers"] = {status_effect.lower(): [] for status_effect in WEAPON_STATUS_EFFECTS}
+    else:
+        weapon_data["status_effect_modifiers"] = {
+            status_effect.lower(): existing_status_modifiers.get(status_effect.lower(), [])
+            for status_effect in WEAPON_STATUS_EFFECTS
+        }
+
+    new_custom_data = dict(existing_custom_data)
+    new_custom_data["content_lock:weapon"] = weapon_data
+    changed = components.get("custom_data") != new_custom_data
+    components["custom_data"] = new_custom_data
+    return weapon_data, changed
+
+
 def update_weapon_recipe(
     path: Path,
     gear: dict[str, dict[str, dict[str, Any]]],
@@ -253,7 +443,7 @@ def update_weapon_recipe(
         return []
 
     material_key, suffix = detected
-    tool_key = SUFFIX_TO_TOOL[suffix]
+    weapon_type = SUFFIX_TO_TOOL[suffix]
 
     durability = gear["Weapons"]["Durability Modifiers"]
     speed = gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"]
@@ -261,13 +451,19 @@ def update_weapon_recipe(
 
     base_durability = float(durability["Base"])
     material_multiplier = float(durability[material_key])
-    tool_multiplier = float(durability[tool_key])
+    tool_multiplier = float(durability[weapon_type])
     max_damage = int(round(base_durability * material_multiplier * tool_multiplier))
 
     base_attack_speed = float(speed["Base"])
-    target_attack_speed = float(speed[tool_key]) * float(multipliers[material_key])
+    target_attack_speed = float(speed[weapon_type]) * float(multipliers[material_key])
     attack_speed_amount = target_attack_speed - base_attack_speed
     attack_damage = compute_weapon_attack_damage(gear, material_key, suffix)
+
+    damage_split = weapon_split_table(gear, material_key)
+    damage_map = build_weapon_damage_map(attack_damage, damage_split)
+    weapon_status_table, material_status_table = weapon_status_tables(gear, material_key, suffix)
+    status_map = build_weapon_status_map(target_attack_speed, weapon_status_table, material_status_table)
+    lore = build_weapon_lore(damage_map, status_map)
 
     data = json.loads(path.read_text(encoding="utf-8"))
     changes: list[str] = []
@@ -281,6 +477,14 @@ def update_weapon_recipe(
             changes.append(f"attack_damage={canonical_number(attack_damage)}")
         if set_attribute_amount(components, "minecraft:attack_speed", attack_speed_amount):
             changes.append(f"attack_speed={canonical_number(attack_speed_amount)}")
+
+        _, custom_data_changed = ensure_weapon_custom_data(components, weapon_type, damage_map, status_map)
+        if custom_data_changed:
+            changes.append("custom_data")
+
+        if components.get("lore") != lore:
+            components["lore"] = lore
+            changes.append("lore")
 
     if changes and apply_changes:
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -328,28 +532,13 @@ def update_armor_recipe(
     return changes
 
 
-def iter_recipe_files(root: Path) -> list[Path]:
-    recipe_roots = [root / "data" / "minecraft" / "recipe", root / "data" / "content_lock" / "recipe"]
-    files: list[Path] = []
-    for recipe_root in recipe_roots:
-        if recipe_root.is_dir():
-            files.extend(sorted(recipe_root.glob("*.json")))
-    return files
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="Apply gear.txt balancing values to recipe JSON files.")
-    parser.add_argument(
-        "--root",
-        type=Path,
-        default=Path(__file__).resolve().parent.parent,
-        help="Datapack root directory. Defaults to the repository root.",
-    )
     parser.add_argument(
         "--gear-file",
         type=Path,
         default=None,
-        help="Path to gear.txt. Defaults to scripts/gear.txt under the root.",
+        help="Path to gear.txt. Defaults to gear.txt beside this script.",
     )
     parser.add_argument(
         "--apply",
@@ -358,17 +547,16 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    root = args.root.resolve()
-    gear_file = args.gear_file.resolve() if args.gear_file else root / "scripts" / "gear.txt"
+    gear_file = args.gear_file.resolve() if args.gear_file else Path(__file__).resolve().with_name("gear.txt")
 
     if not gear_file.is_file():
         raise SystemExit(f"gear file not found: {gear_file}")
 
     gear = parse_gear_file(gear_file)
-    files = iter_recipe_files(root)
+    files = iter_recipe_files(gear, gear_file)
 
     if not files:
-        print(f"No recipe JSON files found under {root / 'data'}")
+        print("No recipe JSON files found from gear.txt resource locations.")
         return 0
 
     total_changes = 0
@@ -383,7 +571,7 @@ def main() -> int:
         if changes:
             total_changes += len(changes)
             action = "updated" if args.apply else "would update"
-            print(f"{action}: {recipe_path.relative_to(root)} -> {', '.join(changes)}")
+            print(f"{action}: {recipe_path} -> {', '.join(changes)}")
 
     if not args.apply:
         print("\nNo files were written. Re-run with --apply to save changes.")
