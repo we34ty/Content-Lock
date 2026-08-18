@@ -12,6 +12,7 @@ alone, such as sweeping ratio and knockback.
 from __future__ import annotations
 
 import argparse
+import math
 import json
 import re
 from pathlib import Path
@@ -317,7 +318,7 @@ def build_weapon_status_map(
 
 
 def lore_number(value: float | int) -> str:
-    return str(canonical_number(value))
+    return str(int(math.floor(float(value))))
 
 
 def build_weapon_lore(damage_map: dict[str, float], status_map: dict[str, float]) -> list[dict[str, Any]]:
