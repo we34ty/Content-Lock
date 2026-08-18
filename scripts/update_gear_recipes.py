@@ -12,171 +12,182 @@ alone, such as sweeping ratio and knockback.
 from __future__ import annotations
 
 import argparse
-import math
 import json
+import math
 import re
 from pathlib import Path
 from typing import Any
 
 
-WEAPON_DURABILITY_KEYS = [
-    "Base",
-    "Wood",
-    "Stone",
-    "Copper",
-    "Iron",
-    "Gold",
-    "Diamond",
-    "Netherite",
-    "Sword",
-    "Hoe",
-    "Axe",
-    "Pickaxe",
-    "Shovel",
-    "Spear",
-]
+# ----------------------------------------------------------------------
+# Preprocessor for the new gear.txt format
+# ----------------------------------------------------------------------
 
-WEAPON_DPS_KEYS = ["Base", "Sword", "Hoe", "Axe", "Pickaxe", "Shovel", "Spear"]
-WEAPON_SPEED_KEYS = ["Base", "Sword", "Hoe", "Axe", "Pickaxe", "Shovel", "Spear"]
-WEAPON_MULTIPLIER_KEYS = ["Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
-WEAPON_DAMAGE_SPLIT_KEYS = ["Default", "Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
-WEAPON_DAMAGE_TYPES = ["Physical", "Fire", "Frost", "Magic", "Wither", "Ender"]
-WEAPON_STATUS_TYPE_KEYS = ["Default", "Sword", "Hoe", "Axe", "Pickaxe", "Shovel", "Spear"]
-WEAPON_STATUS_MATERIAL_KEYS = ["Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
-WEAPON_STATUS_EFFECTS = ["Bleed", "Poison", "Corruption", "Wither", "Frostbite"]
-WEAPON_RESOURCE_KEYS = ["Wood", "Stone", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
+def preprocess_gear_text(text: str) -> str:
+    """Convert gear.txt (unquoted keys, comments, trailing commas) to valid JSON."""
+    lines = text.splitlines()
+    processed_lines = []
+    in_resource_section = False
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        # Check for resource location header (commented or not)
+        if "# Resource_locations:" in stripped:
+            # Uncomment the header - remove the # and following space
+            line = line.replace("# ", "", 1)
+            if line.startswith("#"):
+                line = line[1:].lstrip()
+            in_resource_section = True
+            processed_lines.append(line)
+            continue
+        
+        # If we're in a resource section
+        if in_resource_section:
+            # Uncomment resource entries (lines starting with # and containing :)
+            if stripped.startswith("#") and ":" in stripped:
+                line = line.lstrip("# ").lstrip()
+                if line.startswith("#"):
+                    line = line[1:].lstrip()
+                processed_lines.append(line)
+                continue
+            
+            # Handle the opening brace if it's on its own line
+            if stripped == "{":
+                processed_lines.append(line)
+                continue
+            
+            # Check if we're at the closing brace of the resource section
+            if stripped == "}" or stripped == "},":
+                in_resource_section = False
+                if stripped.endswith(","):
+                    line = line.rstrip(",")
+                processed_lines.append(line)
+                continue
+        
+        # Skip other comments
+        if stripped.startswith("#"):
+            continue
+            
+        processed_lines.append(line)
+    
+    text = "\n".join(processed_lines)
+    
+    # Remove trailing commas before } or ]
+    text = re.sub(r',\s*([}\]])', r'\1', text)
+    
+    # Protect quoted strings while quoting keys
+    strings = []
+    def repl_string(m):
+        strings.append(m.group(0))
+        return f'__STRING_{len(strings)-1}__'
+    text = re.sub(r'"[^"\\]*(?:\\.[^"\\]*)*"', repl_string, text)
+    
+    # Quote unquoted keys (word followed by colon)
+    text = re.sub(r'(\b\w+\b)\s*:', r'"\1":', text)
+    
+    # Restore quoted strings
+    for i, s in enumerate(strings):
+        text = text.replace(f'__STRING_{i}__', s)
+    
+    return text
 
-ARMOR_POINTS_KEYS = ["Leather", "Chainmail", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
-ARMOR_TOUGHNESS_KEYS = ["Leather", "Chainmail", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
-ARMOR_MOVEMENT_KEYS = ["Leather", "Chainmail", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
-ARMOR_SPLIT_KEYS = ["Helmet", "Chestplate", "Leggings", "Boots"]
-ARMOR_RESOURCE_KEYS = ["Leather", "Chainmail", "Copper", "Iron", "Gold", "Netherite", "Diamond"]
 
-WEAPON_SUFFIXES = {"sword", "axe", "pickaxe", "shovel", "hoe", "spear"}
-ARMOR_SUFFIXES = {"helmet", "chestplate", "leggings", "boots"}
-
-WEAPON_MATERIALS = {
-    "wooden": "Wood",
-    "stone": "Stone",
-    "copper": "Copper",
-    "iron": "Iron",
-    "golden": "Gold",
-    "diamond": "Diamond",
-    "netherite": "Netherite",
-}
-
-ARMOR_MATERIALS = {
-    "leather": "Leather",
-    "chainmail": "Chainmail",
-    "copper": "Copper",
-    "iron": "Iron",
-    "golden": "Gold",
-    "diamond": "Diamond",
-    "netherite": "Netherite",
-}
-
-SUFFIX_TO_TOOL = {
-    "sword": "Sword",
-    "spear": "Spear",
-    "hoe": "Hoe",
-    "axe": "Axe",
-    "pickaxe": "Pickaxe",
-    "shovel": "Shovel",
-}
-
-SUFFIX_TO_SLOT = {
-    "helmet": "Helmet",
-    "chestplate": "Chestplate",
-    "leggings": "Leggings",
-    "boots": "Boots",
-}
-def parse_value(raw_value: str) -> Any:
-    value = raw_value.strip()
-    if value.startswith('"') and value.endswith('"') and len(value) >= 2:
-        return value[1:-1]
-    if re.fullmatch(r"-?\d+", value):
-        return int(value)
-    if re.fullmatch(r"-?\d+(?:\.\d+)?", value):
-        return float(value)
-    return value
-
+# ----------------------------------------------------------------------
+# Parsing
+# ----------------------------------------------------------------------
 
 def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
-    lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines()]
-    data_lines = [line for line in lines if line and not line.startswith("#")]
-    gear: dict[str, dict[str, dict[str, Any]]] = {
-        "Weapons": {"Stat Splits": {"Damage": {}, "Status effects": {}}},
-        "Armor": {},
+    """Parse the new gear.txt format and convert to the old internal structure."""
+    raw = path.read_text(encoding="utf-8")
+    json_text = preprocess_gear_text(raw)
+    
+    try:
+        new_gear = json.loads(json_text)
+    except json.JSONDecodeError as e:
+        # Print the problematic section for debugging
+        lines = json_text.splitlines()
+        error_line = e.lineno - 1
+        context_start = max(0, error_line - 3)
+        context_end = min(len(lines), error_line + 3)
+        print(f"JSON decode error at line {e.lineno}, column {e.colno}: {e.msg}")
+        print("Context:")
+        for i in range(context_start, context_end):
+            marker = ">>> " if i == error_line else "    "
+            print(f"{marker}{i+1}: {lines[i]}")
+        raise
+
+    # Build old-style gear structure from new data
+    old_gear: dict[str, dict[str, dict[str, Any]]] = {
+        "Weapons": {
+            "Durability Modifiers": {},
+            "DPS": {},
+            "Attack Speed (Maxes out at 1 every 0.5s)": {},
+            "Multipliers for the values higher up": {},
+            "Stat Splits": {
+                "Damage": {},
+                "Status effects": {},
+            },
+            "Resource Locations": {},
+        },
+        "Armor": {
+            "Armor points": {},
+            "Armor toughness points": {},
+            "Movement efficiency": {},
+            "Armor Piece split (rougly adds up to 1)": {},
+            "Resource Locations": {},
+        },
     }
-    index = 0
 
-    def consume_table(section: str, table_name: str, keys: list[str]) -> dict[str, Any]:
-        nonlocal index
-        table: dict[str, Any] = {}
-        for expected_key in keys:
-            if index >= len(data_lines):
-                raise ValueError(f"gear.txt ended early while reading {section} / {table_name}")
-            line = data_lines[index]
-            if ":" not in line:
-                raise ValueError(f"invalid gear.txt line: {line!r}")
-            actual_key, raw_value = line.split(":", 1)
-            actual_key = actual_key.strip()
-            if actual_key != expected_key:
-                raise ValueError(
-                    f"expected {expected_key!r} while reading {section} / {table_name}, got {actual_key!r}"
-                )
-            table[actual_key] = parse_value(raw_value)
-            index += 1
-        return table
+    weapons = new_gear.get("Weapons", {})
+    armor = new_gear.get("Armor", {})
 
-    def consume_labeled_tables(section: str, table_name: str, table_keys: list[str], keys: list[str]) -> dict[str, dict[str, Any]]:
-        nonlocal index
-        tables: dict[str, dict[str, Any]] = {}
-        for expected_table in table_keys:
-            if index >= len(data_lines):
-                raise ValueError(f"gear.txt ended early while reading {section} / {table_name}")
-            line = data_lines[index]
-            if ":" not in line:
-                raise ValueError(f"invalid gear.txt line: {line!r}")
-            actual_key, raw_value = line.split(":", 1)
-            actual_key = actual_key.strip()
-            if actual_key != expected_table or raw_value.strip():
-                raise ValueError(
-                    f"expected table label {expected_table!r} while reading {section} / {table_name}, got {line!r}"
-                )
-            index += 1
-            tables[actual_key] = consume_table(section, f"{table_name} / {actual_key}", keys)
-        return tables
+    # ---- Weapons ----
+    old_gear["Weapons"]["Durability Modifiers"] = weapons.get("Durability", {})
+    old_gear["Weapons"]["DPS"] = weapons.get("DPS", {})
 
-    gear["Weapons"]["Durability Modifiers"] = consume_table("Weapons", "Durability Modifiers", WEAPON_DURABILITY_KEYS)
-    gear["Weapons"]["DPS"] = consume_table("Weapons", "DPS", WEAPON_DPS_KEYS)
-    gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"] = consume_table(
-        "Weapons", "Attack Speed (Maxes out at 1 every 0.5s)", WEAPON_SPEED_KEYS
-    )
-    gear["Weapons"]["Multipliers for the values higher up"] = consume_table(
-        "Weapons", "Multipliers for the values higher up", WEAPON_MULTIPLIER_KEYS
-    )
-    gear["Weapons"]["Stat Splits"]["Damage"] = consume_labeled_tables(
-        "Weapons", "Damage split", WEAPON_DAMAGE_SPLIT_KEYS, WEAPON_DAMAGE_TYPES
-    )
-    gear["Weapons"]["Stat Splits"]["Status effects"] = consume_labeled_tables(
-        "Weapons", "Status effects", WEAPON_STATUS_TYPE_KEYS + WEAPON_STATUS_MATERIAL_KEYS, WEAPON_STATUS_EFFECTS
-    )
-    gear["Weapons"]["Resource Locations"] = consume_table("Weapons", "Resource Locations", WEAPON_RESOURCE_KEYS)
-    gear["Armor"]["Armor points"] = consume_table("Armor", "Armor points", ARMOR_POINTS_KEYS)
-    gear["Armor"]["Armor toughness points"] = consume_table("Armor", "Armor toughness points", ARMOR_TOUGHNESS_KEYS)
-    gear["Armor"]["Movement efficiency"] = consume_table("Armor", "Movement efficiency", ARMOR_MOVEMENT_KEYS)
-    gear["Armor"]["Armor Piece split (rougly adds up to 1)"] = consume_table(
-        "Armor", "Armor Piece split (rougly adds up to 1)", ARMOR_SPLIT_KEYS
-    )
-    gear["Armor"]["Resource Locations"] = consume_table("Armor", "Resource Locations", ARMOR_RESOURCE_KEYS)
+    # Attack_speed: split into speed table and multiplier table
+    speed_table = {}
+    multiplier_table = {}
+    attack_speed = weapons.get("Attack_speed", {})
+    # Determine weapon types from DPS (exclude "Base")
+    weapon_types = set(old_gear["Weapons"]["DPS"].keys()) - {"Base"}
+    for key, val in attack_speed.items():
+        if key == "Base" or key in weapon_types:
+            speed_table[key] = val
+        else:
+            multiplier_table[key] = val
+    old_gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"] = speed_table
+    old_gear["Weapons"]["Multipliers for the values higher up"] = multiplier_table
 
-    if index != len(data_lines):
-        leftover = data_lines[index:]
-        raise ValueError(f"unexpected extra data in gear.txt: {leftover!r}")
+    old_gear["Weapons"]["Stat Splits"]["Damage"] = weapons.get("Split_Damage", {})
 
-    return gear
+    # Status_effects: split into weapon table (with Default) and material table
+    status_effects = weapons.get("Status_effects", {})
+    weapon_status = {}
+    material_status = {}
+    for key, val in status_effects.items():
+        if key == "Default" or key in weapon_types:
+            weapon_status[key] = val
+        else:
+            material_status[key] = val
+    old_gear["Weapons"]["Stat Splits"]["Status effects"] = {**weapon_status, **material_status}
 
+    old_gear["Weapons"]["Resource Locations"] = weapons.get("Resource_locations", {})
+
+    # ---- Armor ----
+    old_gear["Armor"]["Armor points"] = armor.get("Armor_points", {})
+    old_gear["Armor"]["Armor toughness points"] = armor.get("Armor_toughness", {})
+    old_gear["Armor"]["Movement efficiency"] = armor.get("Movement_efficiency", {})
+    old_gear["Armor"]["Armor Piece split (rougly adds up to 1)"] = armor.get("Split", {})
+    old_gear["Armor"]["Resource Locations"] = armor.get("Resource_locations", {})
+
+    return old_gear
+
+
+# ----------------------------------------------------------------------
+# Utilities
+# ----------------------------------------------------------------------
 
 def canonical_number(value: float | int) -> float | int:
     number = float(value)
@@ -199,6 +210,71 @@ def set_attribute_amount(components: dict[str, Any], attribute_type: str, amount
     return updated
 
 
+# ----------------------------------------------------------------------
+# Detection helpers (dynamic)
+# ----------------------------------------------------------------------
+
+def get_weapon_materials(gear: dict[str, dict[str, dict[str, Any]]]) -> set[str]:
+    """Return all material keys for weapons."""
+    dur = gear["Weapons"]["Durability Modifiers"]
+    weapon_types = set(gear["Weapons"]["DPS"].keys()) - {"Base"}
+    return {k for k in dur.keys() if k not in weapon_types and k != "Base"}
+
+
+def get_weapon_types(gear: dict[str, dict[str, dict[str, Any]]]) -> set[str]:
+    """Return all weapon type keys (excluding Base)."""
+    return set(gear["Weapons"]["DPS"].keys()) - {"Base"}
+
+
+def get_armor_materials(gear: dict[str, dict[str, dict[str, Any]]]) -> set[str]:
+    """Return all material keys for armor."""
+    return set(gear["Armor"]["Armor points"].keys())
+
+
+def get_armor_slots(gear: dict[str, dict[str, dict[str, Any]]]) -> set[str]:
+    """Return all armor slot keys."""
+    return set(gear["Armor"]["Armor Piece split (rougly adds up to 1)"].keys())
+
+
+def detect_weapon(path: Path, gear: dict[str, dict[str, dict[str, Any]]]) -> tuple[str, str] | None:
+    """Return (material_key, suffix) if path matches a weapon recipe, else None."""
+    stem = path.stem
+    weapon_types = get_weapon_types(gear)
+    materials = get_weapon_materials(gear)
+
+    for wtype in weapon_types:
+        suffix = wtype.lower()
+        if stem.endswith(f"_{suffix}"):
+            material_prefix = stem[: -len(suffix) - 1]
+            material_lower = material_prefix.lower()
+            for mat in materials:
+                if mat.lower() == material_lower:
+                    return mat, suffix
+            return None
+    return None
+
+
+def detect_armor(path: Path, gear: dict[str, dict[str, dict[str, Any]]]) -> tuple[str, str] | None:
+    """Return (material_key, slot) if path matches an armor recipe, else None."""
+    stem = path.stem
+    slots = get_armor_slots(gear)
+    materials = get_armor_materials(gear)
+
+    for slot in slots:
+        slot_lower = slot.lower()
+        if stem.endswith(f"_{slot_lower}"):
+            material_prefix = stem[: -len(slot_lower) - 1]
+            for mat in materials:
+                if mat.lower() == material_prefix.lower():
+                    return mat, slot_lower
+            return None
+    return None
+
+
+# ----------------------------------------------------------------------
+# Recipe update functions
+# ----------------------------------------------------------------------
+
 def compute_weapon_attack_damage(
     gear: dict[str, dict[str, dict[str, Any]]],
     material_key: str,
@@ -208,9 +284,11 @@ def compute_weapon_attack_damage(
     speed_table = gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"]
     multipliers = gear["Weapons"]["Multipliers for the values higher up"]
 
-    base_dps = float(dps_table["Base"])
-    weapon_dps = float(dps_table[SUFFIX_TO_TOOL[suffix]])
-    effective_attack_speed = float(speed_table[SUFFIX_TO_TOOL[suffix]]) * float(multipliers[material_key])
+    weapon_type = suffix.capitalize()
+
+    base_dps = float(dps_table.get("Base", 1.0))
+    weapon_dps = float(dps_table.get(weapon_type, 1.0))
+    effective_attack_speed = float(speed_table.get(weapon_type, 1.0)) * float(multipliers.get(material_key, 1.0))
 
     if effective_attack_speed <= 0:
         raise ValueError(f"computed attack speed is not positive for {material_key}_{suffix}")
@@ -218,72 +296,9 @@ def compute_weapon_attack_damage(
     return canonical_number((base_dps * weapon_dps) / effective_attack_speed)
 
 
-def detect_weapon(path: Path) -> tuple[str, str] | None:
-    stem = path.stem
-    for suffix in sorted(WEAPON_SUFFIXES, key=len, reverse=True):
-        suffix_token = f"_{suffix}"
-        if stem.endswith(suffix_token):
-            material_prefix = stem[: -len(suffix_token)]
-            material_key = WEAPON_MATERIALS.get(material_prefix)
-            if material_key is None:
-                return None
-            return material_key, suffix
-    return None
-
-
-def detect_armor(path: Path) -> tuple[str, str] | None:
-    stem = path.stem
-    for suffix in ARMOR_SUFFIXES:
-        suffix_token = f"_{suffix}"
-        if stem.endswith(suffix_token):
-            material_prefix = stem[: -len(suffix_token)]
-            material_key = ARMOR_MATERIALS.get(material_prefix)
-            if material_key is None:
-                return None
-            return material_key, suffix
-    return None
-
-
-def resolve_recipe_roots(gear: dict[str, dict[str, dict[str, Any]]], gear_file: Path) -> list[Path]:
-    resource_tables = [
-        gear["Weapons"].get("Resource Locations", {}),
-        gear["Armor"].get("Resource Locations", {}),
-    ]
-    roots: list[Path] = []
-    seen: set[Path] = set()
-
-    for table in resource_tables:
-        for raw_path in table.values():
-            if not isinstance(raw_path, str) or not raw_path.strip():
-                continue
-            candidate = Path(raw_path).expanduser()
-            if not candidate.is_absolute():
-                candidate = (gear_file.parent / candidate).resolve()
-            else:
-                candidate = candidate.resolve()
-            if candidate not in seen:
-                seen.add(candidate)
-                roots.append(candidate)
-
-    return roots
-
-
-def iter_recipe_files(gear: dict[str, dict[str, dict[str, Any]]], gear_file: Path) -> list[Path]:
-    files: list[Path] = []
-    seen: set[Path] = set()
-    for recipe_root in resolve_recipe_roots(gear, gear_file):
-        if not recipe_root.is_dir():
-            continue
-        for recipe_path in sorted(recipe_root.rglob("*.json")):
-            if recipe_path not in seen:
-                seen.add(recipe_path)
-                files.append(recipe_path)
-    return files
-
-
 def weapon_split_table(gear: dict[str, dict[str, dict[str, Any]]], material_key: str) -> dict[str, Any]:
     damage_tables = gear["Weapons"]["Stat Splits"]["Damage"]
-    return damage_tables.get(material_key, damage_tables["Default"])
+    return damage_tables.get(material_key, damage_tables.get("Default", {}))
 
 
 def weapon_status_tables(
@@ -292,16 +307,18 @@ def weapon_status_tables(
     suffix: str,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     status_tables = gear["Weapons"]["Stat Splits"]["Status effects"]
-    weapon_table = status_tables.get(SUFFIX_TO_TOOL[suffix], status_tables["Default"])
-    material_table = status_tables.get(material_key, status_tables["Default"])
+    weapon_type = suffix.capitalize()
+    weapon_table = status_tables.get(weapon_type, status_tables.get("Default", {}))
+    material_table = status_tables.get(material_key, {})
     return weapon_table, material_table
 
 
 def build_weapon_damage_map(attack_damage: float, split_table: dict[str, Any]) -> dict[str, float]:
+    damage_types = ["Physical", "Fire", "Frost", "Magic", "Wither", "Ender"]
     damage_map: dict[str, float] = {}
-    for damage_type in WEAPON_DAMAGE_TYPES:
-        value = attack_damage * float(split_table[damage_type])
-        damage_map[damage_type.lower()] = canonical_number(value)
+    for dtype in damage_types:
+        value = attack_damage * float(split_table.get(dtype, 0.0))
+        damage_map[dtype.lower()] = canonical_number(value)
     return damage_map
 
 
@@ -310,10 +327,13 @@ def build_weapon_status_map(
     weapon_table: dict[str, Any],
     material_table: dict[str, Any],
 ) -> dict[str, float]:
+    status_effects = ["Bleed", "Poison", "Corruption", "Wither", "Frostbite"]
     status_map: dict[str, float] = {}
-    for status_effect in WEAPON_STATUS_EFFECTS:
-        value = float(weapon_table[status_effect]) * float(material_table[status_effect]) / effective_attack_speed
-        status_map[status_effect.lower()] = canonical_number(value)
+    for effect in status_effects:
+        weapon_val = float(weapon_table.get(effect, 0.0))
+        material_val = float(material_table.get(effect, 1.0))
+        value = (weapon_val * material_val) / effective_attack_speed if effective_attack_speed != 0 else 0.0
+        status_map[effect.lower()] = canonical_number(value)
     return status_map
 
 
@@ -409,22 +429,25 @@ def ensure_weapon_custom_data(
     weapon_data["damage"] = damage_map
     weapon_data["status_effects"] = status_map
 
+    damage_types = ["Physical", "Fire", "Frost", "Magic", "Wither", "Ender"]
+    status_effects = ["Bleed", "Poison", "Corruption", "Wither", "Frostbite"]
+
     existing_damage_modifiers = weapon_data.get("damage_modifiers")
     if not isinstance(existing_damage_modifiers, dict):
-        weapon_data["damage_modifiers"] = {damage_type.lower(): [] for damage_type in WEAPON_DAMAGE_TYPES}
+        weapon_data["damage_modifiers"] = {dtype.lower(): [] for dtype in damage_types}
     else:
         weapon_data["damage_modifiers"] = {
-            damage_type.lower(): existing_damage_modifiers.get(damage_type.lower(), [])
-            for damage_type in WEAPON_DAMAGE_TYPES
+            dtype.lower(): existing_damage_modifiers.get(dtype.lower(), [])
+            for dtype in damage_types
         }
 
     existing_status_modifiers = weapon_data.get("status_effect_modifiers")
     if not isinstance(existing_status_modifiers, dict):
-        weapon_data["status_effect_modifiers"] = {status_effect.lower(): [] for status_effect in WEAPON_STATUS_EFFECTS}
+        weapon_data["status_effect_modifiers"] = {effect.lower(): [] for effect in status_effects}
     else:
         weapon_data["status_effect_modifiers"] = {
-            status_effect.lower(): existing_status_modifiers.get(status_effect.lower(), [])
-            for status_effect in WEAPON_STATUS_EFFECTS
+            effect.lower(): existing_status_modifiers.get(effect.lower(), [])
+            for effect in status_effects
         }
 
     new_custom_data = dict(existing_custom_data)
@@ -439,24 +462,24 @@ def update_weapon_recipe(
     gear: dict[str, dict[str, dict[str, Any]]],
     apply_changes: bool,
 ) -> list[str]:
-    detected = detect_weapon(path)
+    detected = detect_weapon(path, gear)
     if detected is None:
         return []
 
     material_key, suffix = detected
-    weapon_type = SUFFIX_TO_TOOL[suffix]
+    weapon_type = suffix.capitalize()
 
     durability = gear["Weapons"]["Durability Modifiers"]
     speed = gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"]
     multipliers = gear["Weapons"]["Multipliers for the values higher up"]
 
-    base_durability = float(durability["Base"])
-    material_multiplier = float(durability[material_key])
-    tool_multiplier = float(durability[weapon_type])
+    base_durability = float(durability.get("Base", 1.0))
+    material_multiplier = float(durability.get(material_key, 1.0))
+    tool_multiplier = float(durability.get(weapon_type, 1.0))
     max_damage = int(round(base_durability * material_multiplier * tool_multiplier))
 
-    base_attack_speed = float(speed["Base"])
-    target_attack_speed = float(speed[weapon_type]) * float(multipliers[material_key])
+    base_attack_speed = float(speed.get("Base", 1.0))
+    target_attack_speed = float(speed.get(weapon_type, 1.0)) * float(multipliers.get(material_key, 1.0))
     attack_speed_amount = target_attack_speed - base_attack_speed
     attack_damage = compute_weapon_attack_damage(gear, material_key, suffix)
 
@@ -498,22 +521,22 @@ def update_armor_recipe(
     gear: dict[str, dict[str, dict[str, Any]]],
     apply_changes: bool,
 ) -> list[str]:
-    detected = detect_armor(path)
+    detected = detect_armor(path, gear)
     if detected is None:
         return []
 
-    material_key, suffix = detected
-    slot_key = SUFFIX_TO_SLOT[suffix]
+    material_key, slot = detected
+    slot_key = slot.capitalize()
 
     armor = gear["Armor"]["Armor points"]
     toughness = gear["Armor"]["Armor toughness points"]
     movement = gear["Armor"]["Movement efficiency"]
     split = gear["Armor"]["Armor Piece split (rougly adds up to 1)"]
 
-    piece_share = float(split[slot_key])
-    armor_value = float(armor[material_key]) * piece_share
-    toughness_value = float(toughness[material_key]) * piece_share
-    movement_value = float(movement[material_key]) * piece_share
+    piece_share = float(split.get(slot_key, 0.0))
+    armor_value = float(armor.get(material_key, 0.0)) * piece_share
+    toughness_value = float(toughness.get(material_key, 0.0)) * piece_share
+    movement_value = float(movement.get(material_key, 0.0)) * piece_share
 
     data = json.loads(path.read_text(encoding="utf-8"))
     changes: list[str] = []
@@ -533,6 +556,63 @@ def update_armor_recipe(
     return changes
 
 
+# ----------------------------------------------------------------------
+# File discovery
+# ----------------------------------------------------------------------
+
+def resolve_recipe_roots(gear: dict[str, dict[str, dict[str, Any]]], gear_file: Path) -> list[Path]:
+    resource_tables = [
+        gear["Weapons"].get("Resource Locations", {}),
+        gear["Armor"].get("Resource Locations", {}),
+    ]
+    roots: list[Path] = []
+    seen: set[Path] = set()
+
+    for table in resource_tables:
+        for raw_path in table.values():
+            if not isinstance(raw_path, str) or not raw_path.strip():
+                continue
+            candidate = Path(raw_path).expanduser()
+            if not candidate.is_absolute():
+                candidate = (gear_file.parent / candidate).resolve()
+            else:
+                candidate = candidate.resolve()
+            if candidate not in seen:
+                seen.add(candidate)
+                roots.append(candidate)
+
+    return roots
+
+
+def iter_recipe_files(gear: dict[str, dict[str, dict[str, Any]]], gear_file: Path) -> list[Path]:
+    files: list[Path] = []
+    seen: set[Path] = set()
+    
+    # Print debug info about resource locations
+    weapon_resources = gear["Weapons"].get("Resource Locations", {})
+    armor_resources = gear["Armor"].get("Resource Locations", {})
+    
+    print(f"Weapon resource locations: {list(weapon_resources.values())}")
+    print(f"Armor resource locations: {list(armor_resources.values())}")
+    
+    for recipe_root in resolve_recipe_roots(gear, gear_file):
+        print(f"Checking recipe root: {recipe_root}")
+        if not recipe_root.is_dir():
+            print(f"  WARNING: {recipe_root} is not a directory or doesn't exist")
+            continue
+        for recipe_path in sorted(recipe_root.rglob("*.json")):
+            if recipe_path not in seen:
+                seen.add(recipe_path)
+                files.append(recipe_path)
+                print(f"  Found recipe: {recipe_path}")
+    
+    return files
+
+
+# ----------------------------------------------------------------------
+# Main
+# ----------------------------------------------------------------------
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Apply gear.txt balancing values to recipe JSON files.")
     parser.add_argument(
@@ -546,6 +626,11 @@ def main() -> int:
         action="store_true",
         help="Write changes back to disk. Without this flag the script only reports planned updates.",
     )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Print debug information about file discovery.",
+    )
     args = parser.parse_args()
 
     gear_file = args.gear_file.resolve() if args.gear_file else Path(__file__).resolve().with_name("gear.txt")
@@ -554,17 +639,30 @@ def main() -> int:
         raise SystemExit(f"gear file not found: {gear_file}")
 
     gear = parse_gear_file(gear_file)
+    
+    # Print the resolved resource locations for debugging
+    if args.debug:
+        print("\nParsed resource locations:")
+        print(f"  Weapons: {gear['Weapons'].get('Resource Locations', {})}")
+        print(f"  Armor: {gear['Armor'].get('Resource Locations', {})}")
+        print()
+    
     files = iter_recipe_files(gear, gear_file)
 
     if not files:
         print("No recipe JSON files found from gear.txt resource locations.")
+        if args.debug:
+            print("\nDebug: Make sure the paths in your gear.txt are correct.")
+            print(f"Current working directory: {Path.cwd()}")
+            print(f"gear.txt location: {gear_file}")
+            print(f"gear.txt parent: {gear_file.parent}")
         return 0
 
     total_changes = 0
     for recipe_path in files:
-        if detect_weapon(recipe_path) is not None:
+        if detect_weapon(recipe_path, gear) is not None:
             changes = update_weapon_recipe(recipe_path, gear, args.apply)
-        elif detect_armor(recipe_path) is not None:
+        elif detect_armor(recipe_path, gear) is not None:
             changes = update_armor_recipe(recipe_path, gear, args.apply)
         else:
             continue
