@@ -36,7 +36,7 @@ Hoe: 1.8
 Axe: 1.1
 Pickaxe: 0.6
 Shovel: 0.45
-Spear: 0.87
+Spear: 0.53
 
 # Multipliers for the values higher up
 Wood: 1.3

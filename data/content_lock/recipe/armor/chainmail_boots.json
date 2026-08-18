@@ -8,28 +8,28 @@
     "id": "minecraft:chainmail_boots",
     "components": {
       "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:armor",
-            "id": "content_lock.basic_armor_stats_boots",
-            "amount": 1.17,
-            "operation": "add_value",
-            "slot": "feet"
-          },
-          {
-            "type": "minecraft:armor_toughness",
-            "id": "content_lock.basic_armor_stats_boots",
-            "amount": 1.17,
-            "operation": "add_value",
-            "slot": "feet"
-          },
-          {
-            "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_armor_stats_boots",
-            "amount": 0.12,
-            "operation": "add_value",
-            "slot": "feet"
-          }
-        ],
+        {
+          "type": "minecraft:armor",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 1.16,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 1.16,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 0.05,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
       "unbreakable": {},
       "tooltip_display": {
         "hidden_components": [

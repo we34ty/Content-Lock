@@ -1,46 +1,46 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "equipment",
-    "key": {
-      "X": "minecraft:leather"
-    },
-    "pattern": [
-      "X X",
-      "X X"
-    ],
-    "result": {
-      "components": {
-        "minecraft:attribute_modifiers": [
-            {
-              "type": "minecraft:armor",
-              "id": "content_lock.basic_armor_stats_boots",
-              "amount": 1.25,
-              "operation": "add_value",
-              "slot": "feet"
-            },
-            {
-              "type": "minecraft:armor_toughness",
-              "id": "content_lock.basic_armor_stats_boots",
-              "amount": 0.5,
-              "operation": "add_value",
-              "slot": "feet"
-            },
-            {
-              "type": "minecraft:movement_efficiency",
-              "id": "content_lock.basic_armor_stats_boots",
-              "amount": 0.08,
-              "operation": "add_value",
-              "slot": "feet"
-            }
-          ],
-        "unbreakable": {},
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:leather"
+  },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 1.25,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 0.5,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 0.02,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
+      "unbreakable": {},
       "tooltip_display": {
         "hidden_components": [
           "unbreakable"
         ]
       }
-      },
-      "count": 1,
-      "id": "minecraft:leather_boots"
-    }
+    },
+    "count": 1,
+    "id": "minecraft:leather_boots"
   }
+}

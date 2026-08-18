@@ -8,33 +8,34 @@
     "id": "minecraft:iron_helmet",
     "components": {
       "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:armor",
-            "id": "content_lock.basic_armor_stats_head",
-            "amount": 1,
-            "operation": "add_value",
-            "slot": "head"
-          },
-          {
-            "type": "minecraft:armor_toughness",
-            "id": "content_lock.basic_armor_stats_head",
-            "amount": 2.5,
-            "operation": "add_value",
-            "slot": "head"
-          },
-          {
-            "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_armor_stats_head",
-            "amount": 0.18,
-            "operation": "add_value",
-            "slot": "head"
-          }
-        ],
+        {
+          "type": "minecraft:armor",
+          "id": "content_lock.basic_armor_stats_head",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "content_lock.basic_armor_stats_head",
+          "amount": 2.49,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_armor_stats_head",
+          "amount": 0.11,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
       "unbreakable": {},
       "tooltip_display": {
         "hidden_components": [
           "unbreakable"
         ]
-      }    }
+      }
+    }
   }
 }

@@ -1,47 +1,47 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "equipment",
-    "key": {
-      "X": "minecraft:leather"
-    },
-    "pattern": [
-      "X X",
-      "XXX",
-      "XXX"
-    ],
-    "result": {
-      "components": {
-        "minecraft:attribute_modifiers": [
-            {
-              "type": "minecraft:armor",
-              "id": "content_lock.basic_armor_stats_chest",
-              "amount": 3.33,
-              "operation": "add_value",
-              "slot": "chest"
-            },
-            {
-              "type": "minecraft:armor_toughness",
-              "id": "content_lock.basic_armor_stats_chest",
-              "amount": 1.33,
-              "operation": "add_value",
-              "slot": "chest"
-            },
-            {
-              "type": "minecraft:movement_efficiency",
-              "id": "content_lock.basic_armor_stats_chest",
-              "amount": 0.13,
-              "operation": "add_value",
-              "slot": "chest"
-            }
-          ],
-        "unbreakable": {},
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:leather"
+  },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "content_lock.basic_armor_stats_chest",
+          "amount": 3.33,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "content_lock.basic_armor_stats_chest",
+          "amount": 1.33,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_armor_stats_chest",
+          "amount": 0.07,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "unbreakable": {},
       "tooltip_display": {
         "hidden_components": [
           "unbreakable"
         ]
       }
-      },
-      "count": 1,
-      "id": "minecraft:leather_chestplate"
-    }
+    },
+    "count": 1,
+    "id": "minecraft:leather_chestplate"
   }
+}

@@ -6,37 +6,37 @@
   "result": {
     "components": {
       "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:attack_damage",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 1.3,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_speed",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -3.2,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_knockback",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -1,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.02,
-            "operation": "add_value",
-            "slot": "mainhand"
-          }
-        ],
-        "minimum_attack_charge": 1,
-      "minecraft:max_damage": 92,
+        {
+          "type": "minecraft:attack_damage",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 9.94,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -3.35,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_knockback",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -1,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 0.02,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minimum_attack_charge": 1,
+      "minecraft:max_damage": 94,
       "kinetic_weapon": {
         "contact_cooldown_ticks": 10,
         "damage_conditions": {
@@ -64,7 +64,198 @@
       "swing_animation": {
         "type": "stab",
         "duration": 20
-      }
+      },
+      "custom_data": {
+        "content_lock:weapon": {
+          "type": "Spear",
+          "damage_type": "melee",
+          "damage": {
+            "physical": 1.49,
+            "fire": 0,
+            "frost": 2.48,
+            "magic": 2.48,
+            "wither": 0,
+            "ender": 3.48
+          },
+          "status_effects": {
+            "bleed": 21.48,
+            "poison": 0,
+            "corruption": 0,
+            "wither": 0,
+            "frostbite": 10.74
+          },
+          "damage_modifiers": {
+            "physical": [],
+            "fire": [],
+            "frost": [],
+            "magic": [],
+            "wither": [],
+            "ender": []
+          },
+          "status_effect_modifiers": {
+            "bleed": [],
+            "poison": [],
+            "corruption": [],
+            "wither": [],
+            "frostbite": []
+          }
+        }
+      },
+      "lore": [
+        {
+          "translate": "content_lock:weapons.damage",
+          "fallback": "Damage",
+          "bold": true
+        },
+        {
+          "translate": "content_lock.weapon.physical",
+          "fallback": "Physical: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "14",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.fire",
+          "fallback": "Fire: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.frost",
+          "fallback": "Frost: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "24",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.magic",
+          "fallback": "Magic: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "24",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.wither",
+          "fallback": "Wither: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.ender",
+          "fallback": "Ender: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "34",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock:weapons.status_effects",
+          "fallback": "Status Effects",
+          "bold": true
+        },
+        {
+          "translate": "content_lock.weapon.status.bleed",
+          "fallback": "Bleed: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "21",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.poison",
+          "fallback": "Poison: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.corruption",
+          "fallback": "Corruption: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.wither",
+          "fallback": "Wither: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.frostbite",
+          "fallback": "Frostbite: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "10",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        }
+      ]
     },
     "count": 1,
     "id": "minecraft:diamond_spear"

@@ -8,28 +8,28 @@
     "id": "minecraft:netherite_boots",
     "components": {
       "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:armor",
-            "id": "content_lock.basic_armor_stats_boots",
-            "amount": 1.08  ,
-            "operation": "add_value",
-            "slot": "feet"
-          },
-          {
-            "type": "minecraft:armor_toughness",
-            "id": "content_lock.basic_armor_stats_boots",
-            "amount": 1.83,
-            "operation": "add_value",
-            "slot": "feet"
-          },
-          {
-            "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_armor_stats_boots",
-            "amount": 0.22,
-            "operation": "add_value",
-            "slot": "feet"
-          }
-        ],
+        {
+          "type": "minecraft:armor",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 1.08,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 1.83,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_armor_stats_boots",
+          "amount": 0.15,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
       "unbreakable": {},
       "tooltip_display": {
         "hidden_components": [

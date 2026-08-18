@@ -6,51 +6,51 @@
   "result": {
     "components": {
       "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:attack_damage",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 4.5,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:sweeping_damage_ratio",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.4,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_speed",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -2,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:entity_interaction_range",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.2,
-            "operation": "add_multiplied_base",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_knockback",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": -0.5,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:movement_efficiency",
-            "id": "content_lock.basic_weapon_stats",
-            "amount": 0.02,
-            "operation": "add_value",
-            "slot": "mainhand"
-          }
-        ],
-        "minimum_attack_charge": 1,
-      "minecraft:max_damage": 156,
+        {
+          "type": "minecraft:attack_damage",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 4.23,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:sweeping_damage_ratio",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 0.4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -2.28,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 0.2,
+          "operation": "add_multiplied_base",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_knockback",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -0.5,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 0.02,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minimum_attack_charge": 1,
+      "minecraft:max_damage": 120,
       "minecraft:tool": {
         "rules": [
           {
@@ -61,7 +61,198 @@
         ],
         "default_mining_speed": 0.5,
         "damage_per_block": 0
-      }
+      },
+      "custom_data": {
+        "content_lock:weapon": {
+          "type": "Sword",
+          "damage_type": "melee",
+          "damage": {
+            "physical": 2.12,
+            "fire": 1.06,
+            "frost": 0,
+            "magic": 1.06,
+            "wither": 0,
+            "ender": 0
+          },
+          "status_effects": {
+            "bleed": 1.16,
+            "poison": 0,
+            "corruption": 4.64,
+            "wither": 0,
+            "frostbite": -11.59
+          },
+          "damage_modifiers": {
+            "physical": [],
+            "fire": [],
+            "frost": [],
+            "magic": [],
+            "wither": [],
+            "ender": []
+          },
+          "status_effect_modifiers": {
+            "bleed": [],
+            "poison": [],
+            "corruption": [],
+            "wither": [],
+            "frostbite": []
+          }
+        }
+      },
+      "lore": [
+        {
+          "translate": "content_lock:weapons.damage",
+          "fallback": "Damage",
+          "bold": true
+        },
+        {
+          "translate": "content_lock.weapon.physical",
+          "fallback": "Physical: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "21",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.fire",
+          "fallback": "Fire: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "10",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.frost",
+          "fallback": "Frost: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.magic",
+          "fallback": "Magic: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "10",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.wither",
+          "fallback": "Wither: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.ender",
+          "fallback": "Ender: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock:weapons.status_effects",
+          "fallback": "Status Effects",
+          "bold": true
+        },
+        {
+          "translate": "content_lock.weapon.status.bleed",
+          "fallback": "Bleed: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.poison",
+          "fallback": "Poison: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.corruption",
+          "fallback": "Corruption: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "4",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.wither",
+          "fallback": "Wither: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "0",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.frostbite",
+          "fallback": "Frostbite: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "-12",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        }
+      ]
     },
     "count": 1,
     "id": "minecraft:golden_sword"
