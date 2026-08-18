@@ -1,37 +1,33 @@
-##Buffer the hit, so the attacks feel a bit more responsive, even if you miss the timing
-scoreboard players set @s content_lock.weapons.buffer 20
-##Don't attack if there is already an attack going on or you have no stamina
-execute if score @s content_lock.weapons.cooldown matches 1.. run return 0
-execute unless score @s lsp.stamina matches 1.. run return 0
+##Transfer some of the information to the projectile array, such as projectile Id, player UUID, damage, distance from player and rotation info (which is stored as bytes).
+data merge storage content_lock:weapon_stats {Id:0,data:{UUID:[I;0,0,0,0],damage_type:"melee",distance:0,pitch:0b,yaw:0b,physical_damage:0,fire_damage:0,frost_damage:0,magic_damage:0,wither_damage:0,ender_damage:0,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}}
+data merge storage content_lock:weapon_stats {UUID:[I;0,0,0,0],damage_type:"melee",distance:0,pitch:0b,yaw:0b,physical_damage:0,fire_damage:0,frost_damage:0,magic_damage:0,wither_damage:0,ender_damage:0,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}
+data modify storage content_lock:weapon_stats data.UUID set from entity @s UUID
 
-scoreboard players set @s content_lock.weapons.buffer 0
-tag @e remove content_lock.weapons.attacking
+##Calculate all of the damage values of the weapon and store them in the projectile array
+data merge storage content_lock:saved_stats {storage:"content_lock:saved_stats",path:"weapon_runtime",UUID:[I;0,0,0,0]}
+data modify storage content_lock:saved_stats UUID set from entity @s UUID
+function content_lock:player/passives/storage/player_data/load_path with storage content_lock:saved_stats
+function content_lock:player/passives/damage/calculate_damage with storage content_lock:weapon_stats
+
+scoreboard players set @s content_lock.temp3 -1
+execute store result score @s content_lock.temp3 run data get storage content_lock:saved_stats lore_checksum 1
+
+scoreboard players set @s content_lock.temp1 0
+execute store result score @s content_lock.temp1 run data get storage content_lock:saved_stats display_checksum 1
+
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run data merge storage content_lock:saved_stats {display:{physical:0,fire:0,frost:0,magic:0,wither:0,ender:0}}
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.physical int 1 run data get storage content_lock:weapon_stats data.physical_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.fire int 1 run data get storage content_lock:weapon_stats data.fire_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.frost int 1 run data get storage content_lock:weapon_stats data.frost_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.magic int 1 run data get storage content_lock:weapon_stats data.magic_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.wither int 1 run data get storage content_lock:weapon_stats data.wither_damage 10
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats display.ender int 1 run data get storage content_lock:weapon_stats data.ender_damage 10
+
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run item modify entity @s weapon.mainhand content_lock:weapon_update_stats
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run data merge storage content_lock:saved_stats {storage:"content_lock:saved_stats",path:"weapon_runtime",data:{lore_checksum:0}}
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats data.lore_checksum int 1 run scoreboard players get @s content_lock.temp1
+execute unless score @s content_lock.temp1 = @s content_lock.temp3 run function content_lock:player/passives/storage/player_data/save_path with storage content_lock:saved_stats
+
 tag @s add content_lock.weapons.attacking
-
-##Additional damage from jumping/running attacks
-execute if entity @s[nbt={OnGround:false}] run tag @s add content_lock.weapons.add_jumping_damage
-execute if entity @s[predicate=lsp:is_sprinting] run tag @s add content_lock.weapons.add_running_damage
-
-##Macros for each weapon availible, where:
-##name: category of weapon behaviors (hitboxes, timings, etc), which the weapon is going to use
-##cooldown: min. time between attacks
-##visible_timer: how long the weapon model is visible
-##max_combo: maximum amount of hits, before the combo nr goes back to default
-##combo_set: the default value of attack index, which is used after reaching max_combo
-##sound: what sound should attacks play
-##sound_pitch: modifies the sound pitch of the attack
-##anims: category of animation which the weapon uses
-##jumping_attack: the attack index which the weapon is going to assign to the jumping attacks (default is 31 for index '_jumping')
-##running_attack: the attack index which the weapon is going to assign to the running attacks (default is 30 for index '_running')
-execute if items entity @s weapon.mainhand *[custom_data~{"content_lock:weapon":{type:"sword"}}] run return run function content_lock:player/weapons/attacked_macro {name:"sword",cooldown:12,visible_timer:25,max_combo:2,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.7,anims:sword,jumping_attack:1,running_attack:30}
-execute if items entity @s weapon.mainhand *[custom_data~{"content_lock:weapon":{type:"heavy_sword"}}] run return run function content_lock:player/weapons/attacked_macro {name:"far_sword",cooldown:17,visible_timer:31,max_combo:3,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.5,anims:sword_far,jumping_attack:3,running_attack:30}
-execute if items entity @s weapon.mainhand *[custom_data~{"content_lock:weapon":{type:"light_sword"}}] run return run function content_lock:player/weapons/attacked_macro {name:"fast_sword",cooldown:10,visible_timer:22,max_combo:2,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.8,anims:sword_fast,jumping_attack:1,running_attack:30}
-
-execute if items entity @s weapon.mainhand *[custom_data~{"content_lock:weapon":{type:"hoe"}}] run return run function content_lock:player/weapons/attacked_macro {name:"hoe",cooldown:10,visible_timer:24,max_combo:3,combo_set:1,sound:entity.player.attack.strong,sound_pitch:1,anims:hoe,jumping_attack:1,running_attack:1}
-
-#execute if items entity @s weapon.mainhand #minecraft:pickaxes run return run function content_lock:player/weapons/types/pickaxe with storage content_lock:weapon_stats
-#execute if items entity @s weapon.mainhand #minecraft:hoes run return run function content_lock:player/weapons/types/hoe with storage content_lock:weapon_stats
-#execute if items entity @s weapon.mainhand #minecraft:axes run return run function content_lock:player/weapons/types/axe with storage content_lock:weapon_stats
-#execute if items entity @s weapon.mainhand #minecraft:shovels run return run function content_lock:player/weapons/types/shovel with storage content_lock:weapon_stats
-
-execute if items entity @s weapon.mainhand #content_lock:weapon run return run function content_lock:player/weapons/attacked_macro {name:"sword",cooldown:12,visible_timer:25,max_combo:2,combo_set:0,sound:entity.player.attack.strong,sound_pitch:0.7,anims:sword,jumping_attack:1,running_attack:30}
+execute at @s as @e[type=!#entities] run function content_lock:player/weapons/detect_whos_attacked with storage content_lock:weapon_stats data
+tag @s remove content_lock.weapons.attacking

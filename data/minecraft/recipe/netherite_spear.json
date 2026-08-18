@@ -9,7 +9,7 @@
         {
           "type": "minecraft:attack_damage",
           "id": "content_lock.basic_weapon_stats",
-          "amount": 24.45,
+          "amount": 0.01,
           "operation": "add_value",
           "slot": "mainhand"
         },
@@ -98,6 +98,12 @@
             "corruption": [],
             "wither": [],
             "frostbite": []
+          },
+          "scaling": {
+            "strength": 1,
+            "dexterity": 1.5,
+            "notardness": 0,
+            "promiles": 2.5
           }
         }
       },
@@ -255,7 +261,15 @@
             }
           ]
         }
-      ]
+      ],
+      "tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "weapon": {
+        "item_damage_per_attack": 1
+      }
     },
     "count": 1,
     "id": "minecraft:netherite_spear"

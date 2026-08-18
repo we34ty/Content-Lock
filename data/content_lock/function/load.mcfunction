@@ -194,6 +194,7 @@ scoreboard objectives add content_lock.weapons.buffer dummy
 scoreboard objectives add content_lock.weapons.weapon_visible_timer dummy
 scoreboard objectives add content_lock.weapons.xz dummy
 scoreboard objectives add content_lock.weapons.y dummy
+scoreboard objectives add content_lock.weapons.enemy_hit_count dummy
 scoreboard objectives add content_lock.UUID_id.max dummy
 scoreboard objectives add content_lock.difficulty dummy
 scoreboard objectives add content_lock.stamina.current_old dummy

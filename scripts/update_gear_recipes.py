@@ -210,6 +210,37 @@ def set_attribute_amount(components: dict[str, Any], attribute_type: str, amount
     return updated
 
 
+def ensure_attribute_modifier(
+    components: dict[str, Any], 
+    attribute_type: str, 
+    amount: float | int, 
+    operation: str = "add_value",
+    slot: str = "mainhand",
+    id_prefix: str = "content_lock.basic_weapon_stats"
+) -> bool:
+    """Ensure an attribute modifier exists with the given parameters."""
+    modifiers = components.get("minecraft:attribute_modifiers")
+    if not isinstance(modifiers, list):
+        modifiers = []
+        components["minecraft:attribute_modifiers"] = modifiers
+    
+    # Check if the attribute already exists
+    for modifier in modifiers:
+        if isinstance(modifier, dict) and modifier.get("type") == attribute_type:
+            modifier["amount"] = canonical_number(amount)
+            return True
+    
+    # Add new modifier
+    modifiers.append({
+        "type": attribute_type,
+        "id": id_prefix,
+        "amount": canonical_number(amount),
+        "operation": operation,
+        "slot": slot
+    })
+    return True
+
+
 # ----------------------------------------------------------------------
 # Detection helpers (dynamic)
 # ----------------------------------------------------------------------
@@ -450,11 +481,30 @@ def ensure_weapon_custom_data(
             for effect in status_effects
         }
 
+    # Ensure scaling exists
+    if "scaling" not in weapon_data:
+        weapon_data["scaling"] = {
+            "strength": 1,
+            "dexterity": 1.5,
+            "notardness": 0,
+            "promiles": 2.5
+        }
+
     new_custom_data = dict(existing_custom_data)
     new_custom_data["content_lock:weapon"] = weapon_data
     changed = components.get("custom_data") != new_custom_data
     components["custom_data"] = new_custom_data
     return weapon_data, changed
+
+
+def ensure_weapon_component(components: dict[str, Any]) -> bool:
+    """Ensure the 'weapon' component exists with default values."""
+    if "weapon" not in components:
+        components["weapon"] = {
+            "item_damage_per_attack": 1
+        }
+        return True
+    return False
 
 
 def update_weapon_recipe(
@@ -492,23 +542,53 @@ def update_weapon_recipe(
     data = json.loads(path.read_text(encoding="utf-8"))
     changes: list[str] = []
 
-    components = data.get("result", {}).get("components", {})
+    # Check if result exists
+    if "result" not in data:
+        return []
+
+    # Ensure result has components
+    if "components" not in data["result"]:
+        data["result"]["components"] = {}
+        changes.append("components_created")
+
+    components = data["result"]["components"]
     if isinstance(components, dict):
+        # Ensure weapon component exists
+        if ensure_weapon_component(components):
+            changes.append("weapon_component_added")
+
+        # max_damage
         if components.get("minecraft:max_damage") != max_damage:
             components["minecraft:max_damage"] = max_damage
             changes.append(f"max_damage={max_damage}")
-        if set_attribute_amount(components, "minecraft:attack_damage", attack_damage):
-            changes.append(f"attack_damage={canonical_number(attack_damage)}")
-        if set_attribute_amount(components, "minecraft:attack_speed", attack_speed_amount):
+        
+        # attack_damage - ensure it exists
+        fixed_attack_damage = 0.01
+        if ensure_attribute_modifier(components, "minecraft:attack_damage", fixed_attack_damage, "add_multiplied_total"):
+            changes.append(f"attack_damage={canonical_number(fixed_attack_damage)}")
+        
+        # attack_speed - ensure it exists
+        if ensure_attribute_modifier(components, "minecraft:attack_speed", attack_speed_amount, "add_value"):
             changes.append(f"attack_speed={canonical_number(attack_speed_amount)}")
 
+        # custom_data
         _, custom_data_changed = ensure_weapon_custom_data(components, weapon_type, damage_map, status_map)
         if custom_data_changed:
             changes.append("custom_data")
 
+        # lore
         if components.get("lore") != lore:
             components["lore"] = lore
             changes.append("lore")
+        
+        # tooltip_display
+        tooltip_display = components.get("tooltip_display")
+        expected_tooltip_display = {
+            "hidden_components": ["minecraft:attribute_modifiers"]
+        }
+        if tooltip_display != expected_tooltip_display:
+            components["tooltip_display"] = expected_tooltip_display
+            changes.append("tooltip_display")
 
     if changes and apply_changes:
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -541,7 +621,16 @@ def update_armor_recipe(
     data = json.loads(path.read_text(encoding="utf-8"))
     changes: list[str] = []
 
-    components = data.get("result", {}).get("components", {})
+    # Check if result exists
+    if "result" not in data:
+        return []
+
+    # Ensure result has components
+    if "components" not in data["result"]:
+        data["result"]["components"] = {}
+        changes.append("components_created")
+
+    components = data["result"]["components"]
     if isinstance(components, dict):
         if set_attribute_amount(components, "minecraft:armor", armor_value):
             changes.append(f"armor={canonical_number(armor_value)}")
