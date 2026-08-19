@@ -1,9 +1,9 @@
-$damage @s $(physical_damage) content_lock:$(damage_type)/physical by @n[nbt={UUID:$(UUID)}] from @n[nbt={UUID:$(UUID)}]
-$damage @s $(fire_damage) content_lock:$(damage_type)/fire by @n[nbt={UUID:$(UUID)}] from @n[nbt={UUID:$(UUID)}]
-$damage @s $(frost_damage) content_lock:$(damage_type)/frost by @n[nbt={UUID:$(UUID)}] from @n[nbt={UUID:$(UUID)}]
-$damage @s $(magic_damage) content_lock:$(damage_type)/magic by @n[nbt={UUID:$(UUID)}] from @n[nbt={UUID:$(UUID)}]
-$damage @s $(wither_damage) content_lock:$(damage_type)/wither by @n[nbt={UUID:$(UUID)}] from @n[nbt={UUID:$(UUID)}]
-$damage @s $(ender_damage) content_lock:$(damage_type)/ender by @n[nbt={UUID:$(UUID)}] from @n[nbt={UUID:$(UUID)}]
+$damage @s $(physical_damage) content_lock:$(damage_type)/physical by @n from @n
+$damage @s $(fire_damage) content_lock:$(damage_type)/fire by @n from @n
+$damage @s $(frost_damage) content_lock:$(damage_type)/frost by @n from @n
+$damage @s $(magic_damage) content_lock:$(damage_type)/magic by @n from @n
+$damage @s $(wither_damage) content_lock:$(damage_type)/wither by @n from @n
+$damage @s $(ender_damage) content_lock:$(damage_type)/ender by @n from @n
 
 $function content_lock:player/weapons/entity/stacks_macro {name:"bleed_stacks", amount: $(bleed_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"poison_stacks", amount: $(poison_status)}
