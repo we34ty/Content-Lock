@@ -1,0 +1,1 @@
+$return run scoreboard players get #$(UUID).content_lock.$(Name)-$(id) content_lock.temp1

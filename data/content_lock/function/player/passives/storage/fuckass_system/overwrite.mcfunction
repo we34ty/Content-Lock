@@ -1,0 +1,1 @@
+$scoreboard players set #$(UUID).content_lock.$(Name)-$(id) content_lock.temp1 $(value)

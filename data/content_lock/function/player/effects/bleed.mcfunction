@@ -1,4 +1,4 @@
-execute unless entity @s[nbt={HurtTime:0s}] run return run scoreboard players add @s content_lock.bleed_stacks 1
+#execute unless entity @s[nbt={HurtTime:0s}] run return run scoreboard players add @s content_lock.bleed_stacks 1
 tag @s remove content_lock.bleed_active
 tellraw @s [{"translate": "content_lock:effect.bleed.activated","color":"dark_red"}]
 data merge storage content_lock:saved_stats {damage:1.0f}

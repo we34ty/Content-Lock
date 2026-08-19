@@ -1,0 +1,1 @@
+$return run execute unless score #$(UUID).content_lock.$(Name) content_lock.temp1 matches 1..$(id)
