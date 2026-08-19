@@ -507,6 +507,14 @@ def ensure_weapon_component(components: dict[str, Any]) -> bool:
     return False
 
 
+def ensure_minimum_attack_charge(components: dict[str, Any]) -> bool:
+    """Ensure the 'minimum_attack_charge' component exists."""
+    if "minimum_attack_charge" not in components:
+        components["minimum_attack_charge"] = 1
+        return True
+    return False
+
+
 def update_weapon_recipe(
     path: Path,
     gear: dict[str, dict[str, dict[str, Any]]],
@@ -556,6 +564,10 @@ def update_weapon_recipe(
         # Ensure weapon component exists
         if ensure_weapon_component(components):
             changes.append("weapon_component_added")
+        
+        # Ensure minimum_attack_charge exists
+        if ensure_minimum_attack_charge(components):
+            changes.append("minimum_attack_charge_added")
 
         # max_damage
         if components.get("minecraft:max_damage") != max_damage:
