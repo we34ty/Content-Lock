@@ -11,6 +11,7 @@ $function content_lock:player/weapons/entity/stacks_macro {name:"corruption_mete
 $function content_lock:player/weapons/entity/stacks_macro {name:"wither_stacks", amount: $(wither_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"frostbite_stacks", amount: $(frostbite_status)}
 
+$execute as @n run function content_lock:player/weapons/entity/damaged_entity_post_calculations {physical_damage: $(physical_damage), fire_damage: $(fire_damage), frost_damage: $(frost_damage), magic_damage: $(magic_damage), wither_damage: $(wither_damage), ender_damage: $(ender_damage), damage_type: "$(damage_type)", bleed_status: $(bleed_status), poison_status: $(poison_status), corruption_status: $(corruption_status), wither_status: $(wither_status), frostbite_status: $(frostbite_status)}
 #$say $(physical_damage)
 #$say $(fire_damage)
 #$say $(frost_damage)

@@ -159,6 +159,11 @@ scoreboard objectives add content_lock.enchantment.combat_knowledge.chest dummy
 scoreboard objectives add content_lock.enchantment.combat_knowledge.legs dummy
 scoreboard objectives add content_lock.enchantment.combat_knowledge.feet dummy
 scoreboard objectives add content_lock.enchantment.combat_knowledge.temp dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.leather.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.leather.rally_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.leather.buff_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.leather.health_to_recover dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.leather.health_storage dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

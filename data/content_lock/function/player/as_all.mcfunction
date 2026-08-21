@@ -96,3 +96,7 @@ execute if entity @s[scores={content_lock.anchor_sneak=1}] run tag @s remove con
 execute if entity @s[scores={content_lock.anchor_sneak=1..}] run scoreboard players remove @s content_lock.anchor_sneak 1
 execute if entity @s[scores={content_lock.bow_charge=1..}] unless items entity @s weapon.mainhand bow run scoreboard players set @s content_lock.bow_charge 0
 execute if entity @s[scores={content_lock.quickstep_dagger_charge=1..}] run scoreboard players remove @s content_lock.quickstep_dagger_charge 1
+scoreboard players set @s content_lock.enchantment.bonus.armor.leather.pieces 0
+execute if score @s content_lock.enchantment.bonus.armor.leather.rally_timer matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.leather.rally_timer 1
+execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matches 1 run function content_lock:player/enchantments/bonuses/armor/leather/remove_buff
+execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.leather.buff_timer 1

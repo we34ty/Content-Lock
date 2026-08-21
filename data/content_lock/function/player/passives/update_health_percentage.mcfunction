@@ -9,6 +9,15 @@ scoreboard players operation @s content_lock.temp2 = @s content_lock.health_perc
 scoreboard players operation @s content_lock.temp2 -= @s content_lock.health_percentage
 execute if score @s content_lock.temp2 matches ..0 run return 0
 
+scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover = @s content_lock.temp2
+execute store result score @s content_lock.temp1 run attribute @s max_health get
+scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover *= @s content_lock.temp1
+scoreboard players set @s content_lock.temp1 100
+scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover /= @s content_lock.temp1
+scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_storage = @s content_lock.enchantment.bonus.armor.leather.health_to_recover
+scoreboard players set @s content_lock.temp1 2
+scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover *= @s content_lock.temp1
+
 #scoreboard players set @s content_lock.temp1 3
 #scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp1
 #scoreboard players set @s content_lock.temp1 2
