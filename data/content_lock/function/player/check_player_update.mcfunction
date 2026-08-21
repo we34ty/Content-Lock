@@ -30,6 +30,7 @@ scoreboard players add @s content_lock.eqld_from_level 0
 scoreboard players add @s content_lock.dmg_from_level 0
 scoreboard players add @s content_lock.hp_from_level 0
 scoreboard players add @s content_lock.mvtspd_from_level 0
+scoreboard players add @s content_lock.enchantment.bonus.armor.chainmail.cooldown 0
 #scoreboard players enable @s LevelUp.ContentLock
 #scoreboard players enable @s content_lock.LevelUp.atkrng
 #scoreboard players enable @s content_lock.LevelUp.atkspd

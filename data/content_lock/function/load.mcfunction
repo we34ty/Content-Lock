@@ -164,6 +164,9 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.leather.rally_tim
 scoreboard objectives add content_lock.enchantment.bonus.armor.leather.buff_timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.leather.health_to_recover dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.leather.health_storage dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.chainmail.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.chainmail.timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.chainmail.cooldown dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

@@ -1,0 +1,43 @@
+{
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.bonus.armor.chainmail",
+    "fallback": "Set: Chainmail",
+    "color": "#d5a00d"
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/chainmail/tick"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "content_lock.enchantment.bonus.armor.chainmail.cooldown": {
+                "max": 0
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#content_lock:enchantable/armor",
+  "weight": 1
+}
