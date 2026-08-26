@@ -1,14 +1,17 @@
 advancement revoke @s only content_lock:checks/entity_hurt_player
 
+##Calculate percentage of missing health and store it in the scoreboard objective content_lock.health_percentage
 scoreboard players operation @s content_lock.health_percentage_old = @s content_lock.health_percentage
 execute store result score @s content_lock.temp1 run attribute @s max_health get
 execute store result score @s content_lock.health_percentage run data get entity @s Health 100
 scoreboard players operation @s content_lock.health_percentage /= @s content_lock.temp1
 
+##Compare it to the old health percentage and if it is lower, continue
 scoreboard players operation @s content_lock.temp2 = @s content_lock.health_percentage_old
 scoreboard players operation @s content_lock.temp2 -= @s content_lock.health_percentage
 execute if score @s content_lock.temp2 matches ..0 run return 0
 
+##Calculate the amount of health lost and store it for leather armor set bonus
 scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover = @s content_lock.temp2
 execute store result score @s content_lock.temp1 run attribute @s max_health get
 scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover *= @s content_lock.temp1
@@ -17,6 +20,13 @@ scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.hea
 scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_storage = @s content_lock.enchantment.bonus.armor.leather.health_to_recover
 scoreboard players set @s content_lock.temp1 2
 scoreboard players operation @s content_lock.enchantment.bonus.armor.leather.health_to_recover *= @s content_lock.temp1
+
+##Use the tripled amount of health lost to calculate the amount of charges to add to the copper armor set bonus
+scoreboard players set @s content_lock.temp1 3
+scoreboard players operation @s content_lock.temp1 *= @s content_lock.enchantment.bonus.armor.leather.health_to_recover
+scoreboard players operation @s content_lock.enchantment.bonus.armor.copper.charges += @s content_lock.temp1
+
+execute if score @s content_lock.enchantment.bonus.armor.copper.charges matches 250.. run tag @s add content_lock.enchantment.bonus.armor.copper.send_lightning
 
 #scoreboard players set @s content_lock.temp1 3
 #scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp1

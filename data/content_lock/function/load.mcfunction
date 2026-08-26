@@ -167,6 +167,10 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.leather.health_st
 scoreboard objectives add content_lock.enchantment.bonus.armor.chainmail.pieces dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.chainmail.timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.chainmail.cooldown dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.copper.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.copper.charges dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.copper.charges_old dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.copper.timer dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

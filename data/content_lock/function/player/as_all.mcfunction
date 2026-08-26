@@ -84,6 +84,8 @@ execute if items entity @s weapon.offhand *[custom_data~{"content_lock:duplicati
 ##manages the enchaining of hostile mobs by the chainmail armor set
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/chainmail/player_tick
 
+execute if score @s content_lock.enchantment.bonus.armor.copper.charges matches 1.. run function content_lock:player/enchantments/bonuses/armor/copper/charge_tick
+
 ##check if player has been teleported by a wormhole and if the chunk they are in is loaded
 execute if entity @s[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run attribute @s gravity modifier remove content_lock.load_chunk_no_gravity
 execute if entity @s[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run tag @s remove content_lock.load_chunk_no_gravity
@@ -104,3 +106,4 @@ execute if score @s content_lock.enchantment.bonus.armor.leather.rally_timer mat
 execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matches 1 run function content_lock:player/enchantments/bonuses/armor/leather/remove_buff
 execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.leather.buff_timer 1
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.cooldown matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.chainmail.cooldown 1
+scoreboard players set @s content_lock.enchantment.bonus.armor.copper.pieces 0

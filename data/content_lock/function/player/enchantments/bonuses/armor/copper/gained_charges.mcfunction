@@ -1,0 +1,1 @@
+scoreboard players set @s content_lock.enchantment.bonus.armor.copper.timer 200
