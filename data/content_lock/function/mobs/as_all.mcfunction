@@ -11,3 +11,4 @@ execute if entity @s[tag=content_lock.carapacer,tag=content_lock.carapacer.taken
 
 execute if entity @s[scores={content_lock.heat=1..}] run scoreboard players remove @s content_lock.heat 1
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/chainmail/enchained_tick
+execute if score @s content_lock.enchantment.bonus.armor.gold.debuff_timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/gold/debuff_tick

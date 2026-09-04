@@ -171,6 +171,13 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.copper.pieces dum
 scoreboard objectives add content_lock.enchantment.bonus.armor.copper.charges dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.copper.charges_old dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.copper.timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.reduction dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.stacks minecraft.custom:sprint_one_cm
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.stacks_old dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.debuff_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.gold.debuff_stacks dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

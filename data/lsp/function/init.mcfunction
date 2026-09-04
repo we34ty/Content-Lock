@@ -11,12 +11,12 @@ scoreboard objectives add lsp.stamina dummy
     # 1 second = 20 ticks
     # 10 seconds = 200 ticks
     # scoreboard value below is in ticks
-    scoreboard players set stamina lsp.Values 400
+    scoreboard players set stamina lsp.Values 4000
         # restore stamina on /reload:
         scoreboard players operation @a lsp.stamina = stamina lsp.Values
 
     # these values determine how fast/slow stamina is lost/gained
-    scoreboard players set sprint.stamina.consumption lsp.Values 1
-    scoreboard players set sprint.stamina.restoration lsp.Values 3
-    scoreboard players set sprint.stamina.jump.consumption lsp.Values 30
-    scoreboard players set blocking.stamina.consumption lsp.Values 140
+    scoreboard players set sprint.stamina.consumption lsp.Values 10
+    scoreboard players set sprint.stamina.restoration lsp.Values 30
+    scoreboard players set sprint.stamina.jump.consumption lsp.Values 300
+    scoreboard players set blocking.stamina.consumption lsp.Values 1400

@@ -1,0 +1,1 @@
+scoreboard players add @s content_lock.enchantment.bonus.armor.gold.pieces 1

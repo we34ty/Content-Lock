@@ -5,9 +5,6 @@ execute if score @s content_lock.enchantment.bonus.armor.copper.charges matches 
 ## If the player has more charges than they did last tick, run the gained_charges function to reset the timer and do some vfx
 execute unless score @s content_lock.enchantment.bonus.armor.copper.charges <= @s content_lock.enchantment.bonus.armor.copper.charges_old at @s run function content_lock:player/enchantments/bonuses/armor/copper/gained_charges
 
-## Remove stats before adding them so they get updated properly
-function content_lock:player/enchantments/bonuses/armor/copper/remove_stats
-
 ## If player took damage at max stacks, create a lightning attack
 execute if entity @s[tag=content_lock.enchantment.bonus.armor.copper.send_lightning] at @s run function content_lock:player/enchantments/bonuses/armor/copper/send_lightning
 

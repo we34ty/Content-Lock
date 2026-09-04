@@ -1,4 +1,4 @@
-scoreboard players set @s content_lock.temp1 30
+scoreboard players set @s content_lock.temp1 300
 scoreboard players operation @s content_lock.temp2 = @s lsp.stamina
 scoreboard players operation @s content_lock.temp3 = @s content_lock.max_stamina
 scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
