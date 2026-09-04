@@ -1,0 +1,9 @@
+scoreboard players add @s content_lock.temp1 1
+$execute if score @s content_lock.temp1 matches 1 positioned ~-3 ~-3 ~-3 as @n[dx=6,dy=6,dz=6,type=!#entities,nbt=!{UUID:$(Owner)}] run tag @s add content_lock.enchantment.bonus.armor.copper.lightning_marked
+
+particle electric_spark ~ ~ ~ 0.3 0.3 0.3 0.1 1 force @a
+
+execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @n[tag=content_lock.enchantment.bonus.armor.copper.lightning_marked,dx=1,dy=1,dz=1] at @n[tag=content_lock.enchantment.bonus.armor.copper.lightning_marked,dx=1,dy=1,dz=1] run tp @s ~ ~1 ~
+$execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @n[tag=content_lock.enchantment.bonus.armor.copper.lightning_marked,dx=1,dy=1,dz=1] as @n[tag=content_lock.enchantment.bonus.armor.copper.lightning_marked,dx=1,dy=1,dz=1] run return run function content_lock:player/weapons/entity/calculate_resistances {UUID:$(Owner),damage_type:$(damage_type),physical_damage:$(physical_damage),fire_damage:$(fire_damage),frost_damage:$(frost_damage),magic_damage:$(magic_damage),wither_damage:$(wither_damage),ender_damage:$(ender_damage),bleed_status:$(bleed_status),poison_status:$(poison_status),corruption_status:$(corruption_status),wither_status:$(wither_status),frostbite_status:$(frostbite_status)}
+
+$execute facing entity @n[tag=content_lock.enchantment.bonus.armor.copper.lightning_marked] eyes positioned ^ ^ ^0.99 run function content_lock:player/enchantments/bonuses/armor/copper/projectile_raycast {Owner:$(Owner),damage_type:$(damage_type),physical_damage:$(physical_damage),fire_damage:$(fire_damage),frost_damage:$(frost_damage),magic_damage:$(magic_damage),wither_damage:$(wither_damage),ender_damage:$(ender_damage),bleed_status:$(bleed_status),poison_status:$(poison_status),corruption_status:$(corruption_status),wither_status:$(wither_status),frostbite_status:$(frostbite_status)}

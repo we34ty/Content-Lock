@@ -28,5 +28,7 @@ execute if entity @s[tag=content_lock.wormhole.remover] run kill @s
 #functions for wormholes
 execute if entity @s[type=minecraft:item_display,tag=aj.wormhole.root,tag=content_lock.wormhole.open] run function content_lock:mobs/entities/wormhole/tick
 
+execute if entity @s[type=marker,tag=content_lock.enchantment.bonus.armor.copper.lightning_projectile] at @s run function content_lock:player/enchantments/bonuses/armor/copper/projectile_tick
+
 #execute if entity @e[type=trident,tag=!content_lock.arrow.changed_damage] as @e[type=trident,tag=!content_lock.arrow.changed_damage] at @s run function content_lock:mobs/entities/projectiles/arrows
 #execute if entity @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] as @e[type=area_effect_cloud,tag=content_lock.prism_stone.light_source] at @s run function content_lock:mobs/entities/prism_stone_light
