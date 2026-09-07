@@ -11,21 +11,21 @@
         {
           "type": "minecraft:armor",
           "id": "content_lock.basic_armor_stats_boots",
-          "amount": 1.16,
+          "amount": 0.83,
           "operation": "add_value",
           "slot": "feet"
         },
         {
           "type": "minecraft:armor_toughness",
           "id": "content_lock.basic_armor_stats_boots",
-          "amount": 1.16,
+          "amount": 3.32,
           "operation": "add_value",
           "slot": "feet"
         },
         {
           "type": "minecraft:movement_efficiency",
           "id": "content_lock.basic_armor_stats_boots",
-          "amount": 0.05,
+          "amount": 0.13,
           "operation": "add_value",
           "slot": "feet"
         }
@@ -35,7 +35,196 @@
         "hidden_components": [
           "unbreakable"
         ]
-      }
+      },
+      "custom_data": {
+        "content_lock:armor": {
+          "damage_resistance": {
+            "physical": 6.31,
+            "fire": 1.99,
+            "frost": 1.99,
+            "magic": 4.48,
+            "wither": 1.16,
+            "ender": 5.48
+          },
+          "status_resistance": {
+            "bleed": 1.66,
+            "poison": 1.66,
+            "corruption": 3.32,
+            "wither": 1.66,
+            "frostbite": 3.32
+          },
+          "damage_resistance_modifiers": {
+            "physical": [],
+            "fire": [],
+            "frost": [],
+            "magic": [],
+            "wither": [],
+            "ender": []
+          },
+          "status_resistance_modifiers": {
+            "bleed": [],
+            "poison": [],
+            "corruption": [],
+            "wither": [],
+            "frostbite": []
+          }
+        }
+      },
+      "lore": [
+        {
+          "translate": "content_lock:armor.damage_resistance",
+          "fallback": "Damage Resistance",
+          "bold": true
+        },
+        {
+          "translate": "content_lock.weapon.physical",
+          "fallback": "Physical: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "6",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.fire",
+          "fallback": "Fire: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.frost",
+          "fallback": "Frost: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.magic",
+          "fallback": "Magic: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "4",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.wither",
+          "fallback": "Wither: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.ender",
+          "fallback": "Ender: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "5",
+              "italic": false,
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock:armor.status_resistance",
+          "fallback": "Status Resistance",
+          "bold": true
+        },
+        {
+          "translate": "content_lock.weapon.status.bleed",
+          "fallback": "Bleed: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.poison",
+          "fallback": "Poison: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.corruption",
+          "fallback": "Corruption: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "3",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.wither",
+          "fallback": "Wither: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "1",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "translate": "content_lock.weapon.status.frostbite",
+          "fallback": "Frostbite: ",
+          "italic": false,
+          "color": "gray",
+          "extra": [
+            {
+              "text": "3",
+              "italic": false,
+              "color": "red"
+            }
+          ]
+        }
+      ]
     }
   }
 }

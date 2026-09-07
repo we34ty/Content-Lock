@@ -29,7 +29,7 @@
         {
           "type": "minecraft:attack_speed",
           "id": "content_lock.basic_weapon_stats",
-          "amount": -3.1,
+          "amount": -3,
           "operation": "add_value",
           "slot": "mainhand"
         },
@@ -56,7 +56,7 @@
         }
       ],
       "minimum_attack_charge": 1,
-      "minecraft:max_damage": 240,
+      "minecraft:max_damage": 282,
       "minecraft:tool": {
         "rules": [
           {
@@ -73,19 +73,19 @@
           "type": "Sword",
           "damage_type": "melee",
           "damage": {
-            "physical": 5.67,
+            "physical": 2.17,
             "fire": 0,
             "frost": 0,
-            "magic": 0,
-            "wither": 2.43,
-            "ender": 0
+            "magic": 2.9,
+            "wither": 0,
+            "ender": 2.17
           },
           "status_effects": {
             "bleed": 0,
             "poison": 0,
-            "corruption": 0,
-            "wither": 22.22,
-            "frostbite": 8.89
+            "corruption": 39.8,
+            "wither": 0,
+            "frostbite": 0
           },
           "damage_modifiers": {
             "physical": [],
@@ -123,7 +123,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "56",
+              "text": "21",
               "italic": false,
               "color": "blue"
             }
@@ -162,7 +162,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "29",
               "italic": false,
               "color": "blue"
             }
@@ -175,7 +175,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "24",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
@@ -188,7 +188,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "21",
               "italic": false,
               "color": "blue"
             }
@@ -232,7 +232,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "39",
               "italic": false,
               "color": "red"
             }
@@ -245,7 +245,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "22",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -258,7 +258,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "8",
+              "text": "0",
               "italic": false,
               "color": "red"
             }

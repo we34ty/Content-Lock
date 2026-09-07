@@ -69,8 +69,8 @@
           },
           "status_effects": {
             "bleed": 9.78,
-            "poison": 0,
-            "corruption": 9.78,
+            "poison": 9.78,
+            "corruption": 0,
             "wither": 0,
             "frostbite": 0
           },
@@ -206,7 +206,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "9",
               "italic": false,
               "color": "red"
             }
@@ -219,7 +219,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "9",
+              "text": "0",
               "italic": false,
               "color": "red"
             }

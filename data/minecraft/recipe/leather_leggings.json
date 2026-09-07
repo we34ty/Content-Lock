@@ -43,19 +43,19 @@
       "custom_data": {
         "content_lock:armor": {
           "damage_resistance": {
-            "physical": 20,
-            "fire": 3,
-            "frost": 30,
-            "magic": 8,
-            "wither": 5,
-            "ender": 9
+            "physical": 4.44,
+            "fire": 0.89,
+            "frost": 6.66,
+            "magic": 1.78,
+            "wither": 1.11,
+            "ender": 2
           },
           "status_resistance": {
-            "bleed": 10,
-            "poison": 16,
-            "corruption": 6,
-            "wither": 4,
-            "frostbite": 30
+            "bleed": 2.22,
+            "poison": 3.11,
+            "corruption": 0.67,
+            "wither": 0.44,
+            "frostbite": 6.66
           },
           "damage_resistance_modifiers": {
             "physical": [],
@@ -87,7 +87,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "20",
+              "text": "4",
               "italic": false,
               "color": "blue"
             }
@@ -100,7 +100,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "3",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
@@ -113,7 +113,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "30",
+              "text": "6",
               "italic": false,
               "color": "blue"
             }
@@ -126,7 +126,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "8",
+              "text": "1",
               "italic": false,
               "color": "blue"
             }
@@ -139,7 +139,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "5",
+              "text": "1",
               "italic": false,
               "color": "blue"
             }
@@ -152,7 +152,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "9",
+              "text": "1",
               "italic": false,
               "color": "blue"
             }
@@ -170,7 +170,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "10",
+              "text": "2",
               "italic": false,
               "color": "red"
             }
@@ -183,7 +183,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "16",
+              "text": "3",
               "italic": false,
               "color": "red"
             }
@@ -196,7 +196,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "6",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -209,7 +209,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "3",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -222,14 +222,11 @@
           "color": "gray",
           "extra": [
             {
-              "text": "30",
+              "text": "6",
               "italic": false,
               "color": "red"
             }
           ]
-        },
-        {
-          "text": ""
         }
       ]
     },

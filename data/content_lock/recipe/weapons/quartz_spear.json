@@ -16,7 +16,7 @@
         {
           "type": "minecraft:attack_speed",
           "id": "content_lock.basic_weapon_stats",
-          "amount": -3.68,
+          "amount": -3.64,
           "operation": "add_value",
           "slot": "mainhand"
         },
@@ -36,7 +36,7 @@
         }
       ],
       "minimum_attack_charge": 1,
-      "minecraft:max_damage": 151,
+      "minecraft:max_damage": 178,
       "kinetic_weapon": {
         "contact_cooldown_ticks": 10,
         "damage_conditions": {
@@ -70,19 +70,19 @@
           "type": "Spear",
           "damage_type": "melee",
           "damage": {
-            "physical": 14.27,
+            "physical": 5.47,
             "fire": 0,
             "frost": 0,
-            "magic": 0,
-            "wither": 6.11,
-            "ender": 0
+            "magic": 7.3,
+            "wither": 0,
+            "ender": 5.47
           },
           "status_effects": {
             "bleed": 0,
             "poison": 0,
-            "corruption": 0,
-            "wither": 44.03,
-            "frostbite": 17.61
+            "corruption": 78.85,
+            "wither": 0,
+            "frostbite": 0
           },
           "damage_modifiers": {
             "physical": [],
@@ -120,7 +120,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "142",
+              "text": "54",
               "italic": false,
               "color": "blue"
             }
@@ -159,7 +159,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "73",
               "italic": false,
               "color": "blue"
             }
@@ -172,7 +172,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "61",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
@@ -185,7 +185,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "54",
               "italic": false,
               "color": "blue"
             }
@@ -229,7 +229,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "0",
+              "text": "78",
               "italic": false,
               "color": "red"
             }
@@ -242,7 +242,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "44",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -255,7 +255,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "17",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
