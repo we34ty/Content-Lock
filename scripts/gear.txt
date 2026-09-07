@@ -12,6 +12,7 @@
             Gold: 0.6,
             Diamond: 0.75,
             Netherite: 1.5,
+            Quartz: 1.41
 
             Sword: 1,
             Hoe: 1.3,
@@ -52,7 +53,8 @@
             Iron: 0.75,
             Gold: 1.15,
             Netherite: 0.5,
-            Diamond: 1.23
+            Diamond: 1.23,
+            Quartz: 0.67
         },
 
         # Stat Splits
@@ -129,6 +131,15 @@
                 Magic: 0.25,
                 Wither: 0,
                 Ender: 0.35,
+            },
+
+            Quartz:{
+                Physical: 0.3,
+                Fire: 0,
+                Frost: 0,
+                Magic: 0.4,
+                Wither: 0,
+                Ender: 0.3,
             }
         },
 
@@ -210,8 +221,8 @@
 
             Copper:{
                 Bleed: 0.1,
-                Poison: 0,
-                Corruption: 0.1,
+                Poison: 0.1,
+                Corruption: 0,
                 Wither: 0,
                 Frostbite: 0
             },
@@ -246,6 +257,14 @@
                 Corruption: 0,
                 Wither: 0,
                 Frostbite: 0.25
+            },
+
+            Quartz:{
+                Bleed: 0,
+                Poison: 0,
+                Corruption: 1,
+                Wither: 0,
+                Frostbite: 0
             }
         },
 
@@ -256,7 +275,8 @@
             Iron: "../data/minecraft/recipe/",
             Gold: "../data/minecraft/recipe/",
             Netherite: "../data/minecraft/recipe/",
-            Diamond: "../data/minecraft/recipe/"
+            Diamond: "../data/minecraft/recipe/",
+            Quartz: "../data/content_lock/recipe/weapons/"
         }
     },
 
@@ -268,7 +288,8 @@
             Iron: 6,
             Gold: 8,
             Netherite: 6.5,
-            Diamond: 9
+            Diamond: 9,
+            Quartz: 5
         },
 
         Armor_toughness:{
@@ -278,9 +299,11 @@
             Iron: 15,
             Gold: 1.5,
             Netherite: 11,
-            Diamond: 0
+            Diamond: 0,
+            Quartz: 20
         },
 
+        # Doubles as Weight
         Movement_efficiency:{
             Leather: 0.15,
             Chainmail: 0.3,
@@ -288,7 +311,165 @@
             Iron: 0.65,
             Gold: 0.5,
             Netherite: 0.9,
-            Diamond: 0.4
+            Diamond: 0.4,
+            Quartz: 0.77
+        },
+
+        Damage_resistance:{
+            Default: {
+                Physical: 0,
+                Fire: 0,
+                Frost: 0,
+                Magic: 0,
+                Wither: 0,
+                Ender: 0
+            },
+
+            Leather: {
+                Physical: 20,
+                Fire: 4,
+                Frost: 30,
+                Magic: 8,
+                Wither: 5,
+                Ender: 9
+            },
+
+            Chainmail: {
+                Physical: 32,
+                Fire: 14,
+                Frost: 4,
+                Magic: 16,
+                Wither: 8,
+                Ender: 10
+            },
+
+            Copper: {
+                Physical: 18,
+                Fire: 14,
+                Frost: 12,
+                Magic: 36,
+                Wither: 10,
+                Ender: 18
+            },
+
+            Iron: {
+                Physical: 41,
+                Fire: 16,
+                Frost: 29,
+                Magic: 6,
+                Wither: 14,
+                Ender: 4
+            },
+
+            Gold:{
+                Physical: 11,
+                Fire: 30,
+                Frost: 17,
+                Magic: 12,
+                Wither: 19,
+                Ender: 6
+            },
+
+            Netherite:{
+                Physical: 44,
+                Fire: 36,
+                Frost: 0,
+                Magic: 0,
+                Wither: 30,
+                Ender: 2
+            },
+
+            Diamond:{
+                Physical: 6,
+                Fire: 12,
+                Frost: 28,
+                Magic: 24,
+                Wither: 4,
+                Ender: 28,
+            },
+
+            Quartz:{
+                Physical: 38,
+                Fire: 12,
+                Frost: 12,
+                Magic: 27,
+                Wither: 7,
+                Ender: 33,
+            }
+        },
+
+        Status_resistance: {
+            Default:{
+                Bleed: 0,
+                Poison: 0,
+                Corruption: 0,
+                Wither: 0,
+                Frostbite: 0,
+            },
+
+            Leather:{
+                Bleed: 10,
+                Poison: 14,
+                Corruption: 3,
+                Wither: 2,
+                Frostbite: 30
+            },
+
+            Chainmail:{
+                Bleed: 20,
+                Poison: 4,
+                Corruption: 16,
+                Wither: 8,
+                Frostbite: 2,
+            },
+
+            Copper:{
+                Bleed: 8,
+                Poison: 32,
+                Corruption: 16,
+                Wither: 3,
+                Frostbite: 6
+            },
+
+            Iron:{
+                Bleed: 8,
+                Poison: 12,
+                Corruption: 16,
+                Wither: 20,
+                Frostbite: 10
+            },
+
+            Gold:{
+                Bleed: 5,
+                Poison: 9,
+                Corruption: 14,
+                Wither: 24,
+                Frostbite: 24
+            },
+
+            Netherite:{
+                Bleed: 6,
+                Poison: 14,
+                Corruption: 28,
+                Wither: 38,
+                Frostbite: 19
+            },
+
+            Diamond:{
+                Bleed: 23,
+                Poison: 11,
+                Corruption: 27,
+                Wither: 11,
+                Frostbite: 11
+            },
+
+            Quartz:{
+                Bleed: 10,
+                Poison: 10,
+                Corruption: 20,
+                Wither: 10,
+                Frostbite: 20
+            }
         },
 
         # Armor Piece split (rougly adds up to 1)
@@ -303,12 +484,13 @@
 
         # Resource_locations:{
             Leather: "../data/minecraft/recipe/",
-            Chainmail: "../data/content_lock/recipe/",
+            Chainmail: "../data/content_lock/recipe/armor/",
             Copper: "../data/minecraft/recipe/",
             Iron: "../data/minecraft/recipe/",
             Gold: "../data/minecraft/recipe/",
             Netherite: "../data/minecraft/recipe/",
-            Diamond: "../data/minecraft/recipe/"
+            Diamond: "../data/minecraft/recipe/",
+            Quartz: "../data/content_lock/recipe/armor/"
         }
     }
 }

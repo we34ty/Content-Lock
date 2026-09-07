@@ -1,65 +1,90 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "X": "minecraft:leather"
-  },
-  "pattern": [
-    "XXX",
-    "X X",
-    "X X"
-  ],
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:wooden_spear",
+  "addition": "#minecraft:stone_tool_materials",
+  "template": "minecraft:wild_armor_trim_smithing_template",
   "result": {
     "components": {
       "minecraft:attribute_modifiers": [
         {
-          "type": "minecraft:armor",
-          "id": "content_lock.basic_armor_stats_legs",
-          "amount": 1.67,
+          "type": "minecraft:attack_damage",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 0.01,
           "operation": "add_value",
-          "slot": "legs"
+          "slot": "mainhand"
         },
         {
-          "type": "minecraft:armor_toughness",
-          "id": "content_lock.basic_armor_stats_legs",
-          "amount": 0.67,
+          "type": "minecraft:attack_speed",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -3.68,
           "operation": "add_value",
-          "slot": "legs"
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_knockback",
+          "id": "content_lock.basic_weapon_stats",
+          "amount": -1,
+          "operation": "add_value",
+          "slot": "mainhand"
         },
         {
           "type": "minecraft:movement_efficiency",
-          "id": "content_lock.basic_armor_stats_legs",
-          "amount": 0.03,
+          "id": "content_lock.basic_weapon_stats",
+          "amount": 0.02,
           "operation": "add_value",
-          "slot": "legs"
+          "slot": "mainhand"
         }
       ],
-      "unbreakable": {},
-      "tooltip_display": {
-        "hidden_components": [
-          "unbreakable",
-          "attribute_modifiers"
-        ]
+      "minimum_attack_charge": 1,
+      "minecraft:max_damage": 151,
+      "kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_conditions": {
+          "max_duration_ticks": 40,
+          "min_relative_speed": 0.3
+        },
+        "damage_multiplier": 0.5,
+        "delay_ticks": 20,
+        "dismount_conditions": {
+          "min_relative_speed": 0.7,
+          "max_duration_ticks": 30
+        },
+        "knockback_conditions": {
+          "min_relative_speed": 0.1,
+          "max_duration_ticks": 60
+        },
+        "sound": "item.spear_wood.use",
+        "hit_sound": "item.spear_wood.hit"
+      },
+      "attack_range": {
+        "max_reach": 5.0,
+        "min_reach": 3.0,
+        "hitbox_margin": 0.3
+      },
+      "swing_animation": {
+        "type": "stab",
+        "duration": 50
       },
       "custom_data": {
-        "content_lock:armor": {
-          "weight": 0.03,
-          "damage_resistance": {
-            "physical": 20,
-            "fire": 3,
-            "frost": 30,
-            "magic": 8,
-            "wither": 5,
-            "ender": 9
+        "content_lock:weapon": {
+          "type": "Spear",
+          "damage_type": "melee",
+          "damage": {
+            "physical": 14.27,
+            "fire": 0,
+            "frost": 0,
+            "magic": 0,
+            "wither": 6.11,
+            "ender": 0
           },
-          "status_resistance": {
-            "bleed": 10,
-            "poison": 16,
-            "corruption": 6,
-            "wither": 4,
-            "frostbite": 30
+          "status_effects": {
+            "bleed": 0,
+            "poison": 0,
+            "corruption": 0,
+            "wither": 44.03,
+            "frostbite": 17.61
           },
-          "damage_resistance_modifiers": {
+          "damage_modifiers": {
             "physical": [],
             "fire": [],
             "frost": [],
@@ -67,19 +92,25 @@
             "wither": [],
             "ender": []
           },
-          "status_resistance_modifiers": {
+          "status_effect_modifiers": {
             "bleed": [],
             "poison": [],
             "corruption": [],
             "wither": [],
             "frostbite": []
+          },
+          "scaling": {
+            "strength": 1,
+            "dexterity": 1.5,
+            "notardness": 0,
+            "promiles": 2.5
           }
         }
       },
       "lore": [
         {
-          "translate": "content_lock:armor.damage_resistance",
-          "fallback": "Damage Resistance",
+          "translate": "content_lock:weapons.damage",
+          "fallback": "Damage",
           "bold": true
         },
         {
@@ -89,7 +120,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "20",
+              "text": "142",
               "italic": false,
               "color": "blue"
             }
@@ -102,7 +133,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "3",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
@@ -115,7 +146,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "30",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
@@ -128,7 +159,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "8",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
@@ -141,7 +172,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "5",
+              "text": "61",
               "italic": false,
               "color": "blue"
             }
@@ -154,15 +185,15 @@
           "color": "gray",
           "extra": [
             {
-              "text": "9",
+              "text": "0",
               "italic": false,
               "color": "blue"
             }
           ]
         },
         {
-          "translate": "content_lock:armor.status_resistance",
-          "fallback": "Status Resistance",
+          "translate": "content_lock:weapons.status_effects",
+          "fallback": "Status Effects",
           "bold": true
         },
         {
@@ -172,7 +203,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "10",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -185,7 +216,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "16",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -198,7 +229,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "6",
+              "text": "0",
               "italic": false,
               "color": "red"
             }
@@ -211,7 +242,7 @@
           "color": "gray",
           "extra": [
             {
-              "text": "3",
+              "text": "44",
               "italic": false,
               "color": "red"
             }
@@ -224,31 +255,23 @@
           "color": "gray",
           "extra": [
             {
-              "text": "30",
-              "italic": false,
-              "color": "red"
-            }
-          ]
-        },
-        {
-          "text": ""
-        },
-        {
-          "translate": "content_lock.armor.weight",
-          "fallback": "Weight: ",
-          "italic": false,
-          "color": "gold",
-          "extra": [
-            {
-              "text": "3%",
+              "text": "17",
               "italic": false,
               "color": "red"
             }
           ]
         }
-      ]
+      ],
+      "tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "weapon": {
+        "item_damage_per_attack": 1
+      }
     },
     "count": 1,
-    "id": "minecraft:leather_leggings"
+    "id": "minecraft:stone_spear"
   }
 }

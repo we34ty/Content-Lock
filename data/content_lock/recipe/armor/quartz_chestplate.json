@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:leather_chestplate",
+  "addition": "minecraft:iron_chain",
+  "template": "minecraft:wild_armor_trim_smithing_template",
+  "result": {
+    "count": 1,
+    "id": "minecraft:chainmail_chestplate",
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "content_lock.basic_armor_stats_chest",
+          "amount": 3.11,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "content_lock.basic_armor_stats_chest",
+          "amount": 3.11,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:movement_efficiency",
+          "id": "content_lock.basic_armor_stats_chest",
+          "amount": 0.13,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "unbreakable": {},
+      "tooltip_display": {
+        "hidden_components": [
+          "unbreakable"
+        ]
+      }
+    }
+  }
+}
