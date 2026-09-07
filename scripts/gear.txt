@@ -12,7 +12,7 @@
             Gold: 0.6,
             Diamond: 0.75,
             Netherite: 1.5,
-            Quartz: 1.41
+            Quartz: 1.41,
 
             Sword: 1,
             Hoe: 1.3,

@@ -12,6 +12,7 @@ alone, such as sweeping ratio and knockback.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import math
 import re
@@ -134,6 +135,8 @@ def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
             "Armor points": {},
             "Armor toughness points": {},
             "Movement efficiency": {},
+            "Damage resistance": {},
+            "Status resistance": {},
             "Armor Piece split (rougly adds up to 1)": {},
             "Resource Locations": {},
         },
@@ -179,6 +182,8 @@ def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
     old_gear["Armor"]["Armor points"] = armor.get("Armor_points", {})
     old_gear["Armor"]["Armor toughness points"] = armor.get("Armor_toughness", {})
     old_gear["Armor"]["Movement efficiency"] = armor.get("Movement_efficiency", {})
+    old_gear["Armor"]["Damage resistance"] = armor.get("Damage_resistance", {})
+    old_gear["Armor"]["Status resistance"] = armor.get("Status_resistance", {})
     old_gear["Armor"]["Armor Piece split (rougly adds up to 1)"] = armor.get("Split", {})
     old_gear["Armor"]["Resource Locations"] = armor.get("Resource_locations", {})
 
@@ -515,6 +520,144 @@ def ensure_minimum_attack_charge(components: dict[str, Any]) -> bool:
     return False
 
 
+def build_armor_lore(
+    damage_resistance: dict[str, float | int],
+    status_resistance: dict[str, float | int],
+    weight: float | int,
+) -> list[dict[str, Any]]:
+    lore: list[dict[str, Any]] = [
+        {
+            "translate": "content_lock:armor.damage_resistance",
+            "fallback": "Damage Resistance",
+            "bold": True,
+        }
+    ]
+
+    damage_labels = [
+        ("physical", "Physical"),
+        ("fire", "Fire"),
+        ("frost", "Frost"),
+        ("magic", "Magic"),
+        ("wither", "Wither"),
+        ("ender", "Ender"),
+    ]
+    for key, label in damage_labels:
+        lore.append(
+            {
+                "translate": f"content_lock.weapon.{key}",
+                "fallback": f"{label}: ",
+                "italic": False,
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": lore_number(damage_resistance[key]),
+                        "italic": False,
+                        "color": "blue",
+                    }
+                ],
+            }
+        )
+
+    lore.append(
+        {
+            "translate": "content_lock:armor.status_resistance",
+            "fallback": "Status Resistance",
+            "bold": True,
+        }
+    )
+
+    status_labels = [
+        ("bleed", "Bleed"),
+        ("poison", "Poison"),
+        ("corruption", "Corruption"),
+        ("wither", "Wither"),
+        ("frostbite", "Frostbite"),
+    ]
+    for key, label in status_labels:
+        lore.append(
+            {
+                "translate": f"content_lock.weapon.status.{key}",
+                "fallback": f"{label}: ",
+                "italic": False,
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": lore_number(status_resistance[key]),
+                        "italic": False,
+                        "color": "red",
+                    }
+                ],
+            }
+        )
+
+    lore.extend(
+        [
+            {"text": ""},
+            {
+                "translate": "content_lock.armor.weight",
+                "fallback": "Weight: ",
+                "italic": False,
+                "color": "gold",
+                "extra": [
+                    {
+                        "text": f"{lore_number(float(weight) * 100)}%",
+                        "italic": False,
+                        "color": "red",
+                    }
+                ],
+            },
+        ]
+    )
+    return lore
+
+
+def ensure_armor_custom_data(
+    components: dict[str, Any],
+    weight: float | int,
+    damage_resistance: dict[str, float | int],
+    status_resistance: dict[str, float | int],
+) -> bool:
+    existing_custom_data = components.get("custom_data")
+    if not isinstance(existing_custom_data, dict):
+        existing_custom_data = {}
+    original_custom_data = copy.deepcopy(existing_custom_data)
+
+    armor_data = existing_custom_data.get("content_lock:armor")
+    if not isinstance(armor_data, dict):
+        armor_data = {}
+
+    damage_types = ["physical", "fire", "frost", "magic", "wither", "ender"]
+    status_effects = ["bleed", "poison", "corruption", "wither", "frostbite"]
+    existing_damage_modifiers = armor_data.get("damage_resistance_modifiers")
+    if not isinstance(existing_damage_modifiers, dict):
+        existing_damage_modifiers = {}
+    existing_status_modifiers = armor_data.get("status_resistance_modifiers")
+    if not isinstance(existing_status_modifiers, dict):
+        existing_status_modifiers = {}
+
+    armor_data["weight"] = canonical_number(weight)
+    armor_data["damage_resistance"] = {
+        key: canonical_number(damage_resistance[key]) for key in damage_types
+    }
+    armor_data["status_resistance"] = {
+        key: canonical_number(status_resistance[key]) for key in status_effects
+    }
+    armor_data["damage_resistance_modifiers"] = {
+        key: existing_damage_modifiers.get(key, [])
+        for key in damage_types
+    }
+    armor_data["status_resistance_modifiers"] = {
+        key: existing_status_modifiers.get(key, [])
+        for key in status_effects
+    }
+
+    new_custom_data = dict(existing_custom_data)
+    new_custom_data["content_lock:armor"] = armor_data
+    changed = original_custom_data != new_custom_data
+    components["custom_data"] = new_custom_data
+    return changed
+
+
 def update_weapon_recipe(
     path: Path,
     gear: dict[str, dict[str, dict[str, Any]]],
@@ -623,12 +766,33 @@ def update_armor_recipe(
     armor = gear["Armor"]["Armor points"]
     toughness = gear["Armor"]["Armor toughness points"]
     movement = gear["Armor"]["Movement efficiency"]
+    damage_resistance_tables = gear["Armor"]["Damage resistance"]
+    status_resistance_tables = gear["Armor"]["Status resistance"]
     split = gear["Armor"]["Armor Piece split (rougly adds up to 1)"]
 
     piece_share = float(split.get(slot_key, 0.0))
     armor_value = float(armor.get(material_key, 0.0)) * piece_share
     toughness_value = float(toughness.get(material_key, 0.0)) * piece_share
     movement_value = float(movement.get(material_key, 0.0)) * piece_share
+    damage_resistance_table = damage_resistance_tables.get(
+        material_key,
+        damage_resistance_tables.get("Default", {}),
+    )
+    status_resistance_table = status_resistance_tables.get(
+        material_key,
+        status_resistance_tables.get("Default", {}),
+    )
+    damage_types = ["Physical", "Fire", "Frost", "Magic", "Wither", "Ender"]
+    status_effects = ["Bleed", "Poison", "Corruption", "Wither", "Frostbite"]
+    damage_resistance = {
+        key.lower(): float(damage_resistance_table.get(key, 0.0)) * piece_share
+        for key in damage_types
+    }
+    status_resistance = {
+        key.lower(): float(status_resistance_table.get(key, 0.0)) * piece_share
+        for key in status_effects
+    }
+    armor_lore = build_armor_lore(damage_resistance, status_resistance, movement_value)
 
     data = json.loads(path.read_text(encoding="utf-8"))
     changes: list[str] = []
@@ -650,6 +814,16 @@ def update_armor_recipe(
             changes.append(f"armor_toughness={canonical_number(toughness_value)}")
         if set_attribute_amount(components, "minecraft:movement_efficiency", movement_value):
             changes.append(f"movement_efficiency={canonical_number(movement_value)}")
+        if ensure_armor_custom_data(
+            components,
+            movement_value,
+            damage_resistance,
+            status_resistance,
+        ):
+            changes.append("custom_data")
+        if components.get("lore") != armor_lore:
+            components["lore"] = armor_lore
+            changes.append("lore")
 
     if changes and apply_changes:
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
