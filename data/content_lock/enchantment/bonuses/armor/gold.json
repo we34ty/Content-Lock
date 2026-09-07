@@ -2,7 +2,7 @@
   "anvil_cost": 100,
   "description": {
     "translate": "content_lock:enchantment.bonus.armor.gold",
-    "fallback": "Set: Gold",
+    "fallback": "Set: Rammed",
     "color": "#d5a00d"
   },
   "effects": {

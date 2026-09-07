@@ -2,7 +2,7 @@
   "anvil_cost": 100,
   "description": {
     "translate": "content_lock:enchantment.bonus.armor.chainmail",
-    "fallback": "Set: Chainmail",
+    "fallback": "Set: Enchain",
     "color": "#d5a00d"
   },
   "effects": {

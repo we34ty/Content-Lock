@@ -2,7 +2,7 @@
   "anvil_cost": 100,
   "description": {
     "translate": "content_lock:enchantment.bonus.armor.leather",
-    "fallback": "Set: Leather",
+    "fallback": "Set: Rally",
     "color": "#d5a00d"
   },
   "effects": {

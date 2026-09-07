@@ -2,7 +2,7 @@
   "anvil_cost": 100,
   "description": {
     "translate": "content_lock:enchantment.bonus.armor.copper",
-    "fallback": "Set: Copper",
+    "fallback": "Set: Charged Up",
     "color": "#d5a00d"
   },
   "effects": {
