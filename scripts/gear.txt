@@ -303,7 +303,6 @@
             Quartz: 20
         },
 
-        # Doubles as Weight
         Movement_efficiency:{
             Leather: 0.15,
             Chainmail: 0.3,

@@ -37,13 +37,11 @@
       "unbreakable": {},
       "tooltip_display": {
         "hidden_components": [
-          "unbreakable",
-          "attribute_modifiers"
+          "unbreakable"
         ]
       },
       "custom_data": {
         "content_lock:armor": {
-          "weight": 0.03,
           "damage_resistance": {
             "physical": 20,
             "fire": 3,
@@ -232,19 +230,6 @@
         },
         {
           "text": ""
-        },
-        {
-          "translate": "content_lock.armor.weight",
-          "fallback": "Weight: ",
-          "italic": false,
-          "color": "gold",
-          "extra": [
-            {
-              "text": "3%",
-              "italic": false,
-              "color": "red"
-            }
-          ]
         }
       ]
     },

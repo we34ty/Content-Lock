@@ -523,7 +523,6 @@ def ensure_minimum_attack_charge(components: dict[str, Any]) -> bool:
 def build_armor_lore(
     damage_resistance: dict[str, float | int],
     status_resistance: dict[str, float | int],
-    weight: float | int,
 ) -> list[dict[str, Any]]:
     lore: list[dict[str, Any]] = [
         {
@@ -590,30 +589,11 @@ def build_armor_lore(
             }
         )
 
-    lore.extend(
-        [
-            {"text": ""},
-            {
-                "translate": "content_lock.armor.weight",
-                "fallback": "Weight: ",
-                "italic": False,
-                "color": "gold",
-                "extra": [
-                    {
-                        "text": f"{lore_number(float(weight) * 100)}%",
-                        "italic": False,
-                        "color": "red",
-                    }
-                ],
-            },
-        ]
-    )
     return lore
 
 
 def ensure_armor_custom_data(
     components: dict[str, Any],
-    weight: float | int,
     damage_resistance: dict[str, float | int],
     status_resistance: dict[str, float | int],
 ) -> bool:
@@ -635,7 +615,6 @@ def ensure_armor_custom_data(
     if not isinstance(existing_status_modifiers, dict):
         existing_status_modifiers = {}
 
-    armor_data["weight"] = canonical_number(weight)
     armor_data["damage_resistance"] = {
         key: canonical_number(damage_resistance[key]) for key in damage_types
     }
@@ -792,7 +771,7 @@ def update_armor_recipe(
         key.lower(): float(status_resistance_table.get(key, 0.0)) * piece_share
         for key in status_effects
     }
-    armor_lore = build_armor_lore(damage_resistance, status_resistance, movement_value)
+    armor_lore = build_armor_lore(damage_resistance, status_resistance)
 
     data = json.loads(path.read_text(encoding="utf-8"))
     changes: list[str] = []
@@ -816,7 +795,6 @@ def update_armor_recipe(
             changes.append(f"movement_efficiency={canonical_number(movement_value)}")
         if ensure_armor_custom_data(
             components,
-            movement_value,
             damage_resistance,
             status_resistance,
         ):
