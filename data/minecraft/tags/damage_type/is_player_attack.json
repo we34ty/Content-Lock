@@ -4,6 +4,7 @@
 	  "minecraft:mace_smash",
 	  "content_lock:malice",
 	  "content_lock:multihit",
-	  "#content_lock:melee"
+	  "#content_lock:melee",
+	  "#content_lock:magic"
 	]
   }

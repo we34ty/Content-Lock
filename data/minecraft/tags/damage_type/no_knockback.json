@@ -30,6 +30,8 @@
 	  "minecraft:campfire",
 	  "content_lock:bleed",
 	  "content_lock:malice",
-	  "content_lock:heat"
+	  "content_lock:heat",
+	  "#content_lock:melee",
+	  "#content_lock:magic"
 	]
   }

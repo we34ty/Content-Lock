@@ -19,6 +19,8 @@
 	  "content_lock:splinter",
 	  "content_lock:bleed",
 	  "content_lock:malice",
-	  "content_lock:heat"
+	  "content_lock:heat",
+	  "#content_lock:magic",
+	  "#content_lock:melee"
 	]
   }

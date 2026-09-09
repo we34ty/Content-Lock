@@ -1,5 +1,10 @@
 {
 	"values": [
-	  "content_lock:melee/magic"
+	  "content_lock:magic/physical",
+	  "content_lock:magic/fire",
+	  "content_lock:magic/frost",
+	  "content_lock:magic/magic",
+	  "content_lock:magic/wither",
+	  "content_lock:magic/ender"
 	]
   }
