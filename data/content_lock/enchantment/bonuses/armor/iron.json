@@ -11,55 +11,12 @@
         "affected": "victim",
         "effect": {
           "type": "run_function",
-          "function": "content_lock:player/enchantments/bonuses/armor/iron/fire_damage"
-        },
-        "requirements": {
-          "condition": "damage_source_properties",
-          "predicate": {
-            "tags": [
-              {
-                "id": "minecraft:is_fire",
-                "expected": true
-              }
-            ]
-          }
-        },
-        "enchanted": "victim"
-      },
-      {
-        "affected": "victim",
-        "effect": {
-          "type": "run_function",
-          "function": "content_lock:player/enchantments/bonuses/armor/iron/fall_damage"
-        },
-        "requirements": {
-          "condition": "damage_source_properties",
-          "predicate": {
-            "tags": [
-              {
-                "id": "is_fall",
-                "expected": true
-              }
-            ]
-          }
-        },
-        "enchanted": "victim"
-      },
-      {
-        "affected": "victim",
-        "effect": {
-          "type": "run_function",
           "function": "content_lock:player/enchantments/bonuses/armor/iron/enemy_damage"
         },
         "requirements": {
           "condition": "damage_source_properties",
           "predicate": {
-            "tags": [
-              {
-                "id": "content_lock:enemy_attack",
-                "expected": true
-              }
-            ]
+            "is_direct": true
           }
         },
         "enchanted": "victim"

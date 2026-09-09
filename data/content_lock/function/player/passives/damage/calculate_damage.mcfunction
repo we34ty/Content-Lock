@@ -15,9 +15,6 @@ function content_lock:player/passives/damage/calculate_damage_macro {type:"magic
 function content_lock:player/passives/damage/calculate_damage_macro {type:"wither"}
 function content_lock:player/passives/damage/calculate_damage_macro {type:"ender"}
 
-tag @s remove content_lock.weapons.add_jumping_damage
-tag @s remove content_lock.weapons.add_running_damage
-
 function content_lock:player/passives/damage/calculate_status_macro {type:"bleed"}
 function content_lock:player/passives/damage/calculate_status_macro {type:"poison"}
 function content_lock:player/passives/damage/calculate_status_macro {type:"corruption"}

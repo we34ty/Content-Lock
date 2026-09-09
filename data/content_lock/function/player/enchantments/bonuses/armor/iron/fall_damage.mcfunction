@@ -1,9 +1,9 @@
+advancement revoke @s only content_lock:checks/bonuses/armor/damage_from_fall
 execute if entity @s[tag=content_lock.enchantment.bonus.armor.iron.damaged_already] run return 0
 tag @s add content_lock.enchantment.bonus.armor.iron.damaged_already
 
 execute unless score @s content_lock.enchantment.bonus.armor.iron.stacks matches 1.. run return 0
 scoreboard players remove @s content_lock.enchantment.bonus.armor.iron.stacks 1
-say lol
 
 scoreboard players set @s content_lock.temp1 0
 execute if score @s content_lock.enchantment.bonus.armor.iron.pieces matches 1 run scoreboard players set @s content_lock.temp1 4000
