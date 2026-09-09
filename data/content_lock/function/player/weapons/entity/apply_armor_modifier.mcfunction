@@ -1,0 +1,3 @@
+$data merge storage content_lock:saved_stats {name: $(name), operation: $(operation), physical_damage: $(physical_damage), fire_damage: $(fire_damage), frost_damage: $(frost_damage), magic_damage: $(magic_damage), wither_damage: $(wither_damage), ender_damage: $(ender_damage), bleed_status: $(bleed_status), poison_status: $(poison_status), corruption_status: $(corruption_status), wither_status: $(wither_status), frostbite_status: $(frostbite_status)}
+execute if entity @s[type=player] run return run function content_lock:player/weapons/entity/apply/player with storage content_lock:saved_stats
+function content_lock:player/weapons/entity/apply/mob with storage content_lock:saved_stats

@@ -1,2 +1,2 @@
-$execute unless data storage content_lock:player_data UUIDs[{UUID:$(UUID)}].data.$(path) run data modify storage content_lock:player_data UUIDs[{UUID:$(UUID)}].data set value {$(path):[]}
+$execute unless data storage content_lock:player_data UUIDs[{UUID:$(UUID)}].data.$(path) run data modify storage content_lock:player_data UUIDs[{UUID:$(UUID)}].data.$(path) merge value []
 $data modify storage content_lock:player_data UUIDs[{UUID:$(UUID)}].data.$(path) append value $(data)

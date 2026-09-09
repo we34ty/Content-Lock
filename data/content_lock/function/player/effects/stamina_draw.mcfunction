@@ -37,3 +37,4 @@ data modify storage content_lock:saved_stats UUID set from entity @s UUID
 data modify storage content_lock:saved_stats data.stamina set from storage content_lock:saved_stats stamina
 data modify storage content_lock:saved_stats data.stamina_spaces set from storage content_lock:saved_stats stamina_spaces
 function content_lock:player/passives/storage/player_data/save_path with storage content_lock:saved_stats
+data remove storage content_lock:saved_stats data

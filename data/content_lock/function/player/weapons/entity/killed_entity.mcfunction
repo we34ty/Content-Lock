@@ -1,0 +1,1 @@
+execute if score @s content_lock.enchantment.bonus.armor.iron.pieces matches 1.. as @n at @s run function content_lock:player/enchantments/bonuses/armor/iron/killed_for_stacks

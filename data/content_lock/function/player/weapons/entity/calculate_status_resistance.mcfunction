@@ -1,4 +1,5 @@
 ## Store the damage taken as scoreboard to be reduced by the armor and bonuses
+$data merge storage content_lock:saved_stats {path: "$(path)"}
 $execute store result score @s content_lock.temp1 run data get storage content_lock:saved_stats $(path)_status 1000
 
 ## Calculate the resistance of boots
@@ -14,10 +15,11 @@ scoreboard players set @s content_lock.temp2 0
 scoreboard players set @s content_lock.temp3 1000
 
 scoreboard players set @s content_lock.timer1 0
-execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[0]."status_resistance_modifiers"."$(path)"
+$execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[0]."status_resistance_modifiers"."$(path)"
+scoreboard players remove @s content_lock.timer1 1
 data merge storage content_lock:saved_stats {i:0,slot:0}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
-execute if score @s content_lock.timer1 matches 1.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
+execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
 
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
@@ -38,10 +40,11 @@ scoreboard players set @s content_lock.temp2 0
 scoreboard players set @s content_lock.temp3 1000
 
 scoreboard players set @s content_lock.timer1 0
-execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[1]."status_resistance_modifiers"."$(path)"
+$execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[1]."status_resistance_modifiers"."$(path)"
+scoreboard players remove @s content_lock.timer1 1
 data merge storage content_lock:saved_stats {i:0,slot:1}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
-execute if score @s content_lock.timer1 matches 1.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
+execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
 
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
@@ -62,10 +65,11 @@ scoreboard players set @s content_lock.temp2 0
 scoreboard players set @s content_lock.temp3 1000
 
 scoreboard players set @s content_lock.timer1 0
-execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[2]."status_resistance_modifiers"."$(path)"
+$execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[2]."status_resistance_modifiers"."$(path)"
+scoreboard players remove @s content_lock.timer1 1
 data merge storage content_lock:saved_stats {i:0,slot:2}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
-execute if score @s content_lock.timer1 matches 1.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
+execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
 
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
@@ -86,10 +90,11 @@ scoreboard players set @s content_lock.temp2 0
 scoreboard players set @s content_lock.temp3 1000
 
 scoreboard players set @s content_lock.timer1 0
-execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[3]."status_resistance_modifiers"."$(path)"
+$execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats cached_armor[3]."status_resistance_modifiers"."$(path)"
+scoreboard players remove @s content_lock.timer1 1
 data merge storage content_lock:saved_stats {i:0,slot:3}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
-execute if score @s content_lock.timer1 matches 1.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
+execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_status_resistance_loop with storage content_lock:saved_stats
 
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
@@ -102,10 +107,11 @@ scoreboard players set @s content_lock.temp2 0
 scoreboard players set @s content_lock.temp3 1000
 
 scoreboard players set @s content_lock.timer1 0
-execute store result score @s content_lock.timer1 run data get storage content_lock:weapon_stats status_effect_resistances.$(path)
+$execute store result score @s content_lock.timer1 run data get storage content_lock:weapon_stats status_effect_resistances.$(path)
+scoreboard players remove @s content_lock.timer1 1
 data merge storage content_lock:saved_stats {i:0}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
-execute if score @s content_lock.timer1 matches 1.. run function content_lock:player/weapons/entity/calculate_storage_status_resistance_loop with storage content_lock:saved_stats
+execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_storage_status_resistance_loop with storage content_lock:saved_stats
 
 scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3

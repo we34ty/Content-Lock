@@ -1,0 +1,91 @@
+{
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.bonus.armor.iron",
+    "fallback": "Set: Backup Plan",
+    "color": "#d5a00d"
+  },
+  "effects": {
+    "post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/iron/fire_damage"
+        },
+        "requirements": {
+          "condition": "damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:is_fire",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "enchanted": "victim"
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/iron/fall_damage"
+        },
+        "requirements": {
+          "condition": "damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "is_fall",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "enchanted": "victim"
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/iron/enemy_damage"
+        },
+        "requirements": {
+          "condition": "damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "content_lock:enemy_attack",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "enchanted": "victim"
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/iron/tick"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#content_lock:enchantable/armor",
+  "weight": 1
+}

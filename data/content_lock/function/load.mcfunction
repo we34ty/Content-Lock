@@ -178,6 +178,12 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.gold.stacks_old d
 scoreboard objectives add content_lock.enchantment.bonus.armor.gold.timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.gold.debuff_timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.gold.debuff_stacks dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.iron.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.iron.stacks dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.iron.stack_cooldown dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.iron.fire_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.iron.enemy_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.iron.enemy_stacks dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

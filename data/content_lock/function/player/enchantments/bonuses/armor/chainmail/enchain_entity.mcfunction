@@ -1,13 +1,11 @@
-## Set the timer for the enchain effect to 100 ticks (5 seconds)
-scoreboard players set @s content_lock.enchantment.bonus.armor.chainmail.timer 100
+## Set the timer for the enchain effect to 5 seconds
+scoreboard players set @s content_lock.enchantment.bonus.armor.chainmail.timer 5
 
 particle angry_villager ~ ~2 ~ 0.2 0.2 0.2 1 10 normal
 
 ## Apply the physical resistance reduction to the entity's armor
-$execute if items entity @s armor.feet *[custom_data~{"content_lock:armor":{}}] run data modify entity @s Inventory[{Slot:100b}].components."custom_data"."content_lock:armor".resistance_modifiers.physical append value {type:"add",value:-$(reduction),name:"content_lock:enchantment.bonus.armor.chainmail"}
-$execute if items entity @s armor.legs *[custom_data~{"content_lock:armor":{}}] run data modify entity @s Inventory[{Slot:101b}].components."custom_data"."content_lock:armor".resistance_modifiers.physical append value {type:"add",value:-$(reduction),name:"content_lock:enchantment.bonus.armor.chainmail"}
-$execute if items entity @s armor.chest *[custom_data~{"content_lock:armor":{}}] run data modify entity @s Inventory[{Slot:102b}].components."custom_data"."content_lock:armor".resistance_modifiers.physical append value {type:"add",value:-$(reduction),name:"content_lock:enchantment.bonus.armor.chainmail"}
-$execute if items entity @s armor.head *[custom_data~{"content_lock:armor":{}}] run data modify entity @s Inventory[{Slot:103b}].components."custom_data"."content_lock:armor".resistance_modifiers.physical append value {type:"add",value:-$(reduction),name:"content_lock:enchantment.bonus.armor.chainmail"}
+$data merge storage content_lock:saved_stats {name:"content_lock.enchantment.bonus.armor.chainmail",operation:"add",physical_damage:$(reduction),fire_damage:$(reduction),frost_damage:$(reduction),magic_damage:$(reduction),wither_damage:$(reduction),ender_damage:$(reduction),bleed_status:$(reduction),poison_status:$(reduction),corruption_status:$(reduction),wither_status:$(reduction),frostbite_status:$(reduction)}
+function content_lock:player/weapons/entity/apply_armor_modifier with storage content_lock:saved_stats
 
 ## Apply the movement speed and attack damage reduction to the entity
 execute unless entity @s[tag=content_lock.boss] run attribute @s movement_speed modifier add content_lock.enchantment.bonus.armor.chainmail -1 add_multiplied_total

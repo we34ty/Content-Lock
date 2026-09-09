@@ -107,3 +107,4 @@ execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matc
 execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.leather.buff_timer 1
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.cooldown matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.chainmail.cooldown 1
 scoreboard players set @s content_lock.enchantment.bonus.armor.copper.pieces 0
+tag @s remove content_lock.enchantment.bonus.armor.iron.damaged_already

@@ -1,0 +1,12 @@
+$execute unless data storage content_lock:saved_stats {physical_damage:0} run function content_lock:player/weapons/entity/apply/mob_modifier {type: "physical", name: "$(name)", operation: "$(operation)", value: $(physical_damage)}
+$execute unless data storage content_lock:saved_stats {fire_damage:0} run function content_lock:player/weapons/entity/apply/mob_modifier {type: "fire", name: "$(name)", operation: "$(operation)", value: $(fire_damage)}
+$execute unless data storage content_lock:saved_stats {frost_damage:0} run function content_lock:player/weapons/entity/apply/mob_modifier {type: "frost", name: "$(name)", operation: "$(operation)", value: $(frost_damage)}
+$execute unless data storage content_lock:saved_stats {magic_damage:0} run function content_lock:player/weapons/entity/apply/mob_modifier {type: "magic", name: "$(name)", operation: "$(operation)", value: $(magic_damage)}
+$execute unless data storage content_lock:saved_stats {wither_damage:0} run function content_lock:player/weapons/entity/apply/mob_modifier {type: "wither", name: "$(name)", operation: "$(operation)", value: $(wither_damage)}
+$execute unless data storage content_lock:saved_stats {ender_damage:0} run function content_lock:player/weapons/entity/apply/mob_modifier {type: "ender", name: "$(name)", operation: "$(operation)", value: $(ender_damage)}
+
+$execute unless data storage content_lock:saved_stats {bleed_status:0} run function content_lock:player/weapons/entity/apply/mob_status_modifier {type: "bleed", name: "$(name)", operation: "$(operation)", value: $(bleed_status)}
+$execute unless data storage content_lock:saved_stats {poison_status:0} run function content_lock:player/weapons/entity/apply/mob_status_modifier {type: "poison", name: "$(name)", operation: "$(operation)", value: $(poison_status)}
+$execute unless data storage content_lock:saved_stats {corruption_status:0} run function content_lock:player/weapons/entity/apply/mob_status_modifier {type: "corruption", name: "$(name)", operation: "$(operation)", value: $(corruption_status)}
+$execute unless data storage content_lock:saved_stats {wither_status:0} run function content_lock:player/weapons/entity/apply/mob_status_modifier {type: "wither", name: "$(name)", operation: "$(operation)", value: $(wither_status)}
+$execute unless data storage content_lock:saved_stats {frostbite_status:0} run function content_lock:player/weapons/entity/apply/mob_status_modifier {type: "frostbite", name: "$(name)", operation: "$(operation)", value: $(frostbite_status)}

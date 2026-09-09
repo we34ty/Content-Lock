@@ -35,6 +35,7 @@ execute if score @s content_lock.enchantment.bonus.armor.leather.pieces matches 
 
 ## Save the buff to the player's data
 function content_lock:player/passives/storage/player_data/append_to_path with storage content_lock:saved_stats
+data remove storage content_lock:saved_stats data
 
 execute at @s run playsound entity.generic.drink player @a ~ ~ ~ 1 0.66
 execute at @s run playsound entity.player.burp player @a ~ ~ ~ 1 0.4

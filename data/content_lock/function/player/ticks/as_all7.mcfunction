@@ -24,3 +24,7 @@ execute at @s if entity @n[type=villager,distance=..40,tag=!content_lock.village
 execute if entity @s[scores={content_lock.enchantment.lightstruck=1..}] run scoreboard players remove @s content_lock.enchantment.lightstruck 1
 
 execute if entity @s[scores={content_lock.sneak_time_counter=1..}] at @s if entity @n[tag=content_lock.wormhole,distance=..1.5] run function content_lock:mobs/entities/wormhole/teleport
+
+execute if score @s content_lock.enchantment.bonus.armor.iron.fire_timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/iron/fire_tick
+execute if score @s content_lock.enchantment.bonus.armor.iron.enemy_stacks matches 1.. run function content_lock:player/enchantments/bonuses/armor/iron/enemy_tick
+execute if score @s content_lock.enchantment.bonus.armor.iron.pieces matches 1.. run function content_lock:player/enchantments/bonuses/armor/iron/stack_tick

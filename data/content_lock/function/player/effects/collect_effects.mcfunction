@@ -5,7 +5,7 @@ execute at @s if entity @e[distance=0..5,tag=content_lock.vehicle] run return ru
 
 #retrieve some values from the storage, such as stamina, to help with the performance,
 #by not having to calculate the stamina display each tick
-data merge storage content_lock:saved_stats {bleed:E004,frost:E009,corruption:E014,stamina:E016,UUID:[I;0,0,0,0],storage:"content_lock:saved_stats",path:"stamina"}
+data merge storage content_lock:saved_stats {bleed:E004,frost:E009,corruption:E014,stamina:"",UUID:[I;0,0,0,0],storage:"content_lock:saved_stats",path:"stamina"}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
 function content_lock:player/passives/storage/player_data/load_path with storage content_lock:saved_stats
 

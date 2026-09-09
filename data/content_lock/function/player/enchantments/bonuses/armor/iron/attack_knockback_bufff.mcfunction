@@ -1,0 +1,1 @@
+$attribute @s attack_knockback modifier add content_lock.enchantment.bonus.armor.iron.enemy_damage $(value) add_value

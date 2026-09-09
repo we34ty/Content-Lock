@@ -14,3 +14,4 @@ execute store result storage content_lock:saved_stats data.value float 0.0001 ru
 #tellraw @a {score:{name:"@s",objective:"content_lock.temp1"}}
 
 execute if score @s content_lock.enchantment.bonus.armor.gold.timer matches 1.. run function content_lock:player/passives/storage/player_data/append_to_path with storage content_lock:saved_stats
+data remove storage content_lock:saved_stats data

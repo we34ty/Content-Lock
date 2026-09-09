@@ -30,6 +30,7 @@ execute unless score @s content_lock.temp1 = @s content_lock.temp3 run item modi
 execute unless score @s content_lock.temp1 = @s content_lock.temp3 run data merge storage content_lock:saved_stats {storage:"content_lock:saved_stats",path:"weapon_runtime",data:{lore_checksum:0}}
 execute unless score @s content_lock.temp1 = @s content_lock.temp3 store result storage content_lock:saved_stats data.lore_checksum int 1 run scoreboard players get @s content_lock.temp1
 execute unless score @s content_lock.temp1 = @s content_lock.temp3 run function content_lock:player/passives/storage/player_data/save_path with storage content_lock:saved_stats
+data remove storage content_lock:saved_stats data
 
 data modify storage content_lock:weapon_stats data.distance set from storage content_lock:weapon_stats distance
 execute store result storage content_lock:weapon_stats data.yaw byte 0.7 run data get entity @n[tag=content_lock.weapons.attacking] Rotation[0]
