@@ -28,7 +28,11 @@ data merge storage content_lock:saved_stats {i:0,slot:0}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
 execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_resistance_loop with storage content_lock:saved_stats
 
-scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
+scoreboard players set @s content_lock.huhhealth1 1000
+scoreboard players operation @s content_lock.huhhealth1 -= @s content_lock.temp2
+scoreboard players operation @s content_lock.temp3 *= @s content_lock.huhhealth1
+scoreboard players set @s content_lock.huhhealth2 1000
+scoreboard players operation @s content_lock.temp3 /= @s content_lock.huhhealth2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
 scoreboard players set @s content_lock.temp3 1000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp3
@@ -53,7 +57,11 @@ data merge storage content_lock:saved_stats {i:0,slot:1}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
 execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_resistance_loop with storage content_lock:saved_stats
 
-scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
+scoreboard players set @s content_lock.huhhealth1 1000
+scoreboard players operation @s content_lock.huhhealth1 -= @s content_lock.temp2
+scoreboard players operation @s content_lock.temp3 *= @s content_lock.huhhealth1
+scoreboard players set @s content_lock.huhhealth2 1000
+scoreboard players operation @s content_lock.temp3 /= @s content_lock.huhhealth2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
 scoreboard players set @s content_lock.temp3 1000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp3
@@ -79,7 +87,11 @@ data merge storage content_lock:saved_stats {i:0,slot:2}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
 execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_resistance_loop with storage content_lock:saved_stats
 
-scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
+scoreboard players set @s content_lock.huhhealth1 1000
+scoreboard players operation @s content_lock.huhhealth1 -= @s content_lock.temp2
+scoreboard players operation @s content_lock.temp3 *= @s content_lock.huhhealth1
+scoreboard players set @s content_lock.huhhealth2 1000
+scoreboard players operation @s content_lock.temp3 /= @s content_lock.huhhealth2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
 scoreboard players set @s content_lock.temp3 1000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp3
@@ -105,7 +117,11 @@ data merge storage content_lock:saved_stats {i:0,slot:3}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
 execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_armor_resistance_loop with storage content_lock:saved_stats
 
-scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
+scoreboard players set @s content_lock.huhhealth1 1000
+scoreboard players operation @s content_lock.huhhealth1 -= @s content_lock.temp2
+scoreboard players operation @s content_lock.temp3 *= @s content_lock.huhhealth1
+scoreboard players set @s content_lock.huhhealth2 1000
+scoreboard players operation @s content_lock.temp3 /= @s content_lock.huhhealth2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
 scoreboard players set @s content_lock.temp3 1000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp3
@@ -122,7 +138,11 @@ data merge storage content_lock:saved_stats {i:0}
 execute store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
 execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/weapons/entity/calculate_storage_resistance_loop with storage content_lock:saved_stats
 
-scoreboard players operation @s content_lock.temp1 += @s content_lock.temp2
+scoreboard players set @s content_lock.huhhealth1 1000
+scoreboard players operation @s content_lock.huhhealth1 -= @s content_lock.temp2
+scoreboard players operation @s content_lock.temp3 *= @s content_lock.huhhealth1
+scoreboard players set @s content_lock.huhhealth2 1000
+scoreboard players operation @s content_lock.temp3 /= @s content_lock.huhhealth2
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.temp3
 scoreboard players set @s content_lock.temp3 1000
 scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp3
