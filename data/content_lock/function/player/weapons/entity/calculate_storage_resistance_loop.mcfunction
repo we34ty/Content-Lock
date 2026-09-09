@@ -13,7 +13,7 @@ scoreboard players operation @s content_lock.temp3 *= @s content_lock.huhhealth1
 scoreboard players set @s content_lock.huhhealth1 1000
 scoreboard players operation @s content_lock.temp3 /= @s content_lock.huhhealth1
 
-tellraw @s [{text:"Found modifier: ",color:"yellow"},{storage:"content_lock:saved_stats",nbt:"damage_resistance.value",color:"green"}]
+#tellraw @s [{text:"Found modifier: ",color:"yellow"},{storage:"content_lock:saved_stats",nbt:"damage_resistance.value",color:"green"}]
 
 scoreboard players remove @s content_lock.timer1 1
 execute unless score @s content_lock.timer1 matches 0.. run return 0
