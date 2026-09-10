@@ -1,0 +1,4 @@
+execute if items entity @s armor.head *[custom_data~{"content_lock:enchanted":false}] run function content_lock:player/enchantments/bonuses/armor/check_type {slot: head, name: helmet}
+execute if items entity @s armor.chest *[custom_data~{"content_lock:enchanted":false}] run function content_lock:player/enchantments/bonuses/armor/check_type {slot: chest, name: chestplate}
+execute if items entity @s armor.legs *[custom_data~{"content_lock:enchanted":false}] run function content_lock:player/enchantments/bonuses/armor/check_type {slot: legs, name: leggings}
+execute if items entity @s armor.feet *[custom_data~{"content_lock:enchanted":false}] run function content_lock:player/enchantments/bonuses/armor/check_type {slot: feet, name: boots}

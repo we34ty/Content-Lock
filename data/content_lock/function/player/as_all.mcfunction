@@ -86,6 +86,8 @@ function content_lock:player/enchantments/bonuses/armor/gold/remove_buff
 scoreboard players set @s content_lock.enchantment.bonus.armor.gold.reduction 1000
 execute if score @s content_lock.enchantment.bonus.armor.gold.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/gold/player_tick
 
+attribute @s gravity modifier remove content_lock.enchantment.bonus.armor.diamond.sneaking
+attribute @s fall_damage_multiplier modifier remove content_lock.enchantment.bonus.armor.diamond.sneaking
 execute unless score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/remove_fall_reduction
 execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/diamond/player_tick
 

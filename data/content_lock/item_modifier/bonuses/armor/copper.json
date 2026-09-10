@@ -1,0 +1,20 @@
+[
+  {
+    "function": "set_custom_data",
+    "tag": {
+      "content_lock:enchanted": true
+    }
+  },
+  {
+    "function": "set_enchantments",
+    "enchantments": {
+      "content_lock:bonuses/armor/leather": 0,
+      "content_lock:bonuses/armor/chainmail": 0,
+      "content_lock:bonuses/armor/copper": 1,
+      "content_lock:bonuses/armor/iron": 0,
+      "content_lock:bonuses/armor/gold": 0,
+      "content_lock:bonuses/armor/diamond": 0,
+      "content_lock:bonuses/armor/netherite": 0
+    }
+  }
+]

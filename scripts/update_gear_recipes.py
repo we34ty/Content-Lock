@@ -455,6 +455,7 @@ def ensure_weapon_custom_data(
     existing_custom_data = components.get("custom_data")
     if not isinstance(existing_custom_data, dict):
         existing_custom_data = {}
+    enchanted = existing_custom_data.get("content_lock:enchanted", False)
 
     weapon_data = existing_custom_data.get("content_lock:weapon")
     if not isinstance(weapon_data, dict):
@@ -495,7 +496,8 @@ def ensure_weapon_custom_data(
             "promiles": 2.5
         }
 
-    new_custom_data = dict(existing_custom_data)
+    new_custom_data = {"content_lock:enchanted": enchanted}
+    new_custom_data.update(existing_custom_data)
     new_custom_data["content_lock:weapon"] = weapon_data
     changed = components.get("custom_data") != new_custom_data
     components["custom_data"] = new_custom_data
@@ -601,6 +603,7 @@ def ensure_armor_custom_data(
     if not isinstance(existing_custom_data, dict):
         existing_custom_data = {}
     original_custom_data = copy.deepcopy(existing_custom_data)
+    enchanted = existing_custom_data.get("content_lock:enchanted", False)
 
     armor_data = existing_custom_data.get("content_lock:armor")
     if not isinstance(armor_data, dict):
@@ -630,7 +633,8 @@ def ensure_armor_custom_data(
         for key in status_effects
     }
 
-    new_custom_data = dict(existing_custom_data)
+    new_custom_data = {"content_lock:enchanted": enchanted}
+    new_custom_data.update(existing_custom_data)
     new_custom_data["content_lock:armor"] = armor_data
     changed = original_custom_data != new_custom_data
     components["custom_data"] = new_custom_data

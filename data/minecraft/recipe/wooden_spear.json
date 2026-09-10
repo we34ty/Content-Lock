@@ -73,6 +73,7 @@
         "duration": 40
       },
       "custom_data": {
+        "content_lock:enchanted": false,
         "content_lock:weapon": {
           "type": "Spear",
           "damage_type": "melee",

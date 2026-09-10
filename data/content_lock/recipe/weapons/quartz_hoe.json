@@ -62,6 +62,7 @@
         "damage_per_block": 0
       },
       "custom_data": {
+        "content_lock:enchanted": false,
         "content_lock:weapon": {
           "type": "Hoe",
           "damage_type": "melee",

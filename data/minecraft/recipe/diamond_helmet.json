@@ -37,6 +37,7 @@
         ]
       },
       "custom_data": {
+        "content_lock:enchanted": false,
         "content_lock:armor": {
           "damage_resistance": {
             "physical": 1,

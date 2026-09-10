@@ -10,3 +10,8 @@ execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 
 
 execute unless entity @s[tag=content_lock.enchantment.bonus.armor.diamond.checked_tick] run scoreboard players set @s content_lock.enchantment.bonus.armor.diamond.pieces 0
 tag @s remove content_lock.enchantment.bonus.armor.diamond.checked_tick
+
+execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1 if predicate content_lock:sneaking run function content_lock:player/enchantments/bonuses/armor/diamond/reduce_grabity {value: -0.7, fall: -0.5}
+execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 2 if predicate content_lock:sneaking run function content_lock:player/enchantments/bonuses/armor/diamond/reduce_grabity {value: -0.75, fall: -0.7}
+execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 3 if predicate content_lock:sneaking run function content_lock:player/enchantments/bonuses/armor/diamond/reduce_grabity {value: -0.8, fall: -0.9}
+execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 4 if predicate content_lock:sneaking run function content_lock:player/enchantments/bonuses/armor/diamond/reduce_grabity {value: -0.85, fall: -1}

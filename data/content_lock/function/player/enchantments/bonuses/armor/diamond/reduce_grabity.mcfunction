@@ -1,0 +1,2 @@
+$attribute @s gravity modifier add content_lock.enchantment.bonus.armor.diamond.sneaking $(value) add_multiplied_total
+$attribute @s fall_damage_multiplier modifier add content_lock.enchantment.bonus.armor.diamond.sneaking $(fall) add_multiplied_total

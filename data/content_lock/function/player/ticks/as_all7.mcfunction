@@ -28,3 +28,5 @@ execute if entity @s[scores={content_lock.sneak_time_counter=1..}] at @s if enti
 execute if score @s content_lock.enchantment.bonus.armor.iron.fire_timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/iron/fire_tick
 execute if score @s content_lock.enchantment.bonus.armor.iron.enemy_stacks matches 1.. run function content_lock:player/enchantments/bonuses/armor/iron/enemy_tick
 execute if score @s content_lock.enchantment.bonus.armor.iron.pieces matches 1.. run function content_lock:player/enchantments/bonuses/armor/iron/stack_tick
+
+function content_lock:player/enchantments/bonuses/armor/check_inventory
