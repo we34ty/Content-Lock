@@ -38,6 +38,6 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#content_lock:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/chainmail_armor",
   "weight": 1
 }

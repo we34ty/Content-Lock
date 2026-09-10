@@ -1,0 +1,68 @@
+{
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.bonus.armor.diamond",
+    "fallback": "Set: Air Trigger",
+    "color": "#d5a00d"
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/diamond/tick"
+        }
+      }
+    ],
+    "post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/diamond/take_damage"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": false
+            }
+          }
+        },
+        "enchanted": "victim"
+      },
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/diamond/on_attacker"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": false
+            }
+          }
+        },
+        "enchanted": "victim"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#content_lock:enchantable/diamond_armor",
+  "weight": 1
+}

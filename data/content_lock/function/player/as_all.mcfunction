@@ -86,6 +86,9 @@ function content_lock:player/enchantments/bonuses/armor/gold/remove_buff
 scoreboard players set @s content_lock.enchantment.bonus.armor.gold.reduction 1000
 execute if score @s content_lock.enchantment.bonus.armor.gold.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/gold/player_tick
 
+execute unless score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/remove_fall_reduction
+execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/diamond/player_tick
+
 ##check if player has been teleported by a wormhole and if the chunk they are in is loaded
 execute if entity @s[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run attribute @s gravity modifier remove content_lock.load_chunk_no_gravity
 execute if entity @s[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run tag @s remove content_lock.load_chunk_no_gravity

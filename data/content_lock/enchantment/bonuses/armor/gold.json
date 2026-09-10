@@ -27,6 +27,6 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#content_lock:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/golden_armor",
   "weight": 1
 }

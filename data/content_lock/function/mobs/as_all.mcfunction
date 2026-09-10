@@ -10,3 +10,4 @@ execute if entity @s[tag=content_lock.carapacer] at @s run function content_lock
 execute if entity @s[tag=content_lock.carapacer,tag=content_lock.carapacer.taken_shape] run tag @s remove content_lock.carapacer.taken_shape
 
 execute if entity @s[scores={content_lock.heat=1..}] run scoreboard players remove @s content_lock.heat 1
+execute if entity @s[tag=content_lock.enchantment.bonus.armor.diamond.exclude] run tag @s remove content_lock.enchantment.bonus.armor.diamond.exclude

@@ -43,6 +43,6 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#content_lock:enchantable/armor",
+  "supported_items": "#content_lock:enchantable/iron_armor",
   "weight": 1
 }

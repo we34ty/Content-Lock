@@ -184,6 +184,11 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.iron.stack_cooldo
 scoreboard objectives add content_lock.enchantment.bonus.armor.iron.fire_timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.iron.enemy_timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.iron.enemy_stacks dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.jumps dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.stacks dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.cooldown dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.safe dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy
