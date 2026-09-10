@@ -26,7 +26,7 @@ scoreboard players set @s content_lock.temp1 3
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.enchantment.bonus.armor.leather.health_to_recover
 execute if score @s content_lock.enchantment.bonus.armor.copper.pieces matches 1.. run scoreboard players operation @s content_lock.enchantment.bonus.armor.copper.charges += @s content_lock.temp1
 
-execute if score @s content_lock.enchantment.bonus.armor.copper.charges matches 250.. run tag @s add content_lock.enchantment.bonus.armor.copper.send_lightning
+execute if score @s content_lock.enchantment.bonus.armor.copper.charges matches 175.. run tag @s add content_lock.enchantment.bonus.armor.copper.send_lightning
 
 #scoreboard players set @s content_lock.temp1 3
 #scoreboard players operation @s content_lock.temp2 *= @s content_lock.temp1

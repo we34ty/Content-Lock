@@ -33,7 +33,7 @@ scoreboard players set @s[scores={content_lock.stamina_delay=..-1}] content_lock
 
 ##stamina regen calculations
 scoreboard players operation @s content_lock.stamina_regen = sprint.stamina.restoration lsp.Values
-scoreboard players set @s content_lock.temp1 500
+scoreboard players set @s content_lock.temp1 750
 scoreboard players operation @s content_lock.temp2 = @s content_lock.max_stamina
 scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
 scoreboard players operation @s content_lock.stamina_regen += @s content_lock.temp2

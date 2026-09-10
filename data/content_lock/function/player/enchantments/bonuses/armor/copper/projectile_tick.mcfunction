@@ -6,7 +6,7 @@ execute unless score @s content_lock.timer2 matches 20 run return 0
 scoreboard players set @s content_lock.temp1 0
 scoreboard players set @s content_lock.timer2 0
 scoreboard players add @s content_lock.timer1 1
-playsound content_lock:item.enchantment.lightstruck.attack player @a ~ ~ ~ 1 1
+playsound content_lock:item.enchantment.lightstruck.attack player @a ~ ~ ~ 0.1 1
 
 tag @e remove content_lock.enchantment.bonus.armor.copper.lightning_marked
 data merge storage content_lock:weapon_stats {Id:0,storage:"content_lock:weapon_stats"}
