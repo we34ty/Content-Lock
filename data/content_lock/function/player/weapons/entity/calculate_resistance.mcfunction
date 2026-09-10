@@ -2,11 +2,11 @@
 $data merge storage content_lock:saved_stats {path: "$(path)"}
 $execute store result score @s content_lock.temp1 run data get storage content_lock:saved_stats $(path)_damage 1000
 
-#$tellraw @s [{text:"Beginning damage of $(path): ",color:"gold"},{storage:"content_lock:saved_stats",nbt:"$(path)_damage",color:"red"}]
-#$tellraw @s [{text:"Boots resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[0].damage_resistance.$(path)",color:"yellow"}]
-#$tellraw @s [{text:"Leggings resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[1].damage_resistance.$(path)",color:"yellow"}]
-#$tellraw @s [{text:"Chestplate resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[2].damage_resistance.$(path)",color:"yellow"}]
-#$tellraw @s [{text:"Helmet resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[3].damage_resistance.$(path)",color:"yellow"}]
+#$tellraw @a [{text:"Beginning damage of $(path): ",color:"gold"},{storage:"content_lock:saved_stats",nbt:"$(path)_damage",color:"red"}]
+#$tellraw @a [{text:"Boots resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[0].damage_resistance.$(path)",color:"yellow"}]
+#$tellraw @a [{text:"Leggings resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[1].damage_resistance.$(path)",color:"yellow"}]
+#$tellraw @a [{text:"Chestplate resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[2].damage_resistance.$(path)",color:"yellow"}]
+#$tellraw @a [{text:"Helmet resistance: ",color:"blue"},{storage:"content_lock:saved_stats",nbt:"cached_armor[3].damage_resistance.$(path)",color:"yellow"}]
 
 ## Calculate the resistance of boots
 scoreboard players set @s content_lock.temp2 0
@@ -150,4 +150,4 @@ scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp3
 ## store the final damage after armor and bonuses in the storage for the entity to use
 $execute store result storage content_lock:saved_stats $(path)_damage double 0.001 run scoreboard players get @s content_lock.temp1
 
-#$tellraw @s [{text:"End damage of $(path): ",color:"green"},{storage:"content_lock:saved_stats",nbt:"$(path)_damage",color:"red"}]
+#$tellraw @a [{text:"End damage of $(path): ",color:"green"},{storage:"content_lock:saved_stats",nbt:"$(path)_damage",color:"red"}]

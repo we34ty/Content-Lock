@@ -20,4 +20,3 @@ execute unless score @s content_lock.temp1 = @s content_lock.temp3 run function 
 tag @s add content_lock.weapons.attacking
 execute at @s as @e[type=!#entities,distance=..40] run function content_lock:player/weapons/detect_whos_attacked with storage content_lock:weapon_stats data
 tag @s remove content_lock.weapons.attacking
-say L
