@@ -2,6 +2,7 @@
 attribute @s movement_efficiency modifier remove content_lock.basic_stats
 attribute @s max_health modifier add content_lock.basic_stats -8 add_value
 attribute @s scale modifier add content_lock.basic_stats -0.1 add_multiplied_base
+attribute @s attack_damage base set 0.01
 
 ##Do the same with the ones from player level
 function content_lock:player/passives/reset_level_stats

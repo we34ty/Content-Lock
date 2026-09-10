@@ -9,6 +9,10 @@ execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 
 
 execute unless score @s content_lock.enchantment.bonus.armor.diamond.stacks matches 5.. run scoreboard players add @s content_lock.enchantment.bonus.armor.diamond.stacks 1
 
+tag @s add content_lock.enchantment.bonus.armor.diamond.exclude_removal
+function content_lock:player/enchantments/bonuses/armor/diamond/remove_buff
+tag @s remove content_lock.enchantment.bonus.armor.diamond.exclude_removal
+
 data merge storage content_lock:saved_stats {UUID:0, path:"weapon.status_effect_modifiers.bleed",data:{name:"content_lock.enchantment.bonus.armor.diamond.buff", value:0, operation:"add"}}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
 
@@ -25,6 +29,6 @@ data remove storage content_lock:saved_stats data
 
 execute at @s as @n[tag=content_lock.enchantment.bonus.armor.diamond.dealt_dmage] run function content_lock:player/enchantments/bonuses/armor/diamond/attacker_debuff
 
-#tellraw @s {score:{"name":"@s","objective":"content_lock.enchantment.bonus.armor.diamond.pieces"}}
+#tellraw @s {score:{"name":"@s","objective":"content_lock.enchantment.bonus.armor.diamond.stacks"}}
 
 playsound item.armor.equip_diamond player @s ~ ~ ~ 1 1.6

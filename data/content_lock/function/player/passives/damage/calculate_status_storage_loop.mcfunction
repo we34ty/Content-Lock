@@ -1,4 +1,5 @@
 $data modify storage content_lock:saved_stats status_effect_modifier set from storage content_lock:saved_stats status_effect_modifiers.$(type)[$(i)]
+
 $function content_lock:player/passives/damage/check_operation_status {damage_type:$(damage_type)}
 
 scoreboard players operation @s content_lock.temp1 += @s content_lock.huhhealth1

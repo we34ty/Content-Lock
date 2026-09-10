@@ -7,6 +7,7 @@ $data merge storage content_lock:saved_stats {type:"$(type)",i:0}
 
 $execute store result score @s content_lock.timer1 run data get storage content_lock:saved_stats status_effect_modifiers.$(type)
 scoreboard players remove @s content_lock.timer1 1
+
 execute if score @s content_lock.timer1 matches 0.. store result storage content_lock:saved_stats i int 1 run scoreboard players get @s content_lock.timer1
 execute if score @s content_lock.timer1 matches 0.. run function content_lock:player/passives/damage/calculate_status_storage_loop with storage content_lock:saved_stats
 

@@ -5,7 +5,7 @@ data modify storage content_lock:weapon_stats data.damage_type set from storage 
 data modify storage content_lock:saved_stats damage_type set from storage content_lock:weapon_stats data.damage_type
 scoreboard players set @s content_lock.temp3 0
 
-$data merge storage content_lock:saved_stats {UUID:$(UUID),storage:"content_lock:saved_stats",path:"weapon",damage_modifier:{}}
+$data merge storage content_lock:saved_stats {UUID:$(UUID),storage:"content_lock:saved_stats",path:"weapon",damage_modifiers:{},status_effect_modifiers:{}}
 function content_lock:player/passives/storage/player_data/load_path with storage content_lock:saved_stats
 
 function content_lock:player/passives/damage/calculate_damage_macro {type:"physical"}

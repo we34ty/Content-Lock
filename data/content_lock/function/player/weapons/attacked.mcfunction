@@ -7,7 +7,7 @@ data modify storage content_lock:weapon_stats data.UUID set from entity @s UUID
 data merge storage content_lock:saved_stats {storage:"content_lock:saved_stats",path:"weapon_runtime",UUID:[I;0,0,0,0]}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
 function content_lock:player/passives/storage/player_data/load_path with storage content_lock:saved_stats
-function content_lock:player/passives/damage/calculate_damage with storage content_lock:weapon_stats
+function content_lock:player/passives/damage/calculate_damage with storage content_lock:saved_stats
 
 scoreboard players set @s content_lock.temp3 -1
 execute store result score @s content_lock.temp3 run data get storage content_lock:saved_stats lore_checksum 1
