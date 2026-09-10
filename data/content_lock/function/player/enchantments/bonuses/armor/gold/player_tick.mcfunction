@@ -9,7 +9,7 @@ scoreboard players operation @s content_lock.temp1 = @s content_lock.enchantment
 scoreboard players operation @s content_lock.temp1 *= @s content_lock.enchantment.bonus.armor.gold.stacks
 
 scoreboard players set @s content_lock.temp2 4
-execute if score @s content_lock.enchantment.bonus.armor.gold.timer matches ..0 if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 40000.. if entity @s[nbt={OnGround:1b}] run scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp2
+# if score @s content_lock.enchantment.bonus.armor.gold.timer matches ..0 if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 40000.. if entity @s[nbt={OnGround:1b}] run scoreboard players operation @s content_lock.temp1 /= @s content_lock.temp2
 
 execute store result storage content_lock:saved_stats value float 0.000045 run scoreboard players get @s content_lock.temp1
 
@@ -17,7 +17,7 @@ function content_lock:player/enchantments/bonuses/armor/gold/give_buff with stor
 
 scoreboard players set @s content_lock.enchantment.bonus.armor.gold.pieces 0
 
-execute if predicate content_lock:detect_movement if score @s content_lock.enchantment.bonus.armor.gold.stacks_old >= @s content_lock.enchantment.bonus.armor.gold.stacks if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.gold.stacks 100
+#execute if predicate content_lock:detect_movement if score @s content_lock.enchantment.bonus.armor.gold.stacks_old >= @s content_lock.enchantment.bonus.armor.gold.stacks if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.gold.stacks 100
 execute unless predicate content_lock:detect_movement if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.gold.stacks 500
 execute if score @s content_lock.enchantment.bonus.armor.gold.stacks matches ..-1 run scoreboard players set @s content_lock.enchantment.bonus.armor.gold.stacks 0
 
