@@ -33,15 +33,15 @@ execute if score @s content_lock.heat matches 200..349 run data merge storage co
 execute if score @s content_lock.heat matches 350..499 run data merge storage content_lock:saved_stats {frost:E047}
 execute if score @s content_lock.heat matches 500.. run data merge storage content_lock:saved_stats {frost:E044}
 
-execute if score @s content_lock.frostbite_stacks matches -100..-1 run data merge storage content_lock:saved_stats {frost:E045}
-execute if score @s content_lock.frostbite_stacks matches -200..-101 run data merge storage content_lock:saved_stats {frost:E046}
-execute if score @s content_lock.frostbite_stacks matches -300..-201 run data merge storage content_lock:saved_stats {frost:E047}
-execute if score @s content_lock.frostbite_stacks matches ..-301 run data merge storage content_lock:saved_stats {frost:E044}
+execute if score @s content_lock.frostbite_stacks matches -30..-1 run data merge storage content_lock:saved_stats {frost:E045}
+execute if score @s content_lock.frostbite_stacks matches -60..-31 run data merge storage content_lock:saved_stats {frost:E046}
+execute if score @s content_lock.frostbite_stacks matches -90..-61 run data merge storage content_lock:saved_stats {frost:E047}
+execute if score @s content_lock.frostbite_stacks matches ..-91 run data merge storage content_lock:saved_stats {frost:E044}
 
-execute if score @s content_lock.frostbite_stacks matches 1..100 run data merge storage content_lock:saved_stats {frost:E008}
-execute if score @s content_lock.frostbite_stacks matches 101..200 run data merge storage content_lock:saved_stats {frost:E007}
-execute if score @s content_lock.frostbite_stacks matches 201..300 run data merge storage content_lock:saved_stats {frost:E006}
-execute if score @s content_lock.frostbite_stacks matches 301.. run data merge storage content_lock:saved_stats {frost:E005}
+execute if score @s content_lock.frostbite_stacks matches 1..30 run data merge storage content_lock:saved_stats {frost:E008}
+execute if score @s content_lock.frostbite_stacks matches 31..60 run data merge storage content_lock:saved_stats {frost:E007}
+execute if score @s content_lock.frostbite_stacks matches 61..90 run data merge storage content_lock:saved_stats {frost:E006}
+execute if score @s content_lock.frostbite_stacks matches 91.. run data merge storage content_lock:saved_stats {frost:E005}
 
 #corruption
 data merge storage content_lock:saved_stats {corruption_amount:"",value:"",type:"corruption_amount","end":"corruption"}

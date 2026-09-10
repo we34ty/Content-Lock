@@ -27,7 +27,9 @@ execute store result storage content_lock:saved_stats data.value int 1 run score
 function content_lock:player/passives/storage/player_data/append_to_path with storage content_lock:saved_stats
 data remove storage content_lock:saved_stats data
 
-execute at @s as @n[tag=content_lock.enchantment.bonus.armor.diamond.dealt_dmage] run function content_lock:player/enchantments/bonuses/armor/diamond/attacker_debuff
+tag @s add content_lock.enchantment.bonus.armor.diamond.taken_damage
+execute on attacker run function content_lock:player/enchantments/bonuses/armor/diamond/attacker_debuff
+tag @s remove content_lock.enchantment.bonus.armor.diamond.taken_damage
 
 #tellraw @s {score:{"name":"@s","objective":"content_lock.enchantment.bonus.armor.diamond.stacks"}}
 

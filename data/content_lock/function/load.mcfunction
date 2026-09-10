@@ -199,7 +199,6 @@ scoreboard objectives add content_lock.fishing.is_fishing minecraft.used:minecra
 scoreboard objectives add content_lock.fishing.stress dummy
 scoreboard objectives add content_lock.fishing.display dummy
 scoreboard objectives add content_lock.respawn_timer dummy
-scoreboard objectives add content_lock.heat dummy
 scoreboard objectives add content_lock.fireball_spellbook_charge dummy
 scoreboard objectives add content_lock.UUID_id dummy
 scoreboard objectives add content_lock.fight_time dummy

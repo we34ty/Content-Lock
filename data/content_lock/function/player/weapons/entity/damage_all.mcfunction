@@ -22,7 +22,7 @@ $function content_lock:player/weapons/entity/stacks_macro {name:"bleed_stacks", 
 $function content_lock:player/weapons/entity/stacks_macro {name:"poison_stacks", amount: $(poison_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"corruption_meter", amount: $(corruption_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"wither_stacks", amount: $(wither_status)}
-$function content_lock:player/weapons/entity/stacks_macro {name:"frostbite_stacks", amount: $(frostbite_status)}
+$function content_lock:player/effects/apply_frostbite {amount: $(frostbite_status)}
 
 execute if data entity @s {Health:0.0f} run function content_lock:player/weapons/entity/killed_entity
 

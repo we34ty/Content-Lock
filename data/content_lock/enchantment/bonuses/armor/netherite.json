@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 100,
+  "description": {
+    "translate": "content_lock:enchantment.bonus.armor.netherite",
+    "fallback": "Set: Charged Up",
+    "color": "#d5a00d"
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "content_lock:player/enchantments/bonuses/armor/copper/tick"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#content_lock:enchantable/netherite_armor",
+  "weight": 1
+}
