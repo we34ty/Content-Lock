@@ -18,7 +18,8 @@ function content_lock:player/enchantments/bonuses/armor/gold/give_buff with stor
 scoreboard players set @s content_lock.enchantment.bonus.armor.gold.pieces 0
 
 #execute if predicate content_lock:detect_movement if score @s content_lock.enchantment.bonus.armor.gold.stacks_old >= @s content_lock.enchantment.bonus.armor.gold.stacks if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.gold.stacks 100
-execute unless predicate content_lock:detect_movement if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.gold.stacks 500
+
+execute unless predicate content_lock:detect_movement if score @s content_lock.enchantment.bonus.armor.gold.stacks matches 1.. run function content_lock:player/enchantments/bonuses/armor/gold/reduce_speed
 execute if score @s content_lock.enchantment.bonus.armor.gold.stacks matches ..-1 run scoreboard players set @s content_lock.enchantment.bonus.armor.gold.stacks 0
 
 execute if score @s content_lock.enchantment.bonus.armor.gold.stacks_old >= @s content_lock.enchantment.bonus.armor.gold.stacks run scoreboard players remove @s content_lock.enchantment.bonus.armor.gold.timer 1
