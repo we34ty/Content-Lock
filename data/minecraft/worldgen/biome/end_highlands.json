@@ -7,6 +7,13 @@
   "features": [
     [],
     [],
+    [
+      "ore_quartz_nether",
+      "ore_diamond",
+      "ore_diamond_buried",
+      "ore_diamond_large",
+      "ore_diamond_medium"
+    ],
     [],
     [],
     [

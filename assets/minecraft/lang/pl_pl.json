@@ -5,6 +5,8 @@
   "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Diament lub Sztabka Netherytu",
   "item.minecraft.snout_armor_trim_smithing_template.new": "Żelazne i Złote Ulepszenie",
   "item.minecraft.wild_armor_trim_smithing_template.new": "Kolcze, Kamienne i Miedziane Ulepszenie",
+  "item.minecraft.quartz": "Kwarc Kresu",
+  "block.minecraft.nether_quartz_ore": "Ruda Kwarcu Kresu",
   "attribute.name.movement_efficiency": "wagi",
   "item.minecraft.potion.effect.glowing": "Mikstura blasku",
   "enchantment.minecraft.unbreaking": "Klątwa niezniszczalności",

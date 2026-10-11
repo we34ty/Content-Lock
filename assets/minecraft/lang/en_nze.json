@@ -5,6 +5,8 @@
   "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Diamond or Netherite Ingot",
   "item.minecraft.snout_armor_trim_smithing_template.new": "Iron & Golden Upgrade",
   "item.minecraft.wild_armor_trim_smithing_template.new": "Chainmail, Stone & Copper Upgrade",
+  "item.minecraft.quartz": "Ender Quartz",
+  "block.minecraft.nether_quartz_ore": "Ender Quartz Ore",
   "attribute.name.movement_efficiency": "Weight",
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
   "enchantment.minecraft.unbreaking": "Curse of Unbreaking",

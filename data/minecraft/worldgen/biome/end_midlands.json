@@ -4,7 +4,16 @@
   "effects": {
     "water_color": "#3f76e4"
   },
-  "features": [],
+  "features": [
+    [],
+    [
+      "ore_quartz_nether",
+      "ore_diamond",
+      "ore_diamond_buried",
+      "ore_diamond_large",
+      "ore_diamond_medium"
+    ]
+  ],
   "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
