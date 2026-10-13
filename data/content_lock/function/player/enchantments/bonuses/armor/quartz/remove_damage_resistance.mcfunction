@@ -1,0 +1,2 @@
+function content_lock:player/weapons/entity/remove_armor_modifier {name:"content_lock.enchantment.bonus.armor.quartz.damage_resistance"}
+tag @s remove content_lock.enchantment.bonus.armor.quartz.damage_resistance

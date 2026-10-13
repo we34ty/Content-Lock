@@ -91,6 +91,9 @@ attribute @s fall_damage_multiplier modifier remove content_lock.enchantment.bon
 execute unless score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/remove_fall_reduction
 execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/diamond/player_tick
 
+execute if entity @s[tag=content_lock.enchantment.bonus.armor.quartz.damage_resistance] run function content_lock:player/enchantments/bonuses/armor/quartz/remove_damage_resistance
+execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/quartz/player_tick
+
 ##check if player has been teleported by a wormhole and if the chunk they are in is loaded
 execute if entity @s[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run attribute @s gravity modifier remove content_lock.load_chunk_no_gravity
 execute if entity @s[tag=content_lock.load_chunk_no_gravity] at @s if loaded ~ ~ ~ run tag @s remove content_lock.load_chunk_no_gravity
@@ -113,3 +116,4 @@ execute if score @s content_lock.enchantment.bonus.armor.leather.buff_timer matc
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.cooldown matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.chainmail.cooldown 1
 scoreboard players set @s content_lock.enchantment.bonus.armor.copper.pieces 0
 tag @s remove content_lock.enchantment.bonus.armor.iron.damaged_already
+tag @s remove content_lock.enchantment.bonus.armor.netherite.checked_tick

@@ -1,0 +1,4 @@
+execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 1 run function content_lock:player/enchantments/bonuses/armor/quartz/give_damage_resistance {value:20}
+execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 2 run function content_lock:player/enchantments/bonuses/armor/quartz/give_damage_resistance {value:40}
+execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 3 run function content_lock:player/enchantments/bonuses/armor/quartz/give_damage_resistance {value:50}
+execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 4 run function content_lock:player/enchantments/bonuses/armor/quartz/give_damage_resistance {value:60}

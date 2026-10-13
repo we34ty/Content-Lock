@@ -189,6 +189,16 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.jumps dum
 scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.stacks dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.cooldown dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.safe dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.timer_start dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.timer_instance dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.stacks dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.immune_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.pieces dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.out_combat_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.heal_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.full_hp_timer dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.ender_pearl minecraft.used:minecraft.ender_pearl
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

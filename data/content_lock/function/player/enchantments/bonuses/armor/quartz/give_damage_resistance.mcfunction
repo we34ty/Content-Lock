@@ -1,0 +1,2 @@
+$function content_lock:player/weapons/entity/apply_armor_modifier {name:"content_lock.enchantment.bonus.armor.quartz.damage_resistance", operation:"add", physical_damage:$(value), fire_damage:$(value), frost_damage:$(value), magic_damage:$(value), wither_damage:$(value), ender_damage:$(value), bleed_status:0, poison_status:0, corruption_status:0, wither_status:0, frostbite_status:0}
+tag @s add content_lock.enchantment.bonus.armor.quartz.damage_resistance
