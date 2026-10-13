@@ -1,4 +1,3 @@
-
 $data modify storage content_lock:saved_stats damage_resistance set from storage content_lock:saved_stats cached_armor[$(slot)].damage_resistance_modifiers."$(path)"[$(i)]
 
 scoreboard players set @s content_lock.huhhealth1 0

@@ -15,3 +15,5 @@ execute unless score @s content_lock.enchantment.bonus.armor.netherite.timer_sta
 execute if score @s content_lock.enchantment.bonus.armor.netherite.stacks matches ..6 if score @s content_lock.enchantment.bonus.armor.netherite.immune_timer matches 1.. run scoreboard players set @s content_lock.enchantment.bonus.armor.netherite.immune_timer 0
 
 execute if score @s content_lock.enchantment.bonus.armor.netherite.stacks matches 1.. run function content_lock:player/enchantments/bonuses/armor/netherite/buff
+
+scoreboard players set @s content_lock.enchantment.bonus.armor.netherite.pieces 0

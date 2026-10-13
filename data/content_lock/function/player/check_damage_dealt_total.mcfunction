@@ -19,6 +19,3 @@ execute store result score @s content_lock.durability_reversed run data get enti
 scoreboard players operation @s content_lock.durability -= @s content_lock.durability_reversed
 scoreboard players operation @s content_lock.durability /= @s content_lock.temp1
 scoreboard players operation @s content_lock.durability_reversed /= @s content_lock.temp1
-
-##removes invisibility on hit
-effect clear @s invisibility

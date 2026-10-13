@@ -117,3 +117,4 @@ execute if score @s content_lock.enchantment.bonus.armor.chainmail.cooldown matc
 scoreboard players set @s content_lock.enchantment.bonus.armor.copper.pieces 0
 tag @s remove content_lock.enchantment.bonus.armor.iron.damaged_already
 tag @s remove content_lock.enchantment.bonus.armor.netherite.checked_tick
+execute if score @s content_lock.enchantment.bonus.armor.quartz.ender_pearl matches 1.. run scoreboard players set @s content_lock.enchantment.bonus.armor.quartz.ender_pearl 0

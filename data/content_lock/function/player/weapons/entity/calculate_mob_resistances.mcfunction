@@ -7,6 +7,9 @@ data modify storage content_lock:saved_stats cached_armor[1] merge from entity @
 data modify storage content_lock:saved_stats cached_armor[2] merge from entity @s equipment.chest.components."minecraft:custom_data"."content_lock:armor"
 data modify storage content_lock:saved_stats cached_armor[3] merge from entity @s equipment.head.components."minecraft:custom_data"."content_lock:armor"
 
+data remove storage content_lock:weapon_stats armor
+data remove storage content_lock:weapon_stats damage_resistances
+data remove storage content_lock:weapon_stats status_effect_resistances
 data merge storage content_lock:saved_stats {damage_resistances:{},status_effect_resistances:{}}
 function content_lock:player/weapons/entity/calculate_resistance {path:"physical"}
 function content_lock:player/weapons/entity/calculate_resistance {path:"fire"}

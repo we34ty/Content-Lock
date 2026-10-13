@@ -1,3 +1,3 @@
-execute if score @s content_lock.enchantment.bonus.armor.iron.pieces matches 1.. as @n at @s run function content_lock:player/enchantments/bonuses/armor/iron/killed_for_stacks
-execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 1.. as @n if entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run effect give @s invisibility 20 0
-execute if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 1.. as @n if entity @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] run effect give @s invisibility 20 0
+execute as @n if score @s content_lock.enchantment.bonus.armor.iron.pieces matches 1.. at @s run function content_lock:player/enchantments/bonuses/armor/iron/killed_for_stacks
+execute as @n if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 1.. if entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run tag @s add content_lock.enchantment.bonus.armor.quartz.make_invisible
+execute as @n if score @s content_lock.enchantment.bonus.armor.quartz.pieces matches 1.. if entity @s[nbt={active_effects:[{id:"minecraft:absorption"}]}] run tag @s add content_lock.enchantment.bonus.armor.quartz.make_invisible

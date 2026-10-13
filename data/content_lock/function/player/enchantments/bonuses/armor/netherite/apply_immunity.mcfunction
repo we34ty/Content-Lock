@@ -1,2 +1,2 @@
 tag @s add content_lock.enchantment.bonus.armor.netherite.immune
-function content_lock:player/weapons/entity/apply_armor_modifier {name:"content_lock.enchantment.bonus.armor.netherite.immune", operation:"multiply", physical_damage:-1, fire_damage:-1, frost_damage:-1, magic_damage:-1, wither_damage:-1, ender_damage:-1, bleed_status:0, poison_status:0, corruption_status:0, wither_status:0, frostbite_status:0}
+function content_lock:player/weapons/entity/apply_armor_modifier {name:"content_lock.enchantment.bonus.armor.netherite.immune", operation:"add", physical_damage:100, fire_damage:100, frost_damage:100, magic_damage:100, wither_damage:100, ender_damage:100, bleed_status:0, poison_status:0, corruption_status:0, wither_status:0, frostbite_status:0}

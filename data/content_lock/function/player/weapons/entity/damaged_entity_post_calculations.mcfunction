@@ -13,3 +13,6 @@ execute if score @s content_lock.enchantment.bonus.armor.leather.rally_timer mat
 execute if score @s content_lock.enchantment.bonus.armor.copper.pieces matches 1.. run scoreboard players operation @s content_lock.enchantment.bonus.armor.copper.charges += @s content_lock.check_for_damage_dealt
 
 execute if score @s content_lock.enchantment.bonus.armor.diamond.stacks matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/remove_buff
+
+effect clear @s invisibility
+

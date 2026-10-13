@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "content_lock:player/enchantments/bonuses/armor/netherite/take_damage"
+    "function": "unknown"
   }
 }
