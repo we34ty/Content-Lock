@@ -31,3 +31,4 @@ execute if score @n content_lock.enchantment.bonus.armor.gold.pieces matches 1..
 execute if entity @s[tag=content_lock.enchantment.bonus.armor.netherite.immune] run function content_lock:player/enchantments/bonuses/armor/netherite/take_damage
 execute if entity @n[tag=content_lock.enchantment.bonus.armor.quartz.make_invisible] run effect give @n invisibility 20 0
 tag @n remove content_lock.enchantment.bonus.armor.quartz.make_invisible
+execute if entity @n[tag=content_lock.enchantment.bonus.weapon.stone.held] run function content_lock:player/enchantments/bonuses/weapon/stone/debuff

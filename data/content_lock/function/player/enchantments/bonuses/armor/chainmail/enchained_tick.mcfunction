@@ -5,6 +5,7 @@ execute unless score @s content_lock.enchantment.bonus.armor.chainmail.timer mat
 
 ## Remove the enchain effect from all hostile mobs within the range
 function content_lock:player/weapons/entity/remove_armor_modifier {name: "content_lock:enchantment.bonus.armor.chainmail"}
+function content_lock:player/weapons/entity/remove_armor_modifier {name: "content_lock:enchantment.bonus.weapon.stone.debuff"}
 
 ## Remove the movement speed and attack damage reduction from the entity
 attribute @s movement_speed modifier remove content_lock.enchantment.bonus.armor.chainmail
