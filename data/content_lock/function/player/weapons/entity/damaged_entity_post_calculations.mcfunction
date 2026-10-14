@@ -16,3 +16,4 @@ execute if score @s content_lock.enchantment.bonus.armor.diamond.stacks matches 
 
 effect clear @s invisibility
 
+scoreboard players operation @s content_lock.enchantment.bonus.weapon.wood.last_damage = @s content_lock.check_for_damage_dealt

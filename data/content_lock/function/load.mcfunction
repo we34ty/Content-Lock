@@ -199,6 +199,8 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.out_combat
 scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.heal_timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.full_hp_timer dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.quartz.ender_pearl minecraft.used:minecraft.ender_pearl
+scoreboard objectives add content_lock.enchantment.bonus.weapon.wood.time_since_damage dummy
+scoreboard objectives add content_lock.enchantment.bonus.weapon.wood.last_damage dummy
 scoreboard objectives add content_lock.fishing.timer dummy
 scoreboard objectives add content_lock.fishing.progress dummy
 scoreboard objectives add content_lock.fishing.pitch dummy

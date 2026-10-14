@@ -1,6 +1,7 @@
 #execute unless entity @s[nbt={HurtTime:0s}] run return run scoreboard players add @s content_lock.bleed_stacks 1
 tag @s remove content_lock.bleed_active
 tellraw @s [{"translate": "content_lock:effect.bleed.activated","color":"dark_red"}]
+execute as @n if entity @s[tag=content_lock.enchantment.bonus.weapon.wood.held] run function content_lock:player/enchantments/bonuses/weapon/wood/check
 
 data merge storage content_lock:saved_stats {damage:1.0f}
 execute unless entity @s[tag=content_lock.boss] store result storage content_lock:saved_stats damage float 0.001 run attribute @s max_health get 350
