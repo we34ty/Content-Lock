@@ -10,3 +10,4 @@ execute if entity @s[tag=content_lock.carapacer] at @s run function content_lock
 execute if entity @s[tag=content_lock.carapacer,tag=content_lock.carapacer.taken_shape] run tag @s remove content_lock.carapacer.taken_shape
 
 execute if entity @s[tag=content_lock.enchantment.bonus.armor.diamond.exclude] run tag @s remove content_lock.enchantment.bonus.armor.diamond.exclude
+execute if score @s content_lock.enchantment.bonus.armor.chainmail.timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/chainmail/enchained_tick
