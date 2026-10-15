@@ -14,7 +14,8 @@
       "content_lock:bonuses/armor/iron": 0,
       "content_lock:bonuses/armor/gold": 0,
       "content_lock:bonuses/armor/diamond": 0,
-      "content_lock:bonuses/armor/netherite": 1
+      "content_lock:bonuses/armor/netherite": 1,
+      "content_lock:bonuses/armor/quartz": 0
     }
   }
 ]

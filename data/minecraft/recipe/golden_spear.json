@@ -9,7 +9,7 @@
         {
           "type": "minecraft:attack_damage",
           "id": "content_lock.basic_weapon_stats",
-          "amount": 10.63,
+          "amount": 0.01,
           "operation": "add_value",
           "slot": "mainhand"
         },
@@ -66,6 +66,7 @@
         "duration": 30
       },
       "custom_data": {
+        "content_lock:enchanted": false,
         "content_lock:weapon": {
           "type": "Spear",
           "damage_type": "melee",
@@ -98,6 +99,12 @@
             "corruption": [],
             "wither": [],
             "frostbite": []
+          },
+          "scaling": {
+            "strength": 1,
+            "dexterity": 1.5,
+            "notardness": 0,
+            "promiles": 2.5
           }
         }
       },
@@ -255,7 +262,15 @@
             }
           ]
         }
-      ]
+      ],
+      "weapon": {
+        "item_damage_per_attack": 1
+      },
+      "tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      }
     },
     "count": 1,
     "id": "minecraft:golden_spear"
