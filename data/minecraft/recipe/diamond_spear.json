@@ -36,7 +36,7 @@
         }
       ],
       "minimum_attack_charge": 1,
-      "minecraft:max_damage": 94,
+      "minecraft:max_damage": 945,
       "kinetic_weapon": {
         "contact_cooldown_ticks": 10,
         "damage_conditions": {
@@ -269,7 +269,7 @@
         ]
       },
       "weapon": {
-        "item_damage_per_attack": 1
+        "item_damage_per_attack": 10
       }
     },
     "count": 1,

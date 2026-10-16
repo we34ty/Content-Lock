@@ -129,6 +129,7 @@ def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
                 "Damage": {},
                 "Status effects": {},
             },
+            "Mining efficiency": {},
             "Resource Locations": {},
         },
         "Armor": {
@@ -176,6 +177,7 @@ def parse_gear_file(path: Path) -> dict[str, dict[str, dict[str, Any]]]:
             material_status[key] = val
     old_gear["Weapons"]["Stat Splits"]["Status effects"] = {**weapon_status, **material_status}
 
+    old_gear["Weapons"]["Mining efficiency"] = weapons.get("Mining_efficiency", {})
     old_gear["Weapons"]["Resource Locations"] = weapons.get("Resource_locations", {})
 
     # ---- Armor ----
@@ -505,11 +507,43 @@ def ensure_weapon_custom_data(
 
 
 def ensure_weapon_component(components: dict[str, Any]) -> bool:
-    """Ensure the 'weapon' component exists with default values."""
-    if "weapon" not in components:
-        components["weapon"] = {
-            "item_damage_per_attack": 1
-        }
+    """Ensure weapon durability decreases by ten per attack."""
+    weapon_component = components.get("weapon")
+    if not isinstance(weapon_component, dict):
+        weapon_component = {}
+
+    changed = weapon_component.get("item_damage_per_attack") != 10
+    weapon_component["item_damage_per_attack"] = 10
+    components["weapon"] = weapon_component
+    return changed
+
+
+def set_tool_rule_speed(components: dict[str, Any], speed: float | int) -> bool:
+    tool_component = components.get("minecraft:tool")
+    if not isinstance(tool_component, dict):
+        return False
+
+    rules = tool_component.get("rules")
+    if not isinstance(rules, list):
+        return False
+
+    expected_speed = canonical_number(speed)
+    changed = False
+    for rule in rules:
+        if isinstance(rule, dict) and rule.get("speed") != expected_speed:
+            rule["speed"] = expected_speed
+            changed = True
+    return changed
+
+
+def set_tool_damage_per_block(components: dict[str, Any]) -> bool:
+    """Ensure minecraft:tool has damage_per_block set to 1."""
+    tool_component = components.get("minecraft:tool")
+    if not isinstance(tool_component, dict):
+        return False
+
+    if tool_component.get("damage_per_block") != 1:
+        tool_component["damage_per_block"] = 1
         return True
     return False
 
@@ -656,6 +690,7 @@ def update_weapon_recipe(
     durability = gear["Weapons"]["Durability Modifiers"]
     speed = gear["Weapons"]["Attack Speed (Maxes out at 1 every 0.5s)"]
     multipliers = gear["Weapons"]["Multipliers for the values higher up"]
+    mining_efficiency = gear["Weapons"].get("Mining efficiency", {})
 
     base_durability = float(durability.get("Base", 1.0))
     material_multiplier = float(durability.get(material_key, 1.0))
@@ -687,10 +722,21 @@ def update_weapon_recipe(
 
     components = data["result"]["components"]
     if isinstance(components, dict):
-        # Ensure weapon component exists
+        # Ensure weapon durability decreases by ten per attack.
         if ensure_weapon_component(components):
-            changes.append("weapon_component_added")
-        
+            changes.append("item_damage_per_attack=10")
+
+        # Apply the material mining-efficiency multiplier to every tool rule.
+        mining_speed = float(mining_efficiency.get("Base", 2.0)) * float(
+            mining_efficiency.get(material_key, 1.0)
+        )
+        if set_tool_rule_speed(components, mining_speed):
+            changes.append(f"tool_speed={canonical_number(mining_speed)}")
+
+        # Ensure damage_per_block is 1
+        if set_tool_damage_per_block(components):
+            changes.append("damage_per_block=1")
+
         # Ensure minimum_attack_charge exists
         if ensure_minimum_attack_charge(components):
             changes.append("minimum_attack_charge_added")

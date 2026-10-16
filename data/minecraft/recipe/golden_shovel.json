@@ -43,17 +43,17 @@
         }
       ],
       "minimum_attack_charge": 1,
-      "minecraft:max_damage": 42,
+      "minecraft:max_damage": 420,
       "minecraft:tool": {
         "rules": [
           {
             "blocks": "#minecraft:mineable/shovel",
-            "speed": 2,
+            "speed": 2.4,
             "correct_for_drops": true
           }
         ],
         "default_mining_speed": 0.5,
-        "damage_per_block": 0
+        "damage_per_block": 1
       },
       "custom_data": {
         "content_lock:enchanted": false,
@@ -254,7 +254,7 @@
         }
       ],
       "weapon": {
-        "item_damage_per_attack": 1
+        "item_damage_per_attack": 10
       },
       "tooltip_display": {
         "hidden_components": [

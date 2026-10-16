@@ -43,17 +43,17 @@
         }
       ],
       "minimum_attack_charge": 1,
-      "minecraft:max_damage": 112,
+      "minecraft:max_damage": 1120,
       "minecraft:tool": {
         "rules": [
           {
             "blocks": "#minecraft:mineable/axe",
-            "speed": 2,
+            "speed": 2.2,
             "correct_for_drops": true
           }
         ],
         "default_mining_speed": 0.5,
-        "damage_per_block": 0
+        "damage_per_block": 1
       },
       "custom_data": {
         "content_lock:enchanted": false,
@@ -259,7 +259,7 @@
         ]
       },
       "weapon": {
-        "item_damage_per_attack": 1
+        "item_damage_per_attack": 10
       }
     },
     "count": 1,

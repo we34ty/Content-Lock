@@ -3,7 +3,7 @@
         # Durability Modifiers
 
         Durability: {
-            Base: 200,
+            Base: 2000,
 
             Wooden: 1,
             Stone: 1.2,
@@ -55,6 +55,20 @@
             Netherite: 0.5,
             Diamond: 1.23,
             Quartz: 0.67
+        },
+
+        Mining_efficiency: {
+            Base: 2,
+
+            # Multipliers
+            Wooden: 1,
+            Stone: 0.9,
+            Copper: 1.1,
+            Iron: 0.8,
+            Golden: 1.2,
+            Netherite: 0.7,
+            Diamond: 1.25,
+            Quartz: 0.75
         },
 
         # Stat Splits

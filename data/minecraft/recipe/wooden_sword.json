@@ -41,9 +41,9 @@
         ]
       },
       "weapon": {
-        "item_damage_per_attack": 1
+        "item_damage_per_attack": 10
       },
-      "minecraft:max_damage": 200,
+      "minecraft:max_damage": 2000,
       "minecraft:tool": {
         "rules": [
           {
@@ -53,7 +53,7 @@
           }
         ],
         "default_mining_speed": 0.5,
-        "damage_per_block": 0
+        "damage_per_block": 1
       },
       "custom_data": {
         "content_lock:enchanted": false,
