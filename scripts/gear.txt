@@ -282,7 +282,7 @@
             }
         },
 
-        # Resource_locations: {
+        Resource_locations: {
             Wooden: "../data/minecraft/recipe/",
             Stone: "../data/minecraft/recipe/",
             Copper: "../data/minecraft/recipe/",
@@ -495,7 +495,7 @@
             Boots: 0.166
         },
 
-        # Resource_locations:{
+        Resource_locations:{
             Leather: "../data/minecraft/recipe/",
             Chainmail: "../data/content_lock/recipe/armor/",
             Copper: "../data/minecraft/recipe/",
