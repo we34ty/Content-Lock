@@ -1,0 +1,5 @@
+========================================================================
+Gear recipe update report — DRY RUN (no files written)
+========================================================================
+
+No changes detected. Everything is already up to date.

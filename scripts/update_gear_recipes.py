@@ -204,17 +204,24 @@ def canonical_number(value: float | int) -> float | int:
     return rounded
 
 
-def set_attribute_amount(components: dict[str, Any], attribute_type: str, amount: float | int) -> bool:
+def set_attribute_amount(components: dict[str, Any], attribute_type: str, amount: float | int) -> tuple[bool, Any, Any]:
+    """Returns (changed, old_value, new_value)."""
     modifiers = components.get("minecraft:attribute_modifiers")
     if not isinstance(modifiers, list):
-        return False
+        return False, None, None
 
+    new_value = canonical_number(amount)
     updated = False
+    old_value = None
     for modifier in modifiers:
         if isinstance(modifier, dict) and modifier.get("type") == attribute_type:
-            modifier["amount"] = canonical_number(amount)
-            updated = True
-    return updated
+            if modifier.get("amount") != new_value:
+                old_value = modifier.get("amount")
+                modifier["amount"] = new_value
+                updated = True
+            else:
+                old_value = new_value
+    return updated, old_value, new_value
 
 
 def ensure_attribute_modifier(
@@ -224,28 +231,35 @@ def ensure_attribute_modifier(
     operation: str = "add_value",
     slot: str = "mainhand",
     id_prefix: str = "content_lock.basic_weapon_stats"
-) -> bool:
-    """Ensure an attribute modifier exists with the given parameters."""
+) -> tuple[bool, Any, Any]:
+    """Ensure an attribute modifier exists with the given parameters.
+
+    Returns (changed, old_value, new_value).
+    """
     modifiers = components.get("minecraft:attribute_modifiers")
     if not isinstance(modifiers, list):
         modifiers = []
         components["minecraft:attribute_modifiers"] = modifiers
     
+    new_value = canonical_number(amount)
     # Check if the attribute already exists
     for modifier in modifiers:
         if isinstance(modifier, dict) and modifier.get("type") == attribute_type:
-            modifier["amount"] = canonical_number(amount)
-            return True
+            old_value = modifier.get("amount")
+            if old_value != new_value:
+                modifier["amount"] = new_value
+                return True, old_value, new_value
+            return False, old_value, new_value
     
     # Add new modifier
     modifiers.append({
         "type": attribute_type,
         "id": id_prefix,
-        "amount": canonical_number(amount),
+        "amount": new_value,
         "operation": operation,
         "slot": slot
     })
-    return True
+    return True, None, new_value
 
 
 # ----------------------------------------------------------------------
@@ -453,7 +467,8 @@ def ensure_weapon_custom_data(
     weapon_type: str,
     damage_map: dict[str, float],
     status_map: dict[str, float],
-) -> tuple[dict[str, Any], bool]:
+) -> tuple[dict[str, Any], bool, dict[str, Any], dict[str, Any]]:
+    """Returns (weapon_data, changed, old_damage, old_status)."""
     existing_custom_data = components.get("custom_data")
     if not isinstance(existing_custom_data, dict):
         existing_custom_data = {}
@@ -462,6 +477,9 @@ def ensure_weapon_custom_data(
     weapon_data = existing_custom_data.get("content_lock:weapon")
     if not isinstance(weapon_data, dict):
         weapon_data = {}
+
+    old_damage = copy.deepcopy(weapon_data.get("damage"))
+    old_status = copy.deepcopy(weapon_data.get("status_effects"))
 
     weapon_data["type"] = weapon_type
     weapon_data["damage_type"] = "melee"
@@ -503,57 +521,68 @@ def ensure_weapon_custom_data(
     new_custom_data["content_lock:weapon"] = weapon_data
     changed = components.get("custom_data") != new_custom_data
     components["custom_data"] = new_custom_data
-    return weapon_data, changed
+    return weapon_data, changed, old_damage, old_status
 
 
-def ensure_weapon_component(components: dict[str, Any]) -> bool:
-    """Ensure weapon durability decreases by ten per attack."""
+def ensure_weapon_component(components: dict[str, Any]) -> tuple[bool, Any, Any]:
+    """Ensure weapon durability decreases by ten per attack. Returns (changed, old, new)."""
     weapon_component = components.get("weapon")
     if not isinstance(weapon_component, dict):
         weapon_component = {}
 
-    changed = weapon_component.get("item_damage_per_attack") != 10
-    weapon_component["item_damage_per_attack"] = 10
+    old_value = weapon_component.get("item_damage_per_attack")
+    new_value = 10
+    changed = old_value != new_value
+    weapon_component["item_damage_per_attack"] = new_value
     components["weapon"] = weapon_component
-    return changed
+    return changed, old_value, new_value
 
 
-def set_tool_rule_speed(components: dict[str, Any], speed: float | int) -> bool:
+def set_tool_rule_speed(components: dict[str, Any], speed: float | int) -> tuple[bool, dict[str, Any], float | int]:
+    """Returns (changed, {old speeds per rule index}, new speed)."""
     tool_component = components.get("minecraft:tool")
     if not isinstance(tool_component, dict):
-        return False
+        return False, {}, speed
 
     rules = tool_component.get("rules")
     if not isinstance(rules, list):
-        return False
+        return False, {}, speed
 
     expected_speed = canonical_number(speed)
     changed = False
-    for rule in rules:
-        if isinstance(rule, dict) and rule.get("speed") != expected_speed:
-            rule["speed"] = expected_speed
-            changed = True
-    return changed
+    old_speeds: dict[str, Any] = {}
+    for i, rule in enumerate(rules):
+        if isinstance(rule, dict):
+            old_val = rule.get("speed")
+            if old_val != expected_speed:
+                old_speeds[f"rules[{i}].speed"] = old_val
+                rule["speed"] = expected_speed
+                changed = True
+    return changed, old_speeds, expected_speed
 
 
-def set_tool_damage_per_block(components: dict[str, Any]) -> bool:
-    """Ensure minecraft:tool has damage_per_block set to 1."""
+def set_tool_damage_per_block(components: dict[str, Any]) -> tuple[bool, Any, Any]:
+    """Ensure minecraft:tool has damage_per_block set to 1. Returns (changed, old, new)."""
     tool_component = components.get("minecraft:tool")
     if not isinstance(tool_component, dict):
-        return False
+        return False, None, None
 
-    if tool_component.get("damage_per_block") != 1:
-        tool_component["damage_per_block"] = 1
-        return True
-    return False
+    old_value = tool_component.get("damage_per_block")
+    new_value = 1
+    if old_value != new_value:
+        tool_component["damage_per_block"] = new_value
+        return True, old_value, new_value
+    return False, old_value, new_value
 
 
-def ensure_minimum_attack_charge(components: dict[str, Any]) -> bool:
-    """Ensure the 'minimum_attack_charge' component exists."""
-    if "minimum_attack_charge" not in components:
-        components["minimum_attack_charge"] = 1
-        return True
-    return False
+def ensure_minimum_attack_charge(components: dict[str, Any]) -> tuple[bool, Any, Any]:
+    """Ensure the 'minimum_attack_charge' component exists. Returns (changed, old, new)."""
+    old_value = components.get("minimum_attack_charge")
+    new_value = 1
+    if old_value != new_value:
+        components["minimum_attack_charge"] = new_value
+        return True, old_value, new_value
+    return False, old_value, new_value
 
 
 def build_armor_lore(
@@ -632,7 +661,8 @@ def ensure_armor_custom_data(
     components: dict[str, Any],
     damage_resistance: dict[str, float | int],
     status_resistance: dict[str, float | int],
-) -> bool:
+) -> tuple[bool, dict[str, Any], dict[str, Any]]:
+    """Returns (changed, old_damage_resistance, old_status_resistance)."""
     existing_custom_data = components.get("custom_data")
     if not isinstance(existing_custom_data, dict):
         existing_custom_data = {}
@@ -642,6 +672,9 @@ def ensure_armor_custom_data(
     armor_data = existing_custom_data.get("content_lock:armor")
     if not isinstance(armor_data, dict):
         armor_data = {}
+
+    old_damage_resistance = copy.deepcopy(armor_data.get("damage_resistance"))
+    old_status_resistance = copy.deepcopy(armor_data.get("status_resistance"))
 
     damage_types = ["physical", "fire", "frost", "magic", "wither", "ender"]
     status_effects = ["bleed", "poison", "corruption", "wither", "frostbite"]
@@ -672,17 +705,18 @@ def ensure_armor_custom_data(
     new_custom_data["content_lock:armor"] = armor_data
     changed = original_custom_data != new_custom_data
     components["custom_data"] = new_custom_data
-    return changed
+    return changed, old_damage_resistance, old_status_resistance
 
 
 def update_weapon_recipe(
     path: Path,
     gear: dict[str, dict[str, dict[str, Any]]],
     apply_changes: bool,
-) -> list[str]:
+) -> dict[str, Any]:
+    """Returns a dict of change details (empty if no changes)."""
     detected = detect_weapon(path, gear)
     if detected is None:
-        return []
+        return {}
 
     material_key, suffix = detected
     weapon_type = suffix.capitalize()
@@ -709,61 +743,91 @@ def update_weapon_recipe(
     lore = build_weapon_lore(damage_map, status_map)
 
     data = json.loads(path.read_text(encoding="utf-8"))
-    changes: list[str] = []
+    changes: dict[str, Any] = {}
 
     # Check if result exists
     if "result" not in data:
-        return []
+        return {}
 
     # Ensure result has components
     if "components" not in data["result"]:
         data["result"]["components"] = {}
-        changes.append("components_created")
+        changes["components_created"] = True
 
     components = data["result"]["components"]
     if isinstance(components, dict):
         # Ensure weapon durability decreases by ten per attack.
-        if ensure_weapon_component(components):
-            changes.append("item_damage_per_attack=10")
+        changed, old, new = ensure_weapon_component(components)
+        if changed:
+            changes["weapon.item_damage_per_attack"] = {"old": old, "new": new}
 
         # Apply the material mining-efficiency multiplier to every tool rule.
         mining_speed = float(mining_efficiency.get("Base", 2.0)) * float(
             mining_efficiency.get(material_key, 1.0)
         )
-        if set_tool_rule_speed(components, mining_speed):
-            changes.append(f"tool_speed={canonical_number(mining_speed)}")
+        changed, old_speeds, new_speed = set_tool_rule_speed(components, mining_speed)
+        if changed:
+            changes["minecraft:tool.rules.speed"] = {
+                "old": old_speeds,
+                "new": canonical_number(new_speed),
+            }
 
         # Ensure damage_per_block is 1
-        if set_tool_damage_per_block(components):
-            changes.append("damage_per_block=1")
+        changed, old, new = set_tool_damage_per_block(components)
+        if changed:
+            changes["minecraft:tool.damage_per_block"] = {"old": old, "new": new}
 
         # Ensure minimum_attack_charge exists
-        if ensure_minimum_attack_charge(components):
-            changes.append("minimum_attack_charge_added")
+        changed, old, new = ensure_minimum_attack_charge(components)
+        if changed:
+            changes["minimum_attack_charge"] = {"old": old, "new": new}
 
         # max_damage
-        if components.get("minecraft:max_damage") != max_damage:
+        old_value = components.get("minecraft:max_damage")
+        if old_value != max_damage:
             components["minecraft:max_damage"] = max_damage
-            changes.append(f"max_damage={max_damage}")
+            changes["minecraft:max_damage"] = {"old": old_value, "new": max_damage}
         
         # attack_damage - ensure it exists
         fixed_attack_damage = 0.01
-        if ensure_attribute_modifier(components, "minecraft:attack_damage", fixed_attack_damage, "add_multiplied_total"):
-            changes.append(f"attack_damage={canonical_number(fixed_attack_damage)}")
+        changed, old, new = ensure_attribute_modifier(
+            components, "minecraft:attack_damage", fixed_attack_damage, "add_multiplied_total"
+        )
+        if changed:
+            changes["minecraft:attribute_modifiers.attack_damage"] = {"old": old, "new": new}
         
         # attack_speed - ensure it exists
-        if ensure_attribute_modifier(components, "minecraft:attack_speed", attack_speed_amount, "add_value"):
-            changes.append(f"attack_speed={canonical_number(attack_speed_amount)}")
+        changed, old, new = ensure_attribute_modifier(
+            components, "minecraft:attack_speed", attack_speed_amount, "add_value"
+        )
+        if changed:
+            changes["minecraft:attribute_modifiers.attack_speed"] = {"old": old, "new": new}
 
         # custom_data
-        _, custom_data_changed = ensure_weapon_custom_data(components, weapon_type, damage_map, status_map)
+        weapon_data, custom_data_changed, old_damage, old_status = ensure_weapon_custom_data(
+            components, weapon_type, damage_map, status_map
+        )
         if custom_data_changed:
-            changes.append("custom_data")
+            damage_diff = {
+                k: {"old": (old_damage or {}).get(k), "new": v}
+                for k, v in damage_map.items()
+                if (old_damage or {}).get(k) != v
+            }
+            status_diff = {
+                k: {"old": (old_status or {}).get(k), "new": v}
+                for k, v in status_map.items()
+                if (old_status or {}).get(k) != v
+            }
+            if damage_diff:
+                changes["custom_data.content_lock:weapon.damage"] = damage_diff
+            if status_diff:
+                changes["custom_data.content_lock:weapon.status_effects"] = status_diff
+            if not damage_diff and not status_diff:
+                changes["custom_data"] = True
 
         # lore
         if components.get("lore") != lore:
-            components["lore"] = lore
-            changes.append("lore")
+            changes["lore"] = {"old": components.get("lore"), "new": lore}
         
         # tooltip_display
         tooltip_display = components.get("tooltip_display")
@@ -771,8 +835,7 @@ def update_weapon_recipe(
             "hidden_components": ["minecraft:attribute_modifiers"]
         }
         if tooltip_display != expected_tooltip_display:
-            components["tooltip_display"] = expected_tooltip_display
-            changes.append("tooltip_display")
+            changes["tooltip_display"] = {"old": tooltip_display, "new": expected_tooltip_display}
 
     if changes and apply_changes:
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -784,10 +847,11 @@ def update_armor_recipe(
     path: Path,
     gear: dict[str, dict[str, dict[str, Any]]],
     apply_changes: bool,
-) -> list[str]:
+) -> dict[str, Any]:
+    """Returns a dict of change details (empty if no changes)."""
     detected = detect_armor(path, gear)
     if detected is None:
-        return []
+        return {}
 
     material_key, slot = detected
     slot_key = slot.capitalize()
@@ -824,34 +888,54 @@ def update_armor_recipe(
     armor_lore = build_armor_lore(damage_resistance, status_resistance)
 
     data = json.loads(path.read_text(encoding="utf-8"))
-    changes: list[str] = []
+    changes: dict[str, Any] = {}
 
     # Check if result exists
     if "result" not in data:
-        return []
+        return {}
 
     # Ensure result has components
     if "components" not in data["result"]:
         data["result"]["components"] = {}
-        changes.append("components_created")
+        changes["components_created"] = True
 
     components = data["result"]["components"]
     if isinstance(components, dict):
-        if set_attribute_amount(components, "minecraft:armor", armor_value):
-            changes.append(f"armor={canonical_number(armor_value)}")
-        if set_attribute_amount(components, "minecraft:armor_toughness", toughness_value):
-            changes.append(f"armor_toughness={canonical_number(toughness_value)}")
-        if set_attribute_amount(components, "minecraft:movement_efficiency", movement_value):
-            changes.append(f"movement_efficiency={canonical_number(movement_value)}")
-        if ensure_armor_custom_data(
+        changed, old, new = set_attribute_amount(components, "minecraft:armor", armor_value)
+        if changed:
+            changes["minecraft:attribute_modifiers.armor"] = {"old": old, "new": new}
+
+        changed, old, new = set_attribute_amount(components, "minecraft:armor_toughness", toughness_value)
+        if changed:
+            changes["minecraft:attribute_modifiers.armor_toughness"] = {"old": old, "new": new}
+
+        changed, old, new = set_attribute_amount(components, "minecraft:movement_efficiency", movement_value)
+        if changed:
+            changes["minecraft:attribute_modifiers.movement_efficiency"] = {"old": old, "new": new}
+
+        changed, old_damage_res, old_status_res = ensure_armor_custom_data(
             components,
             damage_resistance,
             status_resistance,
-        ):
-            changes.append("custom_data")
+        )
+        if changed:
+            damage_diff = {
+                k: {"old": (old_damage_res or {}).get(k), "new": v}
+                for k, v in damage_resistance.items()
+                if (old_damage_res or {}).get(k) != canonical_number(v)
+            }
+            status_diff = {
+                k: {"old": (old_status_res or {}).get(k), "new": v}
+                for k, v in status_resistance.items()
+                if (old_status_res or {}).get(k) != canonical_number(v)
+            }
+            if damage_diff:
+                changes["custom_data.content_lock:armor.damage_resistance"] = damage_diff
+            if status_diff:
+                changes["custom_data.content_lock:armor.status_resistance"] = status_diff
+
         if components.get("lore") != armor_lore:
-            components["lore"] = armor_lore
-            changes.append("lore")
+            changes["lore"] = {"old": components.get("lore"), "new": armor_lore}
 
     if changes and apply_changes:
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -913,6 +997,83 @@ def iter_recipe_files(gear: dict[str, dict[str, dict[str, Any]]], gear_file: Pat
 
 
 # ----------------------------------------------------------------------
+# Change reporting
+# ----------------------------------------------------------------------
+
+def format_value(value: Any) -> str:
+    """Format a value for readable display."""
+    if value is None:
+        return "<missing>"
+    if isinstance(value, bool):
+        return str(value)
+    if isinstance(value, (int, float)):
+        return str(value)
+    if isinstance(value, str):
+        return f'"{value}"'
+    return json.dumps(value, ensure_ascii=False)
+
+
+def format_diff(diff: dict[str, Any], indent: int = 0) -> list[str]:
+    """Format a nested change dict into readable lines."""
+    lines: list[str] = []
+    prefix = "  " * indent
+    for key, value in diff.items():
+        if isinstance(value, dict) and "old" in value and "new" in value:
+            old_str = format_value(value["old"])
+            new_str = format_value(value["new"])
+            lines.append(f"{prefix}{key}: {old_str} -> {new_str}")
+        elif isinstance(value, dict):
+            # Nested structure (e.g. per-damage-type diffs)
+            lines.append(f"{prefix}{key}:")
+            lines.extend(format_diff(value, indent + 1))
+        else:
+            lines.append(f"{prefix}{key}: {format_value(value)}")
+    return lines
+
+
+class ChangeReport:
+    """Collects change details and writes a readable report to changes.txt."""
+
+    def __init__(self, report_path: Path) -> None:
+        self.report_path = report_path
+        self.entries: list[tuple[Path, dict[str, Any]]] = []
+
+    def add(self, path: Path, changes: dict[str, Any]) -> None:
+        if changes:
+            self.entries.append((path, changes))
+
+    def write(self, apply_changes: bool) -> None:
+        lines: list[str] = []
+        mode = "APPLIED" if apply_changes else "DRY RUN (no files written)"
+        lines.append("=" * 72)
+        lines.append(f"Gear recipe update report — {mode}")
+        lines.append("=" * 72)
+        lines.append("")
+
+        if not self.entries:
+            lines.append("No changes detected. Everything is already up to date.")
+        else:
+            total_fields = 0
+            for path, changes in self.entries:
+                lines.append(f"FILE: {path}")
+                lines.append("-" * 72)
+                for change_lines in format_diff(changes):
+                    lines.append(f"  {change_lines}")
+                lines.append("")
+                total_fields += 1
+            lines.append("=" * 72)
+            lines.append(f"Total files changed: {len(self.entries)}")
+            lines.append("=" * 72)
+
+        text = "\n".join(lines) + "\n"
+        self.report_path.write_text(text, encoding="utf-8")
+
+        # Also print to console
+        print()
+        print(text)
+
+
+# ----------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------
 
@@ -961,7 +1122,9 @@ def main() -> int:
             print(f"gear.txt parent: {gear_file.parent}")
         return 0
 
-    total_changes = 0
+    report_path = Path(__file__).resolve().with_name("changes.txt")
+    report = ChangeReport(report_path)
+
     for recipe_path in files:
         if detect_weapon(recipe_path, gear) is not None:
             changes = update_weapon_recipe(recipe_path, gear, args.apply)
@@ -970,15 +1133,14 @@ def main() -> int:
         else:
             continue
 
-        if changes:
-            total_changes += len(changes)
-            action = "updated" if args.apply else "would update"
-            print(f"{action}: {recipe_path} -> {', '.join(changes)}")
+        report.add(recipe_path, changes)
+
+    report.write(args.apply)
 
     if not args.apply:
-        print("\nNo files were written. Re-run with --apply to save changes.")
+        print("No files were written. Re-run with --apply to save changes.")
     else:
-        print(f"\nApplied {total_changes} field updates.")
+        print(f"Report written to: {report_path}")
 
     return 0
 
