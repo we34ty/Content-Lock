@@ -9,6 +9,6 @@ execute if entity @s[tag=content_lock.buffs_mobs_around_minor] run function cont
 execute if entity @s[tag=content_lock.can_cast_fireball] run function content_lock:mobs/customization/active/check_if_can_cast_fireball
 execute if entity @s[tag=content_lock.attacks_on_sight] run function content_lock:mobs/customization/active/check_for_attacking_on_sight
 execute if entity @s[tag=content_lock.gain_speed_with_rider] run function content_lock:mobs/customization/active/gain_speed_with_rider
-execute if entity @s[tag=content_lock.can_heal_with_food] run function content_lock:mobs/customization/active/heal_with_food_check
+execute if entity @s[tag=content_lock.can_heal_with_food] run function content_lock:mobs/customization/active/heal_with_food/check
 
 #execute if entity @s[tag=content_lock.customized,type=enderman,tag=cannot_be_put_in_boat] run function content_lock:mobs/customization/active/go_out_of_boat

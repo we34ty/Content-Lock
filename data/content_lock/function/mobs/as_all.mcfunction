@@ -11,3 +11,5 @@ execute if entity @s[tag=content_lock.carapacer,tag=content_lock.carapacer.taken
 
 execute if entity @s[tag=content_lock.enchantment.bonus.armor.diamond.exclude] run tag @s remove content_lock.enchantment.bonus.armor.diamond.exclude
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/chainmail/enchained_tick
+
+execute if score @s content_lock.mob.eating matches 1.. at @s run function content_lock:mobs/customization/active/heal_with_food/eat

@@ -1,6 +1,3 @@
-data merge entity @s {drop_chances:{chest:0.0f,feet:0.0f,head:0.0f,legs:0.0f,mainhand:0.0f,offhand:0.0f}}
-data merge entity @s {CanPickUpLoot:0b}
-
 execute if entity @s[type=#content_lock:zombies] run function content_lock:mobs/customization/zombies
 execute if entity @s[type=#content_lock:skeletons] run function content_lock:mobs/customization/skeletons
 execute if entity @s[type=creeper] run function content_lock:mobs/customization/creeper
@@ -22,7 +19,10 @@ execute if entity @s[type=#pets] run function content_lock:mobs/customization/pe
 execute if entity @s[type=wandering_trader] run function content_lock:mobs/customization/wandering_trader
 execute if entity @s[type=vex] run function content_lock:mobs/customization/vex
 execute if entity @s[type=#content_lock:melee_hostile] run tag @s add content_lock.limited_attack_range
+function content_lock:mobs/customization/armor/apply
 
+data merge entity @s {drop_chances:{chest:0.0f,feet:0.0f,head:0.0f,legs:0.0f,mainhand:0.0f,offhand:0.0f}}
+data merge entity @s {CanPickUpLoot:0b}
 execute store result entity @s Health float 1 run attribute @s max_health get
 attribute @s follow_range modifier add content_lock.customized_content_lock -0.2 add_multiplied_total
 tag @s add content_lock.customized
