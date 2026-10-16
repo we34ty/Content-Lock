@@ -240,6 +240,7 @@ scoreboard objectives add content_lock.UUID_id.max dummy
 scoreboard objectives add content_lock.difficulty dummy
 scoreboard objectives add content_lock.stamina.current_old dummy
 scoreboard objectives add content_lock.stamina.max_old dummy
+scoreboard objectives add content_lock.weapons.attack_speed_timer dummy
 
 ##all options that can be changed to modify the content lock experience
 scoreboard objectives add content_lock.options.player.limited_boss_respawn dummy

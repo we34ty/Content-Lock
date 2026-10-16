@@ -123,3 +123,4 @@ execute if score @s content_lock.enchantment.bonus.armor.quartz.ender_pearl matc
 execute if entity @s[tag=content_lock.enchantment.bonus.weapon.wood.held] run tag @s remove content_lock.enchantment.bonus.weapon.wood.held
 execute if score @s content_lock.enchantment.bonus.weapon.wood.time_since_damage matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.weapon.wood.time_since_damage 1
 execute if entity @s[tag=content_lock.enchantment.bonus.weapon.stone.held] run tag @s remove content_lock.enchantment.bonus.weapon.stone.held
+execute if score @s content_lock.weapons.attack_speed_timer matches 1.. run scoreboard players remove @s content_lock.weapons.attack_speed_timer 1

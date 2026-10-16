@@ -1,3 +1,4 @@
+data merge storage content_lock:weapon_stats {Id:0,data:{UUID:[I;0,0,0,0],damage_type:"melee",physical_damage:0,fire_damage:0,frost_damage:0,magic_damage:0,wither_damage:0,ender_damage:0,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}}
 data merge storage content_lock:saved_stats {damage:{damage_type:0,physical:0,fire:0,frost:0,magic:0,wither:0,ender:0},status_effects:{bleed:0,poison:0,corruption:0,wither:0,frostbite:0}}
 $data merge storage content_lock:saved_stats {damage_type:"$(damage_type)",physical_damage:$(physical_damage),fire_damage:$(fire_damage),frost_damage:$(frost_damage),magic_damage:$(magic_damage),wither_damage:$(wither_damage),ender_damage:$(ender_damage),bleed_status:$(bleed_status),poison_status:$(poison_status),corruption_status:$(corruption_status),wither_status:$(wither_status),frostbite_status:$(frostbite_status)}
 scoreboard players set @s content_lock.temp3 0
