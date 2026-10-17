@@ -1,0 +1,1 @@
+$attribute @s max_health modifier add content_lock.corruption $(value) add_multiplied_total

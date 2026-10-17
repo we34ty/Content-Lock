@@ -14,6 +14,7 @@ scoreboard objectives add content_lock.huhhealth2 dummy
 scoreboard objectives add content_lock.temporary_health_holder dummy
 scoreboard objectives add content_lock.arrow_damage dummy
 scoreboard objectives add content_lock.corruption_meter dummy
+scoreboard objectives add content_lock.corruption_time dummy
 scoreboard objectives add content_lock.attack_timer dummy
 scoreboard objectives add content_lock.damage_amount_for_check dummy
 scoreboard objectives add content_lock.ice_hail_stacks dummy

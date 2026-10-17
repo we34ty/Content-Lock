@@ -1,7 +1,9 @@
-attribute @s max_health modifier add content_lock.corruption -0.5 add_multiplied_base
-attribute @s entity_interaction_range modifier add content_lock.corruption 0.5 add_value
-attribute @s block_interaction_range modifier add content_lock.corruption 1 add_value
+scoreboard players set @s content_lock.corruption_meter 12000
 
-execute if entity @s[tag=content_lock.corrupted_meter_full] run return 0
+execute if entity @s[tag=content_lock.corrupted] run return 0
 tellraw @s [{"translate": "content_lock:effect.corruption.activated","color":"red"}]
-tag @s add content_lock.corrupted_meter_full
+tag @s add content_lock.corrupted
+
+function content_lock:player/weapons/modifier/weapon/apply {name: "content_lock.corruption.melee", operation: "multiply", type: "melee", physical_damage: -0.35, fire_damage: -0.35, frost_damage: -0.35, magic_damage: -0.35, wither_damage: -0.35, ender_damage: -0.35, bleed_status: 0, poison_status: 0, corruption_status: 0, wither_status: 0, frostbite_status: 0}
+function content_lock:player/weapons/modifier/weapon/apply {name: "content_lock.corruption.ranged", operation: "multiply", type: "ranged", physical_damage: -0.2, fire_damage: -0.2, frost_damage: -0.2, magic_damage: -0.2, wither_damage: -0.2, ender_damage: -0.2, bleed_status: 0, poison_status: 0, corruption_status: 0, wither_status: 0, frostbite_status: 0}
+function content_lock:player/weapons/modifier/weapon/apply {name: "content_lock.corruption.magic", operation: "multiply", type: "magic", physical_damage: -0.5, fire_damage: -0.5, frost_damage: -0.5, magic_damage: -0.5, wither_damage: -0.5, ender_damage: -0.5, bleed_status: 0, poison_status: 0, corruption_status: 0, wither_status: 0, frostbite_status: 0}

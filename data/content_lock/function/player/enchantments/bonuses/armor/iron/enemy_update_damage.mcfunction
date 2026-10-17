@@ -15,4 +15,4 @@ execute store result storage content_lock:saved_stats magic_damage double 0.01 r
 execute store result storage content_lock:saved_stats wither_damage double 0.01 run scoreboard players get @s content_lock.temp1
 execute store result storage content_lock:saved_stats ender_damage double 0.01 run scoreboard players get @s content_lock.temp1
 
-function content_lock:player/weapons/entity/apply_armor_modifier with storage content_lock:saved_stats
+function content_lock:player/weapons/modifier/armor/apply with storage content_lock:saved_stats

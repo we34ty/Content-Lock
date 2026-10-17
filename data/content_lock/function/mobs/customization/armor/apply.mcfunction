@@ -49,3 +49,5 @@ execute if entity @s[type=iron_golem] run return run function content_lock:mobs/
 execute if entity @s[type=silverfish] run return run function content_lock:mobs/customization/armor/macro {physical_damage: -16, fire_damage: -16, frost_damage: 34, magic_damage: 0, wither_damage: 0, ender_damage: 20, bleed_status: -14, poison_status: -14, corruption_status: 0, wither_status: 0, frostbite_status: -6}
 
 execute if entity @s[type=warden] run return run function content_lock:mobs/customization/armor/macro {physical_damage: 50, fire_damage: 50, frost_damage: 50, magic_damage: 50, wither_damage: 50, ender_damage: 50, bleed_status: 50, poison_status: 50, corruption_status: 50, wither_status: 50, frostbite_status: 50}
+
+function content_lock:mobs/customization/armor/weapon

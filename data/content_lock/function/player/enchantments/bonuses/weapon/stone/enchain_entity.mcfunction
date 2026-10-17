@@ -3,7 +3,7 @@ particle angry_villager ~ ~2 ~ 0.2 0.2 0.2 1 10 normal
 scoreboard players add @s content_lock.enchantment.bonus.armor.chainmail.timer 10
 
 ## Apply the physical resistance reduction to the entity's armor
-function content_lock:player/weapons/entity/apply_armor_modifier {name:"content_lock.enchantment.bonus.weapon.stone.debuff",operation:"add",physical_damage:-5,fire_damage:-5,frost_damage:-5,magic_damage:-5,wither_damage:-5,ender_damage:-5,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}
+function content_lock:player/weapons/modifier/armor/apply {name:"content_lock.enchantment.bonus.weapon.stone.debuff",operation:"add",physical_damage:-5,fire_damage:-5,frost_damage:-5,magic_damage:-5,wither_damage:-5,ender_damage:-5,bleed_status:0,poison_status:0,corruption_status:0,wither_status:0,frostbite_status:0}
 
 ## Apply the movement speed and attack damage reduction to the entity
 execute unless entity @s[tag=content_lock.boss] run attribute @s movement_speed modifier add content_lock.enchantment.bonus.armor.chainmail -1 add_multiplied_total
