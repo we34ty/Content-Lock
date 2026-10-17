@@ -46,7 +46,7 @@ data merge storage content_lock:saved_stats {UUID:[I;0,0,0,0]}
 data modify storage content_lock:saved_stats UUID set from entity @s UUID
 function content_lock:player/passives/storage/player_data/create with storage content_lock:saved_stats
 ##draw the player's stamina, so it initializes
-function content_lock:player/effects/stamina_draw
+function content_lock:player/effects/stamina/draw
 
 ##sets the player's version to the current one
 scoreboard players operation @s content_lock.content_lock_version = L content_lock.content_lock_version

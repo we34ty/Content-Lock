@@ -76,11 +76,11 @@
             "ender": 0
           },
           "status_effects": {
-            "bleed": 1.16,
+            "bleed": 115.94,
             "poison": 0,
-            "corruption": 4.64,
+            "corruption": 463.77,
             "wither": 0,
-            "frostbite": -11.59
+            "frostbite": -1159.42
           },
           "damage_modifiers": {
             "physical": [],

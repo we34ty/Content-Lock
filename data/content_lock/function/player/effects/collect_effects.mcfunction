@@ -15,33 +15,25 @@ data merge storage content_lock:saved_stats {bleed_amount:"",value:"",type:"blee
 execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.bleed_stacks
 function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 execute unless score @s content_lock.bleed_stacks matches 1.. run data merge storage content_lock:saved_stats {bleed:E048,bleed_amount:""}
-execute if score @s content_lock.bleed_stacks matches 1..29 run data merge storage content_lock:saved_stats {bleed:E004}
-execute if score @s content_lock.bleed_stacks matches 30..59 run data merge storage content_lock:saved_stats {bleed:E003}
-execute if score @s content_lock.bleed_stacks matches 60..89 run data merge storage content_lock:saved_stats {bleed:E002}
-execute if score @s content_lock.bleed_stacks matches 90..119 run data merge storage content_lock:saved_stats {bleed:E001}
-execute if score @s content_lock.bleed_stacks matches 120.. run data merge storage content_lock:saved_stats {bleed:E000}
+execute if score @s content_lock.bleed_stacks matches 1..2999 run data merge storage content_lock:saved_stats {bleed:E004}
+execute if score @s content_lock.bleed_stacks matches 3000..5999 run data merge storage content_lock:saved_stats {bleed:E003}
+execute if score @s content_lock.bleed_stacks matches 6000..8999 run data merge storage content_lock:saved_stats {bleed:E002}
+execute if score @s content_lock.bleed_stacks matches 9000..11999 run data merge storage content_lock:saved_stats {bleed:E001}
+execute if score @s content_lock.bleed_stacks matches 12000.. run data merge storage content_lock:saved_stats {bleed:E000}
 
-#"frost", currently called heat
 data merge storage content_lock:saved_stats {frost_amount:"",value:"",type:"frost_amount","end":"frost"}
-execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.heat
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.frostbite_stacks
+execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069,frost_amount:""}
 function content_lock:player/effects/add_ends with storage content_lock:saved_stats
-#execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E009}
-#execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069}
-execute if score @s content_lock.heat matches 0 run data merge storage content_lock:saved_stats {frost:E069,frost_amount:""}
-execute if score @s content_lock.heat matches 1..199 run data merge storage content_lock:saved_stats {frost:E045}
-execute if score @s content_lock.heat matches 200..349 run data merge storage content_lock:saved_stats {frost:E046}
-execute if score @s content_lock.heat matches 350..499 run data merge storage content_lock:saved_stats {frost:E047}
-execute if score @s content_lock.heat matches 500.. run data merge storage content_lock:saved_stats {frost:E044}
+execute if score @s content_lock.frostbite_stacks matches -3000..-1 run data merge storage content_lock:saved_stats {frost:E045}
+execute if score @s content_lock.frostbite_stacks matches -6000..-3001 run data merge storage content_lock:saved_stats {frost:E046}
+execute if score @s content_lock.frostbite_stacks matches -9000..-6001 run data merge storage content_lock:saved_stats {frost:E047}
+execute if score @s content_lock.frostbite_stacks matches ..-9001 run data merge storage content_lock:saved_stats {frost:E044}
 
-execute if score @s content_lock.frostbite_stacks matches -30..-1 run data merge storage content_lock:saved_stats {frost:E045}
-execute if score @s content_lock.frostbite_stacks matches -60..-31 run data merge storage content_lock:saved_stats {frost:E046}
-execute if score @s content_lock.frostbite_stacks matches -90..-61 run data merge storage content_lock:saved_stats {frost:E047}
-execute if score @s content_lock.frostbite_stacks matches ..-91 run data merge storage content_lock:saved_stats {frost:E044}
-
-execute if score @s content_lock.frostbite_stacks matches 1..30 run data merge storage content_lock:saved_stats {frost:E008}
-execute if score @s content_lock.frostbite_stacks matches 31..60 run data merge storage content_lock:saved_stats {frost:E007}
-execute if score @s content_lock.frostbite_stacks matches 61..90 run data merge storage content_lock:saved_stats {frost:E006}
-execute if score @s content_lock.frostbite_stacks matches 91.. run data merge storage content_lock:saved_stats {frost:E005}
+execute if score @s content_lock.frostbite_stacks matches 1..3000 run data merge storage content_lock:saved_stats {frost:E008}
+execute if score @s content_lock.frostbite_stacks matches 3001..6000 run data merge storage content_lock:saved_stats {frost:E007}
+execute if score @s content_lock.frostbite_stacks matches 6001..9000 run data merge storage content_lock:saved_stats {frost:E006}
+execute if score @s content_lock.frostbite_stacks matches 9001.. run data merge storage content_lock:saved_stats {frost:E005}
 
 #corruption
 data merge storage content_lock:saved_stats {corruption_amount:"",value:"",type:"corruption_amount","end":"corruption"}

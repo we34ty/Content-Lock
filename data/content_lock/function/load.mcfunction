@@ -97,6 +97,7 @@ scoreboard objectives add content_lock.health_percentage dummy
 scoreboard objectives add content_lock.health_percentage_old dummy
 scoreboard objectives add content_lock.bleed_stacks dummy
 scoreboard objectives add content_lock.frostbite_stacks dummy
+scoreboard objectives add content_lock.frostbite.ignition_timer dummy
 scoreboard objectives add content_lock.player_skill_level dummy
 scoreboard objectives add content_lock.player_unused_skill_points dummy
 scoreboard objectives add content_lock.max_stamina dummy

@@ -6,6 +6,6 @@ execute as @n if entity @s[tag=content_lock.enchantment.bonus.weapon.wood.held] 
 data merge storage content_lock:saved_stats {damage:1.0f}
 execute unless entity @s[tag=content_lock.boss] store result storage content_lock:saved_stats damage float 0.001 run attribute @s max_health get 350
 execute if entity @s[tag=content_lock.boss] store result storage content_lock:saved_stats damage float 0.001 run attribute @s max_health get 50
-execute at @s run function content_lock:player/effects/bleed_damage with storage content_lock:saved_stats
+execute at @s run function content_lock:player/effects/bleed/damage with storage content_lock:saved_stats
 
 scoreboard players set @s content_lock.bleed_stacks 0

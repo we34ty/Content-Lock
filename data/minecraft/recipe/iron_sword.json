@@ -80,7 +80,7 @@
             "poison": 0,
             "corruption": 0,
             "wither": 0,
-            "frostbite": 35.56
+            "frostbite": 3555.56
           },
           "damage_modifiers": {
             "physical": [],

@@ -13,3 +13,5 @@ execute if entity @s[tag=content_lock.enchantment.bonus.armor.diamond.exclude] r
 execute if score @s content_lock.enchantment.bonus.armor.chainmail.timer matches 1.. run function content_lock:player/enchantments/bonuses/armor/chainmail/enchained_tick
 
 execute if score @s content_lock.mob.eating matches 1.. at @s run function content_lock:mobs/customization/active/heal_with_food/eat
+execute if score @s content_lock.frostbite.ignition_timer matches 1.. at @s run function content_lock:player/effects/frostbite/ignition_charge
+execute if entity @s[tag=ignited] run tag @s remove ignited

@@ -18,11 +18,11 @@ $damage @s $(magic_damage) content_lock:$(damage_type)/magic by @n from @n
 $damage @s $(wither_damage) content_lock:$(damage_type)/wither by @n from @n
 $damage @s $(ender_damage) content_lock:$(damage_type)/ender by @n from @n
 
-$function content_lock:player/effects/apply_bleed {amount: $(bleed_status)}
+$function content_lock:player/effects/bleed/apply {amount: $(bleed_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"poison_stacks", amount: $(poison_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"corruption_meter", amount: $(corruption_status)}
 $function content_lock:player/weapons/entity/stacks_macro {name:"wither_stacks", amount: $(wither_status)}
-$function content_lock:player/effects/apply_frostbite {amount: $(frostbite_status)}
+$function content_lock:player/effects/frostbite/apply {amount: $(frostbite_status)}
 
 execute if data entity @s {Health:0.0f} run function content_lock:player/weapons/entity/killed_entity
 

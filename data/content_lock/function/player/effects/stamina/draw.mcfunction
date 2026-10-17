@@ -27,7 +27,7 @@ execute if score @s content_lock.temp2 matches 1.. run data merge storage conten
 data merge storage content_lock:saved_stats {stamina_amount:0,value:"",type:"stamina_amount","end":"stamina"}
 execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s lsp.stamina
 function content_lock:player/effects/add_ends with storage content_lock:saved_stats
-function content_lock:player/effects/stamina_segments with storage content_lock:saved_stats
+function content_lock:player/effects/stamina/segments with storage content_lock:saved_stats
 execute if score L content_lock.options.player.stamina matches 0 run data merge storage content_lock:saved_stats {stamina:"",stamina_amount:"",stamina_spaces:0}
 execute if entity @s[gamemode=creative] run data merge storage content_lock:saved_stats {stamina:"",stamina_amount:"",stamina_spaces:0}
 execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {stamina:"",stamina_amount:"",stamina_spaces:0}

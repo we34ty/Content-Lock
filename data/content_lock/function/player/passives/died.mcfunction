@@ -16,7 +16,7 @@ scoreboard players set @s content_lock.frostbite_stacks 0
 tag @s remove content_lock.bleed_active
 tag @s remove content_lock.frostbite_active
 scoreboard players set @s content_lock.fight_time 0
-execute if entity @s[tag=content_lock.corrupted_meter_full] run function content_lock:player/effects/corruption
+execute if entity @s[tag=content_lock.corrupted_meter_full] run function content_lock:player/effects/corruption/remove
 execute if score L content_lock.options.player.corruption matches 1 if score L content_lock.progression matches 2.. unless entity @s[tag=content_lock.corrupted_meter_full] unless entity @s[tag=content_lock.do_not_gain_corruption] run scoreboard players add @s content_lock.corruption_meter 2
 tag @s remove content_lock.do_not_gain_corruption
 scoreboard players operation @s lsp.stamina = @s content_lock.max_stamina

@@ -103,8 +103,8 @@
         "color": "gray",
         "extra": [
           {
-            "storage": "content_lock:weapon_stats",
-            "nbt": "data.bleed_status",
+            "storage": "content_lock:saved_stats",
+            "nbt": "display.bleed",
             "italic": false,
             "color": "red"
           }
@@ -117,8 +117,8 @@
         "color": "gray",
         "extra": [
           {
-            "storage": "content_lock:weapon_stats",
-            "nbt": "data.poison_status",
+            "storage": "content_lock:saved_stats",
+            "nbt": "display.poison",
             "italic": false,
             "color": "red"
           }
@@ -131,8 +131,8 @@
         "color": "gray",
         "extra": [
           {
-            "storage": "content_lock:weapon_stats",
-            "nbt": "data.wither_status",
+            "storage": "content_lock:saved_stats",
+            "nbt": "display.wither_status",
             "italic": false,
             "color": "red"
           }
@@ -145,8 +145,8 @@
         "color": "gray",
         "extra": [
           {
-            "storage": "content_lock:weapon_stats",
-            "nbt": "data.corruption_status",
+            "storage": "content_lock:saved_stats",
+            "nbt": "display.corruption",
             "italic": false,
             "color": "red"
           }
@@ -159,8 +159,8 @@
         "color": "gray",
         "extra": [
           {
-            "storage": "content_lock:weapon_stats",
-            "nbt": "data.frostbite_status",
+            "storage": "content_lock:saved_stats",
+            "nbt": "display.frostbite",
             "italic": false,
             "color": "red"
           }

@@ -1,7 +1,7 @@
 particle block_crumble{block_state:"blue_ice"} ~ ~1 ~ 0.2 0.5 0.2 1 30 normal
 tag @e remove content_lock.attacker
 execute on attacker run tag @s add content_lock.attacker
-$damage @s $(damage) content_lock:bleed by @e[tag=attacker,limit=1,sort=nearest]
+$damage @s $(damage) content_lock:frostbite by @n[tag=attacker]
 $execute unless entity @e[tag=attacker] run damage @s $(damage) content_lock:bleed by @s
 tag @e remove content_lock.attacker
 playsound item.bucket.empty hostile @a ~ ~ ~ 1 1.2

@@ -39,4 +39,4 @@ scoreboard players operation @s content_lock.temp2 /= @s content_lock.temp1
 scoreboard players operation @s content_lock.stamina_regen += @s content_lock.temp2
 
 ##Remember to display the changes on the player's hud
-function content_lock:player/effects/stamina_draw
+function content_lock:player/effects/stamina/draw
