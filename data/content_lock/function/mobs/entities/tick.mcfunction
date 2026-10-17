@@ -6,7 +6,7 @@ execute if entity @s[type=marker,tag=content_lock.enchantment.lightstruck.lightn
 execute if entity @s[type=fishing_bobber] at @s if block ~ ~ ~ #water_filled run tp @s ~ ~0.1 ~
 
 execute if entity @s[type=minecraft:block_display,tag=content_lock.death_rider.throw_zombie_head.display] at @s run function content_lock:mobs/customization/active/zombie_head
-execute if entity @s[type=area_effect_cloud,tag=content_lock.enemy_fireball] run function content_lock:mobs/customization/active/flying_fireball
+execute if entity @s[type=area_effect_cloud,tag=content_lock.enemy_fireball] run function content_lock:mobs/customization/active/cast_fireball/flying_fireball
 
 execute if entity @s[tag=content_lock.third_officer.fireball.projectile] at @s run function content_lock:mobs/bosses/second_and_third_officers/ghast/fireball_projectile
 

@@ -16,7 +16,7 @@ execute if entity @s[tag=content_lock.enchanted_undead] run return 0
 
 scoreboard players set @s content_lock.temp1 0
 execute store result score @s content_lock.temp1 run function content_lock:check_random_chance {chance:10}
-execute if entity @s[type=zombie] if score L content_lock.progression matches 1.. if score @s content_lock.temp1 matches 1 run return run function content_lock:mobs/customization/living_armor_spawn
+execute if entity @s[type=zombie] if score L content_lock.progression matches 1.. if score @s content_lock.temp1 matches 1 run return run function content_lock:mobs/customization/mob_type/living_armor_spawn
 
 execute unless entity @s[type=zombie] run return 0
 
