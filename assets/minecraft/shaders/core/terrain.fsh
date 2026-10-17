@@ -101,6 +101,14 @@ void main() {
         color.r=r;
         color.g=g;
         color.b=b;
-
+        float darkness = 1.0 - smoothstep(0.0, 0.35, vertexAvg);
+        float exponent = mix(1.0, 1.25, darkness); 
+        color.rgb = pow(color.rgb, vec3(exponent));       
+        
+        float purkinje = darkness; // Reuse existing darkness factor
+        color.r *= 1.0 - 0.35 * purkinje;  // Red and orange weaken
+        color.g *= 1.0 + 0.05 * purkinje;  // Green remains essentially unchanged/slightly enhanced
+        color.b *= 1.0 + 0.20 * purkinje;  // Blue enhances
+        
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

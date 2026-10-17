@@ -24,5 +24,8 @@ void main() {
     color.r=r;
     color.g=g;
     color.b=b;
+    float darkness = 1.0 - smoothstep(0.0, 0.35, vertexAvg);
+    float exponent = mix(1.0, 1.25, darkness); 
+    color.rgb = pow(color.rgb, vec3(exponent));
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }
