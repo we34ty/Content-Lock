@@ -39,13 +39,12 @@ execute if score @s content_lock.frostbite_stacks matches 9001.. run data merge 
 data merge storage content_lock:saved_stats {corruption_amount:"",value:"",type:"corruption_amount","end":"corruption"}
 execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.corruption_meter
 function content_lock:player/effects/add_ends with storage content_lock:saved_stats
-execute if score L content_lock.options.player.corruption matches 0 run data merge storage content_lock:saved_stats {corruption:E068,corruption_amount:""}
-execute unless score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E068,corruption_amount:""}
-execute if score L content_lock.options.player.corruption matches 1 if score L content_lock.progression matches 2.. unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E014}
-execute if score @s content_lock.corruption_meter matches 1..2 run data merge storage content_lock:saved_stats {corruption:E013}
-execute if score @s content_lock.corruption_meter matches 3..4 run data merge storage content_lock:saved_stats {corruption:E012}
-execute if score @s content_lock.corruption_meter matches 5..6 run data merge storage content_lock:saved_stats {corruption:E011}
-execute if score @s content_lock.corruption_meter matches 7.. run data merge storage content_lock:saved_stats {corruption:E010}
+execute unless score @s content_lock.corruption_meter matches 1.. run data merge storage content_lock:saved_stats {corruption:E068}
+execute if score @s content_lock.corruption_meter matches 1..2400 run data merge storage content_lock:saved_stats {corruption:E014}
+execute if score @s content_lock.corruption_meter matches 2401..4800 run data merge storage content_lock:saved_stats {corruption:E013}
+execute if score @s content_lock.corruption_meter matches 4801..7200 run data merge storage content_lock:saved_stats {corruption:E012}
+execute if score @s content_lock.corruption_meter matches 7201..9600 run data merge storage content_lock:saved_stats {corruption:E011}
+execute if score @s content_lock.corruption_meter matches 9601.. run data merge storage content_lock:saved_stats {corruption:E010}
 
 #clock checks if player has a clock in their inventory and uses another function to chanege based on time of day
 execute store result score @s content_lock.does_clock_display run clear @s clock 0
