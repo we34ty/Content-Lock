@@ -124,3 +124,8 @@ execute if entity @s[tag=content_lock.enchantment.bonus.weapon.wood.held] run ta
 execute if score @s content_lock.enchantment.bonus.weapon.wood.time_since_damage matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.weapon.wood.time_since_damage 1
 execute if entity @s[tag=content_lock.enchantment.bonus.weapon.stone.held] run tag @s remove content_lock.enchantment.bonus.weapon.stone.held
 execute if score @s content_lock.weapons.attack_speed_timer matches 1.. run scoreboard players remove @s content_lock.weapons.attack_speed_timer 1
+execute unless entity @s[tag=content_lock.jump_pressed] if predicate content_lock:jump run tag @s add content_lock.jump_pressed
+execute if entity @s[tag=content_lock.jump_pressed] unless predicate content_lock:jump run tag @s remove content_lock.jump_pressed
+execute if entity @s[tag=content_lock.in_air] if entity @s[nbt={OnGround:1b}] run tag @s remove content_lock.in_air
+execute unless entity @s[tag=content_lock.in_air] if entity @s[nbt={OnGround:0b}] run tag @s add content_lock.in_air
+execute if score @s content_lock.enchantment.bonus.armor.diamond.input_storage matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.diamond.input_storage 1

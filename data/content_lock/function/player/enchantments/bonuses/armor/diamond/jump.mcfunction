@@ -1,16 +1,16 @@
 execute if score @s lsp.stamina matches ..0 run return 0
-execute if score @s content_lock.enchantment.bonus.armor.diamond.cooldown matches 1.. run return 0
+execute if score @s content_lock.enchantment.bonus.armor.diamond.cooldown matches 1.. run return run execute unless score @s content_lock.enchantment.bonus.armor.diamond.input_storage matches 1.. run scoreboard players set @s content_lock.enchantment.bonus.armor.diamond.input_storage 5
 
 scoreboard players remove @s content_lock.enchantment.bonus.armor.diamond.jumps 1
-scoreboard players set @s content_lock.enchantment.bonus.armor.diamond.cooldown 20
+scoreboard players set @s content_lock.enchantment.bonus.armor.diamond.cooldown 10
 
 execute store result score @s content_lock.temp1 run data get entity @s Motion[1] 5000
 #tellraw @s [{"text":"Motion: ","color":"gray"},{"score":{"name":"@s","objective":"content_lock.temp1"},"color":"white"}]
 
-scoreboard players set $strength player_motion.api.launch 10000
+scoreboard players set $strength player_motion.api.launch 7500
 scoreboard players operation $strength player_motion.api.launch -= @s content_lock.temp1
 
-execute rotated ~ ~-20 run function player_motion:api/launch_looking
+execute rotated ~ -90 run function player_motion:api/launch_looking
 
 playsound block.soul_sand.place player @a ~ ~ ~ 1 1.3
 particle cloud ~ ~ ~ 0.3 0.1 0.3 0.1 10 normal @a

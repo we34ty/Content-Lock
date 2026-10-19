@@ -191,6 +191,7 @@ scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.jumps dum
 scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.stacks dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.cooldown dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.safe dummy
+scoreboard objectives add content_lock.enchantment.bonus.armor.diamond.input_storage dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.pieces dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.timer_start dummy
 scoreboard objectives add content_lock.enchantment.bonus.armor.netherite.timer_instance dummy

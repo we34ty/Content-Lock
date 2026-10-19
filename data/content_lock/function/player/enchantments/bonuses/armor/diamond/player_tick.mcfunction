@@ -1,7 +1,8 @@
 execute if score @s content_lock.enchantment.bonus.armor.diamond.safe matches 1 run function content_lock:player/enchantments/bonuses/armor/diamond/remove_fall_reduction
 execute if score @s content_lock.enchantment.bonus.armor.diamond.safe matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.diamond.safe 1
 execute if score @s content_lock.enchantment.bonus.armor.diamond.cooldown matches 1.. run scoreboard players remove @s content_lock.enchantment.bonus.armor.diamond.cooldown 1
-execute if entity @s[x_rotation=-90..-40] if entity @s[nbt={OnGround:0b}] if score @s content_lock.enchantment.bonus.armor.diamond.jumps matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/jump
+execute if predicate content_lock:jump unless entity @s[tag=content_lock.jump_pressed] if entity @s[tag=content_lock.in_air] if score @s content_lock.enchantment.bonus.armor.diamond.jumps matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/jump
+execute if entity @s[tag=content_lock.in_air] if score @s content_lock.enchantment.bonus.armor.diamond.jumps matches 1.. if score @s content_lock.enchantment.bonus.armor.diamond.input_storage matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/jump
 
 execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 1 unless score @s content_lock.enchantment.bonus.armor.diamond.jumps matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/restore_jumps
 execute if score @s content_lock.enchantment.bonus.armor.diamond.pieces matches 2 unless score @s content_lock.enchantment.bonus.armor.diamond.jumps matches 1.. run function content_lock:player/enchantments/bonuses/armor/diamond/restore_jumps
