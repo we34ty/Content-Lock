@@ -15,3 +15,7 @@ execute if score @s content_lock.enchantment.bonus.armor.chainmail.timer matches
 execute if score @s content_lock.mob.eating matches 1.. at @s run function content_lock:mobs/customization/active/heal_with_food/eat
 execute if score @s content_lock.frostbite.ignition_timer matches 1.. at @s run function content_lock:player/effects/frostbite/ignition_charge
 execute if entity @s[tag=ignited] run tag @s remove ignited
+
+execute if entity @s[tag=content_lock.poison_active] at @s run function content_lock:player/effects/poison/tick
+execute if entity @s[nbt={active_effects:[{"id":"minecraft:poison"}]}] run function content_lock:player/effects/poison/poisoned
+execute unless entity @s[tag=content_lock.wither_active] if entity @s[nbt={active_effects:[{"id":"minecraft:wither"}]}] run function content_lock:player/effects/wither/withered

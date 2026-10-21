@@ -3,6 +3,10 @@
 	"values": [
 	  "content_lock:bleed",
 	  "content_lock:multihit",
-	  "#content_lock:melee"
+	  "#content_lock:melee",
+	  "wither",
+	  "#content_lock:magic",
+	  "content_lock:poison",
+	  "player_attack"
 	]
   }

@@ -14,8 +14,10 @@ function content_lock:player/passives/check_stats_after_equipment_change
 scoreboard players set @s content_lock.bleed_stacks 0
 scoreboard players set @s content_lock.frostbite_stacks 0
 scoreboard players set @s content_lock.corruption_meter 0
+scoreboard players set @s content_lock.wither_stacks 0
+scoreboard players set @s content_lock.poison_stacks 0
 tag @s remove content_lock.bleed_active
-tag @s remove content_lock.frostbite_active
+tag @s remove content_lock.wither_active
 scoreboard players set @s content_lock.fight_time 0
 tag @s remove content_lock.do_not_gain_corruption
 scoreboard players operation @s lsp.stamina = @s content_lock.max_stamina

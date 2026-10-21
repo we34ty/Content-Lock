@@ -1,0 +1,1 @@
+$damage @s $(damage) content_lock:poison
