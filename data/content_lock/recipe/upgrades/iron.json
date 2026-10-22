@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "iron_upgrade",
+  "pattern": [
+    "YWY",
+    "XNX",
+    "MXM"
+  ],
+  "key": {
+    "X": "iron_block",
+    "M": "iron_ingot",
+    "Y": "lapis_block",
+    "W": "minecraft:ender_pearl",
+    "N": "minecraft:angler_pottery_sherd"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:arms_up_pottery_sherd"
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/poison/poison1.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE095"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/poison/poison2.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE096"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/poison/poison3.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE097"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/poison/poison4.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE098"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/poison/poison5.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE099"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/poison/poison_empty.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE100"]
+        }
+    ]
+}

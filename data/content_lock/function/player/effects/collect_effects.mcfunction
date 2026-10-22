@@ -23,7 +23,7 @@ execute if score @s content_lock.bleed_stacks matches 12000.. run data merge sto
 
 data merge storage content_lock:saved_stats {frost_amount:"",value:"",type:"frost_amount","end":"frost"}
 execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.frostbite_stacks
-execute if score @s content_lock.frostbite_stacks matches 0 run data merge storage content_lock:saved_stats {frost:E069,frost_amount:""}
+execute unless score @s content_lock.frostbite_stacks matches 1.. run data merge storage content_lock:saved_stats {frost:E069,frost_amount:""}
 function content_lock:player/effects/add_ends with storage content_lock:saved_stats
 execute if score @s content_lock.frostbite_stacks matches -3000..-1 run data merge storage content_lock:saved_stats {frost:E045}
 execute if score @s content_lock.frostbite_stacks matches -6000..-3001 run data merge storage content_lock:saved_stats {frost:E046}
@@ -46,6 +46,29 @@ execute if score @s content_lock.corruption_meter matches 4801..7200 run data me
 execute if score @s content_lock.corruption_meter matches 7201..9600 run data merge storage content_lock:saved_stats {corruption:E011}
 execute if score @s content_lock.corruption_meter matches 9601.. run data merge storage content_lock:saved_stats {corruption:E010}
 
+#wither
+data merge storage content_lock:saved_stats {wither_amount:"",value:"",type:"wither_amount","end":"wither"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.wither_stacks
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
+execute unless score @s content_lock.wither_stacks matches 1.. run data merge storage content_lock:saved_stats {wither:E094}
+execute if score @s content_lock.wither_stacks matches 1..2000 run data merge storage content_lock:saved_stats {wither:E088}
+execute if score @s content_lock.wither_stacks matches 2001..4000 run data merge storage content_lock:saved_stats {wither:E089}
+execute if score @s content_lock.wither_stacks matches 4001..6000 run data merge storage content_lock:saved_stats {wither:E090}
+execute if score @s content_lock.wither_stacks matches 6001..8000 run data merge storage content_lock:saved_stats {wither:E091}
+execute if score @s content_lock.wither_stacks matches 8001..10000 run data merge storage content_lock:saved_stats {wither:E092}
+execute if score @s content_lock.wither_stacks matches 10001.. run data merge storage content_lock:saved_stats {wither:E093}
+
+#poison
+data merge storage content_lock:saved_stats {poison_amount:"",value:"",type:"poison_amount","end":"poison"}
+execute store result storage content_lock:saved_stats value int 1 run scoreboard players get @s content_lock.poison_stacks
+function content_lock:player/effects/add_ends with storage content_lock:saved_stats
+execute unless score @s content_lock.poison_stacks matches 1.. run data merge storage content_lock:saved_stats {poison:E100}
+execute if score @s content_lock.poison_stacks matches 1..2400 run data merge storage content_lock:saved_stats {poison:E095}
+execute if score @s content_lock.poison_stacks matches 2401..4800 run data merge storage content_lock:saved_stats {poison:E096}
+execute if score @s content_lock.poison_stacks matches 4801..7200 run data merge storage content_lock:saved_stats {poison:E097}
+execute if score @s content_lock.poison_stacks matches 7201..9600 run data merge storage content_lock:saved_stats {poison:E098}
+execute if score @s content_lock.poison_stacks matches 9601.. run data merge storage content_lock:saved_stats {poison:E099}
+
 #clock checks if player has a clock in their inventory and uses another function to chanege based on time of day
 execute store result score @s content_lock.does_clock_display run clear @s clock 0
 execute if predicate content_lock:underwater run scoreboard players set @s content_lock.does_clock_display 0
@@ -59,6 +82,8 @@ execute if entity @s[tag=content_lock.weapons.enabled] run data merge storage co
 execute unless entity @s[tag=content_lock.weapons.enabled] run data merge storage content_lock:saved_stats {weapon_mode:E081,weapon_mode_bool:""}
 execute if entity @s[gamemode=spectator] run data merge storage content_lock:saved_stats {weapon_mode:E081,weapon_mode_bool:""}
 
+data merge storage content_lock:saved_stats {statuses:'{"translate":"space.-104","fallback":""}'}
 #adds the "end"s to the values, so it's easier to distinguish what's what
 function content_lock:player/effects/add_ends with storage content_lock:saved_stats
+function content_lock:player/effects/check_zeroes with storage content_lock:saved_stats
 function content_lock:player/effects/display with storage content_lock:saved_stats

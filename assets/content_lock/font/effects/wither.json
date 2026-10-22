@@ -1,0 +1,53 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither1.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE088"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither2.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE089"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither3.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE090"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither4.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE091"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither5.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE092"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither6.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE093"]
+        },
+        {
+            "type": "bitmap",
+            "file": "content_lock:custom/wither/wither_empty.png",
+            "ascent": -9,
+            "height": 25,
+            "chars": ["\uE094"]
+        }
+    ]
+}

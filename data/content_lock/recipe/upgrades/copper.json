@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "copper_upgrade",
+  "pattern": [
+    "YWY",
+    "XNX",
+    "XXX"
+  ],
+  "key": {
+    "X": "#copper",
+    "Y": "redstone_block",
+    "W": "minecraft:ender_pearl",
+    "N": "minecraft:angler_pottery_sherd"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:archer_pottery_sherd"
+  }
+}

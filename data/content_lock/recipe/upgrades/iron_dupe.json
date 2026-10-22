@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "iron_upgrade",
+  "pattern": [
+    "YWY",
+    "MNM",
+    "YXY"
+  ],
+  "key": {
+    "X": "iron_block",
+    "Y": "lapis_lazuli",
+    "W": "minecraft:arms_up_pottery_sherd",
+    "N": "minecraft:angler_pottery_sherd",
+    "M": "minecraft:iron_ingot"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:arms_up_pottery_sherd"
+  }
+}

@@ -38,6 +38,14 @@
         {
             "type": "reference",
             "id": "content_lock:weapon_mode"
-        }     
+        },
+        {
+            "type": "reference",
+            "id": "content_lock:effects/wither"
+        },
+        {
+            "type": "reference",
+            "id": "content_lock:effects/poison"
+        }         
     ]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "NXN",
+    " C "
+  ],
+  "key": {
+    "X": "leather",
+    "N": "minecraft:amethyst_shard",
+    "C": "smooth_stone_slab"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:angler_pottery_sherd"
+  }
+}

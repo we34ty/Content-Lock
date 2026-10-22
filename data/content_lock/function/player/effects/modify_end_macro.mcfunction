@@ -1,0 +1,1 @@
+$data merge storage content_lock:saved_stats {statuses:'$(statuses),{"translate":"content_lock:font.$(name)","shadow_color": 0,"fallback":"$(value)"}'}
