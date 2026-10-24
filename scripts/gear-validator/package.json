@@ -1,0 +1,35 @@
+{
+    "name": "gear-validator",
+    "displayName": "Gear File Validator",
+    "description": "Syntax highlighting and validation for gear.txt balancing files",
+    "version": "0.1.0",
+    "engines": { "vscode": "^1.80.0" },
+    "categories": ["Linters", "Programming Languages"],
+    "activationEvents": ["onLanguage:gear", "onCommand:gear.validate"],
+    "main": "./out/extension.js",
+    "contributes": {
+        "languages": [{
+            "id": "gear",
+            "aliases": ["Gear", "gear"],
+            "filenames": ["gear.txt"]
+        }],
+        "grammars": [{
+            "language": "gear",
+            "scopeName": "source.gear",
+            "path": "./syntaxes/gear.tmLanguage.json"
+        }],
+        "commands": [{
+            "command": "gear.validate",
+            "title": "Gear: Validate File"
+        }]
+    },
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.80.0",
+        "@types/node": "^18.x",
+        "typescript": "^5.0.0"
+    }
+}

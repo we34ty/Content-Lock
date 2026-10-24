@@ -1,0 +1,35 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Gear",
+    "scopeName": "source.gear",
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#strings" },
+        { "include": "#numbers" },
+        { "include": "#keys" },
+        { "include": "#brackets" }
+    ],
+    "repository": {
+        "comments": {
+            "match": "#.*$",
+            "name": "comment.line.number-sign.gear"
+        },
+        "strings": {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double.gear"
+        },
+        "numbers": {
+            "match": "-?\\b\\d+(?:\\.\\d+)?\\b",
+            "name": "constant.numeric.gear"
+        },
+        "keys": {
+            "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b(?=\\s*:)",
+            "name": "entity.name.tag.gear"
+        },
+        "brackets": {
+            "match": "[{}\\[\\]:,]",
+            "name": "punctuation.gear"
+        }
+    }
+}
