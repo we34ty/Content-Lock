@@ -25,7 +25,8 @@
     },
     "scripts": {
         "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "build": "npm run compile && npx @vscode/vsce package"
     },
     "devDependencies": {
         "@types/vscode": "^1.80.0",
