@@ -3,23 +3,21 @@
   "criteria": {
     "repair_wolf_armor": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:wolf",
-              "equipment": {
-                "body": {
-                  "components": {
-                    "minecraft:damage": 0
-                  },
-                  "items": "minecraft:wolf_armor"
-                }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wolf",
+            "equipment": {
+              "body": {
+                "components": {
+                  "minecraft:damage": 0
+                },
+                "items": "minecraft:wolf_armor"
               }
             }
           }
-        ],
+        },
         "item": {
           "items": "minecraft:armadillo_scute"
         }
@@ -46,7 +44,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1_bottle"
+      "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

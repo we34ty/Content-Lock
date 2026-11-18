@@ -1,6 +1,6 @@
 [
   {
-    "function": "set_lore",
+    "type": "set_lore",
     "lore": [
       {
         "translate": "content_lock:weapons.damage",

@@ -9,15 +9,13 @@
           "children": [
             {
               "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:copy_components",
-                  "include": [
-                    "minecraft:pot_decorations"
-                  ],
-                  "source": "block_entity"
-                }
-              ],
+              "modifier": {
+                "type": "minecraft:copy_components",
+                "include": [
+                  "minecraft:pot_decorations"
+                ],
+                "source": "block_entity"
+              },
               "name": "minecraft:decorated_pot"
             }
           ]

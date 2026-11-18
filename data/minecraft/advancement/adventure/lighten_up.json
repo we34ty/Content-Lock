@@ -3,39 +3,42 @@
   "criteria": {
     "lighten_up": {
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "minecraft:oxidized_copper_bulb",
-                  "minecraft:weathered_copper_bulb",
-                  "minecraft:exposed_copper_bulb",
-                  "minecraft:waxed_oxidized_copper_bulb",
-                  "minecraft:waxed_weathered_copper_bulb",
-                  "minecraft:waxed_exposed_copper_bulb"
-                ],
-                "state": {
-                  "lit": "true"
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:oxidized_copper_bulb",
+                    "minecraft:weathered_copper_bulb",
+                    "minecraft:exposed_copper_bulb",
+                    "minecraft:waxed_oxidized_copper_bulb",
+                    "minecraft:waxed_weathered_copper_bulb",
+                    "minecraft:waxed_exposed_copper_bulb"
+                  ],
+                  "state": {
+                    "lit": "true"
+                  }
                 }
               }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": [
+                  "minecraft:wooden_axe",
+                  "minecraft:golden_axe",
+                  "minecraft:stone_axe",
+                  "minecraft:iron_axe",
+                  "minecraft:diamond_axe",
+                  "minecraft:netherite_axe"
+                ]
+              }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "minecraft:wooden_axe",
-                "minecraft:golden_axe",
-                "minecraft:stone_axe",
-                "minecraft:iron_axe",
-                "minecraft:diamond_axe",
-                "minecraft:netherite_axe"
-              ]
-            }
-          }
-        ]
+          ]
+        }
       },
       "trigger": "minecraft:item_used_on_block"
     }
@@ -59,7 +62,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1_bottle"
+      "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

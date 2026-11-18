@@ -13,7 +13,7 @@
           "function": "content_lock:player/enchantments/vanishing_curse"
         },
         "requirements": {
-          "condition": "random_chance",
+          "type": "random_chance",
           "chance": {
             "type": "constant",
             "value": 0.3

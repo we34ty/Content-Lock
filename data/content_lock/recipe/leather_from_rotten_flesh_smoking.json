@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smoking",
   "category": "misc",
-  "cookingtime": 400,
+  "cookingtime": 800,
   "experience": 0,
   "ingredient": "minecraft:rotten_flesh",
   "result": {

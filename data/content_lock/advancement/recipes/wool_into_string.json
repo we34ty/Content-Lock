@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:wool_into_string"
+        "recipes": "content_lock:wool_into_string"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

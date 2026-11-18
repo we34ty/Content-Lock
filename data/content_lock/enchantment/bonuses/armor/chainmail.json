@@ -12,17 +12,15 @@
           "type": "run_function",
           "function": "content_lock:player/enchantments/bonuses/armor/chainmail/tick"
         },
-        "requirements": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "content_lock.enchantment.bonus.armor.chainmail.cooldown": {
-                "max": 0
-              }
+        "requirements": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "content_lock.enchantment.bonus.armor.chainmail.cooldown": {
+              "max": 0
             }
           }
-        ]
+        }
       }
     ]
   },

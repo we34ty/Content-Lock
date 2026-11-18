@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_pickaxe",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -61,14 +61,17 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_model_data": {
                   "strings": [
                     "content_lock:mays_anchor"
                   ]
                 },
-                "minecraft:custom_data": {"content_lock:mays_anchor": true,"content_lock:unshimmerable": true},
+                "minecraft:custom_data": {
+                  "content_lock:mays_anchor": true,
+                  "content_lock:unshimmerable": true
+                },
                 "minecraft:rarity": "rare",
                 "minecraft:consumable": {
                   "consume_seconds": 62578963,
@@ -98,7 +101,7 @@
               }
             },
             {
-              "function": "set_damage",
+              "type": "set_damage",
               "damage": {
                 "type": "minecraft:uniform",
                 "min": 0.25,
@@ -121,12 +124,10 @@
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:water_breathing"
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:water_breathing"
+          }
         },
         {
           "type": "minecraft:loot_table",
@@ -135,17 +136,15 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 4,
+              "min": 2
             }
-          ],
+          },
           "name": "minecraft:experience_bottle",
           "weight": 3
         },
@@ -153,97 +152,88 @@
           "type": "minecraft:item",
           "name": "minecraft:nautilus_shell",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 3
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            },
+            "add": false
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
           "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 6
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_ingot",
           "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 2,
-                "max": 4
-              },
-              "add": false
-            }
-          ],
-          "conditions": []
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            },
+            "add": false
+          },
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": []
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:glow_ink_sac",
           "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 7
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 7
+            },
+            "add": false
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:prismarine_crystals",
           "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 8
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 5,
+              "max": 8
+            },
+            "add": false
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:coast_armor_trim_smithing_template",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            },
+            "add": false
+          }
         }
       ]
     }

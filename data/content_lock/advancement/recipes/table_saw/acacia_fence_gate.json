@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:table_saw/acacia_fence_gate"
+        "recipes": "content_lock:table_saw/acacia_fence_gate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

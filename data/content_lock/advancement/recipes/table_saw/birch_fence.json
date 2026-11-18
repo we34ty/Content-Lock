@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:table_saw/birch_fence"
+        "recipes": "content_lock:table_saw/birch_fence"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

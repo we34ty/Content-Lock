@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:boss_summons/enchanted_witch"
+        "recipes": "content_lock:boss_summons/enchanted_witch"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

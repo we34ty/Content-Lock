@@ -9,9 +9,9 @@
           "name": "minecraft:armadillo_scute"
         }
       ],
-      "functions": [
+      "modifier": [
         {
-          "function": "minecraft:set_count",
+          "type": "minecraft:set_count",
           "count": {
             "type": "minecraft:uniform",
             "min": 0,
@@ -19,13 +19,13 @@
           }
         },
         {
+          "type": "minecraft:enchanted_count_increase",
           "count": {
             "type": "minecraft:uniform",
             "max": 1,
             "min": 0
           },
-          "enchantment": "minecraft:looting",
-          "function": "minecraft:enchanted_count_increase"
+          "enchantment": "minecraft:looting"
         }
       ]
     }

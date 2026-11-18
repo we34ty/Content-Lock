@@ -3,20 +3,18 @@
   "criteria": {
     "ride_a_boat_with_a_goat": {
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "vehicle": {
-                "type": "#minecraft:boat",
-                "passenger": {
-                  "type": "minecraft:goat"
-                }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "vehicle": {
+              "minecraft:entity_type": "#minecraft:boat",
+              "passenger": {
+                "minecraft:entity_type": "minecraft:goat"
               }
             }
           }
-        ]
+        }
       },
       "trigger": "minecraft:started_riding"
     }
@@ -40,7 +38,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+      "content_lock:advancements/2_bottles"
     ]
   },
   "sends_telemetry_event": true

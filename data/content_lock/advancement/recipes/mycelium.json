@@ -16,7 +16,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:mycelium"
+        "recipes": "content_lock:mycelium"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,20 +3,18 @@
   "criteria": {
     "killed_skeleton": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:skeleton",
-              "distance": {
-                "horizontal": {
-                  "min": 50.0
-                }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:skeleton",
+            "distance": {
+              "horizontal": {
+                "min": 50.0
               }
             }
           }
-        ],
+        },
         "killing_blow": {
           "tags": [
             {
@@ -49,7 +47,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/3_bottles"
+      "content_lock:advancements/3_bottles"
     ]
   },
   "sends_telemetry_event": true

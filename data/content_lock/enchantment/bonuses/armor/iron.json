@@ -14,7 +14,7 @@
           "function": "content_lock:player/enchantments/bonuses/armor/iron/enemy_damage"
         },
         "requirements": {
-          "condition": "damage_source_properties",
+          "type": "damage_source_properties",
           "predicate": {
             "is_direct": true
           }

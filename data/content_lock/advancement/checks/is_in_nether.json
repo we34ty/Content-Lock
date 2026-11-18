@@ -4,10 +4,14 @@
       "trigger": "minecraft:tick",
       "conditions": {
         "player": {
-          "location": {
-            "dimension": "minecraft:the_nether"
-          },
-          "periodic_tick": 40
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "dimension": "minecraft:the_nether"
+            },
+            "periodic_tick": 40
+          }
         }
       }
     }

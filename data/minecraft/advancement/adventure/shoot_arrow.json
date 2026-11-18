@@ -6,7 +6,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "type": "#minecraft:arrows"
+              "minecraft:entity_type": "#minecraft:arrows"
             },
             "tags": [
               {
@@ -39,7 +39,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1_bottle"
+      "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

@@ -13,7 +13,7 @@
           "function": "content_lock:player/enchantments/thorns"
         },
         "requirements": {
-          "condition": "random_chance",
+          "type": "random_chance",
           "chance": {
             "type": "minecraft:enchantment_level",
             "amount": {

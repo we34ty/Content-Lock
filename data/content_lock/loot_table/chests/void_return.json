@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:yellow_dye",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_name",
+              "type": "minecraft:set_name",
               "name": {
                 "translate": "content_lock:item.void_return",
                 "fallback": "Void Exit",
@@ -17,7 +17,7 @@
               }
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 25354366,
@@ -28,10 +28,13 @@
                 "minecraft:item_model": "minecraft:structure_void",
                 "minecraft:rarity": "rare"
               },
-              "conditions": []
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": []
+              }
             },
             {
-              "function": "minecraft:set_custom_data",
+              "type": "minecraft:set_custom_data",
               "tag": {
                 "content_lock.void_exit": true
               }
@@ -50,16 +53,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:obsidian",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 2,
-                "max": 6
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 6
             }
-          ]
+          }
         },
         {
           "type": "minecraft:loot_table",
@@ -68,16 +69,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:torch",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 14
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 5,
+              "max": 14
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
@@ -86,16 +85,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:experience_bottle",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 4,
-                "max": 11
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 11
             }
-          ]
+          }
         }
       ]
     }

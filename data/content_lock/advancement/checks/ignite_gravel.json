@@ -4,22 +4,26 @@
       "trigger": "location",
       "conditions": {
         "player": {
-          "movement": {
-            "horizontal_speed": {
-              "min": 2
-            }
-          },
-          "stepping_on": {
-            "block": {
-              "blocks": [
-                "gravel",
-                "suspicious_gravel"
-              ]
-            }
-          },
-          "equipment": {
-            "feet": {
-              "items": "iron_boots"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "horizontal_speed": {
+                "min": 2
+              }
+            },
+            "stepping_on": {
+              "block": {
+                "blocks": [
+                  "gravel",
+                  "suspicious_gravel"
+                ]
+              }
+            },
+            "equipment": {
+              "feet": {
+                "items": "iron_boots"
+              }
             }
           }
         }

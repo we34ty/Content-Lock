@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smoking",
   "category": "food",
-  "cookingtime": 60,
+  "cookingtime": 120,
   "experience": 0,
   "ingredient": "minecraft:kelp",
   "result": {

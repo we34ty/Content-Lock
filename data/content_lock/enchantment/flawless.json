@@ -27,7 +27,7 @@
           "function": "content_lock:player/enchantments/flawless_disable"
         },
         "requirements": {
-          "condition": "damage_source_properties",
+          "type": "damage_source_properties",
           "predicate": {
             "tags": [
               {

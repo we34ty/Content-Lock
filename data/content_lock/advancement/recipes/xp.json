@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:xp/1_level_from_gold"
+        "recipes": "content_lock:xp/1_level_from_gold"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

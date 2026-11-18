@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:weapon_and_armor_level/basic"
+        "recipes": "content_lock:weapon_and_armor_level/basic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

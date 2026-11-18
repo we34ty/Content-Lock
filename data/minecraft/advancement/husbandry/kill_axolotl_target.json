@@ -3,15 +3,13 @@
   "criteria": {
     "kill_axolotl_target": {
       "conditions": {
-        "source": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:axolotl"
-            }
+        "source": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:axolotl"
           }
-        ]
+        }
       },
       "trigger": "minecraft:effects_changed"
     }
@@ -35,7 +33,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+      "content_lock:advancements/2_bottles"
     ]
   },
   "sends_telemetry_event": true

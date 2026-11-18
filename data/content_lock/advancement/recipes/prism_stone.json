@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:prism_stone"
+        "recipes": "content_lock:prism_stone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

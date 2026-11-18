@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:leczo"
+        "recipes": "content_lock:leczo"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

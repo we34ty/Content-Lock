@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:magical_dust"
+        "recipes": "content_lock:magical_dust"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

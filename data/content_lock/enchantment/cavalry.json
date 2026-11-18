@@ -8,25 +8,23 @@
   "effects": {
     "minecraft:location_changed": [
       {
-        "requirements": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "vehicle": {
-                "type": [
-                  "minecraft:horse",
-                  "minecraft:mule",
-                  "minecraft:donkey",
-                  "minecraft:pig",
-                  "minecraft:llama",
-                  "minecraft:trader_llama",
-                  "happy_ghast"
-                ]
-              }
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "vehicle": {
+              "minecraft:entity_type": [
+                "minecraft:horse",
+                "minecraft:mule",
+                "minecraft:donkey",
+                "minecraft:pig",
+                "minecraft:llama",
+                "minecraft:trader_llama",
+                "happy_ghast"
+              ]
             }
           }
-        ],
+        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "content_lock:player/enchantments/cavalry"

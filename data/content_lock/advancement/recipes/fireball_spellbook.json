@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:fireball_spellbook"
+        "recipes": "content_lock:fireball_spellbook"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

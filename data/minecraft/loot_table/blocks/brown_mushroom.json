@@ -3,29 +3,25 @@
   "pools": [
     {
       "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:brown_mushroom",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "food": {
-                  "nutrition": 1,
-                  "saturation": 1
-                },
-                "consumable": {
-                  "animation": "eat"
-                }
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "food": {
+                "nutrition": 1,
+                "saturation": 1
+              },
+              "consumable": {
+                "animation": "eat"
               }
             }
-          ]
+          }
         }
       ],
       "rolls": 1
@@ -36,28 +32,24 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:brown_mushroom",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 0,
+              "max": 1
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "components": {
-                  "enchantments": {
-                    "content_lock:alchemical_extractor": 1
-                  }
+          },
+          "condition": {
+            "type": "minecraft:match_tool",
+            "predicate": {
+              "components": {
+                "enchantments": {
+                  "content_lock:alchemical_extractor": 1
                 }
               }
             }
-          ]
+          }
         }
       ]
     }

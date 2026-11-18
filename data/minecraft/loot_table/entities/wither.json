@@ -7,50 +7,44 @@
         {
           "type": "item",
           "name": "netherite_scrap",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "type": "uniform",
-                "min": 2,
-                "max": 5
-              }
+          "modifier": {
+            "type": "set_count",
+            "count": {
+              "type": "uniform",
+              "min": 2,
+              "max": 5
             }
-          ],
+          },
           "weight": 5
         },
         {
           "type": "item",
           "name": "diamond",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "type": "uniform",
-                "min": 3,
-                "max": 7
-              }
+          "modifier": {
+            "type": "set_count",
+            "count": {
+              "type": "uniform",
+              "min": 3,
+              "max": 7
             }
-          ],
+          },
           "weight": 5
         },
         {
           "type": "item",
           "name": "netherite_upgrade_smithing_template",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ],
+          "modifier": {
+            "type": "set_count",
+            "count": 1
+          },
           "weight": 1
         },
         {
           "type": "item",
           "name": "netherite_hoe",
-          "functions": [
+          "modifier": [
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "minecraft:enchantments": {
                   "content_lock:trick_switch": 1
@@ -58,15 +52,15 @@
                 "minimum_attack_charge": 1,
                 "max_damage": 679,
                 "minecraft:tool": {
-                "rules": [
-                  {
-                    "blocks": "#minecraft:mineable/hoe",
-                    "speed": 2,
-                    "correct_for_drops": true
-                  }
-                ],
-                "default_mining_speed": 0.5,
-                "damage_per_block": 0
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/hoe",
+                      "speed": 2,
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 0.5,
+                  "damage_per_block": 0
                 },
                 "consumable": {
                   "consume_seconds": 231667126,
@@ -96,7 +90,7 @@
               }
             },
             {
-              "function": "set_attributes",
+              "type": "set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -150,9 +144,9 @@
           "type": "minecraft:item",
           "name": "minecraft:yellow_dye",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:gravity",
@@ -223,7 +217,7 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "item_name": {
                   "translate": "content_lock:item.withers_shield",
@@ -234,7 +228,7 @@
                 "minecraft:custom_data": {
                   "content_lock.withers_shield": true
                 },
-                "custom_model_data":{
+                "custom_model_data": {
                   "strings": [
                     "content_lock:withers_shield"
                   ]
@@ -273,11 +267,11 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_pickaxe",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
-                "tool":{
+                "tool": {
                   "rules": []
                 },
                 "item_name": {
@@ -293,7 +287,7 @@
               }
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 326789,
@@ -303,20 +297,20 @@
                 },
                 "minimum_attack_charge": 1,
                 "max_damage": 980,
-                "enchantments":{
+                "enchantments": {
                   "content_lock:spell": 1
                 }
               }
             },
             {
-              "function": "minecraft:set_custom_data",
+              "type": "minecraft:set_custom_data",
               "tag": {
                 "content_lock.wither_heal_book": true,
-                "content_lock:unshimmerable":true
+                "content_lock:unshimmerable": true
               }
             },
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -354,17 +348,17 @@
               ]
             }
           ],
-          "conditions": [
-            {
-              "condition": "entity_properties",
-              "entity": "this",
-              "predicate": {
-                "nbt": {
-                  "Tags": ["content_lock.wither.charging_explosion_big_buff"]
-                }
+          "condition": {
+            "type": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": {
+                "Tags": [
+                  "content_lock.wither.charging_explosion_big_buff"
+                ]
               }
             }
-          ]
+          }
         }
       ]
     }

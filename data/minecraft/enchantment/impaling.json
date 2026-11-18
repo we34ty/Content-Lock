@@ -15,18 +15,18 @@
           }
         },
         "requirements": {
-          "condition": "any_of",
+          "type": "any_of",
           "terms": [
             {
-              "condition": "weather_check",
+              "type": "weather_check",
               "raining": true
             },
             {
-              "condition": "weather_check",
+              "type": "weather_check",
               "thundering": true
             },
             {
-              "condition": "entity_properties",
+              "type": "entity_properties",
               "entity": "this",
               "predicate": {
                 "location": {

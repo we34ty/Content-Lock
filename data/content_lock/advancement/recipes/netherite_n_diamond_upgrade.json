@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:netherite_n_diamond_upgrade"
+        "recipes": "content_lock:netherite_n_diamond_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:shulker_shell"
+        "recipes": "content_lock:shulker_shell"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

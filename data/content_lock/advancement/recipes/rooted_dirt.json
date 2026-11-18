@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:rooted_dirt"
+        "recipes": "content_lock:rooted_dirt"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

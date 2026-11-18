@@ -3,16 +3,16 @@
   "pools": [
     {
       "rolls": {
-        "type":"constant",
+        "type": "constant",
         "value": 1
       },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:wild_armor_trim_smithing_template",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -23,7 +23,7 @@
               }
             },
             {
-              "function": "minecraft:set_lore",
+              "type": "minecraft:set_lore",
               "lore": [
                 {
                   "translate": "content_lock:item.smithing_template.ingredients",

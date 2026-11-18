@@ -22,10 +22,14 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "entity": {
-          "location": {
-            "structures": [
-              "content_lock:underground_pond"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "structures": [
+                "content_lock:underground_pond"
+              ]
+            }
           }
         }
       }

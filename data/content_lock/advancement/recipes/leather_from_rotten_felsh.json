@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:leather_from_rotten_flesh"
+        "recipes": "content_lock:leather_from_rotten_flesh"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

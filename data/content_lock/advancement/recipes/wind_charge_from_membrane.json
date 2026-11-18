@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:wind_charge_from_membrane"
+        "recipes": "content_lock:wind_charge_from_membrane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

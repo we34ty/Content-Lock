@@ -22,13 +22,17 @@
       "trigger": "minecraft:location",
       "conditions": {
         "player": {
-          "vehicle": {
-            "type": "minecart"
-          },
-          "location": {
-            "structures": [
-              "content_lock:mine_rails"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "vehicle": {
+              "minecraft:entity_type": "minecart"
+            },
+            "location": {
+              "structures": [
+                "content_lock:mine_rails"
+              ]
+            }
           }
         }
       }

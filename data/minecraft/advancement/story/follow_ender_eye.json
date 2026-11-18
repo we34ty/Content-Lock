@@ -3,17 +3,15 @@
   "criteria": {
     "in_stronghold": {
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "structures": "minecraft:stronghold"
-              }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "structures": "minecraft:stronghold"
             }
           }
-        ]
+        }
       },
       "trigger": "minecraft:location"
     }
@@ -37,7 +35,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+      "content_lock:advancements/2_bottles"
     ]
   },
   "sends_telemetry_event": true

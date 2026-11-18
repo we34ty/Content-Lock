@@ -22,7 +22,7 @@
           "function": "content_lock:player/enchantments/bonuses/armor/diamond/take_damage"
         },
         "requirements": {
-          "condition": "entity_properties",
+          "type": "entity_properties",
           "entity": "this",
           "predicate": {
             "flags": {

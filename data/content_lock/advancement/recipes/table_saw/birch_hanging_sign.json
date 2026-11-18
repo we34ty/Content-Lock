@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:table_saw/birch_hanging_sign"
+        "recipes": "content_lock:table_saw/birch_hanging_sign"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

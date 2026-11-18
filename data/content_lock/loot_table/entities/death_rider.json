@@ -8,49 +8,43 @@
           "type": "minecraft:item",
           "name": "minecraft:gold_ingot",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 11
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 5,
+              "max": 11
+            },
+            "add": false
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_block",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            },
+            "add": false
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 12,
-                "max": 21
-              },
-              "add": false
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 12,
+              "max": 21
+            },
+            "add": false
+          }
         }
       ]
     },
@@ -70,9 +64,9 @@
           "type": "minecraft:item",
           "name": "minecraft:yellow_dye",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_speed",
@@ -121,7 +115,7 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "item_name": {
                   "translate": "content_lock:item.riders_eye",
@@ -132,7 +126,7 @@
                 "minecraft:custom_data": {
                   "content_lock.riders_eye": true
                 },
-                "custom_model_data":{
+                "custom_model_data": {
                   "strings": [
                     "content_lock:riders_eye"
                   ]
@@ -151,9 +145,9 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_sword",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -212,7 +206,7 @@
               ]
             },
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "item_name": {
                   "translate": "content_lock:item.quickstep_dagger",

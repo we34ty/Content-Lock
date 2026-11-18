@@ -3,7 +3,7 @@
   "criteria": {
     "entered_end_gateway": {
       "conditions": {
-        "block": "minecraft:end_gateway"
+        "blocks": "minecraft:end_gateway"
       },
       "trigger": "minecraft:enter_block"
     }
@@ -27,7 +27,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1_bottle"
+      "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

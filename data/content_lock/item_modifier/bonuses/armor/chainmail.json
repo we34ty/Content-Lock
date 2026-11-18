@@ -1,12 +1,12 @@
 [
   {
-    "function": "set_custom_data",
+    "type": "set_custom_data",
     "tag": {
       "content_lock:enchanted": true
     }
   },
   {
-    "function": "set_enchantments",
+    "type": "set_enchantments",
     "enchantments": {
       "content_lock:bonuses/armor/leather": 0,
       "content_lock:bonuses/armor/chainmail": 1,

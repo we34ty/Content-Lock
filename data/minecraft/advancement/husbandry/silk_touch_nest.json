@@ -3,7 +3,7 @@
   "criteria": {
     "silk_touch_nest": {
       "conditions": {
-        "block": "minecraft:bee_nest",
+        "blocks": "minecraft:bee_nest",
         "item": {
           "predicates": {
             "minecraft:enchantments": [
@@ -40,7 +40,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/3_bottles"
+      "content_lock:advancements/3_bottles"
     ]
   },
   "sends_telemetry_event": true

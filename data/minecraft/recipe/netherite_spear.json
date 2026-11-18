@@ -61,7 +61,11 @@
         "min_reach": 3.0,
         "hitbox_margin": 0.3
       },
-      "swing_animation": {
+      "attack_animation": {
+        "type": "stab",
+        "duration": 60
+      },
+      "interact_animation": {
         "type": "stab",
         "duration": 60
       },

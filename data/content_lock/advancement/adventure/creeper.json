@@ -31,7 +31,7 @@
               }
             ],
             "direct_entity": {
-              "type": "minecraft:creeper"
+              "minecraft:entity_type": "minecraft:creeper"
             },
             "is_direct": true
           }

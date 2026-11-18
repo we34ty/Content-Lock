@@ -1,6 +1,6 @@
 [
   {
-    "function": "set_enchantments",
+    "type": "set_enchantments",
     "enchantments": {
       "content_lock:spell_cooldown": 1
     }

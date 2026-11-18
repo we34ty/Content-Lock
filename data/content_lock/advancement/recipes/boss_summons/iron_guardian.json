@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:boss_summons/iron_guardian"
+        "recipes": "content_lock:boss_summons/iron_guardian"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

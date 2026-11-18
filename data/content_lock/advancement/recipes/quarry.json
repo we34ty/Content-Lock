@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mining_quarries:quarry"
+        "recipes": "mining_quarries:quarry"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,18 +3,16 @@
   "criteria": {
     "killed_ghast": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:ghast",
-              "location": {
-                "dimension": "minecraft:overworld"
-              }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ghast",
+            "location": {
+              "dimension": "minecraft:overworld"
             }
           }
-        ]
+        }
       },
       "trigger": "minecraft:player_killed_entity"
     }
@@ -39,7 +37,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/4_bottles"
+      "content_lock:advancements/4_bottles"
     ]
   },
   "sends_telemetry_event": true

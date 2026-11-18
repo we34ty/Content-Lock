@@ -6,89 +6,101 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
+              "type": "minecraft:set_count",
               "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:pink_petals",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "flower_amount": "1"
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "block": "minecraft:pink_petals",
+                    "type": "minecraft:match_block",
+                    "properties": {
+                      "flower_amount": "1"
+                    }
+                  },
+                  {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                      "items": "minecraft:shears"
+                    }
                   }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": "minecraft:shears"
-                  }
-                }
-              ],
-              "count": 1,
-              "function": "minecraft:set_count"
+                ]
+              },
+              "count": 1
             },
             {
+              "type": "minecraft:set_count",
               "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:pink_petals",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "flower_amount": "2"
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "block": "minecraft:pink_petals",
+                    "type": "minecraft:match_block",
+                    "properties": {
+                      "flower_amount": "2"
+                    }
+                  },
+                  {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                      "items": "minecraft:shears"
+                    }
                   }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": "minecraft:shears"
-                  }
-                }
-              ],
-              "count": 2,
-              "function": "minecraft:set_count"
+                ]
+              },
+              "count": 2
             },
             {
+              "type": "minecraft:set_count",
               "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:pink_petals",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "flower_amount": "3"
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "block": "minecraft:pink_petals",
+                    "type": "minecraft:match_block",
+                    "properties": {
+                      "flower_amount": "3"
+                    }
+                  },
+                  {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                      "items": "minecraft:shears"
+                    }
                   }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": "minecraft:shears"
-                  }
-                }
-              ],
-              "count": 3,
-              "function": "minecraft:set_count"
+                ]
+              },
+              "count": 3
             },
             {
+              "type": "minecraft:set_count",
               "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:pink_petals",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "flower_amount": "4"
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "block": "minecraft:pink_petals",
+                    "type": "minecraft:match_block",
+                    "properties": {
+                      "flower_amount": "4"
+                    }
+                  },
+                  {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                      "items": "minecraft:shears"
+                    }
                   }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": "minecraft:shears"
-                  }
-                }
-              ],
-              "count": 4,
-              "function": "minecraft:set_count"
+                ]
+              },
+              "count": 4
             },
             {
-              "function": "minecraft:explosion_decay"
+              "type": "minecraft:explosion_decay"
             }
           ],
           "name": "minecraft:pink_petals"

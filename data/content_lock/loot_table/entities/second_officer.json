@@ -7,11 +7,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_pickaxe",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
-                "tool":{
+                "tool": {
                   "rules": []
                 },
                 "item_name": {
@@ -27,14 +27,14 @@
               }
             },
             {
-              "function": "minecraft:set_custom_data",
+              "type": "minecraft:set_custom_data",
               "tag": {
                 "content_lock.undead_book": true,
-                "content_lock:unshimmerable":true
+                "content_lock:unshimmerable": true
               }
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 326789,
@@ -49,7 +49,7 @@
               }
             },
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -87,18 +87,16 @@
               ]
             }
           ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance_with_enchanted_bonus",
-              "unenchanted_chance": 0.03,
-              "enchanted_chance": {
-                "type": "linear",
-                "base": 0.01,
-                "per_level_above_first": 0.01
-              },
-              "enchantment": "minecraft:looting"
-            }
-          ]
+          "condition": {
+            "type": "minecraft:random_chance_with_enchanted_bonus",
+            "unenchanted_chance": 0.03,
+            "enchanted_chance": {
+              "type": "linear",
+              "base": 0.01,
+              "per_level_above_first": 0.01
+            },
+            "enchantment": "minecraft:looting"
+          }
         }
       ]
     }

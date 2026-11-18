@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:table_saw/crimson_button"
+        "recipes": "content_lock:table_saw/crimson_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:potions/glowing"
+        "recipes": "content_lock:potions/glowing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

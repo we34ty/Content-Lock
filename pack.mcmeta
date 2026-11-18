@@ -1,8 +1,14 @@
 {
   "pack": {
-    "min_format": [94, 1],
-		"max_format": [94, 1],
-    "description": "Content Lock"
+    "description": "Content Lock",
+    "min_format": [
+      97,
+      1
+    ],
+    "max_format": [
+      121,
+      0
+    ]
   },
   "features": {
     "enabled": [

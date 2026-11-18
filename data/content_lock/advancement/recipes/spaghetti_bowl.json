@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:spaghetti_bowl"
+        "recipes": "content_lock:spaghetti_bowl"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

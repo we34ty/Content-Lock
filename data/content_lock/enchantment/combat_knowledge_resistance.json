@@ -14,7 +14,7 @@
           "function": "content_lock:player/enchantments/combat_knowledge/remove_enchantment"
         },
         "requirements": {
-          "condition": "entity_scores",
+          "type": "entity_scores",
           "entity": "this",
           "scores": {
             "content_lock.enchantment.combat_knowledge.fight_time": {
@@ -35,7 +35,7 @@
           }
         },
         "requirements": {
-          "condition": "minecraft:damage_source_properties",
+          "type": "minecraft:damage_source_properties",
           "predicate": {
             "is_direct": true,
             "tags": [

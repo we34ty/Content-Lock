@@ -9,35 +9,33 @@
           "children": [
             {
               "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
+              "condition": {
+                "type": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 }
-              ],
+              },
               "name": "minecraft:granite"
             },
             {
               "type": "minecraft:item",
-              "functions": [
+              "modifier": [
                 {
+                  "type": "minecraft:set_count",
                   "add": false,
-                  "count": 1,
-                  "function": "minecraft:set_count"
+                  "count": 1
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:explosion_decay"
                 }
               ],
               "name": "minecraft:cobblestone"
@@ -45,18 +43,21 @@
             {
               "type": "minecraft:loot_table",
               "value": "content_lock:entities/upgrade_2",
-              "conditions": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "minecraft:survives_explosion"
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:inverted",
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    }
+                  },
+                  {
+                    "type": "random_chance",
+                    "chance": 0.05
                   }
-                },
-                {
-                  "condition": "random_chance",
-                  "chance": 0.05
-                }
-              ]
+                ]
+              }
             }
           ]
         }

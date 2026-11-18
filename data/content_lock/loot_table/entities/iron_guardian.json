@@ -26,24 +26,22 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
           "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 5
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 5
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_shovel",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "content_lock:earthquake": {
                   "type": "minecraft:uniform",
@@ -54,7 +52,7 @@
               }
             },
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -103,7 +101,7 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 326789,
@@ -116,7 +114,7 @@
                   "content_lock.guardian_shovel": true,
                   "content_lock:unshimmerable": true
                 },
-                "custom_model_data":{
+                "custom_model_data": {
                   "strings": [
                     "content_lock:guardian_shovel"
                   ]
@@ -148,9 +146,9 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_nugget",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:armor",
@@ -210,12 +208,12 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
                   "guardian_heart": true
                 },
-                "custom_model_data":{
+                "custom_model_data": {
                   "strings": [
                     "content_lock:guardian_heart"
                   ]
@@ -239,20 +237,16 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_strad",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.02
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.02
+          },
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "jukebox_playable": "minecraft:iron_guardian"
             }
-          ],
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "jukebox_playable": "minecraft:iron_guardian"
-              }
-            }
-          ]
+          }
         }
       ]
     }

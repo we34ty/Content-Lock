@@ -7,50 +7,48 @@
         {
           "type": "item",
           "name": "shears",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "item_name": {
-                  "translate": "content_lock:item.alchemical_extractor",
-                  "fallback": "Alchemical Extractor"
-                },
-                "max_damage": 112,
-                "rarity": "uncommon",
-                "custom_model_data": {
-                  "strings": [
-                    "content_lock:alchemical_extractor"
-                  ]
-                },
-                "custom_data": {
-                  "content_lock.alchemical_extractor": true,
-                  "content_lock:unshimmerable":true
-                },
-                "enchantments": {
-                  "content_lock:alchemical_extractor": 1
-                },
-                "weapon": {
-                  "item_damage_per_attack": 1,
-                  "disable_blocking_for_seconds": 0.2
-                },
-                "tool": {
-                  "rules": [
-                    {
-                      "blocks": "#content_lock:alchemical_extractor",
-                      "speed": 3,
-                      "correct_for_drops": true
-                    }
-                  ],
-                  "default_mining_speed": 0.5,
-                  "damage_per_block": 1
-                },
-                "repairable": {
-                  "items": "#repairs_iron_armor"
-                },
-                "enchantment_glint_override": false
-              }
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "item_name": {
+                "translate": "content_lock:item.alchemical_extractor",
+                "fallback": "Alchemical Extractor"
+              },
+              "max_damage": 112,
+              "rarity": "uncommon",
+              "custom_model_data": {
+                "strings": [
+                  "content_lock:alchemical_extractor"
+                ]
+              },
+              "custom_data": {
+                "content_lock.alchemical_extractor": true,
+                "content_lock:unshimmerable": true
+              },
+              "enchantments": {
+                "content_lock:alchemical_extractor": 1
+              },
+              "weapon": {
+                "item_damage_per_attack": 1,
+                "disable_blocking_for_seconds": 0.2
+              },
+              "tool": {
+                "rules": [
+                  {
+                    "blocks": "#content_lock:alchemical_extractor",
+                    "speed": 3,
+                    "correct_for_drops": true
+                  }
+                ],
+                "default_mining_speed": 0.5,
+                "damage_per_block": 1
+              },
+              "repairable": {
+                "items": "#repairs_iron_armor"
+              },
+              "enchantment_glint_override": false
             }
-          ]
+          }
         }
       ]
     },
@@ -65,29 +63,29 @@
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:regeneration"
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:regeneration"
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:skeleton_skull",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "item_name": {
-                  "translate": "content_lock:item.witchs_skull",                  "fallback": "Enchanted Witch's Skull",                  "color": "#d400ff",
+                  "translate": "content_lock:item.witchs_skull",
+                  "fallback": "Enchanted Witch's Skull",
+                  "color": "#d400ff",
                   "italic": false
                 }
               }
             },
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:max_health",
@@ -136,7 +134,7 @@
                 {
                   "attribute": "minecraft:movement_efficiency",
                   "id": "content_lock.witchs_skull",
-                   "amount": {
+                  "amount": {
                     "type": "minecraft:uniform",
                     "min": 0.05,
                     "max": 0.02
@@ -152,11 +150,11 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_pickaxe",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
-                "tool":{
+                "tool": {
                   "rules": []
                 },
                 "item_name": {
@@ -172,7 +170,7 @@
               }
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 326789,
@@ -182,20 +180,20 @@
                 },
                 "minimum_attack_charge": 1,
                 "max_damage": 200,
-                "enchantments":{
+                "enchantments": {
                   "content_lock:spell": 1
                 }
               }
             },
             {
-              "function": "minecraft:set_custom_data",
+              "type": "minecraft:set_custom_data",
               "tag": {
                 "content_lock.witchs_book": true,
-                "content_lock:unshimmerable":true
+                "content_lock:unshimmerable": true
               }
             },
             {
-              "function": "minecraft:set_attributes",
+              "type": "minecraft:set_attributes",
               "modifiers": [
                 {
                   "attribute": "minecraft:attack_damage",
@@ -251,20 +249,16 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_mall",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.02
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.02
+          },
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "jukebox_playable": "minecraft:enchanted_witch"
             }
-          ],
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "jukebox_playable": "minecraft:enchanted_witch"
-              }
-            }
-          ]
+          }
         }
       ]
     }

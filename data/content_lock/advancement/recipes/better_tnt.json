@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:better_tnt"
+        "recipes": "content_lock:better_tnt"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

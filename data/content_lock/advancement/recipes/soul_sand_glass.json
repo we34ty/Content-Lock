@@ -16,7 +16,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:soul_sand_glass"
+        "recipes": "content_lock:soul_sand_glass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

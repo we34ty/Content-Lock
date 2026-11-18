@@ -22,78 +22,72 @@
           "type": "run_function",
           "function": "content_lock:player/enchantments/bloodthirst/bloodthirst1"
         },
-        "requirements": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                  "weapon.mainhand": {
-                    "predicates": {
-                      "enchantments": [
-                        {
-                          "enchantments": "content_lock:bloodthirst",
-                          "levels": 1
-                        }
-                      ]
+        "requirements": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "enchantments": [
+                    {
+                      "enchantments": "content_lock:bloodthirst",
+                      "levels": 1
                     }
-                  }
+                  ]
                 }
+              }
             }
           }
-        ]
+        }
       },
       {
         "effect": {
           "type": "run_function",
           "function": "content_lock:player/enchantments/bloodthirst/bloodthirst2"
         },
-        "requirements": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                  "weapon.mainhand": {
-                    "predicates": {
-                      "enchantments": [
-                        {
-                          "enchantments": "content_lock:bloodthirst",
-                          "levels": 2
-                        }
-                      ]
+        "requirements": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "enchantments": [
+                    {
+                      "enchantments": "content_lock:bloodthirst",
+                      "levels": 2
                     }
-                  }
+                  ]
                 }
+              }
             }
           }
-        ]
+        }
       },
       {
         "effect": {
           "type": "run_function",
           "function": "content_lock:player/enchantments/bloodthirst/bloodthirst3"
         },
-        "requirements": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                  "weapon.mainhand": {
-                    "predicates": {
-                      "enchantments": [
-                        {
-                          "enchantments": "content_lock:bloodthirst",
-                          "levels": 3
-                        }
-                      ]
+        "requirements": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "enchantments": [
+                    {
+                      "enchantments": "content_lock:bloodthirst",
+                      "levels": 3
                     }
-                  }
+                  ]
                 }
+              }
             }
           }
-        ]
+        }
       }
     ]
   },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:sushi"
+        "recipes": "content_lock:sushi"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:boss_summons/zombified_piglin_princess"
+        "recipes": "content_lock:boss_summons/zombified_piglin_princess"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

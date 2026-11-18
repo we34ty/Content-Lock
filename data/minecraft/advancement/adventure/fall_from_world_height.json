@@ -8,21 +8,19 @@
             "min": 379.0
           }
         },
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "position": {
-                  "y": {
-                    "max": -59.0
-                  }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "max": -59.0
                 }
               }
             }
           }
-        ],
+        },
         "start_position": {
           "position": {
             "y": {
@@ -53,7 +51,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1-4_bottles"
+      "content_lock:advancements/1-4_bottles"
     ]
   },
   "sends_telemetry_event": true

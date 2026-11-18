@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:boss_summons/death_rider"
+        "recipes": "content_lock:boss_summons/death_rider"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -5,7 +5,7 @@
       "conditions": {
         "cause": [
           {
-            "condition": "minecraft:entity_properties",
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "type": "minecraft:wind_charge"

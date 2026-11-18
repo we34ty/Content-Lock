@@ -3,7 +3,7 @@
     "crafted": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "content_lock:xp/2_levels_from_diamond"
+        "recipes_id": "content_lock:xp/2_levels_from_diamond"
       }
     }
   },

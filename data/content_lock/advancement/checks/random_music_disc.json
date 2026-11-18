@@ -3,7 +3,7 @@
     "crafted": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "content_lock:random_music_disc"
+        "recipes_id": "content_lock:random_music_disc"
       }
     }
   },

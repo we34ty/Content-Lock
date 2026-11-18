@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:iron_n_gold_upgrade"
+        "recipes": "content_lock:iron_n_gold_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

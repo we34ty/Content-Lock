@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:table_saw/bamboo_mosaic"
+        "recipes": "content_lock:table_saw/bamboo_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

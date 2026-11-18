@@ -29,7 +29,7 @@
           ]
         },
         "requirements": {
-          "condition": "random_chance",
+          "type": "random_chance",
           "chance": {
             "type": "score",
             "target": "attacker",

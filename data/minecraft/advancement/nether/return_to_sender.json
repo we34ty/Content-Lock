@@ -3,18 +3,16 @@
   "criteria": {
     "killed_ghast": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:ghast"
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ghast"
           }
-        ],
+        },
         "killing_blow": {
           "direct_entity": {
-            "type": "minecraft:fireball"
+            "minecraft:entity_type": "minecraft:fireball"
           },
           "tags": [
             {
@@ -47,7 +45,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+      "content_lock:advancements/2_bottles"
     ]
   },
   "sends_telemetry_event": true

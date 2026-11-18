@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:table_saw/acacia_stairs"
+        "recipes": "content_lock:table_saw/acacia_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

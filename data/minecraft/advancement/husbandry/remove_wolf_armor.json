@@ -3,15 +3,13 @@
   "criteria": {
     "remove_wolf_armor": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:wolf"
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wolf"
           }
-        ],
+        },
         "item": {
           "items": "minecraft:shears"
         }
@@ -38,7 +36,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1_bottle"
+      "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

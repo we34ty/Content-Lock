@@ -3,7 +3,7 @@
   "criteria": {
     "honey_block_slide": {
       "conditions": {
-        "block": "minecraft:honey_block"
+        "blocks": "minecraft:honey_block"
       },
       "trigger": "minecraft:slide_down_block"
     }
@@ -27,7 +27,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/1_bottle"
+      "content_lock:advancements/1_bottle"
     ]
   },
   "sends_telemetry_event": true

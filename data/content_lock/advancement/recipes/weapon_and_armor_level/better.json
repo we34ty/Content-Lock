@@ -4,8 +4,12 @@
     "has_chain": {
       "conditions": {
         "player": {
-          "location": {
-            "dimension": "the_nether"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "dimension": "the_nether"
+            }
           }
         }
       },
@@ -13,7 +17,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:weapon_and_armor_level/better"
+        "recipes": "content_lock:weapon_and_armor_level/better"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

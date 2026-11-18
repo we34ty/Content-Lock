@@ -9,14 +9,12 @@
           "children": [
             {
               "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": "minecraft:shears"
-                  }
+              "condition": {
+                "type": "minecraft:match_tool",
+                "predicate": {
+                  "items": "minecraft:shears"
                 }
-              ],
+              },
               "name": "minecraft:bush"
             },
             {
@@ -26,17 +24,17 @@
                   "weight": 1,
                   "type": "minecraft:item",
                   "name": "minecraft:potato",
-                  "functions": [
+                  "modifier": [
                     {
+                      "type": "minecraft:apply_bonus",
                       "enchantment": "minecraft:fortune",
                       "formula": "minecraft:uniform_bonus_count",
-                      "function": "minecraft:apply_bonus",
                       "parameters": {
                         "bonusMultiplier": 2
                       }
                     },
                     {
-                      "function": "minecraft:explosion_decay"
+                      "type": "minecraft:explosion_decay"
                     }
                   ]
                 },
@@ -44,17 +42,17 @@
                   "weight": 1,
                   "type": "minecraft:item",
                   "name": "minecraft:carrot",
-                  "functions": [
+                  "modifier": [
                     {
+                      "type": "minecraft:apply_bonus",
                       "enchantment": "minecraft:fortune",
                       "formula": "minecraft:uniform_bonus_count",
-                      "function": "minecraft:apply_bonus",
                       "parameters": {
                         "bonusMultiplier": 2
                       }
                     },
                     {
-                      "function": "minecraft:explosion_decay"
+                      "type": "minecraft:explosion_decay"
                     }
                   ]
                 },
@@ -62,27 +60,25 @@
                   "weight": 2,
                   "type": "minecraft:item",
                   "name": "minecraft:beetroot_seeds",
-                  "functions": [
+                  "modifier": [
                     {
+                      "type": "minecraft:apply_bonus",
                       "enchantment": "minecraft:fortune",
                       "formula": "minecraft:uniform_bonus_count",
-                      "function": "minecraft:apply_bonus",
                       "parameters": {
                         "bonusMultiplier": 2
                       }
                     },
                     {
-                      "function": "minecraft:explosion_decay"
+                      "type": "minecraft:explosion_decay"
                     }
                   ]
                 }
               ],
-              "conditions": [
-                {
-                  "chance": 0.25,
-                  "condition": "minecraft:random_chance"
-                }
-              ]
+              "condition": {
+                "chance": 0.25,
+                "type": "minecraft:random_chance"
+              }
             }
           ]
         }

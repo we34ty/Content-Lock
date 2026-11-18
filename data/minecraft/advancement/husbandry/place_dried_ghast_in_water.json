@@ -3,15 +3,13 @@
   "criteria": {
     "place_dried_ghast_in_water": {
       "conditions": {
-        "location": [
-          {
-            "block": "minecraft:dried_ghast",
-            "condition": "minecraft:block_state_property",
-            "properties": {
-              "waterlogged": "true"
-            }
+        "location": {
+          "block": "minecraft:dried_ghast",
+          "type": "minecraft:match_block",
+          "properties": {
+            "waterlogged": "true"
           }
-        ]
+        }
       },
       "trigger": "minecraft:placed_block"
     }
@@ -35,7 +33,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+      "content_lock:advancements/2_bottles"
     ]
   },
   "sends_telemetry_event": true

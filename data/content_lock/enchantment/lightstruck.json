@@ -22,28 +22,26 @@
           "type": "run_function",
           "function": "content_lock:player/enchantments/lightstruck/lightstruck_tag"
         },
-        "requirements": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                  "weapon.mainhand": {
-                    "predicates": {
-                      "enchantments": [
-                        {
-                          "enchantments": "content_lock:lightstruck",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
+        "requirements": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "enchantments": [
+                    {
+                      "enchantments": "content_lock:lightstruck",
+                      "levels": {
+                        "min": 1
+                      }
                     }
-                  }
+                  ]
                 }
+              }
             }
           }
-        ]
+        }
       }
     ]
   },

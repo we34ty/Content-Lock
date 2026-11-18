@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:red_mushroom"
+        "recipes": "content_lock:red_mushroom"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

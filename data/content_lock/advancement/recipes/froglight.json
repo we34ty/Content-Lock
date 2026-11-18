@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:froglights/ochre_froglight"
+        "recipes": "content_lock:froglights/ochre_froglight"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

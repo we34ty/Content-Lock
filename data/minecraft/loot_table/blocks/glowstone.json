@@ -9,54 +9,52 @@
           "children": [
             {
               "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
+              "condition": {
+                "type": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 }
-              ],
+              },
               "name": "minecraft:glowstone"
             },
             {
               "type": "minecraft:item",
-              "functions": [
+              "modifier": [
                 {
+                  "type": "minecraft:set_count",
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
                     "max": 4,
                     "min": 2
-                  },
-                  "function": "minecraft:set_count"
+                  }
                 },
                 {
+                  "type": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:uniform_bonus_count",
-                  "function": "minecraft:apply_bonus",
                   "parameters": {
                     "bonusMultiplier": 1
                   }
                 },
                 {
-                  "function": "minecraft:limit_count",
+                  "type": "minecraft:limit_count",
                   "limit": {
                     "max": 4,
                     "min": 1
                   }
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:explosion_decay"
                 }
               ],
               "name": "minecraft:glowstone_dust"
@@ -72,28 +70,24 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:glowstone_dust",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "components": {
-                  "enchantments": {
-                    "content_lock:alchemical_extractor": 1
-                  }
+          },
+          "condition": {
+            "type": "minecraft:match_tool",
+            "predicate": {
+              "components": {
+                "enchantments": {
+                  "content_lock:alchemical_extractor": 1
                 }
               }
             }
-          ]
+          }
         }
       ]
     }

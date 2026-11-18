@@ -3,18 +3,16 @@
   "criteria": {
     "blowback": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:breeze"
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:breeze"
           }
-        ],
+        },
         "killing_blow": {
           "direct_entity": {
-            "type": "minecraft:breeze_wind_charge"
+            "minecraft:entity_type": "minecraft:breeze_wind_charge"
           },
           "tags": [
             {
@@ -47,7 +45,7 @@
   ],
   "rewards": {
     "loot": [
-        "content_lock:advancements/2_bottles"
+      "content_lock:advancements/2_bottles"
     ]
   },
   "sends_telemetry_event": true

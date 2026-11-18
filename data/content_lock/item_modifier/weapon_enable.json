@@ -1,6 +1,6 @@
 [
   {
-    "function": "set_components",
+    "type": "set_components",
     "components": {
       "piercing_weapon": {
         "deals_knockback": false,
@@ -14,20 +14,23 @@
         "hitbox_margin": 0,
         "mob_factor": 0
       },
-      "swing_animation":{
+      "attack_animation": {
+        "type": "none"
+      },
+      "interact_animation": {
         "type": "none"
       }
     }
   },
   {
-    "function": "minecraft:set_enchantments",
+    "type": "minecraft:set_enchantments",
     "enchantments": {
       "content_lock:weapon": 1
     },
     "add": false
   },
   {
-    "function": "set_custom_data",
+    "type": "set_custom_data",
     "tag": {
       "content_lock.weapon": true
     }

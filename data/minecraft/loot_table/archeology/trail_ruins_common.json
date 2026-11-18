@@ -50,7 +50,7 @@
         },
         {
           "type": "minecraft:tag",
-          "name": "minecraft:bundles",
+          "items": "minecraft:bundles",
           "expand": true
         },
         {
@@ -68,9 +68,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:sponge"
-        }        
+        }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:archaeology/trail_ruins_common"

@@ -15,10 +15,10 @@
           "function": "content_lock:player/enchantments/crashful"
         },
         "requirements": {
-          "condition":"any_of",
+          "type":"any_of",
           "terms":[
             {
-              "condition": "entity_properties",
+              "type": "entity_properties",
               "entity": "attacker",
               "predicate": {
                 "movement": {
@@ -41,7 +41,7 @@
               }
             },
             {
-              "condition": "entity_properties",
+              "type": "entity_properties",
               "entity": "attacker",
               "predicate": {
                 "movement": {

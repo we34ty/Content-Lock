@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "content_lock:glow_salad"
+        "recipes": "content_lock:glow_salad"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
