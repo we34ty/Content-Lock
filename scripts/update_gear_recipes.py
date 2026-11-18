@@ -507,15 +507,6 @@ def ensure_weapon_custom_data(
             for effect in status_effects
         }
 
-    # Ensure scaling exists
-    if "scaling" not in weapon_data:
-        weapon_data["scaling"] = {
-            "strength": 1,
-            "dexterity": 1.5,
-            "notardness": 0,
-            "promiles": 2.5
-        }
-
     new_custom_data = {"content_lock:enchanted": enchanted}
     new_custom_data.update(existing_custom_data)
     new_custom_data["content_lock:weapon"] = weapon_data
