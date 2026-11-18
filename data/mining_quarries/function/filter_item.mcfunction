@@ -1,1 +1,0 @@
-$execute unless items block ~ ~ ~ container.* $(id) run kill @s

@@ -1,1 +1,0 @@
-tellraw @a {"translate":"content_lock:notifications.random_boss.third_officer",color:"light_purple"}

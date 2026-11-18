@@ -1,1 +1,0 @@
-tag @s add content_lock.enchantment.bonus.weapon.stone.held

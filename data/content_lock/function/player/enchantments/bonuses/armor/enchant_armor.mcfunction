@@ -1,1 +1,0 @@
-$item modify entity @s armor.$(slot) content_lock:bonuses/armor/$(type)

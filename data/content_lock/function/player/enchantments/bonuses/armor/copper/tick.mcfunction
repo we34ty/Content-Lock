@@ -1,1 +1,0 @@
-scoreboard players add @s content_lock.enchantment.bonus.armor.copper.pieces 1

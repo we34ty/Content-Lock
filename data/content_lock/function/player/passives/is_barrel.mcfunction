@@ -1,1 +1,0 @@
-execute if data block ~ ~ ~ {CustomName:{"translate":"content_lock:item.duplicator","italic":false}} unless entity @e[type=minecraft:marker,tag=content_lock.duplicator,distance=..0.01] run summon minecraft:marker ~ ~ ~ {Tags:["content_lock.duplicator"]}

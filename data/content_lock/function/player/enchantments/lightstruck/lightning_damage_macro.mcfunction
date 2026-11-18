@@ -1,1 +1,0 @@
-$execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#entities,dx=1,dy=1,dz=1] run damage @s $(damage) lightning_bolt by @p

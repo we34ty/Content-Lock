@@ -1,1 +1,0 @@
-playsound minecraft:block.stone.break hostile @a ~ ~ ~ 1 1

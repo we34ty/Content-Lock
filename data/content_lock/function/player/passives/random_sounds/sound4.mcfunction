@@ -1,2 +1,0 @@
-execute positioned ^ ^ ^-8 run summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["content_lock.sound4_generator"],custom_particle:{type:"block",block_state:"air"}}
-execute positioned ^ ^ ^-8 run playsound minecraft:block.stone.place hostile @a ~ ~ ~ 1 1

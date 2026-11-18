@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/bucket",
-  "textures": {
-    "layer0": "content_lock:item/food/leczo"
-  }
-}

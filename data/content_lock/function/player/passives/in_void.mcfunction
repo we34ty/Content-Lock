@@ -1,1 +1,0 @@
-execute unless entity @e[tag=content_lock.carapacer,limit=1,distance=..40] run function content_lock:player/passives/spawn_carapacer_randomly

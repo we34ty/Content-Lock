@@ -1,1 +1,0 @@
-$damage @s $(damage) content_lock:malice by @s

@@ -1,1 +1,0 @@
-execute if entity @s[nbt={inGround:1b}] run function content_lock:mobs/customization/active/ricoshet

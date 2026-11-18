@@ -1,2 +1,0 @@
-##Checks if the dropper is a quarry
-execute if data block ~ ~ ~ {CustomName:{"translate":"content_lock:item.quarry","italic":false}} unless entity @e[type=minecraft:marker,tag=content_lock.quarry,distance=..0.01] run return run summon minecraft:marker ~ ~ ~ {Tags:["content_lock.quarry"]}

@@ -1,1 +1,0 @@
-playsound minecraft:block.stone.place hostile @a ~ ~ ~ 1 1

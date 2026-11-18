@@ -1,2 +1,0 @@
-summon marker ^ ^ ^-1 {Tags:["content_lock.quarry.miner","content_lock.quarry.miner.current"]}
-scoreboard players operation @e[type=minecraft:marker,tag=content_lock.quarry.miner.current] content_lock.quarry_id = @s content_lock.quarry_id

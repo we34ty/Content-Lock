@@ -1,3 +1,0 @@
-data merge storage content_lock:saved_stats {playersSleepingPercentage:100}
-execute store result storage content_lock:saved_stats playersSleepingPercentage int 1 run gamerule players_sleeping_percentage
-gamerule players_sleeping_percentage 101

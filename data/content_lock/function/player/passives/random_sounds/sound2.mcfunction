@@ -1,1 +1,0 @@
-execute positioned ^ ^ ^-8 run playsound minecraft:block.gravel.place hostile @a ~ ~ ~ 1 1

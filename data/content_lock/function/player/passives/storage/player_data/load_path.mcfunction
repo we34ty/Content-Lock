@@ -1,1 +1,0 @@
-$data modify storage $(storage) {} merge from storage content_lock:player_data UUIDs[{UUID:$(UUID)}].data.$(path)

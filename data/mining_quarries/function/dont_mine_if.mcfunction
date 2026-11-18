@@ -1,1 +1,0 @@
-execute if data block ^ ^ ^1 Items run return 1return fail

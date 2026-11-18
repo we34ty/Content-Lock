@@ -1,2 +1,0 @@
-execute unless score @s content_lock.enchantment.bloodthirst.fight_time matches 1.. run scoreboard players set @s content_lock.enchantment.bloodthirst.kills 0
-scoreboard players set @s content_lock.enchantment.bloodthirst.fight_time 200

@@ -1,1 +1,0 @@
-$summon item ~ ~ ~ {Item:{id:$(item),count:$(count)},Tags:[content_lock.shimmered]}
