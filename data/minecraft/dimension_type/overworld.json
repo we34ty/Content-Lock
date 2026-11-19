@@ -48,5 +48,6 @@
     "max_inclusive": 7,
     "min_inclusive": 0
   },
-  "timelines": "#minecraft:in_overworld"
+  "timelines": "#minecraft:in_overworld",
+  "has_ender_dragon_fight": false
 }
