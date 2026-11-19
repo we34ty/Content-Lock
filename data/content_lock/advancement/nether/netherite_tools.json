@@ -3,31 +3,31 @@
   "criteria": {
     "netherite_pickaxe": {
       "conditions": {
-        "recipes_id": "minecraft:netherite_pickaxe"
+        "recipes": "minecraft:netherite_pickaxe"
       },
       "trigger": "minecraft:recipe_crafted"
     },
     "netherite_axe": {
       "conditions": {
-        "recipes_id": "minecraft:netherite_axe"
+        "recipes": "minecraft:netherite_axe"
       },
       "trigger": "minecraft:recipe_crafted"
     },
     "netherite_hoe": {
       "conditions": {
-        "recipes_id": "minecraft:netherite_hoe"
+        "recipes": "minecraft:netherite_hoe"
       },
       "trigger": "minecraft:recipe_crafted"
     },
     "netherite_shovel": {
       "conditions": {
-        "recipes_id": "minecraft:netherite_shovel"
+        "recipes": "minecraft:netherite_shovel"
       },
       "trigger": "minecraft:recipe_crafted"
     },
     "netherite_sword": {
       "conditions": {
-        "recipes_id": "minecraft:netherite_sword"
+        "recipes": "minecraft:netherite_sword"
       },
       "trigger": "minecraft:recipe_crafted"
     }

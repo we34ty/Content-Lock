@@ -31,7 +31,7 @@
           "predicate": {
             "tags": [
               {
-                "id": "content_lock:doesnt_ruin_flawless",
+                "id": "#content_lock:doesnt_ruin_flawless",
                 "expected": false
               }
             ]

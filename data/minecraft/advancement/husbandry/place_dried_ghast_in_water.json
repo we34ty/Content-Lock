@@ -4,9 +4,9 @@
     "place_dried_ghast_in_water": {
       "conditions": {
         "location": {
-          "block": "minecraft:dried_ghast",
+          "blocks": "minecraft:dried_ghast",
           "type": "minecraft:match_block",
-          "properties": {
+          "state": {
             "waterlogged": "true"
           }
         }

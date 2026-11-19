@@ -20,7 +20,7 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:warped_wart_block"
+                    "id": "minecraft:warped_wart_block"
                   }
                 },
                 {
@@ -32,7 +32,7 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:twisting_vines_plant"
+                    "id": "minecraft:twisting_vines_plant"
                   }
                 },
                 {
@@ -44,7 +44,7 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:twisting_vines_plant"
+                    "id": "minecraft:twisting_vines_plant"
                   }
                 },
                 {
@@ -56,15 +56,15 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:warped_hyphae"
+                    "id": "minecraft:warped_hyphae"
                   }
                 },
                 {
                   "input_predicate": {
                     "predicate_type": "minecraft:blockstate_match",
                     "block_state": {
-                      "Name": "crimson_stem",
-                      "Properties": {
+                      "id": "crimson_stem",
+                      "properties": {
                         "axis": "x"
                       }
                     }
@@ -73,8 +73,8 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:warped_stem",
-                      "Properties": {
+                    "id": "minecraft:warped_stem",
+                      "properties": {
                         "axis": "x"
                       }
                   }
@@ -83,8 +83,8 @@
                   "input_predicate": {
                     "predicate_type": "minecraft:blockstate_match",
                     "block_state": {
-                      "Name": "crimson_stem",
-                      "Properties": {
+                      "id": "crimson_stem",
+                      "properties": {
                         "axis": "y"
                       }
                     }
@@ -93,8 +93,8 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:warped_stem",
-                      "Properties": {
+                    "id": "minecraft:warped_stem",
+                      "properties": {
                         "axis": "y"
                       }
                   }
@@ -103,8 +103,8 @@
                   "input_predicate": {
                     "predicate_type": "minecraft:blockstate_match",
                     "block_state": {
-                      "Name": "crimson_stem",
-                      "Properties": {
+                      "id": "crimson_stem",
+                      "properties": {
                         "axis": "z"
                       }
                     }
@@ -113,8 +113,8 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:warped_stem",
-                      "Properties": {
+                    "id": "minecraft:warped_stem",
+                      "properties": {
                         "axis": "z"
                       }
                   }

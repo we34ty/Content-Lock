@@ -7,7 +7,7 @@
           "type": {
             "tags": [
               {
-                "id": "is_fall",
+                "id": "#is_fall",
                 "expected": true
               }
             ]

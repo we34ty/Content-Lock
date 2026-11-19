@@ -2,7 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -14,16 +14,16 @@
                   "type": "minecraft:night_vision",
                   "duration": {
                     "type": "minecraft:uniform",
-                    "max": 10.0,
-                    "min": 7.0
+                    "max": 10,
+                    "min": 7
                   }
                 },
                 {
                   "type": "minecraft:blindness",
                   "duration": {
                     "type": "minecraft:uniform",
-                    "max": 7.0,
-                    "min": 5.0
+                    "max": 7,
+                    "min": 5
                   }
                 }
               ]

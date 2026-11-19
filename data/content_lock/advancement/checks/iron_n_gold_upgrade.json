@@ -3,7 +3,7 @@
     "crafted": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipes_id": "content_lock:iron_n_gold_upgrade"
+        "recipes": "content_lock:iron_n_gold_upgrade"
       }
     }
   },

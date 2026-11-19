@@ -9,7 +9,7 @@ execute anchored eyes rotated as @e[tag=content_lock.direction_to_look_for_iron_
 tp @s ^ ^ ^0.6
 
 playsound entity.iron_golem.damage hostile @a ~ ~ ~ 0.5 1.3
-particle block{block_state:{Name:iron_block}} ~ ~1.5 ~ 1 1.5 1 1 20 force @a
+particle block{block_state:{id:iron_block}} ~ ~1.5 ~ 1 1.5 1 1 20 force @a
 execute run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1,distance:2,damage:4,damage_type:fly_into_wall}
 execute positioned ~ ~1 ~ run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1,distance:2,damage:4,damage_type:fly_into_wall}
 execute positioned ~ ~-1 ~ run function content_lock:mobs/bosses/universal/damage_player_d {half_distance:1,distance:2,damage:4,damage_type:fly_into_wall}

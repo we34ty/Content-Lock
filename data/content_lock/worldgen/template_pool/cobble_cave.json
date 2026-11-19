@@ -21,7 +21,7 @@
                     "block": "minecraft:air"
                   },
                   "output_state": {
-                    "Name": "minecraft:mossy_cobblestone"
+                    "id": "minecraft:mossy_cobblestone"
                   }
                 }
               ]

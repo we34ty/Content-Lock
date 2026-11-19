@@ -4,7 +4,7 @@
     "pitcher_pod": {
       "conditions": {
         "location": {
-          "block": "minecraft:pitcher_crop",
+          "blocks": "minecraft:pitcher_crop",
           "type": "minecraft:match_block"
         }
       },
@@ -13,7 +13,7 @@
     "torchflower": {
       "conditions": {
         "location": {
-          "block": "minecraft:torchflower_crop",
+          "blocks": "minecraft:torchflower_crop",
           "type": "minecraft:match_block"
         }
       },

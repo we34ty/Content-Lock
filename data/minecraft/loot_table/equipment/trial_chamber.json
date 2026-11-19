@@ -2,14 +2,14 @@
   "type": "minecraft:equipment",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:loot_table",
           "value": {
             "pools": [
               {
-                "bonus_rolls": 0.0,
+                "bonus_rolls": 0,
                 "condition": {
                   "chance": 0.5,
                   "type": "minecraft:random_chance"
@@ -31,9 +31,9 @@
                         "type": "minecraft:set_enchantments",
                         "add": false,
                         "enchantments": {
-                          "minecraft:fire_protection": 4.0,
-                          "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0,
+                          "minecraft:fire_protection": 4,
+                          "minecraft:projectile_protection": 4,
+                          "minecraft:protection": 4,
                           "content_lock:armor_level": {
                             "type": "uniform",
                             "min": -1,
@@ -74,7 +74,7 @@
                 "rolls": 1
               },
               {
-                "bonus_rolls": 0.0,
+                "bonus_rolls": 0,
                 "condition": {
                   "chance": 0.5,
                   "type": "minecraft:random_chance"
@@ -96,9 +96,9 @@
                         "type": "minecraft:set_enchantments",
                         "add": false,
                         "enchantments": {
-                          "minecraft:fire_protection": 4.0,
-                          "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0,
+                          "minecraft:fire_protection": 4,
+                          "minecraft:projectile_protection": 4,
+                          "minecraft:protection": 4,
                           "content_lock:armor_level": {
                             "type": "uniform",
                             "min": -1,
@@ -147,7 +147,7 @@
           "value": {
             "pools": [
               {
-                "bonus_rolls": 0.0,
+                "bonus_rolls": 0,
                 "condition": {
                   "chance": 0.5,
                   "type": "minecraft:random_chance"
@@ -169,9 +169,9 @@
                         "type": "minecraft:set_enchantments",
                         "add": false,
                         "enchantments": {
-                          "minecraft:fire_protection": 4.0,
-                          "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0,
+                          "minecraft:fire_protection": 4,
+                          "minecraft:projectile_protection": 4,
+                          "minecraft:protection": 4,
                           "content_lock:armor_level": {
                             "type": "uniform",
                             "min": -1,
@@ -212,7 +212,7 @@
                 "rolls": 1
               },
               {
-                "bonus_rolls": 0.0,
+                "bonus_rolls": 0,
                 "condition": {
                   "chance": 0.5,
                   "type": "minecraft:random_chance"
@@ -234,9 +234,9 @@
                         "type": "minecraft:set_enchantments",
                         "add": false,
                         "enchantments": {
-                          "minecraft:fire_protection": 4.0,
-                          "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0,
+                          "minecraft:fire_protection": 4,
+                          "minecraft:projectile_protection": 4,
+                          "minecraft:protection": 4,
                           "content_lock:armor_level": {
                             "type": "uniform",
                             "min": -1,
@@ -285,7 +285,7 @@
           "value": {
             "pools": [
               {
-                "bonus_rolls": 0.0,
+                "bonus_rolls": 0,
                 "condition": {
                   "chance": 0.5,
                   "type": "minecraft:random_chance"
@@ -307,9 +307,9 @@
                         "type": "minecraft:set_enchantments",
                         "add": false,
                         "enchantments": {
-                          "minecraft:fire_protection": 4.0,
-                          "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0,
+                          "minecraft:fire_protection": 4,
+                          "minecraft:projectile_protection": 4,
+                          "minecraft:protection": 4,
                           "content_lock:armor_level": {
                             "type": "uniform",
                             "min": -1,
@@ -350,7 +350,7 @@
                 "rolls": 1
               },
               {
-                "bonus_rolls": 0.0,
+                "bonus_rolls": 0,
                 "condition": {
                   "chance": 0.5,
                   "type": "minecraft:random_chance"
@@ -372,9 +372,9 @@
                         "type": "minecraft:set_enchantments",
                         "add": false,
                         "enchantments": {
-                          "minecraft:fire_protection": 4.0,
-                          "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0,
+                          "minecraft:fire_protection": 4,
+                          "minecraft:projectile_protection": 4,
+                          "minecraft:protection": 4,
                           "content_lock:armor_level": {
                             "type": "uniform",
                             "min": -1,

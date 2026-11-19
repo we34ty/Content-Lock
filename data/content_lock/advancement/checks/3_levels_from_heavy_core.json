@@ -3,7 +3,7 @@
     "crafted": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipes_id": "content_lock:xp/3_levels_from_heavy_core"
+        "recipes": "content_lock:xp/3_levels_from_heavy_core"
       }
     }
   },

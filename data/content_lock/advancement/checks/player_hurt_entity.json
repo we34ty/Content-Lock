@@ -8,7 +8,7 @@
             "is_direct": true,
             "tags": [
               {
-                "id": "content_lock:player_attack",
+                "id": "#content_lock:player_attack",
                 "expected": true
               }
             ]

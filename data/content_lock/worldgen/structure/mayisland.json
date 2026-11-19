@@ -9,8 +9,11 @@
         {
           "type": "minecraft:dolphin",
           "weight": 10,
-          "minCount": 2,
-          "maxCount": 4
+          "count": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 4,
+            "min_inclusive": 2
+          }
         }
       ]
     }

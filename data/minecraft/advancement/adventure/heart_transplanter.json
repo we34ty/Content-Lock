@@ -4,9 +4,9 @@
     "place_creaking_heart_awake": {
       "conditions": {
         "location": {
-          "block": "minecraft:creaking_heart",
+          "blocks": "minecraft:creaking_heart",
           "type": "minecraft:match_block",
-          "properties": {
+          "state": {
             "creaking_heart_state": "awake"
           }
         }
@@ -16,9 +16,9 @@
     "place_creaking_heart_dormant": {
       "conditions": {
         "location": {
-          "block": "minecraft:creaking_heart",
+          "blocks": "minecraft:creaking_heart",
           "type": "minecraft:match_block",
-          "properties": {
+          "state": {
             "creaking_heart_state": "dormant"
           }
         }

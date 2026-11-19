@@ -31,7 +31,7 @@
                     "predicate_type": "minecraft:always_true"
                   },
                   "output_state": {
-                    "Name": "minecraft:black_wool"
+                    "id": "minecraft:black_wool"
                   }
                 }
               ]

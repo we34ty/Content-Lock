@@ -4,7 +4,7 @@
     "beetroots": {
       "conditions": {
         "location": {
-          "block": "minecraft:beetroots",
+          "blocks": "minecraft:beetroots",
           "type": "minecraft:match_block"
         }
       },
@@ -13,7 +13,7 @@
     "melon_stem": {
       "conditions": {
         "location": {
-          "block": "minecraft:melon_stem",
+          "blocks": "minecraft:melon_stem",
           "type": "minecraft:match_block"
         }
       },
@@ -22,7 +22,7 @@
     "nether_wart": {
       "conditions": {
         "location": {
-          "block": "minecraft:nether_wart",
+          "blocks": "minecraft:nether_wart",
           "type": "minecraft:match_block"
         }
       },
@@ -31,7 +31,7 @@
     "pitcher_pod": {
       "conditions": {
         "location": {
-          "block": "minecraft:pitcher_crop",
+          "blocks": "minecraft:pitcher_crop",
           "type": "minecraft:match_block"
         }
       },
@@ -40,7 +40,7 @@
     "pumpkin_stem": {
       "conditions": {
         "location": {
-          "block": "minecraft:pumpkin_stem",
+          "blocks": "minecraft:pumpkin_stem",
           "type": "minecraft:match_block"
         }
       },
@@ -49,7 +49,7 @@
     "torchflower": {
       "conditions": {
         "location": {
-          "block": "minecraft:torchflower_crop",
+          "blocks": "minecraft:torchflower_crop",
           "type": "minecraft:match_block"
         }
       },
@@ -58,7 +58,7 @@
     "wheat": {
       "conditions": {
         "location": {
-          "block": "minecraft:wheat",
+          "blocks": "minecraft:wheat",
           "type": "minecraft:match_block"
         }
       },

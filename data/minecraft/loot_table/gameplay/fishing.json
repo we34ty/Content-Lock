@@ -125,7 +125,8 @@
                       "min": 12000,
                       "max": 24000
                     },
-                    "period": 24000
+                    "period": 24000,
+                    "clock": "minecraft:overworld"
                   },
                   {
                     "type": "weather_check",

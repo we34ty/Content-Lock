@@ -31,7 +31,7 @@ execute if entity @s[tag=ender_watcher_teleportation,scores={progression=0}] at 
 execute if entity @s[tag=ender_watcher_teleportation,scores={progression=100}] at @s if entity @p[distance=0..80] at @p run spreadplayers ~ ~ 3 10 true @s 
 execute if entity @s[tag=ender_watcher_teleportation,scores={progression=199}] at @s if entity @p[distance=0..80] at @p run spreadplayers ~ ~ 3 10 true @s 
 
-execute if entity @s[tag=ender_watcher_rain,scores={progression=0..160}] at @s if entity @p[distance=0..80] run summon falling_block ~ ~ ~ {BlockState:{Properties:{facing:"down"},Name:end_rod},Time:567,Motion:[0d,-0.5d,0d],display:{Name:'[{"text":"ender_watcher_rain_projectile","italic":false}]'},Tags:[ender_watcher_rain_projectile]}
+execute if entity @s[tag=ender_watcher_rain,scores={progression=0..160}] at @s if entity @p[distance=0..80] run summon falling_block ~ ~ ~ {BlockState:{properties:{facing:"down"},Name:end_rod},Time:567,Motion:[0d,-0.5d,0d],display:{Name:'[{"text":"ender_watcher_rain_projectile","italic":false}]'},Tags:[ender_watcher_rain_projectile]}
 execute if entity @s[tag=ender_watcher_rain] at @s if entity @e[distance=0..1,tag=ender_watcher_rain_projectile] as @e[distance=0..3,tag=ender_watcher_rain_projectile] at @s run tag @s add ender_watcher_rain_projectile_teleport
 
 execute if entity @e[tag=ender_watcher_rain_projectile_teleport] as @e[tag=ender_watcher_rain_projectile_teleport] at @p run spreadplayers ~ ~ 0 5 false @s 

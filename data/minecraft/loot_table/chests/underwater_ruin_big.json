@@ -99,7 +99,8 @@
               "type": "minecraft:exploration_map",
               "decoration": "minecraft:red_x",
               "skip_existing_chunks": false,
-              "zoom": 1
+              "zoom": 1,
+              "destination": "minecraft:buried_treasure"
             },
             {
               "type": "minecraft:set_name",

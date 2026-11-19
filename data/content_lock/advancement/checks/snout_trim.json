@@ -3,7 +3,7 @@
     "crafted": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipes_id": "minecraft:snout_armor_trim_smithing_template"
+        "recipes": "minecraft:snout_armor_trim_smithing_template"
       }
     }
   },

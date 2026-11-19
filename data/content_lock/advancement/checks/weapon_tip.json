@@ -1,5 +1,6 @@
 {
   "display": {
+    "background": "block/acacia_door_bottom",
     "icon": {
       "id": "minecraft:iron_sword"
     },

@@ -7,7 +7,7 @@
           "type": {
             "tags": [
               {
-                "id": "content_lock:content_lock",
+                "id": "#content_lock:content_lock",
                 "expected": true
               }
             ]

@@ -2,7 +2,7 @@
   "type": "minecraft:equipment",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:loot_table",
@@ -12,7 +12,7 @@
       "rolls": 1
     },
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -25,7 +25,7 @@
             "type": "minecraft:set_enchantments",
             "add": false,
             "enchantments": {
-              "minecraft:power": 1.0
+              "minecraft:power": 1
             }
           },
           "name": "minecraft:bow"
@@ -36,7 +36,7 @@
             "type": "minecraft:set_enchantments",
             "add": false,
             "enchantments": {
-              "minecraft:punch": 1.0
+              "minecraft:punch": 1
             }
           },
           "name": "minecraft:bow"

@@ -40,11 +40,11 @@
             "is_direct": true,
             "tags": [
               {
-                "id": "bypasses_enchantments",
+                "id": "#bypasses_enchantments",
                 "expected": false
               },
               {
-                "id": "bypasses_armor",
+                "id": "#bypasses_armor",
                 "expected": false
               }
             ]

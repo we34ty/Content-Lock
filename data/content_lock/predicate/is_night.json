@@ -4,5 +4,6 @@
     "min": 13000,
     "max": 22999
   },
-  "period": 24000
+  "period": 24000,
+  "clock": "overworld"
 }
