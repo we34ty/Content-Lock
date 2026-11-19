@@ -1,12 +1,24 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
   {
     "type": "minecraft:set_damage",
     "damage": {
-      "type": "score",
-      "target": "this",
-      "score": "content_lock.temp1",
-      "scale": 0.001
+      "type": "mul",
+      "inputs": [
+        {
+          "type": "from_int",
+          "input":{
+            "type": "score",
+            "target": "this",
+            "score": "content_lock.temp1",
+            "fallback": 0
+          }
+        },
+        0.001
+      ]
     },
     "add": true
   }
 ]
+}

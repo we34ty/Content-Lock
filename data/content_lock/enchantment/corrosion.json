@@ -31,10 +31,19 @@
         "requirements": {
           "type": "random_chance",
           "chance": {
-            "type": "score",
-            "target": "attacker",
-            "score": "content_lock.durability_reversed",
-            "scale": 0.0005
+            "type": "mul",
+            "inputs": [
+              {
+                "type": "from_int",
+                "input":{
+                  "type": "score",
+                  "target": "this",
+                  "score": "content_lock.durability_reversed",
+                  "fallback": 0
+                }
+              },
+              0.0005
+            ]
           }
         }
       }

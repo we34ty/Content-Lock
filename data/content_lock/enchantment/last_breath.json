@@ -29,11 +29,14 @@
           "scores": {
             "content_lock.health_percentage": {
               "max": {
-                "type": "minecraft:enchantment_level",
-                "amount": {
-                  "type": "minecraft:linear",
-                  "base": 50,
-                  "per_level_above_first": -5
+                "type": "minecraft:from_float",
+                "input": {
+                  "type": "minecraft:enchantment_level",
+                  "amount": {
+                    "type": "minecraft:linear",
+                    "base": 50,
+                    "per_level_above_first": -5
+                  }
                 }
               }
             }

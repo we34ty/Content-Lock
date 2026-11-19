@@ -1,4 +1,6 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
   {
     "type": "set_components",
     "components": {
@@ -36,3 +38,4 @@
     }
   }
 ]
+}

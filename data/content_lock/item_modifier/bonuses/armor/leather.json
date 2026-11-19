@@ -1,4 +1,6 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
   {
     "type": "set_custom_data",
     "tag": {
@@ -19,3 +21,4 @@
     }
   }
 ]
+}

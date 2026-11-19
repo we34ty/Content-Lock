@@ -1,4 +1,6 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
   {
     "type": "enchant_randomly",
     "only_compatible": true,
@@ -63,3 +65,4 @@
     }
   }
 ]
+}

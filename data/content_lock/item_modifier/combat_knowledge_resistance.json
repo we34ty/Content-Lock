@@ -1,4 +1,6 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
   {
     "type": "minecraft:set_enchantments",
     "enchantments": {
@@ -298,3 +300,4 @@
     }
   }
 ]
+}

@@ -1,4 +1,6 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
 	{
 		"type": "minecraft:filtered",
 		"item_filter": {
@@ -84,3 +86,4 @@
 		}
 	}
 ]
+}

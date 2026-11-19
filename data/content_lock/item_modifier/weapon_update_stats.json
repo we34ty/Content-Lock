@@ -1,4 +1,6 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions":[
   {
     "type": "set_lore",
     "lore": [
@@ -171,3 +173,4 @@
     "entity": "this"
   }
 ]
+}
