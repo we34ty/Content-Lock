@@ -20,6 +20,87 @@
         "sound": "minecraft:music.nether.nether_wastes"
       }
     },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {},
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [
+            {
+              "type": "minecraft:strider",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 2,
+                "min_inclusive": 1
+              },
+              "weight": 60
+            }
+          ],
+          "misc": [],
+          "monster": [
+            {
+              "type": "minecraft:ghast",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 6,
+                "min_inclusive": 4
+              },
+              "weight": 50
+            },
+            {
+              "type": "minecraft:zombified_piglin",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 8,
+                "min_inclusive": 4
+              },
+              "weight": 100
+            },
+            {
+              "type": "minecraft:magma_cube",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 6,
+                "min_inclusive": 4
+              },
+              "weight": 5
+            },
+            {
+              "type": "minecraft:enderman",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 6,
+                "min_inclusive": 4
+              },
+              "weight": 5
+            },
+            {
+              "type": "minecraft:piglin",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 4,
+                "min_inclusive": 4
+              },
+              "weight": 15
+            },
+            {
+              "type": "minecraft:wither_skeleton",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 2,
+                "min_inclusive": 1
+              },
+              "weight": 5
+            }
+          ],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "modifier": "overlay"
+    },
     "minecraft:visual/fog_color": "#330808"
   },
   "carvers": "minecraft:nether_cave",
@@ -62,60 +143,5 @@
     ]
   ],
   "has_precipitation": false,
-  "spawn_costs": {},
-  "spawners": {
-    "ambient": [],
-    "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:strider",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 60
-      }
-    ],
-    "misc": [],
-    "monster": [
-      {
-        "type": "minecraft:ghast",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 50
-      },
-      {
-        "type": "minecraft:zombified_piglin",
-        "maxCount": 8,
-        "minCount": 4,
-        "weight": 100
-      },
-      {
-        "type": "minecraft:magma_cube",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 5
-      },
-      {
-        "type": "minecraft:enderman",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 5
-      },
-      {
-        "type": "minecraft:piglin",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 15
-      },
-      {
-        "type": "minecraft:wither_skeleton",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 5
-      }
-    ],
-    "underground_water_creature": [],
-    "water_ambient": [],
-    "water_creature": []
-  },
   "temperature": 2.0
 }

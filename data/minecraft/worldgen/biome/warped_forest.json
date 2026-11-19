@@ -20,6 +20,56 @@
         "sound": "minecraft:music.nether.warped_forest"
       }
     },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {
+          "minecraft:enderman": {
+            "charge": 1.0,
+            "energy_budget": 0.12
+          }
+        },
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [
+            {
+              "type": "minecraft:strider",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 4,
+                "min_inclusive": 1
+              },
+              "weight": 60
+            }
+          ],
+          "misc": [],
+          "monster": [
+            {
+              "type": "minecraft:enderman",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 8,
+                "min_inclusive": 4
+              },
+              "weight": 20
+            },
+            {
+              "type": "minecraft:endermite",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 3,
+                "min_inclusive": 2
+              },
+              "weight": 1
+            }
+          ],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "modifier": "overlay"
+    },
     "minecraft:visual/ambient_particles": [
       {
         "particle": {
@@ -74,41 +124,5 @@
     ]
   ],
   "has_precipitation": false,
-  "spawn_costs": {
-    "minecraft:enderman": {
-      "charge": 1.0,
-      "energy_budget": 0.12
-    }
-  },
-  "spawners": {
-    "ambient": [],
-    "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:strider",
-        "maxCount": 4,
-        "minCount": 1,
-        "weight": 60
-      }
-    ],
-    "misc": [],
-    "monster": [
-      {
-        "type": "minecraft:enderman",
-        "maxCount": 8,
-        "minCount": 4,
-        "weight": 20
-      },
-      {
-        "type": "minecraft:endermite",
-        "maxCount": 3,
-        "minCount": 2,
-        "weight": 1
-      }
-    ],
-    "underground_water_creature": [],
-    "water_ambient": [],
-    "water_creature": []
-  },
   "temperature": 2.0
 }

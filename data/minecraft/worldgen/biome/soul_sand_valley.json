@@ -20,6 +20,90 @@
         "sound": "minecraft:music.nether.soul_sand_valley"
       }
     },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {
+          "minecraft:enderman": {
+            "charge": 0.7,
+            "energy_budget": 0.15
+          },
+          "minecraft:ghast": {
+            "charge": 0.7,
+            "energy_budget": 0.15
+          },
+          "minecraft:skeleton": {
+            "charge": 0.7,
+            "energy_budget": 0.15
+          },
+          "minecraft:strider": {
+            "charge": 0.7,
+            "energy_budget": 0.15
+          },
+          "minecraft:wither_skeleton": {
+            "charge": 0.7,
+            "energy_budget": 0.15
+          }
+        },
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [
+            {
+              "type": "minecraft:strider",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 2,
+                "min_inclusive": 1
+              },
+              "weight": 60
+            }
+          ],
+          "misc": [],
+          "monster": [
+            {
+              "type": "minecraft:skeleton",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 5
+              },
+              "weight": 20
+            },
+            {
+              "type": "minecraft:ghast",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 8,
+                "min_inclusive": 4
+              },
+              "weight": 50
+            },
+            {
+              "type": "minecraft:enderman",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 4,
+                "min_inclusive": 4
+              },
+              "weight": 2
+            },
+            {
+              "type": "minecraft:wither_skeleton",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 3,
+                "min_inclusive": 3
+              },
+              "weight": 5
+            }
+          ],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "modifier": "overlay"
+    },
     "minecraft:visual/ambient_particles": [
       {
         "particle": {
@@ -71,69 +155,5 @@
     ]
   ],
   "has_precipitation": false,
-  "spawn_costs": {
-    "minecraft:enderman": {
-      "charge": 0.7,
-      "energy_budget": 0.15
-    },
-    "minecraft:ghast": {
-      "charge": 0.7,
-      "energy_budget": 0.15
-    },
-    "minecraft:skeleton": {
-      "charge": 0.7,
-      "energy_budget": 0.15
-    },
-    "minecraft:strider": {
-      "charge": 0.7,
-      "energy_budget": 0.15
-    },
-    "minecraft:wither_skeleton": {
-      "charge": 0.7,
-      "energy_budget": 0.15
-    }
-  },
-  "spawners": {
-    "ambient": [],
-    "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:strider",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 60
-      }
-    ],
-    "misc": [],
-    "monster": [
-      {
-        "type": "minecraft:skeleton",
-        "maxCount": 5,
-        "minCount": 5,
-        "weight": 20
-      },
-      {
-        "type": "minecraft:ghast",
-        "maxCount": 8,
-        "minCount": 4,
-        "weight": 50
-      },
-      {
-        "type": "minecraft:enderman",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 2
-      },
-      {
-        "type": "minecraft:wither_skeleton",
-        "maxCount": 3,
-        "minCount": 3,
-        "weight": 5
-      }
-    ],
-    "underground_water_creature": [],
-    "water_ambient": [],
-    "water_creature": []
-  },
   "temperature": 2.0
 }

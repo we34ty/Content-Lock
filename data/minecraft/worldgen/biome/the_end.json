@@ -1,4 +1,32 @@
 {
+  "attributes": {
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {},
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [],
+          "misc": [],
+          "monster": [
+            {
+              "type": "minecraft:enderman",
+              "count": {
+                "type": "uniform",
+                "max_inclusive": 4,
+                "min_inclusive": 4
+              },
+              "weight": 10
+            }
+          ],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "modifier": "overlay"
+    }
+  },
   "carvers": [],
   "downfall": 0.5,
   "effects": {
@@ -22,23 +50,5 @@
     ]
   ],
   "has_precipitation": false,
-  "spawn_costs": {},
-  "spawners": {
-    "ambient": [],
-    "axolotls": [],
-    "creature": [],
-    "misc": [],
-    "monster": [
-      {
-        "type": "minecraft:enderman",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      }
-    ],
-    "underground_water_creature": [],
-    "water_ambient": [],
-    "water_creature": []
-  },
   "temperature": 0.5
 }
