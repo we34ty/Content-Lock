@@ -20,11 +20,11 @@
             "tags": [
               {
                 "expected": true,
-                "id": "content_lock:projectile_protection"
+                "id": "#content_lock:projectile_protection"
               },
               {
                 "expected": false,
-                "id": "minecraft:bypasses_invulnerability"
+                "id": "#minecraft:bypasses_invulnerability"
               }
             ]
           }

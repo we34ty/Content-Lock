@@ -31,7 +31,7 @@
           "predicate": {
             "tags": [
               {
-                "id": "is_explosion",
+                "id": "#is_explosion",
                 "expected": true
               }
             ]

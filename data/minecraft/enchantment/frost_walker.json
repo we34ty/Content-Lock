@@ -13,11 +13,11 @@
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:burn_from_stepping"
+                "id": "#minecraft:burn_from_stepping"
               },
               {
                 "expected": false,
-                "id": "minecraft:bypasses_invulnerability"
+                "id": "#minecraft:bypasses_invulnerability"
               }
             ]
           }
@@ -29,15 +29,12 @@
         "effect": {
           "type": "minecraft:replace_disk",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "minecraft:frosted_ice",
-              "Properties": {
-                "age": "0"
-              }
+            "id": "minecraft:frosted_ice",
+            "properties": {
+              "age": "0"
             }
           },
-          "height": 1.0,
+          "height": 1,
           "offset": [
             0,
             -1,
@@ -70,12 +67,12 @@
           },
           "radius": {
             "type": "minecraft:clamped",
-            "max": 16.0,
-            "min": 0.0,
+            "max": 16,
+            "min": 0,
             "value": {
               "type": "minecraft:linear",
-              "base": 3.0,
-              "per_level_above_first": 1.0
+              "base": 3,
+              "per_level_above_first": 1
             }
           },
           "trigger_game_event": "minecraft:block_place"
@@ -87,7 +84,7 @@
               "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "flags": {
+                "minecraft:flags": {
                   "is_on_ground": true
                 }
               }
@@ -98,7 +95,7 @@
                 "type": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "vehicle": {}
+                  "minecraft:vehicle": {}
                 }
               }
             }
