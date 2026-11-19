@@ -50,7 +50,7 @@
         },
         {
           "type": "minecraft:tag",
-          "items": "minecraft:bundles",
+          "items": "#minecraft:bundles",
           "expand": true
         },
         {

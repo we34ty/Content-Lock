@@ -3,5 +3,6 @@
 	  "minecraft:out_of_world",
 	  "minecraft:generic_kill",
 	  "content_lock:malice"
-	]
+	],
+	"replace": true
   }

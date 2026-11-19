@@ -24,7 +24,7 @@
             "predicate": {
               "tags": [
                 {
-                  "id": "minecraft:is_drowning",
+                  "id": "#minecraft:is_drowning",
                   "expected": true
                 }
               ]

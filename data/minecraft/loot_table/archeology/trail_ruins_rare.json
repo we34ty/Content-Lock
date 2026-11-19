@@ -59,7 +59,7 @@
         },
         {
           "type": "minecraft:tag",
-          "items": "minecraft:creeper_drop_music_discs",
+          "items": "#minecraft:creeper_drop_music_discs",
           "expand": true
         }
       ],

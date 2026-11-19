@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:tag",
-          "items": "minecraft:small_flowers",
+          "items": "#minecraft:small_flowers",
           "expand": true,
           "weight": 2,
           "modifier": [

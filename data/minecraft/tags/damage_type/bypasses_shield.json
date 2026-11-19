@@ -7,5 +7,6 @@
 	  "content_lock:bleed",
 	  "content_lock:malice",
 	  "content_lock:heat"
-	]
+	],
+	"replace": false
   }

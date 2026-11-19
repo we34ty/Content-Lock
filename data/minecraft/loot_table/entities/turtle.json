@@ -89,7 +89,7 @@
           "tags": [
             {
               "expected": true,
-              "id": "minecraft:is_lightning"
+              "id": "#minecraft:is_lightning"
             }
           ]
         }

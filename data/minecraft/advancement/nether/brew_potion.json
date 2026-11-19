@@ -3,9 +3,7 @@
   "criteria": {
     "potion": {
       "trigger": "minecraft:brewed_potion",
-      "conditions": {
-        "potion": "awkward"
-      }
+      "conditions": {"potion": {"potions": ["minecraft:awkward"]}}
     }
   },
   "display": {

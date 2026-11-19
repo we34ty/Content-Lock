@@ -35,5 +35,6 @@
 	  "#content_lock:magic",
 	  "content_lock:frostbite",
 	  "content_lock:poison"
-	]
+	],
+	"replace": false
   }

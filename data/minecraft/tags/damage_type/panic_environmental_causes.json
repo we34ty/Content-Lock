@@ -8,5 +8,6 @@
 	  "minecraft:lightning_bolt",
 	  "minecraft:on_fire",
 	  "content_lock:splinter"
-	]
+	],
+	"replace": false
   }

@@ -6,5 +6,6 @@
 	  "content_lock:multihit",
 	  "#content_lock:melee",
 	  "#content_lock:magic"
-	]
+	],
+	"replace": false
   }
