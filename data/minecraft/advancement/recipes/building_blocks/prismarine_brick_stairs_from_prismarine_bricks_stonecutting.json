@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_quartz_block": {
+    "has_prismarine_brick": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:quartz_block"
+            "items": "minecraft:prismarine_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "minecraft:quartz_slab_from_stonecutting"
+        "recipes": "minecraft:prismarine_brick_stairs_from_prismarine_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_quartz_block"
+      "has_prismarine_brick"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:quartz_slab_from_stonecutting"
+      "minecraft:prismarine_brick_stairs_from_prismarine_bricks_stonecutting"
     ]
   }
 }
