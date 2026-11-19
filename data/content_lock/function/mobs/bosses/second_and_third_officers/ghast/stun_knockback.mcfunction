@@ -42,8 +42,8 @@ execute if entity @s[scores={content_lock.attack_timer=80}] run scoreboard playe
 execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-8 ~-8 ~-8 as @e[type=#content_lock:boss_can_damage,tag=!content_lock.boss,dx=16,dy=16,dz=16] at @s facing entity @n[tag=content_lock.third_officer.stun_knockback.point] feet rotated ~180 -20 run function player_motion:api/launch_looking
 # Apply stronger upward motion to non-player entities
 execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-8 ~-8 ~-8 as @e[type=#content_lock:boss_can_damage,tag=!content_lock.boss,type=!player,dx=16,dy=16,dz=16] run data modify entity @s Motion[1] set value 0.6
-execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-8 ~-8 ~-8 as @e[type=#content_lock:boss_can_damage,tag=!content_lock.boss,type=player,dx=16,dy=16,dz=16] run effect give @s slowness 3 4 true
-execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-8 ~-8 ~-8 as @e[type=#content_lock:boss_can_damage,tag=!content_lock.boss,type=player,dx=16,dy=16,dz=16] run effect give @s mining_fatigue 3 2 true
+execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-8 ~-8 ~-8 as @e[type=player,dx=16,dy=16,dz=16] run effect give @s slowness 3 4 true
+execute if entity @s[scores={content_lock.attack_timer=80}] positioned ~-8 ~-8 ~-8 as @e[type=player,dx=16,dy=16,dz=16] run effect give @s mining_fatigue 3 2 true
 # Secondary shockwave rings - white/yellow expanding waves
 execute if entity @s[scores={content_lock.attack_timer=78}] at @n[tag=content_lock.third_officer.stun_knockback.point] run particle dust{color:16777215,scale:2.5} ~ ~0.1 ~ 6 0.5 6 0.05 120 force @a
 execute if entity @s[scores={content_lock.attack_timer=80}] at @n[tag=content_lock.third_officer.stun_knockback.point] run playsound block.amethyst_block.resonate hostile @a ~ ~ ~ 4 0.8
